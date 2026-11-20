@@ -1,5 +1,6 @@
 // Hand-off files for the Claude step: caps, compact candidate records, chunking.
 import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 
 export const MAX_INPUT_CHARS = 1800; // per candidate, JSON-serialised
 export const CHUNK_SIZE = 60;
@@ -39,4 +40,23 @@ export function chunk(list, size = CHUNK_SIZE) {
 	const out = [];
 	for (let i = 0; i < list.length; i += size) out.push(list.slice(i, i + size));
 	return out;
+}
+
+/** File-name-safe source id, used for work/pages/<id>.txt and as the `extracted` key. */
+export const safeId = (id) => String(id).replace(/[^a-z0-9_-]/gi, '_');
+
+const TASK_TEMPLATE = new URL('../prompts/task.md', import.meta.url);
+
+/** Render pipeline/prompts/task.md. Paths are repo-relative with forward slashes (what Claude is told to Read/Write). */
+export function renderTask({ scope, candidatesFile, count, outputFile, pages = [] }) {
+	const note = pages.length
+		? `Page files to extract events from (page ids: ${pages.join(', ')}): ${pages.map((p) => `work/pages/${p}.txt (links: work/pages/${p}.links.json)`).join('; ')}.`
+		: 'There are no page files this time.';
+	return readFileSync(TASK_TEMPLATE, 'utf8')
+		.replaceAll('{{SITE_SCOPE}}', scope)
+		.replaceAll('{{INPUT_NOTE}}', candidatesFile
+			? `Read ${candidatesFile} (${count} candidates, a JSON array).`
+			: 'This task has no candidate list: use "results": [].')
+		.replaceAll('{{PAGES_NOTE}}', note)
+		.replaceAll('{{OUTPUT_FILE}}', outputFile);
 }

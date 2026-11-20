@@ -9,7 +9,7 @@ German edition of the Swiss site swissdataevents.ch. Full spec: `CLAUDE-BRIEF.md
 - `src/data/events.json`, `archive.json`, `meta.json`: the event data (schema in `src/content.config.ts`; do not add fields).
 - `src/lib/events.ts` re-exports config values and has `withBase(path)`; every internal `href`/`src` must use it (the site is served under `/germany-ai-data-events` until a custom domain exists). Absolute URLs are `${SITE_URL}/path`.
 - `scripts/`: `validate-events.mjs`, `archive-past.mjs`, `test-ics.mjs`, `test-agent-files.mjs`, `build-digest.mjs`, `buttondown-redirects.mjs`, `indexnow.mjs`.
-- Pipeline (`pipeline/`, `data/cache/`, `work/`) arrives in phases 2 to 4.
+- Pipeline: `pipeline:prepare` (code) -> Claude step reads work/TASK.md, writes enrichment.json (`pipeline:enrich-local` locally) -> `pipeline:apply` (code verifies everything in `pipeline/lib/verify.mjs`). Workflow arrives in phase 4.
 
 ## Commands
 

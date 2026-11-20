@@ -18,6 +18,8 @@
     "indexnow": "node scripts/indexnow.mjs",
     "pipeline:fetch": "node pipeline/prepare.mjs --dry-run",
     "pipeline:prepare": "node pipeline/prepare.mjs",
+    "pipeline:enrich-local": "node pipeline/enrich-local.mjs",
+    "pipeline:apply": "node pipeline/apply.mjs",
     "test": "node --test \"pipeline/test/*.test.mjs\""
   },
   "dependencies": {

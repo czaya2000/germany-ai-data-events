@@ -1,0 +1,9 @@
+{
+  "results": [
+    { "id": "c_0000000001", "relevant": true, "confidence": 0.9, "format": "Meetup", "city": "Berlin", "topics": ["LLM", "RAG"], "blurb": "Monthly community evening with two talks on retrieval-augmented generation in production.", "cost": "Free" },
+    { "id": "c_0000000002", "relevant": false, "confidence": 0.95, "reason": "offtopic" },
+    { "id": "c_0000000003", "relevant": true, "confidence": 0.4, "format": "Conference", "city": "Hamburg", "topics": ["Data"], "blurb": "A general business conference that may touch on data.", "cost": "Not listed" },
+    { "id": "c_0000000004", "relevant": true, "confidence": 0.8, "format": "Workshop", "city": null, "topics": ["dbt"], "blurb": "Hands-on dbt workshop for analytics engineers.", "cost": "From EUR 199" }
+  ],
+  "extracted": {}
+}

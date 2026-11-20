@@ -10,7 +10,7 @@ import { dedupe } from './lib/dedupe.mjs';
 import { hubLabel } from './lib/city.mjs';
 import { loadJson, loadLedger, lookup, matchesExisting, prune, record, saveJson, touch, updateMissing } from './lib/ledger.mjs';
 import { buildReport } from './lib/report.mjs';
-import { BOOTSTRAP_CAP, applyCap, candidateId, chunk, compactCandidate } from './lib/work.mjs';
+import { BOOTSTRAP_CAP, applyCap, candidateId, chunk, compactCandidate, renderTask, safeId } from './lib/work.mjs';
 import { MODULES, normaliseRaw, runFeedSource } from './sources/index.mjs';
 import { groupsInCandidate, icsUrl } from './sources/meetup.mjs';
 import { fetchPage } from './sources/scrape.mjs';
@@ -240,10 +240,10 @@ export async function prepare(opts = {}) {
 				budget -= pg.text.length + JSON.stringify(pg.links).length;
 				health.pageHashes[s.id] = pg.hash;
 				if (!opts.dry) {
-					writeFileSync(join(P.work, 'pages', `${s.id.replace(/[^a-z0-9_-]/gi, '_')}.txt`), pg.text);
-					writeFileSync(join(P.work, 'pages', `${s.id.replace(/[^a-z0-9_-]/gi, '_')}.links.json`), JSON.stringify(pg.links));
+					writeFileSync(join(P.work, 'pages', `${safeId(s.id)}.txt`), pg.text);
+					writeFileSync(join(P.work, 'pages', `${safeId(s.id)}.links.json`), JSON.stringify(pg.links));
 				}
-				pageFiles.push(s.id);
+				pageFiles.push(safeId(s.id));
 				scrapeReport.push({ id: s.id, status: 'ready', chars: pg.text.length, links: pg.links.length });
 			}
 			health.sources[s.id] = { ...(health.sources[s.id] ?? {}), lastSuccess: today, consecutiveFailures: 0 };
@@ -265,11 +265,7 @@ export async function prepare(opts = {}) {
 			});
 		}
 		writeFileSync(join(P.work, 'candidates.json'), JSON.stringify(compact));
-		const task = readFileSync(P.task, 'utf8')
-			.replace('{{SITE_SCOPE}}', SITE_SCOPE)
-			.replace('{{CANDIDATES_FILE}}', 'work/candidates.json')
-			.replace('{{COUNT}}', String(compact.length))
-			.replace('{{PAGES}}', pageFiles.length ? pageFiles.map((p) => `work/pages/${p}.txt`).join(', ') : 'none');
+		const task = renderTask({ scope: SITE_SCOPE, candidatesFile: 'work/candidates.json', count: compact.length, outputFile: 'work/enrichment.json', pages: pageFiles });
 		writeFileSync(join(P.work, 'TASK.md'), task);
 	}
 
