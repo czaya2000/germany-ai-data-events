@@ -1,6 +1,6 @@
 ---
 import LegalShell from '../components/LegalShell.astro';
-import { SITE_NAME } from '../lib/events';
+import { SITE_NAME, CONTACT_EMAIL } from '../lib/events';
 import { localePath, legalPath } from '../i18n/paths.mjs';
 import type { Locale } from '../i18n';
 
@@ -48,7 +48,7 @@ const description = de
 
 					<dt>Kontakt</dt>
 					<dd>
-						E-Mail: [[TODO: E-Mail-Adresse]]<br />
+						E-Mail: {CONTACT_EMAIL}<br />
 						Telefon: [[TODO: optional; nur angeben, wenn gewünscht]]<br />
 						<a href={localePath('/contact/', 'de')}>Kontaktformular</a>
 						<br />
@@ -170,7 +170,7 @@ const description = de
 
 					<dt>Contact</dt>
 					<dd>
-						Email: [[TODO: email address]]<br />
+						Email: {CONTACT_EMAIL}<br />
 						Phone: [[TODO: optional; only if wanted]]<br />
 						<a href={localePath('/contact/', 'en')}>Contact form</a>
 						<br />

@@ -16,6 +16,7 @@ export {
 	INSTAGRAM_URL,
 	LINKEDIN_URL,
 	FORM_ENDPOINT,
+	CONTACT_EMAIL,
 	GOOGLE_SITE_VERIFICATION,
 	INDEXABLE,
 } from '../../config/country.mjs';

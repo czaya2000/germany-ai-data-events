@@ -1,6 +1,6 @@
 ---
 import LegalShell from '../components/LegalShell.astro';
-import { SITE_NAME } from '../lib/events';
+import { SITE_NAME, CONTACT_EMAIL } from '../lib/events';
 import { localePath, legalPath } from '../i18n/paths.mjs';
 import type { Locale } from '../i18n';
 
@@ -31,7 +31,7 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 
 				<h2>1. Verantwortlicher (Art. 4 Nr. 7 DSGVO)</h2>
 				<p>
-					[[TODO: Name bzw. Firma]], [[TODO: ladungsfähige Anschrift, wie im Impressum]], E-Mail: [[TODO: E-Mail-Adresse]].
+					[[TODO: Name bzw. Firma]], [[TODO: ladungsfähige Anschrift, wie im Impressum]], E-Mail: {CONTACT_EMAIL}.
 					Weitere Angaben im <a href={impressum}>Impressum</a>.
 				</p>
 				<p>Datenschutzbeauftragter: [[TODO: nur angeben, falls einer benannt ist; sonst Zeile löschen]]</p>
@@ -175,7 +175,7 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 
 				<h2>1. Controller (Art. 4(7) GDPR)</h2>
 				<p>
-					[[TODO: name or company]], [[TODO: address at which documents can be served, as in the legal notice]], email: [[TODO: email address]].
+					[[TODO: name or company]], [[TODO: address at which documents can be served, as in the legal notice]], email: {CONTACT_EMAIL}.
 					More details in the <a href={impressum}>legal notice</a>.
 				</p>
 				<p>Data protection officer: [[TODO: only if one is appointed; otherwise delete this line]]</p>

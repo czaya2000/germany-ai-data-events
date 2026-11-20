@@ -1,7 +1,7 @@
 /* Deutsche UI-Texte. Typed as the same `Messages` as en.ts: a key missing
    here is a type error. Tone: neutral and plain, formal "Sie" only where a
-   sentence has to address the reader. The product name stays English for now
-   (TODO-OWNER.md: [[TODO: Produktname]]). */
+   sentence has to address the reader. The product name "German Data Events"
+   stays English in both languages. */
 import type { Messages } from './en.ts';
 
 export const de: Messages = {

@@ -32,7 +32,7 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 7. `CONTACT_EMAIL`: contact email. Also used in the fetcher User-Agent (the repository URL is used until it is set).
 8. `FORM_ENDPOINT`: FormSubmit target address for the contact and submit forms (`https://formsubmit.co/<address>`).
-11. The working name "German AI & Data Events" (`SITE_NAME`) and the six hub cities can be changed in `config/country.mjs`.
+11. The six hub cities can be changed in `config/country.mjs`. The product name "German Data Events" (`SITE_NAME`) is final.
 
 ## Legal pages
 
@@ -49,7 +49,6 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 ## Languages
 
-12. **[[TODO: Produktname]]**: the product name "German AI & Data Events" (`SITE_NAME`) is shown in English in both languages for now. Decide whether the German site gets a German name; change it in `config/country.mjs`.
 13. **Buttondown** (newsletter `german-data-events`, wired in code): the signup form posts to `https://buttondown.com/api/emails/embed-subscribe/german-data-events` with exactly one language tag (`lang-de` or `lang-en`, a Deutsch/English radio defaulting to the page language) plus optional `city-<slug>` / `format-<slug>` tags. Every Monday `daily-refresh.yml` runs `scripts/build-digest.mjs`, which creates **two drafts** (German: subscribers without `lang-en`; English: subscribers with `lang-en`). It never sends anything. Still to do in Buttondown:
     - Add the repository secret `BUTTONDOWN_API_KEY` (until then the Monday step skips itself).
     - Sender name / from address, and the newsletter's public details.

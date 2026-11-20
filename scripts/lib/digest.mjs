@@ -15,11 +15,11 @@ import {
 	formatTag,
 } from '../../src/lib/newsletter.mjs';
 import { blurbFor } from '../../src/lib/blurb.mjs';
-import { SITE_URL } from '../../config/country.mjs';
+import { SITE_URL, SITE_NAME } from '../../config/country.mjs';
 import { displayCity, formatLabel, localizeCost, dateSpine, INTL_LOCALE } from '../../src/i18n/index.ts';
 
-// Newsletter name in the masthead (digest only; the website's SITE_NAME is unchanged).
-export const NEWSLETTER_NAME = 'German Data Events';
+// Newsletter name in the masthead: the product name.
+export const NEWSLETTER_NAME = SITE_NAME;
 
 export const LOCALES = ['de', 'en'];
 export const LANG_TAGS = { de: 'lang-de', en: 'lang-en' };

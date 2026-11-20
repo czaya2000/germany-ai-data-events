@@ -21,7 +21,7 @@ Written 20 Nov 2026. Facts that can drift are marked with their source.
 
 ## 1. Goal
 
-A public site, **"German AI & Data Events"** (working name), listing upcoming AI and data events in Germany: meetups, conferences, workshops, networking, webinars. It is the Swiss product with Germany's cities and sources: browse by city and format, sign up for a weekly email digest (Buttondown, later), subscribe to calendar feeds (ICS / Google Calendar). It refreshes itself every day.
+A public site, **"German Data Events"**, listing upcoming AI and data events in Germany: meetups, conferences, workshops, networking, webinars. It is the Swiss product with Germany's cities and sources: browse by city and format, sign up for a weekly email digest (Buttondown, later), subscribe to calendar feeds (ICS / Google Calendar). It refreshes itself every day.
 
 The decisive difference from the Swiss edition is **how the daily refresh works**. The Swiss run is one long agent session (Opus, up to 150 turns, roughly 5 USD a day of plan-equivalent usage by the Swiss repo's own estimate) that browses sources with WebFetch. The German run is **a deterministic Node pipeline that fetches, normalises, filters and dedupes in code**, and asks Claude only about **new** candidates, in one short Claude Code step with a small turn cap that reads a prepared file and writes one output file.
 

@@ -10,8 +10,8 @@ export const TIMEZONE = 'Europe/Berlin';
 export const CURRENCY = 'EUR';
 export const LOCALE = 'en_DE';
 
-export const SITE_NAME = 'German AI & Data Events';
-export const SITE_SHORT = 'German AI & Data Events';
+export const SITE_NAME = 'German Data Events';
+export const SITE_SHORT = 'German Data Events';
 
 // Custom domain. public/CNAME must match the host. Keep INDEXABLE false until go-live.
 const DEFAULT_SITE_URL = 'https://germandataevents.com';

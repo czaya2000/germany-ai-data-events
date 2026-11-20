@@ -1,4 +1,4 @@
-### Daily refresh for the German AI & Data Events site
+### Daily refresh for the German Data Events site
 #
 # Flow: prepare (Node: fetch, filter, dedupe, ledger) -> Claude step (only if there is
 # new work) -> apply (Node: verify, merge, archive, validate) -> commit data -> build -> Monday digest drafts -> deploy.
