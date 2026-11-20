@@ -28,6 +28,9 @@ export function withBase(path: string): string {
 
 export type EventEntry = CollectionEntry<'events'>;
 
+export { blurbFor } from './blurb.mjs';
+export type BlurbLocale = 'de' | 'en';
+
 /** Registration links carry UTM tags so organisers can see in their own
     analytics how many registrations this site sent them — the number a
     featured listing is eventually sold on. Existing params and fragments

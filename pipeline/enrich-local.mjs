@@ -88,7 +88,7 @@ export const claudeArgs = (o) => ['-p', '--model', o.model, '--max-turns', Strin
 export const claudeCommand = (args) => ['claude', args];
 
 /** Run `claude -p` with the prompt on stdin (no shell quoting issues). Resolves { code, json, stderr, ms }. */
-function runClaude(prompt, o) {
+export function runClaude(prompt, o) {
 	return new Promise((resolve) => {
 		const t0 = Date.now();
 		const [cmd, cmdArgs] = claudeCommand(claudeArgs(o));

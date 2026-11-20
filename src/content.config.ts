@@ -15,6 +15,8 @@ const eventSchema = z.object({
 	url: z.string().url(),
 	source: z.string(),
 	blurb: z.string(),
+	blurb_en: z.string().optional(),
+	blurb_de: z.string().optional(),
 	firstSeen: z.string(),
 });
 

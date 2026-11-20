@@ -99,7 +99,7 @@ test('apply: good output is merged, rejected/deferred are ledgered, unanswered c
 	assert.equal(e.city, 'Berlin');
 	assert.equal(e.format, 'Meetup');
 	assert.equal(e.firstSeen, TODAY);
-	assert.deepEqual(Object.keys(e).sort(), ['blurb', 'city', 'cost', 'date', 'firstSeen', 'format', 'id', 'organiser', 'source', 'title', 'topics', 'url'].sort());
+	assert.deepEqual(Object.keys(e).sort(), ['blurb', 'blurb_en', 'city', 'cost', 'date', 'firstSeen', 'format', 'id', 'organiser', 'source', 'title', 'topics', 'url'].sort());
 	assert.equal(summary.accepted, 1);
 	assert.equal(summary.rejected, 1);
 	assert.equal(summary.deferred, 2); // low confidence + no city

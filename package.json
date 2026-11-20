@@ -20,6 +20,7 @@
     "pipeline:fetch": "node pipeline/prepare.mjs --dry-run",
     "pipeline:prepare": "node pipeline/prepare.mjs",
     "pipeline:enrich-local": "node pipeline/enrich-local.mjs",
+    "pipeline:backfill-de": "node pipeline/backfill-blurbs.mjs",
     "pipeline:apply": "node pipeline/apply.mjs",
     "test": "node --test \"pipeline/test/*.test.mjs\""
   },

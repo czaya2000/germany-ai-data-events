@@ -28,7 +28,8 @@ const REQUIRED = [
 	'topics', 'organiser', 'cost', 'url', 'source', 'blurb', 'firstSeen',
 ];
 
-const BLURB_MAX = 220;
+const BLURB_MAX = 240;
+const BLURB_MIN = 20;
 const requireFresh =process.argv.includes('--require-fresh');
 const MAX_SCAN_AGE_HOURS = 6;
 
@@ -90,9 +91,16 @@ events.forEach((event, i) => {
 		else if (event.topics.length < 1 || event.topics.length > 4) fail(`${label}: topics must have 1 to 4 entries`);
 	}
 
-	if (typeof event.blurb === 'string') {
-		if (event.blurb.length > BLURB_MAX) fail(`${label}: blurb is ${event.blurb.length} characters (max ${BLURB_MAX})`);
-		if (/https?:\/\/|www\./i.test(event.blurb)) fail(`${label}: blurb contains a URL`);
+	for (const key of ['blurb', 'blurb_en', 'blurb_de']) {
+		const text = event[key];
+		if (text === undefined) continue;
+		if (typeof text !== 'string') { fail(`${label}: ${key} must be a string`); continue; }
+		if (text.length > BLURB_MAX) fail(`${label}: ${key} is ${text.length} characters (max ${BLURB_MAX})`);
+		if (key !== 'blurb' && text.length < BLURB_MIN) fail(`${label}: ${key} is ${text.length} characters (min ${BLURB_MIN})`);
+		if (/https?:\/\/|www\./i.test(text)) fail(`${label}: ${key} contains a URL`);
+	}
+	if (event.blurb_de && event.blurb_en && event.blurb_de.trim().toLowerCase() === event.blurb_en.trim().toLowerCase()) {
+		fail(`${label}: blurb_de is identical to blurb_en`);
 	}
 
 	for (const field of ['date', 'endDate', 'firstSeen']) {

@@ -83,7 +83,7 @@ export function applyEnrichment({ root = ROOT, today = berlinToday(), windowDays
 
 	// ---- accepted feed candidates, then verified scrape extractions ----
 	const toAdd = v.accepted.map((a) => ({
-		cand: a.cand, city: a.city, format: a.format, topics: a.topics, blurb: a.blurb, cost: a.cost,
+		cand: a.cand, city: a.city, format: a.format, topics: a.topics, blurb: a.blurb, blurb_en: a.blurb_en, blurb_de: a.blurb_de, cost: a.cost,
 		source: a.cand.sourceLabel, trust: a.cand.trust,
 	}));
 	const sourceBySafe = new Map(sources.filter((s) => s.type === 'scrape').map((s) => [safeId(s.id), s]));
@@ -105,7 +105,7 @@ export function applyEnrichment({ root = ROOT, today = berlinToday(), windowDays
 			}, { id: src.id, label: src.label, type: 'scrape', trust, country: 'DE' });
 			if (!cand) { counts.add('extract:invalid:schema'); continue; }
 			if (lookup(ledger, cand)) { counts.add('extract:known'); continue; }
-			toAdd.push({ cand, city: e.city, format: e.format, topics: e.topics, blurb: e.blurb, cost: e.cost, source: src.label, trust, extracted: true });
+			toAdd.push({ cand, city: e.city, format: e.format, topics: e.topics, blurb: e.blurb, blurb_en: e.blurb_en, blurb_de: e.blurb_de, cost: e.cost, source: src.label, trust, extracted: true });
 		}
 	}
 
@@ -134,7 +134,9 @@ export function applyEnrichment({ root = ROOT, today = berlinToday(), windowDays
 			cost: a.cost,
 			url: c.url,
 			source: a.source,
-			blurb: a.blurb,
+			blurb: a.blurb_en ?? a.blurb,
+			blurb_en: a.blurb_en ?? a.blurb,
+			...(a.blurb_de ? { blurb_de: a.blurb_de } : {}),
 			firstSeen: today,
 		};
 		ev.id = makeId(ev, taken);
@@ -142,6 +144,7 @@ export function applyEnrichment({ root = ROOT, today = berlinToday(), windowDays
 		added.push(ev);
 		record(ledger, c, 'accepted', { today, eventId: ev.id });
 		counts.add(a.extracted ? 'accepted:page' : 'accepted:feed');
+		if (!a.blurb_de) counts.add('blurb-de-missing');
 		if (a.extracted) fromPages++;
 	}
 	for (const { cand, reason } of v.rejected) record(ledger, cand, 'rejected', { today, reason });

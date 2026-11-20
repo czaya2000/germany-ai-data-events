@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "enrichment.schema.json",
-	"description": "Shape of work/enrichment.json written by the Claude step. Enforced by pipeline/lib/verify.mjs (a small validator for this keyword subset). Items are validated one by one: an invalid item is dropped and counted, the rest of the file is still used.",
+	"description": "Shape of work/enrichment.json written by the Claude step. Enforced by pipeline/lib/verify.mjs (a small validator for this keyword subset). Each item needs blurb_en (a legacy blurb is read as blurb_en; checked in verify.mjs, not here) and normally blurb_de. Items are validated one by one: an invalid item is dropped and counted, the rest of the file is still used.",
 	"type": "object",
 	"required": ["results"],
 	"properties": {
@@ -21,6 +21,8 @@
 			"items": { "type": "string", "minLength": 1, "maxLength": 40 }
 		},
 		"blurb": { "type": "string", "minLength": 1, "maxLength": 220 },
+		"blurb_en": { "type": "string", "minLength": 1, "maxLength": 220 },
+		"blurb_de": { "type": "string", "minLength": 20, "maxLength": 240 },
 		"result": {
 			"type": "object",
 			"additionalProperties": false,
@@ -34,13 +36,15 @@
 				"city": { "type": ["string", "null"], "maxLength": 40 },
 				"topics": { "$ref": "#/definitions/topics" },
 				"blurb": { "$ref": "#/definitions/blurb" },
+				"blurb_en": { "$ref": "#/definitions/blurb_en" },
+				"blurb_de": { "$ref": "#/definitions/blurb_de" },
 				"cost": { "$ref": "#/definitions/cost" }
 			}
 		},
 		"extractedEvent": {
 			"type": "object",
 			"additionalProperties": false,
-			"required": ["title", "date", "city", "organiser", "url", "format", "topics", "blurb"],
+			"required": ["title", "date", "city", "organiser", "url", "format", "topics"],
 			"properties": {
 				"title": { "type": "string", "minLength": 3, "maxLength": 200 },
 				"date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
@@ -53,7 +57,9 @@
 				"cost": { "$ref": "#/definitions/cost" },
 				"format": { "$ref": "#/definitions/format" },
 				"topics": { "$ref": "#/definitions/topics" },
-				"blurb": { "$ref": "#/definitions/blurb" }
+				"blurb": { "$ref": "#/definitions/blurb" },
+				"blurb_en": { "$ref": "#/definitions/blurb_en" },
+				"blurb_de": { "$ref": "#/definitions/blurb_de" }
 			}
 		}
 	}
