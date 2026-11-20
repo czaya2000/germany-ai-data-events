@@ -148,6 +148,7 @@ export const de: Messages = {
 		city: 'Stadt',
 		venue: 'Ort',
 		organiser: 'Veranstalter',
+		organiserNotListed: 'Nicht angegeben',
 		format: 'Format',
 		cost: 'Kosten',
 		topics: 'Themen',

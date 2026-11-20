@@ -145,6 +145,7 @@ export const en = {
 		city: 'City',
 		venue: 'Venue',
 		organiser: 'Organiser',
+		organiserNotListed: 'Not listed',
 		format: 'Format',
 		cost: 'Cost',
 		topics: 'Topics',

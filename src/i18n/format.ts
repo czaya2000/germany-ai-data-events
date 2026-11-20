@@ -1,7 +1,7 @@
 /* Locale-aware formatting of dates, weekdays, months, costs and numbers.
    No Astro imports, so the node tests can load it. Stored data stays English
    ("Free", "EUR 49"); it is localised here at render time only. */
-import { TIMEZONE } from '../../config/country.mjs';
+import { TIMEZONE, NOT_LISTED } from '../../config/country.mjs';
 
 export type Locale = 'de' | 'en';
 
@@ -106,7 +106,19 @@ const euro = (locale: Locale, amount: string) => {
 	}).format(n);
 };
 
-const AMOUNT = String.raw`(\d[\d,']*(?:\.\d{1,2})?)`;
+/** True when the stored organiser is the literal "Not listed" (or empty): no real organiser is known. */
+export function organiserUnknown(organiser: string | undefined | null): boolean {
+	const o = (organiser ?? '').trim();
+	return !o || o.toLowerCase() === NOT_LISTED.toLowerCase();
+}
+
+/** Organiser for display: the stored value; "Not listed" shows as "Nicht angegeben" in German. */
+export function localizeOrganiser(organiser: string, locale: Locale = 'en'): string {
+	if (!organiserUnknown(organiser)) return organiser;
+	return locale === 'de' ? 'Nicht angegeben' : NOT_LISTED;
+}
+
+const AMOUNT =String.raw`(\d[\d,']*(?:\.\d{1,2})?)`;
 
 /**
  * The cost text for display. Costs are stored in English ("Free", "Not listed",

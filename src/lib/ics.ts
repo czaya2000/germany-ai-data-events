@@ -205,7 +205,7 @@ function eventLines(e: IcsEvent, dtstamp: string, locale: Locale): string[] {
 	if (longSpan && end) {
 		desc.push(s.runsUntil(shortDate.format(new Date(`${end}T00:00:00Z`))));
 	}
-	desc.push(s.organiser(e.organiser));
+	if (e.organiser && e.organiser.toLowerCase() !== 'not listed') desc.push(s.organiser(e.organiser));
 	desc.push(s.details(e.pageUrl));
 
 	lines.push(`SUMMARY:${escapeText(e.title)}`);

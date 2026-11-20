@@ -23,7 +23,7 @@ import {
 import { eventDateTimes, parseTime } from '../lib/ics';
 import { cityHubFor, isHubLive } from '../lib/hubs.mjs';
 import { COUNTRY_CODE } from '../../config/country.mjs';
-import { t, hubText, displayCity, formatLabel, localizeCost, type Locale } from '../i18n';
+import { t, hubText, displayCity, formatLabel, localizeCost, organiserUnknown, type Locale } from '../i18n';
 import { localePath, hubPath, LOCALE_PREFIX } from '../i18n/paths.mjs';
 
 /* One event page, in either language (src/pages/events/[slug].astro and
@@ -106,11 +106,15 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 					address: { '@type': 'PostalAddress', addressLocality: placeName(cityLabel), addressCountry: COUNTRY_CODE },
 				},
 		description: blurb.text,
-		organizer: {
-			'@type': 'Organization',
-			name: e.organiser,
-			...(organiserUrl(e.url) ? { url: organiserUrl(e.url) } : {}),
-		},
+		...(organiserUnknown(e.organiser)
+			? {}
+			: {
+					organizer: {
+						'@type': 'Organization',
+						name: e.organiser,
+						...(organiserUrl(e.url) ? { url: organiserUrl(e.url) } : {}),
+					},
+				}),
 		url: pageUrl,
 		offers: {
 			'@type': 'Offer',
@@ -195,7 +199,7 @@ const structuredData: Record<string, unknown>[] = ended ? [] : [
 					}
 
 					<dt>{s.organiser}</dt>
-					<dd>{e.organiser}</dd>
+					<dd>{organiserUnknown(e.organiser) ? s.organiserNotListed : e.organiser}</dd>
 
 					<dt>{s.format}</dt>
 					<dd>{formatText}</dd>

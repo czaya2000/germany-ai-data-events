@@ -7,7 +7,7 @@ import type { Messages } from './en.ts';
 import type { Locale } from './format.ts';
 
 export type { Messages, Locale };
-export { INTL_LOCALE, localizeCost, formatDateRange, formatDateCompact, dateSpine, formatNumber } from './format.ts';
+export { INTL_LOCALE, localizeCost, localizeOrganiser, organiserUnknown, formatDateRange, formatDateCompact, dateSpine, formatNumber } from './format.ts';
 
 const TABLES: Record<Locale, Messages> = { de, en };
 

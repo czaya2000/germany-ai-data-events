@@ -1,6 +1,7 @@
 // Candidate shape, URL canonicalisation, ledger keys, text cleanup, German/English date parsing.
 import { fold, resolveCity } from './city.mjs';
 import { MONTHS } from './time.mjs';
+import { AGGREGATOR_DOMAINS, NOT_LISTED } from '../../config/country.mjs';
 
 export function stripHtml(html) {
 	return String(html ?? '')
@@ -100,9 +101,15 @@ export function registrableDomain(url) {
 	return parts.slice(MULTI_TLD.has(last2) ? -3 : -2).join('.');
 }
 
-/** Organiser for a stored event: the cleaned organiser, else the registrable domain of the event url, else ''. */
+/** Organiser for a stored event: the cleaned organiser; else the registrable domain of the url, unless that is an
+    aggregator platform (config AGGREGATOR_DOMAINS), then the literal "Not listed"; '' with no usable url.
+    A stored bare aggregator domain (earlier fallback output) also becomes "Not listed". */
 export function organiserOrDomain(organiser, url) {
-	return cleanOrganiser(organiser) || registrableDomain(url);
+	const cleaned = cleanOrganiser(organiser);
+	if (cleaned) return AGGREGATOR_DOMAINS.includes(cleaned.toLowerCase().replace(/^www\./, '')) ? NOT_LISTED : cleaned;
+	const d = registrableDomain(url);
+	if (!d) return '';
+	return AGGREGATOR_DOMAINS.includes(d) ? NOT_LISTED : d;
 }
 
 /** Build a Candidate from loose fields. Returns null when title/start are missing. */

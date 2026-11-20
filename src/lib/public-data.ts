@@ -95,7 +95,7 @@ function eventLine(e: PublicEvent, withDescription: boolean): string {
 	const series =
 		days >= SERIES_DAYS ? " Held on several dates in this period, not every day: the organiser's page has the dates." : '';
 	const description = withDescription ? ` ${e.description}` : '';
-	return `- [${e.title}](${e.url}): ${e.dateLabel}${time} · ${where} · ${e.format} · ${e.cost} · by ${e.organiser}.${description}${series}`;
+	return `- [${e.title}](${e.url}): ${e.dateLabel}${time} · ${where} · ${e.format} · ${e.cost}${/^not listed$/i.test(e.organiser) ? '' : ` · by ${e.organiser}`}.${description}${series}`;
 }
 
 /** The events as markdown bullets under month headings. Events that started

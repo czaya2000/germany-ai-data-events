@@ -1,6 +1,6 @@
 import { SITE_NAME, SITE_URL, blurbFor, eventUrl, formatDateRange, getUpcomingEvents } from './events';
 import { SITE_SCOPE } from './public-data';
-import { t, displayCity, formatLabel, localizeCost, type Locale } from '../i18n';
+import { t, displayCity, formatLabel, localizeCost, organiserUnknown, type Locale } from '../i18n';
 import { LOCALE_PREFIX } from '../i18n/paths.mjs';
 
 /* RSS 2.0 of upcoming events, newest listings first (by firstSeen), so a
@@ -26,7 +26,7 @@ export async function buildRss(locale: Locale): Promise<string> {
 		const online = /^online\b/i.test(e.city);
 		const where = online ? s.ics.online : [e.venue, city].filter(Boolean).join(', ');
 		const blurb = blurbFor(e, locale).text;
-		const summary = `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${where} · ${formatLabel(e.format, locale)} · ${localizeCost(e.cost, locale)}. ${blurb} ${s.ics.organiser(e.organiser)}.`;
+		const summary = `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${where} · ${formatLabel(e.format, locale)} · ${localizeCost(e.cost, locale)}. ${blurb}${organiserUnknown(e.organiser) ? '' : ` ${s.ics.organiser(e.organiser)}.`}`;
 		return [
 			'    <item>',
 			`      <title>${esc(`${e.title} (${dateLabel}, ${city})`)}</title>`,

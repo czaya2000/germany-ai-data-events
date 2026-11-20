@@ -34,6 +34,28 @@ test('registrableDomain and organiserOrDomain', () => {
 	assert.equal(organiserOrDomain('', ''), '');
 });
 
+test('organiserOrDomain: aggregator domains fall back to "Not listed", real sites keep the domain', () => {
+	for (const url of [
+		'https://aieventlist.ai/e/1', 'https://agentconfs.com/x', 'https://www.eventbrite.de/e/123', 'https://eventbrite.co.uk/e/1',
+		'https://dev.events/conferences/x', 'https://brainberg.com/e', 'https://hackevents.net/y', 'https://allai.events/z',
+		'https://lu.ma/abc', 'https://luma.com/abc', 'https://www.meetup.com/g/events/1/',
+	]) assert.equal(organiserOrDomain('', url), 'Not listed', url);
+	assert.equal(organiserOrDomain('Going: 0', 'https://luma.com/x'), 'Not listed');
+	assert.equal(organiserOrDomain('aieventlist.ai', 'https://aieventlist.ai/e/1'), 'Not listed'); // old stored fallback
+	assert.equal(organiserOrDomain('Not listed', 'https://hessian.ai/'), 'Not listed'); // idempotent
+	assert.equal(organiserOrDomain('', 'https://hessian.ai/event'), 'hessian.ai');
+	assert.equal(organiserOrDomain('', 'https://www.apiconference.net/x'), 'apiconference.net');
+	assert.equal(organiserOrDomain('Real Org', 'https://luma.com/x'), 'Real Org');
+});
+
+test('organiser display: Not listed is localised, real names untouched', async () => {
+	const { localizeOrganiser, organiserUnknown } = await import('../../src/i18n/format.ts');
+	assert.equal(localizeOrganiser('Not listed', 'de'), 'Nicht angegeben');
+	assert.equal(localizeOrganiser('Not listed', 'en'), 'Not listed');
+	assert.equal(localizeOrganiser('hessian.ai', 'de'), 'hessian.ai');
+	assert.ok(organiserUnknown('Not listed') && organiserUnknown('') && !organiserUnknown('X'));
+});
+
 test('makeCandidate cleans the organiser', () => {
 	const c = makeCandidate({ title: 'T', start: '2026-12-01', organiser: 'Going: 0', city: 'Berlin' }, src());
 	assert.equal(c.organiser, '');

@@ -19,6 +19,7 @@ for (const file of files) {
 	let touched = false;
 	for (const ev of list) {
 		const organiser = organiserOrDomain(ev.organiser, ev.url);
+		// Also turns an aggregator domain stored by the old fallback (aieventlist.ai, luma.com, ...) into "Not listed".
 		if (organiser && organiser !== ev.organiser) {
 			orgChanges.push(`${ev.id}: "${ev.organiser}" -> "${organiser}"`);
 			ev.organiser = organiser;

@@ -113,3 +113,14 @@ export const PLACE_TO_CITY = {
 export const WINDOW_DAYS = 120;
 export const MAX_NEW_CANDIDATES_PER_RUN = 120;
 export const MAX_PAGES_PER_RUN = 4;
+
+// Aggregator / ticketing / listing platforms. An event whose organiser is unknown and whose url is on one of
+// these gets the literal stored value NOT_LISTED (never the platform domain). Real organiser sites keep the
+// registrable-domain fallback. Matched against the registrable domain of the event url.
+export const NOT_LISTED = 'Not listed';
+export const AGGREGATOR_DOMAINS = [
+	'aieventlist.ai', 'agentconfs.com', 'eventbrite.de', 'eventbrite.com', 'eventbrite.co.uk', 'eventbrite.at', 'eventbrite.ch',
+	'eventbrite.fr', 'eventbrite.nl', 'eventbrite.es', 'eventbrite.it', 'dev.events', 'brainberg.com', 'hackevents.net',
+	'hackevents.org', 'allai.events', 'luma.com', 'lu.ma', 'meetup.com', 'confs.tech', 'bookwhen.com', 'tickettailor.com',
+	'eventfrog.ch', 'xing.com', 'linkedin.com', 'facebook.com', 'konfhub.com', 'sessionize.com', 'ti.to', 'tito.io',
+];
