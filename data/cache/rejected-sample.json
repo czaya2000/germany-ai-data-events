@@ -1,0 +1,766 @@
+{
+	"dedupeMerges": [
+		{
+			"kept": "AWS UG Frankfurt with Grafana UG: Keycloak SLIs & Traffic Data in Grafana",
+			"merged": "Grafana & Friends Frankfurt: Keycloak SLIs & Traffic Data in Grafana",
+			"date": "2026-11-26",
+			"sources": [
+				"meetup:fra_aws",
+				"meetup:grafana-friends-frankfurt"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Berlin",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:big-data-developers-in-berlin"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Frankfurt & Online",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibmpoweraifrankfurt"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Ehningen",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibm-developers"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Wien",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibm-developers"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Zürich",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibm-developers"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Cologne",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibm-developers"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Frankfurt",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibm-developers"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Berlin",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibm-developers"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Ehningen & Online",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:big-data-developers-in-munich"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Köln & Online",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"meetup:ibm-powerai-dusseldorf"
+			]
+		},
+		{
+			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
+			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
+			"date": "2026-11-20",
+			"sources": [
+				"meetup:ai-beavers",
+				"luma-hamburg"
+			]
+		},
+		{
+			"kept": "DATA festival 2027",
+			"merged": "DATA festival Munich 2027 | Data & AI Event",
+			"date": "2027-03-17",
+			"sources": [
+				"deutschlandki",
+				"agentconfs"
+			]
+		},
+		{
+			"kept": "AI Coding Summit Berlin",
+			"merged": "AI Coding Summit Berlin Edition",
+			"date": "2026-12-04",
+			"sources": [
+				"meetup:berlinai",
+				"agentconfs"
+			]
+		},
+		{
+			"kept": "AI.SUMMIT 2026",
+			"merged": "AI.SUMMIT 2026 Hamburg",
+			"date": "2026-11-24",
+			"sources": [
+				"deutschlandki",
+				"agentconfs"
+			]
+		},
+		{
+			"kept": "MLcon Berlin 2026",
+			"merged": "MLCon Berlin 2026",
+			"date": "2026-11-16",
+			"sources": [
+				"deutschlandki",
+				"agentconfs"
+			]
+		},
+		{
+			"kept": "AI Engineering Summit 2026",
+			"merged": "AI Engineering Summit",
+			"date": "2026-11-16",
+			"sources": [
+				"deutschlandki",
+				"confstech"
+			]
+		},
+		{
+			"kept": "Azure DUS#53: 80 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
+			"merged": "Azure DUS#53: 0 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
+			"date": "2026-11-25",
+			"sources": [
+				"meetup:azure-dusseldorf-meetup",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Berlin",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "AI Series: UCL - Robert McCarthy",
+			"merged": "BLISS AI Speaker Series: The Importance of Model Specs and Constitutions for AI Safety - Robert McCarthy",
+			"date": "2027-01-12",
+			"sources": [
+				"meetup:bliss-speaker-series",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "Azure DUS#53: 80 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
+			"merged": "Azure DUS#53: 0 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
+			"date": "2026-11-25",
+			"sources": [
+				"meetup:azure-dusseldorf-meetup",
+				"hackevents-data"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
+			"merged": "IBM Bob Coding Watch Party in Berlin",
+			"date": "2026-12-01",
+			"sources": [
+				"meetup:ibmpoweraiberlin",
+				"hackevents-data"
+			]
+		},
+		{
+			"kept": "IBM Bob Coding Watch Party in Köln & Online",
+			"merged": "Bob DACH Community Gathering & Coding Watch Party Cologne",
+			"date": "2026-12-01",
+			"sources": [
+				"hackevents-ai",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "MLcon Berlin 2026",
+			"merged": "MLConf Berlin 2026",
+			"date": "2026-11-16",
+			"sources": [
+				"deutschlandki",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "MLcon Berlin 2026",
+			"merged": "MLConf Berlin 2026",
+			"date": "2026-11-16",
+			"sources": [
+				"deutschlandki",
+				"hackevents-data"
+			]
+		},
+		{
+			"kept": "AWS UG Frankfurt with Grafana UG: Keycloak SLIs & Traffic Data in Grafana",
+			"merged": "Grafana & Friends Frankfurt: Keycloak SLIs & Traffic Data in Grafana",
+			"date": "2026-11-26",
+			"sources": [
+				"meetup:fra_aws",
+				"brainberg"
+			]
+		},
+		{
+			"kept": "AI Coding Summit Berlin",
+			"merged": "AI Coding Summit - Berlin Edition",
+			"date": "2026-12-04",
+			"sources": [
+				"meetup:berlinai",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "Azure DUS#53: 80 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
+			"merged": "Azure DUS#53: 0 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
+			"date": "2026-11-25",
+			"sources": [
+				"meetup:azure-dusseldorf-meetup",
+				"brainberg"
+			]
+		},
+		{
+			"kept": "AI Engineering Summit 2026",
+			"merged": "AI Engineering Summit Berlin 2026",
+			"date": "2026-11-16",
+			"sources": [
+				"deutschlandki",
+				"aieventlist-berlin"
+			]
+		},
+		{
+			"kept": "DATA festival 2027",
+			"merged": "Data Festival 2027",
+			"date": "2027-03-17",
+			"sources": [
+				"deutschlandki",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "DATA festival 2027",
+			"merged": "Data Festival 2027",
+			"date": "2027-03-17",
+			"sources": [
+				"deutschlandki",
+				"hackevents-data"
+			]
+		},
+		{
+			"kept": "Mistral Meetup NRW: Show & Tell",
+			"merged": "Mistral Meetup NRW — Show & Tell (Köln)",
+			"date": "2026-12-08",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne"
+			]
+		},
+		{
+			"kept": "API Conference Berlin 2026",
+			"merged": "API Conference 2026",
+			"date": "2026-11-16",
+			"sources": [
+				"agentconfs",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "AI Engineering Summit 2026",
+			"merged": "AI Engineering Summit Berlin 2026",
+			"date": "2026-11-16",
+			"sources": [
+				"deutschlandki",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "React Day Berlin - Build apps, not walls (for the AI era)",
+			"merged": "React Day Berlin 2026",
+			"date": "2026-12-04",
+			"sources": [
+				"meetup:react-berlin-meetup",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "Mistral Meetup NRW: Show & Tell",
+			"merged": "Mistral Meetup NRW — Show & Tell (Köln)",
+			"date": "2026-12-08",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "AI Tinkerers Düsseldorf — Second Meetup (AI Week)",
+			"merged": "AI Tinkerers Düsseldorf — Second Meetup | AI Week",
+			"date": "2026-11-25",
+			"sources": [
+				"aieventlist-europe",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "DevFest Munich 2026 - Munich Innovates: AI, Cloud & Beyond",
+			"merged": "DevFest Munich 2026 — Munich Innovates: AI, Cloud & Beyond",
+			"date": "2026-12-05",
+			"sources": [
+				"meetup:gdg-munich",
+				"aieventlist-munich"
+			]
+		},
+		{
+			"kept": "DevFest Münster 2026 | Agentic AI Hackathon",
+			"merged": "DevFest Münster 2026: Agentic AI Hackathon",
+			"date": "2026-11-21",
+			"sources": [
+				"meetup:google-developers-group-munster",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "prompt:UX 2027",
+			"merged": "prompt:UX Conference 2027",
+			"date": "2027-02-24",
+			"sources": [
+				"agentconfs",
+				"aieventlist-berlin"
+			]
+		},
+		{
+			"kept": "DevFest Munich 2026 - Munich Innovates: AI, Cloud & Beyond",
+			"merged": "DevFest Munich 2026 — Munich Innovates: AI, Cloud & Beyond",
+			"date": "2026-12-05",
+			"sources": [
+				"meetup:gdg-munich",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "KI-X PR 2027",
+			"merged": "KI-X PR 2027 — Die KI-Konferenz für Kommunikation",
+			"date": "2027-03-02",
+			"sources": [
+				"deutschlandki",
+				"aieventlist-berlin"
+			]
+		},
+		{
+			"kept": "DATA festival 2027",
+			"merged": "DATA festival Munich 2027",
+			"date": "2027-03-17",
+			"sources": [
+				"deutschlandki",
+				"aieventlist-munich"
+			]
+		},
+		{
+			"kept": "AI Coding Hackathon November 2026 Köln",
+			"merged": "AI Coding Hackathon November 2026 — STARTPLATZ Köln",
+			"date": "2026-11-20",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne"
+			]
+		},
+		{
+			"kept": "AI Coding Summit Berlin",
+			"merged": "AI Coding Summit — Berlin Edition 2026",
+			"date": "2026-12-04",
+			"sources": [
+				"meetup:berlinai",
+				"aieventlist-berlin"
+			]
+		},
+		{
+			"kept": "Bob DACH Community Gathering & Coding Watch Party Frankfurt",
+			"merged": "IBM Bob Coding Watch Party in Frankfurt & Online",
+			"date": "2026-12-01",
+			"sources": [
+				"hackevents-ai",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "AI.SUMMIT 2026",
+			"merged": "AI.SUMMIT 2026 — Corporate Edition",
+			"date": "2026-11-24",
+			"sources": [
+				"deutschlandki",
+				"aieventlist-hamburg"
+			]
+		},
+		{
+			"kept": "DATA festival 2027",
+			"merged": "DATA festival Munich 2027",
+			"date": "2027-03-17",
+			"sources": [
+				"deutschlandki",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "DevFest Münster 2026 | Agentic AI Hackathon",
+			"merged": "DevFest Münster 2026",
+			"date": "2026-11-21",
+			"sources": [
+				"meetup:google-developers-group-munster",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "AI Coding Summit Berlin",
+			"merged": "AI Coding Summit — Berlin Edition 2026",
+			"date": "2026-12-04",
+			"sources": [
+				"meetup:berlinai",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "AI Coding Hackathon November 2026 Köln",
+			"merged": "AI Coding Hackathon November 2026 — STARTPLATZ Köln",
+			"date": "2026-11-20",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
+			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
+			"date": "2026-11-20",
+			"sources": [
+				"meetup:ai-beavers",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
+			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
+			"date": "2026-11-27",
+			"sources": [
+				"meetup:ai-beavers",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
+			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
+			"date": "2026-12-04",
+			"sources": [
+				"meetup:ai-beavers",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
+			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
+			"date": "2026-12-11",
+			"sources": [
+				"meetup:ai-beavers",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
+			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
+			"date": "2026-12-18",
+			"sources": [
+				"meetup:ai-beavers",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "AI Nights | INSPIRE ✨ #06 - Anniversary!",
+			"merged": "AI Nights Nürnberg | INSPIRE #06 – Anniversary!",
+			"date": "2026-11-26",
+			"sources": [
+				"meetup:ai-nights-nurnberg",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "AI Nights | INSPIRE ✨ #08 - Spring!",
+			"merged": "AI Nights Nürnberg | INSPIRE #08 – Spring!",
+			"date": "2027-03-11",
+			"sources": [
+				"meetup:ai-nights-nurnberg",
+				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "Robotics Symposium 2026",
+			"merged": "Robotics Symposium 2026: From Bench to Bedside",
+			"date": "2026-12-02",
+			"sources": [
+				"hackevents-ai",
+				"brainberg"
+			]
+		},
+		{
+			"kept": "AI Nights | INSPIRE ✨ #07 - Relaunch!",
+			"merged": "AI Nights Nürnberg | INSPIRE #07 – Relaunch!",
+			"date": "2027-01-28",
+			"sources": [
+				"meetup:ai-nights-nurnberg",
+				"aieventlist-europe"
+			]
+		}
+	],
+	"keywordRejects": [
+		{
+			"title": "Microsoft Ignite Recap 2026",
+			"date": "2026-12-01",
+			"source": "hackevents-ai"
+		},
+		{
+			"title": "Community Lunch",
+			"date": "2026-12-16",
+			"source": "hackevents-ai"
+		},
+		{
+			"title": "Zertifikatskurs: Weiterqualifizierung als Innovation Expert",
+			"date": "2027-01-21",
+			"source": "hackevents-ai"
+		},
+		{
+			"title": "Sunday Tech Coffee Meetup",
+			"date": "2026-11-22",
+			"source": "brainberg"
+		},
+		{
+			"title": "Meeting C++ 2026",
+			"date": "2026-11-26",
+			"source": "brainberg"
+		},
+		{
+			"title": "36. Münster macht Agil",
+			"date": "2026-11-26",
+			"source": "brainberg"
+		},
+		{
+			"title": "Monthly Meet Up",
+			"date": "2026-12-01",
+			"source": "brainberg"
+		},
+		{
+			"title": "Bochum Weinnachtsmarkt w/ Devs",
+			"date": "2026-12-08",
+			"source": "brainberg"
+		},
+		{
+			"title": "Men & Women: Facing the Pain",
+			"date": "2026-11-22",
+			"source": "luma-berlin"
+		},
+		{
+			"title": "Career Crit: Apply your hard won design skills to your career",
+			"date": "2026-11-26",
+			"source": "luma-berlin"
+		},
+		{
+			"title": "LAGREE X RUN powered by On",
+			"date": "2026-11-28",
+			"source": "luma-munich"
+		},
+		{
+			"title": "Green.Lab x Little Ashé (ab 7 Jahre)",
+			"date": "2026-11-28",
+			"source": "luma-hamburg"
+		},
+		{
+			"title": "Design Thinking 2.0: Train-the-Trainer für moderne Innovationsworkshops",
+			"date": "2027-03-11",
+			"source": "bwcon"
+		},
+		{
+			"title": "Hands-on workshop: Everyone wants ROI. How can I figure it out?",
+			"date": "2026-11-23",
+			"source": "meetup:producttank-nuernberg"
+		},
+		{
+			"title": "Weekly Worky",
+			"date": "2026-12-05",
+			"source": "meetup:hannover-unity-meetup"
+		},
+		{
+			"title": "LSUG 8.5: Less Rush, More Joy: Navigating the Year-End Crunch",
+			"date": "2026-11-24",
+			"source": "meetup:liberating-structures-user-group-rhein-main"
+		},
+		{
+			"title": "Scrum User Group Karlsruhe: Scrum Master – True Leader auf Augenhöhe?",
+			"date": "2026-11-25",
+			"source": "meetup:scrum-user-group-karlsruhe"
+		},
+		{
+			"title": "All I want for Christmas… is a start-up f:ck up. 🎁",
+			"date": "2026-12-14",
+			"source": "hackevents-ai"
+		},
+		{
+			"title": "Monthly Meet Up",
+			"date": "2027-02-02",
+			"source": "hackevents-ai"
+		},
+		{
+			"title": "FOSSGIS-Konferenz 2027",
+			"date": "2027-03-09",
+			"source": "hackevents-ai"
+		},
+		{
+			"title": "Quantitative biology to molecular mechanisms",
+			"date": "2026-11-17",
+			"source": "hackevents-data"
+		},
+		{
+			"title": "LeadDev Munich Meetup #4",
+			"date": "2026-11-26",
+			"source": "brainberg"
+		},
+		{
+			"title": "December Meetup: TBD",
+			"date": "2026-12-01",
+			"source": "brainberg"
+		},
+		{
+			"title": "Bochum Weinnachtsmarkt w/ Devs",
+			"date": "2026-12-08",
+			"source": "brainberg"
+		},
+		{
+			"title": "Blockchain and Business Networking | Elevating Your Potential - Hamburg",
+			"date": "2026-12-09",
+			"source": "brainberg"
+		},
+		{
+			"title": "PHPUGMRN 06/26",
+			"date": "2026-12-10",
+			"source": "brainberg"
+		},
+		{
+			"title": "Xmas WP Meetup Berlin + Potsdam",
+			"date": "2026-12-16",
+			"source": "brainberg"
+		},
+		{
+			"title": "Women in Tech x Berlin Employer Ticket",
+			"date": "2027-02-18",
+			"source": "brainberg"
+		},
+		{
+			"title": "Munich New Space Summit",
+			"date": "2027-03-08",
+			"source": "brainberg"
+		},
+		{
+			"title": "TextLab Open Mic x Wedding Affairs",
+			"date": "2026-11-20",
+			"source": "luma-berlin"
+		},
+		{
+			"title": "Conscious Clubbing Workshop at CLINKER",
+			"date": "2026-11-23",
+			"source": "luma-berlin"
+		},
+		{
+			"title": "LMU Startup in 2 days",
+			"date": "2026-11-21",
+			"source": "luma-munich"
+		},
+		{
+			"title": "Film: Farewell My Concubine (OmU)",
+			"date": "2026-11-28",
+			"source": "luma-munich"
+		},
+		{
+			"title": "Gemeinsamer Spaziergang 6.0",
+			"date": "2026-11-22",
+			"source": "luma-hamburg"
+		},
+		{
+			"title": "Woodworking Wednesday",
+			"date": "2026-12-02",
+			"source": "meetup:heidelberg-makers-meetup"
+		},
+		{
+			"title": "Friday Making Hours",
+			"date": "2026-12-04",
+			"source": "meetup:heidelberg-makers-meetup"
+		},
+		{
+			"title": "Woodworking Wednesday",
+			"date": "2026-12-09",
+			"source": "meetup:heidelberg-makers-meetup"
+		},
+		{
+			"title": "Wöchentlicher Lauftreff für Unternehmer und Gründer",
+			"date": "2026-12-02",
+			"source": "meetup:unternehmer-startups-meetup-rosenheim"
+		},
+		{
+			"title": "Weihnachtsmarkt",
+			"date": "2026-12-10",
+			"source": "meetup:frontend-meetup-freiburg"
+		},
+		{
+			"title": "Stop Overengineering Security: SecDevOps Architecture That Actually Works",
+			"date": "2026-12-03",
+			"source": "meetup:devops-freiburg"
+		},
+		{
+			"title": "FIREABEND X HANNOVR #4 – Der Gamesbranchen Weihnachtsmarkt",
+			"date": "2026-12-08",
+			"source": "meetup:hannovr"
+		},
+		{
+			"title": "Kubernetes Stammtisch",
+			"date": "2027-01-13",
+			"source": "meetup:kubernetes-meetup-bielefeld"
+		},
+		{
+			"title": "WP Meetup Stuttgart",
+			"date": "2027-03-03",
+			"source": "meetup:wpmeetup-stuttgart"
+		},
+		{
+			"title": "X-mas-Special Sans Holiday Hack Challenge (onSite) - Security Meetup 0x68",
+			"date": "2026-12-16",
+			"source": "meetup:it-security-kassel"
+		}
+	]
+}

@@ -1,0 +1,538 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wp-events-plugin.com//7.6//EN
+TZID:Europe/Berlin
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:1374@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20260922T153000
+DTEND;TZID=Europe/Berlin:20270112T174500
+DTSTAMP:20260901T114548Z
+URL:https://events.bwcon.de/events/ihk-zertifikatskurs-ki-business-develop
+ ment-manager-ihk-7/
+SUMMARY:IHK-Zertifikatskurs KI Business Development Manager (IHK)
+DESCRIPTION:Lernen Sie\, Daten zur Wertschöpfungssteigerung und Prozessopt
+ imierung gezielt einzusetzen und Innovationen mit KI zu generieren.\n
+CATEGORIES:Business Development,Digitalisierung,Innovation,Neue
+ Technologien
+END:VEVENT
+BEGIN:VEVENT
+UID:1254@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261106T090000
+DTEND;TZID=Europe/Berlin:20261203T170000
+DTSTAMP:20261105T152814Z
+URL:https://events.bwcon.de/events/innovation-lab-sbh-13/
+SUMMARY:Innovation Lab SBH #13
+DESCRIPTION:Innovation Lab: Ideen entwickeln\, Zukunft gestalten \n\nIm Inn
+ ovation Lab arbeiten kreative Köpfe in Teams an innovativen Geschäftsmod
+ ellen und testen Prototypen bei ihrer Zielgruppe. Begleitet von erfahrenen
+  Coaches erwartet dich eine 6-wöchige Innovationsreise\, die online und i
+ m St. Georgener Technologiezentrum stattfindet.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 11/bwcon-Veranstaltung.png
+CATEGORIES:Business Development,Entrepreneurship,Innovation,Methoden und
+ Soft Skills,Start-ups und Gründungen
+LOCATION:St. Georgener Technologiezentrum\, Leopoldstr. 1\, Sankt Georgen i
+ m Schwarzwald\, 78112\, Deutschland
+GEO:48.126147;8.325857
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Leopoldstr. 1\, Sankt Georg
+ en im Schwarzwald\, 78112\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=St. Geo
+ rgener Technologiezentrum:geo:48.126147,8.325857
+END:VEVENT
+BEGIN:VEVENT
+UID:1386@events.bwcon.de
+DTSTART;TZID=Europe/Berlin;VALUE=DATE:20261119
+DTEND;TZID=Europe/Berlin;VALUE=DATE:20261121
+DTSTAMP:20260929T123011Z
+URL:https://events.bwcon.de/events/entrepreneurship-tage-2026/
+SUMMARY:Entrepreneurship-Tage 2026
+DESCRIPTION:Die Entrepreneurship-Tage bringen Dich mit Menschen zusammen\, 
+ die gegründet\, Unternehmen aufgebaut\, Rückschläge erlebt und neu ange
+ fangen haben – und geben Dir Impulse\, Wissen und Kontakte\, um Deine ei
+ gene Idee voranzubringen.
+CATEGORIES:Partnerveranstaltung
+LOCATION:Jobrad Campus\, Heinrich-von-Stephan-Straße 13\, Freiburg\, Deuts
+ chland
+GEO:47.988979;7.836217
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Heinrich-von-Stephan-Straß
+ e 13\, Freiburg\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=Jobrad Campus:geo
+ :47.988979,7.836217
+END:VEVENT
+BEGIN:VEVENT
+UID:1266@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261120T123000
+DTEND;TZID=Europe/Berlin:20261120T143000
+DTSTAMP:20261112T174536Z
+URL:https://events.bwcon.de/events/einfuehrung-in-den-foerderdschungel-ueb
+ erblick-ueber-foerdermittelprogramme-fuer-die-umsetzung-der-digitalen-tran
+ sformation-4/
+SUMMARY:Fördermittel für Ihr Unternehmen: Welche Zuschüsse passen zu Ihr
+ en Vorhaben?
+DESCRIPTION:Erhalten Sie einen kompakten Überblick über relevante Förder
+ programme auf Landes-\, Bundes- und EU-Ebene. Unsere Experten zeigen\, wie
+  Sie gezielt die passende Förderung für Ihr Vorhaben finden – von Digi
+ talisierung bis Nachhaltigkeit. Wir unterstützen Sie dabei\, Fördermitte
+ l strategisch und erfolgreich einzusetzen.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Business
+ Development,Digitalisierung,Finanzierung,Fördermittel,Future
+ Work,Kooperation,Nachhaltigkeit,Neue Technologien,Software, IT und
+ IT-Sicherheit,Start-ups und Gründungen
+END:VEVENT
+BEGIN:VEVENT
+UID:1398@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261124T090000
+DTEND;TZID=Europe/Berlin:20271231T110000
+DTSTAMP:20261112T145718Z
+URL:https://events.bwcon.de/events/powerup-netzero-trainingsreihe/
+SUMMARY:PowerUp NetZero Training Series: Putting Net-Zero Technologies into
+  Practice
+DESCRIPTION:This training session will present practical examples from the 
+ energy storage sector. Afterward\, you’ll work in small groups to develo
+ p your own business model for a storage solution using the Business Model 
+ Canvas—either tailored to a specific industry or applicable across indus
+ tries. Feel free to bring your own ideas\; if you don’t have one\, we’
+ ll assign you to a group.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Neue Technologien,Nachhaltigkeit
+END:VEVENT
+BEGIN:VEVENT
+UID:1395@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261124T090000
+DTEND;TZID=Europe/Berlin:20271231T110000
+DTSTAMP:20261112T150006Z
+URL:https://events.bwcon.de/events/powerup-netzero-trainingsreihe/
+SUMMARY:PowerUp NetZero Trainingsreihe: Net-Zero-Technologien in die Anwend
+ ung bringen
+DESCRIPTION:Die Trainingsreihe unterstützt KMU und Start-ups dabei\, die N
+ et-Zero-Transformation aktiv zu gestalten. Sie zeigt\, wie sich wirtschaft
+ liche Herausforderungen und technologische Komplexität in konkrete Gesch
+ äftschancen übersetzen lassen.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Innovation,Kooperation,Nachhaltigkeit,Neue Technologien
+END:VEVENT
+BEGIN:VEVENT
+UID:1402@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261124T123000
+DTEND;TZID=Europe/Berlin:20261124T130000
+DTSTAMP:20261116T123018Z
+URL:https://events.bwcon.de/events/sig-diversity-in-tech-lunch-learn-conne
+ ct-4/
+SUMMARY:SIG Diversity in Tech: Lunch\, Learn & Connect
+DESCRIPTION:Informelle\, virtuelle Lunchbreak der SIG Diversity in Tech –
+  jeden letzten Dienstag im Monat
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Diversity
+END:VEVENT
+BEGIN:VEVENT
+UID:1399@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261124T180000
+DTEND;TZID=Europe/Berlin:20261124T200000
+DTSTAMP:20261027T084705Z
+URL:https://events.bwcon.de/events/ki-shoring-vs-nearshoring-mehr-leistung
+ -weniger-kosten/
+SUMMARY:KI-Shoring vs. Nearshoring: Mehr Leistung\, weniger Kosten
+DESCRIPTION:Am 24. November findet das nächstes ObjektForum statt\, diesma
+ l geht es um das Thema KI-Shoring vs. Nearshoring: Mehr Leistung\, weniger
+  Kosten.\nEin Gespräch über eine Alternative\, die (noch) kaum jemand au
+ f dem Schirm hat
+CATEGORIES:Partnerveranstaltung
+LOCATION:andrena objects ag\, Meitnerstraße 10\, Stuttgart\, 70563\, Deuts
+ chland
+GEO:48.738238;9.109758
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Meitnerstraße 10\, Stuttga
+ rt\, 70563\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=andrena objects ag:geo
+ :48.738238,9.109758
+END:VEVENT
+BEGIN:VEVENT
+UID:1371@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261126T100000
+DTEND;TZID=Europe/Berlin:20261126T171500
+DTSTAMP:20260819T102352Z
+URL:https://events.bwcon.de/events/hightech-summit-beyond-automation/
+SUMMARY:Hightech Summit „Beyond Automation“
+DESCRIPTION:Anmeldung\nBitte bis zum 23. November 2026 hier anmelden &gt\;&
+ gt\;\nHightech Summit 2026 - Beyond Automation\nAm 26. November 2026 triff
+ t sich die Hightech-Community aus Baden-Württemberg in der Messe Freiburg
+ : etablierte Unternehmen\, Start-ups und Forschung verschiedener Branchen\
+ , kommen beim Hightech Summit 2026 – Beyond Automation zusammen\, um das
+  Zusammenspiel von Menschen und KI zu beleuchten und Antworten darauf zu f
+ inden\, wie sich die Zukunft mit KI aktiv gestalten lässt. Der Tagesablau
+ f im Überblick:\n\n\n\nDer Mensch ist kein Alleskönner. Fortschritt ents
+ teht\, wenn wir uns von Routinen lösen und Neues lernen. Spezialisierung 
+ und Kooperation sind die Grundlage unseres modernen Lebens.\nIm Zeitalter 
+ der Künstlichen Intelligenz stellt sich diese Logik neu. KI kann menschli
+ che Arbeit ersetzen – oder sie gezielt ergänzen und aufwerten. Ob sie z
+ um Hebel für Fortschritt wird\, entscheidet sich weniger an den technolog
+ ischen Möglichkeiten als an der Art\, wie wir sie gestalten und einsetzen
+ .\n\nDie zentrale Zukunftsfrage lautet daher:\nWelche Rolle nimmt der Mens
+ ch in einer KI-getriebenen Zukunft ein\, um relevant zu bleiben?\nDas Vera
+ nstaltungskonzept ist auf Dialog und Beteiligung ausgelegt. In interaktive
+ n Sessions\, Panels und Networking-Formaten können Teilnehmende sich akti
+ v einbringen\, voneinander lernen und neue Impulse mitnehmen.\nDie neueste
+ n Informationen zum Programm findest du unter www.hightech-summit.de.\nBit
+ te beachte: Wir legen großen Wert auf den ressourcenschonenden Umgang mit
+  Lebensmitteln. Daher benötigen wir zur Planung des Caterings die exakte 
+ Anzahl an Gästen. Wir behalten uns daher vor\, eine No-Show Gebühr in H
+ öhe von 50\,00 € (zzgl. MwSt.) zu erheben\, falls das Ticket nicht bis 
+ zum 20.11. storniert wurde und wir somit Catering vorhalten\, welches nich
+ t in Anspruch genommen wird.\nP. S.: In unserer Hightech Summit Community 
+ sprechen wir uns ganz bewusst mit du an – wir hoffen\, das fühlt sich a
+ uch für dich stimmig an.\nAnsprechpartnerin für den Hightech Summit\n\n\
+ n\nLisa Rothfuß\nMitglied der Geschäftsleitung| Leiterin Kommunikation\,
+  Netzwerk &amp\; Event\nbwcon GmbH\n\nE-Mail Adresse\nrothfuss@bwcon.de\n\
+ n\n\n\n&nbsp\;\n\n&nbsp\;\n
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2026/
+ 08/HTS-Startseite-2026-1200x627px.png
+CATEGORIES:Digitalisierung,Innovation,Nachhaltigkeit,Networking,Neue
+ Technologien
+LOCATION:Messe Freiburg\, Neuer Messplatz 1\, Freiburg\, 79108 \, Deutschla
+ nd
+GEO:48.0156785;7.840311499999984
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Neuer Messplatz 1\, Freibur
+ g\, 79108 \, Deutschland;X-APPLE-RADIUS=100;X-TITLE=Messe Freiburg:geo:48.
+ 0156785,7.840311499999984
+END:VEVENT
+BEGIN:VEVENT
+UID:1342@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261126T160000
+DTEND;TZID=Europe/Berlin:20261126T200000
+DTSTAMP:20260728T091514Z
+URL:https://events.bwcon.de/events/panorama-pitch-auf-dem-stuttgarter-fern
+ sehturm-2/
+SUMMARY:Panorama-Pitch auf dem Stuttgarter Fernsehturm
+DESCRIPTION:Es geht hoch hinaus. Der M.TECH ACCELERATOR und das Transformat
+ ionsnetzwerk Cars 2.0 bringt die Ideen der vielversprechendsten und zukunf
+ tsweisendensten Start-ups des Netzwerks auf dem höchsten Punkt Stuttgarts
+  zum Fliegen! Die Teams pitchen ihre Ideen auf dem Fernsehturm und renommi
+ erte Investor*innen\, Business Angels\, Verantwortliche von Corporates und
+  VCs evaluieren die Geschäftsideen. Beim Elevator Pitch der etwas anderen
+  Art kommen Gründende mit Kapitalgebenden in Kontakt. 
+CATEGORIES:Business
+ Development,Entrepreneurship,Finanzierung,Partnerveranstaltung,Start-ups
+ und Gründungen
+LOCATION:Fernsehturm Stuttgart\, Jahnstraße 120\, Stuttgart\, 70597\, Deut
+ schland
+GEO:48.755894;9.190287
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Jahnstraße 120\, Stuttgart
+ \, 70597\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=Fernsehturm Stuttgart:ge
+ o:48.755894,9.190287
+END:VEVENT
+BEGIN:VEVENT
+UID:1270@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261127T123000
+DTEND;TZID=Europe/Berlin:20261127T143000
+DTSTAMP:20260320T075543Z
+URL:https://events.bwcon.de/events/transformationsstrategie-konzepte-und-s
+ trategien-fuer-eine-kooperation-zwischen-unternehmen-und-startups-zur-impl
+ ementierung-einer-transformationsstrategie-4/
+SUMMARY:Transformationsstrategie: Konzepte und Strategien für eine Koopera
+ tion zwischen Unternehmen und Startups zur Implementierung einer Transform
+ ationsstrategie
+DESCRIPTION:Innovation entsteht dort\, wo Unternehmen konkrete Herausforder
+ ungen erkennen und diese mit passenden externen Partnern – Startups\, KM
+ U oder Forschung – gezielt bearbeiten. In dieser Session zeigen wir\, wi
+ e Organisationen Innovationsvorhaben strukturieren\, Risiken reduzieren un
+ d Entwicklungsprozesse beschleunigen können.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Business
+ Development,Digitalisierung,Diversity,Entrepreneurship,Future
+ Work,Innovation,Kooperation,Neue Technologien,Start-ups und Gründungen
+END:VEVENT
+BEGIN:VEVENT
+UID:1343@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261201T160000
+DTEND;TZID=Europe/Berlin:20261201T200000
+DTSTAMP:20260714T151842Z
+URL:https://events.bwcon.de/events/weltethos-pitch-day-2026/
+SUMMARY:Weltethos Pitch Day 2026
+DESCRIPTION:Der Weltethos Pitch Day findet am 1. Dezember 2026 von 16 bis 2
+ 0 Uhr am Weltethos-Institut in Tübingen statt. Bis zu sechs Start-ups hab
+ en die Gelegenheit\, ihre Ideen vor einer hochkarätigen Jury und einem Pu
+ blikum potenzieller Investor*innen zu präsentieren.
+CATEGORIES:Partnerveranstaltung
+LOCATION:Weltethos-Institut\, Hintere Grabenstraße 26\, Tübingen\, 72070\
+ , Deutschland
+GEO:48.522868;9.053487
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Hintere Grabenstraße 26\, 
+ Tübingen\, 72070\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=Weltethos-Insti
+ tut:geo:48.522868,9.053487
+END:VEVENT
+BEGIN:VEVENT
+UID:1360@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261203T090000
+DTEND;TZID=Europe/Berlin:20261203T170000
+DTSTAMP:20260928T093414Z
+URL:https://events.bwcon.de/events/cybersichere-softwarelebenszyklusprozes
+ se-fuer-medizintechnik-nach-iec-62304-und-iec-81001-5-1/
+SUMMARY:Cybersichere Softwarelebenszyklusprozesse für Medizintechnik nach 
+ IEC 62304 und IEC 81001-5-1
+DESCRIPTION:Am 3. Dezember findet bei MedicalMountains online das Seminar z
+ um Thema "Cybersichere Softwarelebenszyklusprozesse für Medizintechnik na
+ ch IEC 62304 und IEC 81001-5-1" statt.\n\nDie Umsetzung der Cybersecurity 
+ bedeutet die Anwendung von Technologien\, Prozessen und Kontrollen zum Sch
+ utz von Systemen\, Netzwerken\, Programmen\, Geräten und Daten vor Cybera
+ ngriffen.\nIm Seminar wird eine Einführung zum Thema gegeben und ein Cybe
+ rsecurity Lifecycle Management vorgestellt.
+CATEGORIES:Partnerveranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:1401@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261203T093000
+DTEND;TZID=Europe/Berlin:20261203T170000
+DTSTAMP:20261119T074846Z
+URL:https://events.bwcon.de/events/schreibwerkstatt-erstellung-eines-inves
+ toren-onepagers/
+SUMMARY:Schreibwerkstatt – Erstellung eines Investoren-Onepagers
+DESCRIPTION:Was braucht es eigentlich alles\, um Finanzgebende für sich zu
+  gewinnen? In unserer Schreibwerkstatt stehen dir unsere Start-up Expertin
+ nen und Experten und Business Angel Frank Motte beratend zur Seite\, damit
+  du einen überzeugenden OnePager erstellen kannst. Am Ende des Seminars h
+ ast du einen OnePager\, den du vor der Gruppe pitchst.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Entrepreneurship,Finanzierung,Start-ups und Gründungen
+LOCATION:Frameworx Stuttgart Mitte\, Friedrichstrasse 13\, Stuttgart\, Bade
+ n-Württemberg\, 70174\, Deutschland
+GEO:48.782211;9.177634
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Friedrichstrasse 13\, Stutt
+ gart\, Baden-Württemberg\, 70174\, Deutschland;X-APPLE-RADIUS=100;X-TITLE
+ =Frameworx Stuttgart Mitte:geo:48.782211,9.177634
+END:VEVENT
+BEGIN:VEVENT
+UID:1368@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261203T153000
+DTEND;TZID=Europe/Berlin:20261203T180000
+DTSTAMP:20261117T060712Z
+URL:https://events.bwcon.de/events/meeting-der-special-interest-group-blue
+ -ocean-4/
+SUMMARY:Meeting der Special Interest Group „Blue Ocean“
+DESCRIPTION:Anmeldung\nMelden Sie sich kostenlos untenstehend zur Veranstal
+ tung an. \n\nZur Buchung\n\nDie Veranstaltung findet bei SPORLASTIC in N
+ ürtingen statt.\nMeeting der Special Interest Group „Blue Ocean“\nDie
+ se Veranstaltung ist eine geschlossene Veranstaltung der bwcon Special Int
+ erest Group „Blue Ocean“. Interessenten\, die sich für eine Teilnahme
+  interessieren\, aber noch nicht Mitglied der Blue Ocean Gruppe sind\, mel
+ den sich bitte bei Alexandra Rudl (rudl@bwcon.de).\nAnsprechpartnerin\n\n\
+ n\nAlexandra Rudl\nGeschäftsführerin\nbwcon GmbH\n\nE-Mail Adresse\nrudl
+ @bwcon.de\n\n\n\n\n&nbsp\;\n
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Innovation
+LOCATION:SPORLASTIC GmbH\, Weberstraße 1\, Nürtingen\, 72622\, Deutschlan
+ d
+GEO:48.636329;9.344749
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Weberstraße 1\, Nürtingen
+ \, 72622\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=SPORLASTIC GmbH:geo:48.6
+ 36329,9.344749
+END:VEVENT
+BEGIN:VEVENT
+UID:1387@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261204T090000
+DTEND;TZID=Europe/Berlin:20261204T110000
+DTSTAMP:20261104T074606Z
+URL:https://events.bwcon.de/events/lerntag-2026/
+SUMMARY:Lerntag 2026
+DESCRIPTION:Am 4. Dezember schauen Menschen aus Unternehmen anderen und sic
+ h selbst beim Lernen zu. Wie entstehen gute Ideen? Wie wird aus einem „D
+ as müssten wir eigentlich mal machen ...“ etwas\, das wirklich funktion
+ iert? Was weiß die Wissenschaft über Lernen\, das wir bislang zu selten 
+ nutzen? Und warum lernen manche Organisationen schneller als andere?
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Innovation,Kooperation,Methoden und Soft Skills
+LOCATION:Rauch und Spiegel Ravensburg\, Georgstr. 11/1\, Ravensburg\, 88214
+ \, Deutschland
+GEO:47.782853;9.606642
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Georgstr. 11/1\, Ravensburg
+ \, 88214\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=Rauch und Spiegel Ravens
+ burg:geo:47.782853,9.606642
+END:VEVENT
+BEGIN:VEVENT
+UID:1361@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261209T090000
+DTEND;TZID=Europe/Berlin:20261209T170000
+DTSTAMP:20260928T093453Z
+URL:https://events.bwcon.de/events/kuenstliche-intelligenz-in-der-medizint
+ echnik-wie-geht-das-regulatorisch-konform/
+SUMMARY:Künstliche Intelligenz in der Medizintechnik – wie geht das regu
+ latorisch konform?
+DESCRIPTION:Am 9. Dezember findet bei MedicalMountains online das Seminar z
+ um Thema "Künstliche Intelligenz in der Medizintechnik – wie geht das r
+ egulatorisch konform?" statt.\n\nDieses Seminar bietet einen umfassenden 
+ Überblick über die regulatorischen Rahmenbedingungen in Europa und weltw
+ eit\, die Verknüpfung zwischen dem AI Act und der MDR sowie zentrale Aspe
+ kte wie Konformitätsbewertungsverfahren\, Datenmanagement und Risikomanag
+ ement.
+CATEGORIES:Partnerveranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:1400@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20261217T093000
+DTEND;TZID=Europe/Berlin:20261217T150000
+DTSTAMP:20261110T142201Z
+URL:https://events.bwcon.de/events/bwcon-ki-pioniere-von-der-ki-nutzung-zu
+ r-echten-entlastung-in-ihren-fachabteilungen/
+SUMMARY:bwcon KI-Pioniere: Von der KI-Nutzung zur echten Entlastung in Ihre
+ n Fachabteilungen
+DESCRIPTION:Das Praxisprogramm für kleine und mittelständische Unternehme
+ n\, die KI nicht nur ausprobieren\, sondern im Arbeitsalltag fest einsetze
+ n wollen.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Digitalisierung,Künstliche Intelligenz,Neue Technologien
+LOCATION:Innovationscampus Sigmaringen\, Marie-Curie-Str. 20–22 \, Sigmar
+ ingen \, 72488 \, Deutschland
+GEO:48.090415;9.242019
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Marie-Curie-Str. 20–22 \,
+  Sigmaringen \, 72488 \, Deutschland;X-APPLE-RADIUS=100;X-TITLE=Innovation
+ scampus Sigmaringen:geo:48.090415,9.242019
+END:VEVENT
+BEGIN:VEVENT
+UID:1377@events.bwcon.de
+DTSTART;TZID=Europe/Berlin;VALUE=DATE:20270121
+DTEND;TZID=Europe/Berlin;VALUE=DATE:20270416
+DTSTAMP:20260916T120919Z
+URL:https://events.bwcon.de/events/zertifikatskurs-weiterqualifizierung-al
+ s-innovation-expert/
+SUMMARY:Zertifikatskurs: Weiterqualifizierung als Innovation Expert
+DESCRIPTION:Weiterqualifizierung für alle\, die Innovation gestalten – m
+ it oder ohne diesen Titel im Lebenslauf. \n\nDas erfolgreiche Blended-Lear
+ ning-Format geht in die fünfte Runde – mit deutlich mehr Tiefe beim The
+ ma Künstliche Intelligenz.  \n\nDenn Innovation gelingt selten allein: We
+ r im Unternehmen Ideen voranbringt\, tut das oft neben der eigentlichen Ro
+ lle. Der Kurs vermittelt genau dafür die entscheidenden Kompetenzen – v
+ on bewährten Moderationsmethoden bis zu zwei neuen Modulen rund um den ge
+ zielten Einsatz von KI im Innovationsprozess.
+CATEGORIES:Entrepreneurship,Innovation
+END:VEVENT
+BEGIN:VEVENT
+UID:1375@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20270311T090000
+DTEND;TZID=Europe/Berlin:20270311T160000
+DTSTAMP:20261113T160112Z
+URL:https://events.bwcon.de/events/design-thinking-2-0-train-the-trainer-f
+ uer-moderne-innovationsworkshops/
+SUMMARY:Design Thinking 2.0: Train-the-Trainer für moderne Innovationswork
+ shops
+DESCRIPTION:Design Thinking ist längst mehr als bunte Post-its – es ist 
+ eine Haltung\, wie wir Probleme verstehen und Innovation systematisch vora
+ ntreiben. In diesem 2-tägigen Train-the-Trainer-Workshop machen wir Desig
+ n Thinking fit für die Gegenwart und verbinden die klassische Vorgehenslo
+ gik („erst verstehen\, dann lösen“) mit zeitgemäßen Formaten und To
+ ols.
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Business Development,Entrepreneurship,Innovation,Methoden und
+ Soft Skills
+LOCATION:bwcon GmbH\, Seyfferstraße 34\, Stuttgart\, Baden-Württemberg\, 
+ 70197\, Deutschland
+GEO:48.7701788;9.154721799999999
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Seyfferstraße 34\, Stuttga
+ rt\, Baden-Württemberg\, 70197\, Deutschland;X-APPLE-RADIUS=100;X-TITLE=b
+ wcon GmbH:geo:48.7701788,9.154721799999999
+END:VEVENT
+BEGIN:VEVENT
+UID:1362@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20270408T090000
+DTEND;TZID=Europe/Berlin:20270408T130000
+DTSTAMP:20260928T093636Z
+URL:https://events.bwcon.de/events/medizinprodukte-im-kontext-der-ki-veror
+ dnung-regulatorische-herausforderungen-im-zusammenspiel-der-regelwerke-2/
+SUMMARY:Medizinprodukte im Kontext der KI-Verordnung: Regulatorische Heraus
+ forderungen im Zusammenspiel der Regelwerke
+DESCRIPTION:Am 8. April findet bei MedicalMountains online das Seminar zum 
+ Thema "Medizinprodukte im Kontext der KI-Verordnung: Regulatorische Heraus
+ forderungen im Zusammenspiel der Regelwerke" statt.\n\nDer Einsatz von Kü
+ nstlicher Intelligenz (KI) wird in Zukunft in allen Bereichen des Lebens e
+ ine immer größere Rolle spielen. Auch in Medizinprodukten findet künstl
+ iche Intelligenz zahlreiche Anwendungsmöglichkeiten und ist bereits am Ma
+ rkt verbreitet. Mit der Verabschiedung der Verordnung 2024/1689 (AI-Act) w
+ erden für Medizinprodukte neue und zusätzliche Anforderungen formuliert\
+ , wenn künstliche Intelligenz im Einsatz ist. Aber wann ist dies tatsäch
+ lich der Fall? Und welche regulatorischen Herausforderungen gilt es im Spa
+ nnungsfeld zwischen MDR und AI-Act zu meistern? Diese Fragen sollen im Sem
+ inar beantwortet werden.
+CATEGORIES:Partnerveranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:1363@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20270630T090000
+DTEND;TZID=Europe/Berlin:20270630T170000
+DTSTAMP:20260928T093718Z
+URL:https://events.bwcon.de/events/kuenstliche-intelligenz-in-der-medizint
+ echnik-wie-geht-das-regulatorisch-konform-2/
+SUMMARY:Künstliche Intelligenz in der Medizintechnik – wie geht das regu
+ latorisch konform?
+DESCRIPTION:Am 30. Juni findet bei MedicalMountains online das Seminar zum 
+ Thema "Künstliche Intelligenz in der Medizintechnik – wie geht das regu
+ latorisch konform?" statt.\n\nDieses Seminar bietet einen umfassenden Übe
+ rblick über die regulatorischen Rahmenbedingungen in Europa und weltweit\
+ , die Verknüpfung zwischen dem AI Act und der MDR sowie zentrale Aspekte 
+ wie Konformitätsbewertungsverfahren\, Datenmanagement und Risikomanagemen
+ t. Zudem werden praxisnahe Methoden zur Validierung von KI-Modellen vorges
+ tellt und der Umgang mit personenbezogenen Daten unter Berücksichtigung d
+ er GDPR behandelt. Ein weiterer Schwerpunkt liegt auf der Analyse bestehen
+ der Unternehmensprozesse\, der Identifikation von Lücken und der Planung 
+ konkreter Maßnahmen zur erfolgreichen Implementierung von KI-Technologien
+ .
+CATEGORIES:Partnerveranstaltung
+END:VEVENT
+BEGIN:VEVENT
+UID:1367@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20270729T170000
+DTEND;TZID=Europe/Berlin:20270729T220000
+DTSTAMP:20260914T084000Z
+URL:https://events.bwcon.de/events/sommerfest-8-0/
+SUMMARY:Sommerfest 8.0
+DESCRIPTION:Das Regionalboard der bwcon möchte gemeinsam mit MACHES eine T
+ radition fortführen – das Sommerfest im Greiner Areal! Gemäß der Trad
+ ition möchten wir Ihnen auch in diesem Jahr die Möglichkeit bieten\, sic
+ h in entspannter Atmosphäre zu vernetzen\, auszutauschen und ins Gespräc
+ h zu kommen. 
+ATTACH;FMTTYPE=image/jpeg:https://events.bwcon.de/wp-content/uploads/2023/
+ 12/bwcon-Veranstaltung-e1701703772782.jpg
+CATEGORIES:Entrepreneurship,Future Work,Innovation,Kooperation,Methoden
+ und Soft Skills,Nachhaltigkeit,Networking,Neue Technologien,Start-ups und
+ Gründungen
+LOCATION:Greiner-Areal\, Galgenbergstraße 9\, Nürtingen\, Baden-Württemb
+ erg\, 72622\, Deutschland
+GEO:48.6278374;9.329987899999992
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Galgenbergstraße 9\, Nürt
+ ingen\, Baden-Württemberg\, 72622\, Deutschland;X-APPLE-RADIUS=100;X-TITL
+ E=Greiner-Areal:geo:48.6278374,9.329987899999992
+END:VEVENT
+BEGIN:VEVENT
+UID:1364@events.bwcon.de
+DTSTART;TZID=Europe/Berlin:20271201T090000
+DTEND;TZID=Europe/Berlin:20271201T130000
+DTSTAMP:20260928T100443Z
+URL:https://events.bwcon.de/events/fda-gibt-die-richtung-vor-beschleunigun
+ g-von-klinischen-studien-mit-in-silico-human-models/
+SUMMARY:FDA gibt die Richtung vor: Beschleunigung von klinischen Studien mi
+ t In-Silico Human Models
+DESCRIPTION:Am 1. Dezember findet bei MedicalMountains das Seminar zum Them
+ a "FDA gibt die Richtung vor: Beschleunigung von klinischen Studien mit In
+ -Silico Human Models" statt.\n\nPrädiktive Simulationen ermöglichen eine
+  schnelle und nachvollziehbare Analyse und Prüfung von Medizinprodukten u
+ nter komplexen Lastfällen. Darüber hinaus ermöglichen Computersimulatio
+ nen (in silico)\, Implantatvarianten an einem virtuellen Patienten oder ei
+ ner virtuellen Patientenkohorte in Interaktion in einem Modell zu testen. 
+ Die FDA sieht in der In-Silico-Computersimulation eine wichtige Schlüssel
+ technologie zur Generierung von Evidenz in der Medizin. In-Silico Clinical
+  Trials werden in Zukunft eine wichtige Rolle in Zulassungsprozessen spiel
+ en\, da sie dazu beitragen Prüfprozesse zu beschleunigen und Kosten zu re
+ duzieren. Die FDA hat entsprechende Richtlinien herausgegeben\, die festle
+ gen\, wie Simulationsprogramme und virtuelle Menschmodelle verifiziert und
+  validiert werden müssen.
+CATEGORIES:Partnerveranstaltung
+LOCATION:Tuttlingen\, \, Deutschland
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=\, Deutschland;X-APPLE-RADI
+ US=100;X-TITLE=Tuttlingen:geo:0,0
+END:VEVENT
+END:VCALENDAR

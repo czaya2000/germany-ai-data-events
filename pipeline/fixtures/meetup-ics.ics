@@ -1,0 +1,79 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meetup//Meetup Calendar 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+NAME:PyData Berlin
+X-WR-CALNAME:PyData Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:event_317368516@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080616Z
+DTSTART;TZID=Europe/Berlin:20261126T180000
+DTEND;TZID=Europe/Berlin:20261126T210000
+SUMMARY:PyData Berlin 2026 November Meetup
+DESCRIPTION:PyData Berlin\nWelcome to the PyData Berlin November meetup!\n
+ \n**Please register on Luma:** [https://luma.com/6q8mo2sp](https://luma.co
+ m/6q8mo2sp)\nWe’re using Luma as the sole registration platform for this
+  event. Please register through the link above to reserve your place. Meet
+ up RSVPs won’t count as registration or guarantee a place\, so please do
+ n’t RSVP on Meetup.\n\nPhotos may be taken during the event.\n\n\\*\\*\\
+ *\nNumFOCUS **Code of Conduct**\nTHE SHORT VERSION\nBe kind to others. Do 
+ not insult or put down others. Behave professionally. Remember that harass
+ ment and sexist\, racist\, or exclusionary jokes are not appropriate for N
+ umFOCUS.\nAll communication should be appropriate for a professional audie
+ nce including people of many different backgrounds. Sexual language and im
+ agery are not appropriate.\nNumFOCUS is dedicated to providing a harassmen
+ t-free community for everyone\, regardless of gender\, sexual orientation\
+ , gender identity\, and expression\, disability\, physical appearance\, bo
+ dy size\, race\, or religion. We do not tolerate harassment of community m
+ embers in any form.\nThank you for helping make this a welcoming\, friendl
+ y community for all.\nIf you haven't yet\, please read the detailed versio
+ n here: https://numfocus.org/code-of-conduct\n\\*\\*\\*
+URL;VALUE=URI:https://www.meetup.com/pydata-berlin/events/317368516/
+STATUS:CONFIRMED
+CREATED:20261110T142644Z
+LAST-MODIFIED:20261110T142644Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317164729@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080616Z
+DTSTART;TZID=Europe/Berlin:20261209T120000
+DTEND;TZID=Europe/Berlin:20261210T223000
+SUMMARY:PyData Global 2026
+DESCRIPTION:PyData Berlin\nPyData Global 2026 is a 2-day virtual event for
+  the international community of data scientists\, data engineers\, and dev
+ elopers of data analysis tools to share ideas and learn from each other.\n
+ During the conference\, attendees will have the opportunity to attend live
+  keynote sessions and talks\, lightning talks\, and get to know fellow mem
+ bers of the PyData Community.\n\nhttps://pydata.org/global2026\n\nTo purch
+ ase tickets: https://pydata.org/global2026/tickets\nSchedule: https://pret
+ alx.com/pydata-global-2026/schedule/
+URL;VALUE=URI:https://www.meetup.com/pydata-berlin/events/317164729/
+STATUS:CONFIRMED
+CREATED:20261027T184457Z
+LAST-MODIFIED:20261027T184457Z
+CLASS:PUBLIC
+END:VEVENT
+END:VCALENDAR

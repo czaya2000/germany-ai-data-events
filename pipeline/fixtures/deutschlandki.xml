@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
+<channel>
+<title>KI-Events in Deutschland | DeutschlandKI</title>
+<link>https://deutschlandki.de/ki-events</link>
+<atom:link href="https://deutschlandki.de/ki-events/feed.xml" rel="self" type="application/rss+xml"/>
+<description>Kommende KI-Konferenzen, Messen, Festivals und Hackathons in Deutschland, neu gelistete Events zuerst. Mit Datum, Ort und Link zur offiziellen Veranstaltungsseite. Weiterverwenden erlaubt mit Quellenangabe und Link auf https://deutschlandki.de/ki-events (CC BY 4.0).</description>
+<language>de-DE</language>
+<copyright>Zusammenstellung: DeutschlandKI, Lizenz CC BY 4.0. Die verlinkten Veranstaltungsseiten gehören den jeweiligen Veranstaltern.</copyright>
+<creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
+<lastBuildDate>Mon, 09 Nov 2026 12:00:00 GMT</lastBuildDate>
+<ttl>360</ttl>
+<image>
+<url>https://deutschlandki.de/icon-192.png</url>
+<title>KI-Events in Deutschland | DeutschlandKI</title>
+<link>https://deutschlandki.de/ki-events</link>
+</image>
+<item>
+<title>Smart Country Convention 2027: 5.–7. Oktober 2027, Berlin</title>
+<link>https://www.smartcountry.berlin/de/</link>
+<guid isPermaLink="false">deutschlandki-event:smart-country-convention-2027</guid>
+<pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Digitale Verwaltung, KI und Cloud, digitale Sicherheit sowie Smart Cities und Regionen&lt;/p&gt;&lt;p&gt;Datum: 5.–7. Oktober 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Kongressmesse&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.smartcountry.berlin/de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>Brains on Silicon 2027: 27.–29. Oktober 2027, Dresden</title>
+<link>https://brainsonsilicon.com/</link>
+<guid isPermaLink="false">deutschlandki-event:brains-on-silicon-2027</guid>
+<pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Dresden</category>
+<description>&lt;p&gt;Angewandte KI und ihre Umsetzung im Unternehmen, von Use Cases bis zu agentischen Workflows&lt;/p&gt;&lt;p&gt;Datum: 27.–29. Oktober 2027&lt;br&gt;Ort: Dresden&lt;br&gt;Format: B2B-Konferenz &amp;amp; Expo&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://brainsonsilicon.com/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>BIG BANG KI FESTIVAL 2027: 10.–11. November 2027, Berlin</title>
+<link>https://www.bigbangfestival.de/</link>
+<guid isPermaLink="false">deutschlandki-event:big-bang-ki-festival-2027</guid>
+<pubDate>Mon, 09 Nov 2026 12:00:00 GMT</pubDate>
+<category>Festival</category>
+<category>Berlin</category>
+<description>&lt;p&gt;KI-Messe und Konferenz für Wirtschaft, Technologie, Gesundheitswesen und Politik&lt;/p&gt;&lt;p&gt;Datum: 10.–11. November 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Festival &amp;amp; Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.bigbangfestival.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>AI Engineering Summit 2026: 16.–20. November 2026, Berlin</title>
+<link>https://ai-engineering-summit.de/</link>
+<guid isPermaLink="false">deutschlandki-event:ai-engineering-summit-berlin-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Workshop &amp; Training</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Coding Agents, AI Engineering, Governance, Security, Testing und Legacy-Modernisierung&lt;/p&gt;&lt;p&gt;Datum: 16.–20. November 2026&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Trainingsevent &amp;amp; Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ai-engineering-summit.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>MLcon Berlin 2026: 16.–20. November 2026, Berlin</title>
+<link>https://mlconference.ai/berlin/</link>
+<guid isPermaLink="false">deutschlandki-event:mlcon-berlin-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Workshop &amp; Training</category>
+<category>Berlin</category>
+<description>&lt;p&gt;KI-Agenten, Advanced RAG, multimodale KI, MLOps, Open-Source-LLMs und KI-Governance&lt;/p&gt;&lt;p&gt;Datum: 16.–20. November 2026&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Konferenz, Bootcamps &amp;amp; Workshops&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://mlconference.ai/berlin/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>AI.SUMMIT 2026: 24. November 2026, Hamburg</title>
+<link>https://ai.hamburg/en/event/ai-summit-2026-corporate-edition</link>
+<guid isPermaLink="false">deutschlandki-event:ai-summit-hamburg-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Hamburg</category>
+<description>&lt;p&gt;KI-Implementierung, europäische Souveränität, EU AI Act, Human-AI Collaboration und Start-ups&lt;/p&gt;&lt;p&gt;Datum: 24. November 2026&lt;br&gt;Ort: Hamburg&lt;br&gt;Format: Business-Konferenz &amp;amp; Expo&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ai.hamburg/en/event/ai-summit-2026-corporate-edition&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>SPS 2026: 24.–26. November 2026, Nürnberg</title>
+<link>https://sps.mesago.com/nuernberg/de.html</link>
+<guid isPermaLink="false">deutschlandki-event:sps-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Nürnberg</category>
+<description>&lt;p&gt;Industrial AI, Software Defined Industry, vernetzte Produktion und Automatisierung&lt;/p&gt;&lt;p&gt;Datum: 24.–26. November 2026&lt;br&gt;Ort: Nürnberg&lt;br&gt;Format: Fachmesse&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://sps.mesago.com/nuernberg/de.html&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>KonKIS26: 25.–26. November 2026, Hürth</title>
+<link>https://westai.de/konferenz/</link>
+<guid isPermaLink="false">deutschlandki-event:konkis-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Hürth</category>
+<description>&lt;p&gt;Transfer aus der Forschung, Open Source, GPU-Ressourcen, LLM-Services und vertrauenswürdige KI&lt;/p&gt;&lt;p&gt;Datum: 25.–26. November 2026&lt;br&gt;Ort: Hürth&lt;br&gt;Format: Konferenz der KI-Servicezentren&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://westai.de/konferenz/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>AICon 2026: 26. November 2026, Berlin</title>
+<link>https://www.tuev-verband.de/events/aicon-2026</link>
+<guid isPermaLink="false">deutschlandki-event:aicon-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Sichere, vertrauenswürdige und verantwortungsvolle KI&lt;/p&gt;&lt;p&gt;Datum: 26. November 2026&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Fachkonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.tuev-verband.de/events/aicon-2026&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>KI:ARENA 2026: 1.–2. Dezember 2026, Düsseldorf</title>
+<link>https://kiarena.de/</link>
+<guid isPermaLink="false">deutschlandki-event:ki-arena-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Workshop &amp; Training</category>
+<category>Düsseldorf</category>
+<description>&lt;p&gt;Generative KI in Unternehmenskommunikation und Marketing, Content, Personalisierung und Automatisierung&lt;/p&gt;&lt;p&gt;Datum: 1.–2. Dezember 2026&lt;br&gt;Ort: Düsseldorf&lt;br&gt;Format: Konferenz &amp;amp; Masterclasses&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://kiarena.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>LZ AI Day 2026: 1. Dezember 2026, Frankfurt am Main</title>
+<link>https://www.lebensmittelzeitung.net/events/lz-ai-day-324</link>
+<guid isPermaLink="false">deutschlandki-event:lz-ai-day-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Frankfurt am Main</category>
+<description>&lt;p&gt;KI in Lebensmittelhandel und Konsumgüterindustrie, Agentic Commerce, Robotik und Smart Retail&lt;/p&gt;&lt;p&gt;Datum: 1. Dezember 2026&lt;br&gt;Ort: Frankfurt am Main&lt;br&gt;Format: Branchenkonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.lebensmittelzeitung.net/events/lz-ai-day-324&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>AI@HPI Conference 2026: 2.–3. Dezember 2026, Potsdam</title>
+<link>https://hpi.de/en/ai-hpi-conference/</link>
+<guid isPermaLink="false">deutschlandki-event:ai-at-hpi-conference-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Wissenschaft &amp; Transfer</category>
+<category>Potsdam</category>
+<description>&lt;p&gt;Human-AI Economy, agentische Systeme, industrielle Wertschöpfung und Europas Wettbewerbsfähigkeit&lt;/p&gt;&lt;p&gt;Datum: 2.–3. Dezember 2026&lt;br&gt;Ort: Potsdam&lt;br&gt;Format: Forschung, Wirtschaft &amp;amp; Politik&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hpi.de/en/ai-hpi-conference/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>German Legal Tech Summit 2026: 3. Dezember 2026, Hannover</title>
+<link>https://germanlegaltechsummit.com/</link>
+<guid isPermaLink="false">deutschlandki-event:german-legal-tech-summit-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Hannover</category>
+<description>&lt;p&gt;Agentische Legal AI, Document Intelligence, KI-Governance, souveräne Rechts-KI und Legal Operations&lt;/p&gt;&lt;p&gt;Datum: 3. Dezember 2026&lt;br&gt;Ort: Hannover&lt;br&gt;Format: Kongress &amp;amp; Fachausstellung&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://germanlegaltechsummit.com/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>BBA KI-Konferenz 2026: 9. Dezember 2026, Berlin</title>
+<link>https://www.bba-campus.de/weiterbildung/detail/ki-konferenz-2026-einsatz-kuenstlicher-intelligenz-in-der-wohnungswirtschaft/</link>
+<guid isPermaLink="false">deutschlandki-event:bba-ki-konferenz-wohnungswirtschaft-2026</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Generative KI, Geschäftsprozessautomatisierung und KI-Strategien in der Wohnungswirtschaft&lt;/p&gt;&lt;p&gt;Datum: 9. Dezember 2026&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Branchenkonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.bba-campus.de/weiterbildung/detail/ki-konferenz-2026-einsatz-kuenstlicher-intelligenz-in-der-wohnungswirtschaft/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>KI-Summit Germany 2027: 29.–30. Januar 2027, Bad Homburg</title>
+<link>https://ki-summit-germany.de/</link>
+<guid isPermaLink="false">deutschlandki-event:ki-summit-germany-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Workshop &amp; Training</category>
+<category>Bad Homburg</category>
+<description>&lt;p&gt;KI-Umsetzung für Unternehmer und Selbstständige, KI-Strategie, Kommunikation und Führung&lt;/p&gt;&lt;p&gt;Datum: 29.–30. Januar 2027&lt;br&gt;Ort: Bad Homburg&lt;br&gt;Format: Praxiskonferenz &amp;amp; Workshops&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ki-summit-germany.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>KI in der Medizin Symposium 2027: 29.–30. Januar 2027, Homburg</title>
+<link>https://ki-symposium-homburg.de/</link>
+<guid isPermaLink="false">deutschlandki-event:ki-symposium-homburg-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Wissenschaft &amp; Transfer</category>
+<category>Homburg</category>
+<description>&lt;p&gt;KI in Diagnostik, Früherkennung und personalisierter Therapie&lt;/p&gt;&lt;p&gt;Datum: 29.–30. Januar 2027&lt;br&gt;Ort: Homburg&lt;br&gt;Format: Wissenschaftliches Symposium&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ki-symposium-homburg.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>LEARNTEC 2027: 2.–4. Februar 2027, Karlsruhe</title>
+<link>https://www.learntec.de/de/</link>
+<guid isPermaLink="false">deutschlandki-event:learntec-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Karlsruhe</category>
+<description>&lt;p&gt;KI im Lernkontext, personalisierte Lernwege, rechtssichere Anwendung und digitale Bildungstechnologien&lt;/p&gt;&lt;p&gt;Datum: 2.–4. Februar 2027&lt;br&gt;Ort: Karlsruhe&lt;br&gt;Format: Fachmesse &amp;amp; Bildungskongress&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.learntec.de/de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>German Data Science Days 2027: 25.–26. Februar 2027, München</title>
+<link>https://www.gdsd.statistik.uni-muenchen.de/german-data-science-days-2027/index.html</link>
+<guid isPermaLink="false">deutschlandki-event:german-data-science-days-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>München</category>
+<description>&lt;p&gt;Data Science, Machine Learning, Deep Learning, KI-Methoden und Anwendungen in Wissenschaft und Wirtschaft&lt;/p&gt;&lt;p&gt;Datum: 25.–26. Februar 2027&lt;br&gt;Ort: München&lt;br&gt;Format: Data-Science- &amp;amp; KI-Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.gdsd.statistik.uni-muenchen.de/german-data-science-days-2027/index.html&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>KI-X PR 2027: 2.–3. März 2027, Berlin</title>
+<link>https://www.ki-x.berlin/pr/</link>
+<guid isPermaLink="false">deutschlandki-event:ki-x-pr-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Generative KI, Agentic PR, Content-Personalisierung, Workflow-Automatisierung, Governance und Deepfakes&lt;/p&gt;&lt;p&gt;Datum: 2.–3. März 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Kommunikations-KI-Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.ki-x.berlin/pr/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>Esri Konferenz 2027: 3.–4. März 2027, Bonn</title>
+<link>https://www.esri.de/de-de/esri-konferenz/2027/uebersicht</link>
+<guid isPermaLink="false">deutschlandki-event:esri-konferenz-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Bonn</category>
+<description>&lt;p&gt;GeoAI, Connected Digital Twins, Earth Intelligence, Enterprise GIS und räumliche Datenanalyse&lt;/p&gt;&lt;p&gt;Datum: 3.–4. März 2027&lt;br&gt;Ort: Bonn&lt;br&gt;Format: GeoAI-Konferenz &amp;amp; Expo&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.esri.de/de-de/esri-konferenz/2027/uebersicht&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>embedded world 2027: 16.–18. März 2027, Nürnberg</title>
+<link>https://www.embedded-world.de/de-de</link>
+<guid isPermaLink="false">deutschlandki-event:embedded-world-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Nürnberg</category>
+<description>&lt;p&gt;Embedded Systems, Edge AI, Hardware- und Softwaredesign für intelligente Geräte&lt;/p&gt;&lt;p&gt;Datum: 16.–18. März 2027&lt;br&gt;Ort: Nürnberg&lt;br&gt;Format: Fachmesse &amp;amp; Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.embedded-world.de/de-de&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>LogiMAT 2027: 16.–18. März 2027, Stuttgart</title>
+<link>https://www.logimat-messe.de/</link>
+<guid isPermaLink="false">deutschlandki-event:logimat-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Stuttgart</category>
+<description>&lt;p&gt;KI in der Intralogistik, Robotik, autonome Fahrzeuge und Datenmanagement&lt;/p&gt;&lt;p&gt;Datum: 16.–18. März 2027&lt;br&gt;Ort: Stuttgart&lt;br&gt;Format: Fachmesse&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.logimat-messe.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>WirtschaftsWoche KI im Mittelstand 2027: 16.–17. März 2027, Düsseldorf</title>
+<link>https://live.handelsblatt.com/event/wirtschaftswoche-ki-im-mittelstand/programm/</link>
+<guid isPermaLink="false">deutschlandki-event:wirtschaftswoche-ki-im-mittelstand-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Düsseldorf</category>
+<description>&lt;p&gt;KI-Einführung, Skalierung, praxisnahe Use Cases und Transformation im Mittelstand&lt;/p&gt;&lt;p&gt;Datum: 16.–17. März 2027&lt;br&gt;Ort: Düsseldorf&lt;br&gt;Format: Mittelstands-Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://live.handelsblatt.com/event/wirtschaftswoche-ki-im-mittelstand/programm/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>DATA festival 2027: 17.–18. März 2027, München</title>
+<link>https://barc.com/events/data-festival/</link>
+<guid isPermaLink="false">deutschlandki-event:data-festival-muenchen-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Festival</category>
+<category>München</category>
+<description>&lt;p&gt;Agentic AI und GenAI im Produktivbetrieb, KI-Governance, Datenstrategie und Datensouveränität&lt;/p&gt;&lt;p&gt;Datum: 17.–18. März 2027&lt;br&gt;Ort: München&lt;br&gt;Format: Festival &amp;amp; Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://barc.com/events/data-festival/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>Bitkom TRANSFORM 2027: 17.–18. März 2027, Berlin</title>
+<link>https://transform.show/</link>
+<guid isPermaLink="false">deutschlandki-event:transform-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Digitale Transformation, KI-Einsatz in Unternehmen, Cybersicherheit und Automatisierung&lt;/p&gt;&lt;p&gt;Datum: 17.–18. März 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Entscheiderkonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://transform.show/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>DATE 2027: 22.–24. März 2027, Dresden</title>
+<link>https://date27.date-conference.com/</link>
+<guid isPermaLink="false">deutschlandki-event:date-conference-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Wissenschaft &amp; Transfer</category>
+<category>Dresden</category>
+<description>&lt;p&gt;KI-Hardware, eingebettete Intelligenz, autonome Systeme, Electronic Design Automation und Chip-Test&lt;/p&gt;&lt;p&gt;Datum: 22.–24. März 2027&lt;br&gt;Ort: Dresden&lt;br&gt;Format: Forschungskonferenz &amp;amp; Fachausstellung&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://date27.date-conference.com/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>EvoStar 2027: 31. März–2. April 2027, Mainz</title>
+<link>https://www.evostar.org/2027/</link>
+<guid isPermaLink="false">deutschlandki-event:evostar-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Wissenschaft &amp; Transfer</category>
+<category>Mainz</category>
+<description>&lt;p&gt;Bio-inspirierte KI, evolutionäre Berechnung, maschinelles Lernen, Optimierung und generatives Design&lt;/p&gt;&lt;p&gt;Datum: 31. März–2. April 2027&lt;br&gt;Ort: Mainz&lt;br&gt;Format: Hybrid-Forschungskonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.evostar.org/2027/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>HANNOVER MESSE 2027: 5.–8. April 2027, Hannover</title>
+<link>https://www.hannovermesse.de/de/</link>
+<guid isPermaLink="false">deutschlandki-event:hannover-messe-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Hannover</category>
+<description>&lt;p&gt;Industrial AI, Robotik, Automatisierung, digitale Souveränität und KI-gestützte Produktion&lt;/p&gt;&lt;p&gt;Datum: 5.–8. April 2027&lt;br&gt;Ort: Hannover&lt;br&gt;Format: Industriefachmesse &amp;amp; Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.hannovermesse.de/de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>data:unplugged 2027: 13.–14. April 2027, Münster</title>
+<link>https://www.data-unplugged.de/</link>
+<guid isPermaLink="false">deutschlandki-event:data-unplugged-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Festival</category>
+<category>Münster</category>
+<description>&lt;p&gt;Daten, Künstliche Intelligenz, digitale Innovation, Praxiswissen und Vernetzung&lt;/p&gt;&lt;p&gt;Datum: 13.–14. April 2027&lt;br&gt;Ort: Münster&lt;br&gt;Format: Daten- &amp;amp; KI-Festival&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.data-unplugged.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>DMEA 2027: 13.–15. April 2027, München</title>
+<link>https://dmea.de/de/</link>
+<guid isPermaLink="false">deutschlandki-event:dmea-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>München</category>
+<description>&lt;p&gt;KI in der Gesundheitsversorgung, Gesundheitsdaten, digitale Souveränität und klinische IT&lt;/p&gt;&lt;p&gt;Datum: 13.–15. April 2027&lt;br&gt;Ort: München&lt;br&gt;Format: Digital-Health-Messe &amp;amp; Kongress&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://dmea.de/de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>Smart Health Europe 2027: 13.–15. April 2027, Berlin</title>
+<link>https://www.smarthealtheurope.com/de/</link>
+<guid isPermaLink="false">deutschlandki-event:smart-health-europe-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Digitale Gesundheit, KI in Diagnostik und Versorgung, Gesundheitsdaten und Health-IT&lt;/p&gt;&lt;p&gt;Datum: 13.–15. April 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Kongressmesse&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.smarthealtheurope.com/de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>AI Day 2027: 14. April 2027, Frankfurt am Main</title>
+<link>https://ai-days.com/</link>
+<guid isPermaLink="false">deutschlandki-event:ai-day-frankfurt-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Frankfurt am Main</category>
+<description>&lt;p&gt;KI-Anwendungen im Arbeitsalltag, Trends, Keynotes und Aussteller&lt;/p&gt;&lt;p&gt;Datum: 14. April 2027&lt;br&gt;Ort: Frankfurt am Main&lt;br&gt;Format: Konferenz &amp;amp; Ausstellung&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://ai-days.com/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>PyCon DE 2027: 19.–24. April 2027, Heidelberg</title>
+<link>https://2027.pycon.de/</link>
+<guid isPermaLink="false">deutschlandki-event:pycon-de-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Hackathon</category>
+<category>Heidelberg</category>
+<description>&lt;p&gt;Angewandte KI mit Open Source, Data Science, Software Engineering und produktive KI-Systeme&lt;/p&gt;&lt;p&gt;Datum: 19.–24. April 2027&lt;br&gt;Ort: Heidelberg&lt;br&gt;Format: Konferenz, Masterclasses &amp;amp; Hackathons&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://2027.pycon.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>EVA Berlin Conference 2027: 21.–23. April 2027, Berlin</title>
+<link>https://eva-berlin-conference.de/</link>
+<guid isPermaLink="false">deutschlandki-event:eva-berlin-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Wissenschaft &amp; Transfer</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Generative KI, Computational Creativity, intelligente Agenten, digitale Kultur und KI-Ethik&lt;/p&gt;&lt;p&gt;Datum: 21.–23. April 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Forschung, Kultur &amp;amp; Technologie&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://eva-berlin-conference.de/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>GITEX AI Europe 2027: 21.–22. April 2027, Berlin</title>
+<link>https://www.gitexeurope.com/</link>
+<guid isPermaLink="false">deutschlandki-event:gitex-ai-europe-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Souveräne KI, Compute- und AI-Stack, Cybersicherheit, Deep Tech und industrielle Innovation&lt;/p&gt;&lt;p&gt;Datum: 21.–22. April 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: KI-Konferenz &amp;amp; Technologiemesse&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.gitexeurope.com/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>CDAO Germany 2027: 27.–28. April 2027, München</title>
+<link>https://cdao-germany.coriniumintelligence.com/</link>
+<guid isPermaLink="false">deutschlandki-event:cdao-germany-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>München</category>
+<description>&lt;p&gt;KI-Adoption, Analytics-Innovation, Data Governance, Regulierung, Datenethik und datengetriebene Entscheidungen&lt;/p&gt;&lt;p&gt;Datum: 27.–28. April 2027&lt;br&gt;Ort: München&lt;br&gt;Format: Data-, Analytics- &amp;amp; KI-Executive-Konferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cdao-germany.coriniumintelligence.com/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>OMR Festival 2027 – AI &amp; Tech Journey: 3.–5. Mai 2027, Hamburg</title>
+<link>https://omr.com/en/events/festival/ai-tech</link>
+<guid isPermaLink="false">deutschlandki-event:omr-festival-ai-tech-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Festival</category>
+<category>Hamburg</category>
+<description>&lt;p&gt;KI-Anwendungen, Automatisierung, neue Technologie-Stacks, Plattformökonomie und digitale Geschäftsmodelle&lt;/p&gt;&lt;p&gt;Datum: 3.–5. Mai 2027&lt;br&gt;Ort: Hamburg&lt;br&gt;Format: Festival, Konferenz &amp;amp; Masterclasses&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://omr.com/en/events/festival/ai-tech&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>Rise of AI Conference 2027: 11.–12. Mai 2027, Berlin</title>
+<link>https://riseof.ai/conference-2027/</link>
+<guid isPermaLink="false">deutschlandki-event:rise-of-ai-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Technologische Souveränität, vertrauenswürdige KI-Infrastruktur, AI Act und industrielle Umsetzung&lt;/p&gt;&lt;p&gt;Datum: 11.–12. Mai 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Entscheiderkonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://riseof.ai/conference-2027/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>F.A.Z. Konferenz Künstliche Intelligenz 2027: 12.–13. Mai 2027, Eltville am Rhein</title>
+<link>https://www.faz-konferenzen.de/kuenstliche-intelligenz/</link>
+<guid isPermaLink="false">deutschlandki-event:faz-konferenz-ki-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Konferenz &amp; Kongress</category>
+<category>Eltville am Rhein</category>
+<description>&lt;p&gt;KI und Arbeitsmarkt, Produktivität sowie Innovationen in Medizin, Chemie und Verteidigung&lt;/p&gt;&lt;p&gt;Datum: 12.–13. Mai 2027&lt;br&gt;Ort: Eltville am Rhein&lt;br&gt;Format: Entscheiderkonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.faz-konferenzen.de/kuenstliche-intelligenz/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>Big Data &amp; AI World Frankfurt 2027: 19.–20. Mai 2027, Frankfurt am Main</title>
+<link>https://www.techshowfrankfurt.de/big-data-ai-world</link>
+<guid isPermaLink="false">deutschlandki-event:big-data-ai-world-frankfurt-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Messe &amp; Expo</category>
+<category>Frankfurt am Main</category>
+<description>&lt;p&gt;Produktiver KI-Einsatz, Data Governance, DataOps, MLOps, Analytics und skalierbare Datenplattformen&lt;/p&gt;&lt;p&gt;Datum: 19.–20. Mai 2027&lt;br&gt;Ort: Frankfurt am Main&lt;br&gt;Format: Daten- &amp;amp; KI-Konferenz und Expo&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.techshowfrankfurt.de/big-data-ai-world&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>AI:CAN 2027: 2. Juni 2027, Blankenfelde-Mahlow</title>
+<link>https://www.campixx.de/aican/</link>
+<guid isPermaLink="false">deutschlandki-event:ai-can-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Workshop &amp; Training</category>
+<category>Blankenfelde-Mahlow</category>
+<description>&lt;p&gt;KI für Marketing, E-Commerce und Kommunikation, Agentic AI, Automatisierung, MCP und Content-Erstellung&lt;/p&gt;&lt;p&gt;Datum: 2. Juni 2027&lt;br&gt;Ort: Blankenfelde-Mahlow&lt;br&gt;Format: Praxis-Konferenz &amp;amp; Workshops&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.campixx.de/aican/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item><item>
+<title>AEiC 2027: 8.–11. Juni 2027, Berlin</title>
+<link>https://www.ada-europe.org/conference2027/</link>
+<guid isPermaLink="false">deutschlandki-event:aeic-2027</guid>
+<pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+<category>Wissenschaft &amp; Transfer</category>
+<category>Berlin</category>
+<description>&lt;p&gt;Zuverlässige und robuste KI, KI für Software Engineering sowie sicherheitskritische Systeme&lt;/p&gt;&lt;p&gt;Datum: 8.–11. Juni 2027&lt;br&gt;Ort: Berlin&lt;br&gt;Format: Internationale Software-Forschungskonferenz&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.ada-europe.org/conference2027/&quot;&gt;Offizielle Veranstaltungsseite&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Quelle: &lt;a href=&quot;https://deutschlandki.de/ki-events&quot;&gt;DeutschlandKI KI-Events&lt;/a&gt;, Lizenz &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/deed.de&quot;&gt;CC BY 4.0&lt;/a&gt;&lt;/p&gt;</description>
+<source url="https://deutschlandki.de/ki-events/feed.xml">DeutschlandKI KI-Events</source>
+</item>
+</channel>
+</rss>

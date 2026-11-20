@@ -13,6 +13,9 @@ npm-debug.log*
 # per-run hand-off to Claude (pipeline)
 work/
 
+# raw HTTP bodies cached for conditional GET (never committed)
+data/cache/http/
+
 # environment variables
 .env
 .env.*

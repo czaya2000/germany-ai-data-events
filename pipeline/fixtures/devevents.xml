@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Upcoming developer events</title>
+        <link>https://dev.events</link>
+        <description>Upcoming developer events</description>
+        <lastBuildDate>Fri, 20 Nov 2026 08:06:22 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Upcoming developer events</title>
+            <url>https://dev.events/favicon.png</url>
+            <link>https://dev.events</link>
+        </image>
+        <copyright>All rights reserved 2020-2026, dev.events</copyright>
+        <item>
+            <title><![CDATA[Clean Architecture Masterclass]]></title>
+            <link>https://dev.events/conferences/clean-architecture-online-4-2023</link>
+            <guid>clean-architecture-online-4-2023</guid>
+            <pubDate>Mon, 06 Feb 2023 15:06:47 GMT</pubDate>
+            <description><![CDATA[Clean Architecture Masterclass is happening on December 10, 2026, Online. More information: https://dev.events/conferences/clean-architecture-online-4-2023]]></description>
+            <category>Java</category>
+            <category>masterclass</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Clean%2520Architecture%2520Masterclass,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252010-11%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[The Principal Dev – Masterclass for Tech Leads]]></title>
+            <link>https://dev.events/conferences/principal-developer-online-5-2022</link>
+            <guid>principal-developer-online-5-2022</guid>
+            <pubDate>Wed, 23 Mar 2022 08:34:00 GMT</pubDate>
+            <description><![CDATA[The Principal Dev – Masterclass for Tech Leads is happening on December 3, 2026, Online. More information: https://dev.events/conferences/principal-developer-online-5-2022]]></description>
+            <category>Tech leadership</category>
+            <category>masterclass</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:The%2520Principal%2520Dev%2520%25E2%2580%2593%2520Masterclass%2520for%2520Tech%2520Leads,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%25203-4%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Drupal Developer Days Valencia 2027]]></title>
+            <link>https://dev.events/conferences/drupal-developer-days-valencia-2027-0zi1jeha</link>
+            <guid>drupal-developer-days-valencia-2027-0zi1jeha</guid>
+            <pubDate>Thu, 19 Nov 2026 05:54:04 GMT</pubDate>
+            <description><![CDATA[Drupal Developer Days Valencia 2027 is happening on May 25, 2027 in Valencia, Spain, Europe. More information: https://dev.events/conferences/drupal-developer-days-valencia-2027-0zi1jeha]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Drupal%2520Developer%2520Days%2520Valencia%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:May%252025-29%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Valencia%252C%2520Spain,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[MidCamp 2027]]></title>
+            <link>https://dev.events/conferences/mid-camp-2027-v8z7lwg5</link>
+            <guid>mid-camp-2027-v8z7lwg5</guid>
+            <pubDate>Thu, 19 Nov 2026 05:53:15 GMT</pubDate>
+            <description><![CDATA[MidCamp 2027 is happening on April 28, 2027 in Chicago, United States, North America. More information: https://dev.events/conferences/mid-camp-2027-v8z7lwg5]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:MidCamp%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Apr%252028-30%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Chicago%252C%2520United%2520States,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Drupal Iberia 2027]]></title>
+            <link>https://dev.events/conferences/drupal-iberia-2027-2792btvj</link>
+            <guid>drupal-iberia-2027-2792btvj</guid>
+            <pubDate>Thu, 19 Nov 2026 05:52:15 GMT</pubDate>
+            <description><![CDATA[Drupal Iberia 2027 is happening on March 12, 2027 in Oviedo, Spain, Europe. More information: https://dev.events/conferences/drupal-iberia-2027-2792btvj]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Drupal%2520Iberia%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Mar%252012-13%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Oviedo%252C%2520Spain,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Drupalcamp Munich 2027]]></title>
+            <link>https://dev.events/conferences/drupalcamp-munich-2027-p6qplp0</link>
+            <guid>drupalcamp-munich-2027-p6qplp0</guid>
+            <pubDate>Thu, 19 Nov 2026 05:51:04 GMT</pubDate>
+            <description><![CDATA[Drupalcamp Munich 2027 is happening on March 12, 2027 in Munich, Germany, Europe. More information: https://dev.events/conferences/drupalcamp-munich-2027-p6qplp0]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Drupalcamp%2520Munich%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Mar%252012-13%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Munich%252C%2520Germany,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[WebCamp NJ 2027]]></title>
+            <link>https://dev.events/conferences/web-camp-nj-2027-0u2vnz6z</link>
+            <guid>web-camp-nj-2027-0u2vnz6z</guid>
+            <pubDate>Thu, 19 Nov 2026 05:49:55 GMT</pubDate>
+            <description><![CDATA[WebCamp NJ 2027 is happening on March 11, 2027 in Princeton, United States, North America. More information: https://dev.events/conferences/web-camp-nj-2027-0u2vnz6z]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:WebCamp%2520NJ%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Mar%252011-12%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Princeton%252C%2520United%2520States,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Mountain Camp 2027]]></title>
+            <link>https://dev.events/conferences/mountain-camp-2027-xxwrx4ub</link>
+            <guid>mountain-camp-2027-xxwrx4ub</guid>
+            <pubDate>Thu, 19 Nov 2026 05:48:37 GMT</pubDate>
+            <description><![CDATA[Mountain Camp 2027 is happening on March 2, 2027 in Davos, Switzerland, Europe. More information: https://dev.events/conferences/mountain-camp-2027-xxwrx4ub]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Mountain%2520Camp%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Mar%25202-4%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Davos%252C%2520Switzerland,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Florida DrupalCamp 2027]]></title>
+            <link>https://dev.events/conferences/florida-drupal-camp-2027-ihr6m2ks</link>
+            <guid>florida-drupal-camp-2027-ihr6m2ks</guid>
+            <pubDate>Thu, 19 Nov 2026 05:46:38 GMT</pubDate>
+            <description><![CDATA[Florida DrupalCamp 2027 is happening on January 29, 2027 in Orlando, United States, North America. More information: https://dev.events/conferences/florida-drupal-camp-2027-ihr6m2ks]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Florida%2520DrupalCamp%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Jan%252029-30%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Orlando%252C%2520United%2520States,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DrupalAsia Connect India 2027]]></title>
+            <link>https://dev.events/conferences/drupal-asia-connect-india-2027-xry2svzs</link>
+            <guid>drupal-asia-connect-india-2027-xry2svzs</guid>
+            <pubDate>Thu, 19 Nov 2026 05:45:01 GMT</pubDate>
+            <description><![CDATA[DrupalAsia Connect India 2027 is happening on January 28, 2027 in Mumbai, India, Asia. More information: https://dev.events/conferences/drupal-asia-connect-india-2027-xry2svzs]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DrupalAsia%2520Connect%2520India%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Jan%252028-30%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Mumbai%252C%2520India,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DrupalCamp Frankfurt 2026]]></title>
+            <link>https://dev.events/conferences/drupal-camp-frankfurt-2026-j-0vjxfd</link>
+            <guid>drupal-camp-frankfurt-2026-j-0vjxfd</guid>
+            <pubDate>Thu, 19 Nov 2026 05:42:28 GMT</pubDate>
+            <description><![CDATA[DrupalCamp Frankfurt 2026 is happening on November 27, 2026 in Frankfurt am Main, Germany, Europe. More information: https://dev.events/conferences/drupal-camp-frankfurt-2026-j-0vjxfd]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DrupalCamp%2520Frankfurt%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252027-29%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Frankfurt%2520am%2520Main%252C%2520Germany,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DrupalCon Edinburgh 2027]]></title>
+            <link>https://dev.events/conferences/drupal-con-edinburgh-2027-r-v11n5e</link>
+            <guid>drupal-con-edinburgh-2027-r-v11n5e</guid>
+            <pubDate>Thu, 19 Nov 2026 05:40:42 GMT</pubDate>
+            <description><![CDATA[DrupalCon Edinburgh 2027 is happening on October 25, 2027 in Edinburgh, United Kingdom, Europe. More information: https://dev.events/conferences/drupal-con-edinburgh-2027-r-v11n5e]]></description>
+            <category>Drupal</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DrupalCon%2520Edinburgh%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Oct%252025-28%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Edinburgh%252C%2520United%2520Kingdom,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[SAP Connect Virtual]]></title>
+            <link>https://dev.events/conferences/sap-connect-virtual-epqc0wa</link>
+            <guid>sap-connect-virtual-epqc0wa</guid>
+            <pubDate>Thu, 19 Nov 2026 05:38:03 GMT</pubDate>
+            <description><![CDATA[SAP Connect Virtual is happening on October 6, 2027, Online. More information: https://dev.events/conferences/sap-connect-virtual-epqc0wa]]></description>
+            <category>SAP</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:SAP%2520Connect%2520Virtual,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Oct%25206-7%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[SAP Connect 2027]]></title>
+            <link>https://dev.events/conferences/sap-connect-2027-7-6soork</link>
+            <guid>sap-connect-2027-7-6soork</guid>
+            <pubDate>Thu, 19 Nov 2026 05:37:18 GMT</pubDate>
+            <description><![CDATA[SAP Connect 2027 is happening on October 5, 2027 in Las Vegas, United States, North America. More information: https://dev.events/conferences/sap-connect-2027-7-6soork]]></description>
+            <category>SAP</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:SAP%2520Connect%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Oct%25205-7%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Las%2520Vegas%252C%2520United%2520States,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[SAP Sapphire Barcelona]]></title>
+            <link>https://dev.events/conferences/sap-sapphire-barcelona-ln3oxnjw</link>
+            <guid>sap-sapphire-barcelona-ln3oxnjw</guid>
+            <pubDate>Thu, 19 Nov 2026 05:35:28 GMT</pubDate>
+            <description><![CDATA[SAP Sapphire Barcelona is happening on June 1, 2027 in Barcelona, Spain, Europe. More information: https://dev.events/conferences/sap-sapphire-barcelona-ln3oxnjw]]></description>
+            <category>SAP</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:SAP%2520Sapphire%2520Barcelona,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Jun%25201-3%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Barcelona%252C%2520Spain,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[SAP Sapphire Virtual]]></title>
+            <link>https://dev.events/conferences/sap-sapphire-virtual-3bupmbcz</link>
+            <guid>sap-sapphire-virtual-3bupmbcz</guid>
+            <pubDate>Thu, 19 Nov 2026 05:34:39 GMT</pubDate>
+            <description><![CDATA[SAP Sapphire Virtual is happening on May 25, 2027, Online. More information: https://dev.events/conferences/sap-sapphire-virtual-3bupmbcz]]></description>
+            <category>SAP</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:SAP%2520Sapphire%2520Virtual,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:May%252025-26%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[SAP Sapphire & ASUG Annual Conference Orlando]]></title>
+            <link>https://dev.events/conferences/sap-sapphire-and-asug-annual-conference-orlando-kbrhwfqr</link>
+            <guid>sap-sapphire-and-asug-annual-conference-orlando-kbrhwfqr</guid>
+            <pubDate>Thu, 19 Nov 2026 05:32:04 GMT</pubDate>
+            <description><![CDATA[SAP Sapphire & ASUG Annual Conference Orlando is happening on May 24, 2027 in Orlando, United States, North America. More information: https://dev.events/conferences/sap-sapphire-and-asug-annual-conference-orlando-kbrhwfqr]]></description>
+            <category>SAP</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:SAP%2520Sapphire%2520%2526%2520ASUG%2520Annual%2520Conference%2520Orlando,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:May%252024-26%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Orlando%252C%2520United%2520States,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[C++Now 2027]]></title>
+            <link>https://dev.events/conferences/c-now-2027-j0iladke</link>
+            <guid>c-now-2027-j0iladke</guid>
+            <pubDate>Thu, 19 Nov 2026 05:26:16 GMT</pubDate>
+            <description><![CDATA[C++Now 2027 is happening on May 17, 2027 in Aspen, United States, North America. More information: https://dev.events/conferences/c-now-2027-j0iladke]]></description>
+            <category>C/C++</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:C%252B%252BNow%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:May%252017-21%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Aspen%252C%2520United%2520States,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[using std::cpp 2027]]></title>
+            <link>https://dev.events/conferences/using-std-cpp-2027-j80zcgnn</link>
+            <guid>using-std-cpp-2027-j80zcgnn</guid>
+            <pubDate>Thu, 19 Nov 2026 05:23:51 GMT</pubDate>
+            <description><![CDATA[using std::cpp 2027 is happening on March 8, 2027 in Madrid, Spain, Europe. More information: https://dev.events/conferences/using-std-cpp-2027-j80zcgnn]]></description>
+            <category>C/C++</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:using%2520std%253A%253Acpp%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Mar%25208-10%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Madrid%252C%2520Spain,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DevFest Ismailia 2026]]></title>
+            <link>https://dev.events/conferences/dev-fest-ismailia-2026-jjeflmqx</link>
+            <guid>dev-fest-ismailia-2026-jjeflmqx</guid>
+            <pubDate>Thu, 19 Nov 2026 05:16:50 GMT</pubDate>
+            <description><![CDATA[DevFest Ismailia 2026 is happening on November 21, 2026 in Ismailia, Egypt, Africa. More information: https://dev.events/conferences/dev-fest-ismailia-2026-jjeflmqx]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DevFest%2520Ismailia%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252021%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Ismailia%252C%2520Egypt,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[BeNeLux Power 2026]]></title>
+            <link>https://dev.events/conferences/be-ne-lux-power-2026-bj1dvq6s</link>
+            <guid>be-ne-lux-power-2026-bj1dvq6s</guid>
+            <pubDate>Thu, 19 Nov 2026 05:16:28 GMT</pubDate>
+            <description><![CDATA[BeNeLux Power 2026 is happening on November 23, 2026 in Tilburg, Netherlands, Europe. More information: https://dev.events/conferences/be-ne-lux-power-2026-bj1dvq6s]]></description>
+            <category>Linux / OS</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:BeNeLux%2520Power%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252023-24%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Tilburg%252C%2520Netherlands,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Heads Up Hackathon: build apps for Even G2 smart glasses]]></title>
+            <link>https://dev.events/conferences/heads-up-hackathon-build-apps-for-even-g2-smart-glasses-0bzhcdbd</link>
+            <guid>heads-up-hackathon-build-apps-for-even-g2-smart-glasses-0bzhcdbd</guid>
+            <pubDate>Thu, 19 Nov 2026 05:16:10 GMT</pubDate>
+            <description><![CDATA[Heads Up Hackathon: build apps for Even G2 smart glasses is happening on November 23, 2026, Online. More information: https://dev.events/conferences/heads-up-hackathon-build-apps-for-even-g2-smart-glasses-0bzhcdbd]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>hackathon</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Heads%2520Up%2520Hackathon%253A%2520build%2520apps%2520for%2520Even%2520G2%2520smart%2520glasses,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252023-29%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[NET Conf Online 2026]]></title>
+            <link>https://dev.events/conferences/net-conf-online-2026-l9jw4tu5</link>
+            <guid>net-conf-online-2026-l9jw4tu5</guid>
+            <pubDate>Thu, 19 Nov 2026 05:15:55 GMT</pubDate>
+            <description><![CDATA[NET Conf Online 2026 is happening on November 25, 2026, Online. More information: https://dev.events/conferences/net-conf-online-2026-l9jw4tu5]]></description>
+            <category>.NET</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:NET%2520Conf%2520Online%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252025%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DevFest Mallorca 2026]]></title>
+            <link>https://dev.events/conferences/dev-fest-mallorca-2026-5q9uxpo7</link>
+            <guid>dev-fest-mallorca-2026-5q9uxpo7</guid>
+            <pubDate>Thu, 19 Nov 2026 05:15:41 GMT</pubDate>
+            <description><![CDATA[DevFest Mallorca 2026 is happening on November 28, 2026 in Palma de Mallorca, Spain, Europe. More information: https://dev.events/conferences/dev-fest-mallorca-2026-5q9uxpo7]]></description>
+            <category>Google</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DevFest%2520Mallorca%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252028%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Palma%2520de%2520Mallorca%252C%2520Spain,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DevFest Niamey 2026]]></title>
+            <link>https://dev.events/conferences/dev-fest-niamey-2026-tugj5acm</link>
+            <guid>dev-fest-niamey-2026-tugj5acm</guid>
+            <pubDate>Thu, 19 Nov 2026 05:15:12 GMT</pubDate>
+            <description><![CDATA[DevFest Niamey 2026 is happening on November 29, 2026 in Niamey, Niger, Africa. More information: https://dev.events/conferences/dev-fest-niamey-2026-tugj5acm]]></description>
+            <category>Google</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DevFest%2520Niamey%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252029%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Niamey%252C%2520Niger,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Crash Course: Always-on agents]]></title>
+            <link>https://dev.events/conferences/crash-course-always-on-agents-293mlhh9</link>
+            <guid>crash-course-always-on-agents-293mlhh9</guid>
+            <pubDate>Thu, 19 Nov 2026 05:14:53 GMT</pubDate>
+            <description><![CDATA[Crash Course: Always-on agents is happening on November 30, 2026, Online. More information: https://dev.events/conferences/crash-course-always-on-agents-293mlhh9]]></description>
+            <category>SRE</category>
+            <category>masterclass</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Crash%2520Course%253A%2520Always-on%2520agents,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Nov%252030%2520-%2520Dec%252011%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DevFest Munich 2026]]></title>
+            <link>https://dev.events/conferences/dev-fest-munich-2026-g8hvwfgi</link>
+            <guid>dev-fest-munich-2026-g8hvwfgi</guid>
+            <pubDate>Thu, 19 Nov 2026 05:14:29 GMT</pubDate>
+            <description><![CDATA[DevFest Munich 2026 is happening on December 5, 2026 in Munich, Germany, Europe. More information: https://dev.events/conferences/dev-fest-munich-2026-g8hvwfgi]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DevFest%2520Munich%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%25205%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Munich%252C%2520Germany,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[AICD Summit]]></title>
+            <link>https://dev.events/conferences/aicd-summit-di87laut</link>
+            <guid>aicd-summit-di87laut</guid>
+            <pubDate>Thu, 19 Nov 2026 05:14:16 GMT</pubDate>
+            <description><![CDATA[AICD Summit is happening on December 5, 2026 in Tunis, Tunisia, Africa. More information: https://dev.events/conferences/aicd-summit-di87laut]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:AICD%2520Summit,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%25205-6%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Tunis%252C%2520Tunisia,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Crash Course: AI-Agents on ADK 2.x in Kubernetes]]></title>
+            <link>https://dev.events/conferences/crash-course-ai-agents-on-adk-2-x-in-kubernetes-u8rmqjeq</link>
+            <guid>crash-course-ai-agents-on-adk-2-x-in-kubernetes-u8rmqjeq</guid>
+            <pubDate>Thu, 19 Nov 2026 05:13:39 GMT</pubDate>
+            <description><![CDATA[Crash Course: AI-Agents on ADK 2.x in Kubernetes is happening on December 10, 2026, Online. More information: https://dev.events/conferences/crash-course-ai-agents-on-adk-2-x-in-kubernetes-u8rmqjeq]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>masterclass</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Crash%2520Course%253A%2520AI-Agents%2520on%2520ADK%25202.x%2520in%2520Kubernetes,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252010-19%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[ DevFest Santander 2026]]></title>
+            <link>https://dev.events/conferences/dev-fest-santander-2026-yc1ri0qd</link>
+            <guid>dev-fest-santander-2026-yc1ri0qd</guid>
+            <pubDate>Thu, 19 Nov 2026 05:13:17 GMT</pubDate>
+            <description><![CDATA[ DevFest Santander 2026 is happening on December 11, 2026 in Santander, Spain, Europe. More information: https://dev.events/conferences/dev-fest-santander-2026-yc1ri0qd]]></description>
+            <category>Google</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:%2520DevFest%2520Santander%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252011%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Santander%252C%2520Spain,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DevFest Al Mansura 26]]></title>
+            <link>https://dev.events/conferences/dev-fest-al-mansura-26-89podxwk</link>
+            <guid>dev-fest-al-mansura-26-89podxwk</guid>
+            <pubDate>Thu, 19 Nov 2026 05:12:48 GMT</pubDate>
+            <description><![CDATA[DevFest Al Mansura 26 is happening on December 12, 2026 in Al Mansura, Yemen, Asia. More information: https://dev.events/conferences/dev-fest-al-mansura-26-89podxwk]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DevFest%2520Al%2520Mansura%252026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252012%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Al%2520Mansura%252C%2520Yemen,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DevFest in the Cloud]]></title>
+            <link>https://dev.events/conferences/dev-fest-in-the-cloud-qj2cliju</link>
+            <guid>dev-fest-in-the-cloud-qj2cliju</guid>
+            <pubDate>Thu, 19 Nov 2026 05:12:17 GMT</pubDate>
+            <description><![CDATA[DevFest in the Cloud is happening on December 12, 2026 in Belgrade, Serbia, Europe. More information: https://dev.events/conferences/dev-fest-in-the-cloud-qj2cliju]]></description>
+            <category>Cloud</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DevFest%2520in%2520the%2520Cloud,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252012%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Belgrade%252C%2520Serbia,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Grok Bot for Software Teams: Inside Our AI Delivery Team]]></title>
+            <link>https://dev.events/conferences/grok-bot-for-software-teams-inside-our-ai-delivery-team-w7amlfmq</link>
+            <guid>grok-bot-for-software-teams-inside-our-ai-delivery-team-w7amlfmq</guid>
+            <pubDate>Thu, 19 Nov 2026 05:11:57 GMT</pubDate>
+            <description><![CDATA[Grok Bot for Software Teams: Inside Our AI Delivery Team is happening on December 12, 2026, Online. More information: https://dev.events/conferences/grok-bot-for-software-teams-inside-our-ai-delivery-team-w7amlfmq]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>meetup</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Grok%2520Bot%2520for%2520Software%2520Teams%253A%2520Inside%2520Our%2520AI%2520Delivery%2520Team,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252012%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[ Learn, Build & Jingle ✨ by GDG Ottawa]]></title>
+            <link>https://dev.events/conferences/learn-build-and-jingle-by-gdg-ottawa-zjw5inb8</link>
+            <guid>learn-build-and-jingle-by-gdg-ottawa-zjw5inb8</guid>
+            <pubDate>Thu, 19 Nov 2026 05:11:34 GMT</pubDate>
+            <description><![CDATA[ Learn, Build & Jingle ✨ by GDG Ottawa is happening on December 15, 2026, Online. More information: https://dev.events/conferences/learn-build-and-jingle-by-gdg-ottawa-zjw5inb8]]></description>
+            <category>Google</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:%2520Learn%252C%2520Build%2520%2526%2520Jingle%2520%25E2%259C%25A8%2520by%2520GDG%2520Ottawa,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252015%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Global AI Nights Sofia 2026]]></title>
+            <link>https://dev.events/conferences/global-ai-nights-sofia-2026-hu4914gw</link>
+            <guid>global-ai-nights-sofia-2026-hu4914gw</guid>
+            <pubDate>Thu, 19 Nov 2026 05:11:12 GMT</pubDate>
+            <description><![CDATA[Global AI Nights Sofia 2026 is happening on December 15, 2026 in Sofia, Bulgaria, Europe. More information: https://dev.events/conferences/global-ai-nights-sofia-2026-hu4914gw]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Global%2520AI%2520Nights%2520Sofia%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252015%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Sofia%252C%2520Bulgaria,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Dev Fest Essen]]></title>
+            <link>https://dev.events/conferences/dev-fest-essen-tzaicmxa</link>
+            <guid>dev-fest-essen-tzaicmxa</guid>
+            <pubDate>Thu, 19 Nov 2026 05:10:54 GMT</pubDate>
+            <description><![CDATA[Dev Fest Essen is happening on December 17, 2026 in Essen, Germany, Europe. More information: https://dev.events/conferences/dev-fest-essen-tzaicmxa]]></description>
+            <category>Google</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Dev%2520Fest%2520Essen,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252017%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Essen%252C%2520Germany,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[DevFest Menorca 2026]]></title>
+            <link>https://dev.events/conferences/dev-fest-menorca-2026-70xpllj</link>
+            <guid>dev-fest-menorca-2026-70xpllj</guid>
+            <pubDate>Thu, 19 Nov 2026 05:10:41 GMT</pubDate>
+            <description><![CDATA[DevFest Menorca 2026 is happening on December 18, 2026 in Alaior, Spain, Europe. More information: https://dev.events/conferences/dev-fest-menorca-2026-70xpllj]]></description>
+            <category>Google</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:DevFest%2520Menorca%25202026,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Dec%252018%25202026,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Alaior%252C%2520Spain,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[CMS Conf Local - Riga]]></title>
+            <link>https://dev.events/conferences/cms-conf-local-riga-az0vulf5</link>
+            <guid>cms-conf-local-riga-az0vulf5</guid>
+            <pubDate>Thu, 19 Nov 2026 05:10:24 GMT</pubDate>
+            <description><![CDATA[CMS Conf Local - Riga is happening on January 23, 2027 in Riga, Latvia, Europe. More information: https://dev.events/conferences/cms-conf-local-riga-az0vulf5]]></description>
+            <category>Web / Frontend</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:CMS%2520Conf%2520Local%2520-%2520Riga,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Jan%252023%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Riga%252C%2520Latvia,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[TalosCon Santa Barbara 2027]]></title>
+            <link>https://dev.events/conferences/talos-con-santa-barbara-2027-obdoujsk</link>
+            <guid>talos-con-santa-barbara-2027-obdoujsk</guid>
+            <pubDate>Thu, 19 Nov 2026 05:09:36 GMT</pubDate>
+            <description><![CDATA[TalosCon Santa Barbara 2027 is happening on January 26, 2027 in Santa Barbara, United States, North America. More information: https://dev.events/conferences/talos-con-santa-barbara-2027-obdoujsk]]></description>
+            <category>Docker / Kubernetes</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:TalosCon%2520Santa%2520Barbara%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Jan%252026-27%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Santa%2520Barbara%252C%2520United%2520States,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[OpenJDK Committers' Workshop]]></title>
+            <link>https://dev.events/conferences/open-jdk-committers-workshop-azwnwfmt</link>
+            <guid>open-jdk-committers-workshop-azwnwfmt</guid>
+            <pubDate>Thu, 19 Nov 2026 05:09:02 GMT</pubDate>
+            <description><![CDATA[OpenJDK Committers' Workshop is happening on February 1, 2027 in Brussels, Belgium, Europe. More information: https://dev.events/conferences/open-jdk-committers-workshop-azwnwfmt]]></description>
+            <category>Java</category>
+            <category>masterclass</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:OpenJDK%2520Committers'%2520Workshop,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Feb%25201%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Brussels%252C%2520Belgium,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[AI Days 2027]]></title>
+            <link>https://dev.events/conferences/ai-days-2027-vbok1rqn</link>
+            <guid>ai-days-2027-vbok1rqn</guid>
+            <pubDate>Thu, 19 Nov 2026 05:08:31 GMT</pubDate>
+            <description><![CDATA[AI Days 2027 is happening on February 17, 2027 in Geneva, Switzerland, Europe. More information: https://dev.events/conferences/ai-days-2027-vbok1rqn]]></description>
+            <category>Artificial Intelligence (AI)</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:AI%2520Days%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Feb%252017%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Geneva%252C%2520Switzerland,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item><item>
+            <title><![CDATA[Global Power Platform & Agent Bootcamp Polish Online 2027]]></title>
+            <link>https://dev.events/conferences/global-power-platform-and-agent-bootcamp-polish-online-2027-y6i5dndr</link>
+            <guid>global-power-platform-and-agent-bootcamp-polish-online-2027-y6i5dndr</guid>
+            <pubDate>Thu, 19 Nov 2026 05:02:45 GMT</pubDate>
+            <description><![CDATA[Global Power Platform & Agent Bootcamp Polish Online 2027 is happening on February 19, 2027, Online. More information: https://dev.events/conferences/global-power-platform-and-agent-bootcamp-polish-online-2027-y6i5dndr]]></description>
+            <category>Microsoft</category>
+            <category>conference</category>
+            <enclosure url="https://res.cloudinary.com/eduardsi/image/upload/w_1000,c_fit,co_white,l_text:Lato_80_bold:Global%2520Power%2520Platform%2520%2526%2520Agent%2520Bootcamp%2520Polish%2520Online%25202027,g_north_west,x_100,y_100/w_1000,c_fit,co_white,l_text:Lato_40:Feb%252019%25202027,g_north_west,x_100,y_360/w_1000,c_fit,co_white,l_text:Lato_40_bold:Online,g_north_west,x_100,y_430/devevents-og_o00xcs.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>

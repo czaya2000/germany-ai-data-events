@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?> 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>Upcoming Events</title>
+		<link>https://mcml.ai/events/</link>
+		<description>Recent content Upcoming Events</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		<managingEditor>contact@mcml.ai  (Munich Center for Machine Learning)</managingEditor>
+		<webMaster>contact@mcml.ai (Munich Center for Machine Learning)</webMaster><copyright>Munich Center for Machine Learning | ©2024 | All rights reserved.</copyright>
+		<lastBuildDate>Thu, 19 Nov 2026 17:00:03 +0100</lastBuildDate>
+		<atom:link href="https://mcml.ai/events/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<pubDate>Mon, 09 Nov 2026 10:00:00 +0100</pubDate>
+			<title>Cambridge Meets MCML: 4 Day Al Hackathon</title>
+			<link>https://mcml.ai/events/2027-01-17-cambrdige-mcml-hackathon/</link>
+			<guid>https://mcml.ai/events/2027-01-17-cambrdige-mcml-hackathon/</guid>
+			<description>A four-day build sprint in Cambridge, co-organized by MCML, where 100 students and researchers team up to build AI projects.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/news/2026/2027-01-17-cambrdige-mcml-hackathon.webp" width="300" height="200" alt="Cambridge meets MCML: 4 Day Al Hackathon">
+				<br /><br />
+				<strong>Building AI Projects Across Science, Health, and Physical AI</strong><br />
+				Hackathon<br>
+				<strong>17.01.2027 - 20.01.2027</strong><br />
+				Cambridge West Hub, Cambridge, UK<br />
+				&lt;p&gt;Join us for Cambridge&#39;s biggest build sprint&lt;br /&gt;Across four days, 100 students, PhDs, and researchers will form teams, get creative, and build projects that solve important problems.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2027-01-17-cambrdige-mcml-hackathon/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item><item>
+			<pubDate>Thu, 19 Nov 2026 11:00:00 +0100</pubDate>
+			<title>Who’s Listening? Levels of Automation for AI That Hears Students’ Math Talk</title>
+			<link>https://mcml.ai/events/2026-12-14-demszky-guest-talk/</link>
+			<guid>https://mcml.ai/events/2026-12-14-demszky-guest-talk/</guid>
+			<description>Dora Demszky from Stanford explores how much work AI should take on when listening to students’ small-group math discussions.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/events/2026/2026-12-14-demszky-guest-talk.webp" width="300" height="200" alt="Who’s Listening? Levels of Automation for AI That Hears Students’ Math Talk">
+				<br /><br />
+				<strong>Guest Talk by Dora Demszky on AI Support for Classroom Math Discussions</strong><br />
+				Guest Talk<br>
+				<strong>14.12.2026, 11:15 am - 1:15 pm</strong><br />
+				Marsstraße 20, Room 605, 80335 Munich<br />
+				&lt;p&gt;How much of the work should AI take on when it listens to students’ small-group math discussions? Should it transcribe speech, flag important moments, interpret student understanding, or recommend actions to teachers? In this guest talk, Dora Demszky applies the levels-of-automation framework by Parasuraman et al. (2000) to these questions and argues that each level requires its own approach to design and evaluation.&lt;/p&gt;&lt;p&gt;The talk draws on MathOutLoud, a dataset of about 800 video recordings of small-group math discussions in grades 2 to 10, which will be publicly released in January 2027. She will also present a comparison of how LLMs and teachers notice student thinking, as well as a study of teachers using Talk Matters, a tool that pairs classroom video with LLM-generated analyses. Attendees will have the opportunity to try the tool.&lt;/p&gt;&lt;p&gt;Dora Demszky is an Assistant Professor at the Stanford Graduate School of Education, with a courtesy appointment in Computer Science, and leads the EduNLP lab. Her research uses natural language processing and computational methods to support student-centered teaching, teacher learning, and equitable classroom discourse.&lt;/p&gt;&lt;p&gt;The talk is organized by the TUM Center for Educational Technologies and jointly funded by MCML. Registration is required.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2026-12-14-demszky-guest-talk/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item><item>
+			<pubDate>Thu, 24 Sep 2026 09:30:00 +0200</pubDate>
+			<title>MCML General Assembly 2026</title>
+			<link>https://mcml.ai/events/2026-12-04-mcml-general-assembly/</link>
+			<guid>https://mcml.ai/events/2026-12-04-mcml-general-assembly/</guid>
+			<description>The MCML General Assembly brings members together for updates, research presentations, discussion, and networking across the MCML community.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/events/2026/2026-12-04-mcml-general-assembly.webp" width="300" height="200" alt="MCML General Assembly 2026">
+				<br /><br />
+				<strong>Open for All MCML Members</strong><br />
+				MCML Event<br>
+				<strong>04.12.2026, 10:00 am - 1:00 pm</strong><br />
+				Geschwister-Scholl-Platz 1, München<br />
+				&lt;p&gt;The MCML General Assembly 2026 brings together members of the Munich Center for Machine Learning for an afternoon of updates, research presentations, and exchange. The annual gathering provides an opportunity to reflect on developments across the center and strengthen connections within the MCML community.&lt;/p&gt;&lt;p&gt;The program will feature updates from the MCML leadership as well as presentations highlighting current research by MCML Junior Members. The General Assembly also provides an opportunity for members to connect, exchange ideas, and discuss ongoing activities across the center.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2026-12-04-mcml-general-assembly/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item><item>
+			<pubDate>Mon, 21 Sep 2026 09:00:00 +0200</pubDate>
+			<title>Online Machine Learning School</title>
+			<link>https://mcml.ai/events/2026-11-30-online-ml-school/</link>
+			<guid>https://mcml.ai/events/2026-11-30-online-ml-school/</guid>
+			<description>Join the Online Machine Learning School for Precision Medicine, organized by LMU and collaborators, from November 30 to December 4, 2026.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/events/2026/2026-11-30-online-ml-school.webp" width="300" height="200" alt="Online Machine Learning School">
+				<br /><br />
+				<strong>For Precision Medicine</strong><br />
+				Online School<br>
+				<strong>30.11.2026 - 04.12.2026, 9:30 am - 5:00 pm</strong><br />
+				Virtual event<br />
+				&lt;p&gt;The Online Machine Learning School for Precision Medicine brings together clinicians and researchers for a week of beginner-friendly training in machine learning for psychiatry and neuroscience. The fully online course combines theoretical sessions with practical training and requires no prior coding experience.&lt;/p&gt;&lt;p&gt;The program covers core machine learning concepts such as cross-validation, overfitting, external validation, and explainable AI, alongside emerging topics including transformers, foundation models, and large language models. Participants in the in-depth track can also gain hands-on experience with NeuroMiner 2.0, a user-friendly machine learning toolbox for clinical neuroscience and neuroimaging research.&lt;/p&gt;&lt;p&gt;The Online Machine Learning School for Precision Medicine is co-organized by MCML Junior Member Clara Vetter and the Chair of AI in Medicine at LMU.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2026-11-30-online-ml-school/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item><item>
+			<pubDate>Mon, 12 Jan 2026 09:00:00 +0200</pubDate>
+			<title>Certificate Course on Responsible AI - Part 4</title>
+			<link>https://mcml.ai/events/2026-11-27-certificate-course-responsible-ai/</link>
+			<guid>https://mcml.ai/events/2026-11-27-certificate-course-responsible-ai/</guid>
+			<description>Preliminary announcement of the Responsible AI Certificate Course 2026, a joint online program by the German National AI Centers. Details to follow.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/events/2026/2026-certificate-course-responsible-ai.webp" width="300" height="200" alt="Certificate Course on Responsible AI - Part 4">
+				<br /><br />
+				<strong>Organized by the German National AI Centers</strong><br />
+				Certificate Course<br>
+				<strong>27.11.2026, 9:00 am - 2:30 pm</strong><br />
+				Online<br />
+				&lt;p&gt;The course is organized by the AI competence centers in Germany (BIFOLD, DfKI, Lamarr, MCML, ScaDS.AI and Tübingen AI Center). Researchers from several disciplines will work in pairs during four different thematic days to provide insight into cutting-edge AI research, highlighting their diverse perspectives on Responsible AI. Together, they paint a diverse and multifaceted picture that opens up space for independent thinking and collaborative discussion among teachers and learners. The course does not aim to provide a comprehensive catalog of knowledge on Responsible AI, but rather to foster the development of critical thinking and judgment skills with high expertise that enable independent further reflection.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2026-11-27-certificate-course-responsible-ai/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item><item>
+			<pubDate>Tue, 17 Nov 2026 10:00:00 +0100</pubDate>
+			<title>MCML Industry Pitch Talks at Rohde &amp; Schwarz</title>
+			<link>https://mcml.ai/events/2026-11-24-pitchtalk-rhode-schwarz/</link>
+			<guid>https://mcml.ai/events/2026-11-24-pitchtalk-rhode-schwarz/</guid>
+			<description>MCML researchers present their work at Rohde &amp; Schwarz in Munich and explore collaboration opportunities with company experts.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/events/2026/2026-11-24-pitchtalk-rhode-schwarz.webp" width="300" height="200" alt="MCML Industry Pitch Talks at Rohde &amp; Schwarz">
+				<br /><br />
+				<strong>Connecting Machine Learning Research With Industry Practice</strong><br />
+				Pitchtalk Series<br>
+				<strong>24.11.2026</strong><br />
+				Mühldorfstraße 15, 81671 München (Berg am Laim)<br />
+				&lt;p&gt;The next edition of the MCML Industry Pitch Talks will take place at Rohde &amp;amp; Schwarz in Munich. MCML researchers will give short pitches on their current work in machine learning and AI and discuss it with experts from Rohde &amp;amp; Schwarz.&lt;/p&gt;&lt;p&gt;The format aims to open up conversations between research and industry, explore shared interests, and identify starting points for future collaboration.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2026-11-24-pitchtalk-rhode-schwarz/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item><item>
+			<pubDate>Thu, 19 Nov 2026 10:00:00 +0100</pubDate>
+			<title>From Concepts to Certificates: Towards Controllable Generative Models</title>
+			<link>https://mcml.ai/events/2026-11-20-munich-ai-lecture-leofante/</link>
+			<guid>https://mcml.ai/events/2026-11-20-munich-ai-lecture-leofante/</guid>
+			<description>Francesco Leofante from Imperial College London presents an approach to controlling generative models through concept unlearning.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/events/2026/2026-11-20-munich-ai-lecture-leofante.webp" width="300" height="200" alt="From Concepts to Certificates: Towards Controllable Generative Models">
+				<br /><br />
+				<strong>Invited Talk by Francesco Leofante on Making Generative Models Safer and More Controllable</strong><br />
+				Lecture<br>
+				<strong>20.11.2026, 2:15 pm - 6:00 pm</strong><br />
+				Oettingenstraße 67, Room 151, Munich<br />
+				&lt;p&gt;Generative models such as text-to-image diffusion models are used at scale, but their behavior remains hard to control. They can amplify stereotypes, produce explicit or protected content, and resist attempts to remove such behaviors. Current safeguards mostly filter inputs and outputs, which leaves the model’s internal causes untouched and can be bypassed.&lt;/p&gt;&lt;p&gt;In this talk, Francesco Leofante proposes a pipeline that extracts what a model has learned, uses it to guide targeted edits, and verifies that those edits hold, with concept unlearning as the running example. He will introduce concept graphs, which show how a model links concepts in its text encoder and denoiser, and use them to reduce bias and make unlearning more robust. He will also show why low attack success rates can be misleading, present a framework that certifies how much of an unlearned concept can still leak, and introduce eval-unlearn, an open-source library for comparing unlearning methods.&lt;/p&gt;&lt;p&gt;Francesco Leofante is an Assistant Professor in the Department of Computing at Imperial College London, where he leads the CRUMBS lab and co-directs the Centre for Explainable AI. His research combines learning and reasoning to build rigorous, robust, and useful explanations of AI systems.&lt;/p&gt;&lt;p&gt;Everyone is welcome, and there will be time for questions and discussion after the talk.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2026-11-20-munich-ai-lecture-leofante/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item><item>
+			<pubDate>Mon, 12 Jan 2026 09:00:00 +0200</pubDate>
+			<title>Certificate Course on Responsible AI - Part 3</title>
+			<link>https://mcml.ai/events/2026-11-20-certificate-course-responsible-ai/</link>
+			<guid>https://mcml.ai/events/2026-11-20-certificate-course-responsible-ai/</guid>
+			<description>Preliminary announcement of the Responsible AI Certificate Course 2026, a joint online program by the German National AI Centers. Details to follow.</description>
+			<content:encoded>
+				<![CDATA[ 				
+				<img src="https://mcml.ai/images/events/2026/2026-certificate-course-responsible-ai.webp" width="300" height="200" alt="Certificate Course on Responsible AI - Part 3">
+				<br /><br />
+				<strong>Organized by the German National AI Centers</strong><br />
+				Certificate Course<br>
+				<strong>20.11.2026, 9:00 am - 2:30 pm</strong><br />
+				Online<br />
+				&lt;p&gt;The course is organized by the AI competence centers in Germany (BIFOLD, DfKI, Lamarr, MCML, ScaDS.AI and Tübingen AI Center). Researchers from several disciplines will work in pairs during four different thematic days to provide insight into cutting-edge AI research, highlighting their diverse perspectives on Responsible AI. Together, they paint a diverse and multifaceted picture that opens up space for independent thinking and collaborative discussion among teachers and learners. The course does not aim to provide a comprehensive catalog of knowledge on Responsible AI, but rather to foster the development of critical thinking and judgment skills with high expertise that enable independent further reflection.&lt;/p&gt;
+				<a href="https://mcml.ai/events/2026-11-20-certificate-course-responsible-ai/">Goto event</a>
+				]]>
+			</content:encoded>
+		</item>
+		</channel>
+</rss>

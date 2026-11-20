@@ -1,0 +1,541 @@
+{
+ "entries": [
+  {
+   "api_id": "evt-R59DTGu61umfIcn",
+   "event": {
+    "api_id": "evt-R59DTGu61umfIcn",
+    "calendar_api_id": "cal-Ao6TPhzfEWCPhis",
+    "cover_url": "https://images.lumacdn.com/gallery-images/te/d1ed5a5c-27b8-4595-8d38-29f48f304991",
+    "end_at": "2026-11-20T18:00:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": true,
+    "location_type": "offline",
+    "name": "The Basic Brain: Neuromyths",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": false,
+    "social_image_url": "https://images.lumacdn.com/event-social/l3/68ad9a7a-2700-4149-8e33-22439ea41a95.png",
+    "start_at": "2026-11-20T17:00:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "3h6qr0bk",
+    "user_api_id": "usr-E84sEztI9HxdAgq",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "city": "Berlin",
+     "type": "google",
+     "region": "Berlin",
+     "address": "Unter den Linden 6",
+     "country": "Germany",
+     "place_id": "ChIJC2fnj9xRqEcR_zYSNZrFA8g",
+     "localized": {
+      "de": {
+       "city": "Berlin",
+       "region": "Berlin",
+       "address": "Unter den Linden 6",
+       "country": "Deutschland",
+       "city_state": "Berlin, Deutschland",
+       "sublocality": "Mitte",
+       "full_address": "Unter den Linden 6, 10117 Berlin, Deutschland",
+       "region_short": "BE",
+       "short_address": "Hauptgebäude, Unter den Linden 6, Berlin"
+      }
+     },
+     "city_state": "Berlin, Germany",
+     "description": "Humboldt-Universität zu Berlin\nHauptgebäude, 1. Obergeschoss (Main building, 1st floor)\nSeminarraum 2093",
+     "sublocality": "Mitte",
+     "country_code": "DE",
+     "full_address": "Unter den Linden 6, 10117 Berlin, Germany",
+     "region_short": "BE",
+     "short_address": "Hauptgebäude, Unter den Linden 6, Berlin",
+     "place_coordinate": {
+      "latitude": 52.5180848,
+      "longitude": 13.393696499999999
+     },
+     "apple_maps_place_id": null,
+     "mode": "shown"
+    },
+    "geo_address_visibility": "public",
+    "coordinate": {
+     "longitude": 13.393696499999999,
+     "latitude": 52.5180848
+    },
+    "waitlist_enabled": true,
+    "waitlist_status": "active"
+   },
+   "calendar": {
+    "name": "Charité NeuroScience (CNS)"
+   },
+   "hosts": [
+    {
+     "name": "Charité NeuroScience"
+    }
+   ]
+  },
+  {
+   "api_id": "evt-HrxCpY0eexCNvzz",
+   "event": {
+    "api_id": "evt-HrxCpY0eexCNvzz",
+    "calendar_api_id": "cal-LY0QtHAiBMvIHYk",
+    "cover_url": "https://images.lumacdn.com/uploads/ib/1b3817c7-6c94-440f-8bf0-29a831a0b52a.png",
+    "end_at": "2026-11-20T20:30:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": false,
+    "location_type": "offline",
+    "name": "Hire or automate? GTM in 2027",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": true,
+    "social_image_url": "https://images.lumacdn.com/event-social/w9/c248ca7b-b053-4213-88d9-874416e07e56.png",
+    "start_at": "2026-11-20T17:30:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "co-4i4z",
+    "user_api_id": "usr-R3kOs0ORnXDoOUE",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "city": "Berlin",
+     "type": "google",
+     "region": "Berlin",
+     "address": "SAP Data Space",
+     "country": "Germany",
+     "place_id": "ChIJ_0yTIOFRqEcRk39vv7w7kOw",
+     "localized": {
+      "de": {
+       "city": "Berlin",
+       "region": "Berlin",
+       "address": "Data Space",
+       "country": "Deutschland",
+       "city_state": "Berlin, Deutschland",
+       "sublocality": "Mitte",
+       "full_address": "Data Space, Innenhof rechts, Rosenthaler Str. 38, 10178 Berlin, Deutschland",
+       "region_short": "BE",
+       "short_address": "Innenhof rechts, Rosenthaler Str. 38, Berlin"
+      }
+     },
+     "city_state": "Berlin, Germany",
+     "description": "",
+     "sublocality": "Mitte",
+     "country_code": "DE",
+     "full_address": "SAP Data Space, Innenhof rechts, Rosenthaler Str. 38, 10178 Berlin, Germany",
+     "region_short": "BE",
+     "short_address": "Innenhof rechts, Rosenthaler Str. 38, Berlin",
+     "place_coordinate": {
+      "latitude": 52.5243383,
+      "longitude": 13.402569699999999
+     },
+     "apple_maps_place_id": "I6E88C7CBF968AA62",
+     "mode": "shown"
+    },
+    "geo_address_visibility": "public",
+    "coordinate": {
+     "longitude": 13.402569699999999,
+     "latitude": 52.5243383
+    },
+    "waitlist_enabled": true,
+    "waitlist_status": "active"
+   },
+   "calendar": {
+    "name": "Co-Learning Club"
+   },
+   "hosts": [
+    {
+     "name": "Ridvan Sibic"
+    },
+    {
+     "name": "Bogdan Liutic"
+    },
+    {
+     "name": "Krzysztof Pawlak"
+    },
+    {
+     "name": "DATA SPACE"
+    }
+   ]
+  },
+  {
+   "api_id": "evt-W3hsHWFT20lHM4u",
+   "event": {
+    "api_id": "evt-W3hsHWFT20lHM4u",
+    "calendar_api_id": "cal-V3VVygpTryoGXiz",
+    "cover_url": "https://images.lumacdn.com/uploads/j9/e9fb4ab8-1985-4306-b3ef-36f6234c7c44.png",
+    "end_at": "2026-11-20T21:00:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": true,
+    "location_type": "offline",
+    "name": "GUEST KITCHEN LEBANESE LONG TABLE & CHEF SEROUJ KASSABIAN",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": false,
+    "social_image_url": "https://images.lumacdn.com/event-social/zv/ea0b53ab-8695-4749-b617-37d14108df6f.png",
+    "start_at": "2026-11-20T18:00:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "4jqo3z83",
+    "user_api_id": "usr-LQTlbUYG2UB9An5",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "mode": "obfuscated",
+     "city": "Berlin",
+     "city_state": "Berlin, Germany",
+     "sublocality": "Bezirk Pankow",
+     "country": "Germany",
+     "country_code": "DE",
+     "region": "Berlin",
+     "region_short": "BE"
+    },
+    "geo_address_visibility": "guests-only",
+    "coordinate": {
+     "latitude": 52.540789755713014,
+     "longitude": 13.414084240916578
+    },
+    "waitlist_enabled": false,
+    "waitlist_status": "disabled"
+   },
+   "calendar": {
+    "name": "Personal"
+   },
+   "hosts": [
+    {
+     "name": "Giza Demirkan"
+    }
+   ]
+  },
+  {
+   "api_id": "evt-gbLDjIoFTNZLHJt",
+   "event": {
+    "api_id": "evt-gbLDjIoFTNZLHJt",
+    "calendar_api_id": "cal-pbpCwf8ZXAjIpjA",
+    "cover_url": "https://images.lumacdn.com/uploads/er/fcca9c9e-d04c-47ce-b89e-6bc471c5210d.png",
+    "end_at": "2026-11-20T21:00:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": false,
+    "location_type": "offline",
+    "name": "Studio Visit & Art Residency Goodbye Party",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": true,
+    "social_image_url": "https://images.lumacdn.com/event-social/pd/a7caca48-b4e1-47cb-a61e-dba4b4085fe0.png",
+    "start_at": "2026-11-20T18:00:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "ud3mnv46",
+    "user_api_id": "usr-MDyjLJ5WFo43Vq3",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "mode": "obfuscated",
+     "city": "Berlin",
+     "city_state": "Berlin, Germany",
+     "sublocality": "Mitte",
+     "country": "Germany",
+     "country_code": "DE",
+     "region": "Berlin",
+     "region_short": "BE"
+    },
+    "geo_address_visibility": "guests-only",
+    "coordinate": {
+     "latitude": 52.52597196268296,
+     "longitude": 13.396237460379371
+    },
+    "waitlist_enabled": true,
+    "waitlist_status": "active"
+   },
+   "calendar": {
+    "name": "Personal"
+   },
+   "hosts": [
+    {
+     "name": "Onyx Chladilová"
+    }
+   ]
+  },
+  {
+   "api_id": "evt-gkn3icMy66dAHXl",
+   "event": {
+    "api_id": "evt-gkn3icMy66dAHXl",
+    "calendar_api_id": "cal-Dw3211chAyb9AxS",
+    "cover_url": "https://images.lumacdn.com/uploads/hg/58a101fc-423a-4a95-8e8c-f32729ecf921.jpg",
+    "end_at": "2026-11-20T20:30:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": false,
+    "location_type": "offline",
+    "name": "TextLab Open Mic x Wedding Affairs",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": false,
+    "social_image_url": "https://images.lumacdn.com/event-social/y4/1556bc27-3718-48c2-94af-4449a58c2087.png",
+    "start_at": "2026-11-20T18:00:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "xlb5z3c9",
+    "user_api_id": "usr-HSXh3YsZ3MT2hTQ",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "city": "Berlin",
+     "type": "google",
+     "region": "Berlin",
+     "address": "SAVVY Contemporary: The Laboratory of Form-Ideas",
+     "country": "Germany",
+     "place_id": "ChIJJeL0hl5RqEcRdyFMeIipXF8",
+     "localized": {
+      "de": {
+       "city": "Berlin",
+       "region": "Berlin",
+       "address": "SAVVY Contemporary",
+       "country": "Deutschland",
+       "city_state": "Berlin, Deutschland",
+       "sublocality": "Mitte",
+       "full_address": "SAVVY Contemporary, Reinickendorfer Str. 17, 13347 Berlin, Deutschland",
+       "region_short": "BE",
+       "short_address": "Reinickendorfer Str. 17, Berlin"
+      }
+     },
+     "city_state": "Berlin, Germany",
+     "description": "",
+     "sublocality": "Mitte",
+     "country_code": "DE",
+     "full_address": "SAVVY Contemporary: The Laboratory of Form-Ideas, Reinickendorfer Str. 17, 13347 Berlin, Germany",
+     "region_short": "BE",
+     "short_address": "Reinickendorfer Str. 17, Berlin",
+     "place_coordinate": {
+      "latitude": 52.5447318,
+      "longitude": 13.370583199999999
+     },
+     "apple_maps_place_id": "I6D2FFD3340526BDC",
+     "mode": "shown"
+    },
+    "geo_address_visibility": "public",
+    "coordinate": {
+     "longitude": 13.370583199999999,
+     "latitude": 52.5447318
+    },
+    "waitlist_enabled": true,
+    "waitlist_status": "enabled"
+   },
+   "calendar": {
+    "name": "Personal"
+   },
+   "hosts": [
+    {
+     "name": "Ana Dias"
+    }
+   ]
+  },
+  {
+   "api_id": "evt-7sC1eVNw58tDsHU",
+   "event": {
+    "api_id": "evt-7sC1eVNw58tDsHU",
+    "calendar_api_id": "cal-97mNOaXaK2vODEF",
+    "cover_url": "https://images.lumacdn.com/uploads/2a/6485c086-8f0d-48ed-9fe8-c3ba7d3ef41a.png",
+    "end_at": "2026-11-21T05:00:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": false,
+    "location_type": "offline",
+    "name": "u r not alone. Launchparty",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": false,
+    "social_image_url": "https://images.lumacdn.com/event-social/64/0d784914-e09e-483e-813f-dc4021670399.png",
+    "start_at": "2026-11-20T21:00:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "i5bzq7v0",
+    "user_api_id": "usr-OVh84z7ICksa2FO",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "city": "Berlin",
+     "type": "google",
+     "region": "Berlin",
+     "address": "COOP Studios",
+     "country": "Germany",
+     "place_id": "ChIJj_Vp3OtRqEcRS8aZDHMhA3w",
+     "localized": {
+      "de": {
+       "city": "Berlin",
+       "region": "Berlin",
+       "address": "131 BAR",
+       "country": "Deutschland",
+       "city_state": "Berlin, Deutschland",
+       "sublocality": "Mitte",
+       "full_address": "131 BAR, Chausseestraße 131A, 10115 Berlin, Deutschland",
+       "region_short": "BE",
+       "short_address": "Chausseestraße 131A, Berlin"
+      }
+     },
+     "city_state": "Berlin, Germany",
+     "description": "",
+     "sublocality": "Mitte",
+     "country_code": "DE",
+     "full_address": "COOP Studios, Chausseestraße 131A, 10115 Berlin, Germany",
+     "region_short": "BE",
+     "short_address": "Chausseestraße 131A, Berlin",
+     "place_coordinate": {
+      "latitude": 52.5273962,
+      "longitude": 13.386505399999999
+     },
+     "apple_maps_place_id": null,
+     "mode": "shown"
+    },
+    "geo_address_visibility": "public",
+    "coordinate": {
+     "longitude": 13.386505399999999,
+     "latitude": 52.5273962
+    },
+    "waitlist_enabled": true,
+    "waitlist_status": "enabled"
+   },
+   "calendar": {
+    "name": "Personal"
+   },
+   "hosts": [
+    {
+     "name": "Emil Scheibke"
+    }
+   ]
+  },
+  {
+   "api_id": "evt-vIy2IiCiDS4L1bY",
+   "event": {
+    "api_id": "evt-vIy2IiCiDS4L1bY",
+    "calendar_api_id": "cal-yoOQeZo0uH2fGWy",
+    "cover_url": "https://images.lumacdn.com/uploads/ct/3bf92fd5-6ad0-4855-97ac-f6ef42aeaf53.png",
+    "end_at": "2026-11-21T22:00:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": false,
+    "location_type": "offline",
+    "name": "evolve urban day retreat - The art of slowing down @ Futura House",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": false,
+    "social_image_url": "https://images.lumacdn.com/event-social/93/c6bc5e34-6b88-4678-997f-89007b57f3c5.png",
+    "start_at": "2026-11-21T10:00:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "ixv11iv0",
+    "user_api_id": "usr-YRDDNKtiP1b2m2i",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "city": "Berlin",
+     "type": "google",
+     "region": "Berlin",
+     "address": "Futura House | Tech, Longevity and Balance",
+     "country": "Germany",
+     "place_id": "ChIJMWMJQsZPqEcRuN427fExMdU",
+     "localized": {
+      "de": {
+       "city": "Berlin",
+       "region": "Berlin",
+       "address": "Futura House | Tech, Longevity and Balance",
+       "country": "Deutschland",
+       "city_state": "Berlin, Deutschland",
+       "sublocality": "Berliner Innenstadt",
+       "full_address": "Futura House | Tech, Longevity and Balance, Paul-Lincke-Ufer 39-40, 10999 Berlin, Deutschland",
+       "region_short": "BE",
+       "short_address": "Paul-Lincke-Ufer 39-40, Berlin"
+      }
+     },
+     "city_state": "Berlin, Germany",
+     "description": "",
+     "sublocality": "Berliner Innenstadt",
+     "country_code": "DE",
+     "full_address": "Futura House | Tech, Longevity and Balance, Paul-Lincke-Ufer 39-40, 10999 Berlin, Germany",
+     "region_short": "BE",
+     "short_address": "Paul-Lincke-Ufer 39-40, Berlin",
+     "place_coordinate": {
+      "latitude": 52.496158699999995,
+      "longitude": 13.4222515
+     },
+     "apple_maps_place_id": "I57E4928008AB81C0",
+     "mode": "shown"
+    },
+    "geo_address_visibility": "public",
+    "coordinate": {
+     "longitude": 13.4222515,
+     "latitude": 52.496158699999995
+    },
+    "waitlist_enabled": true,
+    "waitlist_status": "active"
+   },
+   "calendar": {
+    "name": "Futura House"
+   },
+   "hosts": [
+    {
+     "name": "Theresa Kellaway"
+    },
+    {
+     "name": "Natalie Lachmann"
+    },
+    {
+     "name": "Lukas K"
+    }
+   ]
+  },
+  {
+   "api_id": "evt-XitNpsgEurjpKEf",
+   "event": {
+    "api_id": "evt-XitNpsgEurjpKEf",
+    "calendar_api_id": "cal-3j7d34nCHoFn4PT",
+    "cover_url": "https://images.lumacdn.com/uploads/2i/26111580-821a-4bab-a333-0f5958eab5b6.png",
+    "end_at": "2026-11-21T19:00:00.000Z",
+    "event_type": "independent",
+    "hide_rsvp": false,
+    "location_type": "offline",
+    "name": "living room - live music concert (BYOB)",
+    "one_to_one": true,
+    "recurrence_id": null,
+    "show_guest_list": false,
+    "social_image_url": "https://images.lumacdn.com/event-social/pr/a7457fd9-1026-41a1-a645-2c1a24bbcffb.png",
+    "start_at": "2026-11-21T16:00:00.000Z",
+    "timezone": "Europe/Berlin",
+    "url": "gezellig-211126",
+    "user_api_id": "usr-ksHVYV4EFw2amOY",
+    "visibility": "public",
+    "virtual_info": {
+     "has_access": false
+    },
+    "geo_address_info": {
+     "mode": "obfuscated",
+     "city": "Berlin",
+     "city_state": "Berlin, Germany",
+     "sublocality": "Mitte",
+     "country": "Germany",
+     "country_code": "DE",
+     "region": "Berlin",
+     "region_short": "BE"
+    },
+    "geo_address_visibility": "guests-only",
+    "coordinate": {
+     "latitude": 52.51028925956755,
+     "longitude": 13.406528788672587
+    },
+    "waitlist_enabled": false,
+    "waitlist_status": "disabled"
+   },
+   "calendar": {
+    "name": "Gezellig Sessions"
+   },
+   "hosts": [
+    {
+     "name": "Gezellig Sessions"
+    }
+   ]
+  }
+ ],
+ "has_more": true,
+ "next_cursor": "eyJzdiI6IjIwMjYtMTEtMjIgMDk6MDA6MDArMDAiLCJmYiI6ImV2dC14OE1xeWhkQllQREZUajEifQ"
+}

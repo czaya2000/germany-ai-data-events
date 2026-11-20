@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://caiml.events/feed.xml" rel="self" type="application/atom+xml" /><link href="https://caiml.events/" rel="alternate" type="text/html" /><updated>2026-11-19T17:42:23+01:00</updated><id>https://caiml.events/feed.xml</id><title type="html">Cologne AI and Machine Learning Meetup</title><subtitle>We are a meetup group of over 2,500 AI and ML enthusiasts from Cologne with bi-monthly events.</subtitle><entry><title type="html">CAIML #45</title><link href="https://caiml.events/meetup/2026/11/17/caiml-045.html" rel="alternate" type="text/html" title="CAIML #45" /><published>2026-11-17T22:30:00+01:00</published><updated>2026-11-17T22:30:00+01:00</updated><id>https://caiml.events/meetup/2026/11/17/caiml-045</id><content type="html" xml:base="https://caiml.events/meetup/2026/11/17/caiml-045.html"><![CDATA[<p>CAIML #45 happened on November 17, 2026, at <a href="https://www.lime-connect.com/">Lime Connect</a>.</p>
+
+<p><strong>Agenda</strong></p>
+
+<p>18h30 Open Doors</p>
+
+<p>19h00 Welcome &amp; Intro</p>
+
+<figure>
+    <img src="/assets/images/caiml-045-survey.png" alt="Survey Result" />
+    <figcaption><b>Community poll</b>: Only 20% of the room still puts a human in front of every deployment. A third — 34% — ship code that no person has read, relying on AI review alone. The largest group, 45%, has drawn the line at "small changes", which is the answer worth sitting with: "small" is self-assessed, nobody else audits the judgement, and the threshold tends to drift upward once the tooling proves itself. The shift in trust has already happened. What the room has not settled is which changes still earn human attention.</figcaption>
+</figure>
+
+<p>19h15 <a href="https://www.linkedin.com/in/doc-moya/">Ana Moya</a> (Hon. Professor of Data Science and BI at ISM) and <a href="https://www.linkedin.com/in/pranit-tandon-a0a394160/">Pranit Tandon</a> (MSc Business Intelligence &amp; Data Science): Beyond Large Language Models: A Non-Generative Computational Approach to Text Dynamics and Engagement in German Digital News</p>
+
+<p>Understanding what drives audience engagement remains one of the central challenges for digital news organizations. While current discussions are often dominated by Large Language Models and generative AI, this presentation demonstrates how explainable, non-generative computational methods can provide valuable insights into reader behavior and content performance. Rather than focusing on text generation, the presentation highlights how interpretable analytical methods can uncover the linguistic, structural, and emotional characteristics associated with higher engagement. The findings illustrate how news organizations can leverage transparent data science approaches to better understand content performance, support editorial decision-making, and complement emerging AI-driven strategies.</p>
+
+<p>Short Break</p>
+
+<p>19h50 <a href="https://www.linkedin.com/in/stefanchristoph/">Stefan Christoph</a> (Principal Solutions Architect at AWS): Getting Paid by Agents: When AI Becomes the Customer</p>
+
+<p>AI agents are starting to do more than browse and reason, they can also pay. In this talk, Stefan Christoph explores how agentic commerce is becoming real: using HTTP 402 and x402 to let AI agents autonomously discover, evaluate, and pay for content and APIs. We’ll look at what this emerging infrastructure means for developers, publishers, and a web where software itself increasingly becomes the customer.</p>
+
+<p>20h20 Networking with food and drinks provided by <a href="https://www.lime-connect.com/">Lime Connect</a></p>
+
+<p>Join the discussion on CAIML #45 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7529176598470836224">here</a>.</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Meetup" /><summary type="html"><![CDATA[CAIML #45 happened on November 17, 2026, at Lime Connect.]]></summary></entry><entry><title type="html">Announcing CAIML #45</title><link href="https://caiml.events/announcements/2026/10/01/caiml-045-announcement.html" rel="alternate" type="text/html" title="Announcing CAIML #45" /><published>2026-10-01T16:00:00+02:00</published><updated>2026-10-01T16:00:00+02:00</updated><id>https://caiml.events/announcements/2026/10/01/caiml-045-announcement</id><content type="html" xml:base="https://caiml.events/announcements/2026/10/01/caiml-045-announcement.html"><![CDATA[<p>CAIML #45 is going to happen on November 17, 2026, at <a href="https://www.lime-connect.com/">Lime Connect</a>.</p>
+
+<p>We will have two talks with additional time for networking.</p>
+
+<p><strong>Talk 1</strong>: <a href="https://www.linkedin.com/in/doc-moya/">Ana Moya</a> (Hon. Professor of Data Science and BI at ISM) &amp; <a href="https://www.linkedin.com/in/pranit-tandon-a0a394160/">Pranit Tandom</a> (MSc Business Intelligence &amp; Data Science): Beyond Large Language Models: A Non-Generative Computational Approach to Analysing Content Dissonance, Text Dynamics, and Engagement in German Digital News</p>
+
+<p><strong>Talk 2</strong>: <a href="https://www.linkedin.com/in/stefanchristoph/">Stefan Christoph</a> (Principal Solutions Architect at AWS): AI Traffic Monetization via WAF</p>
+
+<p>Follow us on <a href="https://www.linkedin.com/company/caiml-meetup">LinkedIn</a> to learn more about the talks and the agenda, and click <a href="https://www.meetup.com/cologne-ai-and-machine-learning-meetup/events/313098114/">here</a> to secure your spot. See you in November! 🤖</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Announcements" /><summary type="html"><![CDATA[CAIML #45 is going to happen on November 17, 2026, at Lime Connect.]]></summary></entry><entry><title type="html">CAIML #44</title><link href="https://caiml.events/meetup/2026/09/08/caiml-044.html" rel="alternate" type="text/html" title="CAIML #44" /><published>2026-09-08T23:30:00+02:00</published><updated>2026-09-08T23:30:00+02:00</updated><id>https://caiml.events/meetup/2026/09/08/caiml-044</id><content type="html" xml:base="https://caiml.events/meetup/2026/09/08/caiml-044.html"><![CDATA[<p>CAIML #44 happened on September 8, 2026, at <a href="https://www.th-koeln.de/">TH Köln</a> and was sponsored by <a href="https://koeln.business/">KölnBusiness</a>.</p>
+
+<p><strong>Agenda</strong></p>
+
+<p>18h30 Open Doors</p>
+
+<p>19h00 Welcome &amp; Intro</p>
+
+<figure>
+    <img src="/assets/images/caiml-044-survey.png" alt="Survey Result" />
+    <figcaption><b>Community poll</b>: The most telling number is the smallest one: only 10% picked "not applicable". In a room of around 80 people, Talk-to-Your-Data has stopped being a demo topic — almost everyone is building it. Where it hurts is another matter. Text-to-SQL accuracy and tool integration together draw just 28%, while semantics and data foundations account for 62%. Getting a model to write a query is no longer the hard part; telling it what a metric means is — which is exactly where Tim's talk picked up.</figcaption>
+</figure>
+
+<p>19h15 <a href="https://www.linkedin.com/in/tvossmer/">Tim Voßmerbäumer</a> (Data &amp; AI Consultant at Scalefree): Talk to Your Data: A Semantic-Layer Architecture for Reliable Analytics Agents</p>
+
+<p>An LLM can produce valid SQL over a warehouse schema and still answer the wrong question, because the schema does not carry the organizational meaning of a metric. This talk presents an agentic system over Google Ads, Google Analytics 4, and Google Search Console data, modeled in Data Vault 2 on BigQuery, in which a governed semantic layer serves as the agent’s knowledge interface. The agent answers along two paths: questions that map to a predefined metric go through the dbt Semantic Layer, using definitions that already exist rather than ones the model writes. Questions no predefined metric covers take an exploratory path, where the agent writes its own SQL under a rule-based guard. The agent may also decline when the data cannot support an answer. Without that option it does not fail visibly, but produces SQL that passes every structural check, fabricates the rows, and reports them faithfully.</p>
+
+<p>19h50 <a href="https://www.linkedin.com/in/dr-ivan-herreros-b64a204/">Ivan Herreros</a> (Senior AI Consultant | Machine Learning Engineer at inovex): From ChatGPT to Agentic AI: The Common Thread of AI Development</p>
+
+<p>How is Agentic AI actually progressing, how will it keep reshaping day-to-day work, and is any of it really impossible to predict? To answer that, we trace the evolution of LLM-based applications: from natural-language dialogue to the delegation of digital workflows to agents that act autonomously over ever-longer time horizons. The common thread: viewed with some distance, most of the steps (from RAG through MCP to Claude Code and Agent Harnesses) were not just predictable but predicted. Drawing on almost three years of building conversational and agentic AI platforms, we show which patterns recur and what actually sits behind the buzzwords. Whoever understands this underlying logic can situate new technological developments proactively, instead of reacting to every new hype cycle.</p>
+
+<p>20h20 Networking with food and drinks provided by <a href="https://koeln.business/">KölnBusiness</a></p>
+
+<p>Join the discussion on CAIML #44 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7504206738934558720">here</a>.</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Meetup" /><summary type="html"><![CDATA[CAIML #44 happened on September 8, 2026, at TH Köln and was sponsored by KölnBusiness.]]></summary></entry><entry><title type="html">Announcing CAIML #44</title><link href="https://caiml.events/announcements/2026/08/06/caiml-044-announcement.html" rel="alternate" type="text/html" title="Announcing CAIML #44" /><published>2026-08-06T16:00:00+02:00</published><updated>2026-08-06T16:00:00+02:00</updated><id>https://caiml.events/announcements/2026/08/06/caiml-044-announcement</id><content type="html" xml:base="https://caiml.events/announcements/2026/08/06/caiml-044-announcement.html"><![CDATA[<p>CAIML #44 is going to happen on September 8, 2026, at <a href="https://www.th-koeln.de/">TH Köln</a>, sponsored by <a href="https://koeln.business/">KölnBusiness</a>. The organization is supported by <a href="https://www.th-koeln.de/personen/gernot.heisenberg/">Prof. Gernot Heisenberg</a> and his research group.</p>
+
+<p>We will have two talks with additional time for networking.</p>
+
+<p><strong>Talk 1</strong>: <a href="https://www.linkedin.com/in/tvossmer/">Tim Voßmerbäumer</a> (Data &amp; AI Consultant at Scalefree): Talk to Your Data: A Semantic-Layer Architecture for Reliable Analytics Agents</p>
+
+<p><strong>Talk 2</strong>: <a href="https://www.linkedin.com/in/dr-ivan-herreros-b64a204/">Ivan Herreros</a> (Senior AI Consultant | Machine Learning Engineer at inovex): From ChatGPT to Agentic AI: The Common Thread of AI Development</p>
+
+<p>Follow us on <a href="https://www.linkedin.com/company/caiml-meetup">LinkedIn</a> to learn more about the talks and the agenda, and click <a href="https://www.meetup.com/de-DE/cologne-ai-and-machine-learning-meetup/events/313098107/">here</a> to secure your spot. See you in September! 🤖</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Announcements" /><summary type="html"><![CDATA[CAIML #44 is going to happen on September 8, 2026, at TH Köln, sponsored by KölnBusiness. The organization is supported by Prof. Gernot Heisenberg and his research group.]]></summary></entry><entry><title type="html">CAIML #43</title><link href="https://caiml.events/meetup/2026/07/21/caiml-043.html" rel="alternate" type="text/html" title="CAIML #43" /><published>2026-07-21T23:30:00+02:00</published><updated>2026-07-21T23:30:00+02:00</updated><id>https://caiml.events/meetup/2026/07/21/caiml-043</id><content type="html" xml:base="https://caiml.events/meetup/2026/07/21/caiml-043.html"><![CDATA[<p>CAIML #43 happened on July 21, 2026, at <a href="https://www.iqmatix.de/">IQMatix</a>.</p>
+
+<p><strong>Agenda</strong></p>
+
+<p>18h30 Open Doors</p>
+
+<p>19h00 Welcome &amp; Intro</p>
+
+<figure>
+    <img src="/assets/images/caiml-043-survey.png" alt="Survey Result" />
+    <figcaption><b>Community poll</b>: With 79% of the vote, Claude is the clear favorite among our community. DeepSeek, despite its early-2026 buzz, drew zero votes.</figcaption>
+</figure>
+
+<p>19h15 <a href="https://www.linkedin.com/in/gabriel-firmino-barjollo-785a941a3/">Gabriel Firmino Barjollo</a> &amp; <a href="https://www.linkedin.com/in/sebastian-kroeger-dev/">Sebastian Kröger</a> (Cybersecurity Specialist, Pentester &amp; AI Engineer; Architect &amp; AI Engineer): Background of jailbreaking LLMs, Pentest Agents, and Supply Chain Attacks</p>
+
+<p>Modern LLM safety alignment is a moving target - and understanding where it breaks is essential to building better defenses. We introduce in the background of jailbreak techniques across prompt, system, and model levels, then demonstrate how an unaligned model becomes the reasoning core of an autonomous pentest agent, wired to standard offensive tooling with a plan-execute-observe-adapt loop. Once an AI agent acts on a developer’s behalf, how far can a compromise propagate? We walk through a realistic end-to-end supply chain attack - a manipulated agent introduces a malicious dependency that survives code review and flows through CI/CD to downstream consumers. Attack primitives include LLM-amplified typosquatting, prompt injection via package metadata, and lateral movement into build and signing infrastructure.</p>
+
+<p>19h50 <a href="https://www.linkedin.com/in/maurice-kraus-493199164/">Maurice Kraus</a> (Research Associate / PhD Candidate at Technische Universität Darmstadt): Do We Really Need Another Forecasting Model?</p>
+
+<p>Time-series foundation models promise a single solution across domains, yet often rely on architectures that may be ill-suited to latency-sensitive or specialized use cases. In contrast, xLSTM-Mixer illustrates how lighter recurrent and state-space-inspired architectures can compete with heavier transformer models in both accuracy and efficiency. Benchmarks such as QuAnTS further highlight that practical time-series modeling increasingly goes beyond forecasting, requiring capabilities such as question answering and reasoning over temporal data, often through more specialized models. Finally, recent work on finding the Zeitgeist in time-series foundation models shifts the question from prediction error alone to what these models actually learn, and how their representations transfer. This talk introduces xLSTM-Mixer and uses it to motivate a broader discussion: do we need another forecasting method, or better ways to design, understand, and evaluate models for the specific demands of each domain?</p>
+
+<p>20h20 Networking with food and drinks provided by <a href="https://www.iqmatix.de/">IQMatix</a></p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Meetup" /><summary type="html"><![CDATA[CAIML #43 happened on July 21, 2026, at IQMatix.]]></summary></entry><entry><title type="html">Announcing CAIML #43</title><link href="https://caiml.events/announcements/2026/06/10/caiml-043-announcement.html" rel="alternate" type="text/html" title="Announcing CAIML #43" /><published>2026-06-10T16:00:00+02:00</published><updated>2026-06-10T16:00:00+02:00</updated><id>https://caiml.events/announcements/2026/06/10/caiml-043-announcement</id><content type="html" xml:base="https://caiml.events/announcements/2026/06/10/caiml-043-announcement.html"><![CDATA[<p>CAIML #43 is going to happen on July 21, 2026, at <a href="https://www.iqmatix.de/">IQMatix</a>.</p>
+
+<p>We will have two talks with additional time for networking.</p>
+
+<p><strong>Talk 1</strong>: <a href="https://www.linkedin.com/in/gabriel-firmino-barjollo-785a941a3/">Gabriel Firmino Barjollo</a> (Cybersecurity Specialist, Pentester &amp; AI Engineer) &amp; <a href="https://www.linkedin.com/in/sebastian-kroeger-dev/">Sebastian Kröger</a> (Architect &amp; AI Engineer): Background of jailbreaking LLMs, Pentest Agents, and Supply Chain Attacks</p>
+
+<p><strong>Talk 2</strong>: <a href="https://www.linkedin.com/in/maurice-kraus-493199164/">Maurice Kraus</a> (Research Associate / PhD Candidate at Technische Universität Darmstadt): Do We Really Need Another Forecasting Model?</p>
+
+<p>Follow us on <a href="https://www.linkedin.com/company/caiml-meetup">LinkedIn</a> to learn more about the talks and the agenda, and click <a href="https://www.meetup.com/de-de/cologne-ai-and-machine-learning-meetup/events/313098096/">here</a> to secure your spot. See you in July! 🤖</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Announcements" /><summary type="html"><![CDATA[CAIML #43 is going to happen on July 21, 2026, at IQMatix.]]></summary></entry><entry><title type="html">CAIML #42</title><link href="https://caiml.events/meetup/2026/05/19/caiml-042.html" rel="alternate" type="text/html" title="CAIML #42" /><published>2026-05-19T23:30:00+02:00</published><updated>2026-05-19T23:30:00+02:00</updated><id>https://caiml.events/meetup/2026/05/19/caiml-042</id><content type="html" xml:base="https://caiml.events/meetup/2026/05/19/caiml-042.html"><![CDATA[<p>CAIML #42 happened on May 19, 2026, at <a href="https://mobilabsolutions.com/">MobiLab Solutions</a>.</p>
+
+<p><strong>Agenda</strong></p>
+
+<p>18h30 Open Doors</p>
+
+<p>19h00 Welcome &amp; Intro</p>
+
+<figure>
+    <img src="/assets/images/caiml-042-survey.png" alt="Survey Result" />
+    <figcaption><b>Community poll</b>: 28% of our community admits to skipping LLM evaluation entirely — fittingly, on an evening dedicated to fixing exactly that. Among those who do evaluate, the tooling landscape is wide open: no single tool dominates, and 25% have rolled their own solution.</figcaption>
+</figure>
+
+<p>19h15 <a href="https://www.linkedin.com/in/witoldczaplewski/">Witold Czaplewski</a> (Full Stack Engineer at MobiLab Solutions): AI Engineering on Databricks</p>
+
+<p>Writing a prompt is easy. Building a production-ready GenAI system is not. In this session, we explore what AI engineering means in practice and how Databricks supports the full lifecycle of GenAI applications, from experimentation to deployment, monitoring, and governance. We cover the core concepts behind production AI systems, including the roles of software engineering, data engineering, and data science. The session walks through the end-to-end GenAI lifecycle on Databricks, including MLflow, batch and real-time inference, prompt management, and serving models or agents. Finally, we address governance, security, and responsible AI, with examples related to the EU AI Act, transparency, data governance, and operational risk management. A short live demo complements the discussion and shows how these capabilities come together in a practical setup.</p>
+
+<p>19h50 <a href="https://www.linkedin.com/in/simonas-cerniauskas-25973a73/">Simonas Cerniauskas</a> (Founder and Managing Director at tisix.io): Building reliable ai agents: A DSPy-based quality assurance framework</p>
+
+<p>As publishers increasingly adopt AI agents for content generation and analysis, ensuring output quality and reliability becomes critical. This talk introduces a novel quality assurance framework built with DSPy that addresses the unique challenges of evaluating AI agents in publishing workflows. Using real-world examples from newsroom implementations, I will demonstrate how to design and implement systematic testing pipelines that verify factual accuracy, content consistency, and compliance with editorial standards. Attendees will learn practical techniques for building reliable agent evaluation systems that go beyond simple metrics to ensure AI-generated content meets professional publishing standards. This presentation addresses one of the most pressing challenges in professional publishing today: ensuring quality and reliability when deploying AI agents in editorial environments. We’ll take a deep dive into how DSPy’s programmatic approach to language model development can be leveraged to create robust testing and validation pipelines that meet the demanding standards of modern newsrooms. The discussion begins by exploring the current landscape of AI evaluation in publishing workflows, examining why traditional testing approaches fall short when dealing with language models, and identifying the specific quality requirements unique to journalistic and editorial content. We’ll then move into a detailed technical exploration of solutions built with DSPy, demonstrating how to design modular evaluation pipelines, implement publishing-specific metrics, and create automated systems for fact-checking and consistency validation. Special attention will be given to the integration of knowledge graphs for reference-based evaluation and the incorporation of these systems into broader MLOps workflows. To ground these concepts in reality, we’ll examine a detailed case study of implementing this framework in an actual newsroom environment. This will include practical discussions of handling various content types, along with strategies for managing test data and evaluation criteria. We’ll share real-world performance monitoring approaches and concrete improvement strategies that have proven successful in production environments. The presentation concludes with hard-won insights and best practices, including practical strategies for finding the right balance between automated testing and human review, effective approaches to handling edge cases, and methods for scaling quality assurance processes across diverse content teams. Throughout the talk, we’ll share code examples and practical implementations that attendees can adapt for their own projects.</p>
+
+<p>20h20 Networking with food and drinks provided by <a href="https://mobilabsolutions.com/">MobiLab Solutions</a></p>
+
+<p>Join the discussion on CAIML #42 <a href="https://www.linkedin.com/posts/caiml-cologne-ai-share-7463320910922575872--DBM/">here</a>.</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Meetup" /><summary type="html"><![CDATA[CAIML #42 happened on May 19, 2026, at MobiLab Solutions.]]></summary></entry><entry><title type="html">Announcing CAIML #42</title><link href="https://caiml.events/announcements/2026/03/31/caiml-042-announcement.html" rel="alternate" type="text/html" title="Announcing CAIML #42" /><published>2026-03-31T16:00:00+02:00</published><updated>2026-03-31T16:00:00+02:00</updated><id>https://caiml.events/announcements/2026/03/31/caiml-042-announcement</id><content type="html" xml:base="https://caiml.events/announcements/2026/03/31/caiml-042-announcement.html"><![CDATA[<p>CAIML #42 is going to happen on May 19, 2026, at <a href="https://mobilabsolutions.com/">MobiLab Solutions</a>.</p>
+
+<p>We will have two talks with additional time for networking.</p>
+
+<p><strong>Talk 1</strong>: <a href="https://www.linkedin.com/in/witoldczaplewski/">Witold Czaplewski</a> (Full Stack Engineer at MobiLab Solutions): AI Engineering on Databricks</p>
+
+<p><strong>Talk 2</strong>: <a href="https://www.linkedin.com/in/simonas-cerniauskas-25973a73/">Simonas Cerniauskas</a> (Machine Learning Engineer at tisix.io): Building Reliable AI Agents: A DSPy-based Quality Assurance Framework</p>
+
+<p>Follow us on <a href="https://www.linkedin.com/company/caiml-meetup">LinkedIn</a> to learn more about the talks and the agenda, and click <a href="https://www.meetup.com/de-de/cologne-ai-and-machine-learning-meetup/events/310238034/">here</a> to secure your spot. See you in May! 🤖</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Announcements" /><summary type="html"><![CDATA[CAIML #42 is going to happen on May 19, 2026, at MobiLab Solutions.]]></summary></entry><entry><title type="html">CAIML #41</title><link href="https://caiml.events/meetup/2026/03/17/caiml-041.html" rel="alternate" type="text/html" title="CAIML #41" /><published>2026-03-17T22:30:00+01:00</published><updated>2026-03-17T22:30:00+01:00</updated><id>https://caiml.events/meetup/2026/03/17/caiml-041</id><content type="html" xml:base="https://caiml.events/meetup/2026/03/17/caiml-041.html"><![CDATA[<p>CAIML #41 happened on March 17, 2026, at <a href="https://www.atvantage.com/">ATVANTAGE</a>.</p>
+
+<p><strong>Agenda</strong></p>
+
+<p>18h30 Open Doors</p>
+
+<p>19h00 Welcome &amp; Intro</p>
+
+<figure>
+    <img src="/assets/images/caiml-041-survey.png" alt="Survey Result" />
+    <figcaption><b>Community poll</b>: Despite the rise of smaller and specialized models, 59% of our community still bets on SOTA Frontier Models as their primary strategy for 2026.</figcaption>
+</figure>
+
+<p>19h15 <a href="https://www.linkedin.com/in/moritz-wegener-1a518b110/">Moritz Wegener</a> (Data Scientist at ATVANTAGE): Nodes, Networks, and Capital Myths: How Graphs Uncover Dubious Payment Networks</p>
+
+<p>This talk explains how heterogeneous entities can be consolidated into meaningful graph-based units—such as individuals, companies, and corporate groups—and how these structures enable the detection of suspicious payment networks. By modeling ownership, control, and transactional relationships as graphs, we demonstrate how network patterns and structural anomalies help identify candidates for fraudulent activity that remain hidden in traditional, flat data representations.</p>
+
+<p>19h50 <a href="https://www.linkedin.com/in/reiz/">Achim Reiz</a> &amp; <a href="https://www.linkedin.com/in/uwe-kloss-591685165/">Uwe Kloss</a>: Lightning Talk</p>
+
+<p>A big thank you to Achim and Uwe for jumping in on short notice!</p>
+
+<p>20h20 Networking with food and drinks provided by ATVANTAGE</p>
+
+<p>Join the discussion on CAIML #41 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7441177904711061504">here</a>.</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Meetup" /><summary type="html"><![CDATA[CAIML #41 happened on March 17, 2026, at ATVANTAGE.]]></summary></entry><entry><title type="html">Announcing CAIML #41</title><link href="https://caiml.events/announcements/2026/02/02/caiml-041-announcement.html" rel="alternate" type="text/html" title="Announcing CAIML #41" /><published>2026-02-02T15:00:00+01:00</published><updated>2026-02-02T15:00:00+01:00</updated><id>https://caiml.events/announcements/2026/02/02/caiml-041-announcement</id><content type="html" xml:base="https://caiml.events/announcements/2026/02/02/caiml-041-announcement.html"><![CDATA[<p>CAIML #41 is going to happen on March 17, 2026, at <a href="https://www.atvantage.com/">ATVANTAGE</a>.</p>
+
+<p>We will have two talks with additional time for networking.</p>
+
+<p><strong>Talk 1</strong>: <a href="https://www.linkedin.com/in/moritz-wegener-1a518b110/">Moritz Wegener</a> (Data Scientist at ATVANTAGE): Nodes, Networks, and Capital Myths: How Graphs Uncover Dubious Payment Networks</p>
+
+<p><strong>Talk 2</strong>: <a href="https://www.linkedin.com/in/gerg%25C5%2591-szita-a978856b/">Gergő Szita</a> (Data Scientist): ICG-enhanced FOI of Rheumatoid Arthritis Classification</p>
+
+<p>Follow us on LinkedIn to learn more about the talks and the agenda, and click <a href="https://www.meetup.com/de-de/cologne-ai-and-machine-learning-meetup/events/310238014/">here</a> to secure your spot. See you in March! 🤖</p>]]></content><author><name>Aaqib Parvez Mohammed</name></author><category term="Announcements" /><summary type="html"><![CDATA[CAIML #41 is going to happen on March 17, 2026, at ATVANTAGE.]]></summary></entry></feed>

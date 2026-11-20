@@ -15,11 +15,15 @@
     "test:agent": "node scripts/test-agent-files.mjs",
     "archive": "node scripts/archive-past.mjs",
     "digest": "node scripts/build-digest.mjs",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "pipeline:fetch": "node pipeline/prepare.mjs --dry-run",
+    "pipeline:prepare": "node pipeline/prepare.mjs",
+    "test": "node --test \"pipeline/test/*.test.mjs\""
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^6.4.8"
+    "astro": "^6.4.8",
+    "fast-xml-parser": "^5.12.1"
   },
   "allowScripts": {
     "esbuild": true

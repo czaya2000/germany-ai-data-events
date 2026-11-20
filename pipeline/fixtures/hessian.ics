@@ -1,0 +1,154 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hessian.AI - ECPv6.18.4.1//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:hessian.AI
+X-ORIGINAL-URL:https://www.hessian.ai
+X-WR-CALDESC:Events for hessian.AI
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-Robots-Tag:noindex
+X-PUBLISHED-TTL:PT1H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:20250330T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:20251026T010000
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:20260329T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:20261025T010000
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:20270328T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:20271031T010000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261121
+DTSTAMP:20261103T135903Z
+CREATED:20261102T122128Z
+LAST-MODIFIED:20261103T135903Z
+UID:20846-1795046400-1795219199@www.hessian.ai
+SUMMARY:Lab2Market AI x Cyber
+DESCRIPTION:You built a model that works. Does anyone outside your group need it?\n  \nThat question decides whether AI research becomes a paper or a company. We’re putting it at the centre of Lab2Market AI x Cyber — a two-day special edition of the Lab2Market camp with Futury and ATHENE Digital Hub Cybersecurity\, on 19–20 November at the FUTURY Startup Space in Frankfurt. \nHesse has become one of the strongest AI research regions in Europe. Turning that into companies is the part we work on\, and it starts much earlier than most researchers think – not with a pitch deck or a funding application\, but with an honest look at who has the problem you solved. \nTwo days\, a small group\, and people who will tell you what they actually think. \nIt’s for researchers working on AI\, cybersecurity or both: post-quantum cryptography\, OT security\, anomaly detection\, secure ML pipelines. You don’t need a startup\, a co-founding team or a finished business model. An idea from your research is enough. \n  \nWhat happens in the two days:\n→ A business model workshop with an external coach \n→ Separate industry impulses for the AI and the cyber track \n→ Pitching in small groups\, with feedback from mentors from Futury\, ATHENE\, hessian.AI and d-fine \n→ A concrete roadmap for your next steps \nAfterwards\, the support continues: optional mentoring and access to the Futury ecosystem. \n  \n📍 Bertramshof\, Frankfurt am Main \n🗓️ 19–20 November 2026 \n🗣️ English \n💶 free of charge \nApply by November 13th: https://lnkd.in/eeHGpQZa \n  \n#AI #Cybersecurity #Sciencepreneurship #Forschungstransfer #RheinMain
+URL:https://www.hessian.ai/event/lab2market-ai-x-cyber/
+LOCATION:FUTURY\, Am Steinernen Stock 1\, Frankfurt\, Hesse\, 60320\, Germany
+ATTACH;FMTTYPE=image/png:https://www.hessian.ai/wp-content/uploads/2026/11/lab2market.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20261125T080000
+DTEND;TZID=Europe/Berlin:20261126T170000
+DTSTAMP:20261007T151209Z
+CREATED:20260814T183104Z
+LAST-MODIFIED:20261007T151209Z
+UID:20319-1795593600-1795712400@www.hessian.ai
+SUMMARY:KonKIS26 | #WeAreOpen
+DESCRIPTION:The Conference of the AI Service Centers\nThis year’s AI Service Centers conference takes place under the banner “WE ARE OPEN”\, and we mean it. Take advantage of our AI services for your project and turn your idea into an AI application with real added value. \nWhether it’s practical presentations or in-depth workshops offering insights into the latest research\, here you’ll find inspiration\, connections\, and support. Would you like to implement AI in your company or in the public sector—in a trustworthy\, secure\, and sustainable way? As an AI transfer specialist\, are you looking for open dialogue with other initiatives and partners? Are you as enthusiastic about open applications (open source)\, open data\, and collaborative approaches as we are? Then KonKIS26 is the perfect place for you! #WeAreOpen \nWhen: November 25 and 26\, 2026\nWhere: AI Village\, An der Hasenkaule 10\, 50354 Hürth (near Cologne) \nRegistration & ticket fees: Participation is free. Sign up now to secure your spot! \nNote: The program will be conducted in German.
+URL:https://www.hessian.ai/event/konkis26-weareopen/
+ATTACH;FMTTYPE=image/png:https://www.hessian.ai/wp-content/uploads/2026/08/KonKIS26-wao-CB-1.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20261126T120000
+DTEND;TZID=Europe/Berlin:20261126T124500
+DTSTAMP:20261107T102856Z
+CREATED:20261107T102004Z
+LAST-MODIFIED:20261107T102856Z
+UID:20867-1795694400-1795697100@www.hessian.ai
+SUMMARY:Who is developing AI in Hesse? Live webinar on aigude.ai
+DESCRIPTION:What AI startups are there in Hesse? Who is conducting research on which topics? And where are the opportunities for collaboration? \nWith aigude.ai\, hessian.AI brings together information about the research-based AI ecosystem in one place. Originating from the AI Startup Landscape Hessen\, the platform makes it easier to find startups\, research and expertise\, and turns the previous snapshot into a continuously updated register. \nTobias Kehl\, project manager and developer of aigude as well as co-lead of AI Startup Rising\, will present the platform and the vision behind it. In a live deep dive\, he will demonstrate how policymakers\, the media\, funding agencies\, and networks can use aigude for their research and networking. Afterward\, there will be time for questions and feedback. \nThursday\, November 26\, 2026 | 12:00–12:45 p.m. | Online webinar \nTry it out now: Landscape 2026 · aigude
+URL:https://www.hessian.ai/event/who-is-developing-ai-in-hesse-live-webinar-on-aigude-ai/
+LOCATION:Online
+ATTACH;FMTTYPE=image/png:https://www.hessian.ai/wp-content/uploads/2026/11/aigude-webinar-26-11-eventbrite-1.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20261126T180000
+DTEND;TZID=Europe/Berlin:20261126T191500
+DTSTAMP:20261113T143611Z
+CREATED:20261113T143042Z
+LAST-MODIFIED:20261113T143611Z
+UID:20964-1795716000-1795720500@www.hessian.ai
+SUMMARY:F.A.Z. Rhein-Main Feierabendbriefing: How F.A.Z. Builds an AI Podcast In-House | GI Regional Group Rhein-Main
+DESCRIPTION:How do you turn an editorial idea into an AI-supported audio format that runs every day in a live newsroom? Laura Webler and Pascal Kisker share how F.A.Z. built its “Rhein-Main Feierabendbriefing” in-house. \nHow does an editorial idea become an AI-supported audio format that works reliably in daily news operations? Using the “F.A.Z. Rhein-Main Feierabendbriefing” as an example\, Laura Webler and Pascal Kisker show how the Frankfurter Allgemeine Zeitung developed the format in-house and built it into its editorial workflows. \nThe talk follows the whole process: the first idea\, building the F.A.Z. podcast platform\, training an AI voice\, the first test runs and the launch in the newsroom. It also covers legal questions\, quality assurance and what AI can and can’t do in daily audio production. \nTo wrap up\, the speakers look ahead at how AI-supported audio formats might develop in the future. \nThe Speakers: \nLaura Webler\, Product Manager Audio & Podcasts\, Frankfurter Allgemeine Zeitung\nLaura is responsible for the strategic development\, reach and monetization of the F.A.Z. audio and podcast portfolio. For the “Rhein-Main Feierabendbriefing”\, she led the concept and preparation of the format\, oversaw the creation of the voice clone and coordinated the launch with the editorial team. \nPascal Kisker\, Generative AI Specialist\, Frankfurter Allgemeine Zeitung\nPascal develops AI applications and automations for the newsroom and the publishing house. He focuses on the technical design of generative AI solutions\, agents and workflows and on integrating them into existing systems. He built the F.A.Z. podcast platform\, which produces several audio formats with the help of AI. One of them is the “Rhein-Main Feierabendbriefing”\, which is created automatically every day together with the editorial team. He also takes AI projects from the first idea through prototyping to production.
+URL:https://www.hessian.ai/event/f-a-z-rhein-main-feierabendbriefing-how-f-a-z-builds-an-ai-podcast-in-house-gi-regional-group-rhein-main/
+LOCATION:Frankfurt University of Applied Sciences\, Hochhaus City Gate\, Room BCN-331\, Nibelungenplatz 1–3d\, 60318 Frankfurt\, Germany
+ATTACH;FMTTYPE=image/png:https://www.hessian.ai/wp-content/uploads/2026/11/hessian.AI-Event-Tip-Website-1.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20261201T133000
+DTEND;TZID=Europe/Berlin:20261201T143000
+DTSTAMP:20261013T122815Z
+CREATED:20261013T122815Z
+LAST-MODIFIED:20261013T122815Z
+UID:20734-1796131800-1796135400@www.hessian.ai
+SUMMARY:Digital AI-Café by hessian.AI Service Center | Every 1st and 3rd Tuesday!
+DESCRIPTION:With the new “Digital AI Café” the hessian.AI Service Center (hessian.AISC)\, funded by the BMFTR\, invites you to an open online consultation twice a month on all aspects of artificial intelligence. \nThe offer is aimed at anyone who uses AI in research\, business\, or projects\, or who plans to do so. Every first and third Tuesday of the month from 1:30 p.m. to 2:30 p.m.\, our experts are available online via Zoom to answer your questions and support you in everything from selecting suitable AI methods and data processing to the efficient use of our computing resources. \nWhether you have specific technical challenges\, want to discuss project ideas\, or exchange best practices\, you will find the right support at the Digital AI Café. \nThe AI Café is bilingual in German and English. \nMeet the Experts \n \nKajol Raju‘s research experience includes 3D data analysis\, classification\, and vision-based tasks\, as well as applying AI in the automotive field. She has also been working with large language models and Retrieval Augmented Generation (RAG). Our AI infrastructure and services are already driving innovation across multiple projects and fostering collaborations between research institutes and corporate partners. \n \nFlorian Kieser is Head of the hessian.AISC. With 13 years of experience as a project manager in various commercial enterprises and having founded his own start-up\, his goal is to make access to and application of AI as easy as possible for everyone.
+URL:https://www.hessian.ai/event/digital-ai-cafe-by-hessian-ai-service-center-every-1st-and-3rd-tuesday/
+LOCATION:Online
+ATTACH;FMTTYPE=image/jpeg:https://www.hessian.ai/wp-content/uploads/2026/10/aicafe.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20261203T120000
+DTEND;TZID=Europe/Berlin:20261203T124500
+DTSTAMP:20261107T102913Z
+CREATED:20261107T101903Z
+LAST-MODIFIED:20261107T102913Z
+UID:20876-1796299200-1796301900@www.hessian.ai
+SUMMARY:Your Startup on aigude.ai Greater Visibility\, New Opportunities
+DESCRIPTION:Your Startup on aigude.ai Greater Visibility\, New Opportunities \nYour AI solution needs to be discovered\, by potential partners\, talent\, investors\, and the media. \naigude.ai\, the new platform from hessian.ai makes the Hessian AI ecosystem easier to explore and provides a new home for the AI Startup Landscape Hessen. In this live deep dive\, Tobias Kehl\, project manager and developer at aigude\, as well as co-lead of AI Startup Rising—will show you how to use the platform for your startup: from registering or claiming your profile\, to updating information about your solution\, to posting job openings. You’ll also learn how up-to-date profiles help you get discovered by companies looking for suitable use cases\, and what other features are in the works. \naigude is built on the “Build in public” principle: Your questions\, experiences\, and ideas are very welcome and help us continue to develop the platform. \nThursday\, December 3\, 2026 | 12:00–12:45 p.m. | Online webinar \nTake a look around first: aigude.ai
+URL:https://www.hessian.ai/event/your-startup-on-aigude-ai-greater-visibility-new-opportunities/
+LOCATION:Online
+ATTACH;FMTTYPE=image/png:https://www.hessian.ai/wp-content/uploads/2026/11/aigude-webinar-03-12-en-eventbrite.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20261214T180000
+DTEND;TZID=Europe/Berlin:20261214T210000
+DTSTAMP:20261111T111258Z
+CREATED:20261111T111258Z
+LAST-MODIFIED:20261111T111258Z
+UID:20927-1797271200-1797282000@www.hessian.ai
+SUMMARY:All I want for Christmas… is a start-up f:ck up. 🎁
+DESCRIPTION:The Christmas Edition of foundersXchange Darmstadt is back for another round\, and once again\, December is all about the stories you won’t find in any pitch deck: Founders share their biggest startup f:ck-ups – decisions that went wrong\, costly lessons\, and the insights that ultimately changed everything. \n  \nThere’ll also be drinks\, snacks\, and Christmas cheer to fuel great conversations and plenty of networking 🍹✨ \n  \n📅 When: December 14\, 2026 \n📍 Where: Café 221qm\, Alexanderstr. 2\, Darmstadt \n⏰ Start: 6:00 p.m. \n👉 Registration: Click here! \n  \nCome on by\, get inspired\, and learn from others’ mistakes before you make your own. Fail merrily! 😉🎄 \n  \nfoundersXchange is a joint event series organized by the HIGHEST Innovation and Startup Center at TU Darmstadt\, the ATHENE Digital Hub Cybersecurity startup incubator\, the Hessian Research Center for Artificial Intelligence (hessian.AI)\, the Center for Satellite Navigation in Hesse (cesah)\, the HUB31 Technology and Startup Center\, and YUBIZZ\, the startup initiative of h_da. \nWe’ll all be there to provide you and your idea with the best possible support. 🚀
+URL:https://www.hessian.ai/event/all-i-want-for-christmas-is-a-start-up-fck-up-%f0%9f%8e%81/
+LOCATION:Café 221qm\, Alexanderstraße 2\, Darmstadt\, 64293\, Germany
+ATTACH;FMTTYPE=image/png:https://www.hessian.ai/wp-content/uploads/2026/11/fxc_141226_1504x752.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20261215T133000
+DTEND;TZID=Europe/Berlin:20261215T143000
+DTSTAMP:20261103T135723Z
+CREATED:20261013T123018Z
+LAST-MODIFIED:20261103T135723Z
+UID:20737-1797341400-1797345000@www.hessian.ai
+SUMMARY:Digital AI-Café by hessian.AI Service Center | Every 1st and 3rd Tuesday!
+DESCRIPTION:With the new “Digital AI Café” the hessian.AI Service Center (hessian.AISC)\, funded by the BMFTR\, invites you to an open online consultation twice a month on all aspects of artificial intelligence. \nThe offer is aimed at anyone who uses AI in research\, business\, or projects\, or who plans to do so. Every first and third Tuesday of the month from 1:30 p.m. to 2:30 p.m.\, our experts are available online via Zoom to answer your questions and support you in everything from selecting suitable AI methods and data processing to the efficient use of our computing resources. \nWhether you have specific technical challenges\, want to discuss project ideas\, or exchange best practices\, you will find the right support at the Digital AI Café. \nThe AI Café is bilingual in German and English. \nMeet the Experts \n \nKajol Raju‘s research experience includes 3D data analysis\, classification\, and vision-based tasks\, as well as applying AI in the automotive field. She has also been working with large language models and Retrieval Augmented Generation (RAG). Our AI infrastructure and services are already driving innovation across multiple projects and fostering collaborations between research institutes and corporate partners. \n \nFlorian Kieser is Head of the hessian.AISC. With 13 years of experience as a project manager in various commercial enterprises and having founded his own start-up\, his goal is to make access to and application of AI as easy as possible for everyone.
+URL:https://www.hessian.ai/event/digital-ai-cafe-by-hessian-ai-service-center-every-1st-and-3rd-tuesday-2/
+LOCATION:Online
+ATTACH;FMTTYPE=image/jpeg:https://www.hessian.ai/wp-content/uploads/2026/10/aicafe.jpg
+END:VEVENT
+END:VCALENDAR

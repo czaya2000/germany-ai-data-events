@@ -1,0 +1,5 @@
+{
+	"_note": "Include regex errs on the side of recall (ported from reference/dedupe-and-keywords.py, plus German and data-platform terms). Exclude is applied to the title only. Flags: i.",
+	"include": "(\\bai\\b|\\ba\\.i\\.|\\bki\\b|\\bki-|-ki\\b|künstlich|kuenstlich|artificial|machine[- ]?learning|maschinelles|\\bml\\b|\\bmlops|\\bllms?\\b|genai|gen-ai|generative|\\bagent|\\bdata|\\bdaten|analytic|deep[- ]?learning|neural|robot|copilot|\\bgpt|chatgpt|claude|gemini|vibe[- ]cod|prompt|\\brag\\b|\\bnlp|computer[- ]vision|big[- ]data|databricks|snowflake|\\bfabric\\b|\\bdbt\\b|clickhouse|pydata|kaggle|\\bbi\\b|power ?bi|\\bspark|kafka|\\bpython|datenbank|database|\\bmcp\\b|openai|langchain|hugging|tensor|pytorch|quantum|\\bnvidia|\\bdl\\b|intelligen|datasci|data-sci|aidaq|dataops|lakehouse|\\bsql|postgres|cognitive|humanoid|automation|governance|data ?mesh|agentic)",
+	"exclude": "(\\byoga\\b|speed[- ]?dating|job ?fair|jobmesse|karrieremesse|crypto ?trading|krypto ?trading|\\bforex\\b|real ?estate|immobilien|wine tasting|weinprobe)"
+}

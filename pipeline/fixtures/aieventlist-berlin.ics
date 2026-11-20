@@ -1,0 +1,171 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//aieventlist.ai//AI Event List//DE
+X-WR-CALNAME:AI Events Berlin
+BEGIN:VEVENT
+UID:ai-engineering-summit-berlin-2026@aieventlist.ai
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:AI Engineering Summit Berlin 2026
+DESCRIPTION:Summit vom 16. bis 20. November 2026 im Maritim proArte Hotel Berlin über den Weg von KI-Experimenten zu produktionsreifen Systemen im Unternehmen. Eröffnung mit einem Problem Lab\, dann fünf Tracks zu Governance und Security\, agentischem Software Engineering\, Developer Experience\, Legacy-Modernisierung sowie Qualität und Testing — plus Workshops und zwei Bootcamps. Teil der AI Native Week. — https://aieventlist.ai/events/ai-engineering-summit-berlin-2026/
+LOCATION:Maritim proArte Hotel Berlin
+URL:https://aieventlist.ai/events/ai-engineering-summit-berlin-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-conference-berlin-2026@aieventlist.ai
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:ML Conference Berlin 2026
+DESCRIPTION:Mehrtägige Konferenz zu Machine Learning\, MLOps und generativer KI vom 16. bis 20. November 2026 im Maritim proArte Hotel in Berlin (Konferenztage und Expo am 18. und 19. November\, davor und danach Power-Workshops). Veranstaltet von S&S Media mit Vorträgen und Hands-on-Sessions für Entwickler:innen\, Data Scientists und ML-Engineers\; Teilnahme vor Ort oder online. — https://aieventlist.ai/events/ml-conference-berlin-2026/
+LOCATION:Maritim proArte Hotel Berlin\, Friedrichstraße 151\, 10117 Berlin
+URL:https://aieventlist.ai/events/ml-conference-berlin-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlcon-berlin-2026@aieventlist.ai
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:MLcon Berlin 2026
+DESCRIPTION:Konferenz für Machine Learning und Generative-AI-Engineering vom 16. bis 20. November 2026 im Maritim proArte Hotel Berlin\, Teil der AI Native Week: Bootcamps am 16. und 17.\, Hauptkonferenz mit Expo am 18. und 19.\, Workshops am 17. und 20. November. Fünf Tracks zu Agenten\, RAG\, Multimodalität\, MLOps und Governance mit 40+ Speakern. — https://aieventlist.ai/events/mlcon-berlin-2026/
+LOCATION:Maritim proArte Hotel Berlin
+URL:https://aieventlist.ai/events/mlcon-berlin-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:vibekode-berlin-2026@aieventlist.ai
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:VibeKode Berlin 2026
+DESCRIPTION:Fünftägige Konferenz zu KI-gestützter Softwareentwicklung vom 16. bis 20. November 2026 im Maritim proArte Berlin\, mit Bootcamp\, zwei Workshop-Tagen und einer zweitägigen Hauptkonferenz samt Expo. — https://aieventlist.ai/events/vibekode-berlin-2026/
+LOCATION:Maritim proArte Hotel Berlin\, Friedrichstraße 151\, 10117 Berlin
+URL:https://aieventlist.ai/events/vibekode-berlin-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:robotics-ai-hackathon-hacklab-berlin-2026@aieventlist.ai
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261123
+SUMMARY:Berlin Robotics & AI Hackathon: HackLab x BRISA
+DESCRIPTION:Zweitägiger Präsenz-Hackathon am 21. und 22. November 2026 im CIC Berlin\, bei dem Teams aus ganz Europa Challenges von Robotik-Unternehmen bearbeiten — Start mit Frühstück ab 9:00 Uhr am Samstag\, Preisverleihung am Sonntagabend. Laut Veranstalter warten Preise im Wert von über 10.000 € in Cash\, Hardware und mehr sowie kostenlose Credits von Technologiepartnern. — https://aieventlist.ai/events/robotics-ai-hackathon-hacklab-berlin-2026/
+LOCATION:CIC Berlin\, Lohmühlenstraße 65\, 12435 Berlin
+URL:https://aieventlist.ai/events/robotics-ai-hackathon-hacklab-berlin-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-coding-summit-berlin-2026@aieventlist.ai
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:AI Coding Summit — Berlin Edition 2026
+DESCRIPTION:Eintägige Konferenz von GitNation am 4. Dezember 2026 im Kosmos in Berlin-Friedrichshain zu agentischen Coding-Workflows und KI-Werkzeugen in der Entwicklung\; ein Remote-Workshop-Tag folgt am 7. Dezember. — https://aieventlist.ai/events/ai-coding-summit-berlin-2026/
+LOCATION:Kosmos\, Karl-Marx-Allee 131A\, 10243 Berlin
+URL:https://aieventlist.ai/events/ai-coding-summit-berlin-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:agentic-ai-dach-berlin-2027@aieventlist.ai
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270225
+SUMMARY:Agentic AI DACH 2027
+DESCRIPTION:Enterprise-Konferenz zu agentischer KI am 23. und 24. Februar 2027 im NH Collection Berlin Mitte Friedrichstrasse: Unter dem Leitthema „Vom ersten Agenten zur Enterprise AI" geht es darum\, KI-Agenten in Produktion zu bringen und zu skalieren — Agenten-Orchestrierung\, KI-Plattformen\, Governance und messbarer Geschäftswert. Veranstaltet von IQPC (AI\, Data & Analytics Network) für KI- und Datenverantwortliche aus dem DACH-Raum. — https://aieventlist.ai/events/agentic-ai-dach-berlin-2027/
+LOCATION:NH Collection Berlin Mitte Friedrichstrasse\, Friedrichstraße 96\, 10117 Berlin
+URL:https://aieventlist.ai/events/agentic-ai-dach-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:case-conf-berlin-2027@aieventlist.ai
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270226
+SUMMARY:case 2027 — The Conference on Agentic Software Engineering
+DESCRIPTION:Internationale Konferenz zu Agentic Software Engineering am 24. Februar 2027 im Hotel AMANO Grand Central in Berlin\, mit Talks zu Context Engineering\, Agenten-Orchestrierung und Human-AI-Interaction sowie einem optionalen Ganztages-Workshop am 25. Februar. — https://aieventlist.ai/events/case-conf-berlin-2027/
+LOCATION:Hotel AMANO Grand Central\, Heidestraße 62
+URL:https://aieventlist.ai/events/case-conf-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:prompt-ux-conference-berlin-2027@aieventlist.ai
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270226
+SUMMARY:prompt:UX Conference 2027
+DESCRIPTION:Konferenz an der Schnittstelle von KI und User-Experience-Design am 24. Februar 2027 im Hotel AMANO Berlin East Side\, mit Schwerpunkten auf generativer KI in digitalen Produkten\, AI-UX-Patterns und Research-Methoden\; am 25. Februar folgen Hands-on-Workshops. — https://aieventlist.ai/events/prompt-ux-conference-berlin-2027/
+LOCATION:Hotel AMANO Berlin East Side\, Stralauer Platz 30-31
+URL:https://aieventlist.ai/events/prompt-ux-conference-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ki-x-pr-berlin-2027@aieventlist.ai
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270304
+SUMMARY:KI-X PR 2027 — Die KI-Konferenz für Kommunikation
+DESCRIPTION:Konferenz zu Künstlicher Intelligenz in der Unternehmenskommunikation am 2. und 3. März 2027 in Berlin\, mit den Modulen Shape (Reputation und GEO)\, Scale (Content-Operations mit Agenten) und Trust (KI-Policies\, EU AI Act\, Deepfakes). — https://aieventlist.ai/events/ki-x-pr-berlin-2027/
+URL:https://aieventlist.ai/events/ki-x-pr-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:agentiq-world-berlin-2027@aieventlist.ai
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270409
+SUMMARY:Agentiq World Berlin 2027
+DESCRIPTION:Am 7. und 8. April 2027 bringt die Berliner Ausgabe der Agentiq World die Themen Agentic AI und Agentic Commerce auf die Bühne: Wie autonome KI-Agenten Handel\, E-Commerce\, Customer Experience und Zahlungsprozesse verändern. Die Konferenzreihe von Sunrize Digital setzt damit nach der Amsterdamer Ausgabe 2026 einen neuen Standort in Berlin. — https://aieventlist.ai/events/agentiq-world-berlin-2027/
+URL:https://aieventlist.ai/events/agentiq-world-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:rise-of-ai-conference-berlin-2027@aieventlist.ai
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:Rise of AI Conference 2027
+DESCRIPTION:Kuratierte Konferenz am 12. Mai 2027 in Berlin für Entscheiderinnen aus Wirtschaft\, Politik\, Forschung und Investment\, mit Meta Stage\, Applied AI Stage und Cognitive Lab\; der Livestream ist kostenlos. — https://aieventlist.ai/events/rise-of-ai-conference-berlin-2027/
+LOCATION:Logenhaus\, Emser Straße 12-13\, 10719 Berlin
+URL:https://aieventlist.ai/events/rise-of-ai-conference-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-can-berlin-2027@aieventlist.ai
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270603
+SUMMARY:AI:CAN 2027 — Die KI-Konferenz für Marketing & E-Commerce
+DESCRIPTION:Eintägige KI-Konferenz für Marketing\, E-Commerce und Kommunikation am 2. Juni 2027 im Van der Valk Hotel Berlin Brandenburg — mit praxisnahen Anwendungsfällen zu KI-Tools für Content und Strategie\, als Auftakt am Vortag der CAMPIXX. — https://aieventlist.ai/events/ai-can-berlin-2027/
+LOCATION:Van der Valk Hotel Berlin Brandenburg\, Blankenfelde-Mahlow
+URL:https://aieventlist.ai/events/ai-can-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:aican-berlin-2027@aieventlist.ai
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270603
+SUMMARY:AI:CAN 2027 — KI-Konferenz für Marketing & Kommunikation
+DESCRIPTION:Fachkonferenz für Künstliche Intelligenz in Marketing\, E-Commerce und Unternehmenskommunikation am 2. Juni 2027 im Van der Valk Hotel Berlin Brandenburg (Blankenfelde-Mahlow bei Berlin): praxisnahe Vorträge zu KI-Content\, Workflow-Automatisierung\, KI-gestützter SEO und Qualitätssicherung für Marketing- und Content-Teams. — https://aieventlist.ai/events/aican-berlin-2027/
+LOCATION:Van der Valk Hotel Berlin Brandenburg\, Blankenfelde-Mahlow
+URL:https://aieventlist.ai/events/aican-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:accelerate-tomorrow-ai-summit-berlin-2027@aieventlist.ai
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270617
+SUMMARY:Accelerate Tomorrow AI Summit 2027
+DESCRIPTION:Executive-Summit zur AI-Transformation im Estrel Berlin (15.–16. Juni 2027) mit laut Veranstalter über 2.000 Teilnehmenden\, 200+ Speakern und 100+ Anbietern zu AI-Strategie\, Enterprise-Transformation und Governance. — https://aieventlist.ai/events/accelerate-tomorrow-ai-summit-berlin-2027/
+LOCATION:Estrel Berlin / Estrel Congress Center\, Sonnenallee 225\, 12057 Berlin
+URL:https://aieventlist.ai/events/accelerate-tomorrow-ai-summit-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:agentic-ai-summit-berlin-2027@aieventlist.ai
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20270914
+DTEND;VALUE=DATE:20270915
+SUMMARY:Agentic AI Summit Berlin 2027
+DESCRIPTION:Engineering-Summit für agentische KI am 14. September 2027 in Berlin\, veranstaltet vom AI Accelerator Institute: ein Tag mit Talks rund um das Bauen\, Deployen und Skalieren von AI Agents\, LLM-Observability und -Security sowie Enterprise-Modellen\, ergänzt um einen zweistündigen NVIDIA-Workshop zu multimodaler KI und einen vierstündigen Agenten-Hackathon mit Plattform-Credits als Preis. Laut Veranstalter mit 30+ Speakern und 300+ Teilnehmenden\; der Veranstaltungsort wird noch bekannt gegeben. — https://aieventlist.ai/events/agentic-ai-summit-berlin-2027/
+URL:https://aieventlist.ai/events/agentic-ai-summit-berlin-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:big-bang-ki-festival-berlin-2027@aieventlist.ai
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271112
+SUMMARY:BIG BANG KI Festival 2027
+DESCRIPTION:Das BIG BANG KI Festival kehrt am 10. und 11. November 2027 nach Berlin zurück — laut Veranstalter „Europas führendes KI-Event" für den Mittelstand\, mit sechs Bühnen\, über 350 Speakern und mehr als 11.000 erwarteten Gästen als Mischung aus KI-Messe\, Konferenz und Business-Festival. Tickets sind bereits im Vorverkauf. — https://aieventlist.ai/events/big-bang-ki-festival-berlin-2027/
+URL:https://aieventlist.ai/events/big-bang-ki-festival-berlin-2027/
+END:VEVENT
+END:VCALENDAR

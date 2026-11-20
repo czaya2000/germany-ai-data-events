@@ -1,0 +1,309 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meetup//Meetup Calendar 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+NAME:KI-Community Betreute Intelligenz
+X-WR-CALNAME:KI-Community Betreute Intelligenz
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:event_317046701@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20261126T170000
+DTEND;TZID=Europe/Berlin:20261126T190000
+SUMMARY:Nürnberger Special mit 3 vorkuratierten Sessions (Newsflash & Bar
+ camp)
+DESCRIPTION:KI-Community Betreute Intelligenz\n**Im November gibt’s ein 
+ Special bei Betreute Intelligenz im Möbelkollektiv mit drei spannenden Se
+ ssions!**\nDu willst wissen\, was sich in der KI-Welt getan hat\, was davo
+ n im Alltag wirklich hilft und was eher Hype ist? Dann komm vorbei. Wir st
+ arten mit unserem KI-Newsflash und bringen die wichtigsten Entwicklungen d
+ es vergangenen Monats auf den Punkt. Fürs anschließende Barcamp haben wi
+ r diesmal drei Sessions vorbereitet:\n\n**KI spart Zeit. Und dann?**\nDomi
+ nik gibt einen Impuls dazu\, was nach dem Zeitsparen kommt. Warum ist gute
+ r Kontext bei komplexen Aufgaben so wichtig? Was geht heute schon mit KI u
+ nd wo liegen die Grenzen? Dazu gibt’s einen Denkanstoß zur Datensouver
+ änität und danach Zeit für den Austausch.\n\n**Vom Use Case zum verläs
+ slichen KI-Agenten**\nCarsten zeigt Schritt für Schritt\, wie er aus eine
+ m konkreten Anwendungsfall Skills und Agenten baut\, die ihm wichtige Aufg
+ aben zuverlässig abnehmen. An einem Beispiel aus dem Publikum schauen wir
+  gemeinsam\, wie sein Vorgehen im Alltag funktioniert.\n\n**Live-Vibecodin
+ g mit Replit**\nSteffen baut mit euch live ein Tool\, das formal korrekte 
+ Rechnungen erstellt und genau die Funktionen mitbringt\, die er für seine
+  eigene Buchhaltung braucht.\n\n**Agenda:**\n\n* **News-Flash:** Zu Beginn
+  gibt’s eine knackige Session mit den neuesten Trends und Entwicklungen 
+ – prägnant und auf den Punkt gebracht.\n* **Austausch:** Danach gestalt
+ en wir offene Runden zu den vorkuratierten und auch euren Themen\n* **Offe
+ nes Ende:** Bleib\, solange du möchtest\, und lass den Abend mit neuen Id
+ een und Gesprächen ausklingen.\n\n**Wann und wo?**\n📆 Jeden vierten Do
+ nnerstag im Monat\n⏰ 17:00 Uhr\n📍 Möbelkollektiv\, Wiesentalstraße 
+ 40\, Bauteil C\, 3. OG\, 90419 Nürnberg\nFür reichlich Getränke und fei
+ nsten Kaffee ist gesorgt – du musst nur noch kommen!\n\nVorkenntnisse si
+ nd nicht nötig\, nur dein Interesse und deine Neugier.\nDer Wert liegt im
+  gemeinsamen Erkunden und Einordnen. Bleib\, solange du möchtest. Wir hab
+ en kein festes Ende!
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317046701
+ /
+STATUS:CONFIRMED
+CREATED:20261019T122733Z
+LAST-MODIFIED:20261019T122733Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316485687@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20261210T100000
+DTEND;TZID=Europe/Berlin:20261210T120000
+SUMMARY:Betreute Intelligenz am Vormittag (Freeflow)
+DESCRIPTION:KI-Community Betreute Intelligenz\nHerzlich willkommen zur bet
+ reuten Intelligenz am Vormittag!\n\nWir treffen uns immer am 2. Donnerstag
+  im Monat frisch ausgeruht von 10 bis 12 in Fürth bei der ABF im GS28:\n\
+ n**ABF Gruppe**\n**Gebhardtstraße 28**\n2\\. OG Ost \\(Kaminzimmer\\)\n**
+ 90762 Fürth**\n[https://gs28.de/](https://gs28.de/)\n\nBitte beachtet die
+  Anfahrtsbeschreibung. Die Parkplätze der Apotheke vor dem GS28 sind tabu
+ ! Die Zahl der Plätze ist limiitiert\, ihr müsst euch explizit anmelden.
+ \n\nEs warten Kaffee\, Internet und Getränke auf euch. Ihr bringt eure No
+ tebooks\, Modelle\, Datensätze oder einfach nur ganz viele Fragen mit - g
+ emeinsam experimentieren wir mit allem\, was wir dabei haben.\n\nOder wie 
+ Markus und Adam gerne so fein sagen: "Doing\, not talking!"\n\nWer möchte
+ \, darf zu Beginn gerne kurz ein Thema vorstellen\, einen Einblick teilen 
+ oder einfach nur seine brennenden Fragen in den Raum stellen.\n\nDer Termi
+ n ist so gewählt\, dass im Anschluss noch reichlich Luft ist. Wenn es als
+ o gerade läuft\, dann lassen wir laufen. Der Letzte räumt die Krümel au
+ f :)\n\nWir freuen uns auf euch!\nMax\, Thor\, Tobias\, Stefan² & Steffen
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/316485687
+ /
+STATUS:CONFIRMED
+CREATED:20260909T165836Z
+LAST-MODIFIED:20260909T165836Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317087714@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20261217T170000
+DTEND;TZID=Europe/Berlin:20261217T210000
+SUMMARY:KI-Party: 100 Events Betreute Intelligenz 🥳
+DESCRIPTION:KI-Community Betreute Intelligenz\n100 Events voller spannende
+ r Gespräche\, neuer Ideen und großartiger Menschen. Deswegen ist es verd
+ ammt nochmal Zeit\, diesen Meislenstein gemeinsam zu feiern!\n\nWir blicke
+ n kurz in unsere Historie\, schauen nach vorne und lassen den Abend bei ei
+ ner besonderen **KI-Party** ausklingen.\nWas genau wir vorhaben\, bleibt n
+ och eine kleine Überraschung. Stay tuned - weitere Ankündigungen folgen!
+ \n\nFür Getränke\, Snacks und gute Gesellschaft ist gesorgt!\n\nStart: 1
+ 7:00\nOpen End
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317087714
+ /
+STATUS:CONFIRMED
+CREATED:20261022T113926Z
+LAST-MODIFIED:20261022T113926Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317289417@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20270107T170000
+DTEND;TZID=Europe/Berlin:20270107T190000
+SUMMARY:Betreute Intelligenz in Erlangen bei Spirit Link (Newsflash + Barc
+ amp)
+DESCRIPTION:KI-Community Betreute Intelligenz\nDu willst KI nicht nur span
+ nend finden\, sondern wirklich **im Alltag nutzen**? Dann bist du bei dies
+ em Meetup genau richtig.\nWir bauen eine **Community für KI in der Anwend
+ ung** auf – ein Ort\, an dem sich Menschen gegenseitig unterstützen\, E
+ rfahrungen teilen und gemeinsam lernen. Egal ob du gerade erst startest od
+ er schon Heavy-User von KI-Tools bist: Komm vorbei\, tausche dich aus und 
+ nimm konkrete Ideen mit nach Hause.\n**Was dich erwartet:**\n\n* 📰 **15
+ -Minuten-Newsflash:** Kurz & kompakt die wichtigsten KI-Updates und neuen 
+ Tools\, die du kennen solltest.\n* 💬 **Barcamp-Style Sessions:** Danach
+  gestalten wir das Programm gemeinsam.\n* 🤝 **Austausch auf Augenhöhe:
+ ** Keine Frontbeschallung – jede\\*r kann Fragen stellen\, eigene Erfahr
+ ungen einbringen oder selbst eine Session anbieten.\n* 🥤 **Getränke in
+ klusive:** Für Drinks ist gesorgt\, damit wir in entspannter Atmosphäre 
+ ins Gespräch kommen.\n\n**Wann und Wo:**\n\n* 📆 jeden ersten Donnersta
+ g jeden zweiten Monat\n* ⏰ 17:00 Uhr\n* 📍 bei Spirit Link - Allee am 
+ Röthelheimpark 41\, 91052 Erlangen
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317289417
+ /
+STATUS:CONFIRMED
+CREATED:20261104T210228Z
+LAST-MODIFIED:20261104T210228Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317289319@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20270304T170000
+DTEND;TZID=Europe/Berlin:20270304T190000
+SUMMARY:Betreute Intelligenz in Erlangen bei Spirit Link (Newsflash + Barc
+ amp)
+DESCRIPTION:KI-Community Betreute Intelligenz\nDu willst KI nicht nur span
+ nend finden\, sondern wirklich **im Alltag nutzen**? Dann bist du bei dies
+ em Meetup genau richtig.\nWir bauen eine **Community für KI in der Anwend
+ ung** auf – ein Ort\, an dem sich Menschen gegenseitig unterstützen\, E
+ rfahrungen teilen und gemeinsam lernen. Egal ob du gerade erst startest od
+ er schon Heavy-User von KI-Tools bist: Komm vorbei\, tausche dich aus und 
+ nimm konkrete Ideen mit nach Hause.\n**Was dich erwartet:**\n\n* 📰 **15
+ -Minuten-Newsflash:** Kurz & kompakt die wichtigsten KI-Updates und neuen 
+ Tools\, die du kennen solltest.\n* 💬 **Barcamp-Style Sessions:** Danach
+  gestalten wir das Programm gemeinsam.\n* 🤝 **Austausch auf Augenhöhe:
+ ** Keine Frontbeschallung – jede\\*r kann Fragen stellen\, eigene Erfahr
+ ungen einbringen oder selbst eine Session anbieten.\n* 🥤 **Getränke in
+ klusive:** Für Drinks ist gesorgt\, damit wir in entspannter Atmosphäre 
+ ins Gespräch kommen.\n\n**Wann und Wo:**\n\n* 📆 jeden ersten Donnersta
+ g jeden zweiten Monat\n* ⏰ 17:00 Uhr\n* 📍 bei Spirit Link - Allee am 
+ Röthelheimpark 41\, 91052 Erlangen
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317289319
+ /
+STATUS:CONFIRMED
+CREATED:20261104T204719Z
+LAST-MODIFIED:20261104T204719Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317289468@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20270506T170000
+DTEND;TZID=Europe/Berlin:20270506T190000
+SUMMARY:Betreute Intelligenz in Erlangen bei Spirit Link (Newsflash + Barc
+ amp)
+DESCRIPTION:KI-Community Betreute Intelligenz\nDu willst KI nicht nur span
+ nend finden\, sondern wirklich **im Alltag nutzen**? Dann bist du bei dies
+ em Meetup genau richtig.\nWir bauen eine **Community für KI in der Anwend
+ ung** auf – ein Ort\, an dem sich Menschen gegenseitig unterstützen\, E
+ rfahrungen teilen und gemeinsam lernen. Egal ob du gerade erst startest od
+ er schon Heavy-User von KI-Tools bist: Komm vorbei\, tausche dich aus und 
+ nimm konkrete Ideen mit nach Hause.\n**Was dich erwartet:**\n\n* 📰 **15
+ -Minuten-Newsflash:** Kurz & kompakt die wichtigsten KI-Updates und neuen 
+ Tools\, die du kennen solltest.\n* 💬 **Barcamp-Style Sessions:** Danach
+  gestalten wir das Programm gemeinsam.\n* 🤝 **Austausch auf Augenhöhe:
+ ** Keine Frontbeschallung – jede\\*r kann Fragen stellen\, eigene Erfahr
+ ungen einbringen oder selbst eine Session anbieten.\n* 🥤 **Getränke in
+ klusive:** Für Drinks ist gesorgt\, damit wir in entspannter Atmosphäre 
+ ins Gespräch kommen.\n\n**Wann und Wo:**\n\n* 📆 jeden ersten Donnersta
+ g jeden zweiten Monat\n* ⏰ 17:00 Uhr\n* 📍 bei Spirit Link - Allee am 
+ Röthelheimpark 41\, 91052 Erlangen
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317289468
+ /
+STATUS:CONFIRMED
+CREATED:20261104T211047Z
+LAST-MODIFIED:20261104T211047Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317289602@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20270701T170000
+DTEND;TZID=Europe/Berlin:20270701T190000
+SUMMARY:Betreute Intelligenz in Erlangen bei Spirit Link (Newsflash + Barc
+ amp)
+DESCRIPTION:KI-Community Betreute Intelligenz\nDu willst KI nicht nur span
+ nend finden\, sondern wirklich **im Alltag nutzen**? Dann bist du bei dies
+ em Meetup genau richtig.\nWir bauen eine **Community für KI in der Anwend
+ ung** auf – ein Ort\, an dem sich Menschen gegenseitig unterstützen\, E
+ rfahrungen teilen und gemeinsam lernen. Egal ob du gerade erst startest od
+ er schon Heavy-User von KI-Tools bist: Komm vorbei\, tausche dich aus und 
+ nimm konkrete Ideen mit nach Hause.\n**Was dich erwartet:**\n\n* 📰 **15
+ -Minuten-Newsflash:** Kurz & kompakt die wichtigsten KI-Updates und neuen 
+ Tools\, die du kennen solltest.\n* 💬 **Barcamp-Style Sessions:** Danach
+  gestalten wir das Programm gemeinsam.\n* 🤝 **Austausch auf Augenhöhe:
+ ** Keine Frontbeschallung – jede\\*r kann Fragen stellen\, eigene Erfahr
+ ungen einbringen oder selbst eine Session anbieten.\n* 🥤 **Getränke in
+ klusive:** Für Drinks ist gesorgt\, damit wir in entspannter Atmosphäre 
+ ins Gespräch kommen.\n\n**Wann und Wo:**\n\n* 📆 jeden ersten Donnersta
+ g jeden zweiten Monat\n* ⏰ 17:00 Uhr\n* 📍 bei Spirit Link - Allee am 
+ Röthelheimpark 41\, 91052 Erlangen
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317289602
+ /
+STATUS:CONFIRMED
+CREATED:20261104T211754Z
+LAST-MODIFIED:20261104T211754Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317289632@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20270902T170000
+DTEND;TZID=Europe/Berlin:20270902T190000
+SUMMARY:Betreute Intelligenz in Erlangen bei Spirit Link (Newsflash + Barc
+ amp)
+DESCRIPTION:KI-Community Betreute Intelligenz\nDu willst KI nicht nur span
+ nend finden\, sondern wirklich **im Alltag nutzen**? Dann bist du bei dies
+ em Meetup genau richtig.\nWir bauen eine **Community für KI in der Anwend
+ ung** auf – ein Ort\, an dem sich Menschen gegenseitig unterstützen\, E
+ rfahrungen teilen und gemeinsam lernen. Egal ob du gerade erst startest od
+ er schon Heavy-User von KI-Tools bist: Komm vorbei\, tausche dich aus und 
+ nimm konkrete Ideen mit nach Hause.\n**Was dich erwartet:**\n\n* 📰 **15
+ -Minuten-Newsflash:** Kurz & kompakt die wichtigsten KI-Updates und neuen 
+ Tools\, die du kennen solltest.\n* 💬 **Barcamp-Style Sessions:** Danach
+  gestalten wir das Programm gemeinsam.\n* 🤝 **Austausch auf Augenhöhe:
+ ** Keine Frontbeschallung – jede\\*r kann Fragen stellen\, eigene Erfahr
+ ungen einbringen oder selbst eine Session anbieten.\n* 🥤 **Getränke in
+ klusive:** Für Drinks ist gesorgt\, damit wir in entspannter Atmosphäre 
+ ins Gespräch kommen.\n\n**Wann und Wo:**\n\n* 📆 jeden ersten Donnersta
+ g jeden zweiten Monat\n* ⏰ 17:00 Uhr\n* 📍 bei Spirit Link - Allee am 
+ Röthelheimpark 41\, 91052 Erlangen
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317289632
+ /
+STATUS:CONFIRMED
+CREATED:20261104T211900Z
+LAST-MODIFIED:20261104T211900Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_317289667@meetup.com
+SEQUENCE:1
+DTSTAMP:20261120T080617Z
+DTSTART;TZID=Europe/Berlin:20271104T170000
+DTEND;TZID=Europe/Berlin:20271104T190000
+SUMMARY:Betreute Intelligenz in Erlangen bei Spirit Link (Newsflash + Barc
+ amp)
+DESCRIPTION:KI-Community Betreute Intelligenz\nDu willst KI nicht nur span
+ nend finden\, sondern wirklich **im Alltag nutzen**? Dann bist du bei dies
+ em Meetup genau richtig.\nWir bauen eine **Community für KI in der Anwend
+ ung** auf – ein Ort\, an dem sich Menschen gegenseitig unterstützen\, E
+ rfahrungen teilen und gemeinsam lernen. Egal ob du gerade erst startest od
+ er schon Heavy-User von KI-Tools bist: Komm vorbei\, tausche dich aus und 
+ nimm konkrete Ideen mit nach Hause.\n**Was dich erwartet:**\n\n* 📰 **15
+ -Minuten-Newsflash:** Kurz & kompakt die wichtigsten KI-Updates und neuen 
+ Tools\, die du kennen solltest.\n* 💬 **Barcamp-Style Sessions:** Danach
+  gestalten wir das Programm gemeinsam.\n* 🤝 **Austausch auf Augenhöhe:
+ ** Keine Frontbeschallung – jede\\*r kann Fragen stellen\, eigene Erfahr
+ ungen einbringen oder selbst eine Session anbieten.\n* 🥤 **Getränke in
+ klusive:** Für Drinks ist gesorgt\, damit wir in entspannter Atmosphäre 
+ ins Gespräch kommen.\n\n**Wann und Wo:**\n\n* 📆 jeden ersten Donnersta
+ g jeden zweiten Monat\n* ⏰ 17:00 Uhr\n* 📍 bei Spirit Link - Allee am 
+ Röthelheimpark 41\, 91052 Erlangen
+URL;VALUE=URI:https://www.meetup.com/betreute-intelligenz/events/317289667
+ /
+STATUS:CONFIRMED
+CREATED:20261104T211953Z
+LAST-MODIFIED:20261104T211953Z
+CLASS:PUBLIC
+END:VEVENT
+END:VCALENDAR

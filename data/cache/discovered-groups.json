@@ -1,0 +1,970 @@
+{
+	"groups": {
+		"pydata-munchen": {
+			"firstSeen": "2026-11-20",
+			"via": "meetup:ai-professionals-munich",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"grafana-friends-frankfurt": {
+			"firstSeen": "2026-11-20",
+			"via": "meetup:fra_aws",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"producttank-nuernberg": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"tech-talk-stuttgart": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"jug-bb": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"owasp-frankfurt": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"wtm-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"producttank-munich": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"azure-dusseldorf-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"openmates-meetup-group": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"inovex-meetup-erlangen": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"silicon-allee-events": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"big-data-developers-in-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"ibmpoweraifrankfurt": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"ibm-developers": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"big-data-developers-in-munich": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"ibm-powerai-dusseldorf": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"cybercologne-meetup-group": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"azure-bonn-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"jug-hamburg": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"gdg-munich": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"net-user-group-karlsruhe": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"main-valley": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"isaqb-software-architektur-meetup-gruppe-fur-interessierte": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"isaqb-community": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": false,
+			"checked": "2026-11-20"
+		},
+		"berlin-software-engineering-leadership-meetup-group": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"startup-factory-boost-network": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"stuttgart-industrie-4-0-und-iot-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"django-cologne": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-data",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"mannheim-java-usergroup": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-data",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"pass-usergroup-rhein-main": {
+			"firstSeen": "2026-11-20",
+			"via": "hackevents-data",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"bochum-meetup-and-explore-the-community-meetup-group": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"heidelberg-makers-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"hamburger-indie-treff": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"google-developers-group-munster": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"give-a-go": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"hannover-unity-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"game-developers-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"wpmeetup-potsdam": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"checkmk-munich-group": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"devtalk-tk": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"womentechmakershamburg": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"meetup-group-pnulfhzz": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"prodot-insights": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"padagility": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"digital-craftsmanship-nordoberpfalz": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"liberating-structures-user-group-rhein-main": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"cloud-native-munster": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"meetup-group-igafblfy": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"meetup-group-tfyvuydp": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"cloud-native-night": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"leipzig-golang": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"nordic-coding": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"unternehmer-startups-meetup-rosenheim": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"node-code-frankfurt": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"rust-dortmund": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"jug-nurnberg": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"berlindroid": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"le-software-craft-community": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"tech-talk-muenster": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"opensource-ruhr": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"scrum-user-group-karlsruhe": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"berlinbanktechnights": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"berlincplusplus": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"llvm-social-darmstadt": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"lean-coffee-karlsruhe-frankfurt": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"uxchange": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"aws-user-group-bergstrasse": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"muenster-macht-agil": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"modern-work-munster": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"leaddev-meetup-munich": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"gemeinsam-mit-ki-koeln": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"frontend-meetup-freiburg": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"php-user-group-stuttgart": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"elixir-ruhr-dev": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"opentechschool-leipzig": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"owasp-cologne-chapter": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"rewe-digital-events-cologne": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"rosenheim-bitcoin-stammtisch": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"lean-agile-sh": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"bochum-network-security-meetup-group": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"tech-meetup-sauerland": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"hack-the-box-meetup-leipzig-de": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"java-user-group-hannover": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"hannover-python-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"godot-stammtisch-karlsruhe": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"tech-talk-karlsruhe": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"berlin-amazon-web-services-meetup-group": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"hackergarten-stuttgart": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"leaddev-meetup-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"azure-serverless-koln": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"audio-developer-meetup-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"leipzig-wordpress-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"code-for-munster": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"opencoffeeclub_hamburg": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"robot-framework-usergroup-munsterland": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"the-test-tribe-frankfurt-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"bitcoinkarlsruhe": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"main-kinzig-nerds": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"decentralized-trust-ruhrgebiet": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"rust-rhein-main": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"quality-engineering-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"do-dotnet": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"bergisches-entwicklerforum": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"cto-roundtable-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"spawnpoint": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"gdg-nuremberg": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"tubingen-postgresql-meetup-group": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"42-shades-of-it": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"softwerkskammer-luebeck": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"devops-freiburg": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"afterwork-meetup-berlin": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"react-berlin-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"webmontag-kassel": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"hannovr": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"cybersecurity-stuttgart": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"aws-user-group-bodensee": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"gamedevtreff-ruhrpott": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"erfurt-wordpress-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"cyberforum-e-v-karlsruhe-hightech-unternehmer-netzwerk": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"kubernetes-meetup-bielefeld": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"auditing-ai-beyond-the-prompt": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"wpmeetup-stuttgart": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"dortmund-aws-user-group": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"aws-usergroup-munsterland": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"digitalhubms": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"phpug-rhein-neckar": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"chiemseebitcoinandblockchainmeetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"gamedevmuc": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"codecentric-dortmund-tech-talk": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"docker-black-forest": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"it-security-kassel": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"ddd-muc": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"php-usergroup-dresden": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"aachen-maker-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"berlin-wordpress-meetup": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"ccdd-conciso-coding-dojo-dortmund": {
+			"firstSeen": "2026-11-20",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		},
+		"ksug-in": {
+			"firstSeen": "2026-11-20",
+			"via": "agentconfs",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-20"
+		}
+	}
+}

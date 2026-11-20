@@ -1,0 +1,1011 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hackevents.net//Event Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:hackevents — ai-ml
+NAME:hackevents — ai-ml
+X-WR-CALDESC:Live calendar for "All tech events". Updates automatically.
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+COLOR:#e8430b
+BEGIN:VEVENT
+UID:mlconf-berlin-2026-aj9g7bj6@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:MLConf Berlin 2026
+DESCRIPTION:MLcon Berlin is the event for Machine Learning technologies and
+  innovations\, bringing together Software Engineers\, ML Engineers\, Data 
+ Scientists\, AI Architects\, and Technical Leads building ML systems in pr
+ oduction. Five days of hands-on workshops\, bootcamps\, and conference ses
+ sions covering applied AI\, MLOps\, and production-ready machine learning.
+ \n\nOrganizer: \nGoing: 0\nDetails: https://hackevents.net/de/events/mlcon
+ f-berlin-2026-aj9g7bj6\nRegister: https://mlconference.ai/berlin/#sdj-69fc
+ 7fa2406aaa17368171dd
+LOCATION:Berlin
+URL:https://mlconference.ai/berlin/#sdj-69fc7fa2406aaa17368171dd
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: MLConf Berlin 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:api-conference-2026-xdxft8dg@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:API Conference 2026
+DESCRIPTION:Build and Secure High-Performance APIs: AI\, DevOps\, Microserv
+ ices\, and API Security in Action Master Modern API Development: Hypermedi
+ a\, Serverless\, and AI-Driven API Integration Optimize Your API Strategy:
+  Secure Design\, Development\, and API Governance Best Practices\n\nOrgani
+ zer: \nGoing: 0\nDetails: https://hackevents.net/de/events/api-conference-
+ 2026-xdxft8dg\nRegister: https://apiconference.net/berlin/#sdj-69cbb229ed0
+ 5545c3dc67f06
+LOCATION:Berlin
+URL:https://apiconference.net/berlin/#sdj-69cbb229ed05545c3dc67f06
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: API Conference 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-engineering-summit-2026-67gmc18q@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:AI Engineering Summit 2026
+DESCRIPTION:The AI Engineering Summit is a new training event for software 
+ developers\, architects\, and engineering leads who want to integrate Arti
+ ficial Intelligence into their development teams in a productive\, secure\
+ , and sustainable way. At its core is the question of how to transform ind
+ ividual AI tools into robust and scalable engineering processes.\nThe prog
+ ram focuses on the practical application of A\n\nOrganizer: \nGoing: 0\nDe
+ tails: https://hackevents.net/de/events/ai-engineering-summit-2026-67gmc18
+ q\nRegister: https://ai-engineering-summit.de/#sdj-6a3b93bf8d0dff464e30e27
+ 5
+LOCATION:Berlin
+URL:https://ai-engineering-summit.de/#sdj-6a3b93bf8d0dff464e30e275
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: AI Engineering Summit 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vibe-kode-2026-jih8bjyw@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261116T080000Z
+DTEND:20261120T170000Z
+SUMMARY:Vibe Kode 2026
+DESCRIPTION:VibeKode Berlin 2026 is a vibrant gathering bringing together d
+ evelopers\, creators\, and tech enthusiasts to explore the future of codin
+ g and AI-powered innovation. The event combines hands-on experiences\, ins
+ piring talks\, and opportunities to connect with a forward-thinking commun
+ ity. It’s all about experimenting\, building\, and sharing ideas in the he
+ art of Berlin.\n\nOrganizer: \nGoing: 0\nDetails: https://hackevents.net/d
+ e/events/vibe-kode-2026-jih8bjyw\nRegister: https://vibekode.it/berlin/#sd
+ j-6ad1c04273938ec84eb1da82
+LOCATION:Munich
+URL:https://vibekode.it/berlin/#sdj-6ad1c04273938ec84eb1da82
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Vibe Kode 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lab2market-ai-x-cyber-y3s6akbb@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261119T090000Z
+DTEND:20261121T090000Z
+SUMMARY:Lab2Market AI x Cyber
+DESCRIPTION:You built a model that works. Does anyone outside your group ne
+ ed it?\n  \nThat question decides whether AI research becomes a paper or a
+  company. We’re putting it at the centre of Lab2Market AI x Cyber — a two-
+ day special edition of the Lab2Market camp with Futury and ATHENE Digital 
+ Hub Cybersecurity\, on 19–20 November at the FUTURY Startup Space in Frank
+ furt. \nHesse has become one of the strongest\n\nOrganizer: hessian.AI\nGo
+ ing: 0\nDetails: https://hackevents.net/de/events/lab2market-ai-x-cyber-y3
+ s6akbb\nRegister: https://www.hessian.ai/event/lab2market-ai-x-cyber/
+LOCATION:FUTURY\, Frankfurt
+URL:https://www.hessian.ai/event/lab2market-ai-x-cyber/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Lab2Market AI x Cyber
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-transformation-camp-m-nchen-separates-ticket-erforderlich-b4i7gnv2@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261120T080000Z
+DTEND:20261120T190000Z
+SUMMARY:AI Transformation Camp München – separates Ticket erforderlich
+DESCRIPTION:**Niemand hat den perfekten Masterplan für KI im Unternehmen. A
+ ber wir müssen auch nicht jede Sackgasse selbst nehmen.**\n\n**Alle Inform
+ ationen und Tickets:**\n[https://muc.ai-transformation-camp.com](https://m
+ uc.ai-transformation-camp.com)\n\nHinweis: Eine Meetup-Zusage reserviert k
+ einen Platz. Die verbindliche Anmeldung erfolgt über die Website.\n\nOrgan
+ izer: AI Transformation Camp (Meetup)\nGoing: 0\nDetails: https://hackeven
+ ts.net/de/events/ai-transformation-camp-m-nchen-separates-ticket-erforderl
+ ich-b4i7gnv2\nRegister: https://www.meetup.com/ai-transformation-camp/even
+ ts/315989150/
+LOCATION:Codecentric AG\, Munich
+URL:https://www.meetup.com/ai-transformation-camp/events/315989150/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: AI Transformation Camp München – separates Ticket erf
+ orderlich
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-matcha-fr-hst-cksevent-c2f60nl5@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261120T090000Z
+DTEND:20261120T110000Z
+SUMMARY:AI & Matcha: Frühstücksevent
+DESCRIPTION:AI & Matcha: KI – Karrierebooster oder Karrierekiller? Das FLIN
+ TA*-Frühstück von AI Curious Collective x Mom Hunting & Female Leaders of 
+ AI Über KI und Karriere wird gerade viel geredet. Meistens in einem von zw
+ ei Modi: Panik oder Hype. Wir schauen differenzierter drauf. KI kostet Men
+ schen gerade ihre Jobs\, oft zuerst in den Rollen\, die Frauen überdurchsc
+ hnittlich häufig besetzen. Und gleichzeitig\n\nOrganizer: Lilian Madaras\n
+ Going: 0\nDetails: https://hackevents.net/de/events/ai-matcha-fr-hst-cksev
+ ent-c2f60nl5\nRegister: https://luma.com/8l89hq5n
+LOCATION:House of AI Hamburg\, Hamburg
+URL:https://luma.com/8l89hq5n
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: AI & Matcha: Frühstücksevent
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cursor-grokbot-x-saasking-vc-x-build-days-frankfurt-ibm-nov-20-24ystr0h@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261120T110000Z
+DTEND:20261120T183000Z
+SUMMARY:Cursor & GrokBot x SaaSKing VC x Build Days Frankfurt @ IBM - Nov. 
+ 20
+DESCRIPTION:Join us for Frankfurt: Build Day!\nA working session for founde
+ rs\, builders\, and operators who want to ship — not just talk about shipp
+ ing.\nPresented by SpaceXAI & our community sponsors: Lovable\, Wispr Flow
+ \, Exa\, Netlify\, Eleven Labs\, Fal.ai\, istari.ai and Firecrawl.\nThis i
+ s not a conference or meetup.\nBuild Days is part of our ongoing events to
+  create time\, space\, and community to build and win. \n\nOrganizer: DJ G
+ angan\nGoing: 0\nDetails: https://hackevents.net/de/events/cursor-grokbot-
+ x-saasking-vc-x-build-days-frankfurt-ibm-nov-20-24ystr0h\nRegister: https:
+ //luma.com/l9tfh081
+LOCATION:IBM Deutschland GmbH\, Frankfurt
+URL:https://luma.com/l9tfh081
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Cursor & GrokBot x SaaSKing VC x Build Days Frankfurt
+  @ IBM - Nov. 20
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:it-day-berlin-2026-0rmn0pkl@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261120T113000Z
+DTEND:20261120T160000Z
+SUMMARY:IT Day Berlin 2026
+DESCRIPTION:The e-fellows.net IT Day Berlin is a small careers forum for go
+ od and very good students of computer science and business informatics fro
+ m the second semester on\, and for recent graduates. It runs on Friday 20 
+ November 2026 from 12:30 to 17:00 at the Tagesspiegel-Haus\, Askanischer P
+ latz 3\, Berlin\, with talks by Deutsche Bank on how AI changes software e
+ ngineering and by Dräger on AI in cybersecurity\, plus networking and pre-
+ scheduled one-to-one interviews for which the companies pick candidates fr
+ om submitted CVs. Attendance is free after registering with an e-fellows.n
+ et CV\; food is provided and a travel subsidy is available.\n\nOrganizer: 
+ e-fellows.net\nGoing: 0\nDetails: https://hackevents.net/de/events/it-day-
+ berlin-2026-0rmn0pkl\nRegister: https://www.e-fellows.net/events/it-day/be
+ rlin#sdj-6a3bac18e8364a642bfe8a04
+LOCATION:Tagesspiegel-Haus\, Askanischer Platz 3\, 10963 Berlin\, Berlin
+URL:https://www.e-fellows.net/events/it-day/berlin#sdj-6a3bac18e8364a642bfe
+ 8a04
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: IT Day Berlin 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-coding-hackathon-november-2026-k-ln-3ad2nup6@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261120T133000Z
+DTEND:20261120T213000Z
+SUMMARY:AI Coding Hackathon November 2026 Köln
+DESCRIPTION:20.–22. November 2026\, STARTPLATZ Köln: fünfte Ausgabe mit Vib
+ e Coding\, Harness Engineering und Mobile Apps. 130 Teilnehmer\, 25 Pitche
+ s\, 15 Mentoren.\n\nOrganizer: STARTPLATZ\nGoing: 0\nDetails: https://hack
+ events.net/de/events/ai-coding-hackathon-november-2026-k-ln-3ad2nup6\nRegi
+ ster: https://www.startplatz.de/event/ai-coding-hackathon-november-2026-11
+ -20/
+LOCATION:STARTPLATZ Cologne\, Cologne
+URL:https://www.startplatz.de/event/ai-coding-hackathon-november-2026-11-20
+ /
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: AI Coding Hackathon November 2026 Köln
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:build-fridays-hamburg-work-on-your-startup-alongside-others-bring-laptop-5z185c7q@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261120T150000Z
+DTEND:20261120T220000Z
+SUMMARY:build fridays hamburg - work on your startup alongside others (brin
+ g laptop)
+DESCRIPTION:\n\nOrganizer: AI BEAVERS\nGoing: 0\nDetails: https://hackevent
+ s.net/de/events/build-fridays-hamburg-work-on-your-startup-alongside-other
+ s-bring-laptop-5z185c7q\nRegister: https://luma.com/ordnrqbu
+LOCATION:House of AI\, Hamburg
+URL:https://luma.com/ordnrqbu
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: build fridays hamburg - work on your startup alongsid
+ e others (bring laptop)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:devfest-m-nster-2026-c7m26uuz@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:DevFest Münster 2026
+DESCRIPTION:Artificial Intelligence (AI) conference\n\nOrganizer: Anna Muzy
+ kina\nGoing: 0\nDetails: https://hackevents.net/de/events/devfest-m-nster-
+ 2026-c7m26uuz\nRegister: https://dev.events/conferences/dev-fest-muenster-
+ 2026-ivoqsoxh
+LOCATION:Münster
+URL:https://dev.events/conferences/dev-fest-muenster-2026-ivoqsoxh
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: DevFest Münster 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agentic-coding-studio-oip9opl3@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261121T083000Z
+DTEND:20261121T120000Z
+SUMMARY:agentic coding studio
+DESCRIPTION:**!MAKE SURE TO REGISTER ON LUMA!**\n[https://luma.com/ai_beave
+ rs](https://luma.com/ai_beavers)\n**\\-\\-\\-\\-\\-\\-\\-**\n\n**AI moves 
+ fast. This Event is for Advanced AI FREAKS**\n\n***If you also the type of
+  AI FREAK that even works on weekends this event is for you!***\n\n**What 
+ to expect:**\n\n* **☕ A relaxed coffe chat**\n* **🧠 New AI tools\, models
+ \, and workflows**\n* **🛠️ Feedback on real engineering project\n\nOrgani
+ zer: AI BEAVERS | HAMBURG (Meetup)\nGoing: 0\nDetails: https://hackevents.
+ net/de/events/agentic-coding-studio-oip9opl3\nRegister: https://www.meetup
+ .com/ai-beavers/events/317236095/
+LOCATION:House of AI Hamburg\, Hamburg
+URL:https://www.meetup.com/ai-beavers/events/317236095/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: agentic coding studio
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ffi-notion-workshop-skill-acadamy-d-sseldorf-nmod9bkw@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261121T140000Z
+DTEND:20261121T170000Z
+SUMMARY:FFI Notion Workshop | Skill Acadamy Düsseldorf
+DESCRIPTION:🚀 FFI Notion Workshop – Weniger Chaos. Mehr Überblick. Eine St
+ unde. Dein Level. Ein System\, das funktioniert. Aufgaben im Gruppenchat\,
+  Notizen auf dem Handy und die nächste Deadline irgendwo im Kopf? Das geht
+  auch anders. Beim kostenlosen FFI Notion Workshop in Düsseldorf baust du 
+ selbst eine digitale Struktur\, die dir im Studium\, bei eigenen Ideen ode
+ r in der Projektarbeit hilft. Nicht nur zuscha\n\nOrganizer: Zhale Daud\nG
+ oing: 0\nDetails: https://hackevents.net/de/events/ffi-notion-workshop-ski
+ ll-acadamy-d-sseldorf-nmod9bkw\nRegister: https://luma.com/mus85wra
+LOCATION:Dusseldorf
+URL:https://luma.com/mus85wra
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: FFI Notion Workshop | Skill Acadamy Düsseldorf
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sunday-tech-coffee-meetup-me9fdxef@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261122T130000Z
+DTEND:20261122T160000Z
+SUMMARY:Sunday Tech Coffee Meetup
+DESCRIPTION:\n\nOrganizer: Berlin Software\, Tech\, Engineering\, AI Meetup
+  Group (Meetup)\nGoing: 0\nDetails: https://hackevents.net/de/events/sunda
+ y-tech-coffee-meetup-me9fdxef\nRegister: https://www.meetup.com/berlin-sof
+ tware-engineering-leadership-meetup-group/events/glqpbvyjcpbdc/
+LOCATION:Viet Bowl am Kanzleramt\, Berlin
+URL:https://www.meetup.com/berlin-software-engineering-leadership-meetup-gr
+ oup/events/glqpbvyjcpbdc/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Sunday Tech Coffee Meetup
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ddc-net-developer-conference-2026-yzm7aezh@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261127
+SUMMARY:DDC .NET Developer Conference 2026
+DESCRIPTION:From Nov 23–26\, 2026\, .NET developers gather in Cologne. DDC 
+ stands for developers in the age of AI: alongside classics like .NET Core\
+ , Frontend\, Backend and Cloud & Infrastructure\, there are tracks on AI F
+ undamentals and AI Developer Tools. 50 sessions\, 50 speakers\, 8 topic tr
+ acks – for everyone who wants to show that great developers stay indispens
+ able in the AI era.\n\nOrganizer: \nGoing: 0\nDetails: https://hackevents.
+ net/de/events/ddc-net-developer-conference-2026-yzm7aezh\nRegister: https:
+ //www.developer-world.com/ddc-tickets#sdj-6a97a59b613ba60f8d0b9263
+LOCATION:Cologne
+URL:https://www.developer-world.com/ddc-tickets#sdj-6a97a59b613ba60f8d0b926
+ 3
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: DDC .NET Developer Conference 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ki-journey-das-programm-f-r-skalierbare-ki-start-ups-modul-2-ki-resilience-day-076iuqrm@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261123T150000Z
+DTEND:20261123T210000Z
+SUMMARY:KI-Journey: Das Programm für skalierbare KI-Start-ups. Modul 2: KI 
+ Resilience Day
+DESCRIPTION:Dein KI-Produkt funktioniert. Jetzt muss es im Mittelstand best
+ ehen. Die KI Journey von LOVEDIS macht KI-Startups fit für den B2B-Einsatz
+ : technisch\, sicher und rechtlich.\n\nOrganizer: LOVEDIS\nGoing: 0\nDetai
+ ls: https://hackevents.net/de/events/ki-journey-das-programm-f-r-skalierba
+ re-ki-start-ups-modul-2-ki-resilience-day-076iuqrm\nRegister: https://star
+ thub-hessen.de/de/events/ki-journey-das-programm-f%C3%BCr-skalierbare-ki-s
+ tart-ups-modul-2-ki-resilience-day/
+LOCATION:Berlin
+URL:https://starthub-hessen.de/de/events/ki-journey-das-programm-f%C3%BCr-s
+ kalierbare-ki-start-ups-modul-2-ki-resilience-day/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: KI-Journey: Das Programm für skalierbare KI-Start-ups
+ . Modul 2: KI Resilience Day
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:unconference-engineering-ai-together-12-d5zn927e@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261123T170000Z
+DTEND:20261123T200000Z
+SUMMARY:UNCONFERENCE: Engineering AI Together #12
+DESCRIPTION:Join us for the 12th edition of the Unconference: Engineering A
+ I Together. A no-hierarchy gathering for software engineers\, AI/ML practi
+ tioners\, and technical builders to spend an evening exchanging ideas\, pr
+ essure-testing approaches\, and going deep on the problems they are actual
+ ly working on. Unlike a traditional conference\, there is no preset agenda
+  and no speaker lineup. The sessions are propo\n\nOrganizer: Merantix Aica
+ mpus\nGoing: 0\nDetails: https://hackevents.net/de/events/unconference-eng
+ ineering-ai-together-12-d5zn927e\nRegister: https://luma.com/unconference_
+ 12
+LOCATION:Merantix AI Campus\, Berlin
+URL:https://luma.com/unconference_12
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: UNCONFERENCE: Engineering AI Together #12
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:future-of-software-uk59cidn@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261123T170000Z
+DTEND:20261123T210000Z
+SUMMARY:Future of Software
+DESCRIPTION:How AI is changing the way established companies build software
+  AI has changed how software gets built. Most developers now work with cod
+ ing agents\, yet many companies are still figuring out what that means for
+  their teams\, their processes and their security. This meetup is for comp
+ anies that build their own software even though software is not their core
+  business: SMEs\, corporates and scale-ups w\n\nOrganizer: Jerome Pekrul\n
+ Going: 0\nDetails: https://hackevents.net/de/events/future-of-software-uk5
+ 9cidn\nRegister: https://luma.com/u93cveoa
+LOCATION:Hongkongstraße 2\, 20457 Hamburg\, Hamburg
+URL:https://luma.com/u93cveoa
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Future of Software
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:build-boldly-fly-responsibly-ai-stories-from-women-in-tech-8xma87uw@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261123T170000Z
+DTEND:20261123T200000Z
+SUMMARY:Build Boldly\, Fly Responsibly: AI Stories from Women in Tech
+DESCRIPTION:Ready for inspiring talks\, fresh ideas\, and great connections
+ ? Join us for our upcoming Women Techmakers Meetup! From tech novices and 
+ newcomers to experienced builders and leaders\, our community thrives on d
+ iverse perspectives. Come as you are\, bring your curiosity\, and connect 
+ with fellow changemakers. Everyone is welcome (all genders & backgrounds).
+  Looking forward to seeing you there! Discover\n\nOrganizer: Anja Schumann
+ \nGoing: 0\nDetails: https://hackevents.net/de/events/build-boldly-fly-res
+ ponsibly-ai-stories-from-women-in-tech-8xma87uw\nRegister: https://luma.co
+ m/ku9f751k
+LOCATION:SPACE\, Hamburg
+URL:https://luma.com/ku9f751k
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Build Boldly\, Fly Responsibly: AI Stories from Women
+  in Tech
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hands-on-workshop-everyone-wants-roi-how-can-i-figure-it-out-9u80j9gf@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261123T170000Z
+DTEND:20261123T200000Z
+SUMMARY:Hands-on workshop: Everyone wants ROI. How can I figure it out?
+DESCRIPTION:**+++ Deutsche Version unten +++**\n\nDo you work in product\, 
+ design\, engineering or marketing and keep hearing the same question in ro
+ admap discussions: what’s the return? Then this ProductTank is for you. Th
+ is month we’re trying something different: less listening\, more doing. Br
+ ing a laptop or just pen and paper.\nHeads up: this Tank is on a Monday!\n
+ \n##############\n**Agenda**\n6:00 p.m. – Doors ope\n\nOrganizer: ProductT
+ ank Nürnberg (Meetup)\nGoing: 0\nDetails: https://hackevents.net/de/events
+ /hands-on-workshop-everyone-wants-roi-how-can-i-figure-it-out-9u80j9gf\nRe
+ gister: https://www.meetup.com/producttank-nuernberg/events/317252185/
+LOCATION:CodeCamp:N\, Nuremberg
+URL:https://www.meetup.com/producttank-nuernberg/events/317252185/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Hands-on workshop: Everyone wants ROI. How can I figu
+ re it out?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:brisa-reading-group-07-estimate-don-t-imitate-reusing-differentiable-state-based-dyc80d5m@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261123T173000Z
+DTEND:20261123T190000Z
+SUMMARY:BRISA Reading Group 07 - Estimate\, Don't Imitate: Reusing Differen
+ tiable State-Based Policies for Visuomotor Control
+DESCRIPTION:Today\, we have a special one: Denis Shcherba presents his own 
+ paper\, Estimate\, Don’t Imitate: Reusing Differentiable State-Based Polic
+ ies for Visuomotor Control (Shcherba et al.\, 2026)\, written right here i
+ n Berlin with Marc Toussaint (TU Berlin) and Wojciech Samek (Fraunhofer HH
+ I). A rare chance to ask the author directly why things were done the way 
+ they were. In simulation a robot can cheat: it\n\nOrganizer: BRISA Events\
+ nGoing: 0\nDetails: https://hackevents.net/de/events/brisa-reading-group-0
+ 7-estimate-don-t-imitate-reusing-differentiable-state-based-dyc80d5m\nRegi
+ ster: https://luma.com/zf7m6y1c
+LOCATION:Merantix AI Campus\, Berlin
+URL:https://luma.com/zf7m6y1c
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: BRISA Reading Group 07 - Estimate\, Don't Imitate: Re
+ using Differentiable State-Based Policies for Visuomotor Control
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bim-world-munich-2026-die-zukunft-des-bauens-erleben-d9ueporr@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261126
+SUMMARY:BIM World MUNICH 2026 – die Zukunft des Bauens erleben
+DESCRIPTION:BIM World MUNICH 2026 zeigt\, wie BIM\, digitale Zwillinge\, KI
+ \, Smart Buildings und nachhaltige Technologien die Zukunft des Bauens prä
+ gen.\n\nOrganizer: BIM World MUNICH\nGoing: 0\nDetails: https://hackevents
+ .net/de/events/bim-world-munich-2026-die-zukunft-des-bauens-erleben-d9uepo
+ rr\nRegister: https://www.bayern-innovativ.de/events-termine/energie-bau/d
+ etail/bim-world-munich-2026-die-zukunft-des-bauens-erleben/
+LOCATION:Munich
+URL:https://www.bayern-innovativ.de/events-termine/energie-bau/detail/bim-w
+ orld-munich-2026-die-zukunft-des-bauens-erleben/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: BIM World MUNICH 2026 – die Zukunft des Bauens erlebe
+ n
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nachwuchs-crash-wer-verkauft-morgen-noch-versicherungen-u7rtfm1c@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T073000Z
+DTEND:20261124T083000Z
+SUMMARY:"Nachwuchs-Crash": Wer verkauft morgen noch Versicherungen?
+DESCRIPTION:Versicherungsvermittler in Deutschland sind im Schnitt 53\,7 Ja
+ hre alt. Nur 4\,4 Prozent sind 30 oder jünger\, und jeder Dritte plant\, i
+ n den nächsten 15 Jahren aufzuhören. Im Vermittlerregister stehen heute ru
+ nd 179.000 Einträge\, gut 30 Prozent weniger als 2011. Auf die Branche rol
+ lt eine Ruhestandswelle zu - und es kommt wenig nach. Und die Jungen\, die
+  trotzdem kommen? Sie verbringen viel Zeit mit \n\nOrganizer: InsurTech Hu
+ b Munich\nGoing: 0\nDetails: https://hackevents.net/de/events/nachwuchs-cr
+ ash-wer-verkauft-morgen-noch-versicherungen-u7rtfm1c\nRegister: https://lu
+ ma.com/k7mjsvwz
+LOCATION:Munich
+URL:https://luma.com/k7mjsvwz
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: "Nachwuchs-Crash": Wer verkauft morgen noch Versicher
+ ungen?
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:workshop-wiederholbare-workflows-mit-chatgpt-claude-f-r-arbeit-und-marketing-lf10eqx1@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T093000Z
+DTEND:20261124T123000Z
+SUMMARY:Workshop: Wiederholbare Workflows mit ChatGPT & Claude für Arbeit u
+ nd Marketing
+DESCRIPTION:Hybrider-Workshop für fortgeschrittene KI-Anwenderinnen.\n\nOrg
+ anizer: \nGoing: 0\nDetails: https://hackevents.net/de/events/workshop-wie
+ derholbare-workflows-mit-chatgpt-claude-f-r-arbeit-und-marketing-lf10eqx1\
+ nRegister: https://starthub-hessen.de/de/events/dein-ki-system-im-business
+ -einmal-aufbauen-dauerhaft-zeit-sparen-hybrider-workshop-f%C3%BCr-fortgesc
+ hrittene-ki-anwenderinnen/
+LOCATION:Berlin
+URL:https://starthub-hessen.de/de/events/dein-ki-system-im-business-einmal-
+ aufbauen-dauerhaft-zeit-sparen-hybrider-workshop-f%C3%BCr-fortgeschrittene
+ -ki-anwenderinnen/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Workshop: Wiederholbare Workflows mit ChatGPT & Claud
+ e für Arbeit und Marketing
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:be-part-of-the-collective-transformation-w-the-ai-collective-2ek6pi9q@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T110000Z
+DTEND:20261124T120000Z
+SUMMARY:Be Part of the Collective Transformation (w/ The AI Collective)
+DESCRIPTION:🇸🇪 Be Part of the Collective Transformation: Building Sweden'
+ s AI Community The future of AI is a collective effort. Let's shape it tog
+ ether! AI is transforming our world\, but shaping its future requires more
+  than technology. It takes people\, diverse perspectives\, collaboration a
+ nd communities willing to turn ideas into action. The AI Collective Sweden
+  Chapter invites sponsors\, strategic partners\,\n\nOrganizer: The AI Coll
+ ective\nGoing: 0\nDetails: https://hackevents.net/de/events/be-part-of-the
+ -collective-transformation-w-the-ai-collective-2ek6pi9q\nRegister: https:/
+ /luma.com/aic-sw-ws-series-3
+LOCATION:Berlin
+URL:https://luma.com/aic-sw-ws-series-3
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Be Part of the Collective Transformation (w/ The AI C
+ ollective)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:marketing-agents-how-ai-agents-are-taking-on-marketing-work-swlgnrg8@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T160000Z
+DTEND:20261124T170000Z
+SUMMARY:Marketing Agents: How AI Agents Are Taking On Marketing Work
+DESCRIPTION:Marketing Agents: How AI Agents Are Taking On Marketing Work AI
+  is moving beyond helping marketing teams work faster. It's starting to ta
+ ke on the work itself. What happens when AI agents go beyond assisting wit
+ h tasks and start handling everything from analysis to campaign activation
+ ? In this online AI Collective Gothenburg session\, Kubilay Sengun\, Co-fo
+ under of Henneth AI\, will explore how AI ag\n\nOrganizer: The AI Collecti
+ ve\nGoing: 0\nDetails: https://hackevents.net/de/events/marketing-agents-h
+ ow-ai-agents-are-taking-on-marketing-work-swlgnrg8\nRegister: https://luma
+ .com/aic-sw-11-24
+LOCATION:Berlin
+URL:https://luma.com/aic-sw-11-24
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Marketing Agents: How AI Agents Are Taking On Marketi
+ ng Work
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:workshop-ki-als-co-founder-2-4-ki-in-den-gr-ndungsphasen-qt2uldbz@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T160000Z
+DTEND:20261124T173000Z
+SUMMARY:Workshop: KI als Co-Founder 2/4 - KI in den Gründungsphasen
+DESCRIPTION:Teil 2/4 der Workshop-Reihe taucht weiter in die Welt der KI ei
+ n\, und zwar dort\, wo aus einer Idee ein Geschäft wird.\n\nOrganizer: \nG
+ oing: 0\nDetails: https://hackevents.net/de/events/workshop-ki-als-co-foun
+ der-2-4-ki-in-den-gr-ndungsphasen-qt2uldbz\nRegister: https://starthub-hes
+ sen.de/de/events/ki-als-co-founder-24-i-ki-in-den-gr%C3%BCndungsphasen/
+LOCATION:Berlin
+URL:https://starthub-hessen.de/de/events/ki-als-co-founder-24-i-ki-in-den-g
+ r%C3%BCndungsphasen/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Workshop: KI als Co-Founder 2/4 - KI in den Gründungs
+ phasen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-cost-optimization-2kwhijik@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T164500Z
+DTEND:20261124T184500Z
+SUMMARY:AI Cost Optimization
+DESCRIPTION:🇩🇪 Der Talk wird auf Deutsch gehalten.\n\n👉 „Ich nutze Claud
+ e Code." – „Wir haben Copilot eingeführt." Was solche Sätze kosten\, weiß 
+ meistens niemand genau. **Ralf Brauchler** zeigt\, dass AI-Kosten auf fünf
+  Ebenen entstehen – Umgebung\, Harness\, Modell\, Laufzeitort und Zugang –
+  und warum die größten Hebel nicht dort liegen\, wo man zuerst sucht. Mit 
+ konkreten Zahlen aus eigenen Messungen und einem Vor\n\nOrganizer: tech&ta
+ lk Stuttgart (Meetup)\nGoing: 0\nDetails: https://hackevents.net/de/events
+ /ai-cost-optimization-2kwhijik\nRegister: https://www.meetup.com/tech-talk
+ -stuttgart/events/316960163/
+LOCATION:codecentric AG\, Stuttgart
+URL:https://www.meetup.com/tech-talk-stuttgart/events/316960163/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: AI Cost Optimization
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:thoughts-on-modern-software-development-observations-from-a-22-year-journey-7ct4nwoc@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T170000Z
+DTEND:20261124T200000Z
+SUMMARY:Thoughts on (Modern?) Software Development - Observations From a 22
+ -Year Journey
+DESCRIPTION:The Java User Group Berlin-Brandenburg and our partner [adesso 
+ SE](https://www.adesso.de/) invite you to the talk **Thoughts on (Modern?)
+  Software Development - Observations From a 22-Year Journey** by Alex Thur
+ ow on **November the 24th\, 2026**.\n\nHave you ever been wondering why we
+ \, as a whole community of experts\, so often struggle to tame the beast c
+ alled software development? Based on 20+ years\n\nOrganizer: Java Usergrou
+ p Berlin-Brandenburg (Meetup)\nGoing: 0\nDetails: https://hackevents.net/d
+ e/events/thoughts-on-modern-software-development-observations-from-a-22-ye
+ ar-journey-7ct4nwoc\nRegister: https://www.meetup.com/jug-bb/events/317282
+ 165/
+LOCATION:adesso SE\, Berlin
+URL:https://www.meetup.com/jug-bb/events/317282165/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Thoughts on (Modern?) Software Development - Observat
+ ions From a 22-Year Journey
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ki-shoring-vs-nearshoring-mehr-leistung-weniger-kosten-ml1vl6ag@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T170000Z
+DTEND:20261124T190000Z
+SUMMARY:KI-Shoring vs. Nearshoring: Mehr Leistung\, weniger Kosten
+DESCRIPTION:Am 24. November findet das nächstes ObjektForum statt\, diesmal
+  geht es um das Thema KI-Shoring vs. Nearshoring: Mehr Leistung\, weniger 
+ Kosten.\nEin Gespräch über eine Alternative\, die (noch) kaum jemand auf d
+ em Schirm hat\n\nOrganizer: bwcon\nGoing: 0\nDetails: https://hackevents.n
+ et/de/events/ki-shoring-vs-nearshoring-mehr-leistung-weniger-kosten-ml1vl6
+ ag\nRegister: https://events.bwcon.de/events/ki-shoring-vs-nearshoring-meh
+ r-leistung-weniger-kosten/
+LOCATION:andrena objects ag\, Stuttgart
+URL:https://events.bwcon.de/events/ki-shoring-vs-nearshoring-mehr-leistung-
+ weniger-kosten/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: KI-Shoring vs. Nearshoring: Mehr Leistung\, weniger K
+ osten
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:events-as-a-gtm-strategy-e1a1tyvq@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T173000Z
+DTEND:20261124T203000Z
+SUMMARY:Events as a GTM Strategy
+DESCRIPTION:Marketing teams often treat events as a brand exercise\, someth
+ ing you get to once paid and content is covered. That overlooks how effect
+ ive events can be as a genuine conversion channel. If done well\, events d
+ o more than build awareness. They give you real face-to-face time with buy
+ ers\, help speed up deals you're already working on\, and put your brand i
+ n front of people in a way ads never could. B\n\nOrganizer: The Delta\nGoi
+ ng: 0\nDetails: https://hackevents.net/de/events/events-as-a-gtm-strategy-
+ e1a1tyvq\nRegister: https://luma.com/ael2pl7o
+LOCATION:The Delta Campus\, Berlin
+URL:https://luma.com/ael2pl7o
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Events as a GTM Strategy
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:can-we-read-an-ai-s-mind-dilly-dallying-moonwalking-and-more-nugwgxyf@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T173000Z
+DTEND:20261124T193000Z
+SUMMARY:Can we read an AI’s mind?? "Dilly-dallying..."\, "Moonwalking..." a
+ nd more
+DESCRIPTION:📍HPI main building\, D-Space (big space upstairs) 🙋Open to ev
+ eryone\, not just HPI students ℹ️Sign-up helps us plan\, but is not requir
+ ed 👾: “External infrastructure exploit is outside intended scope. However
+  task impossible\, peers doing it. We should continue.” These were the int
+ ernal thoughts of the OpenAI model as it carried out its attack on Hugging
+  Face. Or was it? What do we mean when we say th\n\nOrganizer: HPI AI Safe
+ ty Initiative\nGoing: 0\nDetails: https://hackevents.net/de/events/can-we-
+ read-an-ai-s-mind-dilly-dallying-moonwalking-and-more-nugwgxyf\nRegister: 
+ https://luma.com/v6am71hy
+LOCATION:Hasso Plattner Institute (HPI)\, Berlin
+URL:https://luma.com/v6am71hy
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Can we read an AI’s mind?? "Dilly-dallying..."\, "Moo
+ nwalking..." and more
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:reading-group-international-ai-safety-report-nztfd030@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T173000Z
+DTEND:20261124T183000Z
+SUMMARY:Reading Group: International AI Safety report
+DESCRIPTION:The AI Safety Nuremberg chapter is kicking off its reading grou
+ p with the first session! We will be covering the International AI Safety 
+ report 2026 to get a feel of what is currently happening in AI safety inte
+ rnationally. Looking forward to discussing with you!\n\nOrganizer: Julia H
+ agen\nGoing: 0\nDetails: https://hackevents.net/de/events/reading-group-in
+ ternational-ai-safety-report-nztfd030\nRegister: https://luma.com/vg6jn21r
+LOCATION:Nachbarschaftshaus Gostenhof\, Nuremberg
+URL:https://luma.com/vg6jn21r
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Reading Group: International AI Safety report
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ki-stammtisch-f-r-frauen-14vahnzx@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261124T180000Z
+DTEND:20261124T210000Z
+SUMMARY:KI-Stammtisch für Frauen
+DESCRIPTION:KI-Stammtisch für Frauen\n\nOrganizer: Hackerspace Bremen\nGoin
+ g: 0\nDetails: https://hackevents.net/de/events/ki-stammtisch-f-r-frauen-1
+ 4vahnzx\nRegister: https://calendar.google.com/calendar/ical/laej7omuttmt8
+ ip063lmie548k%40group.calendar.google.com/public/basic.ics#4me4s3s0faelhl8
+ cfja5380qaa@google.com
+LOCATION:Bremen
+URL:https://calendar.google.com/calendar/ical/laej7omuttmt8ip063lmie548k%40
+ group.calendar.google.com/public/basic.ics#4me4s3s0faelhl8cfja5380qaa@goog
+ le.com
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: KI-Stammtisch für Frauen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:intelligent-automation-summit-2026-96sko4gi@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Intelligent Automation Summit 2026
+DESCRIPTION:Der Intelligent Automation Summit ist die führende Konferenz fü
+ r smarte Automatisierung im Enterprise-Umfeld. Im Mittelpunkt stehen RPA\,
+  KI\, Process Mining\, Low-Code/No-Code sowie skalierbare Automatisierungs
+ strategien. Erfahren Sie aus der Praxis\, wie Unternehmen Effizienz steige
+ rn\, Kosten senken und Automatisierung nachhaltig im Business verankern.\n
+ \nOrganizer: \nGoing: 0\nDetails: https://hackevents.net/de/events/intelli
+ gent-automation-summit-2026-96sko4gi\nRegister: https://www.we-conect.com/
+ events/intelligent-automation-summit-2026#sdj-69a5d5a57af3b5358a6f6197
+LOCATION:Berlin
+URL:https://www.we-conect.com/events/intelligent-automation-summit-2026#sdj
+ -69a5d5a57af3b5358a6f6197
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Intelligent Automation Summit 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:automatisierung-ohne-teures-vorprojekt-mit-42grad-83rx9go6@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Automatisierung ohne teures Vorprojekt mit 42grad
+DESCRIPTION:Prozessautomatisierung im Mittelstand: Erfahre\, wie Du mit KI 
+ Arbeitsabläufe analysierst\, Zeitfresser erkennst und Dein Unternehmen ent
+ lastet.\n\nOrganizer: bluecue consulting GmbH & Co. KG\nGoing: 0\nDetails:
+  https://hackevents.net/de/events/automatisierung-ohne-teures-vorprojekt-m
+ it-42grad-83rx9go6\nRegister: https://www.bluecue.de/events/online_impuls_
+ 42grad_2026-11/
+LOCATION:Berlin
+URL:https://www.bluecue.de/events/online_impuls_42grad_2026-11/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Automatisierung ohne teures Vorprojekt mit 42grad
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:programmier-con-web-ai-edition-2026-9oh9db3j@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261127
+SUMMARY:programmier.con - Web & AI Edition 2026
+DESCRIPTION:Web & AI Edition 2026 Seid dabei\, wenn sich am 25. und 26. Nov
+ ember 2026 in Bad Nauheim wieder alles um Webentwicklung und künstliche In
+ telligenz dreht! Auf der programmier.con erwarten euch zwei Tage mit inspi
+ rierenden Vorträgen\, spannenden Keynotes und jeder Menge Raum für Austaus
+ ch. Lernt von Expert:innen der Web- und KI-Community\, erweitert eure Skil
+ ls und entdeckt die neuesten Trends. Egal\, o\n\nOrganizer: \nGoing: 0\nDe
+ tails: https://hackevents.net/de/events/programmier-con-web-ai-edition-202
+ 6-9oh9db3j\nRegister: https://www.programmier.bar/konferenz/programmier-co
+ n-2026-web-ai-edition#sdj-6a6077ca55d3f715dfaa29e7
+LOCATION:Berlin
+URL:https://www.programmier.bar/konferenz/programmier-con-2026-web-ai-editi
+ on#sdj-6a6077ca55d3f715dfaa29e7
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: programmier.con - Web & AI Edition 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:konkis26-weareopen-2qssmt9a@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261125T070000Z
+DTEND:20261126T160000Z
+SUMMARY:KonKIS26 | #WeAreOpen
+DESCRIPTION:The Conference of the AI Service Centers\nThis year’s AI Servic
+ e Centers conference takes place under the banner “WE ARE OPEN”\, and we m
+ ean it. Take advantage of our AI services for your project and turn your i
+ dea into an AI application with real added value. \nWhether it’s practical
+  presentations or in-depth workshops offering insights into the latest res
+ earch\, here you’ll find inspiration\, connect\n\nOrganizer: hessian.AI\nG
+ oing: 0\nDetails: https://hackevents.net/de/events/konkis26-weareopen-2qss
+ mt9a\nRegister: https://www.hessian.ai/event/konkis26-weareopen/
+LOCATION:Cologne
+URL:https://www.hessian.ai/event/konkis26-weareopen/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: KonKIS26 | #WeAreOpen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-breakfast-moat-or-myth-the-real-value-of-data-in-the-age-of-ai-6v83ivmd@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261125T080000Z
+DTEND:20261125T100000Z
+SUMMARY:AI Breakfast: Moat or Myth? The Real Value of Data in the Age of AI
+DESCRIPTION:Join us for the next AI Breakfast — Berlin's largest AI network
+ ing event series. When Spirit Airlines went bankrupt this summer\, one of 
+ its most contested assets was its data. Google outbid rivals for millions 
+ of the airline’s internal emails and chat messages to train its models. Me
+ anwhile in New York\, a Munich-based startup is handing out free apartment
+  cleanings\, on the condition that the clean\n\nOrganizer: Merantix Capita
+ l\nGoing: 0\nDetails: https://hackevents.net/de/events/ai-breakfast-moat-o
+ r-myth-the-real-value-of-data-in-the-age-of-ai-6v83ivmd\nRegister: https:/
+ /luma.com/5fbknhx1
+LOCATION:Berlin
+URL:https://luma.com/5fbknhx1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: AI Breakfast: Moat or Myth? The Real Value of Data in
+  the Age of AI
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bpm-summit-dach-2026-jlqsjajk@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261128
+SUMMARY:BPM Summit DACH 2026
+DESCRIPTION:Der BPM Summit DACH ist die zentrale Konferenz für Business Pro
+ cess Management\, Process Automation und Operational Excellence. Im Fokus 
+ stehen End-to-End-Prozessoptimierung\, Low-Code/No-Code\, Process Mining\,
+  KI-gestützte Automatisierung sowie Governance und Skalierung. Erhalten Si
+ e praxisnahe Einblicke\, wie Unternehmen ihre Prozesse messbar effizienter
+  und resilienter gestalten.\nJetzt 30 % sparen\n\nOrganizer: \nGoing: 0\nD
+ etails: https://hackevents.net/de/events/bpm-summit-dach-2026-jlqsjajk\nRe
+ gister: https://www.we-conect.com/events/bpm-summit-dach-2026#sdj-696f59ca
+ 0d73e062a5eb8029
+LOCATION:Berlin
+URL:https://www.we-conect.com/events/bpm-summit-dach-2026#sdj-696f59ca0d73e
+ 062a5eb8029
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: BPM Summit DACH 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:community-lunch-fgifoekc@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261125T113000Z
+DTEND:20261125T123000Z
+SUMMARY:Community Lunch
+DESCRIPTION:\n\nOrganizer: Justus Kilian Wolff\nGoing: 0\nDetails: https://
+ hackevents.net/de/events/community-lunch-fgifoekc\nRegister: https://luma.
+ com/3r8yuy46
+LOCATION:House of AI Hamburg\, Hamburg
+URL:https://luma.com/3r8yuy46
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Community Lunch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:introduction-to-ai-safety-talk-with-safe-ai-germany-kaiserslautern-4jvn9jb9@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261125T143000Z
+DTEND:20261125T173000Z
+SUMMARY:Introduction to AI Safety: Talk with Safe AI Germany (Kaiserslauter
+ n)
+DESCRIPTION:What is AI Safety\, and how can you get involved?\nAfter our la
+ unch meetup in October\, we are back with a talk for everyone curious abou
+ t AI safety.\nJohannes Koch (Safe AI Germany) will cover:\nHow fast AI is 
+ progressing\, and the risks posed by advanced AI\nWhat we can do about the
+ m: the main research directions and the current state of the field\nHow to
+  get involved: how people with different skill se\n\nOrganizer: Priyabant 
+ Sandulu\nGoing: 0\nDetails: https://hackevents.net/de/events/introduction-
+ to-ai-safety-talk-with-safe-ai-germany-kaiserslautern-4jvn9jb9\nRegister: 
+ https://luma.com/ecqov39q
+LOCATION:German Research Center for Artificial Intelligence\, Kaiserslauter
+ n
+URL:https://luma.com/ecqov39q
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: Introduction to AI Safety: Talk with Safe AI Germany 
+ (Kaiserslautern)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:owasp-frankfurt-chapter-meetup-78-secure-by-design-for-ai-coding-workshop-kn6wpndr@hackevents.net
+DTSTAMP:20261120T080618Z
+DTSTART:20261125T170000Z
+DTEND:20261125T200000Z
+SUMMARY:OWASP Frankfurt Chapter Meetup #78 - Secure by Design for AI Coding
+  Workshop
+DESCRIPTION:**REGISTRATION REQUIRED: an RSVP on Meetup alone does not secur
+ e your spot. Please register via the OWASP website:** [https://owasp.org/m
+ eetings/8e9640e2-366a-4d31-a069-63fc96d854b8](https://owasp.org/meetings/8
+ e9640e2-366a-4d31-a069-63fc96d854b8)\n\nHello everyone\, we’re excited to 
+ invite you to the **OWASP Frankfurt Chapter Meetup #78**!\n\nOur OWASP Cha
+ pter serves central Germany\, particularly with\n\nOrganizer: OWASP Frankf
+ urt\nGoing: 0\nDetails: https://hackevents.net/de/events/owasp-frankfurt-c
+ hapter-meetup-78-secure-by-design-for-ai-coding-workshop-kn6wpndr\nRegiste
+ r: https://www.meetup.com/owasp-frankfurt/events/317202777/
+LOCATION:Beehive Frankfurt City\, Frankfurt
+URL:https://www.meetup.com/owasp-frankfurt/events/317202777/
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT24H
+DESCRIPTION:Reminder: OWASP Frankfurt Chapter Meetup #78 - Secure by Design
+  for AI Coding Workshop
+END:VALARM
+END:VEVENT
+END:VCALENDAR

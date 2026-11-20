@@ -1,0 +1,1251 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AgentConfs//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AgentConfs: AI events
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:eb655f5ff1@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20270116
+SUMMARY:Code for Humanity
+URL:https://agentconfs.com/events/code-for-humanity-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/code-for-humanity-2026\nOfficial 
+ site: https://code-for-humanity.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1723209c70@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20270115
+SUMMARY:Syntax Summit
+URL:https://agentconfs.com/events/syntax-summit-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/syntax-summit-2026\nOfficial site
+ : https://syntax-summit.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ea9faff034@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20280101
+SUMMARY:UN Global AI Forum 2026-2027 — Governance Tracker
+URL:https://agentconfs.com/events/un-global-ai-forum-2026-2027-governance-t
+ racker
+LOCATION:New York (UN HQ) + Geneva + rotating\, United States
+DESCRIPTION:https://agentconfs.com/events/un-global-ai-forum-2026-2027-gove
+ rnance-tracker\nOfficial site: https://www.un.org/digital-emerging-technol
+ ogies/global-digital-compact
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:514660730c@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261215
+SUMMARY:3-Part Synchronous Series - Use AI to Support Higher Education Inst
+ ruction
+URL:https://agentconfs.com/events/3-part-synchronous-series-use-ai-to-suppo
+ rt-higher-education-instruction-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/3-part-synchronous-series-use-ai-
+ to-support-higher-education-instruction-2026\nOfficial site: https://iste.
+ org/generationai/events/training-series-3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:76214068e6@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261126
+SUMMARY:Hackathon Agéntico SoftwareChido 2026B
+URL:https://agentconfs.com/events/hackathon-agentico-softwarechido-2026b
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/hackathon-agentico-softwarechido-
+ 2026b\nOfficial site: https://hackathon-agentico-2026b.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0c3ec889cd@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261126
+SUMMARY:HackWithAditya
+URL:https://agentconfs.com/events/hackwithaditya-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/hackwithaditya-2026\nOfficial sit
+ e: https://hackwithaditya.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2a91e24a9f@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261222
+SUMMARY:Arbiter Hacks V1
+URL:https://agentconfs.com/events/arbiter-hacks-v1-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/arbiter-hacks-v1-2026\nOfficial s
+ ite: https://arbiter-hacks-v1.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3307b4eba0@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20270331
+SUMMARY:AMD AI DevDay World Tour
+URL:https://agentconfs.com/events/amd-ai-devday-world-tour-2026
+LOCATION:Location on official site
+DESCRIPTION:https://agentconfs.com/events/amd-ai-devday-world-tour-2026\nOf
+ ficial site: https://amd.cventevents.com/event/8c01f0f1-2830-454c-8570-863
+ b8929ff76/welcome_new
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:07f9d0044c@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261205
+SUMMARY:Kiroween 2026
+URL:https://agentconfs.com/events/kiroween-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/kiroween-2026\nOfficial site: htt
+ ps://kiroween.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5d05afdd34@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261219
+SUMMARY:AI Agents for Founders Challenge — HETIC 2026
+URL:https://agentconfs.com/events/ai-agents-for-founders-challenge-hetic-20
+ 26
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/ai-agents-for-founders-challenge-
+ hetic-2026\nOfficial site: https://ai-agents-founders-hetic-26.devpost.com
+ /
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a06daf9e27@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261121
+SUMMARY:Build with Gemma - Innovate in Windsor
+URL:https://agentconfs.com/events/build-with-gemma-innovate-in-windsor-2026
+LOCATION:Location on official site
+DESCRIPTION:https://agentconfs.com/events/build-with-gemma-innovate-in-wind
+ sor-2026\nOfficial site: https://innovate-in-windsor-hackathon.devpost.com
+ /
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d704fcb3d1@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261122
+SUMMARY:Bridge The Gap Hacks
+URL:https://agentconfs.com/events/bridge-the-gap-hacks-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/bridge-the-gap-hacks-2026\nOffici
+ al site: https://sq-hacks.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0afa418bd5@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261123
+SUMMARY:KUK VIRTUAL HACKATHON
+URL:https://agentconfs.com/events/kuk-virtual-hackathon-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/kuk-virtual-hackathon-2026\nOffic
+ ial site: https://kuk-virtual-hackathon.devpost.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a98f808cc3@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:API Conference Berlin 2026
+URL:https://agentconfs.com/events/api-conference-berlin-2026
+LOCATION:Berlin\, Germany + online
+DESCRIPTION:https://agentconfs.com/events/api-conference-berlin-2026\nOffic
+ ial site: https://apiconference.net/berlin/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:672d94280f@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:MLCon Berlin 2026
+URL:https://agentconfs.com/events/mlcon-berlin-2026
+LOCATION:Berlin / Online\, Germany + online
+DESCRIPTION:https://agentconfs.com/events/mlcon-berlin-2026\nOfficial site:
+  https://mlconference.ai/berlin/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0d5da2189c@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:PRICAI 2026
+URL:https://agentconfs.com/events/pricai-2026
+LOCATION:Guangzhou\, China
+DESCRIPTION:https://agentconfs.com/events/pricai-2026\nOfficial site: https
+ ://2026.pricai.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:69788cdd16@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:QCon San Francisco 2026
+URL:https://agentconfs.com/events/qcon-san-francisco-2026
+LOCATION:San Francisco\, United States
+DESCRIPTION:https://agentconfs.com/events/qcon-san-francisco-2026\nOfficial
+  site: https://qconsf.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:098094abcf@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261121
+SUMMARY:VibeKode Berlin 2026
+URL:https://agentconfs.com/events/vibekode-berlin-2026
+LOCATION:Berlin\, Germany + online
+DESCRIPTION:https://agentconfs.com/events/vibekode-berlin-2026\nOfficial si
+ te: https://vibekode.it/berlin/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:065235e101@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:FLLM 2026
+URL:https://agentconfs.com/events/fllm-2026
+LOCATION:Barcelona\, Spain
+DESCRIPTION:https://agentconfs.com/events/fllm-2026\nOfficial site: https:/
+ /fllm-conference.org/2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1d9b029960@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:IBERAMIA 2026
+URL:https://agentconfs.com/events/iberamia-2026
+LOCATION:Asunción\, Paraguay
+DESCRIPTION:https://agentconfs.com/events/iberamia-2026\nOfficial site: htt
+ ps://www.iberamia.org/iberamia/iberamia2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e25d0aa06f@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261121
+SUMMARY:Microsoft Ignite 2026
+URL:https://agentconfs.com/events/microsoft-ignite-2026
+LOCATION:San Francisco\, United States + online
+DESCRIPTION:https://agentconfs.com/events/microsoft-ignite-2026\nOfficial s
+ ite: https://ignite.microsoft.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fe321b129b@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261121
+SUMMARY:15th workshop on Natural Language Processing for Computer-Assisted 
+ Language Learning
+URL:https://agentconfs.com/events/15th-workshop-on-natural-language-process
+ ing-for-computer-assisted-language-lear-2026
+LOCATION:Gothenburg\, Sweden
+DESCRIPTION:https://agentconfs.com/events/15th-workshop-on-natural-language
+ -processing-for-computer-assisted-language-lear-2026\nOfficial site: https
+ ://www.aclweb.org/portal/content/15th-workshop-natural-language-processing
+ -computer-assisted-language-learning
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:882703e3f8@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261122
+SUMMARY:iSAI-NLP 2026 — 21st International Symposium on AI & Natural Lang
+ uage Processing
+URL:https://agentconfs.com/events/isai-nlp-2026-21st-international-symposiu
+ m-on-ai-natural-language-processing
+LOCATION:Bangkok\, Thailand
+DESCRIPTION:https://agentconfs.com/events/isai-nlp-2026-21st-international-
+ symposium-on-ai-natural-language-processing\nOfficial site: https://isai-n
+ lp2026.aiat.or.th/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b0f132c431@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261121
+SUMMARY:MCP Dev Summit Nairobi
+URL:https://agentconfs.com/events/mcp-dev-summit-nairobi-2026
+LOCATION:Nairobi\, Kenya
+DESCRIPTION:https://agentconfs.com/events/mcp-dev-summit-nairobi-2026\nOffi
+ cial site: https://events.linuxfoundation.org/mcp-dev-summit-nairobi/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:581b8b89be@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Agentic Engineering Days Zurich
+URL:https://agentconfs.com/events/agentic-engineering-days-zurich-2026
+LOCATION:Zurich\, Switzerland
+DESCRIPTION:https://agentconfs.com/events/agentic-engineering-days-zurich-2
+ 026\nOfficial site: https://www.agenticdays.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f04bc21362@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:AWARE-AI Workshop: When AI Produces Informational Voids
+URL:https://agentconfs.com/events/aware-ai-workshop-when-ai-produces-inform
+ ational-voids-2026
+LOCATION:Rochester\, United States
+DESCRIPTION:https://agentconfs.com/events/aware-ai-workshop-when-ai-produce
+ s-informational-voids-2026\nOfficial site: https://www.rit.edu/events/awar
+ e-ai-workshop-when-ai-produces-informational-voids
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d52bc57337@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:DSIS 2026 — 2nd IEEE International Conference on Data Science and
+  Intelligent Systems
+URL:https://agentconfs.com/events/dsis-2026-2nd-ieee-international-conferen
+ ce-on-data-science-and-intelligent-syst
+LOCATION:Hangzhou\, China
+DESCRIPTION:https://agentconfs.com/events/dsis-2026-2nd-ieee-international-
+ conference-on-data-science-and-intelligent-syst\nOfficial site: https://ds
+ is2026.net/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:21712fa98f@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261124
+SUMMARY:FMLDS 2026 — IEEE International Conference on Future Machine Lear
+ ning and Data Science
+URL:https://agentconfs.com/events/fmlds-2026-ieee-international-conference-
+ on-future-machine-learning-and-data-sci
+LOCATION:Kobe\, Japan
+DESCRIPTION:https://agentconfs.com/events/fmlds-2026-ieee-international-con
+ ference-on-future-machine-learning-and-data-sci\nOfficial site: https://fm
+ lds.org/2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ea4565cb9e@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:IEEE MedAI 2026
+URL:https://agentconfs.com/events/ieee-medai-2026
+LOCATION:Zhengzhou\, China
+DESCRIPTION:https://agentconfs.com/events/ieee-medai-2026\nOfficial site: h
+ ttps://medai2026.zzuli.edu.cn/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a60770e148@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:LOG 2026
+URL:https://agentconfs.com/events/log-2026
+LOCATION:Boston\, United States
+DESCRIPTION:https://agentconfs.com/events/log-2026\nOfficial site: https://
+ logconference.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e54a220bab@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Vibe Hackathon Cologne
+URL:https://agentconfs.com/events/vibe-hackathon-cologne-2026
+LOCATION:Cologne\, Germany
+DESCRIPTION:https://agentconfs.com/events/vibe-hackathon-cologne-2026\nOffi
+ cial site: https://pirateskills.com/events/vibe-hackathon-cologne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fb335890f6@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:FutureForge Hacks
+URL:https://agentconfs.com/events/futureforge-hacks-2026
+LOCATION:San Francisco\, United States
+DESCRIPTION:https://agentconfs.com/events/futureforge-hacks-2026\nOfficial 
+ site: https://ushackathons.com/events/futureforge-hacks
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bd4f0bd59c@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:KSUG.AI India #12 meetup @ HPE
+URL:https://agentconfs.com/events/ksug-ai-india-12-meetup-hpe-2026
+LOCATION:Bengaluru\, India
+DESCRIPTION:https://agentconfs.com/events/ksug-ai-india-12-meetup-hpe-2026\
+ nOfficial site: https://www.meetup.com/ksug-in/events/316324548/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1b21b179a4@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261123
+SUMMARY:PyTorch Day Korea 2026
+URL:https://agentconfs.com/events/pytorch-day-korea-2026
+LOCATION:Seoul\, South Korea
+DESCRIPTION:https://agentconfs.com/events/pytorch-day-korea-2026\nOfficial 
+ site: https://pytorch.org/event/pytorch-day-korea-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b6b815725a@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Robotics for Good Youth Challenge South Korea
+URL:https://agentconfs.com/events/robotics-for-good-youth-challenge-south-k
+ orea-2026
+LOCATION:South Korea
+DESCRIPTION:https://agentconfs.com/events/robotics-for-good-youth-challenge
+ -south-korea-2026\nOfficial site: https://aiforgood.itu.int/event/robotics
+ -for-good-youth-challenge-south-korea-2027/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:48fba29c13@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261125
+SUMMARY:Intelligent and Sustainable Environment: AI-Driven Futures in Engin
+ eering
+URL:https://agentconfs.com/events/intelligent-and-sustainable-environment-a
+ i-driven-futures-in-engineering-2026
+LOCATION:Egypt + online
+DESCRIPTION:https://agentconfs.com/events/intelligent-and-sustainable-envir
+ onment-ai-driven-futures-in-engineering-2026\nOfficial site: https://msa.e
+ du.eg/msauniversity/events/intelligent-and-sustainable-environment-ai-driv
+ en-futures-in-engineering-conference/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ab18773254@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261203
+SUMMARY:Stochastic Numerics and Statistical Learning: Theory and Applicatio
+ ns Workshop 2026
+URL:https://agentconfs.com/events/stochastic-numerics-and-statistical-learn
+ ing-theory-and-applications-workshop-20-2026
+LOCATION:Thuwal\, Saudi Arabia
+DESCRIPTION:https://agentconfs.com/events/stochastic-numerics-and-statistic
+ al-learning-theory-and-applications-workshop-20-2026\nOfficial site: https
+ ://cemse.kaust.edu.sa/events/by-type/workshop/2026/11/22/stochastic-numeri
+ cs-and-statistical-learning-theory-and
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ceebdac167@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:A.I. Skills Workshop: Dissecting and Applying the...
+URL:https://agentconfs.com/events/a-i-skills-workshop-dissecting-and-applyi
+ ng-the-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/a-i-skills-workshop-dissecting-an
+ d-applying-the-2026\nOfficial site: https://rss.org.uk/training-events/tra
+ ining/public-courses/professional-development/a-i-skills-workshop-dissecti
+ ng-and-applying-the-st/a-i-skills-workshop-dissecting-and-applying-the-st/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d656569a29@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261128
+SUMMARY:DSC Europe 2026 — AI Builders Conference
+URL:https://agentconfs.com/events/dsc-europe-2026-ai-builders-conference
+LOCATION:Belgrade\, Serbia
+DESCRIPTION:https://agentconfs.com/events/dsc-europe-2026-ai-builders-confe
+ rence\nOfficial site: https://datasciconference.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cd11e872c6@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261125
+SUMMARY:FARI Brussels Conference 2026
+URL:https://agentconfs.com/events/fari-brussels-conference-2026
+LOCATION:Brussels\, Belgium
+DESCRIPTION:https://agentconfs.com/events/fari-brussels-conference-2026\nOf
+ ficial site: https://www.conference.fari.brussels/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d1ba9109c2@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261128
+SUMMARY:ICONIP 2026
+URL:https://agentconfs.com/events/iconip-2026
+LOCATION:Melbourne\, Australia
+DESCRIPTION:https://agentconfs.com/events/iconip-2026\nOfficial site: https
+ ://www.iconip2026.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:52f4e47e88@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261126
+SUMMARY:IEEE CRET 2026
+URL:https://agentconfs.com/events/ieee-cret-2026
+LOCATION:Kristiansand\, Norway
+DESCRIPTION:https://agentconfs.com/events/ieee-cret-2026\nOfficial site: ht
+ tps://www.cret.net/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3a95da50a2@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261126
+SUMMARY:Royal Society Hooke Discussion Meeting and Industry Event
+URL:https://agentconfs.com/events/royal-society-hooke-discussion-meeting-an
+ d-industry-event-2026
+LOCATION:London\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/royal-society-hooke-discussion-me
+ eting-and-industry-event-2026\nOfficial site: https://royalsociety.org/sci
+ ence-events-and-lectures/2026/11/neuromorphic-computing/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:29fa1ed8ba@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261127
+SUMMARY:Visual Studio Live
+URL:https://agentconfs.com/events/visual-studio-live-2026
+LOCATION:Orlando\, United States
+DESCRIPTION:https://agentconfs.com/events/visual-studio-live-2026\nOfficial
+  site: https://www.textcontrol.com/company/conference/2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eec4b228e6@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261127
+SUMMARY:1st Annual AAAI Nigeria Conference on Artificial Intelligence
+URL:https://agentconfs.com/events/1st-annual-aaai-nigeria-conference-on-art
+ ificial-intelligence-2026
+LOCATION:Lagos\, Nigeria + online
+DESCRIPTION:https://agentconfs.com/events/1st-annual-aaai-nigeria-conferenc
+ e-on-artificial-intelligence-2026\nOfficial site: https://aaai.org.ng/conf
+ erence.php
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4fec4451d8@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:AI for Science Summit 2026
+URL:https://agentconfs.com/events/ai-for-science-summit-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/ai-for-science-summit-2026\nOffic
+ ial site: https://www.ai.cam.ac.uk/events/ai-for-science-summit-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:38a6fe8c70@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261128
+SUMMARY:AI Summit Europe 2026
+URL:https://agentconfs.com/events/ai-summit-europe-2026
+LOCATION:Vilnius\, Lithuania + online
+DESCRIPTION:https://agentconfs.com/events/ai-summit-europe-2026\nOfficial s
+ ite: https://aisummiteurope.eu/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1e7cab212f@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:AI Tinkerers Seattle: Women in AI Builders Track Meetup
+URL:https://agentconfs.com/events/ai-tinkerers-seattle-women-in-ai-builders
+ -track-meetup-2026
+LOCATION:Seattle\, United States
+DESCRIPTION:https://agentconfs.com/events/ai-tinkerers-seattle-women-in-ai-
+ builders-track-meetup-2026\nOfficial site: https://seattle.aitinkerers.org
+ /p/women-in-ai-builders-track-seattle-meetup-november-24th
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6cab7cea9c@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:AI Tinkerers Valencia: AI Legal Teardown #1
+URL:https://agentconfs.com/events/ai-tinkerers-valencia-ai-legal-teardown-1
+ -2026
+LOCATION:Valencia\, Spain
+DESCRIPTION:https://agentconfs.com/events/ai-tinkerers-valencia-ai-legal-te
+ ardown-1-2026\nOfficial site: https://valencia.aitinkerers.org/p/legal-tea
+ rdown-1-ai-tinkerers-valencia-2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6f422151e0@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:AI.SUMMIT 2026 Hamburg
+URL:https://agentconfs.com/events/ai-summit-2026-hamburg
+LOCATION:Hamburg\, Germany
+DESCRIPTION:https://agentconfs.com/events/ai-summit-2026-hamburg\nOfficial 
+ site: https://ai.hamburg/en/ai-summit-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b154a8cb7f@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261128
+SUMMARY:Big Data Conference Europe 2026
+URL:https://agentconfs.com/events/big-data-conference-europe-2026
+LOCATION:Vilnius\, Lithuania + online
+DESCRIPTION:https://agentconfs.com/events/big-data-conference-europe-2026\n
+ Official site: https://bigdataconference.eu/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8a40fdda49@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Civo Navigate India 2026: Sovereignty and AI Edition
+URL:https://agentconfs.com/events/civo-navigate-india-2026-sovereignty-and-
+ ai-edition
+LOCATION:Bengaluru\, India
+DESCRIPTION:https://agentconfs.com/events/civo-navigate-india-2026-sovereig
+ nty-and-ai-edition\nOfficial site: https://www.civo.com/navigate/india/202
+ 6
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:15be1cebef@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261126
+SUMMARY:UKAIRS 2026
+URL:https://agentconfs.com/events/ukairs-2026
+LOCATION:Edinburgh\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/ukairs-2026\nOfficial site: https
+ ://www.april.ac.uk/events/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db9804ed28@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:XtremeAI 2026 Online Conference
+URL:https://agentconfs.com/events/xtremeai-2026-online-conference
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/xtremeai-2026-online-conference\n
+ Official site: https://xtremeai.dev/2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ff22e4b89b@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261128
+SUMMARY:AE Global Summit 2026
+URL:https://agentconfs.com/events/ae-global-summit-2026
+LOCATION:London\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/ae-global-summit-2026\nOfficial s
+ ite: https://www.thinkingaboutthinking.org/ae-global-summit
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ed36980305@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261127
+SUMMARY:Agentiq World Amsterdam
+URL:https://agentconfs.com/events/agentiq-world-amsterdam-2026
+LOCATION:Amsterdam\, Netherlands
+DESCRIPTION:https://agentconfs.com/events/agentiq-world-amsterdam-2026\nOff
+ icial site: https://www.agentiqworld.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:87709a4c85@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:AI Engineering Summit Auckland 2026
+URL:https://agentconfs.com/events/ai-engineering-summit-auckland-2026
+LOCATION:Auckland\, New Zealand
+DESCRIPTION:https://agentconfs.com/events/ai-engineering-summit-auckland-20
+ 26\nOfficial site: https://www.testingmind.com/event/aiengineeringsummit-a
+ uckland/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:35a346f95d@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261127
+SUMMARY:AI World Congress
+URL:https://agentconfs.com/events/ai-world-congress-2026
+LOCATION:London\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/ai-world-congress-2026\nOfficial 
+ site: https://aiconference.london/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b3155e1725@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:BilAI Industry Day 2026
+URL:https://agentconfs.com/events/bilai-industry-day-2026
+LOCATION:Klosterneuburg\, Austria
+DESCRIPTION:https://agentconfs.com/events/bilai-industry-day-2026\nOfficial
+  site: https://ista.ac.at/en/news-events/event/?eid=6602
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:65aca06c39@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Breaking Topics in AI Conference 2026
+URL:https://agentconfs.com/events/breaking-topics-in-ai-conference-2026
+LOCATION:London\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/breaking-topics-in-ai-conference-
+ 2026\nOfficial site: https://www.imperial.ac.uk/events/213883/breaking-top
+ ics-in-ai-conference-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9b3945e9b1@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261127
+SUMMARY:Chatbot Summit Amsterdam 2026
+URL:https://agentconfs.com/events/chatbot-summit-amsterdam-2026
+LOCATION:Amsterdam\, Netherlands
+DESCRIPTION:https://agentconfs.com/events/chatbot-summit-amsterdam-2026\nOf
+ ficial site: https://www.chatbotsummit.com/edition/amsterdam/2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:15340ada08@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:EPFL Investor Day 2026
+URL:https://agentconfs.com/events/epfl-investor-day-2026
+LOCATION:Lausanne\, Switzerland
+DESCRIPTION:https://agentconfs.com/events/epfl-investor-day-2026\nOfficial 
+ site: https://memento.epfl.ch/event/epfl-investor-day-2026-discover-networ
+ k/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0b07400e78@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:LangChain Meetup Stockholm: AI on Sovereign Infrastructure
+URL:https://agentconfs.com/events/langchain-meetup-stockholm-ai-on-sovereig
+ n-infrastructure-2026
+LOCATION:Stockholm\, Sweden
+DESCRIPTION:https://agentconfs.com/events/langchain-meetup-stockholm-ai-on-
+ sovereign-infrastructure-2026\nOfficial site: https://luma.com/9dni7s4o
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:548bdbe23a@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Melbourne AI Startup Showcase & Networking — November Edition
+URL:https://agentconfs.com/events/melbourne-ai-startup-showcase-networking-
+ november-edition-2026
+LOCATION:Melbourne\, Australia
+DESCRIPTION:https://agentconfs.com/events/melbourne-ai-startup-showcase-net
+ working-november-edition-2026\nOfficial site: https://jracademy.ai/events/
+ 6a97ae7a24431e1a28184797
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7eba7a93aa@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261127
+SUMMARY:UNU Macau AI Conference 2026: AI × Education
+URL:https://agentconfs.com/events/unu-macau-ai-conference-2026-ai-education
+LOCATION:Macau\, Macao
+DESCRIPTION:https://agentconfs.com/events/unu-macau-ai-conference-2026-ai-e
+ ducation\nOfficial site: https://unu.edu/macau/aiconf2026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cbfeedae41@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Vancouver AI Meetup: Where Humans Go\, Where AI Goes
+URL:https://agentconfs.com/events/vancouver-ai-meetup-where-humans-go-where
+ -ai-goes-2026
+LOCATION:Vancouver\, Canada
+DESCRIPTION:https://agentconfs.com/events/vancouver-ai-meetup-where-humans-
+ go-where-ai-goes-2026\nOfficial site: https://luma.com/nov-vanai
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:71075d290f@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261127
+SUMMARY:WeAreDevelopers Conference India 2026
+URL:https://agentconfs.com/events/wearedevelopers-conference-india-2026
+LOCATION:Bengaluru\, India
+DESCRIPTION:https://agentconfs.com/events/wearedevelopers-conference-india-
+ 2026\nOfficial site: https://www.wearedevelopers.com/conference-india
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eb19bfb5ba@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:(NL) Training 'Responsible AI in Practice': Ethical and Legal Guida
+ nce for AI Projects (day 3/3)
+URL:https://agentconfs.com/events/nl-training-responsible-ai-in-practice-et
+ hical-and-legal-guidance-for-ai-project-2026
+LOCATION:Belgium
+DESCRIPTION:https://agentconfs.com/events/nl-training-responsible-ai-in-pra
+ ctice-ethical-and-legal-guidance-for-ai-project-2026\nOfficial site: https
+ ://data-en-maatschappij.ai/en/calendar/day-3-3-train-responsibleai-inpract
+ ice
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8239aa8fbb@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:AI & Analytics Conference
+URL:https://agentconfs.com/events/ai-analytics-conference-2026
+LOCATION:Online
+DESCRIPTION:https://agentconfs.com/events/ai-analytics-conference-2026\nOff
+ icial site: https://www.icaew.com/learning-and-development/events/ai-and-a
+ nalytics-conference
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9dedc88c42@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:AI Engineering Summit Melbourne 2026
+URL:https://agentconfs.com/events/ai-engineering-summit-melbourne-2026
+LOCATION:Melbourne\, Australia
+DESCRIPTION:https://agentconfs.com/events/ai-engineering-summit-melbourne-2
+ 026\nOfficial site: https://www.testingmind.com/event/aiengineeringsummit-
+ Melbourne/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e2509ca5d2@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:AI Innovation Asia 2026
+URL:https://agentconfs.com/events/ai-innovation-asia-2026
+LOCATION:Singapore
+DESCRIPTION:https://agentconfs.com/events/ai-innovation-asia-2026\nOfficial
+  site: https://events.economistenterprise.com/ai-innovation-asia/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e1a7b1cf30@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:AI Insight Series — AI in Audit & Regulatory Reporting
+URL:https://agentconfs.com/events/ai-insight-series-ai-in-audit-regulatory-
+ reporting-2026
+LOCATION:St Helier\, Jersey
+DESCRIPTION:https://agentconfs.com/events/ai-insight-series-ai-in-audit-reg
+ ulatory-reporting-2026\nOfficial site: https://www.digital.je/digital-trai
+ ning/digital-courses/regulatory/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:38b6618ae6@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:AI Tinkerers Tokyo: November 2026 Meetup
+URL:https://agentconfs.com/events/ai-tinkerers-tokyo-november-2026-meetup
+LOCATION:Tokyo\, Japan
+DESCRIPTION:https://agentconfs.com/events/ai-tinkerers-tokyo-november-2026-
+ meetup\nOfficial site: https://tokyo.aitinkerers.org/p/ai-tinkerers-tokyo-
+ november-26-meetup
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:94bda93974@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:AI Tinkerers Toronto: Legal Tech with Clio (November 2026)
+URL:https://agentconfs.com/events/ai-tinkerers-toronto-legal-tech-with-clio
+ -november-2026
+LOCATION:Toronto\, Canada
+DESCRIPTION:https://agentconfs.com/events/ai-tinkerers-toronto-legal-tech-w
+ ith-clio-november-2026\nOfficial site: https://toronto.aitinkerers.org/p/a
+ i-tinkerers-toronto-november-2026-meetup-legal-tech-with-clio
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:891a907c42@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Building the Law Firm of the Future
+URL:https://agentconfs.com/events/building-the-law-firm-of-the-future-2026
+LOCATION:London\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/building-the-law-firm-of-the-futu
+ re-2026\nOfficial site: https://www.ibanet.org/conference-details/CONF2846
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:75046fd174@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261128
+SUMMARY:Data Science Summit 2026
+URL:https://agentconfs.com/events/data-science-summit-2026
+LOCATION:Warsaw\, Poland + online
+DESCRIPTION:https://agentconfs.com/events/data-science-summit-2026\nOfficia
+ l site: https://main.dssconf.pl/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7da3d6bc0b@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261128
+SUMMARY:Generative Decision Sciences Conference 2026
+URL:https://agentconfs.com/events/generative-decision-sciences-conference-2
+ 026
+LOCATION:Johannesburg\, South Africa + online
+DESCRIPTION:https://agentconfs.com/events/generative-decision-sciences-conf
+ erence-2026\nOfficial site: https://codata.org/conference-call-for-papers-
+ 26-27-november-johannesburg-business-school-university-of-johannesburg-auc
+ kland-park-south-africa/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d154c02214@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261129
+SUMMARY:ACITY 2026 : 16th International Conference on Advances in Computing
+  and Information Technology
+URL:https://agentconfs.com/events/acity-2026-16th-international-conference-
+ on-advances-in-computing-and-informatio
+LOCATION:Zurich\, Switzerland
+DESCRIPTION:https://agentconfs.com/events/acity-2026-16th-international-con
+ ference-on-advances-in-computing-and-informatio\nOfficial site: https://ac
+ ity2026.org/index
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a5534afc8@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261201
+SUMMARY:AJCAI 2026 - Australasian Joint Conference on AI (Auckland)
+URL:https://agentconfs.com/events/ajcai-2026-australasian-joint-conference-
+ on-ai-auckland
+LOCATION:Auckland\, New Zealand
+DESCRIPTION:https://agentconfs.com/events/ajcai-2026-australasian-joint-con
+ ference-on-ai-auckland\nOfficial site: https://ajcai26.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3581daf704@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261130
+SUMMARY:DSIT 2026
+URL:https://agentconfs.com/events/dsit-2026
+LOCATION:Taicang\, China
+DESCRIPTION:https://agentconfs.com/events/dsit-2026\nOfficial site: https:/
+ /www.dsit2026.net/index.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:96efa8bcdd@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261130
+SUMMARY:EAGxAustralasia 2026
+URL:https://agentconfs.com/events/eagxaustralasia-2026
+LOCATION:Melbourne\, Australia
+DESCRIPTION:https://agentconfs.com/events/eagxaustralasia-2026\nOfficial si
+ te: https://www.effectivealtruism.org/ea-global/events/eagxaustralasia-202
+ 6
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cad2d9781d@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261130
+SUMMARY:ICT4DA 2026 — 8th International Conference on ICT for Development
+  for Africa
+URL:https://agentconfs.com/events/ict4da-2026-8th-international-conference-
+ on-ict-for-development-for-africa
+LOCATION:Bahir Dar\, Ethiopia
+DESCRIPTION:https://agentconfs.com/events/ict4da-2026-8th-international-con
+ ference-on-ict-for-development-for-africa\nOfficial site: https://ict4daco
+ nf.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d40aedc1b8@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261203
+SUMMARY:DAI 2026
+URL:https://agentconfs.com/events/dai-2026
+LOCATION:Hong Kong\, China
+DESCRIPTION:https://agentconfs.com/events/dai-2026\nOfficial site: https://
+ www.adai.ai/dai/2026/index.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6d1212f2a8@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261203
+SUMMARY:24th Annual Workshop of the Australasian Language Technology Associ
+ ation (ALTA 2026)
+URL:https://agentconfs.com/events/24th-annual-workshop-of-the-australasian-
+ language-technology-association-alta-20-2026
+LOCATION:Melbourne\, Australia
+DESCRIPTION:https://agentconfs.com/events/24th-annual-workshop-of-the-austr
+ alasian-language-technology-association-alta-20-2026\nOfficial site: https
+ ://alta2026.alta.asn.au/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fda1a134b9@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261202
+SUMMARY:AI Dev NYC
+URL:https://agentconfs.com/events/ai-dev-nyc-2026
+LOCATION:New York\, United States
+DESCRIPTION:https://agentconfs.com/events/ai-dev-nyc-2026\nOfficial site: h
+ ttps://ai-dev.deeplearning.ai/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af2e914ef0@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261205
+SUMMARY:AWS re:Invent 2026
+URL:https://agentconfs.com/events/aws-re-invent-2026
+LOCATION:Las Vegas\, United States
+DESCRIPTION:https://agentconfs.com/events/aws-re-invent-2026\nOfficial site
+ : https://aws.amazon.com/events/reinvent/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0e8431efd2@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261205
+SUMMARY:DevOpsCon Munich 2026
+URL:https://agentconfs.com/events/devopscon-munich-2026
+LOCATION:Munich\, Germany + online
+DESCRIPTION:https://agentconfs.com/events/devopscon-munich-2026\nOfficial s
+ ite: https://devopscon.io/munich/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:74a53c281a@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261204
+SUMMARY:NVIDIA GTC Washington\, D.C. 2026
+URL:https://agentconfs.com/events/nvidia-gtc-washington-d-c-2026
+LOCATION:Washington\, United States
+DESCRIPTION:https://agentconfs.com/events/nvidia-gtc-washington-d-c-2026\nO
+ fficial site: https://www.nvidia.com/gtc/dc/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:98ffcd2295@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Quarterly Meeting - November 2026
+URL:https://agentconfs.com/events/quarterly-meeting-november-2026
+LOCATION:Leiden\, Netherlands
+DESCRIPTION:https://agentconfs.com/events/quarterly-meeting-november-2026\n
+ Official site: https://www.causalinference.nl/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d7e762f264@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Radiology Reimagined: AI\, Innovation and Interoperability in Pract
+ ice
+URL:https://agentconfs.com/events/radiology-reimagined-ai-innovation-and-in
+ teroperability-in-practice-2026
+LOCATION:United States
+DESCRIPTION:https://agentconfs.com/events/radiology-reimagined-ai-innovatio
+ n-and-interoperability-in-practice-2026\nOfficial site: https://www.rsna.o
+ rg/artificial-intelligence/radiology-reimagined-ai
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4b4efd91ec@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261204
+SUMMARY:2nd EAGE Workshop on Enhancing Subsurface Practices using AI/ML
+URL:https://agentconfs.com/events/2nd-eage-workshop-on-enhancing-subsurface
+ -practices-using-ai-ml-2026
+LOCATION:Daejeon\, South Korea
+DESCRIPTION:https://agentconfs.com/events/2nd-eage-workshop-on-enhancing-su
+ bsurface-practices-using-ai-ml-2026\nOfficial site: https://eage.eventsair
+ .com/2nd-eage-workshop-on-enhancing-subsurface-practices-using-aiml/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eb104b17b3@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261205
+SUMMARY:ACML 2026 — Asian Conference on Machine Learning
+URL:https://agentconfs.com/events/acml-2026-asian-conference-on-machine-lea
+ rning
+LOCATION:Melbourne\, Australia
+DESCRIPTION:https://agentconfs.com/events/acml-2026-asian-conference-on-mac
+ hine-learning\nOfficial site: https://www.acml-conf.org/2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1b12e90b30@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Agentic AI Summit London 2026
+URL:https://agentconfs.com/events/agentic-ai-summit-london-2026
+LOCATION:London\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/agentic-ai-summit-london-2026\nOf
+ ficial site: https://world.aiacceleratorinstitute.com/location/agenticailo
+ ndon
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1212435cd5@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:AI & Business Futures 2026 — Stockholm
+URL:https://agentconfs.com/events/ai-business-futures-2026-stockholm
+LOCATION:Stockholm\, Sweden
+DESCRIPTION:https://agentconfs.com/events/ai-business-futures-2026-stockhol
+ m\nOfficial site: https://www.ai-nordic.se/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e1e75cc0b1@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261203
+SUMMARY:AI in Airports 2026
+URL:https://agentconfs.com/events/ai-in-airports-2026
+LOCATION:London\, United Kingdom
+DESCRIPTION:https://agentconfs.com/events/ai-in-airports-2026\nOfficial sit
+ e: https://airportworld.ai/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:283c802492@agentconfs.com
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:AI Tinkerers Paris: PAIR(ED) Builder Summit — Physical AI\, Robot
+ ics\, Edge and Drones
+URL:https://agentconfs.com/events/ai-tinkerers-paris-pair-ed-builder-summit
+ -physical-ai-robotics-edge-and-drones-2026
+LOCATION:Paris\, France
+DESCRIPTION:https://agentconfs.com/events/ai-tinkerers-paris-pair-ed-builde
+ r-summit-physical-ai-robotics-edge-and-drones-2026\nOfficial site: https:/
+ /paris.aitinkerers.org/p/pair-ed-builder-summit-summit-physical-ai-robotic
+ s-edge-and-drones-paris-dec-1-2026
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
