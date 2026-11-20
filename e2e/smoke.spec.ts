@@ -104,7 +104,7 @@ test.describe('legal pages in both languages', () => {
 			expect(errors).toEqual([]);
 		});
 	}
-	test('every page links to the legal pages in its own language, owner fields stay [[TODO]]', async ({ page }) => {
+	test('every page links to the legal pages in its own language, processor placeholders stay [[TODO]], name and email are real', async ({ page }) => {
 		await page.goto('/');
 		await expect(page.locator('footer a[href="/impressum/"]')).toHaveCount(1);
 		await expect(page.locator('footer a[href="/datenschutz/"]')).toHaveCount(1);

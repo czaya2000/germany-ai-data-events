@@ -34,7 +34,7 @@ export const REPO_URL = 'https://github.com/czaya2000/germany-ai-data-events';
 export const INDEXABLE = false;
 
 // Owner-only values. Each is a placeholder until the owner supplies it (TODO-OWNER.md).
-export const CONTACT_EMAIL = '[[TODO: contact email]]';
+export const CONTACT_EMAIL = 'hallo@germandataevents.com';
 export const FORM_ENDPOINT = 'https://formsubmit.co/[[TODO: FormSubmit target address]]';
 export const BUTTONDOWN_USERNAME = 'german-data-events';
 export const GOOGLE_SITE_VERIFICATION = '';

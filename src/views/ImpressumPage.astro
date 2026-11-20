@@ -5,7 +5,7 @@ import { localePath, legalPath } from '../i18n/paths.mjs';
 import type { Locale } from '../i18n';
 
 /* Impressum (§ 5 DDG, § 18 Abs. 2 MStV) and disclaimer, German and English.
-   Owner name is the [[TODO NAME]] placeholder; no postal address by owner decision; nothing is invented.
+   Owner name: Marcin Czajkowski; no postal address by owner decision; nothing is invented.
    Not legal advice. */
 interface Props {
 	locale: Locale;
@@ -32,7 +32,7 @@ const description = de
 				<dl>
 					<dt>Diensteanbieter (§ 5 DDG)</dt>
 					<dd>
-						[[TODO NAME]]
+						Marcin Czajkowski
 					</dd>
 
 					<dt>Kontakt</dt>
@@ -42,13 +42,11 @@ const description = de
 					</dd>
 
 					<dt>Verantwortlich für Inhalte (§ 18 Abs. 2 MStV)</dt>
-					<dd>[[TODO NAME]], Kontakt wie oben.</dd>
+					<dd>Marcin Czajkowski, Kontakt wie oben.</dd>
 
 					<dt>Verbraucherstreitbeilegung (§ 36 VSBG)</dt>
 					<dd>
-						[[TODO: Betreiber wählt. Üblich: „Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren
-						vor einer Verbraucherschlichtungsstelle teilzunehmen.“ Gilt nur, wenn Verbraucher Verträge mit dem
-						Betreiber schließen können; die Seite ist kostenlos und verkauft nichts.]]
+						Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Die Plattform der EU-Kommission zur Online-Streitbeilegung finden Sie unter <a href="https://ec.europa.eu/consumers/odr/" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben.
 					</dd>
 
 					<dt>Worum es auf dieser Website geht</dt>
@@ -107,7 +105,7 @@ const description = de
 
 				<p class="updated">
 					Datenschutz: siehe <a href={localePath(legalPath('datenschutz', 'de'), 'de')}>Datenschutzerklärung</a>.
-					Stand: [[TODO: Datum]].
+					Stand: 20. November 2026.
 				</p>
 			</>
 		) : (
@@ -121,7 +119,7 @@ const description = de
 				<dl>
 					<dt>Service provider (§ 5 DDG)</dt>
 					<dd>
-						[[TODO NAME]]
+						Marcin Czajkowski
 					</dd>
 
 					<dt>Contact</dt>
@@ -131,13 +129,11 @@ const description = de
 					</dd>
 
 					<dt>Responsible for content (§ 18 para. 2 MStV)</dt>
-					<dd>[[TODO NAME]], contact as above.</dd>
+					<dd>Marcin Czajkowski, contact as above.</dd>
 
 					<dt>Consumer dispute resolution (§ 36 VSBG)</dt>
 					<dd>
-						[[TODO: operator to choose. A typical statement: "We are neither willing nor obliged to take part in
-						dispute resolution proceedings before a consumer arbitration board." Only relevant if consumers can
-						enter contracts with the operator; this site is free and sells nothing.]]
+						We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board. The EU Commission's online dispute resolution platform is available at <a href="https://ec.europa.eu/consumers/odr/" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. Our email address is given above.
 					</dd>
 
 					<dt>What this site is</dt>
@@ -191,8 +187,7 @@ const description = de
 				</p>
 
 				<p class="updated">
-					Privacy: see the <a href={localePath(legalPath('datenschutz', 'en'), 'en')}>privacy policy</a>. Last updated:
-					[[TODO: date]].
+					Privacy: see the <a href={localePath(legalPath('datenschutz', 'en'), 'en')}>privacy policy</a>. Last updated: 20 November 2026.
 				</p>
 			</>
 		)

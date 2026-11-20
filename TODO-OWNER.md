@@ -30,13 +30,13 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 ## Values in `config/country.mjs`
 
-7. `CONTACT_EMAIL`: contact email. Also used in the fetcher User-Agent (the repository URL is used until it is set).
+7. `CONTACT_EMAIL` is set to hallo@germandataevents.com (done; forwarding verified). It is also used in the fetcher User-Agent.
 8. `FORM_ENDPOINT`: FormSubmit target address for the contact and submit forms (`https://formsubmit.co/<address>`).
 11. The six hub cities can be changed in `config/country.mjs`. The product name "German Data Events" (`SITE_NAME`) is final.
 
 ## Legal pages
 
-12. `/impressum` and `/privacy` carry `[[TODO ...]]` placeholders for the owner and the processors actually used (host, Buttondown, FormSubmit, analytics tool). Nothing was invented. **This is not legal advice; have the final texts reviewed.**
+12. Done on 2026-11-20 (owner-approved): owner name Marcin Czajkowski, contact email, § 36 VSBG statement (not willing, not obliged), last-updated date 20 November 2026, supervisory-authority wording (Art. 77 GDPR, no seat or authority named), DPO line removed (none appointed). No postal address, by informed owner decision. Still open `[[TODO]]` on `/impressum` and `/datenschutz` (both languages): disclaimer wording review; copyright and licence for `/data/` and `events.json`; GitHub log retention and transfer mechanism; Vercel/Umami IP handling, legal basis, retention and transfer; Buttondown retention, transfer and open/click tracking; FormSubmit provider details, retention and transfer; legal-basis confirmations; a note to update the policy when a further service is added. The "Entwurf" / "Draft" banners stay until none remain. **This is not legal advice; have the final texts reviewed.**
 13. Fonts are self-hosted (`public/fonts/`, Archivo, SIL Open Font License) so no visitor IP goes to a font CDN. Confirm this with your own legal advice.
 
 ## Design assets

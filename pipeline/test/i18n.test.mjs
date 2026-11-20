@@ -74,7 +74,7 @@ test('legal pages: Impressum and Datenschutz have English twins', () => {
 test('legal pages: the source keeps [[TODO]] placeholders for owner facts and invents none', () => {
 	for (const f of ['ImpressumPage', 'DatenschutzPage']) {
 		const src = readFileSync(new URL(`../../src/views/${f}.astro`, import.meta.url), 'utf8');
-		assert.ok((src.match(/\[\[TODO/g) ?? []).length >= 10, `${f} lost its placeholders`);
+		assert.ok((src.match(/\[\[TODO/g) ?? []).length >= (f === 'ImpressumPage' ? 4 : 10), `${f} lost its placeholders`);
 		assert.doesNotMatch(src, /\+49|\bDE\d{9}\b|stra(ß|ss)e \d/i, `${f} contains what looks like a real fact`);
 	}
 	const priv = readFileSync(new URL('../../src/views/DatenschutzPage.astro', import.meta.url), 'utf8');
@@ -234,4 +234,15 @@ test('isoDateIn / today: the date in Europe/Berlin, not UTC; SITE_TODAY freezes 
 	assert.match(today(), /^\d{4}-\d{2}-\d{2}$/);
 	if (saved === undefined) delete process.env.SITE_TODAY;
 	else process.env.SITE_TODAY = saved;
+});
+
+test('legal pages: real owner name, contact email, date and no leftover name/date/authority placeholders', async () => {
+	const { CONTACT_EMAIL } = await import('../../config/country.mjs');
+	assert.equal(CONTACT_EMAIL, 'hallo@germandataevents.com');
+	for (const f of ['ImpressumPage', 'DatenschutzPage']) {
+		const src = readFileSync(new URL(`../../src/views/${f}.astro`, import.meta.url), 'utf8');
+		assert.ok(src.includes('Marcin Czajkowski'), `${f} lacks the owner name`);
+		assert.doesNotMatch(src, /\[\[TODO NAME\]\]|TODO: (Datum|date)\b|Datenschutzbeauftragter:|Data protection officer:/, `${f} still has a resolved placeholder`);
+		assert.ok(src.includes('20. November 2026') && src.includes('20 November 2026'), `${f} lacks the last-updated date`);
+	}
 });

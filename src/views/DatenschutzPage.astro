@@ -31,10 +31,9 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 
 				<h2>1. Verantwortlicher (Art. 4 Nr. 7 DSGVO)</h2>
 				<p>
-					[[TODO NAME]], E-Mail: {CONTACT_EMAIL}, <a href={localePath('/contact/', 'de')}>Kontaktformular</a>.
+					Marcin Czajkowski, E-Mail: {CONTACT_EMAIL}, <a href={localePath('/contact/', 'de')}>Kontaktformular</a>.
 					Weitere Angaben im <a href={impressum}>Impressum</a>.
 				</p>
-				<p>Datenschutzbeauftragter: [[TODO: nur angeben, falls einer benannt ist; sonst Zeile löschen]]</p>
 
 				<h2>2. Überblick</h2>
 				<p>
@@ -153,9 +152,7 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 				</ul>
 				<p>
 					Wenden Sie sich dazu an die E-Mail-Adresse in Abschnitt 1. Zudem haben Sie das Recht, sich bei einer
-					Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Zuständig ist in der Regel die
-					Landesdatenschutzbehörde des Bundeslandes, in dem der Verantwortliche seinen Sitz hat:
-					[[TODO: zuständige Aufsichtsbehörde mit Anschrift, nach dem Sitz des Verantwortlichen]].
+					Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Sie können die Beschwerde bei einer Aufsichtsbehörde einreichen, insbesondere in dem Mitgliedstaat Ihres gewöhnlichen Aufenthaltsorts, Ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes. Eine Übersicht der Aufsichtsbehörden in Deutschland führt der BfDI: <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html" rel="noopener">bfdi.bund.de</a>.
 				</p>
 				<p>
 					Die Angabe Ihrer Daten ist weder gesetzlich noch vertraglich vorgeschrieben; ohne E-Mail-Adresse können wir
@@ -163,7 +160,7 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 					einschließlich Profiling findet nicht statt.
 				</p>
 
-				<p class="updated">Stand: [[TODO: Datum]].</p>
+				<p class="updated">Stand: 20. November 2026.</p>
 			</>
 		) : (
 			<>
@@ -175,10 +172,9 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 
 				<h2>1. Controller (Art. 4(7) GDPR)</h2>
 				<p>
-					[[TODO NAME]], email: {CONTACT_EMAIL}, <a href={localePath('/contact/', 'en')}>contact form</a>.
+					Marcin Czajkowski, email: {CONTACT_EMAIL}, <a href={localePath('/contact/', 'en')}>contact form</a>.
 					More details in the <a href={impressum}>legal notice</a>.
 				</p>
-				<p>Data protection officer: [[TODO: only if one is appointed; otherwise delete this line]]</p>
 
 				<h2>2. Overview</h2>
 				<p>
@@ -294,9 +290,7 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 				</ul>
 				<p>
 					Write to the email address in section 1. You also have the right to lodge a complaint with a data
-					protection supervisory authority (Art. 77 GDPR). The competent one is usually the state data protection
-					authority of the German state where the controller is established:
-					[[TODO: competent supervisory authority with address, according to the controller's seat]].
+					protection supervisory authority (Art. 77 GDPR). You may lodge it with a supervisory authority, in particular in the Member State of your habitual residence, place of work or the place of the alleged infringement. The BfDI lists the German authorities at <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html" rel="noopener">bfdi.bund.de</a>; the EDPB lists the authorities of all Member States at <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en" rel="noopener">edpb.europa.eu</a>.
 				</p>
 				<p>
 					Providing your data is neither a legal nor a contractual requirement; without an email address, however, we
@@ -304,7 +298,7 @@ const impressum = localePath(legalPath('impressum', locale), locale);
 					profiling.
 				</p>
 
-				<p class="updated">Last updated: [[TODO: date]].</p>
+				<p class="updated">Last updated: 20 November 2026.</p>
 			</>
 		)
 	}
