@@ -170,20 +170,19 @@ test('masthead says "German Data Events" (mark + accent rule), not the website n
 	}
 });
 
-test('default look is the full event card with date spine; one-line rows only as overflow', () => {
+test('default look is the full event card with date spine; never a mixed layout', () => {
 	const few = selectEvents([ev({ date: '2026-11-25' })], { today: '2026-11-23' });
 	for (const locale of ['de', 'en']) {
 		const r = renderDigest(few, locale);
 		assert.equal(r.level, 0);
-		assert.match(r.body, /font-size:28px;font-weight:600/); // big day number (date spine)
+		assert.match(r.body, /font-size:28px;font-weight:600/);
 		assert.match(r.body, /width="64"/);
-		assert.doesNotMatch(r.body, /font-size:15px;"><span/); // no one-line row
 	}
 	const many = selectEvents(
 		Array.from({ length: 150 }, (_, i) => ev({ id: `e${i}`, title: `Event ${i}`, date: '2026-11-25' })),
 		{ today: '2026-11-23' },
 	);
 	const r = renderDigest(many, 'de');
-	assert.ok(r.fullCount > 0 && r.body.includes('width="64"'));
-	assert.ok(r.sizeKb <= 90);
+	assert.equal((r.body.match(/width="64"/g) ?? []).length, 150); // every event is a full card
+	assert.doesNotMatch(r.body, /font-size:15px;">\s*<span/); // no compact row
 });

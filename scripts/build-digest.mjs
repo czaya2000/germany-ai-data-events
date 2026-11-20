@@ -69,9 +69,9 @@ for (const m of emails) {
 			`; audience: lang-en ${m.locale === 'en' ? 'contains' : 'not_contains'}`,
 	);
 	console.log(
-		`  unfiltered size per look: full cards with blurbs ${m.looksKb[0]} KB, full cards no blurbs ${m.looksKb[1]} KB, all one-line ${m.looksKb[2]} KB`,
+		`  unfiltered size per look: full cards with blurbs ${m.looksKb[0]} KB, full cards no blurbs ${m.looksKb[1]} KB`,
 	);
-	if (m.overBudget) console.log('  WARNING: still over budget with one-line rows. Gmail may clip it for readers with no filters.');
+	if (m.overBudget) console.log('  WARNING: still over budget even without blurbs. Gmail may clip it for readers with no filters.');
 }
 
 if (dryRun) {

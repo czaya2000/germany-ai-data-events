@@ -53,7 +53,7 @@ const COPY = {
 		seeAll: 'See all upcoming events',
 		manage: 'Change your cities and event types',
 		until: (day, month) => `to ${day} ${month}`,
-		looks: ['full cards with blurbs', 'full cards, no blurbs', (n) => `full cards for the first ${n} events, one-line rows after`, 'one-line rows'],
+		looks: ['full cards with blurbs', 'full cards, no blurbs'],
 	},
 	de: {
 		subject: (week, year) => `Daten- & KI-Events in Deutschland · KW ${week}, ${year}`,
@@ -67,7 +67,7 @@ const COPY = {
 		seeAll: 'Alle kommenden Events ansehen',
 		manage: 'Städte und Formate ändern',
 		until: (day, month) => `bis ${day}. ${month}`,
-		looks: ['volle Karten mit Kurztext', 'volle Karten ohne Kurztext', (n) => `volle Karten für die ersten ${n} Events, danach einzeilig`, 'einzeilige Zeilen'],
+		looks: ['volle Karten mit Kurztext', 'volle Karten ohne Kurztext'],
 	},
 };
 
@@ -182,6 +182,21 @@ export function shortBlurb(text, max = 140) {
 	return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\s]+$/, '') + '…';
 }
 
+// City, venue, time without repeating the city: the venue is dropped when it is empty,
+// equals the city, or contains / is contained in the city text ("Berlin, Berlin",
+// "Hamburg, House of AI Hamburg, Hamburg"). A venue that already holds the city name
+// stays as the only place part (the bare city is dropped instead).
+export function placeMeta(city, venue, time) {
+	const norm = (x) => String(x ?? '').toLowerCase().replace(/\s*\(.*?\)\s*/g, ' ').replace(/\s+/g, ' ').trim();
+	const c = norm(city);
+	const v = norm(venue);
+	let parts;
+	if (!v || v === c || (c && c.includes(v))) parts = [city];
+	else if (c && v.includes(c)) parts = [venue];
+	else parts = [city, venue];
+	return [...parts, time].filter((x) => x && String(x).trim());
+}
+
 const BUDGET_KB = 90; // Gmail clips emails over ~102 KB
 // Template tags vanish when Buttondown renders, so leave them out of the count.
 const sizeKb = (html) => Math.round(Buffer.byteLength(html.replace(/^\{%.*%\}$/gm, '')) / 1024);
@@ -217,32 +232,27 @@ export function renderDigest(sel, locale) {
 				? `<b>${esc(costText)}</b>`
 				: `<span style="color:${T.muted};">${esc(costText)}</span>`;
 		const format = `<span style="border:1px solid ${T.border};padding:2px 8px;color:${T.ink2};">${esc(formatLabel(e.format, locale))}</span>`;
-		const meta = [displayCity(e.city, locale), e.venue, e.time].filter(Boolean).map(esc).join(', ');
+		const meta = placeMeta(displayCity(e.city, locale), e.venue, e.time).map(esc).join(', ');
 		const td = `border-bottom:1px solid ${T.border};font-family:${T.font};`;
 		const b = blurbFor(e, locale);
 		// A German email falls back to the English text when no German blurb exists yet.
 		const blurbHtml =
 			blurb && b.text
-				? `<div${b.lang !== locale ? ` lang="${b.lang}"` : ''} style="font-size:13px;color:${T.muted};margin-top:3px;">${esc(shortBlurb(b.text))}</div>\n`
+				? `<div${b.lang !== locale ? ` lang="${b.lang}"` : ''} style="font-size:13px;color:${T.muted};margin-top:3px;">${esc(shortBlurb(b.text))}</div>`
 				: '';
-		return `<tr><td valign="top" width="64" style="padding:18px 16px 18px 0;${td}">
-<div style="font-size:28px;font-weight:600;line-height:1;">${s.day}</div>
-<div style="font-size:12px;color:${T.muted};margin-top:5px;white-space:nowrap;">${s.weekday}, ${s.month}${through}</div>
-</td><td valign="top" style="padding:18px 0;${td}">
-<a href="${link(e)}" style="font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;color:${T.ink};text-decoration:none;">${esc(e.title)}</a>
-<div style="font-size:14px;color:${T.ink2};margin-top:6px;">${meta}</div>
-${blurbHtml}<div style="font-size:13px;margin-top:10px;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>
-</td></tr>`;
-	}
-
-	// Last-resort size fallback: one line per event, date · title, then place · type.
-	function renderCompact(e) {
-		const s = dateSpine(e.date, locale);
-		const city = displayCity(e.city, locale).replace(/\s*\(.*\)$/, '');
-		return `<tr><td style="padding:10px 0;border-bottom:1px solid ${T.border};font-family:${T.font};font-size:15px;">
-<span style="color:${T.muted};white-space:nowrap;">${s.weekday} ${s.day} ${s.month}</span>&nbsp; <a href="${link(e)}" style="color:${T.ink};font-weight:500;text-decoration:none;">${esc(e.title)}</a>
-<div style="font-size:13px;color:${T.muted};">${esc(city)} · ${esc(formatLabel(e.format, locale))}</div>
-</td></tr>`;
+		// ONE line, no newline or indent inside <tr>: Buttondown's markdown pass must not
+		// turn line breaks into <p>/<pre> and break the table.
+		return (
+			`<tr><td valign="top" width="64" style="padding:18px 16px 18px 0;${td}">` +
+			`<div style="font-size:28px;font-weight:600;line-height:1;">${s.day}</div>` +
+			`<div style="font-size:12px;color:${T.muted};margin-top:5px;white-space:nowrap;">${s.weekday}, ${s.month}${through}</div>` +
+			`</td><td valign="top" style="padding:18px 0;${td}">` +
+			`<a href="${link(e)}" style="font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;color:${T.ink};text-decoration:none;">${esc(e.title)}</a>` +
+			`<div style="font-size:14px;color:${T.ink2};margin-top:6px;">${meta}</div>` +
+			blurbHtml +
+			`<div style="font-size:13px;margin-top:10px;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>` +
+			`</td></tr>`
+		);
 	}
 
 	const masthead = `<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
@@ -265,8 +275,7 @@ ${p(c.intro, `color:${T.ink2};`)}
 ${p(note, `font-size:14px;color:${T.muted};`)}
 </div>`;
 		const fallback = `<tr><td colspan="2" style="padding:18px 0;border-bottom:1px solid ${T.border};">${p(empty, `color:${T.ink2};`)}</td></tr>`;
-		const row = (e, i) => (opts.compact || i >= (opts.fullCount ?? Infinity) ? renderCompact(e) : renderEvent(e, { blurb: opts.blurb !== false }));
-		const list = events.map((e, i) => wrap(e, row(e, i))).join('\n');
+		const list = events.map((e) => wrap(e, renderEvent(e, { blurb: opts.blurb !== false }))).join('\n');
 		const rows =
 			events.length === 0 ? fallback : `{% if ${anyMatchCondition(events)} %}\n${list}\n{% else %}\n${fallback}\n{% endif %}`;
 		return `${head}
@@ -298,44 +307,24 @@ ${outro}
 </div>`;
 	}
 
-	// Worst case is a reader with no filters, who sees every row.
-	// Default: the Swiss full event cards with blurbs. If that is too big, drop the
-	// blurbs; then keep full cards for as many of the earliest events as fit and use
-	// one-line rows for the rest; all one-line rows only as the very last resort.
-	const fits = (html) => sizeKb(html) <= BUDGET_KB;
+	// Worst case is a reader with no filters, who sees every row. Every event always
+	// uses the same full Swiss card (date spine, title, place, chip); only the blurbs
+	// are dropped when the email would pass the Gmail clip. Never a mixed layout.
 	let level = 0;
-	let fullCount = soon.length;
 	let body = buildBody({ blurb: true });
-	if (!fits(body)) {
+	if (sizeKb(body) > BUDGET_KB) {
 		level = 1;
 		body = buildBody({ blurb: false });
 	}
-	if (!fits(body)) {
-		level = 2;
-		let lo = 0; // largest number of full cards that still fits (binary search)
-		let hi = soon.length - 1;
-		while (lo < hi) {
-			const mid = Math.ceil((lo + hi) / 2);
-			if (fits(buildBody({ blurb: false, fullCount: mid }))) lo = mid;
-			else hi = mid - 1;
-		}
-		fullCount = lo;
-		body = buildBody({ blurb: false, fullCount });
-		if (fullCount === 0) {
-			level = 3;
-			body = buildBody({ compact: true });
-		}
-	}
 	const look = c.looks[level];
 	const kb = sizeKb(body);
-	// Unfiltered size of each pure look, for the dry-run report.
-	const looksKb = [{ blurb: true }, { blurb: false }, { compact: true }].map((l) => sizeKb(buildBody(l)));
+	// Unfiltered size of each look, for the dry-run report.
+	const looksKb = [{ blurb: true }, { blurb: false }].map((l) => sizeKb(buildBody(l)));
 	return {
 		subject: digestSubject(locale, today),
 		body,
 		level,
-		fullCount,
-		lookName: typeof look === 'function' ? look(fullCount) : look,
+		lookName: look,
 		sizeKb: kb,
 		looksKb,
 		overBudget: kb > BUDGET_KB,
