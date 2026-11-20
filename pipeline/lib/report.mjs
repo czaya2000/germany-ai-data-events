@@ -6,7 +6,7 @@ export function buildReport(r) {
 	const L = [];
 	L.push('# Prepare run report', '');
 	L.push(`- Date: ${r.today} (window ${r.windowDays} days), mode: ${r.bootstrap ? 'bootstrap' : 'daily'}${r.limit ? `, --limit ${r.limit}` : ''}`);
-	L.push(`- Feed sources: ${r.feedOk}/${r.feedTotal} reachable (${r.feedTotal ? Math.round((100 * r.feedOk) / r.feedTotal) : 0}%)`);
+	L.push(`- Feed sources: ${r.feedOk}/${r.feedTotal} reachable (${r.feedTotal ? Math.round((100 * r.feedOk) / r.feedTotal) : 0}%)${r.feedDisabled ? `, ${r.feedDisabled} disabled` : ''}`);
 	L.push(`- Totals: fetched ${r.totals.fetched}, in-window German ${r.totals.inWindow}, after keyword filter ${r.totals.kept}, after dedupe ${r.totals.clusters}, known ${r.totals.known}, new ${r.totals.new}, sent to Claude ${r.totals.sent}, deferred by cap ${r.totals.deferred}`);
 	L.push(`- Ledger: ${r.ledgerEntries} entries, ${r.pruned} pruned`);
 	L.push('');
@@ -14,7 +14,7 @@ export function buildReport(r) {
 	L.push('Columns: fetched = items parsed and normalised; in-window DE = passed country, window, cancelled and duration checks; kept = also passed the keyword filter; dedupe = clusters the source took part in; primary = clusters whose best record came from this source.', '');
 	L.push(table(
 		['source', 'trust', 'fetched', 'in-window DE', 'kept', 'dedupe', 'primary', 'errors', 'ms', 'status'],
-		r.sources.map((s) => [s.id, s.trust, s.fetched, s.inWindow, s.kept, s.inClusters, s.primary, s.error ? 1 : 0, s.ms, s.error ? 'FAILED: ' + s.error : s.fetched === 0 ? 'empty' : 'ok']),
+		r.sources.map((s) => [s.id, s.trust, s.fetched, s.inWindow, s.kept, s.inClusters, s.primary, s.error ? 1 : 0, s.ms, s.disabled ? 'disabled' + (s.reason ? ': ' + s.reason : '') : s.error ? 'FAILED: ' + s.error : s.fetched === 0 ? 'empty' : 'ok']),
 	));
 	L.push('');
 	if (r.scrape.length) {

@@ -1,5 +1,5 @@
 // Candidate shape, URL canonicalisation, ledger keys, text cleanup, German/English date parsing.
-import { fold } from './city.mjs';
+import { fold, resolveCity } from './city.mjs';
 import { MONTHS } from './time.mjs';
 
 export function stripHtml(html) {
@@ -60,6 +60,51 @@ export function ledgerKeys(c) {
 	return keys;
 }
 
+// ---- organiser cleanup ----
+const PLATFORMS = new Set([
+	'meetup', 'meetup.com', 'eventbrite', 'eventbrite.de', 'eventbrite.com', 'luma', 'lu.ma', 'luma.com', 'brainberg', 'brainberg.com',
+	'hackevents', 'hackevents.org', 'devevents', 'dev.events', 'confs.tech', 'confstech', 'aieventlist', 'facebook', 'linkedin',
+	'unknown', 'n/a', 'na', 'none', 'tbd', 'tba', 'null', 'undefined', '-', '--',
+]);
+const COUNT_WORD = "(?:going|attendees?|attending|attended|rsvps?|interested|registered|guests?|members?|spots?|people|participants?)";
+const HOSTED_PREFIX = /^(?:hosted|organi[sz]ed|presented|run|brought to you)\s+by\s*:?\s*/i;
+const TRAILING_COUNT = new RegExp(`\\s*[·|,;-]?\\s*(?:${COUNT_WORD}\\s*:?\\s*\\d+|\\d+\\s*${COUNT_WORD})\\s*$`, 'i');
+const WHOLE_JUNK = new RegExp(`^(?:${COUNT_WORD}\\s*:?\\s*\\d*|\\d+\\s*${COUNT_WORD}|(?:hosted|organi[sz]ed|organi[sz]er|presented|run)(?:\\s+by)?\\s*:?)$`, 'i');
+
+/** Organiser text with feed junk removed ("Going: 0", "12 going", "Hosted by" alone, bare numbers, platform names); '' when nothing is left. */
+export function cleanOrganiser(raw) {
+	let s = String(raw ?? '').replace(/\s+/g, ' ').trim();
+	for (let i = 0; i < 3 && s; i++) {
+		const before = s;
+		s = s.replace(HOSTED_PREFIX, '').replace(/^organi[sz]er\s*:\s*/i, '').trim();
+		s = s.replace(TRAILING_COUNT, '').trim();
+		if (s === before) break;
+	}
+	if (!s) return '';
+	if (/^[\d\s.,:+#-]+$/.test(s)) return '';
+	if (WHOLE_JUNK.test(s)) return '';
+	if (PLATFORMS.has(s.toLowerCase())) return '';
+	return s;
+}
+
+const MULTI_TLD = new Set(['co.uk', 'org.uk', 'ac.uk', 'com.au', 'co.jp', 'com.br', 'co.nz', 'co.za']);
+
+/** Registrable domain of a URL ("https://www.ai-engineering-summit.de/x" -> "ai-engineering-summit.de"), or ''. */
+export function registrableDomain(url) {
+	let host;
+	try { host = new URL(String(url ?? '').trim()).hostname.toLowerCase().replace(/\.$/, ''); } catch { return ''; }
+	if (!host || /^[\d.]+$/.test(host) || host.includes(':')) return '';
+	const parts = host.split('.');
+	if (parts.length <= 2) return host.replace(/^www\./, '');
+	const last2 = parts.slice(-2).join('.');
+	return parts.slice(MULTI_TLD.has(last2) ? -3 : -2).join('.');
+}
+
+/** Organiser for a stored event: the cleaned organiser, else the registrable domain of the event url, else ''. */
+export function organiserOrDomain(organiser, url) {
+	return cleanOrganiser(organiser) || registrableDomain(url);
+}
+
 /** Build a Candidate from loose fields. Returns null when title/start are missing. */
 export function makeCandidate(f, src) {
 	if (!f.title || !f.start || !/^\d{4}-\d{2}-\d{2}$/.test(f.start)) return null;
@@ -68,9 +113,9 @@ export function makeCandidate(f, src) {
 		start: f.start,
 		end: f.end && f.end >= f.start ? f.end : f.start,
 		time: f.time || undefined,
-		city: f.city || null,
+		city: resolveCity({ city: f.city || null, venue: f.venue, url: f.url, online: f.online }),
 		venue: f.venue ? oneLine(f.venue, 160) : undefined,
-		organiser: f.organiser ? oneLine(f.organiser, 120) : '',
+		organiser: oneLine(cleanOrganiser(f.organiser), 120),
 		url: f.url || '',
 		extraUrls: f.extraUrls ?? [],
 		cost: f.cost || null,

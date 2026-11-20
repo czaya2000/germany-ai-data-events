@@ -74,3 +74,57 @@ export function citiesCompatible(a, b) {
 	const ha = hubSlug(a), hb = hubSlug(b);
 	return ha === hb && ha !== 'other-germany';
 }
+
+/** Every distinct known German city named in `text` (English display names). */
+export function citiesIn(text) {
+	const re = new RegExp(NAME_RE.source, 'g');
+	const out = new Set();
+	const t = fold(text);
+	let m;
+	while ((m = re.exec(t))) {
+		out.add(NAME_MAP.get(m[1]));
+		re.lastIndex = m.index + m[0].length - 1; // the lookahead char may start the next match
+	}
+	return out;
+}
+
+const onlyCity = (set) => (set.size === 1 ? Array.from(set)[0] : null);
+
+/** The city a venue string points to, only when it names exactly one known city. */
+export const cityFromVenue = (venue) => (venue ? onlyCity(citiesIn(venue)) : null);
+
+/** The city a URL points to (hostname, subdomain or path), only when it names exactly one known city. */
+export function cityFromUrl(url) {
+	let u;
+	try { u = new URL(String(url ?? '').trim()); } catch { return null; }
+	let path = u.pathname;
+	try { path = decodeURIComponent(path); } catch { /* keep raw */ }
+	return onlyCity(citiesIn(`${u.hostname} ${path}`));
+}
+
+/**
+ * Pick the event city. The feed city is overridden when the venue string, or else the URL, names exactly
+ * one known city that is not compatible with it (same city or same hub is no conflict).
+ * Venue beats URL when both name a city. Online and nationwide events are left alone.
+ */
+export function resolveCity({ city, venue, url, online } = {}) {
+	if (online || city === ONLINE || city === NATIONWIDE) return city ?? null;
+	let v = cityFromVenue(venue);
+	const u = cityFromUrl(url);
+	// A venue that is only the feed city's own name ("Munich") is no independent evidence.
+	if (v && city && isBareCity(venue) && citiesCompatible(city, v)) v = null;
+	const evident = v ?? u;
+	if (!evident || !city) return city ?? evident ?? null;
+	if (citiesCompatible(city, evident)) return city;
+	// The feed city and the URL agree against a street-address venue: two sources against one, keep the feed city.
+	if (v && u && citiesCompatible(city, u)) return city;
+	return evident;
+}
+
+/** True when a venue string is nothing but a city name ("Munich", "Berlin, Germany"). */
+function isBareCity(venue) {
+	const rest = fold(venue).replace(/\b(germany|deutschland|de)\b/g, '');
+	let t = rest;
+	for (const c of citiesIn(venue)) for (const [needle, name] of NAMES) if (name === c) t = t.split(needle).join('');
+	return !/[a-z0-9]/.test(t);
+}

@@ -2,7 +2,7 @@
 import { parseIcs } from '../lib/ical.mjs';
 import { getText } from '../lib/cache.mjs';
 import { canonicalCity, detectCity, ONLINE } from '../lib/city.mjs';
-import { makeCandidate } from '../lib/normalize.mjs';
+import { cleanOrganiser, makeCandidate } from '../lib/normalize.mjs';
 
 export async function fetchSource(src, ctx) {
 	const r = await getText(src.url, ctx, { accept: 'text/calendar, */*' });
@@ -28,7 +28,7 @@ export function normalise(parsed, src) {
 		let online = /^online\b|\bonline event\b|\bwebinar\b/i.test(loc) || /^online$/i.test(loc.trim());
 
 		if (src.type === 'meetup') {
-			organiser = parsed.calName ?? '';
+			organiser = cleanOrganiser(parsed.calName) || src.id.replace(/^meetup:/, '');
 			if (!url) url = urlsIn(desc).find((u) => /meetup\.com\/[^/]+\/events\/\d+/.test(u)) ?? '';
 			online = /\b(virtual event|online event|online[- ]only|rein online|virtuell)\b/i.test(desc.slice(0, 700));
 		} else if (src.type === 'hackevents') {

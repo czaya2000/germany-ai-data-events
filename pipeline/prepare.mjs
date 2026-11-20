@@ -93,7 +93,8 @@ export async function prepare(opts = {}) {
 	// ---- 1. fetch ----
 	const results = await pool(selected, 8, async (src) => {
 		const t = Date.now();
-		const res = { src, candidates: [], rawCount: 0, ms: 0, error: null };
+		const res = { src, candidates: [], rawCount: 0, ms: 0, error: null, disabled: !!src.disabled };
+		if (src.disabled) return res;
 		try {
 			const out = await runFeedSource(src, ctx);
 			res.rawCount = out.rawCount;
@@ -144,7 +145,7 @@ export async function prepare(opts = {}) {
 	const kept = [];
 	const seenKeys = new Map();
 	for (const r of results) {
-		const s = { id: r.src.id, trust: r.src.trust, fetched: r.candidates.length, inWindow: 0, kept: 0, inClusters: 0, primary: 0, error: r.error, ms: r.ms, raw: r.rawCount };
+		const s = { id: r.src.id, trust: r.src.trust, fetched: r.candidates.length, inWindow: 0, kept: 0, inClusters: 0, primary: 0, error: r.error, disabled: r.disabled, reason: r.src.disabledReason, ms: r.ms, raw: r.rawCount };
 		stats.set(r.src.id, s);
 		const seen = new Set();
 		for (const c of r.candidates) {
@@ -274,6 +275,13 @@ export async function prepare(opts = {}) {
 	for (const r of results) {
 		const h = (health.sources[r.src.id] ??= {});
 		h.recentCounts ??= [];
+		if (r.disabled) {
+			h.status = 'disabled';
+			h.disabledReason = r.src.disabledReason;
+			continue;
+		}
+		h.status = undefined;
+		h.disabledReason = undefined;
 		if (r.error) {
 			h.consecutiveFailures = (h.consecutiveFailures ?? 0) + 1;
 			h.lastError = r.error;
@@ -290,7 +298,7 @@ export async function prepare(opts = {}) {
 		}
 	}
 
-	const okSources = new Set(results.filter((r) => !r.error).map((r) => r.src.id));
+	const okSources = new Set(results.filter((r) => !r.error && !r.disabled).map((r) => r.src.id));
 	const wholeCalendar = new Set(sources.filter((s) => s.curatedCalendar).map((s) => s.id));
 	for (const r of results) if (r.src.discovered) wholeCalendar.add(r.src.id);
 	const removals = opts.dry ? [] : updateMissing(ledger, { seen: seenKeys, okSources, wholeCalendar, today });
@@ -298,6 +306,7 @@ export async function prepare(opts = {}) {
 
 	// ---- 8. report ----
 	const feedFailed = results.filter((r) => r.error);
+	const feedDisabled = results.filter((r) => r.disabled);
 	const cities = new Map();
 	const others = new Map();
 	for (const cl of clusters) {
@@ -310,7 +319,7 @@ export async function prepare(opts = {}) {
 	}
 	const report = {
 		today, windowDays, bootstrap: opts.bootstrap, limit: opts.limit,
-		feedTotal: results.length, feedOk: results.length - feedFailed.length,
+		feedTotal: results.length - feedDisabled.length, feedOk: results.length - feedDisabled.length - feedFailed.length, feedDisabled: feedDisabled.length,
 		totals: {
 			fetched: sum(stats, 'fetched'), inWindow: sum(stats, 'inWindow'), kept: kept.length, clusters: clusters.length,
 			known: knownCount, new: fresh.length, sent: send.length, deferred: deferred.length,
@@ -325,7 +334,7 @@ export async function prepare(opts = {}) {
 			.map((c) => ({ n: c.members.length, title: c.title, sources: [...new Set(c.members.map((m) => m.sourceId))] })),
 		problems: [
 			...feedFailed.map((r) => `${r.src.id}: FAILED (${r.error})`),
-			...results.filter((r) => !r.error && r.candidates.length === 0 && !r.src.discovered).map((r) => `${r.src.id}: empty (0 items${r.rawCount ? `, ${r.rawCount} raw` : ''})${r.src.note ? ' - ' + r.src.note : ''}`),
+			...results.filter((r) => !r.error && !r.disabled && r.candidates.length === 0 && !r.src.discovered).map((r) => `${r.src.id}: empty (0 items${r.rawCount ? `, ${r.rawCount} raw` : ''})${r.src.note ? ' - ' + r.src.note : ''}`),
 			...warnings.map((w) => 'WARNING ' + w),
 		],
 		discovered,

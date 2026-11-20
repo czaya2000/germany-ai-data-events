@@ -9,10 +9,10 @@ const lastHit = new Map(); // host -> ms of last reserved slot
 const MIN_GAP = Number(process.env.PIPELINE_MIN_GAP_MS ?? 1000);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function throttle(host) {
+async function throttle(host, gap = MIN_GAP) {
 	const prev = lastHit.get(host) ?? 0;
 	// Reserve the slot synchronously so concurrent callers queue up.
-	const slot = Math.max(Date.now(), prev + MIN_GAP);
+	const slot = Math.max(Date.now(), prev + gap);
 	lastHit.set(host, slot);
 	const wait = slot - Date.now();
 	if (wait > 0) await sleep(wait);
@@ -23,14 +23,14 @@ async function throttle(host) {
  * Retries network errors / 5xx / 429; other 4xx are returned with ok=false.
  */
 export async function httpGet(url, opts = {}) {
-	const { etag, lastModified, accept, timeoutMs = 20000, retries = 2, fetchImpl = fetch } = opts;
+	const { etag, lastModified, accept, timeoutMs = 20000, retries = 2, fetchImpl = fetch, userAgent = USER_AGENT, gapMs = MIN_GAP } = opts;
 	const host = new URL(url).host;
 	let lastErr;
 	for (let attempt = 0; attempt <= retries; attempt++) {
 		if (attempt > 0) await sleep(800 * 2 ** (attempt - 1));
-		await throttle(host);
+		await throttle(host, gapMs);
 		try {
-			const headers = { 'User-Agent': USER_AGENT, Accept: accept ?? '*/*', 'Accept-Language': 'en,de;q=0.8' };
+			const headers = { 'User-Agent': userAgent, Accept: accept ?? '*/*', 'Accept-Language': 'en,de;q=0.8' };
 			if (etag) headers['If-None-Match'] = etag;
 			if (lastModified) headers['If-Modified-Since'] = lastModified;
 			const res = await fetchImpl(url, { headers, redirect: 'follow', signal: AbortSignal.timeout(timeoutMs) });

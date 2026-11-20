@@ -14,6 +14,7 @@
     "test:ics": "node scripts/test-ics.mjs",
     "test:agent": "node scripts/test-agent-files.mjs",
     "archive": "node scripts/archive-past.mjs",
+    "data:fix": "node scripts/fix-existing-data.mjs",
     "digest": "node scripts/build-digest.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "pipeline:fetch": "node pipeline/prepare.mjs --dry-run",

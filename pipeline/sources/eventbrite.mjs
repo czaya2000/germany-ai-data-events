@@ -2,7 +2,15 @@
 import { getText } from '../lib/cache.mjs';
 import { canonicalUrl, makeCandidate, stripHtml } from '../lib/normalize.mjs';
 import { canonicalCity, ONLINE } from '../lib/city.mjs';
-import { addDays } from '../lib/time.mjs';
+import { FETCHER_CONTACT } from '../../config/country.mjs';
+
+// Eventbrite answers an honest, descriptive client with plain HTML, but blocks browser-impersonating
+// agents and bursts (405/429). So: an identifying User-Agent, 2 s between requests, one attempt per URL,
+// one page per keyword, and the first block stops every remaining Eventbrite request of the run.
+export const EVENTBRITE_UA = `germany-ai-data-events/1.0 (event-aggregator; +${FETCHER_CONTACT})`;
+export const EVENTBRITE_GAP_MS = Number(process.env.EVENTBRITE_GAP_MS ?? 2000);
+let blocked = null; // 'HTTP 429 (retry after 120 s)' once Eventbrite has pushed back this run
+export const resetEventbriteBlock = () => { blocked = null; };
 
 /** Extract Event objects from every ld+json block of an HTML page. */
 export function parseEventbrite(html) {
@@ -23,15 +31,20 @@ export function parseEventbrite(html) {
 }
 
 export async function fetchSource(src, ctx) {
-	const maxPages = ctx.limit ? 1 : (src.maxPages ?? 5);
+	const maxPages = ctx.limit ? 1 : (src.maxPages ?? 1);
 	const seen = new Set();
 	const all = [];
 	for (const keyword of src.keywords) {
 		for (let page = 1; page <= maxPages; page++) {
 			const url = `https://www.eventbrite.de/d/germany--${src.citySlug}/${keyword}/?page=${page}`;
-			const r = await getText(url, { ...ctx, cacheDir: undefined }, { accept: 'text/html' });
+			if (blocked) throw new Error(`skipped, Eventbrite already blocked this run (${blocked})`);
+			const r = await getText(url, { ...ctx, cacheDir: undefined }, { accept: 'text/html', userAgent: EVENTBRITE_UA, gapMs: EVENTBRITE_GAP_MS, retries: 0 });
 			if (!r.ok) {
-				if (page === 1 && !all.length) throw new Error('HTTP ' + r.status);
+				if ([403, 405, 429].includes(r.status)) {
+					const ra = r.headers?.get?.('retry-after');
+					blocked = `HTTP ${r.status}${ra ? `, retry-after ${ra}` : ''}`;
+				}
+				if (page === 1 && !all.length) throw new Error(blocked ?? 'HTTP ' + r.status);
 				break;
 			}
 			const evs = parseEventbrite(r.text);

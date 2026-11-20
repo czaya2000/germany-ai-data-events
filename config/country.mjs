@@ -77,10 +77,10 @@ export const CITIES = [
 /** Hub copy per city slug: the smaller places folded into the hub (see PLACE_TO_CITY). */
 export const CITY_NEARBY = {
 	berlin: 'Potsdam',
-	munich: 'Garching',
+	munich: 'Garching and Ingolstadt',
 	hamburg: 'Norderstedt',
-	frankfurt: 'Darmstadt, Mainz and Wiesbaden',
-	cologne: 'Bonn and Düsseldorf',
+	frankfurt: 'Darmstadt, Mainz, Wiesbaden, Königstein and Kaiserslautern',
+	cologne: 'Bonn, Düsseldorf, Duisburg and Königswinter',
 	stuttgart: 'Tübingen and Ludwigsburg',
 	online: '',
 	'other-germany': 'Leipzig, Dresden, Nuremberg, Karlsruhe, Heidelberg, Münster, Ulm, Kassel and more',
@@ -90,11 +90,12 @@ export const CITY_NEARBY = {
     name; German spellings are accepted too. Unmapped places warn in `npm run validate`. */
 export const PLACE_TO_CITY = {
 	berlin: 'berlin', potsdam: 'berlin',
-	munich: 'munich', munchen: 'munich', garching: 'munich',
+	munich: 'munich', munchen: 'munich', garching: 'munich', ingolstadt: 'munich',
 	hamburg: 'hamburg', norderstedt: 'hamburg',
 	frankfurt: 'frankfurt', 'frankfurt-am-main': 'frankfurt', darmstadt: 'frankfurt',
-	mainz: 'frankfurt', wiesbaden: 'frankfurt', offenbach: 'frankfurt',
+	mainz: 'frankfurt', wiesbaden: 'frankfurt', offenbach: 'frankfurt', 'konigstein-im-taunus': 'frankfurt', kaiserslautern: 'frankfurt',
 	cologne: 'cologne', koln: 'cologne', bonn: 'cologne', dusseldorf: 'cologne', leverkusen: 'cologne',
+	duisburg: 'cologne', konigswinter: 'cologne',
 	stuttgart: 'stuttgart', tubingen: 'stuttgart', ludwigsburg: 'stuttgart', esslingen: 'stuttgart',
 	boblingen: 'stuttgart', sindelfingen: 'stuttgart',
 	leipzig: 'other-germany', dresden: 'other-germany', nuremberg: 'other-germany', nurnberg: 'other-germany',
@@ -104,7 +105,8 @@ export const PLACE_TO_CITY = {
 	aachen: 'other-germany', saarbrucken: 'other-germany', augsburg: 'other-germany', jena: 'other-germany',
 	erfurt: 'other-germany', rostock: 'other-germany', kiel: 'other-germany', paderborn: 'other-germany',
 	bochum: 'other-germany', regensburg: 'other-germany', wurzburg: 'other-germany',
-	magdeburg: 'other-germany', braunschweig: 'other-germany',
+	magdeburg: 'other-germany', braunschweig: 'other-germany', 'weiden-in-der-oberpfalz': 'other-germany',
+	warendorf: 'other-germany', erlangen: 'other-germany', furth: 'other-germany', chemnitz: 'other-germany',
 };
 
 // Pipeline defaults (used from phase 2 on).

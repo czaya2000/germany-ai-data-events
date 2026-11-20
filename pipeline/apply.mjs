@@ -13,7 +13,8 @@ import { sameEvent } from './lib/dedupe.mjs';
 import { makeCandidate } from './lib/normalize.mjs';
 import { Counter, parseEnrichment, verifyExtracted, verifyResults } from './lib/verify.mjs';
 import { safeId } from './lib/work.mjs';
-import { ONLINE } from './lib/city.mjs';
+import { ONLINE, resolveCity } from './lib/city.mjs';
+import { organiserOrDomain } from './lib/normalize.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 
@@ -125,11 +126,11 @@ export function applyEnrichment({ root = ROOT, today = berlinToday(), windowDays
 			date: c.start,
 			...(c.end && c.end > c.start ? { endDate: c.end } : {}),
 			...(c.time ? { time: c.time } : {}),
-			city: a.city,
+			city: resolveCity({ city: a.city, venue: c.venue, url: c.url }),
 			...(c.venue ? { venue: c.venue } : {}),
 			format: a.format,
 			topics: a.topics,
-			organiser: c.organiser || a.source,
+			organiser: organiserOrDomain(c.organiser, c.url) || a.source,
 			cost: a.cost,
 			url: c.url,
 			source: a.source,

@@ -539,7 +539,7 @@
 			"data-science",
 			"machine-learning"
 		],
-		"maxPages": 3,
+		"maxPages": 1,
 		"url": "https://www.eventbrite.de/d/germany--berlin/artificial-intelligence/",
 		"trust": "noisy",
 		"cityHint": "Berlin"
@@ -554,7 +554,7 @@
 			"data-science",
 			"machine-learning"
 		],
-		"maxPages": 3,
+		"maxPages": 1,
 		"url": "https://www.eventbrite.de/d/germany--m%C3%BCnchen/artificial-intelligence/",
 		"trust": "noisy",
 		"cityHint": "Munich"
@@ -569,7 +569,7 @@
 			"data-science",
 			"machine-learning"
 		],
-		"maxPages": 3,
+		"maxPages": 1,
 		"url": "https://www.eventbrite.de/d/germany--k%C3%B6ln/artificial-intelligence/",
 		"trust": "noisy",
 		"cityHint": "Cologne"
@@ -584,7 +584,7 @@
 			"data-science",
 			"machine-learning"
 		],
-		"maxPages": 3,
+		"maxPages": 1,
 		"url": "https://www.eventbrite.de/d/germany--frankfurt-am-main/artificial-intelligence/",
 		"trust": "noisy",
 		"cityHint": "Frankfurt"
@@ -599,7 +599,7 @@
 			"data-science",
 			"machine-learning"
 		],
-		"maxPages": 3,
+		"maxPages": 1,
 		"url": "https://www.eventbrite.de/d/germany--hamburg/artificial-intelligence/",
 		"trust": "noisy",
 		"cityHint": "Hamburg"
@@ -614,7 +614,7 @@
 			"data-science",
 			"machine-learning"
 		],
-		"maxPages": 3,
+		"maxPages": 1,
 		"url": "https://www.eventbrite.de/d/germany--stuttgart/artificial-intelligence/",
 		"trust": "noisy",
 		"cityHint": "Stuttgart"
