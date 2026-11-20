@@ -1,0 +1,160 @@
+### Daily refresh for the German AI & Data Events site
+#
+# Flow: prepare (Node: fetch, filter, dedupe, ledger) -> Claude step (only if there is
+# new work) -> apply (Node: verify, merge, archive, validate) -> commit data -> build -> deploy.
+#
+# Deploy design (one choice, documented): this workflow builds and deploys itself, in the
+# `deploy` job below (`needs: refresh`). deploy.yml is for code pushes and manual runs only.
+# No double deploy, for two independent reasons:
+#   1. a push made with the default GITHUB_TOKEN never triggers other workflows, and
+#   2. deploy.yml's push filter excludes src/data/** and data/cache/**, the only paths
+#      this workflow commits.
+#
+# Only the Claude step sees CLAUDE_CODE_OAUTH_TOKEN. No Node script reads it.
+
+name: Daily refresh
+
+on:
+  schedule:
+    # Off-peak minute, UTC (no DST handling in GitHub cron).
+    - cron: "37 4 * * *"
+  workflow_dispatch:
+    inputs:
+      skip_claude:
+        description: "Run prepare and apply but skip the Claude step (all candidates stay deferred)"
+        type: boolean
+        default: false
+      deploy_only:
+        description: "Skip the whole refresh; just build and deploy what is on main"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: germany-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          # Full history: the push step rebases onto main.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare (fetch, filter, dedupe, write work/)
+        id: prepare
+        if: ${{ !inputs.deploy_only }}
+        # Writes has_work=true|false and count=<n> to $GITHUB_OUTPUT, and work/TASK.md.
+        run: npm run pipeline:prepare
+
+      - name: Claude step (classify new candidates)
+        id: claude
+        if: ${{ !inputs.deploy_only && !inputs.skip_claude && steps.prepare.outputs.has_work == 'true' }}
+        # A failure here must not stop the run: apply treats everything as deferred and the
+        # unchanged site still deploys.
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Passed explicitly so the action does not depend on the Claude GitHub App.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: >-
+            --model haiku
+            --max-turns 8
+            --allowedTools "Read,Write"
+          prompt: |
+            Read work/TASK.md and follow it. Write only work/enrichment.json. Do not edit, create or delete any other file. Do not run commands.
+
+      - name: Claude step result
+        if: ${{ always() && steps.claude.outcome != 'skipped' }}
+        run: |
+          echo "Claude step outcome: ${{ steps.claude.outcome }}"
+          if [ "${{ steps.claude.outcome }}" != "success" ]; then
+            echo "::warning::Claude step did not succeed; candidates stay deferred and the site deploys unchanged."
+          fi
+          if [ -f work/enrichment.json ]; then echo "work/enrichment.json present."; else echo "work/enrichment.json missing."; fi
+
+      - name: Apply (verify, merge, archive, validate)
+        if: ${{ !inputs.deploy_only }}
+        # Also runs archive-past and validate-events inside; exits 0 when enrichment is missing.
+        run: npm run pipeline:apply
+
+      - name: Archive ended events
+        if: ${{ !inputs.deploy_only }}
+        run: npm run archive
+
+      - name: Validate event data
+        run: node scripts/validate-events.mjs ${{ !inputs.deploy_only && '--require-fresh' || '' }}
+
+      - name: Commit and push data changes
+        run: |
+          set -euo pipefail
+          git config user.name "germany-ai-data-events-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Only data is ever committed (data/cache/http/ is git-ignored).
+          git add -A -- src/data data/cache
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git commit -m "Daily refresh $(date -u +%Y-%m-%d)"
+
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying."
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "Could not push after 3 attempts."
+          exit 1
+
+      - name: Build site
+        run: npm run build
+
+      - name: Package site for Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      # Monday Buttondown digest draft: not enabled yet (needs BUTTONDOWN_API_KEY and the
+      # newsletter set up; see TODO-OWNER.md). Stub, to be enabled after deploy:
+      # - name: Create the weekly digest draft (Mondays)
+      #   if: ${{ !inputs.deploy_only && hashFiles('scripts/build-digest.mjs') != '' }}
+      #   env:
+      #     BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+      #   run: |
+      #     if [ "$(date -u +%u)" != "1" ]; then echo "Not Monday."; exit 0; fi
+      #     node scripts/build-digest.mjs
+
+  deploy:
+    # Separate job: only jobs in the github-pages environment can publish.
+    needs: refresh
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

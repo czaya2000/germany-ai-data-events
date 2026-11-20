@@ -8,6 +8,20 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 2. **Pages**: on a free GitHub account, Pages is only available for **public** repositories, so make the repository public first (a private repository needs a paid plan: GitHub Pro or higher; check GitHub Docs, "GitHub Pages"). Then Settings > Pages > Source = **GitHub Actions**.
 3. **Actions permissions**: Settings > Actions > General > Workflow permissions = **Read and write**. Private repositories also have a monthly Actions minutes quota on Free plans.
 
+### Order for the first run
+
+1. Add secret `CLAUDE_CODE_OAUTH_TOKEN` (step 1), set Workflow permissions (step 3).
+2. Make the repo public if on GitHub Free, then Settings > Pages > Source = GitHub Actions (step 2).
+3. You push `main` (the operator pushes; nothing here pushes). Run `deploy.yml` once via Actions > Deploy > Run workflow, then `daily-refresh.yml` via Run workflow (first with `skip_claude` ticked if you want a dry check).
+4. The workflows only run once they are on GitHub's default branch.
+
+### Workflow notes
+
+- `daily-refresh.yml`: runs at 04:37 UTC daily. It runs prepare, then the Claude step (Haiku, max 8 turns, Read/Write only, only when there are new candidates), then apply, archive and validate, commits only `src/data/**` and `data/cache/**`, builds and deploys in its own `deploy` job. Inputs: `skip_claude`, `deploy_only`. If the Claude step fails, candidates stay deferred and the unchanged site still deploys (look for a `::warning::`).
+- `deploy.yml`: code pushes (not `src/data/**`) and manual runs. No double deploy: the daily commit uses `GITHUB_TOKEN`, which never triggers other workflows, and `deploy.yml` also ignores data paths.
+- Private-repo plan note: Pages on a private repository needs GitHub Pro or higher. On Free, make the repo public (the data and code become public) or upgrade. Private repos on Free also have a monthly Actions minutes quota; a daily run should take only a few minutes (about 100 minutes a month).
+- The token renews yearly: `claude setup-token` again, then update the secret. If the plan's policy for headless use changes, the Claude step will fail with a warning and the site keeps deploying unchanged data.
+
 ## Domain and go-live
 
 4. Choose and register a domain later. Until then the site is served at `https://czaya2000.github.io/germany-ai-data-events/`. To switch:
@@ -36,5 +50,5 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 ## Later (not part of phase 1)
 
-15. Monday Buttondown digest draft step in the daily workflow (a commented stub is added in phase 4).
+15. Monday Buttondown digest draft step: a commented stub is in `.github/workflows/daily-refresh.yml`. Enable it after creating the newsletter and adding secret `BUTTONDOWN_API_KEY`.
 16. Weekly discovery agent, Playwright scrape sources, newsletter tag setup.
