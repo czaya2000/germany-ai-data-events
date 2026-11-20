@@ -5,7 +5,7 @@ import { localePath, legalPath } from '../i18n/paths.mjs';
 import type { Locale } from '../i18n';
 
 /* Impressum (§ 5 DDG, § 18 Abs. 2 MStV) and disclaimer, German and English.
-   Every owner-specific fact is a [[TODO]] placeholder; nothing is invented.
+   Owner name is the [[TODO NAME]] placeholder; no postal address by owner decision; nothing is invented.
    Not legal advice. */
 interface Props {
 	locale: Locale;
@@ -32,50 +32,17 @@ const description = de
 				<dl>
 					<dt>Diensteanbieter (§ 5 DDG)</dt>
 					<dd>
-						<strong>Variante A, Unternehmen:</strong><br />
-						[[TODO: Firmenname und Rechtsform]]<br />
-						[[TODO: ladungsfähige Geschäftsanschrift (Straße und Nummer, PLZ, Ort, Deutschland)]]<br /><br />
-						<strong>Variante B, natürliche Person:</strong><br />
-						[[TODO: Vor- und Nachname]]<br />
-						[[TODO: c/o ladungsfähige Anschrift, z. B. eines Impressumsservice (Straße und Nummer, PLZ, Ort, Deutschland)]]<br /><br />
-						<span class="note">
-							Nur eine der beiden Varianten verwenden, die andere löschen. Eine private Wohnanschrift ist
-							nicht erforderlich: Nach § 5 DDG genügt eine ladungsfähige Anschrift, also eine, unter der
-							Post und Zustellungen den Anbieter tatsächlich erreichen. Das kann der Firmensitz sein oder
-							die Anschrift eines Impressumsservice (c/o). Ein Postfach genügt in der Regel nicht.
-						</span>
+						[[TODO NAME]]
 					</dd>
 
 					<dt>Kontakt</dt>
 					<dd>
 						E-Mail: {CONTACT_EMAIL}<br />
-						Telefon: [[TODO: optional; nur angeben, wenn gewünscht]]<br />
-						<a href={localePath('/contact/', 'de')}>Kontaktformular</a>
-						<br />
-						<span class="note">
-							§ 5 DDG verlangt eine E-Mail-Adresse und ein zweites Mittel für schnelle, unmittelbare
-							Kommunikation. Ein Kontaktformular kann dieses zweite Mittel sein, wenn Anfragen zügig
-							beantwortet werden [[TODO: Betreiber bestätigt]].
-						</span>
+						<a href={localePath("/contact/", "de")}>Kontaktformular</a>
 					</dd>
 
-					<dt>Vertretungsberechtigte (nur bei Unternehmen)</dt>
-					<dd>[[TODO: Geschäftsführer bzw. Vorstand; nur bei Variante A]]</dd>
-
-					<dt>Registereintrag und Umsatzsteuer-ID</dt>
-					<dd>
-						Registergericht und Registernummer: [[TODO: nur falls im Handelsregister eingetragen]]<br />
-						Umsatzsteuer-Identifikationsnummer (§ 27a UStG): [[TODO: falls vorhanden, sonst Zeile löschen]]
-					</dd>
-
-					<dt>Verantwortlich für journalistisch-redaktionelle Inhalte (§ 18 Abs. 2 MStV)</dt>
-					<dd>
-						[[TODO: Betreiber klärt, ob diese Pflicht gilt. Sie betrifft Telemedien mit journalistisch-redaktionell
-						gestalteten Inhalten; ein reines Veranstaltungsverzeichnis fällt eher nicht darunter, der Newsletter
-						und Freitexte sind Grenzfälle. Im Zweifel Namen und Anschrift angeben, wie oben.]]<br />
-						Name: [[TODO: Name der verantwortlichen Person]]<br />
-						Anschrift: [[TODO: ladungsfähige Anschrift, wie oben]]
-					</dd>
+					<dt>Verantwortlich für Inhalte (§ 18 Abs. 2 MStV)</dt>
+					<dd>[[TODO NAME]], Kontakt wie oben.</dd>
 
 					<dt>Verbraucherstreitbeilegung (§ 36 VSBG)</dt>
 					<dd>
@@ -86,7 +53,7 @@ const description = de
 
 					<dt>Worum es auf dieser Website geht</dt>
 					<dd>
-						Ein Verzeichnis von KI- und Daten-Events in Deutschland. Die Angaben stammen von den öffentlichen
+						germandataevents.com ist ein kostenloses, nichtkommerzielles Verzeichnis von KI- und Daten-Events in Deutschland, dazu ein Newsletter, betrieben von einer Privatperson. Die Angaben stammen von den öffentlichen
 						Seiten der Veranstalter und werden täglich geprüft; sie können sich beim Veranstalter aber jederzeit
 						ändern. {SITE_NAME} verkauft keine Tickets und erhält keine Provision.
 					</dd>
@@ -154,49 +121,17 @@ const description = de
 				<dl>
 					<dt>Service provider (§ 5 DDG)</dt>
 					<dd>
-						<strong>Option A, company:</strong><br />
-						[[TODO: company name and legal form]]<br />
-						[[TODO: registered business address (street and number, postcode, city, Germany)]]<br /><br />
-						<strong>Option B, natural person:</strong><br />
-						[[TODO: first and last name]]<br />
-						[[TODO: c/o an address at which legal documents can be served, e.g. an Impressum address service (street and number, postcode, city, Germany)]]<br /><br />
-						<span class="note">
-							Use only one of the two options and delete the other. A private home address is not required:
-							§ 5 DDG asks for an address at which the provider can be served (a "ladungsfähige Anschrift"). That can
-							be the registered office of a company or the address of an Impressum address service (c/o). A P.O. box
-							is generally not enough.
-						</span>
+						[[TODO NAME]]
 					</dd>
 
 					<dt>Contact</dt>
 					<dd>
 						Email: {CONTACT_EMAIL}<br />
-						Phone: [[TODO: optional; only if wanted]]<br />
-						<a href={localePath('/contact/', 'en')}>Contact form</a>
-						<br />
-						<span class="note">
-							§ 5 DDG requires an email address and a second means of fast, direct contact. A contact form can be
-							that second means if enquiries are answered promptly [[TODO: operator to confirm]].
-						</span>
+						<a href={localePath("/contact/", "en")}>Contact form</a>
 					</dd>
 
-					<dt>Authorised representatives (companies only)</dt>
-					<dd>[[TODO: managing director or board; Option A only]]</dd>
-
-					<dt>Commercial register and VAT ID</dt>
-					<dd>
-						Register court and number: [[TODO: only if entered in the commercial register]]<br />
-						VAT identification number (§ 27a UStG): [[TODO: if any, otherwise delete this line]]
-					</dd>
-
-					<dt>Responsible for journalistic-editorial content (§ 18 para. 2 MStV)</dt>
-					<dd>
-						[[TODO: operator to decide whether this duty applies. It concerns telemedia with journalistic-editorial
-						content; a plain event directory probably does not qualify, the newsletter and free-text blurbs are
-						borderline. If in doubt, give a name and address as above.]]<br />
-						Name: [[TODO: name of the responsible person]]<br />
-						Address: [[TODO: address at which documents can be served, as above]]
-					</dd>
+					<dt>Responsible for content (§ 18 para. 2 MStV)</dt>
+					<dd>[[TODO NAME]], contact as above.</dd>
 
 					<dt>Consumer dispute resolution (§ 36 VSBG)</dt>
 					<dd>
@@ -207,7 +142,7 @@ const description = de
 
 					<dt>What this site is</dt>
 					<dd>
-						A directory of AI and data events in Germany. The details come from the organisers' public pages and
+						germandataevents.com is a free, non-commercial listing of AI and data events in Germany, plus a newsletter, operated by a private person. The details come from the organisers' public pages and
 						are checked daily, but can change at the organiser at any time. {SITE_NAME} sells no tickets and
 						receives no commission.
 					</dd>
