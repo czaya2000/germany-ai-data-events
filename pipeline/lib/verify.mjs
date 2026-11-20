@@ -140,7 +140,7 @@ export function verifyResults(results, candidates, ctx) {
 			if (missing.length) { counts.add('invalid:incomplete'); continue; }
 		}
 		answered.add(item.id);
-		if (cand.start < ctx.today || cand.start > horizon) { counts.add('invalid:out-of-window'); out.unanswered.push(cand); continue; }
+		if ((cand.end ?? cand.start) < ctx.today || cand.start > horizon) { counts.add('invalid:out-of-window'); out.unanswered.push(cand); continue; }
 		if (!/^https?:\/\//i.test(cand.url ?? '')) { out.deferred.push({ cand, reason: 'no-url' }); counts.add('deferred:no-url'); continue; }
 		if (!item.relevant && !curated) { out.rejected.push({ cand, reason: item.reason ?? 'offtopic' }); counts.add('rejected'); continue; }
 		if (!curated && item.confidence < 0.6) { out.deferred.push({ cand, reason: 'low-confidence' }); counts.add('deferred:low-confidence'); continue; }

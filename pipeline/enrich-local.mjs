@@ -84,11 +84,16 @@ export const promptFor = (taskPath, outPath) =>
 
 export const claudeArgs = (o) => ['-p', '--model', o.model, '--max-turns', String(o.maxTurns), '--allowedTools', 'Read,Write', '--output-format', 'json'];
 
+/** On Windows `claude` is a .cmd shim, which cannot be spawned directly; go through cmd.exe explicitly (no shell:true, fixed args only). */
+export const claudeCommand = (args, platform = process.platform) =>
+	platform === 'win32' ? [process.env.ComSpec || 'cmd.exe', ['/d', '/c', 'claude.cmd', ...args]] : ['claude', args];
+
 /** Run `claude -p` with the prompt on stdin (no shell quoting issues). Resolves { code, json, stderr, ms }. */
 function runClaude(prompt, o) {
 	return new Promise((resolve) => {
 		const t0 = Date.now();
-		const child = spawn('claude', claudeArgs(o), { cwd: ROOT, shell: process.platform === 'win32', stdio: ['pipe', 'pipe', 'pipe'] });
+		const [cmd, cmdArgs] = claudeCommand(claudeArgs(o));
+		const child = spawn(cmd, cmdArgs, { cwd: ROOT, stdio: ['pipe', 'pipe', 'pipe'] });
 		let out = '', err = '';
 		const timer = setTimeout(() => child.kill(), o.timeoutMin * 60000);
 		child.stdout.on('data', (d) => (out += d));

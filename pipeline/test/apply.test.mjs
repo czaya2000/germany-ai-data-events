@@ -170,6 +170,15 @@ test('apply: a candidate whose feed date has left the window is dropped and coun
 	assert.equal(read(root, 'src/data/events.json').length, 0);
 });
 
+test('apply: a multi-day event already running today is in the window (regression: window uses end date, like prepare)', () => {
+	const running = fullCand(1, { start: '2026-11-16', end: '2026-11-20' });
+	const out = { results: [{ id: ids(1), relevant: true, confidence: 0.9, format: 'Conference', city: 'Berlin', topics: ['AI'], blurb: 'Fine.', cost: 'Free' }] };
+	const root = sandbox({ cands: [running], files: { 'work/enrichment.json': JSON.stringify(out) } });
+	const { summary } = applyEnrichment({ root, today: '2026-11-20', write: false });
+	assert.equal(summary.counts['invalid:out-of-window'] ?? 0, 0);
+	assert.equal(summary.accepted, 1);
+});
+
 test('apply: a date supplied by the model is an unknown field and is rejected', () => {
 	const item = { id: ids(1), relevant: true, confidence: 0.9, format: 'Meetup', city: 'Berlin', topics: ['AI'], blurb: 'Fine.', cost: 'Free', date: '2031-01-01', time: '10:00' };
 	const root = sandbox({ files: { 'work/enrichment.json': JSON.stringify({ results: [item] }) } });
