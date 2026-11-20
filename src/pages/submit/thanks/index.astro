@@ -1,0 +1,41 @@
+---
+import { withBase } from '../../../lib/events';
+import Base from '../../../layouts/Base.astro';
+import SiteNav from '../../../components/SiteNav.astro';
+import SiteFooter from '../../../components/SiteFooter.astro';
+import { SITE_NAME } from '../../../lib/events';
+
+const title = `Event received — ${SITE_NAME}`;
+const description = 'Thanks for submitting an event.';
+---
+
+<Base title={title} description={description} path="/submit/thanks/" noindex>
+	<SiteNav />
+
+	<main class="wrap thanks">
+		<h1>Thanks — received.</h1>
+		<p>
+			I check every submission against the original page before it goes live, usually within a
+			couple of days. You'll hear from me either way.
+		</p>
+		<a class="btn accent" href={withBase('/')}>← Back to all events</a>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.thanks {
+			padding: 60px 32px;
+			text-align: center;
+		}
+		h1 {
+			font-size: clamp(1.5rem, 3vw, 2rem);
+			margin: 0 0 8px;
+		}
+		p {
+			color: var(--muted);
+			margin: 0 auto 28px;
+			max-width: 48ch;
+		}
+	</style>
+</Base>

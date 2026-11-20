@@ -1,0 +1,37 @@
+---
+import { withBase } from '../../../lib/events';
+import Base from '../../../layouts/Base.astro';
+import SiteNav from '../../../components/SiteNav.astro';
+import SiteFooter from '../../../components/SiteFooter.astro';
+import { SITE_NAME } from '../../../lib/events';
+
+const title = `Message sent — ${SITE_NAME}`;
+const description = 'Thanks for reaching out.';
+---
+
+<Base title={title} description={description} path="/contact/thanks/" noindex>
+	<SiteNav />
+
+	<main class="wrap thanks">
+		<h1>Thanks — message sent.</h1>
+		<p>I'll get back to you as soon as I can.</p>
+		<a class="btn accent" href={withBase('/')}>← Back to all events</a>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.thanks {
+			padding: 60px 24px;
+			text-align: center;
+		}
+		h1 {
+			font-size: clamp(1.5rem, 3vw, 2rem);
+			margin: 0 0 8px;
+		}
+		p {
+			color: var(--muted);
+			margin: 0 0 28px;
+		}
+	</style>
+</Base>

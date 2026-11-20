@@ -1,0 +1,127 @@
+---
+import { withBase } from '../../lib/events';
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_NAME, SITE_URL, FORM_ENDPOINT, LINKEDIN_URL } from '../../lib/events';
+
+const title = `Contact — ${SITE_NAME}`;
+const description = 'Suggest an event, flag a wrong detail, or just say hi.';
+---
+
+<Base title={title} description={description} path="/contact/">
+	<SiteNav />
+
+	<main class="wrap contact">
+		<h1>Contact</h1>
+		<p class="intro" id="intro-default">
+			Spotted a wrong date, know an event that should be listed, or just want to say hi? Send a
+			note — it goes straight to my inbox. Organisers: there's a <a href={withBase('/submit/')}>dedicated form</a
+			> for new events.
+		</p>
+		<p class="intro" id="intro-sponsor" hidden>
+			Want to put your company, product or conference in front of Germany's data and AI
+			leaders? Tell me a little about what you're after and I'll come back with what's possible —
+			featured listings, a slot in the weekly digest, or something we haven't thought of yet.
+		</p>
+
+		<form action={FORM_ENDPOINT} method="POST" id="contact-form">
+			<input type="hidden" name="_subject" value={`New message from ${SITE_NAME}`} id="contact-subject" />
+			<input type="hidden" name="_next" value={`${SITE_URL}/contact/thanks/`} />
+			<input type="hidden" name="_template" value="table" />
+			<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+			<label>
+				Name
+				<input type="text" name="name" required />
+			</label>
+			<label>
+				Email
+				<input type="email" name="email" required />
+			</label>
+			<label>
+				Message
+				<textarea name="message" rows="6" required></textarea>
+			</label>
+
+			<button class="btn accent" type="submit" data-umami-event="Contact sent">Send message</button>
+		</form>
+
+		{
+			LINKEDIN_URL && (
+				<p class="alt">
+					Prefer LinkedIn? <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">Connect with me there</a> instead.
+				</p>
+			)
+		}
+	</main>
+
+	<SiteFooter />
+
+	<script is:inline>
+		// ?topic=sponsor (linked from every footer) swaps the intro copy and
+		// tags the email subject so sponsor enquiries are easy to spot.
+		(function () {
+			var topic = new URLSearchParams(location.search).get('topic');
+			if (topic !== 'sponsor') return;
+			document.getElementById('intro-default').hidden = true;
+			document.getElementById('intro-sponsor').hidden = false;
+			document.getElementById('contact-subject').value = 'Sponsor enquiry — ' + document.title.split(' — ').pop();
+			var form = document.getElementById('contact-form');
+			var t = document.createElement('input');
+			t.type = 'hidden';
+			t.name = 'topic';
+			t.value = 'sponsor';
+			form.appendChild(t);
+		})();
+	</script>
+
+	<style>
+		.contact {
+			padding: 24px 24px 64px;
+			max-width: 560px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 8px;
+			letter-spacing: -0.01em;
+		}
+		.intro {
+			color: var(--muted);
+			margin: 0 0 28px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+			font-size: 0.85rem;
+			font-weight: 600;
+			color: var(--muted);
+		}
+		input,
+		textarea {
+			font: inherit;
+			font-size: 0.95rem;
+			padding: 10px 12px;
+			border-radius: 8px;
+			border: 1px solid var(--border);
+			background: var(--surface);
+			color: var(--ink);
+			resize: vertical;
+		}
+		button {
+			align-self: flex-start;
+			margin-top: 6px;
+		}
+		.alt {
+			margin-top: 32px;
+			font-size: 0.88rem;
+			color: var(--muted);
+		}
+	</style>
+</Base>

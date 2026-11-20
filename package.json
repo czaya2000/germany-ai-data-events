@@ -1,0 +1,31 @@
+{
+  "name": "germany-ai-data-events",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "validate": "node scripts/validate-events.mjs",
+    "test:ics": "node scripts/test-ics.mjs",
+    "test:agent": "node scripts/test-agent-files.mjs",
+    "archive": "node scripts/archive-past.mjs",
+    "digest": "node scripts/build-digest.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^6.4.8"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "devDependencies": {
+    "ical.js": "^2.2.1"
+  },
+  "private": true
+}

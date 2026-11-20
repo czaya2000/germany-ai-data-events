@@ -1,0 +1,413 @@
+---
+import { withBase } from '../../lib/events';
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import Subscribe from '../../components/Subscribe.astro';
+import {
+	formatDateRange,
+	formatDateCompact,
+	offerFacts,
+	placeName,
+	isFree,
+	isEnded,
+	eventUrl,
+	outboundUrl,
+	organiserUrl,
+	cityGroup,
+	getAllEvents,
+	getUpcomingEvents,
+	SITE_URL,
+	SITE_NAME,
+} from '../../lib/events';
+import { eventDateTimes, parseTime } from '../../lib/ics';
+import { cityHubFor, isHubLive } from '../../lib/hubs.mjs';
+import { COUNTRY_CODE } from '../../../config/country.mjs';
+
+export async function getStaticPaths() {
+	const entries = await getAllEvents();
+	return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const e = entry.data;
+const dateLabel = formatDateRange(e.date, e.endDate);
+const isOnline = /online/i.test(e.city);
+// Search results cut a title at about 60 characters, so the site name is
+// added only when the event name, date and place leave room for it.
+// An ended event stays in search results (people look an event up afterwards),
+// so its title and description say first that it is over.
+const coreTitle = `${isEnded(e) ? 'Past event: ' : ''}${e.title} — ${formatDateCompact(e.date, e.endDate)}, ${e.city}`;
+const withSite = `${coreTitle} | ${SITE_NAME}`;
+const title = withSite.length <= 65 ? withSite : coreTitle;
+// The facts come first, so a search snippet shows when, where and what it
+// costs even when the rest is cut off. Same order as the RSS summary.
+const whereLabel = isOnline ? 'Online' : [e.venue, e.city].filter(Boolean).join(', ');
+const description = isEnded(e)
+	? `This event took place on ${dateLabel} · ${whereLabel} · ${e.format}. ${e.blurb}`
+	: `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${whereLabel} · ${e.format} · ${e.cost}. ${e.blurb}`;
+const free = isFree(e.cost);
+const registerUrl = outboundUrl(e.url);
+const ended = isEnded(e);
+const when = eventDateTimes(e);
+// eventDateTimes assumes two hours when only a start time is published (the
+// calendar feeds need an end). The markup states an end only when it is known.
+const multiDay = !!e.endDate && e.endDate !== e.date;
+const parsedTime = multiDay ? null : parseTime(e.time);
+const endKnown = !parsedTime || parsedTime.end !== undefined;
+const offer = offerFacts(e.cost);
+
+// An ended event's page stays up for old links but points people onward:
+// the next events in the same city, topped up with the next ones anywhere.
+const allUpcoming = await getUpcomingEvents();
+const upcoming = ended ? allUpcoming : [];
+
+// Link up to the city page (/berlin/), when that page has enough events to be live.
+const cityHubMatch = cityHubFor(e);
+const cityHub =
+	cityHubMatch && isHubLive(cityHubMatch, allUpcoming.map((u) => u.data)) ? cityHubMatch : undefined;
+const sameCity = upcoming.filter((u) => cityGroup(u.data.city) === cityGroup(e.city));
+const onward = [...sameCity, ...upcoming.filter((u) => !sameCity.includes(u))].slice(0, 3);
+const onwardLabel = sameCity.length >= 3 ? `Upcoming in ${cityGroup(e.city)}` : 'Upcoming events';
+
+const structuredData: Record<string, unknown>[] = ended ? [] : [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Event',
+		name: e.title,
+		startDate: when.start,
+		...(endKnown ? { endDate: when.end } : {}),
+		image: [`${SITE_URL}/og-image.png`],
+		eventAttendanceMode: isOnline
+			? 'https://schema.org/OnlineEventAttendanceMode'
+			: 'https://schema.org/OfflineEventAttendanceMode',
+		eventStatus: 'https://schema.org/EventScheduled',
+		location: isOnline
+			? { '@type': 'VirtualLocation', url: e.url }
+			: {
+					'@type': 'Place',
+					name: e.venue || e.city,
+					address: { '@type': 'PostalAddress', addressLocality: placeName(e.city), addressCountry: COUNTRY_CODE },
+				},
+		description: e.blurb,
+		organizer: {
+			'@type': 'Organization',
+			name: e.organiser,
+			...(organiserUrl(e.url) ? { url: organiserUrl(e.url) } : {}),
+		},
+		url: eventUrl(entry.id),
+		offers: {
+			'@type': 'Offer',
+			url: e.url,
+			...offer,
+		},
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: SITE_NAME, item: SITE_URL },
+			...(cityHub
+				? [{ '@type': 'ListItem', position: 2, name: cityHub.h1, item: `${SITE_URL}${cityHub.path}` }]
+				: []),
+			{ '@type': 'ListItem', position: cityHub ? 3 : 2, name: e.title, item: eventUrl(entry.id) },
+		],
+	},
+];
+---
+
+<Base
+	title={title}
+	description={description}
+	path={`/events/${entry.id}/`}
+	structuredData={structuredData}
+>
+	<SiteNav />
+	<main class="wrap detail">
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<a class="back" href={withBase('/')}>← All events</a>
+			{cityHub && <a class="back" href={withBase(cityHub.path)}>{cityHub.slug === 'online' ? 'Online events' : `Events in ${cityHub.label}`}</a>}
+		</nav>
+
+		{
+			ended && (
+				<div class="ended" role="status">
+					<p class="ended-title">This event has ended.</p>
+					<p class="ended-note">
+						It took place on {dateLabel}. The details below are kept for reference.
+					</p>
+				</div>
+			)
+		}
+
+		<article class="detail-grid">
+			<div class="detail-main">
+				<p class="dateline num">
+					<time datetime={when.start}>{dateLabel}</time>{e.time ? `, ${e.time}` : ''}
+				</p>
+				<h1>{e.title}</h1>
+				<p class="blurb">{e.blurb}</p>
+
+				<dl class="facts">
+					<dt>Dates</dt>
+					<dd class="num">
+						<time datetime={e.date}>{formatDateRange(e.date)}</time>
+						{e.endDate && e.endDate !== e.date && (
+							<> – <time datetime={e.endDate}>{formatDateRange(e.endDate)}</time></>
+						)}
+					</dd>
+
+					{
+						e.time && (
+							<>
+								<dt>Time</dt>
+								<dd class="num">{e.time}</dd>
+							</>
+						)
+					}
+
+					<dt>City</dt>
+					<dd>{e.city}</dd>
+
+					{
+						e.venue && (
+							<>
+								<dt>Venue</dt>
+								<dd>{e.venue}</dd>
+							</>
+						)
+					}
+
+					<dt>Organiser</dt>
+					<dd>{e.organiser}</dd>
+
+					<dt>Format</dt>
+					<dd>{e.format}</dd>
+
+					<dt>Cost</dt>
+					<dd class={free ? 'free' : ''}>{e.cost}</dd>
+
+					<dt>Topics</dt>
+					<dd>{e.topics.join(', ')}</dd>
+
+					<dt>Verified via</dt>
+					<dd>{e.source}</dd>
+				</dl>
+			</div>
+
+			<aside class="register">
+				{
+					ended ? (
+						<div class="register-card">
+							<p class="register-title">{onwardLabel}</p>
+							<ul class="onward">
+								{onward.map((u) => (
+									<li>
+										<a href={withBase(`/events/${u.id}/`)}>{u.data.title}</a>
+										<span class="num"><time datetime={u.data.date}>{formatDateRange(u.data.date, u.data.endDate)}</time>{`, ${u.data.city}`}</span>
+									</li>
+								))}
+							</ul>
+							<a class="btn accent register-btn" href={withBase('/')}>
+								See all upcoming events
+							</a>
+						</div>
+					) : (
+						<>
+							<div class="register-card">
+								<p class="register-title">Register with the organiser</p>
+								<p class="register-note">
+									Registration is handled on {e.source}. We do not sell tickets or take a commission.
+								</p>
+								<a
+									class="btn accent register-btn"
+									href={registerUrl}
+									target="_blank"
+									rel="noopener"
+									data-outbound={e.source}
+									data-umami-event="Register click"
+									data-umami-event-event={entry.id}
+									data-umami-event-source={e.source}
+								>
+									Go to {e.source} ↗
+								</a>
+							</div>
+							<p class="disclosure">
+								Every listing on {SITE_NAME} is checked against its original source page before
+								publishing. Details can change on the organiser's side — always confirm on the link
+								above before you go.
+							</p>
+						</>
+					)
+				}
+				<Subscribe placement="event" compact />
+			</aside>
+		</article>
+	</main>
+
+	<SiteFooter>
+		{SITE_NAME} — Germany only, AI and data focus for now. <a href={withBase('/')}
+			>Back to all events</a
+		>.
+	</SiteFooter>
+
+	<style>
+		.detail {
+			padding-top: 28px;
+		}
+		.crumbs {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px 20px;
+		}
+		.back {
+			color: var(--muted);
+			text-decoration: none;
+			font-size: 0.875rem;
+		}
+		.back:hover {
+			color: var(--ink);
+		}
+		.detail-grid {
+			display: grid;
+			grid-template-columns: 1fr 340px;
+			gap: 72px;
+			align-items: start;
+			margin-top: 36px;
+		}
+		.dateline {
+			color: var(--muted);
+			font-size: 0.875rem;
+			margin: 0 0 14px;
+		}
+		h1 {
+			font-size: clamp(1.9rem, 4vw, 2.8rem);
+			font-weight: 600;
+			line-height: 1.08;
+			letter-spacing: -0.03em;
+			margin: 0;
+			max-width: 20ch;
+			text-wrap: pretty;
+		}
+		.blurb {
+			font-size: 1.1rem;
+			line-height: 1.55;
+			color: var(--ink-2);
+			max-width: 60ch;
+			margin: 24px 0 0;
+		}
+		.facts {
+			display: grid;
+			grid-template-columns: 150px 1fr;
+			gap: 0 40px;
+			margin: 40px 0 0;
+			font-size: 0.95rem;
+			border-top: 1px solid var(--border);
+		}
+		.facts dt {
+			color: var(--muted);
+			padding: 15px 0;
+			border-bottom: 1px solid var(--border);
+		}
+		.facts dd {
+			margin: 0;
+			padding: 15px 0;
+			border-bottom: 1px solid var(--border);
+		}
+		.facts dd.free {
+			font-weight: 600;
+		}
+		.register {
+			padding-top: 44px;
+		}
+		.register-card {
+			border: 1px solid var(--ink);
+			padding: 26px;
+		}
+		.register-title {
+			font-size: 0.95rem;
+			font-weight: 600;
+			margin: 0;
+		}
+		.register-note {
+			font-size: 0.82rem;
+			color: var(--muted);
+			line-height: 1.55;
+			margin: 8px 0 0;
+		}
+		.register-btn {
+			width: 100%;
+			margin-top: 20px;
+			padding: 13px 16px;
+		}
+		.ended {
+			margin-top: 28px;
+			padding: 16px 20px;
+			border-left: 4px solid var(--accent);
+			background: var(--surface);
+		}
+		.ended-title {
+			margin: 0;
+			font-weight: 600;
+		}
+		.ended-note {
+			margin: 4px 0 0;
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+		.onward {
+			list-style: none;
+			padding: 0;
+			margin: 14px 0 0;
+		}
+		.onward li {
+			padding: 10px 0;
+			border-bottom: 1px solid var(--border);
+			font-size: 0.9rem;
+		}
+		.onward a {
+			display: block;
+			color: var(--ink);
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.onward a:hover {
+			text-decoration: underline;
+		}
+		.onward span {
+			color: var(--muted);
+			font-size: 0.82rem;
+		}
+		.disclosure {
+			font-size: 0.82rem;
+			color: var(--muted);
+			line-height: 1.65;
+			margin: 22px 0 28px;
+		}
+
+		@media (max-width: 900px) {
+			.detail-grid {
+				grid-template-columns: 1fr;
+				gap: 36px;
+			}
+			.register {
+				padding-top: 0;
+			}
+			h1 {
+				max-width: none;
+			}
+		}
+		@media (max-width: 640px) {
+			.detail {
+				padding-top: 20px;
+			}
+			.detail-grid {
+				margin-top: 24px;
+			}
+			.facts {
+				grid-template-columns: 110px 1fr;
+				gap: 0 20px;
+			}
+		}
+	</style>
+</Base>

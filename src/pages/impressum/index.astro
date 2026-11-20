@@ -1,0 +1,95 @@
+---
+import { withBase } from '../../lib/events';
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_NAME } from '../../lib/events';
+
+const title = `Impressum — ${SITE_NAME}`;
+const description = `Who runs ${SITE_NAME} and how to reach them.`;
+---
+
+<Base title={title} description={description} path="/impressum/">
+	<SiteNav />
+
+	<main class="wrap legal">
+		<h1>Impressum</h1>
+		<p class="todo">Skeleton only. The owner must supply every marked value before go-live; this is not legal advice and the final text should be reviewed.</p>
+
+		<dl>
+			<dt>Provider (Diensteanbieter, § 5 DDG)</dt>
+			<dd>[[TODO: owner to supply full name, or company name and legal form]]<br />[[TODO: owner to supply street and number, postcode, city, Germany]]</dd>
+
+			<dt>Contact</dt>
+			<dd>
+				Email: [[TODO: owner to supply contact email]]<br />
+				[[TODO: owner to supply a second fast means of contact, e.g. phone or contact form]]<br />
+				<a href={withBase('/contact/')}>Contact form</a>
+			</dd>
+
+			<dt>Represented by</dt>
+			<dd>[[TODO: owner to supply, only if the provider is a company]]</dd>
+
+			<dt>Register entry and VAT id</dt>
+			<dd>[[TODO: owner to supply commercial register and number, and VAT id (USt-IdNr.), if any]]</dd>
+
+			<dt>Responsible for content (§ 18 Abs. 2 MStV)</dt>
+			<dd>[[TODO: owner to supply name and address, if this applies]]</dd>
+
+			<dt>What this site is</dt>
+			<dd>
+				A directory of AI and data events in Germany. Event details are collected from organisers'
+				public pages and checked daily, but they can change on the organiser's side at any time:
+				always confirm on the organiser's own page before you travel or pay. {SITE_NAME} sells no
+				tickets and takes no commission.
+			</dd>
+
+			<dt>Liability for external links</dt>
+			<dd>
+				[[TODO: owner to supply legal wording, reviewed]] Every listing links to a third-party page,
+				which is the responsibility of its operator.
+			</dd>
+
+			<dt>Copyright</dt>
+			<dd>
+				Event names and descriptions belong to their organisers. [[TODO: owner to supply wording on
+				the selection and presentation of this site]]
+			</dd>
+		</dl>
+	</main>
+
+	<SiteFooter />
+
+	<style>
+		.legal {
+			padding: 24px 32px 64px;
+			max-width: 640px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 24px;
+			letter-spacing: -0.01em;
+		}
+		dl {
+			margin: 0;
+			border-top: 1px solid var(--border);
+		}
+		dt {
+			font-size: 0.8rem;
+			font-weight: 600;
+			color: var(--muted);
+			padding: 18px 0 6px;
+		}
+		dd {
+			margin: 0;
+			padding: 0 0 18px;
+			line-height: 1.6;
+			border-bottom: 1px solid var(--border);
+		}
+		@media (max-width: 640px) {
+			.legal {
+				padding: 16px 18px 48px;
+			}
+		}
+	</style>
+</Base>
