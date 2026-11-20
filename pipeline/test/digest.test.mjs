@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { selectEvents, renderDigest, audienceFilters, digestSubject } from '../../scripts/lib/digest.mjs';
+import { selectEvents, renderDigest, audienceFilters, digestSubject, newTagPayload } from '../../scripts/lib/digest.mjs';
 import { SUBSCRIBE_ACTION } from '../../src/lib/newsletter.mjs';
 
 const ev = (o) => ({
@@ -56,9 +56,23 @@ test('event titles cannot inject template tags', () => {
 });
 
 test('audience filters: en contains lang-en, de not_contains lang-en, by tag id', () => {
-	assert.deepEqual(audienceFilters('en', 'TAGID').filters, [{ field: 'tags', operator: 'contains', value: 'TAGID' }]);
-	assert.deepEqual(audienceFilters('de', 'TAGID').filters, [{ field: 'tags', operator: 'not_contains', value: 'TAGID' }]);
+	assert.deepEqual(audienceFilters('en', 'TAGID'), {
+		filters: [{ field: 'subscriber.tags', operator: 'contains', value: 'TAGID' }],
+		groups: [],
+		predicate: 'and',
+	});
+	assert.deepEqual(audienceFilters('de', 'TAGID'), {
+		filters: [{ field: 'subscriber.tags', operator: 'not_contains', value: 'TAGID' }],
+		groups: [],
+		predicate: 'and',
+	});
 	assert.throws(() => audienceFilters('en', undefined));
+});
+
+test('create-tag payload has name and the required color; build-digest uses it', () => {
+	assert.deepEqual(newTagPayload('lang-en'), { name: 'lang-en', color: '#FAFAFA' });
+	const src = readFileSync('scripts/build-digest.mjs', 'utf8');
+	assert.ok(src.includes("call('POST', '/tags', newTagPayload(name))"));
 });
 
 test('build-digest only makes drafts and sends the three required headers', () => {
@@ -79,4 +93,38 @@ test('signup form: language radios default to the page language, one lang tag, c
 	assert.match(src, /type="checkbox" name="tag" value=\{cityTag/);
 	assert.match(src, /type="checkbox" name="tag" value=\{formatTag/);
 	assert.ok(!/fetch\(/.test(src));
+});
+
+test('digest selects only today..today+14 (Berlin dates); new-only events are excluded', () => {
+	const today = '2026-11-23';
+	const mk = (id, date, o = {}) => ev({ id, title: id, date, firstSeen: '2026-01-01', ...o });
+	const all = [
+		mk('today', '2026-11-23'),
+		mk('edge', '2026-12-07'), // today + 14: in
+		mk('beyond', '2026-12-08'), // today + 15: out
+		mk('beyond-new', '2026-12-20', { firstSeen: '2026-11-22' }), // new but later: out
+		mk('inside-new', '2026-11-30', { firstSeen: '2026-11-22' }), // new and inside: in
+		mk('past', '2026-11-20'),
+	];
+	const s = selectEvents(all, { today });
+	assert.equal(s.horizon, '2026-12-07');
+	assert.deepEqual(s.soon.map((e) => e.id), ['today', 'inside-new', 'edge']);
+	assert.equal(s.fresh, undefined);
+});
+
+test('rendered digests have no "new this week" section, legend or marker', () => {
+	const today = '2026-11-23';
+	const all = [
+		ev({ id: 'in', title: 'Inside', date: '2026-11-30', firstSeen: '2026-11-22' }),
+		ev({ id: 'later', title: 'Later but new', date: '2026-12-20', firstSeen: '2026-11-22' }),
+	];
+	const s = selectEvents(all, { today });
+	for (const locale of ['de', 'en']) {
+		const { body } = renderDigest(s, locale);
+		assert.match(body, /events\/in\//);
+		assert.ok(!body.includes('events/later/'));
+		assert.doesNotMatch(body, /New this week|Neu diese Woche|new this week|neu diese Woche/);
+		assert.doesNotMatch(body, /border-radius:50%/); // the old "new" dot
+		assert.equal((body.match(/<h2\b/g) ?? []).length, 1);
+	}
 });

@@ -70,29 +70,22 @@ const COPY = {
 
 // ---- Pick the events --------------------------------------------------------
 
-// Two sections, each filtered per reader:
-//   1. "Next two weeks": everything on (or still running) in the next `ahead` days.
-//   2. "New this week": first seen in the last `days` days, later than section 1.
-// An event never shows twice: new events inside the two weeks stay in section 1
-// and get the "new" dot there.
-export function selectEvents(allEvents, { today, days = 7, ahead = 14, from = today }) {
-	const since = addDays(today, -days); // exclusive
-	const horizon = addDays(today, ahead - 1); // inclusive
+// One section: everything on (or still running) from `from` through today + `ahead`
+// days (inclusive), Europe/Berlin dates. Being new (firstSeen) is NOT a reason to
+// include an event, and there is no "new this week" section or marker.
+export function selectEvents(allEvents, { today, ahead = 14, from = today }) {
+	const horizon = addDays(today, ahead); // inclusive
 	const upcoming = allEvents
 		.filter((e) => (e.endDate ?? e.date) >= from)
 		.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
-	const isNew = (e) => e.firstSeen > since && e.firstSeen <= today;
 	// Already running counts only for short events (a conference's last day), not
 	// long series that started weeks ago.
 	const startsSoon = (e) => e.date >= from || addDays(e.date, 7) >= (e.endDate ?? e.date);
 	return {
 		today,
 		from,
-		since,
 		horizon,
-		isNew,
 		soon: upcoming.filter((e) => e.date <= horizon && startsSoon(e)),
-		fresh: upcoming.filter((e) => e.date > horizon && isNew(e)),
 	};
 }
 
@@ -108,11 +101,17 @@ export function selectEvents(allEvents, { today, days = 7, ahead = 14, from = to
 export function audienceFilters(locale, langEnTagId) {
 	if (!langEnTagId) throw new Error('lang-en tag id is required');
 	return {
-		filters: [{ field: 'tags', operator: locale === 'en' ? 'contains' : 'not_contains', value: langEnTagId }],
+		filters: [{ field: 'subscriber.tags', operator: locale === 'en' ? 'contains' : 'not_contains', value: langEnTagId }],
 		groups: [],
 		predicate: 'and',
 	};
 }
+
+/** Same colour the newsletter's existing tags use. POST /v1/tags requires `color`. */
+export const TAG_COLOR = '#FAFAFA';
+
+/** Body for POST /v1/tags. */
+export const newTagPayload = (name) => ({ name, color: TAG_COLOR });
 
 // ---- Template conditions ----------------------------------------------------
 // Django's {% if %} has no parentheses, but `and` binds tighter than `or`, so
@@ -174,8 +173,6 @@ const esc = (s) =>
 		.replace(/[{]/g, '&#123;')
 		.replace(/[}]/g, '&#125;');
 
-const NEW_DOT = `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 8px 3px 0;"></span>`;
-
 // Keeps the top section's blurbs to about two lines.
 export function shortBlurb(text, max = 140) {
 	if (text.length <= max) return text;
@@ -196,7 +193,7 @@ export const digestSubject = (locale, today) => {
 /** Builds one language's email: { subject, body, level, lookName, sizeKb, overBudget }. */
 export function renderDigest(sel, locale) {
 	const c = COPY[locale];
-	const { soon, fresh, from, horizon, isNew, today } = sel;
+	const { soon, from, horizon, today } = sel;
 	const localePrefix = locale === 'en' ? '/en' : '';
 	const HOME = `${SITE_URL}${localePrefix}/?${UTM}`;
 	const link = (e) => `${SITE_URL}${localePrefix}/events/${e.id}/?${UTM}`;
@@ -207,7 +204,7 @@ export function renderDigest(sel, locale) {
 	const p = (html, style = '') =>
 		`<p style="margin:0;font-family:${T.font};font-size:15px;line-height:1.5;color:${T.ink};${style}">${html}</p>`;
 
-	function renderEvent(e, { dot = false, blurb = true } = {}) {
+	function renderEvent(e, { blurb = true } = {}) {
 		const s = dateSpine(e.date, locale);
 		const end = e.endDate && e.endDate !== e.date ? dateSpine(e.endDate, locale) : null;
 		const through = end ? `<br>${c.until(end.day, end.month)}` : '';
@@ -231,18 +228,18 @@ export function renderDigest(sel, locale) {
 <div style="font-size:28px;font-weight:600;line-height:1;">${s.day}</div>
 <div style="font-size:12px;color:${T.muted};margin-top:5px;white-space:nowrap;">${s.weekday}, ${s.month}${through}</div>
 </td><td valign="top" style="padding:18px 0;${td}">
-${dot ? NEW_DOT : ''}<a href="${link(e)}" style="font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;color:${T.ink};text-decoration:none;">${esc(e.title)}</a>
+<a href="${link(e)}" style="font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;color:${T.ink};text-decoration:none;">${esc(e.title)}</a>
 <div style="font-size:14px;color:${T.ink2};margin-top:6px;">${meta}</div>
 ${blurbHtml}<div style="font-size:13px;margin-top:10px;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>
 </td></tr>`;
 	}
 
-	// The later section uses one line per event: date · title, then place · type.
-	function renderCompact(e, { dot = false } = {}) {
+	// Last-resort size fallback: one line per event, date · title, then place · type.
+	function renderCompact(e) {
 		const s = dateSpine(e.date, locale);
 		const city = displayCity(e.city, locale).replace(/\s*\(.*\)$/, '');
 		return `<tr><td style="padding:10px 0;border-bottom:1px solid ${T.border};font-family:${T.font};font-size:15px;">
-<span style="color:${T.muted};white-space:nowrap;">${s.weekday} ${s.day} ${s.month}</span>&nbsp; ${dot ? NEW_DOT : ''}<a href="${link(e)}" style="color:${T.ink};font-weight:500;text-decoration:none;">${esc(e.title)}</a>
+<span style="color:${T.muted};white-space:nowrap;">${s.weekday} ${s.day} ${s.month}</span>&nbsp; <a href="${link(e)}" style="color:${T.ink};font-weight:500;text-decoration:none;">${esc(e.title)}</a>
 <div style="font-size:13px;color:${T.muted};">${esc(city)} · ${esc(formatLabel(e.format, locale))}</div>
 </td></tr>`;
 	}
@@ -267,8 +264,7 @@ ${p(c.intro, `color:${T.ink2};`)}
 ${p(note, `font-size:14px;color:${T.muted};`)}
 </div>`;
 		const fallback = `<tr><td colspan="2" style="padding:18px 0;border-bottom:1px solid ${T.border};">${p(empty, `color:${T.ink2};`)}</td></tr>`;
-		const look = (e) => ({ dot: Boolean(opts.dot) && isNew(e), blurb: opts.blurb !== false });
-		const row = (e) => (opts.compact ? renderCompact(e, look(e)) : renderEvent(e, look(e)));
+		const row = (e) => (opts.compact ? renderCompact(e) : renderEvent(e, { blurb: opts.blurb !== false }));
 		const list = events.map((e) => wrap(e, row(e))).join('\n');
 		const rows =
 			events.length === 0 ? fallback : `{% if ${anyMatchCondition(events)} %}\n${list}\n{% else %}\n${fallback}\n{% endif %}`;
@@ -285,11 +281,7 @@ ${p(a('{{ manage_subscription_url }}', c.manage, T.muted), `margin-top:10px;font
 
 	function buildBody(top) {
 		const range = `${datePart(from, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}.`;
-		const legend = `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${T.accent};vertical-align:middle;margin:0 2px 2px 4px;"></span> ${c.newLegend}`;
-		const sections = [
-			section(c.soonTitle, `${range} ${legend}`, soon, c.soonEmpty, { dot: true, ...top }),
-			section(c.freshTitle, c.freshNote, fresh, c.freshEmpty, { compact: true }),
-		].join('\n');
+		const sections = section(c.soonTitle, range, soon, c.soonEmpty, top);
 		// The marker keeps the draft in Buttondown's plain (markdown) editor, which
 		// passes raw HTML through. Its visual editor drops unsupported attributes.
 		return `<!-- buttondown-editor-mode: plaintext -->

@@ -16,8 +16,7 @@
 // Options:
 //   --dry-run       print, don't call the API
 //   --show-body     with --dry-run: print the HTML bodies too
-//   --days=N        "new" means firstSeen within the last N days (default 7)
-//   --ahead=N       the first section covers the next N days (default 14)
+//   --ahead=N       include events from today through today + N days (default 14)
 //   --today=YYYY-MM-DD   pretend today is this date (for testing)
 //   --from=YYYY-MM-DD    leave out events already over by this date (default today)
 //   --replace       if this week's email is still a draft, overwrite its body
@@ -29,7 +28,7 @@
 import { readFileSync } from 'node:fs';
 import { newsletterCity } from '../src/lib/newsletter.mjs';
 import { isoDateIn } from '../src/i18n/format.ts';
-import { LOCALES, LANG_TAGS, selectEvents, renderDigest, audienceFilters } from './lib/digest.mjs';
+import { LOCALES, LANG_TAGS, selectEvents, renderDigest, audienceFilters, newTagPayload } from './lib/digest.mjs';
 
 const API = 'https://api.buttondown.com/v1';
 const API_VERSION = '2026-04-01';
@@ -45,13 +44,12 @@ const today = args.today ?? isoDateIn(new Date()); // Europe/Berlin date
 
 const sel = selectEvents(JSON.parse(readFileSync('src/data/events.json', 'utf8')), {
 	today,
-	days: Number(args.days ?? 7),
 	ahead: Number(args.ahead ?? 14),
 	from: args.from,
 });
 
-if (sel.soon.length === 0 && sel.fresh.length === 0) {
-	console.log(`Nothing in the next ${args.ahead ?? 14} days and nothing new since ${sel.since}. No digest this week.`);
+if (sel.soon.length === 0) {
+	console.log(`Nothing in the next ${args.ahead ?? 14} days. No digest this week.`);
 	process.exit(0);
 }
 
@@ -60,11 +58,9 @@ const emails = LOCALES.map((locale) => ({ locale, ...renderDigest(sel, locale) }
 // ---- Summary ----------------------------------------------------------------
 
 const show = (e) =>
-	console.log(`  - ${e.date} ${e.city} → ${newsletterCity(e.city) ?? 'everyone'} | ${e.format} | ${e.title}${sel.isNew(e) ? ' (new)' : ''}`);
+	console.log(`  - ${e.date} ${e.city} → ${newsletterCity(e.city) ?? 'everyone'} | ${e.format} | ${e.title}`);
 console.log(`Next two weeks (${sel.from} to ${sel.horizon}): ${sel.soon.length}`);
 sel.soon.forEach(show);
-console.log(`New this week, later (firstSeen after ${sel.since}): ${sel.fresh.length}`);
-sel.fresh.forEach(show);
 console.log('');
 for (const m of emails) {
 	console.log(`Subject (${m.locale}): ${m.subject}`);
@@ -125,7 +121,7 @@ async function ensureTagIds(names) {
 	}
 	for (const name of names) {
 		if (ids[name]) continue;
-		const r = await call('POST', '/tags', { name });
+		const r = await call('POST', '/tags', newTagPayload(name));
 		if (r.ok) ids[name] = r.json.id;
 		else if (r.json?.metadata?.tag_id) ids[name] = r.json.metadata.tag_id; // name_already_exists
 		else fail(`Could not create tag ${name}`, r);
