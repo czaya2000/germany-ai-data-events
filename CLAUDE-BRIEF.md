@@ -42,7 +42,7 @@ The decisive difference from the Swiss edition is **how the daily refresh works*
 
 - A separate workflow `.github/workflows/deploy.yml` builds and deploys with `actions/upload-pages-artifact` and `actions/deploy-pages` (copy the versions the Swiss workflow pins). Triggers: `push` to `main` (paths: `src/**`, `public/**`, `astro.config.mjs`, `package*.json`, `scripts/**`) and `workflow_dispatch`, and it is also called by the daily workflow after data changes (`workflow_call`, or simply `needs:` in the same workflow; pick one and document it). Permissions `pages: write`, `id-token: write`, environment `github-pages`.
 - Until a custom domain exists, the site is served at `https://czaya2000.github.io/germany-ai-data-events/`, so `astro.config.mjs` needs `site` + `base` from `config/country.mjs`, and every internal link must use the base. Switching to a custom domain later = set `SITE_URL`, set `base: '/'`, add `public/CNAME`. Document this in `TODO-OWNER.md`.
-- **noindex until go-live:** `INDEXABLE` in `config/country.mjs` (default `false`) controls `<meta name="robots" content="noindex, nofollow">` on every page, `robots.txt` (`Disallow: /` while false), sitemap emission and the IndexNow ping. (GitHub Pages cannot set response headers, so the meta tag and robots.txt are the mechanism.)
+- **Go-live done (20 November 2026), `INDEXABLE` is now `true`.** Originally "noindex until go-live"; the flag in `config/country.mjs` controls `<meta name="robots" content="noindex, nofollow">` on every page, `robots.txt` (`Disallow: /` while false), sitemap emission and the IndexNow ping. (GitHub Pages cannot set response headers, so the meta tag and robots.txt are the mechanism.)
 - Owner action (not yours): Settings > Pages > Source = "GitHub Actions". Note for `TODO-OWNER.md`: on a GitHub Free account, Pages is only available for **public** repositories; a private repo needs a paid plan (GitHub Pro or higher), otherwise make the repo public before enabling Pages (check GitHub Docs, "GitHub Pages" availability). Private repos also have a monthly Actions minutes quota on Free plans; this workflow should need only a few minutes a day.
 
 ### 3.2 LLM step: Claude Code in Actions on the Max subscription, file in, file out
@@ -198,7 +198,7 @@ Write `.github/workflows/daily-refresh.yml` (schedule at an off-peak minute such
 1. Run `claude setup-token` locally and add the output as repository secret `CLAUDE_CODE_OAUTH_TOKEN` (Settings > Secrets and variables > Actions). The token lasts one year; set a reminder to renew it.
 2. Pages: on a free GitHub account, make the repository public first (Pages for private repositories needs a paid plan), then Settings > Pages > Source = GitHub Actions.
 3. Settings > Actions > General > Workflow permissions = Read and write.
-4. Choose and register a domain later; then set `SITE_URL`, `base: '/'`, add `public/CNAME`, configure DNS, enable HTTPS, and flip `INDEXABLE` to `true` at go-live.
+4. Choose and register a domain later; then set `SITE_URL`, `base: '/'`, add `public/CNAME`, configure DNS, enable HTTPS, and flip `INDEXABLE` to `true` at go-live (done).
 5. Buttondown newsletter (name, username, API key as secret `BUTTONDOWN_API_KEY`), FormSubmit target address, optional analytics ids.
 6. Impressum and privacy text (provider identity, address, contact; processors used). Not legal advice; have it reviewed.
 7. Contact email for the fetcher User-Agent.

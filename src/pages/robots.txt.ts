@@ -4,9 +4,7 @@ import { SITE_URL, INDEXABLE } from '../lib/events';
 /* While INDEXABLE is false (config/country.mjs) everything is disallowed, and
    every page also carries <meta name="robots" content="noindex, nofollow">.
    GitHub Pages cannot set response headers, so these two are the mechanism.
-   Note: on a project site (https://<user>.github.io/<repo>/) crawlers only read
-   the robots.txt at the host root, which this repository does not control; the
-   meta tag is what counts until a custom domain is set. */
+   The site is live (INDEXABLE is true): crawling is allowed and the sitemap is listed. */
 
 const AI_AGENTS = [
 	'GPTBot',

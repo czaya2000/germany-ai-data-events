@@ -8,7 +8,8 @@
      the other link leads to a built file
    - no German UI phrases on English pages and no English UI phrases on German
      pages (event titles, blurbs and other stored data are left out)
-   - noindex while INDEXABLE is false, in both languages
+   - robots meta follows INDEXABLE: no site-wide noindex, nofollow when true
+     (only page-level noindex on thanks/confirmed/404 and thin hubs)
    - every internal href/src carries the base path and leads to a built file
    - newsletter forms carry the lang-de / lang-en tag; calendar links use the
      feed of the page's language
@@ -133,6 +134,7 @@ for (const { file, html } of pages) {
 
 	// noindex
 	if (!INDEXABLE && !/<meta name="robots" content="noindex, nofollow"/.test(html)) fail(`${rel}: no noindex meta`);
+	if (INDEXABLE && /<meta name="robots" content="noindex, nofollow"/.test(html)) fail(`${rel}: site-wide noindex, nofollow while INDEXABLE is true`);
 
 	// canonical
 	const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
@@ -239,7 +241,36 @@ for (const url of byUrl.keys()) {
 	for (const l of ['de', 'en']) if (!byUrl.has(BASE + alt[l])) fail(url + ': counterpart ' + BASE + alt[l] + ' was not built');
 }
 
-console.log(`${counts.de} German pages, ${counts.en} English pages checked`);
+// robots.txt, sitemap and the page-level robots meta follow INDEXABLE.
+const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
+const robotsMeta = (rel) => readFileSync(join(dist, rel), 'utf8').match(/<meta name="robots" content="([^"]+)"/)?.[1];
+let sitemapUrls = 0;
+if (INDEXABLE) {
+	if (!/^User-agent: \*\nAllow: \/$/m.test(robots) || /^Disallow: \/$/m.test(robots)) fail('robots.txt does not allow crawling');
+	if (!robots.includes(`Sitemap: ${SITE_URL}/sitemap-index.xml`)) fail('robots.txt has no Sitemap line');
+	if (!existsSync(join(dist, 'sitemap-index.xml'))) fail('sitemap-index.xml was not built');
+	else {
+		const children = [...readFileSync(join(dist, 'sitemap-index.xml'), 'utf8').matchAll(/<loc>[^<]*\/(sitemap-\d+\.xml)<\/loc>/g)].map((m) => m[1]);
+		if (!children.length) fail('sitemap-index.xml lists no child sitemap');
+		for (const c of children) {
+			if (!existsSync(join(dist, c))) fail(`${c} was not built`);
+			else sitemapUrls += (readFileSync(join(dist, c), 'utf8').match(/<loc>/g) || []).length;
+		}
+		if (!sitemapUrls) fail('sitemap lists no pages');
+		for (const c of children) {
+			const xml = readFileSync(join(dist, c), 'utf8');
+			if (xml.includes('/thanks/') || xml.includes('/subscribe/confirmed/')) fail(`${c} lists a thanks/confirmed page`);
+		}
+	}
+	for (const rel of ['index.html', 'en/index.html']) if (robotsMeta(rel)) fail(`${rel}: has robots meta "${robotsMeta(rel)}" but the site is indexable`);
+	const ev = [...byUrl.keys()].find((u) => /\/events\/[^/]+\/$/.test(u) && !u.includes('/en/'));
+	if (ev && robotsMeta(ev.slice(BASE.length + 1) + 'index.html')) fail(`${ev}: event page carries a robots meta`);
+	for (const rel of ['subscribe/thanks/index.html', 'submit/thanks/index.html']) {
+		if (existsSync(join(dist, rel)) && !/noindex/.test(robotsMeta(rel) || '')) fail(`${rel}: thanks page lost its noindex`);
+	}
+} else if (!/^Disallow: \/$/m.test(robots)) fail('robots.txt should disallow everything while INDEXABLE is false');
+
+console.log(`${counts.de} German pages, ${counts.en} English pages checked` + (INDEXABLE ? `, ${sitemapUrls} sitemap URLs` : ''));
 if (failures) {
 	console.error(`\n${failures} problem${failures === 1 ? '' : 's'}`);
 	process.exit(1);

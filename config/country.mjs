@@ -2,7 +2,7 @@
 // scripts (validator, digest, indexnow) and the pipeline can all import it.
 //
 // Domain: germandataevents.com. The base path is derived from SITE_URL (empty
-// on a bare domain). Flip INDEXABLE to true only at go-live.
+// on a bare domain). INDEXABLE is true since go-live (20 November 2026).
 export const COUNTRY_CODE = 'DE';
 export const COUNTRY_NAME = 'Germany';
 export const TIMEZONE = 'Europe/Berlin';
@@ -12,7 +12,7 @@ export const LOCALE = 'en_DE';
 export const SITE_NAME = 'German Data Events';
 export const SITE_SHORT = 'German Data Events';
 
-// Custom domain. public/CNAME must match the host. Keep INDEXABLE false until go-live.
+// Custom domain. public/CNAME must match the host.
 const DEFAULT_SITE_URL = 'https://germandataevents.com';
 const siteUrl = new URL(process.env.SITE_URL || DEFAULT_SITE_URL);
 /** Origin only, no path: Astro's `site`. */
@@ -28,9 +28,8 @@ export const UID_DOMAIN = siteUrl.hostname;
 /** Source repository, used in the fetcher User-Agent until a contact email is set. */
 export const REPO_URL = 'https://github.com/czaya2000/germany-ai-data-events';
 
-// noindex + robots.txt Disallow + no sitemap + no IndexNow ping while false.
-// Flip to true at go-live.
-export const INDEXABLE = false;
+// Live since go-live. While false: noindex + robots.txt Disallow + no sitemap + no IndexNow ping.
+export const INDEXABLE = true;
 
 // Owner-supplied values (open items are listed in the owner notes file).
 export const CONTACT_EMAIL = 'hallo@germandataevents.com';
