@@ -24,11 +24,8 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 ## Domain and go-live
 
-4. Choose and register a domain later. Until then the site is served at `https://czaya2000.github.io/germany-ai-data-events/`. To switch:
-   - set `SITE_URL` to the bare domain (env var in the workflows, or `DEFAULT_SITE_URL` in `config/country.mjs`); the base path is derived from it and becomes empty;
-   - add `public/CNAME` with the domain, configure DNS, enable HTTPS in Pages settings;
-   - flip `INDEXABLE` to `true` in `config/country.mjs` (removes `noindex`, opens `robots.txt`, emits the sitemap, enables the IndexNow ping).
-5. While `INDEXABLE = false` every page has `<meta name="robots" content="noindex, nofollow">` and `robots.txt` says `Disallow: /`. Note that on a `github.io` project site crawlers only read the robots.txt at the host root, which this repository does not control, so the meta tag is the effective switch.
+4. **Domain `germandataevents.com`** is set as `DEFAULT_SITE_URL` and in `public/CNAME`. The Pages custom domain is attached via the API. DNS at the registrar is still the owner's step: apex A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; apex AAAA records `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`; and a `www` CNAME to `czaya2000.github.io`. Remove the current GoDaddy/parking A records and the `www` CNAME that points at the apex. Enable HTTPS in Pages once the certificate is issued. Do **not** flip `INDEXABLE` until the owner says go-live.
+5. While `INDEXABLE = false` every page has `<meta name="robots" content="noindex, nofollow">` and `robots.txt` says `Disallow: /`. After the custom domain is live, that robots.txt is the one crawlers will read at the host root.
 6. After go-live: register with Google Search Console (paste the verification value into `GOOGLE_SITE_VERIFICATION`) and Bing Webmaster Tools; create an IndexNow key file `public/<key>.txt` and set `INDEXNOW_KEY`.
 
 ## Values in `config/country.mjs`
@@ -36,7 +33,7 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 7. `CONTACT_EMAIL`: contact email. Also used in the fetcher User-Agent (the repository URL is used until it is set).
 8. `FORM_ENDPOINT`: FormSubmit target address for the contact and submit forms (`https://formsubmit.co/<address>`).
 9. `BUTTONDOWN_USERNAME`: Buttondown newsletter name and username; API key as repository secret `BUTTONDOWN_API_KEY`. `buttondown/web.css` carries tag ids from the reference newsletter; replace them with the ids of the new newsletter's `city-<slug>` and `format-<slug>` tags. The signup form posts to `buttondown.com/api/emails/embed-subscribe/<username>` and will not work until the username is set.
-10. Optional: `UMAMI_WEBSITE_ID`, `CLOUDFLARE_BEACON_TOKEN` (analytics; empty means no tracking script is rendered), `LINKEDIN_URL`, `INSTAGRAM_URL` (empty means the link is hidden).
+10. **Analytics (same pattern as the Swiss site, currently off):** in Umami Cloud (https://cloud.umami.is) create a website whose domain is `germandataevents.com`, then send the website ID (a UUID) so it can be put in `UMAMI_WEBSITE_ID` in `config/country.mjs`. Optionally also add Cloudflare Web Analytics for the same domain and send the beacon token for `CLOUDFLARE_BEACON_TOKEN`. Empty values render no tracking script. Opening a page with `?notrack` stops counting that browser (`?track` turns it back on). Once a tracker is on, update the Datenschutz placeholder to name the processors actually used. Do not invent an ID. `LINKEDIN_URL` and `INSTAGRAM_URL` stay optional (empty hides the link).
 11. The working name "German AI & Data Events" (`SITE_NAME`) and the six hub cities can be changed in `config/country.mjs`.
 
 ## Legal pages

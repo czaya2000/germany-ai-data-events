@@ -4,7 +4,7 @@ import { NEWSLETTER_CITIES, newsletterCity } from './newsletter.mjs';
 export const NEW_WINDOW_DAYS = 5;
 
 /* Site-wide values come from config/country.mjs. SITE_URL includes the base
-   path (GitHub Pages serves the site under /germany-ai-data-events until a
+   path (empty on the custom domain; kept so a path prefix still works if
    custom domain exists), so `${SITE_URL}/x/` is always a correct absolute URL
    and withBase('/x/') a correct site-relative one. */
 export {

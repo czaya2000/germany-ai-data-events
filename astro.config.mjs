@@ -38,7 +38,7 @@ const HREFLANG = { de: 'de', en: 'en' };
 // https://astro.build/config
 export default defineConfig({
 	site: SITE_ORIGIN,
-	// '/germany-ai-data-events' on GitHub Pages; '' once a custom domain is set (config/country.mjs).
+	// base is '' on the custom domain (config/country.mjs).
 	base: BASE || '/',
 	i18n: {
 		locales: LOCALES,

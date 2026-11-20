@@ -1,10 +1,8 @@
 // Everything country-specific lives here. Plain .mjs so Astro, the Node
 // scripts (validator, digest, indexnow) and the pipeline can all import it.
 //
-// Switching to a custom domain later = set SITE_URL (env var or the default
-// below) to the bare domain, e.g. https://example.de. The base path is derived
-// from it, so it becomes '' and every link follows. Then add public/CNAME and
-// flip INDEXABLE to true. See TODO-OWNER.md.
+// Domain: germandataevents.com. The base path is derived from SITE_URL (empty
+// on a bare domain). Flip INDEXABLE to true only at go-live. See TODO-OWNER.md.
 
 export const COUNTRY_CODE = 'DE';
 export const COUNTRY_NAME = 'Germany';
@@ -15,8 +13,8 @@ export const LOCALE = 'en_DE';
 export const SITE_NAME = 'German AI & Data Events';
 export const SITE_SHORT = 'German AI & Data Events';
 
-// Until a custom domain exists the site is served from GitHub Pages under a path.
-const DEFAULT_SITE_URL = 'https://czaya2000.github.io/germany-ai-data-events';
+// Custom domain. public/CNAME must match the host. Keep INDEXABLE false until go-live.
+const DEFAULT_SITE_URL = 'https://germandataevents.com';
 const siteUrl = new URL(process.env.SITE_URL || DEFAULT_SITE_URL);
 /** Origin only, no path: Astro's `site`. */
 export const SITE_ORIGIN = siteUrl.origin;
