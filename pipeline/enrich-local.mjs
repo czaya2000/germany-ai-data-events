@@ -84,9 +84,8 @@ export const promptFor = (taskPath, outPath) =>
 
 export const claudeArgs = (o) => ['-p', '--model', o.model, '--max-turns', String(o.maxTurns), '--allowedTools', 'Read,Write', '--output-format', 'json'];
 
-/** On Windows `claude` is a .cmd shim, which cannot be spawned directly; go through cmd.exe explicitly (no shell:true, fixed args only). */
-export const claudeCommand = (args, platform = process.platform) =>
-	platform === 'win32' ? [process.env.ComSpec || 'cmd.exe', ['/d', '/c', 'claude.cmd', ...args]] : ['claude', args];
+/** Spawn `claude` directly (no shell). On Windows Node resolves claude.exe via PATH/PATHEXT; the native installer ships an .exe, not a .cmd shim. */
+export const claudeCommand = (args) => ['claude', args];
 
 /** Run `claude -p` with the prompt on stdin (no shell quoting issues). Resolves { code, json, stderr, ms }. */
 function runClaude(prompt, o) {
