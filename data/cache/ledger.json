@@ -3723,7 +3723,8 @@
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai",
-				"hackevents-data"
+				"hackevents-data",
+				"meetup:big-data-developers-in-munich"
 			],
 			"missingDays": 0
 		},
@@ -3734,7 +3735,8 @@
 			"lastSeen": "2026-11-20",
 			"end": "2026-12-01",
 			"sources": [
-				"hackevents-ai"
+				"hackevents-ai",
+				"meetup:ibm-powerai-dusseldorf"
 			],
 			"missingDays": 0
 		},

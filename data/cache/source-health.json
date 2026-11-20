@@ -432,33 +432,33 @@
 		},
 		"eventbrite-berlin": {
 			"recentCounts": [],
-			"consecutiveFailures": 3,
+			"consecutiveFailures": 4,
 			"lastError": "HTTP 405"
 		},
 		"eventbrite-munich": {
 			"recentCounts": [],
-			"consecutiveFailures": 3,
-			"lastError": "HTTP 405"
+			"consecutiveFailures": 4,
+			"lastError": "skipped, Eventbrite already blocked this run (HTTP 405)"
 		},
 		"eventbrite-cologne": {
 			"recentCounts": [],
-			"consecutiveFailures": 3,
-			"lastError": "HTTP 405"
+			"consecutiveFailures": 4,
+			"lastError": "skipped, Eventbrite already blocked this run (HTTP 405)"
 		},
 		"eventbrite-frankfurt": {
 			"recentCounts": [],
-			"consecutiveFailures": 3,
-			"lastError": "HTTP 405"
+			"consecutiveFailures": 4,
+			"lastError": "skipped, Eventbrite already blocked this run (HTTP 405)"
 		},
 		"eventbrite-hamburg": {
 			"recentCounts": [],
-			"consecutiveFailures": 3,
-			"lastError": "HTTP 405"
+			"consecutiveFailures": 4,
+			"lastError": "skipped, Eventbrite already blocked this run (HTTP 405)"
 		},
 		"eventbrite-stuttgart": {
 			"recentCounts": [],
-			"consecutiveFailures": 3,
-			"lastError": "HTTP 405"
+			"consecutiveFailures": 4,
+			"lastError": "skipped, Eventbrite already blocked this run (HTTP 405)"
 		},
 		"mcml": {
 			"recentCounts": [
@@ -1858,8 +1858,8 @@
 	},
 	"etags": {
 		"https://mcml.ai/events/index.xml": {
-			"etag": "\"3bf2-660b17c0bbd43-gzip\"",
-			"lastModified": "Fri, 20 Nov 2026 09:01:06 GMT"
+			"etag": "\"3bf2-660b2768f78ce-gzip\"",
+			"lastModified": "Fri, 20 Nov 2026 10:11:09 GMT"
 		},
 		"https://www.lmu.de/de/newsroom/rss-feed-events.xml": {
 			"etag": "\"2cd7-660adb183e06c-gzip\"",
@@ -1911,7 +1911,7 @@
 		}
 	},
 	"pageHashes": {
-		"scrape:allai": "0924b7c5ec76373c25548c2c47c7b0a561c28516",
+		"scrape:allai": "f63d4f7fc482fa9a2c70b5f4a7e023dfe635a4fe",
 		"scrape:frankeundschwarz": "ff7699763cd3713872846c3440a01db33052a3aa",
 		"scrape:eventseye": "06c7084ef52ff8ff2f80992829984ba6b36a6052",
 		"scrape:conferenceindex": "6fbbd0a515296d486c89ad22d8b6ab9708059139"
