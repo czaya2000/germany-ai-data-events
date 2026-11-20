@@ -21,7 +21,8 @@ const eventSchema = z.object({
 });
 
 const events = defineCollection({
-	loader: file('src/data/events.json'),
+	// E2E_EVENTS: test builds read fixture events instead (see AGENTS.md "End-to-end tests").
+	loader: file(process.env.E2E_EVENTS || 'src/data/events.json'),
 	schema: eventSchema,
 });
 

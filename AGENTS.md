@@ -15,6 +15,14 @@ German edition of the Swiss site swissdataevents.ch. Full spec: `CLAUDE-BRIEF.md
 
 `npm run build`, `npm run validate`, `npm run test:ics`, `npm run test:agent`, `npm run test:i18n` (run after build); `npm test` for the offline tests. Empty `events.json` is valid and shows an honest "no events listed yet" state.
 
+## End-to-end tests (Playwright)
+
+- `npm run test:e2e` (first time: `npx playwright install chromium`). ~230 tests, under a minute, desktop 1280 px and mobile 390 px, German and English. Not part of the daily workflow. Output in `test-results/` and `dist-e2e/` (both ignored).
+- It never reads live data: `e2e/serve.mjs` builds the site from `e2e/fixtures/events.json` (regenerate with `node e2e/fixtures/make-fixture.mjs`) into `dist-e2e/`, then serves it with `astro preview` (`E2E_SKIP_BUILD=1` reuses the last build). Test-only environment variables, read at build time and unset in production: `E2E_EVENTS` (events file), `E2E_OUT` (output folder), `SITE_TODAY` (YYYY-MM-DD, freezes `today()` in `src/i18n/format.ts`).
+- Date freezing: the fixture build is frozen at Wed 2026-11-18 (`SITE_TODAY`); in the browser every test sets "now" with `page.clock.install({ time })` (`NOW` in `e2e/helpers.ts`). The browser zone is America/Los_Angeles on purpose, so tests prove the site follows Europe/Berlin. Date-dependent logic is tested against fixture events only.
+- Site rule behind the tests: "this week" runs from today to Sunday, "this month" to the month's last day, both in Europe/Berlin; events that ended before today are never listed, also on a page built on an earlier day (the client script in `src/components/Listing.astro` handles it).
+- Findings and decisions of the QA pass: `QA-REPORT.md`.
+
 ## Rules
 
 - No Node script calls the Anthropic API or reads `CLAUDE_CODE_OAUTH_TOKEN`; no secrets in the repo.

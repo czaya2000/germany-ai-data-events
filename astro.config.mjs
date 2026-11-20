@@ -37,6 +37,8 @@ const HREFLANG = { de: 'de', en: 'en' };
 
 // https://astro.build/config
 export default defineConfig({
+	// E2E_OUT: the e2e build goes to its own folder so it never touches dist/.
+	outDir: process.env.E2E_OUT || './dist',
 	site: SITE_ORIGIN,
 	// base is '' on the custom domain (config/country.mjs).
 	base: BASE || '/',

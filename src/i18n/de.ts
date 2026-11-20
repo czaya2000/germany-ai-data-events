@@ -249,6 +249,7 @@ export const de: Messages = {
 			url: 'Bitte geben Sie eine vollständige Web-Adresse ein, die mit https:// beginnt.',
 			date: 'Bitte wählen Sie ein Datum.',
 			choose: 'Bitte wählen Sie eine Option.',
+			endBeforeStart: 'Das Enddatum darf nicht vor dem Startdatum liegen.',
 		},
 		thanksTitle: (name: string) => `Event erhalten – ${name}`,
 		thanksDescription: 'Danke für das Einreichen eines Events.',

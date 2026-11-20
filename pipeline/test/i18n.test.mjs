@@ -205,3 +205,19 @@ test('week labels and numbers', () => {
 	assert.equal(formatNumber(1234, 'de'), '1.234');
 	assert.equal(formatNumber(1234, 'en'), '1,234');
 });
+
+test('isoDateIn / today: the date in Europe/Berlin, not UTC; SITE_TODAY freezes it', async () => {
+	const { isoDateIn, today } = await import('../../src/i18n/format.ts');
+	// 23:30 UTC on 22 Nov is already 00:30 on the 23rd in Berlin (CET, UTC+1).
+	assert.equal(isoDateIn(new Date('2026-11-22T23:30:00Z')), '2026-11-23');
+	// Summer time (UTC+2): 22:30 UTC on 30 Jun is 00:30 on 1 Jul.
+	assert.equal(isoDateIn(new Date('2026-06-30T22:30:00Z')), '2026-07-01');
+	assert.equal(isoDateIn(new Date('2026-03-29T00:30:00Z')), '2026-03-29'); // DST switch day
+	const saved = process.env.SITE_TODAY;
+	process.env.SITE_TODAY = '2026-11-18';
+	assert.equal(today(), '2026-11-18');
+	process.env.SITE_TODAY = 'garbage';
+	assert.match(today(), /^\d{4}-\d{2}-\d{2}$/);
+	if (saved === undefined) delete process.env.SITE_TODAY;
+	else process.env.SITE_TODAY = saved;
+});

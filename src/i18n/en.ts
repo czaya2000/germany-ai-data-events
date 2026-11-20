@@ -246,6 +246,7 @@ export const en = {
 			url: 'Please enter a full web address, starting with https://',
 			date: 'Please choose a date.',
 			choose: 'Please choose an option.',
+			endBeforeStart: 'The end date cannot be before the start date.',
 		},
 		thanksTitle: (name: string) => `Event received — ${name}`,
 		thanksDescription: 'Thanks for submitting an event.',

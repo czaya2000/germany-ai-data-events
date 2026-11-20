@@ -22,7 +22,8 @@ import {
 	type EventEntry,
 } from '../lib/events';
 import { HUBS, isHubLive } from '../lib/hubs.mjs';
-import { t, hubText, displayCity, formatLabel, localizeCost, type Locale } from '../i18n';
+import { TIMEZONE } from '../../config/country.mjs';
+import { t, hubText, displayCity, formatLabel, localizeCost, INTL_LOCALE, type Locale } from '../i18n';
 import { localePath, hubPath } from '../i18n/paths.mjs';
 import meta from '../data/meta.json';
 
@@ -80,7 +81,16 @@ const formats = [...new Set(events.map((e) => e.format))]
 	.sort()
 	.map((value) => ({ value, label: formatLabel(value, locale) }));
 // Texts the filter script needs.
-const strings = { city: s.city, format: s.format, one: s.countOne, many: s.countMany };
+const strings = {
+	city: s.city,
+	format: s.format,
+	one: s.countOne,
+	many: s.countMany,
+	tz: TIMEZONE,
+	built: today(), // the date this page was built; the week headings are right while it is still today
+	intl: INTL_LOCALE[locale],
+	de: locale === 'de',
+};
 
 // Events arrive sorted by date, so grouping is a single pass. Each group is
 // the week the event STARTS in; a multi-day event sits in its start week,
@@ -206,10 +216,10 @@ for (const e of events) {
 				</button>
 			</div>
 
-			<div class="when-tabs" role="tablist" aria-label={s.timeRange}>
-				<button class="when-tab" data-when="all" type="button">{s.all}</button>
-				<button class="when-tab" data-when="week" type="button">{s.thisWeek}</button>
-				<button class="when-tab" data-when="month" type="button">{s.thisMonth}</button>
+			<div class="when-tabs" role="group" aria-label={s.timeRange}>
+				<button class="when-tab" data-when="all" type="button" aria-pressed="false">{s.all}</button>
+				<button class="when-tab" data-when="week" type="button" aria-pressed="false">{s.thisWeek}</button>
+				<button class="when-tab" data-when="month" type="button" aria-pressed="false">{s.thisMonth}</button>
 			</div>
 		</div>
 	</div>
@@ -432,24 +442,99 @@ for (const e of events) {
 			function pad(n) {
 				return String(n).padStart(2, '0');
 			}
+			// Dates are YYYY-MM-DD strings; arithmetic on them runs in UTC so no zone or DST can shift a day.
 			function toISO(d) {
-				return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+				return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate());
+			}
+			function fromISO(s) {
+				return new Date(s + 'T00:00:00Z');
+			}
+			// "Today" is the date in Europe/Berlin, whatever zone the visitor's device is in.
+			var dateInSiteZone = new Intl.DateTimeFormat('en-CA', {
+				timeZone: strings.tz,
+				year: 'numeric',
+				month: '2-digit',
+				day: '2-digit',
+			});
+			function todayInSiteZone() {
+				var p = {};
+				dateInSiteZone.formatToParts(new Date()).forEach(function (x) {
+					p[x.type] = x.value;
+				});
+				return p.year + '-' + p.month + '-' + p.day;
+			}
+			function mondayOf(iso) {
+				var d = fromISO(iso);
+				d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+				return toISO(d);
 			}
 
+			// The page is built once a day. If it is opened on a later day, events that were already
+			// running when it was built (listed under the week of the build) belong under the week of
+			// today, so they are moved there; the heading is created when no event starts that week.
+			function weekLabel(monday) {
+				var start = fromISO(monday);
+				var end = fromISO(monday);
+				end.setUTCDate(end.getUTCDate() + 6);
+				var day = new Intl.DateTimeFormat(strings.intl, { day: 'numeric', timeZone: 'UTC' });
+				var dayMonth = new Intl.DateTimeFormat(strings.intl, { day: 'numeric', month: 'long', timeZone: 'UTC' });
+				var left =
+					start.getUTCMonth() === end.getUTCMonth() ? day.format(start) + (strings.de ? '.' : '') : dayMonth.format(start);
+				return left + ' – ' + dayMonth.format(end);
+			}
+			function rebandRunningEvents() {
+				var todayStr = todayInSiteZone();
+				if (todayStr === strings.built) return;
+				var current = mondayOf(todayStr);
+				var heading = bands.filter(function (b) {
+					return b.dataset.band === current;
+				})[0];
+				var moved = rows.filter(function (r) {
+					return r.dataset.date < todayStr && r.dataset.band !== current && r.dataset.endDate >= todayStr;
+				});
+				if (moved.length === 0) return;
+				if (!heading) {
+					heading = bands[0].cloneNode(true);
+					heading.dataset.band = current;
+					heading.querySelector('.band-primary').textContent = weekLabel(current);
+					// Before the first row that starts in a later week (rows are in date order).
+					var later = rows.filter(function (r) {
+						return r.dataset.band > current;
+					})[0];
+					if (later) {
+						var anchor = later;
+						while (anchor.previousElementSibling && !anchor.previousElementSibling.classList.contains('row')) {
+							anchor = anchor.previousElementSibling;
+						}
+						anchor.parentNode.insertBefore(heading, anchor);
+					} else {
+						rows[0].parentNode.appendChild(heading);
+					}
+					bands.push(heading);
+				}
+				var after = heading;
+				moved.forEach(function (r) {
+					r.dataset.band = current;
+					after.parentNode.insertBefore(r, after.nextSibling);
+					after = r;
+				});
+			}
+
+			// The range an event must touch to be listed: from today (an event that ended earlier is never
+			// shown, even on a page built days ago) to the end of the week (Sunday) or the month.
+			// An event that started earlier and is still running overlaps the range, so it is included.
 			function whenBounds(when) {
-				var now = new Date();
-				now.setHours(0, 0, 0, 0);
-				var todayStr = toISO(now);
+				var todayStr = todayInSiteZone();
 				if (when === 'week') {
-					var weekEnd = new Date(now);
-					weekEnd.setDate(weekEnd.getDate() + 6);
+					var weekEnd = fromISO(mondayOf(todayStr));
+					weekEnd.setUTCDate(weekEnd.getUTCDate() + 6);
 					return { start: todayStr, end: toISO(weekEnd) };
 				}
 				if (when === 'month') {
-					var monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-					return { start: todayStr, end: toISO(monthEnd) };
+					var t = fromISO(todayStr);
+					return { start: todayStr, end: toISO(new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0))) };
 				}
-				return null;
+				return { start: todayStr, end: null };
 			}
 
 			function updateUrl() {
@@ -463,7 +548,7 @@ for (const e of events) {
 				});
 				if (state.when && state.when !== 'all') p.set('when', state.when);
 				var qs = p.toString();
-				history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+				history.replaceState(null, '', (qs ? '?' + qs : location.pathname) + location.hash);
 			}
 
 			function applyFilters() {
@@ -478,7 +563,8 @@ for (const e of events) {
 						(!query || (d.search || '').indexOf(query) !== -1) &&
 						(state.cities.length === 0 || state.cities.indexOf(d.city) !== -1) &&
 						(state.formats.length === 0 || state.formats.indexOf(d.format) !== -1) &&
-						(!bounds || (d.date <= bounds.end && d.endDate >= bounds.start));
+						d.endDate >= bounds.start &&
+						(!bounds.end || d.date <= bounds.end);
 					row.hidden = !matches;
 					if (matches) {
 						visible++;
@@ -487,8 +573,11 @@ for (const e of events) {
 				}
 				// A week heading with every row filtered out is a heading for
 				// nothing — hide it with its rows.
+				// The heading of the week we are in is marked from the visitor's clock, not the build date.
+				var currentWeek = mondayOf(bounds.start);
 				for (var b = 0; b < bands.length; b++) {
 					bands[b].hidden = !perBand[bands[b].dataset.band];
+					bands[b].classList.toggle('current', bands[b].dataset.band === currentWeek);
 				}
 				resultCount.textContent = visible === 1 ? strings.one : strings.many.replace('{n}', visible);
 				emptyState.hidden = visible !== 0;
@@ -499,7 +588,7 @@ for (const e of events) {
 				whenTabs.forEach(function (btn) {
 					var active = btn.dataset.when === when;
 					btn.classList.toggle('active', active);
-					btn.setAttribute('aria-selected', String(active));
+					btn.setAttribute('aria-pressed', String(active));
 				});
 			}
 
@@ -522,6 +611,7 @@ for (const e of events) {
 				});
 			});
 
+			rebandRunningEvents();
 			setWhenTab(state.when);
 			applyFilters();
 		})();

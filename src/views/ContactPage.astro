@@ -60,6 +60,22 @@ const description = s.description;
 
 	<SiteFooter locale={locale} />
 
+	<script type="application/json" id="invalid-strings" set:html={JSON.stringify(t(locale).submit.invalid)} />
+	<script is:inline>
+		// Validation messages in the page language (the browser's own wording follows its UI language).
+		(function () {
+			var m = JSON.parse(document.getElementById('invalid-strings').textContent);
+			document.querySelectorAll('#contact-form input, #contact-form textarea').forEach(function (el) {
+				el.addEventListener('invalid', function () {
+					var v = el.validity;
+					el.setCustomValidity(v.valueMissing ? m.required : v.typeMismatch ? m.email : '');
+				});
+				el.addEventListener('input', function () {
+					el.setCustomValidity('');
+				});
+			});
+		})();
+	</script>
 	<script is:inline>
 		// ?topic=sponsor (linked from every footer) swaps the intro copy and
 		// tags the email subject so sponsor enquiries are easy to spot.

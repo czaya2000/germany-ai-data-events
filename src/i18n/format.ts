@@ -11,8 +11,18 @@ export const INTL_LOCALE: Record<Locale, string> = { de: 'de-DE', en: 'en-GB' };
 const DATE_RANGE_OPTS: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' };
 const noDot = (s: string) => s.replace(/\.$/, '');
 
+/** The calendar date (YYYY-MM-DD) of an instant in the site's time zone (Europe/Berlin), not UTC. */
+export function isoDateIn(instant: Date, timeZone = TIMEZONE): string {
+	const p = new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' })
+		.formatToParts(instant)
+		.reduce<Record<string, string>>((acc, x) => ({ ...acc, [x.type]: x.value }), {});
+	return `${p.year}-${p.month}-${p.day}`;
+}
+
+/** Today in Europe/Berlin. SITE_TODAY (YYYY-MM-DD) freezes it for the e2e build; production never sets it. */
 export function today(): string {
-	return new Date().toISOString().slice(0, 10);
+	const frozen = typeof process !== 'undefined' ? process.env?.SITE_TODAY : undefined;
+	return frozen && /^\d{4}-\d{2}-\d{2}$/.test(frozen) ? frozen : isoDateIn(new Date());
 }
 
 /** Weekday, day and month for the date column: "Thu", 12, "Nov" / "Do", 12, "Nov". */

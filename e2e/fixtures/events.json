@@ -1,0 +1,311 @@
+[
+	{
+		"id": "b-running",
+		"title": "Berlin Running Series",
+		"date": "2026-11-02",
+		"endDate": "2026-12-18",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Workshop",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-running/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Running Series.",
+		"blurb_en": "Fixture blurb for Berlin Running Series.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Running Series.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-started-earlier",
+		"title": "Berlin Started Earlier",
+		"date": "2026-11-16",
+		"endDate": "2026-11-18",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Conference",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-started-earlier/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Started Earlier.",
+		"blurb_en": "Fixture blurb for Berlin Started Earlier.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Started Earlier.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "o-tue",
+		"title": "Online Tuesday Webinar",
+		"date": "2026-11-17",
+		"endDate": "2026-11-19",
+		"city": "Online (DE)",
+		"venue": "Fixture Hall",
+		"format": "Webinar",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/o-tue/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Online Tuesday Webinar.",
+		"blurb_en": "Fixture blurb for Online Tuesday Webinar.",
+		"blurb_de": "Fixture-Beschreibung für Online Tuesday Webinar.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-wed",
+		"title": "Berlin Wednesday Talk",
+		"date": "2026-11-18",
+		"time": "18:00",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Meetup",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-wed/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Wednesday Talk.",
+		"blurb_en": "Fixture blurb for Berlin Wednesday Talk.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Wednesday Talk.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "m-thu",
+		"title": "Munich Thursday Meetup",
+		"date": "2026-11-19",
+		"city": "Munich",
+		"venue": "Fixture Hall",
+		"format": "Meetup",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/m-thu/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Munich Thursday Meetup.",
+		"blurb_en": "Fixture blurb for Munich Thursday Meetup.",
+		"blurb_de": "Fixture-Beschreibung für Munich Thursday Meetup.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "h-fri",
+		"title": "Hamburg Friday Webinar",
+		"date": "2026-11-20",
+		"city": "Hamburg",
+		"venue": "Fixture Hall",
+		"format": "Webinar",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/h-fri/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Hamburg Friday Webinar.",
+		"blurb_en": "Fixture blurb for Hamburg Friday Webinar.",
+		"blurb_de": "Fixture-Beschreibung für Hamburg Friday Webinar.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-sat",
+		"title": "Berlin Saturday Workshop",
+		"date": "2026-11-21",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Workshop",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-sat/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Saturday Workshop.",
+		"blurb_en": "Fixture blurb for Berlin Saturday Workshop.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Saturday Workshop.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-sun",
+		"title": "Berlin Sunday Meetup",
+		"date": "2026-11-22",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Meetup",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-sun/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Sunday Meetup.",
+		"blurb_en": "Fixture blurb for Berlin Sunday Meetup.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Sunday Meetup.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-sun-span",
+		"title": "Berlin Weekend Spanning",
+		"date": "2026-11-22",
+		"endDate": "2026-11-24",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Conference",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-sun-span/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Weekend Spanning.",
+		"blurb_en": "Fixture blurb for Berlin Weekend Spanning.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Weekend Spanning.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-mon",
+		"title": "Berlin Next Monday",
+		"date": "2026-11-23",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Meetup",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-mon/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Next Monday.",
+		"blurb_en": "Fixture blurb for Berlin Next Monday.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Next Monday.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "m-next",
+		"title": "Munich Next Week",
+		"date": "2026-11-24",
+		"city": "Garching (Munich)",
+		"venue": "Fixture Hall",
+		"format": "Workshop",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/m-next/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Munich Next Week.",
+		"blurb_en": "Fixture blurb for Munich Next Week.",
+		"blurb_de": "Fixture-Beschreibung für Munich Next Week.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-thu",
+		"title": "Berlin Next Thursday",
+		"date": "2026-11-26",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Conference",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-thu/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin Next Thursday.",
+		"blurb_en": "Fixture blurb for Berlin Next Thursday.",
+		"blurb_de": "Fixture-Beschreibung für Berlin Next Thursday.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "f-nov30",
+		"title": "Frankfurt Month End",
+		"date": "2026-11-30",
+		"city": "Frankfurt",
+		"venue": "Fixture Hall",
+		"format": "Networking",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/f-nov30/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Frankfurt Month End.",
+		"blurb_en": "Fixture blurb for Frankfurt Month End.",
+		"blurb_de": "Fixture-Beschreibung für Frankfurt Month End.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "l-dec",
+		"title": "Leipzig December Meetup",
+		"date": "2026-12-01",
+		"city": "Leipzig",
+		"venue": "Fixture Hall",
+		"format": "Meetup",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/l-dec/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Leipzig December Meetup.",
+		"blurb_en": "Fixture blurb for Leipzig December Meetup.",
+		"blurb_de": "Fixture-Beschreibung für Leipzig December Meetup.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "b-dec",
+		"title": "Berlin December Summit",
+		"date": "2026-12-03",
+		"city": "Berlin",
+		"venue": "Fixture Hall",
+		"format": "Conference",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/b-dec/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Berlin December Summit.",
+		"blurb_en": "Fixture blurb for Berlin December Summit.",
+		"blurb_de": "Fixture-Beschreibung für Berlin December Summit.",
+		"firstSeen": "2026-11-01"
+	},
+	{
+		"id": "o-dec",
+		"title": "Online December Webinar",
+		"date": "2026-12-10",
+		"city": "Online (DE)",
+		"venue": "Fixture Hall",
+		"format": "Webinar",
+		"topics": [
+			"AI"
+		],
+		"organiser": "Fixture Org",
+		"cost": "Free",
+		"url": "https://example.org/o-dec/",
+		"source": "fixture",
+		"blurb": "Fixture blurb for Online December Webinar.",
+		"blurb_en": "Fixture blurb for Online December Webinar.",
+		"blurb_de": "Fixture-Beschreibung für Online December Webinar.",
+		"firstSeen": "2026-11-01"
+	}
+]

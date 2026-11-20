@@ -23,7 +23,8 @@
     "pipeline:enrich-local": "node pipeline/enrich-local.mjs",
     "pipeline:backfill-de": "node pipeline/backfill-blurbs.mjs",
     "pipeline:apply": "node pipeline/apply.mjs",
-    "test": "node --test \"pipeline/test/*.test.mjs\""
+    "test": "node --test \"pipeline/test/*.test.mjs\"",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
@@ -34,6 +35,7 @@
     "esbuild": true
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "ical.js": "^2.2.1"
   },
   "private": true

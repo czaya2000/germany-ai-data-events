@@ -16,6 +16,11 @@ work/
 # raw HTTP bodies cached for conditional GET (never committed)
 data/cache/http/
 
+# Playwright e2e output and the fixture build
+test-results/
+playwright-report/
+dist-e2e/
+
 # environment variables
 .env
 .env.*

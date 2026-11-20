@@ -113,6 +113,12 @@ const formats = ['Conference', 'Meetup', 'Workshop', 'Webinar', 'Networking'];
 		// Validation messages in the page language (the browser's own wording follows its UI language).
 		(function () {
 			var m = JSON.parse(document.getElementById('invalid-strings').textContent);
+			// The end date cannot be before the start date.
+			var start = document.querySelector('#submit-form input[name="start_date"]');
+			var end = document.querySelector('#submit-form input[name="end_date"]');
+			start.addEventListener('input', function () {
+				end.min = start.value;
+			});
 			document.querySelectorAll('#submit-form input, #submit-form select, #submit-form textarea').forEach(function (el) {
 				el.addEventListener('invalid', function () {
 					var v = el.validity;
@@ -120,6 +126,7 @@ const formats = ['Conference', 'Meetup', 'Workshop', 'Webinar', 'Networking'];
 					if (v.valueMissing) msg = el.type === 'date' ? m.date : el.tagName === 'SELECT' ? m.choose : m.required;
 					else if (v.typeMismatch) msg = el.type === 'email' ? m.email : m.url;
 					else if (v.badInput) msg = m.date;
+					else if (v.rangeUnderflow) msg = m.endBeforeStart;
 					el.setCustomValidity(msg);
 				});
 				el.addEventListener('input', function () {

@@ -155,7 +155,12 @@ const strings = {
 			city,
 			cities.length === 1 ? slugify(cities[0]) : cities.length === 0 ? preset?.calCity || '' : '',
 		);
-		setIfPresent(format, slugify(params.get('format') || '') || preset?.calFormat || '');
+		// A feed follows one format at most: with several ticked, pick none rather than the first.
+		const formats = params.getAll('format').filter(Boolean);
+		setIfPresent(
+			format,
+			formats.length === 1 ? slugify(formats[0]) : formats.length === 0 ? preset?.calFormat || '' : '',
+		);
 	}
 
 	document.querySelectorAll<HTMLElement>('[data-cal-open]').forEach((btn) => {
