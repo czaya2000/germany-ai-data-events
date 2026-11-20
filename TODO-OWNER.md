@@ -52,3 +52,10 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 15. Monday Buttondown digest draft step: a commented stub is in `.github/workflows/daily-refresh.yml`. Enable it after creating the newsletter and adding secret `BUTTONDOWN_API_KEY`.
 16. Weekly discovery agent, Playwright scrape sources, newsletter tag setup.
+
+## Languages
+
+12. **[[TODO: Produktname]]**: the product name "German AI & Data Events" (`SITE_NAME`) is shown in English in both languages for now. Decide whether the German site gets a German name; change it in `config/country.mjs`.
+13. **Buttondown**: the signup form now also sends a tag `lang-de` or `lang-en` (the language of the page the reader signed up on). Buttondown creates unknown tags itself. The digest (`scripts/build-digest.mjs`) does not use them yet: it is still English and links to the German event pages; a German digest is a separate step.
+14. **Legal pages**: `/impressum/` and `/datenschutz/` are German skeletons (the old `/privacy/` redirects to `/datenschutz/`). The `[[TODO]]` values are unchanged and still yours to supply; English pages link to them with "(in German)".
+15. **German wording**: the German UI text (`src/i18n/de.ts`) uses the formal "Sie" only where a sentence addresses the reader. Have a native speaker read it once before go-live.

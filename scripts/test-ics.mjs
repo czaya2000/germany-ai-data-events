@@ -104,6 +104,23 @@ if (missing.length) fail(`modal offers feeds with no file: ${missing.join(', ')}
 	if (uidOf(before) !== eventUid(before.id)) fail('UID is not built from the event id');
 }
 
+// The English feeds (/en/calendar/) have the same files and the same UIDs as the German ones, with English text.
+{
+	const enDir = new URL('dist/en/calendar/', root);
+	const enFiles = readdirSync(enDir).filter((f) => f.endsWith('.ics')).sort();
+	if (enFiles.join() !== files.join()) fail('/en/calendar/ has different feed files than /calendar/');
+	const uids = (text) => [...text.matchAll(/^UID:(.*)$/gm)].map((m) => m[1]).sort().join();
+	for (const file of enFiles) {
+		const de = readFileSync(new URL(file, dir), 'utf8');
+		const en = readFileSync(new URL(file, enDir), 'utf8');
+		if (uids(de) !== uids(en)) fail(`${file}: German and English feed have different UIDs`);
+		if (/Veranstalter:|Details und Anmeldung:/.test(en)) fail(`${file}: German text in the English feed`);
+		if (/Organiser: |Details and registration:/.test(de)) fail(`${file}: English text in the German feed`);
+		if (!de.includes('/events/') || en.includes(`${SITE_URL}/events/`)) fail(`${file}: event links are not in the feed's language`);
+	}
+	console.log(`${enFiles.length} English feed files match the German ones`);
+}
+
 if (failures) {
 	console.error(`\n${failures} problem(s).`);
 	process.exit(1);

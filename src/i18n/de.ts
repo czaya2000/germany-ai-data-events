@@ -1,0 +1,365 @@
+/* Deutsche UI-Texte. Typed as the same `Messages` as en.ts: a key missing
+   here is a type error. Tone: neutral and plain, formal "Sie" only where a
+   sentence has to address the reader. The product name stays English for now
+   (TODO-OWNER.md: [[TODO: Produktname]]). */
+import type { Messages } from './en.ts';
+
+export const de: Messages = {
+	site: {
+		tagline:
+			'Anstehende KI- und Daten-Events in ganz Deutschland: Konferenzen, Meetups und Workshops an einem Ort, täglich mit der Seite des Veranstalters abgeglichen.',
+		headline: 'KI- und Daten-Events in ganz Deutschland entdecken',
+		subheadline: 'Konferenzen, Meetups und Workshops an einem Ort, täglich geprüft.',
+		scope: (name: string) =>
+			`${name} ist eine kuratierte Liste anstehender KI- und Daten-Events in Deutschland: ` +
+			'Meetups, Konferenzen, Workshops, Networking-Abende und Webinare zu Machine Learning, generativer KI, ' +
+			'Data Engineering, Analytics, Datenplattformen (Databricks, Snowflake, Microsoft Fabric), Data Governance und angewandter KI. ' +
+			'Jeder Eintrag verweist auf die Seite des Veranstalters, die Liste wird täglich aktualisiert. ' +
+			'Die Anmeldung läuft immer über die Seite des Veranstalters.',
+		homeTitle: (name: string) => `${name} – KI- und Daten-Events in ganz Deutschland`,
+		countryName: 'Deutschland',
+		feedTitle: (name: string) => `${name}: anstehende KI- und Daten-Events in Deutschland`,
+	},
+
+	placeNames: {
+		'Online (DE)': 'Online',
+		'Other Germany': 'Übrige Orte',
+		Munich: 'München',
+		Cologne: 'Köln',
+		Nuremberg: 'Nürnberg',
+		Hanover: 'Hannover',
+	},
+
+	base: {
+		rssTitle: 'anstehende Events',
+		jsonTitle: 'Events (JSON)',
+	},
+
+	nav: {
+		home: 'Startseite',
+		calendarOpen: 'Kalender abonnieren',
+		contact: 'Kontakt',
+		linkedin: 'Auf LinkedIn vernetzen',
+		langSwitch: 'Sprache',
+		langName: { de: 'Deutsch', en: 'English' },
+	},
+
+	footer: {
+		backToAll: 'Zurück zu allen Events',
+		dataFeeds: 'Daten & Feeds',
+		dataFeedsSuffix: ' für Apps und KI-Agenten',
+		privacy: 'Datenschutz',
+		impressum: 'Impressum',
+		inGerman: '',
+		germanOnly: (name: string) => `${name} – nur Deutschland, vorerst mit Fokus auf KI und Daten.`,
+		submit: 'Event einreichen',
+		weeklyDigest: 'Wöchentlicher Newsletter',
+		sponsor: 'Sie wollen Entscheider im Datenbereich erreichen? Kontakt aufnehmen',
+		linksAria: 'Website',
+	},
+
+	listing: {
+		search: 'Suchen',
+		searchPlaceholder: 'Titel, Veranstalter, Thema suchen…',
+		city: 'Stadt',
+		format: 'Format',
+		cities: 'Städte',
+		formats: 'Formate',
+		clear: 'Zurücksetzen',
+		saveCal: 'Kalender abonnieren',
+		timeRange: 'Zeitraum',
+		all: 'Alle',
+		thisWeek: 'Diese Woche',
+		thisMonth: 'Dieser Monat',
+		breadcrumb: 'Brotkrumennavigation',
+		allEvents: 'Alle Events',
+		newSr: '(neu)',
+		through: (day: number, month: string) => `bis ${day}. ${month}`,
+		countOne: '1 Event',
+		countMany: '{n} Events',
+		shown: 'angezeigt',
+		lastScanned: (when: string) => `Zuletzt geprüft: ${when}.`,
+		browseAria: 'Events nach Stadt und Format durchsuchen',
+		byCity: 'Nach Stadt',
+		otherCities: 'Weitere Städte',
+		byType: 'Nach Format',
+		otherTypes: 'Weitere Formate',
+		digestDefault: 'Jeden Montag die Events der nächsten zwei Wochen im Postfach.',
+		digestOnline: 'Jeden Montag die Online-Events der nächsten zwei Wochen im Postfach.',
+		digestCity: (label: string) => `Jeden Montag die Events der nächsten zwei Wochen in ${label} im Postfach.`,
+		digestFormat: (many: string) => `Jeden Montag die ${many} der nächsten zwei Wochen im Postfach.`,
+		emptyHub: (many: string, where: string) =>
+			`Derzeit keine anstehenden ${many} ${where}. Der wöchentliche Newsletter meldet, wenn eines dazukommt.`,
+		emptyAll:
+			'Noch keine Events gelistet. Die Liste füllt sich nach der nächsten täglichen Aktualisierung; der wöchentliche Newsletter meldet, wenn es so weit ist.',
+		emptyFiltered: 'Keine Events passen zu diesen Filtern.',
+	},
+
+	hub: {
+		h1City: (label: string) => `KI- und Daten-Events in ${label}`,
+		h1Online: 'Online-Events zu KI und Daten in Deutschland',
+		h1Other: 'KI- und Daten-Events in weiteren deutschen Städten',
+		h1Format: (plural: string) => `KI- und Daten-${plural} in Deutschland`,
+		whereCity: (label: string) => `in ${label}`,
+		whereOnline: 'online',
+		whereOther: 'in weiteren deutschen Städten',
+		whereFormat: 'in ganz Deutschland',
+		noneNow: (many: string, where: string) => `Derzeit keine anstehenden ${many} ${where}.`,
+		subCity: (n: number, noun: string, where: string) =>
+			`${n} ${noun} ${where}: Konferenzen, Meetups und Workshops, täglich geprüft.`,
+		subFormat: (n: number, noun: string, where: string) => `${n} ${noun} ${where}, täglich geprüft.`,
+		cityNoun: ['anstehendes Event', 'anstehende Events'],
+		intro: (nearby: string) => `Diese Seite umfasst auch ${nearby}.`,
+		metaCity: (where: string) =>
+			`Anstehende KI- und Daten-Events ${where}: Konferenzen, Meetups und Workshops, täglich mit der Seite des Veranstalters abgeglichen.`,
+		metaFormat: (many: string) =>
+			`Anstehende KI- und Daten-${many} in ganz Deutschland, jeweils täglich mit der Seite des Veranstalters abgeglichen.`,
+		nearby: {
+			berlin: 'Potsdam',
+			munich: 'Garching und Ingolstadt',
+			hamburg: 'Norderstedt',
+			frankfurt: 'Darmstadt, Mainz, Wiesbaden, Königstein und Kaiserslautern',
+			cologne: 'Bonn, Düsseldorf, Duisburg und Königswinter',
+			stuttgart: 'Tübingen und Ludwigsburg',
+			online: '',
+			'other-germany': 'Leipzig, Dresden, Nürnberg, Karlsruhe, Heidelberg, Münster, Ulm, Kassel und weitere Orte',
+		},
+		formats: {
+			Meetup: { label: 'Meetup', plural: 'Meetups', one: 'Meetup', many: 'Meetups', link: 'Meetups', upOne: 'anstehendes Meetup', upMany: 'anstehende Meetups' },
+			Conference: { label: 'Konferenz', plural: 'Konferenzen', one: 'Konferenz', many: 'Konferenzen', link: 'Konferenzen', upOne: 'anstehende Konferenz', upMany: 'anstehende Konferenzen' },
+			Workshop: { label: 'Workshop', plural: 'Workshops', one: 'Workshop', many: 'Workshops', link: 'Workshops', upOne: 'anstehender Workshop', upMany: 'anstehende Workshops' },
+			Networking: { label: 'Networking', plural: 'Networking-Events', one: 'Networking-Event', many: 'Networking-Events', link: 'Networking', upOne: 'anstehendes Networking-Event', upMany: 'anstehende Networking-Events' },
+			Webinar: { label: 'Webinar', plural: 'Webinare', one: 'Webinar', many: 'Webinare', link: 'Webinare', upOne: 'anstehendes Webinar', upMany: 'anstehende Webinare' },
+		},
+	},
+
+	event: {
+		pastPrefix: 'Vergangenes Event: ',
+		pastDescription: (date: string, where: string, format: string, blurb: string) =>
+			`Dieses Event fand am ${date} statt · ${where} · ${format}. ${blurb}`,
+		allEvents: '← Alle Events',
+		onlineEvents: 'Online-Events',
+		eventsIn: (label: string) => `Events in ${label}`,
+		breadcrumb: 'Brotkrumennavigation',
+		endedTitle: 'Dieses Event ist vorbei.',
+		endedNote: (date: string) => `Es fand am ${date} statt. Die Angaben unten bleiben zur Orientierung stehen.`,
+		dates: 'Datum',
+		time: 'Uhrzeit',
+		city: 'Stadt',
+		venue: 'Ort',
+		organiser: 'Veranstalter',
+		format: 'Format',
+		cost: 'Kosten',
+		topics: 'Themen',
+		verifiedVia: 'Geprüft über',
+		registerTitle: 'Beim Veranstalter anmelden',
+		registerNote: (source: string) =>
+			`Die Anmeldung läuft über ${source}. Wir verkaufen keine Tickets und erhalten keine Provision.`,
+		goTo: (source: string) => `Weiter zu ${source} ↗`,
+		disclosure: (name: string) =>
+			`Jeder Eintrag bei ${name} wird vor der Veröffentlichung mit der ursprünglichen Quelle abgeglichen. Angaben können sich beim Veranstalter ändern – bitte vor dem Besuch über den Link oben prüfen.`,
+		upcomingIn: (city: string) => `Demnächst in ${city}`,
+		upcomingEvents: 'Anstehende Events',
+		seeAllUpcoming: 'Alle anstehenden Events ansehen',
+	},
+
+	subscribe: {
+		defaultNote: 'Jeden Montag die Events der nächsten zwei Wochen im Postfach.',
+		emailLabel: 'E-Mail-Adresse',
+		emailPlaceholder: 'name@firma.de',
+		open: 'Newsletter abonnieren',
+		dialogTitle: 'Ihr wöchentlicher Newsletter',
+		close: 'Schließen',
+		intro: 'Städte und Formate auswählen – oder leer lassen, um alles zu erhalten.',
+		cities: 'Städte',
+		types: 'Formate',
+		submit: 'Abonnieren',
+		confirmBefore: 'Wir senden eine Bestätigungs-E-Mail an ',
+		confirmAfter: '.',
+	},
+
+	calendar: {
+		title: 'Kalender abonnieren',
+		close: 'Schließen',
+		intro: 'Einmal abonnieren – neue Events, die zu Ihrer Auswahl passen, erscheinen automatisch im Kalender.',
+		city: 'Stadt',
+		allCities: 'Alle Städte',
+		format: 'Format',
+		allFormats: 'Alle Formate',
+		google: 'Google Kalender',
+		apple: 'Apple / andere Apps',
+		outlook: 'Outlook.com',
+		office: 'Microsoft 365',
+		linkLabel: 'Kalender-Link',
+		copy: 'Link kopieren',
+		copied: 'Kopiert',
+		pressCtrlC: 'Strg+C drücken',
+		note: 'Der Kalender aktualisiert sich automatisch. Google kann bis zu 24 Stunden brauchen, bis Änderungen erscheinen.',
+		none: 'Keine anstehenden Events passen dazu. Versuchen Sie „Alle“ bei einem der Filter.',
+		one: '1 anstehendes Event passt',
+		many: '{n} anstehende Events passen',
+		feedName: (site: string, parts: string[]) => [site, ...parts].join(' – '),
+	},
+
+	ics: {
+		calDesc: (country: string, host: string) => `Anstehende KI- und Daten-Events in ${country}, von ${host}`,
+		runsUntil: (date: string) => `Läuft bis ${date} – die Termine der einzelnen Sitzungen stehen auf der Event-Seite.`,
+		organiser: (name: string) => `Veranstalter: ${name}`,
+		details: (url: string) => `Details und Anmeldung: ${url}`,
+		online: 'Online',
+	},
+
+	submit: {
+		title: (name: string) => `Event einreichen – ${name}`,
+		description:
+			'Sie organisieren ein KI- oder Daten-Event in Deutschland? Reichen Sie es ein – jeder Eintrag wird vor der Veröffentlichung mit der Seite des Veranstalters abgeglichen.',
+		h1: 'Event einreichen',
+		intro:
+			'Sie organisieren ein KI- oder Daten-Event in Deutschland? Reichen Sie es ein. Der Eintrag ist kostenlos. Jedes Event wird vor der Veröffentlichung mit der ursprünglichen Seite abgeglichen – bitte verlinken Sie deshalb die Seite, auf der man sich tatsächlich anmeldet.',
+		scope:
+			'Was passt: Konferenzen, Meetups, Workshops, Webinare und Networking-Events für Fachleute aus KI und Daten, die in Deutschland stattfinden oder von einem deutschen Veranstalter ausgerichtet werden. Was nicht passt: allgemeines Business-Networking, weltweit ausgespielte Webinare und Verkaufsveranstaltungen ohne echtes Programm.',
+		subject: (name: string) => `Event-Einreichung – ${name}`,
+		legendEvent: 'Das Event',
+		legendYou: 'Über Sie',
+		eventTitle: 'Titel des Events',
+		startDate: 'Startdatum',
+		endDate: 'Enddatum',
+		endDateHint: '(bei mehrtägigen Events)',
+		city: 'Stadt',
+		cityPlaceholder: 'Berlin, München, Online…',
+		venue: 'Veranstaltungsort',
+		optional: '(optional)',
+		format: 'Format',
+		choose: 'Bitte wählen…',
+		cost: 'Kosten',
+		costPlaceholder: 'Kostenlos, 150 €, …',
+		url: 'Link zur Anmeldeseite',
+		blurb: 'Kurzbeschreibung in einem Absatz',
+		blurbHint: '(worum es geht, für wen)',
+		organiser: 'Veranstalter',
+		name: 'Ihr Name',
+		email: 'E-Mail',
+		featured:
+			'Ich interessiere mich für eine hervorgehobene Platzierung oder den wöchentlichen Newsletter für dieses Event – bitte melden Sie sich.',
+		send: 'Zur Prüfung senden',
+		invalid: {
+			required: 'Bitte füllen Sie dieses Feld aus.',
+			email: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+			url: 'Bitte geben Sie eine vollständige Web-Adresse ein, die mit https:// beginnt.',
+			date: 'Bitte wählen Sie ein Datum.',
+			choose: 'Bitte wählen Sie eine Option.',
+		},
+		thanksTitle: (name: string) => `Event erhalten – ${name}`,
+		thanksDescription: 'Danke für das Einreichen eines Events.',
+		thanksH1: 'Danke – angekommen.',
+		thanksText:
+			'Ich prüfe jede Einreichung anhand der ursprünglichen Seite, bevor sie online geht, meist innerhalb weniger Tage. Sie hören in jedem Fall von mir.',
+	},
+
+	contact: {
+		title: (name: string) => `Kontakt – ${name}`,
+		description: 'Ein Event vorschlagen, eine falsche Angabe melden oder einfach Hallo sagen.',
+		h1: 'Kontakt',
+		introBefore:
+			'Ein falsches Datum entdeckt, ein Event, das gelistet werden sollte, oder einfach eine Nachricht? Schreiben Sie mir – sie landet direkt in meinem Postfach. Veranstalter: Für neue Events gibt es ein ',
+		introLink: 'eigenes Formular',
+		introAfter: '.',
+		introSponsor:
+			'Sie möchten Ihr Unternehmen, Produkt oder Ihre Konferenz vor Entscheidern aus Daten und KI in Deutschland platzieren? Schreiben Sie kurz, was Sie vorhaben, und ich melde mich mit den Möglichkeiten – hervorgehobene Einträge, ein Platz im wöchentlichen Newsletter oder etwas, woran wir noch nicht gedacht haben.',
+		subject: (name: string) => `Neue Nachricht von ${name}`,
+		subjectSponsor: (name: string) => `Sponsoring-Anfrage – ${name}`,
+		name: 'Name',
+		email: 'E-Mail',
+		message: 'Nachricht',
+		send: 'Nachricht senden',
+		linkedinBefore: 'Lieber über LinkedIn? ',
+		linkedinLink: 'Dort vernetzen',
+		linkedinAfter: '.',
+		thanksTitle: (name: string) => `Nachricht gesendet – ${name}`,
+		thanksDescription: 'Danke für Ihre Nachricht.',
+		thanksH1: 'Danke – Nachricht gesendet.',
+		thanksText: 'Ich melde mich so bald wie möglich.',
+	},
+
+	thanks: {
+		backToAll: '← Zurück zu allen Events',
+		seeAll: 'Alle Events ansehen →',
+		inboxTitle: (name: string) => `Bitte Postfach prüfen – ${name}`,
+		inboxDescription: 'Bestätigen Sie Ihr Abonnement des wöchentlichen Newsletters.',
+		inboxH1: 'Bitte Postfach prüfen.',
+		inboxText:
+			'Wir haben Ihnen eine Bestätigungs-E-Mail geschickt. Mit dem Klick auf den Link darin sind Sie angemeldet. Der Newsletter erscheint montagmorgens, und jede E-Mail enthält einen Link, um Städte und Formate zu ändern.',
+		confirmedTitle: (name: string) => `Abonniert – ${name}`,
+		confirmedDescription: 'Ihr Abonnement des wöchentlichen Newsletters ist bestätigt.',
+		confirmedH1: 'Sie sind dabei.',
+		confirmedText:
+			'Der erste Newsletter kommt am Montagmorgen: die Events der nächsten zwei Wochen und alle Neuzugänge. Jede E-Mail enthält einen Link, um Städte und Formate zu ändern.',
+	},
+
+	notFound: {
+		title: (name: string) => `Seite nicht gefunden – ${name}`,
+		description: 'Diese Seite gibt es nicht. Alle anstehenden KI- und Daten-Events in Deutschland ansehen.',
+		h1: 'Seite nicht gefunden.',
+		text: 'Unter dieser Adresse gibt es nichts. Vielleicht wurde das Event umbenannt oder der Link enthält einen Tippfehler.',
+		seeAll: 'Alle anstehenden Events ansehen',
+		orCity: 'Oder direkt zu einer Stadt: ',
+	},
+
+	data: {
+		title: (name: string) => `Daten & Feeds – ${name}`,
+		description: (name: string) =>
+			`Die Event-Liste von ${name} als JSON, RSS, iCalendar und einfaches Markdown (llms.txt), für Apps, Feed-Reader und KI-Agenten.`,
+		h1: 'Daten & Feeds',
+		intro: (name: string) =>
+			`Die Event-Liste darf frei in Apps, Newslettern, Kalendern und KI-Assistenten verwendet werden. Alles unten wird täglich mit der Website neu erzeugt, aus denselben Daten. Enthalten sind nur anstehende Events: Ein Event verlässt die Liste am Tag nach seinem Ende. Bitte verlinken Sie bei der Weiterverwendung die Event-Seite bei ${name}.`,
+		endpoints: 'Schnittstellen',
+		eventsJson: ': alle anstehenden Events als JSON.',
+		rss: ': RSS-Feed auf Deutsch, neueste Einträge zuerst.',
+		rssEn: ': RSS-Feed auf Englisch.',
+		llms: ': kurzer Markdown-Leitfaden für KI-Agenten, mit Links zu den folgenden Listen.',
+		llmsFull: ': alle anstehenden Events als Markdown, eine Zeile pro Event.',
+		mdLists: 'Eine Markdown-Liste pro Stadt und Format, unter der englischen Adresse der Seite mit ',
+		ics: ': iCalendar-Feed zum Abonnieren, mit deutschen Texten. Die englische Version: ',
+		calendarFeeds: 'Kalender-Feeds',
+		calendarIntro:
+			'Per URL abonnieren in Google Kalender, Outlook oder Apple Kalender. Alle Zeiten gelten in Europe/Berlin.',
+		allEvents: 'Alle Events',
+		fieldsIn: 'Felder in ',
+		notes: 'Hinweise',
+		fields: [
+			['id', 'Stabile Kennung. Ändert sich nie, auch wenn Titel oder Datum korrigiert werden.'],
+			['title', 'Name des Events, wie der Veranstalter ihn angibt.'],
+			['start, end', 'ISO 8601. Datum mit Uhrzeit und Berliner Offset (z. B. 2026-10-29T17:30:00+01:00), wenn die Uhrzeit bekannt ist, sonst nur das Datum.'],
+			['allDay', 'Wahr, wenn start und end reine Datumsangaben sind.'],
+			['dateLabel, time', 'Lesbarer Datumsbereich und die ursprüngliche Uhrzeit-Angabe.'],
+			['city, region', 'Der genaue Ort und die Hauptstadt, zu der er gehört (z. B. Garching → Munich).'],
+			['online', 'Wahr bei reinen Online-Events.'],
+			['venue', 'Name des Veranstaltungsorts oder null.'],
+			['format', 'Eines von Meetup, Conference, Workshop, Networking, Webinar.'],
+			['topics', 'Kurze Themen-Tags.'],
+			['cost, free', 'Preis wie veröffentlicht und ob das Event kostenlos ist.'],
+			['organiser', 'Wer das Event ausrichtet.'],
+			['description', 'Von uns geschriebene Ein-Satz-Zusammenfassung (Englisch; identisch mit blurb_en).'],
+			['blurb_en, blurb_de', 'Dieselbe Zusammenfassung auf Englisch und Deutsch (blurb_de ist null, solange sie nicht geschrieben ist).'],
+			['url', 'Die Event-Seite auf dieser Website.'],
+			['registrationUrl', 'Die Seite des Veranstalters, auf der man sich anmeldet.'],
+			['verifiedVia', 'Wo die Angaben geprüft wurden.'],
+			['firstSeen', 'Datum, an dem das Event hier zum ersten Mal gelistet wurde.'],
+			['calendarFeed', 'iCalendar-Feed für die Stadt des Events.'],
+		],
+		note1:
+			'Jeder Eintrag wird mit der Seite des Veranstalters abgeglichen, doch Angaben können sich dort ändern. Verweisen Sie deshalb vor dem Besuch auf die Seite des Veranstalters. Es können Felder hinzukommen; bestehende werden nicht umbenannt oder entfernt, ohne dass sich ',
+		note1After: ' ändert.',
+		note2a: 'Eine Reihe oder ein Kurs mit mehreren Terminen ist ein Eintrag: ',
+		note2b: ' ist der erste Tag, ',
+		note2c: ' der letzte, und ',
+		note2d: ' gilt für jede Sitzung. Die einzelnen Termine stehen auf der Seite des Veranstalters.',
+		note3a: ' in ',
+		note3b: ' und die ersten Zeilen der Markdown-Dateien geben an, wann die Liste zuletzt geprüft wurde. Liegt das mehr als zwei Tage zurück, haben Sie eine zwischengespeicherte Kopie.',
+		note4: 'JSON, Markdown und RSS sind sprachneutral, sofern nicht anders angegeben: Feldwerte sind englisch, die deutsche Zusammenfassung steht in blurb_de.',
+	},
+
+	jsonld: {
+		areaServed: 'Deutschland',
+	},
+};

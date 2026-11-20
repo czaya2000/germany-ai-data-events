@@ -1,5 +1,7 @@
-import { SITE_NAME, SITE_URL, cityGroup, compareCities, eventUrl, type EventEntry } from './events';
+import { SITE_NAME, SITE_URL, cityGroup, compareCities, eventUrl, blurbFor, type EventEntry } from './events';
 import type { IcsEvent } from './ics';
+import { t, displayCity, formatLabel, type Locale } from '../i18n';
+import { LOCALE_PREFIX } from '../i18n/paths.mjs';
 
 /* One calendar feed per filter combination: all events, each city, each
    format, and each non-empty city × format pair. Built at `astro build`
@@ -33,15 +35,16 @@ export function feedSlug(city: string, format: string): string {
 	return [city, format].filter(Boolean).join('__') || 'all';
 }
 
-export function feedPath(slug: string): string {
-	return `/calendar/${slug}.ics`;
+/** Site path of a feed: German text at /calendar/, English text at /en/calendar/ (same file names, same UIDs). */
+export function feedPath(slug: string, locale: Locale = 'de'): string {
+	return `${LOCALE_PREFIX[locale]}/calendar/${slug}.ics`;
 }
 
-export function feedHttpsUrl(slug: string): string {
-	return `${SITE_URL}${feedPath(slug)}`;
+export function feedHttpsUrl(slug: string, locale: Locale = 'de'): string {
+	return `${SITE_URL}${feedPath(slug, locale)}`;
 }
 
-export function toIcsEvent(e: EventEntry): IcsEvent {
+export function toIcsEvent(e: EventEntry, locale: Locale = 'en'): IcsEvent {
 	return {
 		id: e.id,
 		title: e.data.title,
@@ -51,24 +54,27 @@ export function toIcsEvent(e: EventEntry): IcsEvent {
 		city: e.data.city,
 		venue: e.data.venue,
 		organiser: e.data.organiser,
-		blurb: e.data.blurb,
-		pageUrl: eventUrl(e.id),
+		blurb: blurbFor(e.data, locale).text,
+		pageUrl: eventUrl(e.id, locale),
 	};
 }
 
-function options(values: string[], compare?: (a: string, b: string) => number): FeedOption[] {
-	return [...new Set(values)].sort(compare).map((label) => ({ slug: slugify(label), label }));
+/** Slugs come from the stored (English) value, labels are shown in the page language. */
+function options(values: string[], toLabel: (v: string) => string, compare?: (a: string, b: string) => number): FeedOption[] {
+	return [...new Set(values)]
+		.map((v) => ({ slug: slugify(v), label: toLabel(v) }))
+		.sort((a, b) => (compare ? compare(a.label, b.label) : a.label.localeCompare(b.label)));
 }
 
-export function feedOptions(events: EventEntry[]) {
+export function feedOptions(events: EventEntry[], locale: Locale = 'en') {
 	return {
-		cities: options(events.map((e) => cityGroup(e.data.city)), compareCities),
-		formats: options(events.map((e) => e.data.format)),
+		cities: options(events.map((e) => cityGroup(e.data.city)), (v) => displayCity(v, locale), compareCities),
+		formats: options(events.map((e) => e.data.format), (v) => formatLabel(v, locale)),
 	};
 }
 
-export function listFeeds(events: EventEntry[]): Feed[] {
-	const { cities, formats } = feedOptions(events);
+export function listFeeds(events: EventEntry[], locale: Locale = 'en'): Feed[] {
+	const { cities, formats } = feedOptions(events, locale);
 	const cityChoices = [{ slug: '', label: '' }, ...cities];
 	const formatChoices = [{ slug: '', label: '' }, ...formats];
 	const feeds: Feed[] = [];
@@ -88,7 +94,7 @@ export function listFeeds(events: EventEntry[]): Feed[] {
 			seen.add(slug);
 			feeds.push({
 				slug,
-				name: [SITE_NAME, c.label, f.label].filter(Boolean).join(' – '),
+				name: t(locale).calendar.feedName(SITE_NAME, [c.label, f.label].filter(Boolean)),
 				city: c.slug,
 				format: f.slug,
 				events: matching,

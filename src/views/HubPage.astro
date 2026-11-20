@@ -1,0 +1,88 @@
+---
+/* City and event-type pages: /berlin/, /konferenzen/ (German) and /en/berlin/,
+   /en/conferences/ (English). One page per hub in src/lib/hubs.mjs and
+   language, each a pre-filtered copy of the home listing with its own
+   headline and text. A hub with too few events stays reachable but is
+   noindex (and astro.config.mjs keeps it out of the sitemap). */
+import Base from '../layouts/Base.astro';
+import Listing from '../components/Listing.astro';
+import { getUpcomingEvents, eventUrl, SITE_URL, SITE_NAME } from '../lib/events';
+import { HUBS, HUB_MIN_EVENTS } from '../lib/hubs.mjs';
+import { hubMarkdownPath } from '../lib/public-data';
+import { t, hubText, type Locale } from '../i18n';
+import { hubPath, LOCALE_PREFIX } from '../i18n/paths.mjs';
+
+interface Props {
+	locale: Locale;
+	hub: (typeof HUBS)[number];
+}
+const { locale, hub } = Astro.props;
+const s = t(locale).hub;
+const words = hubText(hub, locale);
+const entries = (await getUpcomingEvents()).filter((e) => hub.matches(e.data));
+const n = entries.length;
+
+// Headline count line. Cities name the kinds of event; types name the country.
+const noun = n === 1 ? words.one : words.many;
+const subheadline =
+	n === 0
+		? s.noneNow(words.plainMany, words.where)
+		: hub.kind === 'city'
+			? s.subCity(n, noun, words.where)
+			: s.subFormat(n, noun, words.where);
+
+// Second line: fixed text only (which nearby places a city page covers).
+// Nothing here is generated from the events, so it reads the same every day.
+const intro = hub.kind === 'city' && words.nearby ? s.intro(words.nearby) : undefined;
+
+const title = `${words.h1} | ${SITE_NAME}`;
+const description =
+	hub.kind === 'city' ? s.metaCity(words.where) : s.metaFormat(words.plainMany);
+
+const path = hubPath(hub, locale);
+const pageUrl = `${SITE_URL}${LOCALE_PREFIX[locale]}${path}`;
+const homeUrl = `${SITE_URL}${LOCALE_PREFIX[locale]}/`;
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'CollectionPage',
+		name: words.h1,
+		url: pageUrl,
+		description,
+		inLanguage: locale,
+		isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: homeUrl },
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		inLanguage: locale,
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: SITE_NAME, item: homeUrl },
+			{ '@type': 'ListItem', position: 2, name: words.h1, item: pageUrl },
+		],
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'ItemList',
+		inLanguage: locale,
+		itemListElement: entries.map((e, i) => ({
+			'@type': 'ListItem',
+			position: i + 1,
+			url: eventUrl(e.id, locale),
+			name: e.data.title,
+		})),
+	},
+];
+---
+
+<Base
+	title={title}
+	description={description}
+	locale={locale}
+	path={path}
+	structuredData={structuredData}
+	noindex={n < HUB_MIN_EVENTS}
+	markdown={hubMarkdownPath(hub)}
+>
+	<Listing locale={locale} entries={entries} headline={words.h1} subheadline={subheadline} intro={intro} hub={hub} />
+</Base>

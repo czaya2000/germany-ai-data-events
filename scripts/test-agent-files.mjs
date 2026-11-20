@@ -117,14 +117,17 @@ for (const h of HUBS) {
 	const want = upcoming.filter((e) => h.matches(e)).map((e) => `${SITE}/events/${e.id}/`);
 	sameSet(name, eventUrls(text), want);
 	if (checkFreshness(name, text) !== want.length) fail(`${name}: wrong event count`);
-	if (!text.includes(`Canonical: ${SITE}${h.path}\n`)) fail(`${name}: no Canonical line`);
+	if (!text.includes(`Canonical: ${SITE}/en${h.path}\n`)) fail(`${name}: no Canonical line`);
 	if (text.length > LIST_MAX) fail(`${name}: ${text.length} characters (max ${LIST_MAX})`);
 	longest = Math.max(longest, text.length);
 	checkLinks(name, text);
 	checkHeadings(name, text);
-	const html = read(`${h.slug}/index.html`);
-	if (!html.includes(`<link rel="alternate" type="text/markdown" href="${BASE}/${name}"`)) {
-		fail(`/${h.slug}/: no <link rel="alternate"> to /${name}`);
+	// Both language versions of the page point to the one (English) markdown list.
+	for (const dir of [h.slugDe, `en/${h.slug}`]) {
+		const html = read(`${dir}/index.html`);
+		if (!html.includes(`<link rel="alternate" type="text/markdown" href="${BASE}/${name}"`)) {
+			fail(`/${dir}/: no <link rel="alternate"> to /${name}`);
+		}
 	}
 }
 

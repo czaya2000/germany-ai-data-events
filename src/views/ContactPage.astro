@@ -1,0 +1,130 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { SITE_NAME, SITE_URL, FORM_ENDPOINT, LINKEDIN_URL } from '../lib/events';
+import { t, type Locale } from '../i18n';
+import { localePath, LOCALE_PREFIX } from '../i18n/paths.mjs';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const s = t(locale).contact;
+const title = s.title(SITE_NAME);
+const description = s.description;
+---
+
+<Base title={title} description={description} locale={locale} path="/contact/">
+	<SiteNav locale={locale} path="/contact/" />
+
+	<main class="wrap contact">
+		<h1>{s.h1}</h1>
+		<p class="intro" id="intro-default">
+			{s.introBefore}<a href={localePath('/submit/', locale)}>{s.introLink}</a>{s.introAfter}
+		</p>
+		<p class="intro" id="intro-sponsor" hidden>
+			{s.introSponsor}
+		</p>
+
+		<form action={FORM_ENDPOINT} method="POST" id="contact-form">
+			<input type="hidden" name="_subject" value={s.subject(SITE_NAME)} id="contact-subject" data-sponsor={s.subjectSponsor(SITE_NAME)} />
+			<input type="hidden" name="_next" value={`${SITE_URL}${LOCALE_PREFIX[locale]}/contact/thanks/`} />
+			<input type="hidden" name="_template" value="table" />
+			<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+			<label>
+				{s.name}
+				<input type="text" name="name" required />
+			</label>
+			<label>
+				{s.email}
+				<input type="email" name="email" required />
+			</label>
+			<label>
+				{s.message}
+				<textarea name="message" rows="6" required></textarea>
+			</label>
+
+			<button class="btn accent" type="submit" data-umami-event="Contact sent">{s.send}</button>
+		</form>
+
+		{
+			LINKEDIN_URL && (
+				<p class="alt">
+					{s.linkedinBefore}<a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">{s.linkedinLink}</a>{s.linkedinAfter}
+				</p>
+			)
+		}
+	</main>
+
+	<SiteFooter locale={locale} />
+
+	<script is:inline>
+		// ?topic=sponsor (linked from every footer) swaps the intro copy and
+		// tags the email subject so sponsor enquiries are easy to spot.
+		(function () {
+			var topic = new URLSearchParams(location.search).get('topic');
+			if (topic !== 'sponsor') return;
+			document.getElementById('intro-default').hidden = true;
+			document.getElementById('intro-sponsor').hidden = false;
+			var subject = document.getElementById('contact-subject');
+			subject.value = subject.dataset.sponsor;
+			var form = document.getElementById('contact-form');
+			var t = document.createElement('input');
+			t.type = 'hidden';
+			t.name = 'topic';
+			t.value = 'sponsor';
+			form.appendChild(t);
+		})();
+	</script>
+
+	<style>
+		.contact {
+			padding: 24px 24px 64px;
+			max-width: 560px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 8px;
+			letter-spacing: -0.01em;
+		}
+		.intro {
+			color: var(--muted);
+			margin: 0 0 28px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+			font-size: 0.85rem;
+			font-weight: 600;
+			color: var(--muted);
+		}
+		input,
+		textarea {
+			font: inherit;
+			font-size: 0.95rem;
+			padding: 10px 12px;
+			border-radius: 8px;
+			border: 1px solid var(--border);
+			background: var(--surface);
+			color: var(--ink);
+			resize: vertical;
+		}
+		button {
+			align-self: flex-start;
+			margin-top: 6px;
+		}
+		.alt {
+			margin-top: 32px;
+			font-size: 0.88rem;
+			color: var(--muted);
+		}
+	</style>
+</Base>

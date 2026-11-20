@@ -19,7 +19,9 @@ export {
 	GOOGLE_SITE_VERIFICATION,
 	INDEXABLE,
 } from '../../config/country.mjs';
-import { BASE, SITE_URL, SITE_HOST, TIMEZONE, CURRENCY } from '../../config/country.mjs';
+import { BASE, SITE_URL, SITE_HOST, CURRENCY } from '../../config/country.mjs';
+import { today } from '../i18n/format.ts';
+import type { Locale } from '../i18n/format.ts';
 
 /** Prefix a site path ("/events/x/") with the base path, for href and src. */
 export function withBase(path: string): string {
@@ -76,10 +78,6 @@ export function socialListingUrl(id: string, network: string): string {
 	return `${eventUrl(id)}?utm_source=${network}&utm_medium=social&utm_campaign=autopost`;
 }
 
-export function today(): string {
-	return new Date().toISOString().slice(0, 10);
-}
-
 export function isNew(firstSeen: string, ref = today()): boolean {
 	const ageMs = Date.parse(ref) - Date.parse(firstSeen);
 	return ageMs >= 0 && ageMs <= NEW_WINDOW_DAYS * 24 * 60 * 60 * 1000;
@@ -129,26 +127,6 @@ export function compareCities(a: string, b: string): number {
 	return online(a) - online(b) || a.localeCompare(b);
 }
 
-const WEEKDAY = new Intl.DateTimeFormat('en-US', { weekday: 'short' });
-const MONTH = new Intl.DateTimeFormat('en-US', { month: 'short' });
-const DATE_RANGE_OPTS: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', year: 'numeric' };
-
-export function dateSpine(date: string) {
-	const d = new Date(`${date}T00:00:00`);
-	return {
-		weekday: WEEKDAY.format(d),
-		day: d.getDate(),
-		month: MONTH.format(d),
-	};
-}
-
-export function formatDateRange(date: string, endDate?: string) {
-	const start = new Date(date).toLocaleDateString('en-GB', DATE_RANGE_OPTS);
-	if (!endDate || endDate === date) return start;
-	const end = new Date(endDate).toLocaleDateString('en-GB', DATE_RANGE_OPTS);
-	return `${start} – ${end}`;
-}
-
 /** True only when the event as a whole is free: the cost text starts with
     "Free". "Free for members / EUR 25 guests" and "EUR 5 in person / free
     livestream" are not free events. */
@@ -180,83 +158,31 @@ export function offerFacts(cost: string): {
 	return { ...out, price: m[2].replace(/[,']/g, ''), priceCurrency: currency };
 }
 
-/** "12 Nov 2026", "12–13 Nov 2026" or "30 Nov – 2 Dec 2026": short enough for a page title. */
-export function formatDateCompact(date: string, endDate?: string): string {
-	const part = (iso: string, opts: Intl.DateTimeFormatOptions) =>
-		new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-GB', { ...opts, timeZone: 'UTC' });
-	const full = part(endDate && endDate !== date ? endDate : date, DATE_RANGE_OPTS);
-	if (!endDate || endDate === date) return full;
-	if (date.slice(0, 7) === endDate.slice(0, 7)) return `${Number(date.slice(8))}–${full}`;
-	const start = part(
-		date,
-		date.slice(0, 4) === endDate.slice(0, 4) ? { day: 'numeric', month: 'short' } : DATE_RANGE_OPTS,
-	);
-	return `${start} – ${full}`;
-}
-
 /** The place without the main city in brackets: "Thônex (Geneva)" → "Thônex". */
 export function placeName(city: string): string {
 	return city.replace(/\s*\([^)]*\)\s*$/, '').trim() || city;
 }
 
-export function eventUrl(slug: string): string {
-	return `${SITE_URL}/events/${slug}/`;
+/** Absolute address of an event page. German (the default language, at the root) unless asked otherwise. */
+export function eventUrl(slug: string, locale: Locale = 'de'): string {
+	return `${SITE_URL}${locale === 'en' ? '/en' : ''}/events/${slug}/`;
 }
 
-const LAST_SCAN_FMT = new Intl.DateTimeFormat('en-GB', {
-	dateStyle: 'medium',
-	timeStyle: 'short',
-	timeZone: TIMEZONE,
-});
+/* Dates, week bands and costs are formatted per locale in src/i18n/format.ts. */
+export {
+	today,
+	dateSpine,
+	formatDateRange,
+	formatDateCompact,
+	formatLastScan,
+	weekStart,
+	weekRangeLabel,
+	weekBand,
+	type WeekBand,
+} from '../i18n/format.ts';
 
-export function formatLastScan(iso: string): string {
-	return `${LAST_SCAN_FMT.format(new Date(iso))} ${TIMEZONE}`;
-}
-
-/* ---- Week grouping -------------------------------------------------- */
-
-/* The listing groups events under the week they start in. Week numbers are
-   deliberately NOT shown — outside logistics nobody reads "week 37" — so a
-   band is always labelled by its date range; the current week is picked out
-   with the accent color instead of a "This week" text label. */
-
-const BAND_DAY = new Intl.DateTimeFormat('en-GB', { day: 'numeric' });
-const BAND_DAY_MONTH = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long' });
-
-/** Monday of the ISO week containing `date`, as YYYY-MM-DD. */
-export function weekStart(date: string): string {
-	const d = new Date(`${date}T00:00:00`);
-	const shift = (d.getDay() + 6) % 7; // Monday = 0
-	d.setDate(d.getDate() - shift);
-	return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-}
-
-function addDays(date: string, n: number): Date {
-	const d = new Date(`${date}T00:00:00`);
-	d.setDate(d.getDate() + n);
-	return d;
-}
-
-/** "7 – 13 September", or "28 September – 4 October" across a month boundary. */
-export function weekRangeLabel(mondayISO: string): string {
-	const start = new Date(`${mondayISO}T00:00:00`);
-	const end = addDays(mondayISO, 6);
-	const sameMonth = start.getMonth() === end.getMonth();
-	const left = sameMonth ? BAND_DAY.format(start) : BAND_DAY_MONTH.format(start);
-	return `${left} – ${BAND_DAY_MONTH.format(end)}`;
-}
-
-export interface WeekBand {
-	key: string;
-	primary: string;
-	current: boolean;
-}
-
-export function weekBand(mondayISO: string, ref = today()): WeekBand {
-	const thisWeek = weekStart(ref);
-	return {
-		key: mondayISO,
-		primary: weekRangeLabel(mondayISO),
-		current: mondayISO === thisWeek,
-	};
+/** getStaticPaths for the event pages (German and English share it): one page per live or archived event id. */
+export async function eventStaticPaths() {
+	const entries = await getAllEvents();
+	return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }

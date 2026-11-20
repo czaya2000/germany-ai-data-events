@@ -30,17 +30,26 @@ const CITY_COPY = Object.fromEntries(
 );
 
 // URL slug and wording per event type. `one` / `many` are used in sentences.
+// `slug` is the English URL (under /en/) and the stable key; `slugDe` the German one at the root.
+// The wording here is English only (used by the markdown lists); the German wording is in src/i18n/de.ts.
 const FORMAT_COPY = {
-	Meetup: { slug: 'meetups', plural: 'Meetups', one: 'meetup', many: 'meetups' },
-	Conference: { slug: 'conferences', plural: 'Conferences', one: 'conference', many: 'conferences' },
-	Workshop: { slug: 'workshops', plural: 'Workshops', one: 'workshop', many: 'workshops' },
+	Meetup: { slug: 'meetups', slugDe: 'meetups', plural: 'Meetups', one: 'meetup', many: 'meetups' },
+	Conference: {
+		slug: 'conferences',
+		slugDe: 'konferenzen',
+		plural: 'Conferences',
+		one: 'conference',
+		many: 'conferences',
+	},
+	Workshop: { slug: 'workshops', slugDe: 'workshops', plural: 'Workshops', one: 'workshop', many: 'workshops' },
 	Networking: {
 		slug: 'networking',
+		slugDe: 'networking',
 		plural: 'Networking Events',
 		one: 'networking event',
 		many: 'networking events',
 	},
-	Webinar: { slug: 'webinars', plural: 'Webinars', one: 'webinar', many: 'webinars' },
+	Webinar: { slug: 'webinars', slugDe: 'webinare', plural: 'Webinars', one: 'webinar', many: 'webinars' },
 };
 
 const cityHubs = NEWSLETTER_CITIES.map((c) => {
@@ -49,6 +58,7 @@ const cityHubs = NEWSLETTER_CITIES.map((c) => {
 	return {
 		kind: 'city',
 		slug: c.slug,
+		slugDe: c.slug,
 		path: `/${c.slug}/`,
 		label: c.label,
 		linkLabel: c.label,
@@ -75,6 +85,7 @@ const formatHubs = NEWSLETTER_FORMATS.map((f) => {
 	return {
 		kind: 'format',
 		slug: copy.slug,
+		slugDe: copy.slugDe,
 		path: `/${copy.slug}/`,
 		label: f.label,
 		linkLabel: copy.plural === 'Networking Events' ? 'Networking' : copy.plural,

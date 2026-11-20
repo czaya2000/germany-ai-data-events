@@ -16,6 +16,7 @@
 
 import { readFileSync, existsSync } from 'node:fs';
 import { HUBS } from '../src/lib/hubs.mjs';
+import { LOCALES, LOCALE_PREFIX, hubPath } from '../src/i18n/paths.mjs';
 
 import { SITE_URL as SITE, SITE_HOST as HOST, INDEXABLE, INDEXNOW_KEY as KEY } from '../config/country.mjs';
 const ENDPOINT = 'https://api.indexnow.org/indexnow';
@@ -25,7 +26,7 @@ const flag = (name) => args.includes(name);
 const value = (name) => (args.includes(name) ? args[args.indexOf(name) + 1] : undefined);
 
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
-const eventUrl = (id) => `${SITE}/events/${id}/`;
+const eventUrl = (id, locale = 'de') => `${SITE}${LOCALE_PREFIX[locale]}/events/${id}/`;
 
 function sitemapUrls() {
 	const path = 'dist/sitemap-0.xml';
@@ -50,9 +51,14 @@ function changedUrls(beforePath) {
 	// The homepage and the city / type pages that list those events, but only
 	// the ones in the sitemap (a thin hub is noindex).
 	const indexable = new Set(sitemapUrls());
-	const listings = [`${SITE}/`, ...HUBS.filter((h) => touched.some((e) => h.matches(e))).map((h) => SITE + h.path)];
+	// Both languages: German at the root, English under /en/.
+	const listings = LOCALES.flatMap((l) => [
+		`${SITE}${LOCALE_PREFIX[l]}/`,
+		...HUBS.filter((h) => touched.some((e) => h.matches(e))).map((h) => `${SITE}${LOCALE_PREFIX[l]}${hubPath(h, l)}`),
+	]);
+	const eventPages = touched.flatMap((e) => LOCALES.map((l) => eventUrl(e.id, l)));
 
-	return [...new Set([...touched.map((e) => eventUrl(e.id)), ...listings.filter((u) => indexable.has(u))])];
+	return [...new Set([...eventPages, ...listings.filter((u) => indexable.has(u))])];
 }
 
 // No ping while the site is noindex (INDEXABLE in config/country.mjs), or before

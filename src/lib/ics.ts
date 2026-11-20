@@ -5,7 +5,9 @@
    Written by hand because the `ics` npm package cannot emit TZID-qualified
    times with a VTIMEZONE block, and local German times are the point. */
 
-import { TIMEZONE, UID_DOMAIN as CONFIG_UID_DOMAIN, SITE_NAME, SITE_HOST, COUNTRY_NAME } from '../../config/country.mjs';
+import { TIMEZONE, UID_DOMAIN as CONFIG_UID_DOMAIN, SITE_NAME, SITE_HOST } from '../../config/country.mjs';
+import { t } from '../i18n/index.ts';
+import { INTL_LOCALE, type Locale } from '../i18n/format.ts';
 
 export interface IcsEvent {
 	id: string;
@@ -171,9 +173,9 @@ export function eventDateTimes(e: { date: string; endDate?: string; time?: strin
 	};
 }
 
-const SHORT_DATE =new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
-
-function eventLines(e: IcsEvent, dtstamp: string): string[] {
+function eventLines(e: IcsEvent, dtstamp: string, locale: Locale): string[] {
+	const s = t(locale).ics;
+	const shortDate = new Intl.DateTimeFormat(INTL_LOCALE[locale], { day: 'numeric', month: 'short', timeZone: 'UTC' });
 	const end = e.endDate && e.endDate !== e.date ? e.endDate : undefined;
 	const span = end ? daysBetween(e.date, end) : 0;
 	const longSpan = span >= LONG_SPAN_DAYS;
@@ -197,14 +199,14 @@ function eventLines(e: IcsEvent, dtstamp: string): string[] {
 	const online = /^online\b/i.test(e.city);
 	// Don't repeat the city when the venue already names it.
 	const venueHasCity = !!e.venue && e.venue.toLowerCase().includes(e.city.toLowerCase());
-	const location = online ? 'Online' : venueHasCity ? e.venue! : [e.venue, e.city].filter(Boolean).join(', ');
+	const location = online ? s.online : venueHasCity ? e.venue! : [e.venue, e.city].filter(Boolean).join(', ');
 
 	const desc: string[] = [e.blurb];
 	if (longSpan && end) {
-		desc.push(`Runs until ${SHORT_DATE.format(new Date(`${end}T00:00:00Z`))} — see the event page for session dates.`);
+		desc.push(s.runsUntil(shortDate.format(new Date(`${end}T00:00:00Z`))));
 	}
-	desc.push(`Organiser: ${e.organiser}`);
-	desc.push(`Details and registration: ${e.pageUrl}`);
+	desc.push(s.organiser(e.organiser));
+	desc.push(s.details(e.pageUrl));
 
 	lines.push(`SUMMARY:${escapeText(e.title)}`);
 	if (location) lines.push(`LOCATION:${escapeText(location)}`);
@@ -216,8 +218,9 @@ function eventLines(e: IcsEvent, dtstamp: string): string[] {
 	return lines;
 }
 
-/** A complete VCALENDAR with CRLF line endings and folded lines. */
-export function buildCalendar(name: string, events: IcsEvent[], now = new Date()): string {
+/** A complete VCALENDAR with CRLF line endings and folded lines. The text (description lines,
+    calendar description) is in `locale`; UIDs and times are the same in every language. */
+export function buildCalendar(name: string, events: IcsEvent[], now = new Date(), locale: Locale = 'en'): string {
 	const dtstamp = utcStamp(now);
 	const lines = [
 		'BEGIN:VCALENDAR',
@@ -226,12 +229,12 @@ export function buildCalendar(name: string, events: IcsEvent[], now = new Date()
 		'CALSCALE:GREGORIAN',
 		'METHOD:PUBLISH',
 		`X-WR-CALNAME:${escapeText(name)}`,
-		`X-WR-CALDESC:${escapeText(`Upcoming AI and data events in ${COUNTRY_NAME}, from ${SITE_HOST}`)}`,
+		`X-WR-CALDESC:${escapeText(t(locale).ics.calDesc(t(locale).site.countryName, SITE_HOST))}`,
 		`X-WR-TIMEZONE:${TZID}`,
 		'X-PUBLISHED-TTL:PT12H',
 		'REFRESH-INTERVAL;VALUE=DURATION:PT12H',
 		...VTIMEZONE,
-		...events.flatMap((e) => eventLines(e, dtstamp)),
+		...events.flatMap((e) => eventLines(e, dtstamp, locale)),
 		'END:VCALENDAR',
 	];
 	return lines.map(foldLine).join('\r\n') + '\r\n';

@@ -1,0 +1,236 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { SITE_NAME, SITE_URL, FORM_ENDPOINT } from '../lib/events';
+import { t, formatLabel, type Locale } from '../i18n';
+import { LOCALE_PREFIX } from '../i18n/paths.mjs';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const s = t(locale).submit;
+const title = s.title(SITE_NAME);
+const description = s.description;
+// Option values are the stored (English) formats; only the label is translated.
+const formats = ['Conference', 'Meetup', 'Workshop', 'Webinar', 'Networking'];
+---
+
+<Base title={title} description={description} locale={locale} path="/submit/">
+	<SiteNav locale={locale} path="/submit/" />
+
+	<main class="wrap submit">
+		<h1>{s.h1}</h1>
+		<p class="intro">{s.intro}</p>
+		<p class="scope">{s.scope}</p>
+
+		<form action={FORM_ENDPOINT} method="POST" id="submit-form">
+			<input type="hidden" name="_subject" value={s.subject(SITE_NAME)} />
+			<input type="hidden" name="_next" value={`${SITE_URL}${LOCALE_PREFIX[locale]}/submit/thanks/`} />
+			<input type="hidden" name="_template" value="table" />
+			<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+			<fieldset>
+				<legend>{s.legendEvent}</legend>
+				<label>
+					{s.eventTitle}
+					<input type="text" name="event_title" required />
+				</label>
+				<div class="two">
+					<label>
+						{s.startDate}
+						<input type="date" name="start_date" required />
+					</label>
+					<label>
+						<span class="lbl">{s.endDate} <span class="opt">{s.endDateHint}</span></span>
+						<input type="date" name="end_date" />
+					</label>
+				</div>
+				<div class="two">
+					<label>
+						{s.city}
+						<input type="text" name="city" placeholder={s.cityPlaceholder} required />
+					</label>
+					<label>
+						<span class="lbl">{s.venue} <span class="opt">{s.optional}</span></span>
+						<input type="text" name="venue" />
+					</label>
+				</div>
+				<div class="two">
+					<label>
+						{s.format}
+						<select name="format" required>
+							<option value="">{s.choose}</option>
+							{formats.map((f) => <option value={f}>{formatLabel(f, locale)}</option>)}
+						</select>
+					</label>
+					<label>
+						{s.cost}
+						<input type="text" name="cost" placeholder={s.costPlaceholder} required />
+					</label>
+				</div>
+				<label>
+					{s.url}
+					<input type="url" name="event_url" placeholder="https://…" required />
+				</label>
+				<label>
+					<span class="lbl">{s.blurb} <span class="opt">{s.blurbHint}</span></span>
+					<textarea name="blurb" rows="4" required></textarea>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>{s.legendYou}</legend>
+				<label>
+					{s.organiser}
+					<input type="text" name="organiser" required />
+				</label>
+				<div class="two">
+					<label>
+						{s.name}
+						<input type="text" name="name" required />
+					</label>
+					<label>
+						{s.email}
+						<input type="email" name="email" required />
+					</label>
+				</div>
+				<label class="check">
+					<input type="checkbox" name="featured_interest" value="yes" />
+					{s.featured}
+				</label>
+			</fieldset>
+
+			<button class="btn accent" type="submit" data-umami-event="Event submitted">{s.send}</button>
+		</form>
+	</main>
+
+	<SiteFooter locale={locale} />
+
+	<script type="application/json" id="invalid-strings" set:html={JSON.stringify(s.invalid)} />
+	<script is:inline>
+		// Validation messages in the page language (the browser's own wording follows its UI language).
+		(function () {
+			var m = JSON.parse(document.getElementById('invalid-strings').textContent);
+			document.querySelectorAll('#submit-form input, #submit-form select, #submit-form textarea').forEach(function (el) {
+				el.addEventListener('invalid', function () {
+					var v = el.validity;
+					var msg = '';
+					if (v.valueMissing) msg = el.type === 'date' ? m.date : el.tagName === 'SELECT' ? m.choose : m.required;
+					else if (v.typeMismatch) msg = el.type === 'email' ? m.email : m.url;
+					else if (v.badInput) msg = m.date;
+					el.setCustomValidity(msg);
+				});
+				el.addEventListener('input', function () {
+					el.setCustomValidity('');
+				});
+				el.addEventListener('change', function () {
+					el.setCustomValidity('');
+				});
+			});
+		})();
+	</script>
+
+	<style>
+		.submit {
+			padding: 24px 32px 64px;
+			max-width: 640px;
+		}
+		h1 {
+			font-size: clamp(1.6rem, 3vw, 2rem);
+			margin: 16px 0 8px;
+			letter-spacing: -0.01em;
+		}
+		.intro {
+			color: var(--ink-2);
+			margin: 0 0 12px;
+		}
+		.scope {
+			color: var(--muted);
+			font-size: 0.88rem;
+			line-height: 1.6;
+			margin: 0 0 32px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 28px;
+		}
+		fieldset {
+			border: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		legend {
+			font-size: 0.8rem;
+			font-weight: 600;
+			text-transform: none;
+			color: var(--muted);
+			padding: 0;
+			margin-bottom: 4px;
+			border-bottom: 1px solid var(--border);
+			width: 100%;
+			padding-bottom: 6px;
+		}
+		.two {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+			font-size: 0.85rem;
+			font-weight: 600;
+			color: var(--muted);
+		}
+		.opt {
+			font-weight: 400;
+		}
+		label.check {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 10px;
+			font-weight: 400;
+			color: var(--ink-2);
+			line-height: 1.5;
+		}
+		label.check input {
+			margin-top: 4px;
+		}
+		input,
+		select,
+		textarea {
+			font: inherit;
+			font-size: 0.95rem;
+			padding: 10px 12px;
+			border-radius: 0;
+			border: 1px solid var(--border);
+			background: var(--surface);
+			color: var(--ink);
+			resize: vertical;
+		}
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: none;
+			border-color: var(--ink);
+		}
+		button {
+			align-self: flex-start;
+		}
+		@media (max-width: 640px) {
+			.submit {
+				padding: 16px 18px 48px;
+			}
+			.two {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</Base>

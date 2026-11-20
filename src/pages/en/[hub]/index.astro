@@ -1,0 +1,12 @@
+---
+import HubPage from '../../../views/HubPage.astro';
+import { HUBS } from '../../../lib/hubs.mjs';
+
+export function getStaticPaths() {
+	return HUBS.map((hub) => ({ params: { hub: hub.slug }, props: { hub } }));
+}
+
+const { hub } = Astro.props;
+---
+
+<HubPage locale="en" hub={hub} />

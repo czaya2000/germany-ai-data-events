@@ -1,0 +1,9 @@
+---
+import EventPage from '../../../views/EventPage.astro';
+import { eventStaticPaths } from '../../../lib/events';
+
+export const getStaticPaths = eventStaticPaths;
+const { entry } = Astro.props;
+---
+
+<EventPage locale="en" entry={entry} />

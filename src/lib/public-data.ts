@@ -47,9 +47,11 @@ export function publicEvent(entry: EventEntry) {
 export const ENDPOINTS = {
 	json: `${SITE_URL}/events.json`,
 	rss: `${SITE_URL}/rss.xml`,
+	rssEn: `${SITE_URL}/en/rss.xml`,
 	llms: `${SITE_URL}/llms.txt`,
 	llmsFull: `${SITE_URL}/llms-full.txt`,
 	ics: `${SITE_URL}/calendar/all.ics`,
+	icsEn: `${SITE_URL}/en/calendar/all.ics`,
 	docs: `${SITE_URL}/data/`,
 };
 

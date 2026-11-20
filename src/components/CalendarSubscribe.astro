@@ -4,37 +4,57 @@
    No tracking, no cookies, no third-party scripts. */
 import { getUpcomingEvents } from '../lib/events';
 import { feedHttpsUrl, feedOptions, listFeeds } from '../lib/calendar-feeds';
+import { t, type Locale } from '../i18n';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const s = t(locale).calendar;
 
 const upcoming = await getUpcomingEvents();
-const { cities, formats } = feedOptions(upcoming);
+const { cities, formats } = feedOptions(upcoming, locale);
+// The links point at the feed in the page's language: /calendar/ (German) or /en/calendar/ (English).
 const feeds = Object.fromEntries(
-	listFeeds(upcoming).map((f) => [f.slug, { name: f.name, count: f.events.length, url: feedHttpsUrl(f.slug) }]),
+	listFeeds(upcoming, locale).map((f) => [
+		f.slug,
+		{ name: f.name, count: f.events.length, url: feedHttpsUrl(f.slug, locale) },
+	]),
 );
+// Texts the script below needs.
+const strings = {
+	none: s.none,
+	one: s.one,
+	many: s.many,
+	copy: s.copy,
+	copied: s.copied,
+	pressCtrlC: s.pressCtrlC,
+};
 ---
 
 <dialog id="cal-dialog" class="cal-dialog" aria-labelledby="cal-title">
 	<div class="cal-head">
-		<h2 id="cal-title">Save to my calendar</h2>
-		<button type="button" class="cal-close" id="cal-close" aria-label="Close">
+		<h2 id="cal-title">{s.title}</h2>
+		<button type="button" class="cal-close" id="cal-close" aria-label={s.close}>
 			<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
 				<path fill="none" stroke="currentColor" stroke-width="2" d="M6 6l12 12M18 6 6 18"></path>
 			</svg>
 		</button>
 	</div>
-	<p class="cal-intro">Subscribe once and new events matching your choice appear in your calendar.</p>
+	<p class="cal-intro">{s.intro}</p>
 
 	<div class="cal-filters">
 		<label>
-			<span>City</span>
+			<span>{s.city}</span>
 			<select id="cal-city">
-				<option value="">All cities</option>
+				<option value="">{s.allCities}</option>
 				{cities.map((c) => <option value={c.slug}>{c.label}</option>)}
 			</select>
 		</label>
 		<label>
-			<span>Format</span>
+			<span>{s.format}</span>
 			<select id="cal-format">
-				<option value="">All formats</option>
+				<option value="">{s.allFormats}</option>
 				{formats.map((f) => <option value={f.slug}>{f.label}</option>)}
 			</select>
 		</label>
@@ -43,28 +63,30 @@ const feeds = Object.fromEntries(
 	<p class="cal-count num" id="cal-count" aria-live="polite"></p>
 
 	<div class="cal-actions" id="cal-actions">
-		<a class="cal-btn" id="cal-google" data-umami-event="Calendar: subscribe" data-umami-event-app="Google" target="_blank" rel="noopener">Google Calendar</a>
-		<a class="cal-btn" id="cal-apple" data-umami-event="Calendar: subscribe" data-umami-event-app="Apple">Apple / other apps</a>
-		<a class="cal-btn" id="cal-outlook" data-umami-event="Calendar: subscribe" data-umami-event-app="Outlook.com" target="_blank" rel="noopener">Outlook.com</a>
-		<a class="cal-btn" id="cal-office" data-umami-event="Calendar: subscribe" data-umami-event-app="Microsoft 365" target="_blank" rel="noopener">Microsoft 365</a>
+		<a class="cal-btn" id="cal-google" data-umami-event="Calendar: subscribe" data-umami-event-app="Google" target="_blank" rel="noopener">{s.google}</a>
+		<a class="cal-btn" id="cal-apple" data-umami-event="Calendar: subscribe" data-umami-event-app="Apple">{s.apple}</a>
+		<a class="cal-btn" id="cal-outlook" data-umami-event="Calendar: subscribe" data-umami-event-app="Outlook.com" target="_blank" rel="noopener">{s.outlook}</a>
+		<a class="cal-btn" id="cal-office" data-umami-event="Calendar: subscribe" data-umami-event-app="Microsoft 365" target="_blank" rel="noopener">{s.office}</a>
 	</div>
 
 	<div class="cal-copy">
-		<label class="sr-only" for="cal-url">Calendar link</label>
+		<label class="sr-only" for="cal-url">{s.linkLabel}</label>
 		<input id="cal-url" type="text" readonly />
-		<button type="button" class="cal-btn" id="cal-copy" data-umami-event="Calendar: subscribe" data-umami-event-app="Copy link">Copy link</button>
+		<button type="button" class="cal-btn" id="cal-copy" data-umami-event="Calendar: subscribe" data-umami-event-app="Copy link">{s.copy}</button>
 	</div>
 
-	<p class="cal-note">Your calendar updates automatically. Google may take up to 24 h to show changes.</p>
+	<p class="cal-note">{s.note}</p>
 </dialog>
 
 <script type="application/json" id="cal-feeds" set:html={JSON.stringify(feeds)} />
+<script type="application/json" id="cal-strings" set:html={JSON.stringify(strings)} />
 
 <script>
 	type FeedInfo = { name: string; count: number; url: string };
 
 	const dialog = document.getElementById('cal-dialog') as HTMLDialogElement;
 	const feeds: Record<string, FeedInfo> = JSON.parse(document.getElementById('cal-feeds')!.textContent || '{}');
+	const str: Record<string, string> = JSON.parse(document.getElementById('cal-strings')!.textContent || '{}');
 	const city = document.getElementById('cal-city') as HTMLSelectElement;
 	const format = document.getElementById('cal-format') as HTMLSelectElement;
 	const count = document.getElementById('cal-count')!;
@@ -92,12 +114,7 @@ const feeds = Object.fromEntries(
 		const slug = [city.value, format.value].filter(Boolean).join('__') || 'all';
 		const feed = feeds[slug];
 		const n = feed ? feed.count : 0;
-		count.textContent =
-			n === 0
-				? 'No upcoming events match. Try "All" for one of the filters.'
-				: n === 1
-					? '1 upcoming event matches'
-					: `${n} upcoming events match`;
+		count.textContent = n === 0 ? str.none : n === 1 ? str.one : str.many.replace('{n}', String(n));
 		actions.classList.toggle('disabled', !feed || n === 0);
 		copyBtn.disabled = !feed || n === 0;
 
@@ -120,7 +137,7 @@ const feeds = Object.fromEntries(
 		links.office.href = `https://outlook.office.com/calendar/0/addfromweb?${q}`;
 		Object.values(links).forEach((a) => a.removeAttribute('aria-disabled'));
 		urlInput.value = https;
-		copyBtn.textContent = 'Copy link';
+		copyBtn.textContent = str.copy;
 	}
 
 	function setIfPresent(select: HTMLSelectElement, value: string) {
@@ -162,11 +179,11 @@ const feeds = Object.fromEntries(
 	copyBtn.addEventListener('click', async () => {
 		try {
 			await navigator.clipboard.writeText(urlInput.value);
-			copyBtn.textContent = 'Copied';
+			copyBtn.textContent = str.copied;
 		} catch {
 			urlInput.focus();
 			urlInput.select();
-			copyBtn.textContent = 'Press Ctrl+C';
+			copyBtn.textContent = str.pressCtrlC;
 		}
 	});
 </script>

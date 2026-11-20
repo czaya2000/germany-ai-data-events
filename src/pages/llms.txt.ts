@@ -36,7 +36,7 @@ export const GET: APIRoute = async () => {
 		'## Data',
 		'',
 		`- [All upcoming events as JSON](${ENDPOINTS.json}): one object per event with ISO 8601 start/end, city, format, topics, cost, organiser and links`,
-		`- [RSS feed](${ENDPOINTS.rss}): upcoming events, newest listings first`,
+		`- [RSS feed](${ENDPOINTS.rss}): upcoming events, newest listings first (German; English: ${ENDPOINTS.rssEn})`,
 		`- [Calendar feed (iCalendar)](${ENDPOINTS.ics}): subscribe in Google, Outlook or Apple Calendar; per-city and per-format feeds are listed on the data page`,
 		`- [About the data](${ENDPOINTS.docs}): field descriptions and usage notes`,
 		'',

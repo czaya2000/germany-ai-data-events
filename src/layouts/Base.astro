@@ -7,13 +7,18 @@ import {
 	INDEXABLE,
 	withBase,
 } from '../lib/events';
+import { LOCALE_PREFIX, OG_LOCALE, HTML_LANG, alternates } from '../i18n/paths.mjs';
+import { t, type Locale } from '../i18n';
 import { TRACKER_PRELUDE } from '../lib/tracker-prelude.mjs';
-import { LOCALE, UMAMI_WEBSITE_ID, CLOUDFLARE_BEACON_TOKEN, SITE_HOST } from '../../config/country.mjs';
+import { UMAMI_WEBSITE_ID, CLOUDFLARE_BEACON_TOKEN, SITE_HOST } from '../../config/country.mjs';
 
 interface Props {
 	title: string;
 	description: string;
-	/** Site-relative path of this page, without the base ("/events/x/"). */
+	/** Language of the page. */
+	locale: Locale;
+	/** Site path of this page in its own language, without the base and without the /en/ prefix
+	    ("/events/x/", "/konferenzen/"). */
 	path: string;
 	structuredData?: Record<string, unknown>[];
 	/** Keep the page reachable but out of search results (e.g. ended events). */
@@ -22,8 +27,13 @@ interface Props {
 	markdown?: string;
 }
 
-const { title, description, path, structuredData = [], noindex = false, markdown } = Astro.props;
-const canonical = `${SITE_URL}${path}`;
+const { title, description, locale, path, structuredData = [], noindex = false, markdown } = Astro.props;
+const sitePath = `${LOCALE_PREFIX[locale]}${path}`;
+const canonical = `${SITE_URL}${sitePath}`;
+// The same page in the other language (hreflang). Pages that exist in one language only have none.
+const alt = path.startsWith('/404') ? null : alternates(sitePath);
+const otherLocale: Locale = locale === 'de' ? 'en' : 'de';
+const s = t(locale);
 const ogImage = `${SITE_URL}/og-image.png`;
 
 // Self-hosted Archivo (public/fonts): no request to a third-party font CDN.
@@ -38,7 +48,7 @@ const fontCss = fontFiles
 const analytics = Boolean(UMAMI_WEBSITE_ID || CLOUDFLARE_BEACON_TOKEN);
 ---
 
-<html lang="en">
+<html lang={HTML_LANG[locale]}>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href={withBase('/favicon.ico')} sizes="32x32" />
@@ -54,6 +64,15 @@ const analytics = Boolean(UMAMI_WEBSITE_ID || CLOUDFLARE_BEACON_TOKEN);
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonical} />
 		{
+			alt && (
+				<>
+					<link rel="alternate" hreflang="de" href={`${SITE_URL}${alt.de}`} />
+					<link rel="alternate" hreflang="en" href={`${SITE_URL}${alt.en}`} />
+					<link rel="alternate" hreflang="x-default" href={`${SITE_URL}${alt.de}`} />
+				</>
+			)
+		}
+		{
 			!INDEXABLE ? (
 				<meta name="robots" content="noindex, nofollow" />
 			) : (
@@ -62,13 +81,14 @@ const analytics = Boolean(UMAMI_WEBSITE_ID || CLOUDFLARE_BEACON_TOKEN);
 		}
 
 		<!-- Machine-readable versions of the event list, for feed readers and AI agents -->
-		<link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} — upcoming events`} href={withBase('/rss.xml')} />
-		<link rel="alternate" type="application/json" title={`${SITE_NAME} — events (JSON)`} href={withBase('/events.json')} />
+		<link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} — ${s.base.rssTitle}`} href={withBase(`${LOCALE_PREFIX[locale]}/rss.xml`)} />
+		<link rel="alternate" type="application/json" title={`${SITE_NAME} — ${s.base.jsonTitle}`} href={withBase('/events.json')} />
 		<link rel="alternate" type="text/plain" title={`${SITE_NAME} — llms.txt`} href={withBase('/llms.txt')} />
 		{markdown && <link rel="alternate" type="text/markdown" href={withBase(markdown)} />}
 
 		<meta property="og:type" content="website" />
-		<meta property="og:locale" content={LOCALE} />
+		<meta property="og:locale" content={OG_LOCALE[locale]} />
+		{alt && <meta property="og:locale:alternate" content={OG_LOCALE[otherLocale]} />}
 		<meta property="og:site_name" content={SITE_NAME} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />

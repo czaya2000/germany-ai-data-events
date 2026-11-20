@@ -6,7 +6,7 @@ import { HUBS } from '../lib/hubs.mjs';
 import { SITE_HOST } from '../../config/country.mjs';
 
 /* /berlin.md, /conferences.md and so on: the markdown copy of each city and
-   type page (src/pages/[hub]/index.astro), for AI agents. One per hub in
+   type page (src/pages/[hub]/index.astro), for AI agents (English; the pages are German at the root and English under /en/, and the Canonical line names the English page). One per hub in
    src/lib/hubs.mjs, so a link never 404s; /llms.txt links the ones with
    enough events. Not in the sitemap: the HTML page is the one to index. */
 
@@ -25,7 +25,7 @@ export const GET: APIRoute = async ({ params }) => {
 			'',
 			`> ${n === 0 ? `No upcoming ${hub.many}` : `${n} upcoming ${n === 1 ? hub.one : hub.many}`} ${hub.where}${hub.nearby ? `, including ${hub.nearby}` : ''}, from ${SITE_NAME} (${SITE_HOST}). Each listing is checked against the organiser's own page.`,
 			'',
-			`Canonical: ${SITE_URL}${hub.path}`,
+			`Canonical: ${SITE_URL}/en${hub.path}`,
 			'',
 			freshnessLine(meta.lastScan, n),
 			'',

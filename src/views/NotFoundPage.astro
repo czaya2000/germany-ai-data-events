@@ -1,0 +1,70 @@
+---
+/* The page GitHub Pages serves for any address that does not exist (it is
+   built as /404.html; /en/404/ is the English twin, GitHub Pages only ever serves the German one). It keeps people on
+   the site instead of showing GitHub's own error page. noindex, and the
+   sitemap leaves it out. */
+import Base from '../layouts/Base.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { SITE_NAME, getUpcomingEvents } from '../lib/events';
+import { HUBS, isHubLive } from '../lib/hubs.mjs';
+import { t, hubText, type Locale } from '../i18n';
+import { localePath, hubPath } from '../i18n/paths.mjs';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const s = t(locale).notFound;
+const title = s.title(SITE_NAME);
+const description = s.description;
+const upcoming = (await getUpcomingEvents()).map((e) => e.data);
+const cityLinks = HUBS.filter((h) => h.kind === 'city' && isHubLive(h, upcoming));
+---
+
+<Base title={title} description={description} locale={locale} path={locale === 'de' ? '/404.html' : '/404/'} noindex>
+	<SiteNav locale={locale} path={locale === 'de' ? '/404.html' : '/404/'} />
+
+	<main class="wrap thanks">
+		<h1>{s.h1}</h1>
+		<p>{s.text}</p>
+		<a class="btn accent" href={localePath('/', locale)}>{s.seeAll}</a>
+		{
+			cityLinks.length > 0 && (
+				<p class="cities">
+					{s.orCity}{cityLinks.map((h, i) => <>{i > 0 ? ', ' : ''}<a href={localePath(hubPath(h, locale), locale)}>{hubText(h, locale).linkLabel}</a></>)}.
+				</p>
+			)
+		}
+	</main>
+
+	<SiteFooter locale={locale} />
+
+	<style>
+		.thanks {
+			padding-top: 72px;
+			padding-bottom: 72px;
+			max-width: 62ch;
+		}
+		h1 {
+			font-size: clamp(1.9rem, 4vw, 2.8rem);
+			font-weight: 600;
+			line-height: 1.08;
+			letter-spacing: -0.03em;
+			margin: 0;
+		}
+		p {
+			font-size: 1.05rem;
+			line-height: 1.55;
+			color: var(--ink-2);
+			margin: 20px 0 28px;
+		}
+		.cities {
+			font-size: 0.95rem;
+			margin: 28px 0 0;
+		}
+		.cities a {
+			color: var(--ink);
+		}
+	</style>
+</Base>

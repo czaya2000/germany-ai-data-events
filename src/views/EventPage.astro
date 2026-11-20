@@ -1,0 +1,423 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import Subscribe from '../components/Subscribe.astro';
+import {
+	formatDateRange,
+	formatDateCompact,
+	offerFacts,
+	placeName,
+	isFree,
+	isEnded,
+	eventUrl,
+	outboundUrl,
+	organiserUrl,
+	cityGroup,
+	blurbFor,
+	getUpcomingEvents,
+	type EventEntry,
+	SITE_URL,
+	SITE_NAME,
+} from '../lib/events';
+import { eventDateTimes, parseTime } from '../lib/ics';
+import { cityHubFor, isHubLive } from '../lib/hubs.mjs';
+import { COUNTRY_CODE } from '../../config/country.mjs';
+import { t, hubText, displayCity, formatLabel, localizeCost, type Locale } from '../i18n';
+import { localePath, hubPath, LOCALE_PREFIX } from '../i18n/paths.mjs';
+
+/* One event page, in either language (src/pages/events/[slug].astro and
+   src/pages/en/events/[slug].astro). The page address (id) is the same in both. */
+interface Props {
+	locale: Locale;
+	entry: EventEntry;
+}
+const { locale, entry } = Astro.props;
+const s = t(locale).event;
+const sep = locale === 'de' ? ' – ' : ' — ';
+const e = entry.data;
+const dateLabel = formatDateRange(e.date, e.endDate, locale);
+const isOnline = /online/i.test(e.city);
+const cityLabel = displayCity(e.city, locale);
+const formatText = formatLabel(e.format, locale);
+const costText = localizeCost(e.cost, locale);
+// The summary in the page language; where only the other language exists it is shown with its own lang.
+const blurb = blurbFor(e, locale);
+const blurbLang = blurb.lang === locale ? undefined : blurb.lang;
+// Search results cut a title at about 60 characters, so the site name is
+// added only when the event name, date and place leave room for it.
+// An ended event stays in search results (people look an event up afterwards),
+// so its title and description say first that it is over.
+const coreTitle = `${isEnded(e) ? s.pastPrefix : ''}${e.title}${sep}${formatDateCompact(e.date, e.endDate, locale)}, ${cityLabel}`;
+const withSite = `${coreTitle} | ${SITE_NAME}`;
+const title = withSite.length <= 65 ? withSite : coreTitle;
+// The facts come first, so a search snippet shows when, where and what it
+// costs even when the rest is cut off. Same order as the RSS summary.
+const whereLabel = isOnline ? 'Online' : [e.venue, cityLabel].filter(Boolean).join(', ');
+const description = isEnded(e)
+	? s.pastDescription(dateLabel, whereLabel, formatText, blurb.text)
+	: `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${whereLabel} · ${formatText} · ${costText}. ${blurb.text}`;
+const free = isFree(e.cost);
+const registerUrl = outboundUrl(e.url);
+const ended = isEnded(e);
+const when = eventDateTimes(e);
+// eventDateTimes assumes two hours when only a start time is published (the
+// calendar feeds need an end). The markup states an end only when it is known.
+const multiDay = !!e.endDate && e.endDate !== e.date;
+const parsedTime = multiDay ? null : parseTime(e.time);
+const endKnown = !parsedTime || parsedTime.end !== undefined;
+const offer = offerFacts(e.cost);
+const pageUrl = eventUrl(entry.id, locale);
+const homeUrl = `${SITE_URL}${LOCALE_PREFIX[locale]}/`;
+
+// An ended event's page stays up for old links but points people onward:
+// the next events in the same city, topped up with the next ones anywhere.
+const allUpcoming = await getUpcomingEvents();
+const upcoming = ended ? allUpcoming : [];
+
+// Link up to the city page (/berlin/), when that page has enough events to be live.
+const cityHubMatch = cityHubFor(e);
+const cityHub =
+	cityHubMatch && isHubLive(cityHubMatch, allUpcoming.map((u) => u.data)) ? cityHubMatch : undefined;
+const cityHubWords = cityHub ? hubText(cityHub, locale) : undefined;
+const sameCity = upcoming.filter((u) => cityGroup(u.data.city) === cityGroup(e.city));
+const onward = [...sameCity, ...upcoming.filter((u) => !sameCity.includes(u))].slice(0, 3);
+const onwardLabel =
+	sameCity.length >= 3 ? s.upcomingIn(displayCity(cityGroup(e.city), locale)) : s.upcomingEvents;
+
+const structuredData: Record<string, unknown>[] = ended ? [] : [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Event',
+		name: e.title,
+		inLanguage: locale,
+		startDate: when.start,
+		...(endKnown ? { endDate: when.end } : {}),
+		image: [`${SITE_URL}/og-image.png`],
+		eventAttendanceMode: isOnline
+			? 'https://schema.org/OnlineEventAttendanceMode'
+			: 'https://schema.org/OfflineEventAttendanceMode',
+		eventStatus: 'https://schema.org/EventScheduled',
+		location: isOnline
+			? { '@type': 'VirtualLocation', url: e.url }
+			: {
+					'@type': 'Place',
+					name: e.venue || cityLabel,
+					address: { '@type': 'PostalAddress', addressLocality: placeName(cityLabel), addressCountry: COUNTRY_CODE },
+				},
+		description: blurb.text,
+		organizer: {
+			'@type': 'Organization',
+			name: e.organiser,
+			...(organiserUrl(e.url) ? { url: organiserUrl(e.url) } : {}),
+		},
+		url: pageUrl,
+		offers: {
+			'@type': 'Offer',
+			url: e.url,
+			...offer,
+		},
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		inLanguage: locale,
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: SITE_NAME, item: homeUrl },
+			...(cityHub && cityHubWords
+				? [{ '@type': 'ListItem', position: 2, name: cityHubWords.h1, item: `${SITE_URL}${LOCALE_PREFIX[locale]}${hubPath(cityHub, locale)}` }]
+				: []),
+			{ '@type': 'ListItem', position: cityHub ? 3 : 2, name: e.title, item: pageUrl },
+		],
+	},
+];
+---
+
+<Base
+	title={title}
+	description={description}
+	locale={locale}
+	path={`/events/${entry.id}/`}
+	structuredData={structuredData}
+>
+	<SiteNav locale={locale} path={`/events/${entry.id}/`} />
+	<main class="wrap detail">
+		<nav class="crumbs" aria-label={s.breadcrumb}>
+			<a class="back" href={localePath('/', locale)}>{s.allEvents}</a>
+			{cityHub && cityHubWords && <a class="back" href={localePath(hubPath(cityHub, locale), locale)}>{cityHub.slug === 'online' ? s.onlineEvents : s.eventsIn(cityHubWords.label)}</a>}
+		</nav>
+
+		{
+			ended && (
+				<div class="ended" role="status">
+					<p class="ended-title">{s.endedTitle}</p>
+					<p class="ended-note">{s.endedNote(dateLabel)}</p>
+				</div>
+			)
+		}
+
+		<article class="detail-grid">
+			<div class="detail-main">
+				<p class="dateline num">
+					<time datetime={when.start}>{dateLabel}</time>{e.time ? `, ${e.time}` : ''}
+				</p>
+				<h1>{e.title}</h1>
+				<p class="blurb" lang={blurbLang}>{blurb.text}</p>
+
+				<dl class="facts">
+					<dt>{s.dates}</dt>
+					<dd class="num">
+						<time datetime={e.date}>{formatDateRange(e.date, undefined, locale)}</time>
+						{e.endDate && e.endDate !== e.date && (
+							<> – <time datetime={e.endDate}>{formatDateRange(e.endDate, undefined, locale)}</time></>
+						)}
+					</dd>
+
+					{
+						e.time && (
+							<>
+								<dt>{s.time}</dt>
+								<dd class="num">{e.time}</dd>
+							</>
+						)
+					}
+
+					<dt>{s.city}</dt>
+					<dd>{cityLabel}</dd>
+
+					{
+						e.venue && (
+							<>
+								<dt>{s.venue}</dt>
+								<dd>{e.venue}</dd>
+							</>
+						)
+					}
+
+					<dt>{s.organiser}</dt>
+					<dd>{e.organiser}</dd>
+
+					<dt>{s.format}</dt>
+					<dd>{formatText}</dd>
+
+					<dt>{s.cost}</dt>
+					<dd class={free ? 'free' : ''}>{costText}</dd>
+
+					<dt>{s.topics}</dt>
+					<dd>{e.topics.join(', ')}</dd>
+
+					<dt>{s.verifiedVia}</dt>
+					<dd>{e.source}</dd>
+				</dl>
+			</div>
+
+			<aside class="register">
+				{
+					ended ? (
+						<div class="register-card">
+							<p class="register-title">{onwardLabel}</p>
+							<ul class="onward">
+								{onward.map((u) => (
+									<li>
+										<a href={localePath(`/events/${u.id}/`, locale)}>{u.data.title}</a>
+										<span class="num"><time datetime={u.data.date}>{formatDateRange(u.data.date, u.data.endDate, locale)}</time>{`, ${displayCity(u.data.city, locale)}`}</span>
+									</li>
+								))}
+							</ul>
+							<a class="btn accent register-btn" href={localePath('/', locale)}>
+								{s.seeAllUpcoming}
+							</a>
+						</div>
+					) : (
+						<>
+							<div class="register-card">
+								<p class="register-title">{s.registerTitle}</p>
+								<p class="register-note">{s.registerNote(e.source)}</p>
+								<a
+									class="btn accent register-btn"
+									href={registerUrl}
+									target="_blank"
+									rel="noopener"
+									data-outbound={e.source}
+									data-umami-event="Register click"
+									data-umami-event-event={entry.id}
+									data-umami-event-source={e.source}
+								>
+									{s.goTo(e.source)}
+								</a>
+							</div>
+							<p class="disclosure">{s.disclosure(SITE_NAME)}</p>
+						</>
+					)
+				}
+				<Subscribe locale={locale} placement="event" compact />
+			</aside>
+		</article>
+	</main>
+
+	<SiteFooter locale={locale}>
+		{t(locale).footer.germanOnly(SITE_NAME)} <a href={localePath('/', locale)}
+			>{t(locale).footer.backToAll}</a
+		>.
+	</SiteFooter>
+
+	<style>
+		.detail {
+			padding-top: 28px;
+		}
+		.crumbs {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px 20px;
+		}
+		.back {
+			color: var(--muted);
+			text-decoration: none;
+			font-size: 0.875rem;
+		}
+		.back:hover {
+			color: var(--ink);
+		}
+		.detail-grid {
+			display: grid;
+			grid-template-columns: 1fr 340px;
+			gap: 72px;
+			align-items: start;
+			margin-top: 36px;
+		}
+		.dateline {
+			color: var(--muted);
+			font-size: 0.875rem;
+			margin: 0 0 14px;
+		}
+		h1 {
+			font-size: clamp(1.9rem, 4vw, 2.8rem);
+			font-weight: 600;
+			line-height: 1.08;
+			letter-spacing: -0.03em;
+			margin: 0;
+			max-width: 20ch;
+			text-wrap: pretty;
+		}
+		.blurb {
+			font-size: 1.1rem;
+			line-height: 1.55;
+			color: var(--ink-2);
+			max-width: 60ch;
+			margin: 24px 0 0;
+		}
+		.facts {
+			display: grid;
+			grid-template-columns: 150px 1fr;
+			gap: 0 40px;
+			margin: 40px 0 0;
+			font-size: 0.95rem;
+			border-top: 1px solid var(--border);
+		}
+		.facts dt {
+			color: var(--muted);
+			padding: 15px 0;
+			border-bottom: 1px solid var(--border);
+		}
+		.facts dd {
+			margin: 0;
+			padding: 15px 0;
+			border-bottom: 1px solid var(--border);
+		}
+		.facts dd.free {
+			font-weight: 600;
+		}
+		.register {
+			padding-top: 44px;
+		}
+		.register-card {
+			border: 1px solid var(--ink);
+			padding: 26px;
+		}
+		.register-title {
+			font-size: 0.95rem;
+			font-weight: 600;
+			margin: 0;
+		}
+		.register-note {
+			font-size: 0.82rem;
+			color: var(--muted);
+			line-height: 1.55;
+			margin: 8px 0 0;
+		}
+		.register-btn {
+			width: 100%;
+			margin-top: 20px;
+			padding: 13px 16px;
+		}
+		.ended {
+			margin-top: 28px;
+			padding: 16px 20px;
+			border-left: 4px solid var(--accent);
+			background: var(--surface);
+		}
+		.ended-title {
+			margin: 0;
+			font-weight: 600;
+		}
+		.ended-note {
+			margin: 4px 0 0;
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+		.onward {
+			list-style: none;
+			padding: 0;
+			margin: 14px 0 0;
+		}
+		.onward li {
+			padding: 10px 0;
+			border-bottom: 1px solid var(--border);
+			font-size: 0.9rem;
+		}
+		.onward a {
+			display: block;
+			color: var(--ink);
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.onward a:hover {
+			text-decoration: underline;
+		}
+		.onward span {
+			color: var(--muted);
+			font-size: 0.82rem;
+		}
+		.disclosure {
+			font-size: 0.82rem;
+			color: var(--muted);
+			line-height: 1.65;
+			margin: 22px 0 28px;
+		}
+
+		@media (max-width: 900px) {
+			.detail-grid {
+				grid-template-columns: 1fr;
+				gap: 36px;
+			}
+			.register {
+				padding-top: 0;
+			}
+			h1 {
+				max-width: none;
+			}
+		}
+		@media (max-width: 640px) {
+			.detail {
+				padding-top: 20px;
+			}
+			.detail-grid {
+				margin-top: 24px;
+			}
+			.facts {
+				grid-template-columns: 110px 1fr;
+				gap: 0 20px;
+			}
+		}
+	</style>
+</Base>

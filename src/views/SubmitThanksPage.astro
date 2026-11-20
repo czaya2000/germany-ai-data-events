@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { SITE_NAME } from '../lib/events';
+import { t, type Locale } from '../i18n';
+import { localePath } from '../i18n/paths.mjs';
+
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const s = t(locale);
+const title = s.submit.thanksTitle(SITE_NAME);
+const description = s.submit.thanksDescription;
+---
+
+<Base title={title} description={description} locale={locale} path="/submit/thanks/" noindex>
+	<SiteNav locale={locale} path="/submit/thanks/" />
+
+	<main class="wrap thanks">
+		<h1>{s.submit.thanksH1}</h1>
+		<p>{s.submit.thanksText}</p>
+		<a class="btn accent" href={localePath('/', locale)}>{s.thanks.backToAll}</a>
+	</main>
+
+	<SiteFooter locale={locale} />
+
+	<style>
+		.thanks {
+			padding: 60px 32px;
+			text-align: center;
+		}
+		h1 {
+			font-size: clamp(1.5rem, 3vw, 2rem);
+			margin: 0 0 8px;
+		}
+		p {
+			color: var(--muted);
+			margin: 0 auto 28px;
+			max-width: 48ch;
+		}
+	</style>
+</Base>

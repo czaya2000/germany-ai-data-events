@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import Listing from '../components/Listing.astro';
+import { getUpcomingEvents, eventUrl, SITE_URL, SITE_NAME, INSTAGRAM_URL } from '../lib/events';
+import { t, type Locale } from '../i18n';
+import { LOCALE_PREFIX } from '../i18n/paths.mjs';
+
+/* The home page in either language (src/pages/index.astro, src/pages/en/index.astro).
+   The listing itself (filters, rows, script, styles) is src/components/Listing.astro,
+   shared with the city and type pages (HubPage.astro). */
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const s = t(locale).site;
+const entries = await getUpcomingEvents();
+
+const title = s.homeTitle(SITE_NAME);
+const description = s.tagline;
+const homeUrl = `${SITE_URL}${LOCALE_PREFIX[locale]}/`;
+
+const structuredData = [
+	{
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: SITE_NAME,
+		url: homeUrl,
+		description: s.tagline,
+		inLanguage: locale,
+		publisher: { '@id': `${SITE_URL}/#organization` },
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Organization',
+		'@id': `${SITE_URL}/#organization`,
+		name: SITE_NAME,
+		url: SITE_URL,
+		logo: `${SITE_URL}/apple-touch-icon.png`,
+		description: s.tagline,
+		areaServed: { '@type': 'Country', name: t(locale).jsonld.areaServed },
+		...(INSTAGRAM_URL ? { sameAs: [INSTAGRAM_URL] } : {}),
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'ItemList',
+		inLanguage: locale,
+		itemListElement: entries.map((e, i) => ({
+			'@type': 'ListItem',
+			position: i + 1,
+			url: eventUrl(e.id, locale),
+			name: e.data.title,
+		})),
+	},
+];
+---
+
+<Base title={title} description={description} locale={locale} path="/" structuredData={structuredData}>
+	<Listing locale={locale} entries={entries} headline={s.headline} subheadline={s.subheadline} />
+</Base>

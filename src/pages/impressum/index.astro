@@ -1,64 +1,65 @@
 ---
-import { withBase } from '../../lib/events';
 import Base from '../../layouts/Base.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import { SITE_NAME } from '../../lib/events';
+import { localePath } from '../../i18n/paths.mjs';
 
-const title = `Impressum — ${SITE_NAME}`;
-const description = `Who runs ${SITE_NAME} and how to reach them.`;
+/* German only (the English pages link here, marked "(in German)"). */
+const title = `Impressum – ${SITE_NAME}`;
+const description = `Wer ${SITE_NAME} betreibt und wie man den Betreiber erreicht.`;
 ---
 
-<Base title={title} description={description} path="/impressum/">
-	<SiteNav />
+<Base title={title} description={description} locale="de" path="/impressum/">
+	<SiteNav locale="de" path="/impressum/" />
 
 	<main class="wrap legal">
 		<h1>Impressum</h1>
-		<p class="todo">Skeleton only. The owner must supply every marked value before go-live; this is not legal advice and the final text should be reviewed.</p>
+		<p class="todo">Nur ein Gerüst. Der Betreiber muss vor dem Start jeden markierten Wert ergänzen; dies ist keine Rechtsberatung, der endgültige Text sollte geprüft werden.</p>
 
 		<dl>
-			<dt>Provider (Diensteanbieter, § 5 DDG)</dt>
+			<dt>Diensteanbieter (§ 5 DDG)</dt>
 			<dd>[[TODO: owner to supply full name, or company name and legal form]]<br />[[TODO: owner to supply street and number, postcode, city, Germany]]</dd>
 
-			<dt>Contact</dt>
+			<dt>Kontakt</dt>
 			<dd>
-				Email: [[TODO: owner to supply contact email]]<br />
+				E-Mail: [[TODO: owner to supply contact email]]<br />
 				[[TODO: owner to supply a second fast means of contact, e.g. phone or contact form]]<br />
-				<a href={withBase('/contact/')}>Contact form</a>
+				<a href={localePath('/contact/', 'de')}>Kontaktformular</a>
 			</dd>
 
-			<dt>Represented by</dt>
+			<dt>Vertreten durch</dt>
 			<dd>[[TODO: owner to supply, only if the provider is a company]]</dd>
 
-			<dt>Register entry and VAT id</dt>
+			<dt>Registereintrag und USt-IdNr.</dt>
 			<dd>[[TODO: owner to supply commercial register and number, and VAT id (USt-IdNr.), if any]]</dd>
 
-			<dt>Responsible for content (§ 18 Abs. 2 MStV)</dt>
+			<dt>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</dt>
 			<dd>[[TODO: owner to supply name and address, if this applies]]</dd>
 
-			<dt>What this site is</dt>
+			<dt>Worum es auf dieser Website geht</dt>
 			<dd>
-				A directory of AI and data events in Germany. Event details are collected from organisers'
-				public pages and checked daily, but they can change on the organiser's side at any time:
-				always confirm on the organiser's own page before you travel or pay. {SITE_NAME} sells no
-				tickets and takes no commission.
+				Ein Verzeichnis von KI- und Daten-Events in Deutschland. Die Angaben zu den Events stammen von den
+				öffentlichen Seiten der Veranstalter und werden täglich geprüft, können sich beim Veranstalter aber
+				jederzeit ändern: Bitte vor Anreise oder Zahlung immer auf der Seite des Veranstalters bestätigen.
+				{SITE_NAME} verkauft keine Tickets und erhält keine Provision.
 			</dd>
 
-			<dt>Liability for external links</dt>
+			<dt>Haftung für externe Links</dt>
 			<dd>
-				[[TODO: owner to supply legal wording, reviewed]] Every listing links to a third-party page,
-				which is the responsibility of its operator.
+				[[TODO: owner to supply legal wording, reviewed]] Jeder Eintrag verweist auf eine Seite eines
+				Dritten, für die deren Betreiber verantwortlich ist.
 			</dd>
 
-			<dt>Copyright</dt>
+			<dt>Urheberrecht</dt>
 			<dd>
-				Event names and descriptions belong to their organisers. [[TODO: owner to supply wording on
+				Namen und Beschreibungen der Events gehören ihren Veranstaltern. [[TODO: owner to supply wording on
 				the selection and presentation of this site]]
 			</dd>
 		</dl>
 	</main>
 
-	<SiteFooter />
+	<SiteFooter locale="de" />
 
 	<style>
 		.legal {

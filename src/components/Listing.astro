@@ -1,5 +1,4 @@
 ---
-import { withBase } from '../lib/events';
 /* The event listing: masthead, headline, digest signup, filters and the
    date-spine rows. The homepage shows every upcoming event; a hub page
    (src/pages/[hub]/index.astro) passes one city's or one type's events plus
@@ -19,12 +18,16 @@ import {
 	weekStart,
 	weekBand,
 	today,
+	blurbFor,
 	type EventEntry,
 } from '../lib/events';
 import { HUBS, isHubLive } from '../lib/hubs.mjs';
+import { t, hubText, displayCity, formatLabel, localizeCost, type Locale } from '../i18n';
+import { localePath, hubPath } from '../i18n/paths.mjs';
 import meta from '../data/meta.json';
 
 interface Props {
+	locale: Locale;
 	entries: EventEntry[];
 	headline: string;
 	subheadline: string;
@@ -33,8 +36,11 @@ interface Props {
 	hub?: (typeof HUBS)[number];
 }
 
-const { entries, headline, subheadline, intro, hub } = Astro.props;
-const lastScan = formatLastScan(meta.lastScan);
+const { locale, entries, headline, subheadline, intro, hub } = Astro.props;
+const s = t(locale).listing;
+const lastScan = formatLastScan(meta.lastScan, locale);
+const hubWords = hub ? hubText(hub, locale) : undefined;
+const pagePath = hub ? hubPath(hub, locale) : '/';
 const events = entries.map((e) => ({ id: e.id, ...e.data }));
 
 const showCity = hub?.kind !== 'city';
@@ -43,25 +49,38 @@ const showFormat = hub?.kind !== 'format';
 // Links to the other hubs: only those with enough events to be worth a visit.
 const allUpcoming = (await getUpcomingEvents()).map((e) => e.data);
 const liveHubs = HUBS.filter((h) => h !== hub && isHubLive(h, allUpcoming));
+const hubLink = (h: (typeof HUBS)[number]) => ({
+	href: localePath(hubPath(h, locale), locale),
+	label: hubText(h, locale).linkLabel,
+});
 const cityLinks = liveHubs.filter((h) => h.kind === 'city');
 const formatLinks = liveHubs.filter((h) => h.kind === 'format');
 
-const digestNote = hub
-	? hub.kind === 'city'
-		? hub.slug === 'online'
-			? 'Every Monday, the next two weeks of online events in your inbox.'
-			: `Every Monday, the next two weeks of ${hub.label} events in your inbox.`
-		: `Every Monday, the next two weeks of ${hub.many} in your inbox.`
-	: undefined;
+const digestNote =
+	hub && hubWords
+		? hub.kind === 'city'
+			? hub.slug === 'online'
+				? s.digestOnline
+				: s.digestCity(hubWords.label)
+			: s.digestFormat(hubWords.plainMany)
+		: undefined;
 const emptyText =
-	events.length === 0 && hub
-		? `No upcoming ${hub.many} ${hub.where} right now. The weekly digest will tell you when one is added.`
+	events.length === 0 && hub && hubWords
+		? s.emptyHub(hubWords.plainMany, hubWords.where)
 		: events.length === 0
-			? 'No events listed yet. The list fills in after the daily refresh has run; the weekly digest will say when it does.'
-			: 'No events match those filters.';
+			? s.emptyAll
+			: s.emptyFiltered;
 
-const cities = [...new Set(events.map((e) => cityGroup(e.city)))].sort(compareCities);
-const formats = [...new Set(events.map((e) => e.format))].sort();
+// Filter values stay the stored (English) ones, so ?city=Munich links work in both languages;
+// only the label is translated.
+const cities = [...new Set(events.map((e) => cityGroup(e.city)))]
+	.map((value) => ({ value, label: displayCity(value, locale) }))
+	.sort((a, b) => compareCities(a.label, b.label));
+const formats = [...new Set(events.map((e) => e.format))]
+	.sort()
+	.map((value) => ({ value, label: formatLabel(value, locale) }));
+// Texts the filter script needs.
+const strings = { city: s.city, format: s.format, one: s.countOne, many: s.countMany };
 
 // Events arrive sorted by date, so grouping is a single pass. Each group is
 // the week the event STARTS in; a multi-day event sits in its start week,
@@ -74,11 +93,11 @@ for (const e of events) {
 	const key = weekStart(e.date < todayIso ? todayIso : e.date);
 	const last = groups[groups.length - 1];
 	if (last && last.band.key === key) last.rows.push(e);
-	else groups.push({ band: weekBand(key), rows: [e] });
+	else groups.push({ band: weekBand(key, locale), rows: [e] });
 }
 
 ---
-	<SiteNav>
+	<SiteNav locale={locale} path={pagePath}>
 		<div class="search-wrap">
 			<button type="button" id="search-toggle" class="search-toggle" aria-expanded="false">
 				<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
@@ -89,11 +108,11 @@ for (const e of events) {
 						d="M15.5 15.5 21 21M17 10.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"
 					></path>
 				</svg>
-				<span class="sr-only">Search</span>
+				<span class="sr-only">{s.search}</span>
 			</button>
 			<label class="search-label">
-				<span class="sr-only">Search</span>
-				<input type="search" id="filter-search" placeholder="Search title, organiser, topic…" />
+				<span class="sr-only">{s.search}</span>
+				<input type="search" id="filter-search" placeholder={s.searchPlaceholder} />
 			</label>
 		</div>
 	</SiteNav>
@@ -102,10 +121,10 @@ for (const e of events) {
 		<header class="statement wrap">
 			{
 				hub && (
-					<nav class="crumb" aria-label="Breadcrumb">
-						<a href={withBase('/')}>All events</a>
+					<nav class="crumb" aria-label={s.breadcrumb}>
+						<a href={localePath('/', locale)}>{s.allEvents}</a>
 						<span aria-hidden="true">›</span>
-						<span>{hub.linkLabel}</span>
+						<span>{hubWords?.linkLabel}</span>
 					</nav>
 				)
 			}
@@ -115,7 +134,7 @@ for (const e of events) {
 		</header>
 
 		<div class="wrap subscribe-slot">
-			<Subscribe placement={hub ? 'hub' : 'home'} preset={hub ? [hub.tag] : []} note={digestNote} />
+			<Subscribe locale={locale} placement={hub ? 'hub' : 'home'} preset={hub ? [hub.tag] : []} note={digestNote} />
 		</div>
 
 		<div class="controls wrap">
@@ -129,23 +148,23 @@ for (const e of events) {
 						aria-expanded="false"
 						aria-controls="city-panel"
 					>
-						<span id="city-label">City</span>
+						<span id="city-label">{s.city}</span>
 						<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
 							<path fill="none" stroke="currentColor" stroke-width="1.5" d="M1 1l4 4 4-4"></path>
 						</svg>
 					</button>
-					<div class="multi-panel" id="city-panel" role="group" aria-label="Cities" hidden>
+					<div class="multi-panel" id="city-panel" role="group" aria-label={s.cities} hidden>
 						<div class="multi-options">
 							{
 								cities.map((c) => (
 									<label class="multi-option">
-										<input type="checkbox" name="city" value={c} />
-										<span>{c}</span>
+										<input type="checkbox" name="city" value={c.value} data-label={c.label} />
+										<span>{c.label}</span>
 									</label>
 								))
 							}
 						</div>
-						<button type="button" class="multi-clear" id="city-clear">Clear</button>
+						<button type="button" class="multi-clear" id="city-clear">{s.clear}</button>
 					</div>
 				</div>
 				)}
@@ -158,23 +177,23 @@ for (const e of events) {
 						aria-expanded="false"
 						aria-controls="format-panel"
 					>
-						<span id="format-label">Format</span>
+						<span id="format-label">{s.format}</span>
 						<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
 							<path fill="none" stroke="currentColor" stroke-width="1.5" d="M1 1l4 4 4-4"></path>
 						</svg>
 					</button>
-					<div class="multi-panel" id="format-panel" role="group" aria-label="Formats" hidden>
+					<div class="multi-panel" id="format-panel" role="group" aria-label={s.formats} hidden>
 						<div class="multi-options">
 							{
 								formats.map((f) => (
 									<label class="multi-option">
-										<input type="checkbox" name="format" value={f} />
-										<span>{f}</span>
+										<input type="checkbox" name="format" value={f.value} data-label={f.label} />
+										<span>{f.label}</span>
 									</label>
 								))
 							}
 						</div>
-						<button type="button" class="multi-clear" id="format-clear">Clear</button>
+						<button type="button" class="multi-clear" id="format-clear">{s.clear}</button>
 					</div>
 				</div>
 				)}
@@ -183,14 +202,14 @@ for (const e of events) {
 						<rect x="3" y="5" width="18" height="16"></rect>
 						<path d="M3 10h18M8 3v4M16 3v4"></path>
 					</svg>
-					Save to my calendar
+					{s.saveCal}
 				</button>
 			</div>
 
-			<div class="when-tabs" role="tablist" aria-label="Time range">
-				<button class="when-tab" data-when="all" type="button">All</button>
-				<button class="when-tab" data-when="week" type="button">This week</button>
-				<button class="when-tab" data-when="month" type="button">This month</button>
+			<div class="when-tabs" role="tablist" aria-label={s.timeRange}>
+				<button class="when-tab" data-when="all" type="button">{s.all}</button>
+				<button class="when-tab" data-when="week" type="button">{s.thisWeek}</button>
+				<button class="when-tab" data-when="month" type="button">{s.thisMonth}</button>
 			</div>
 		</div>
 	</div>
@@ -206,14 +225,17 @@ for (const e of events) {
 							</div>
 						</li>
 						{g.rows.map((e) => {
-							const spine = dateSpine(e.date);
+							const spine = dateSpine(e.date, locale);
 							const isMultiDay = !!e.endDate && e.endDate !== e.date;
-							const endSpine = isMultiDay ? dateSpine(e.endDate) : null;
+							const endSpine = isMultiDay ? dateSpine(e.endDate, locale) : null;
 							const eNew = isNew(e.firstSeen);
 							const free = isFree(e.cost);
 							// Built as one string: separate JSX expressions would each be
 							// wrapped in whitespace, producing "Berlin , Example venue".
-							const metaLine = [e.city, e.venue, e.time].filter(Boolean).join(', ');
+							const metaLine = [displayCity(e.city, locale), e.venue, e.time].filter(Boolean).join(', ');
+							// The summary in this page's language; where only the other language exists it is
+							// shown as it is, marked with its own lang.
+							const blurb = blurbFor(e, locale);
 							return (
 								<li
 									class="row"
@@ -226,7 +248,7 @@ for (const e of events) {
 										.join(' ')
 										.toLowerCase()}
 								>
-									<a class="row-link" href={withBase(`/events/${e.id}/`)}>
+									<a class="row-link" href={localePath(`/events/${e.id}/`, locale)}>
 										<time class="spine" datetime={e.date}>
 											<span class="day num">{spine.day}</span>
 											<span class="dm">
@@ -234,7 +256,7 @@ for (const e of events) {
 											</span>
 											{isMultiDay && endSpine && (
 												<span class="through num">
-													to {endSpine.day} {endSpine.month}
+													{s.through(endSpine.day, endSpine.month)}
 												</span>
 											)}
 										</time>
@@ -242,14 +264,14 @@ for (const e of events) {
 											<h2 class="title">
 												{eNew && <span class="new-dot" aria-hidden="true" />}
 												{e.title}
-												{eNew && <span class="sr-only">(new)</span>}
+												{eNew && <span class="sr-only">{s.newSr}</span>}
 											</h2>
 											<p class="meta">{metaLine}</p>
-											<p class="blurb">{e.blurb}</p>
+											<p class="blurb" lang={blurb.lang === locale ? undefined : blurb.lang}>{blurb.text}</p>
 										</div>
 										<div class="aside">
-											<span class="format">{e.format}</span>
-											<span class={`cost ${free ? 'free' : ''}`}>{e.cost}</span>
+											<span class="format">{formatLabel(e.format, locale)}</span>
+											<span class={`cost ${free ? 'free' : ''}`}>{localizeCost(e.cost, locale)}</span>
 										</div>
 									</a>
 								</li>
@@ -265,20 +287,20 @@ for (const e of events) {
 
 	{
 		(cityLinks.length > 0 || formatLinks.length > 0) && (
-			<nav class="hubs wrap" aria-label="Browse events by city and type">
+			<nav class="hubs wrap" aria-label={s.browseAria}>
 				{cityLinks.length > 0 && (
 					<p>
-						<span class="hubs-label">{hub?.kind === 'city' ? 'Other cities' : 'By city'}</span>
+						<span class="hubs-label">{hub?.kind === 'city' ? s.otherCities : s.byCity}</span>
 						{cityLinks.map((h) => (
-							<a href={withBase(h.path)}>{h.linkLabel}</a>
+							<a href={hubLink(h).href}>{hubLink(h).label}</a>
 						))}
 					</p>
 				)}
 				{formatLinks.length > 0 && (
 					<p>
-						<span class="hubs-label">{hub?.kind === 'format' ? 'Other types' : 'By type'}</span>
+						<span class="hubs-label">{hub?.kind === 'format' ? s.otherTypes : s.byType}</span>
 						{formatLinks.map((h) => (
-							<a href={withBase(h.path)}>{h.linkLabel}</a>
+							<a href={hubLink(h).href}>{hubLink(h).label}</a>
 						))}
 					</p>
 				)}
@@ -286,11 +308,12 @@ for (const e of events) {
 		)
 	}
 
-	<SiteFooter>
-		<span id="result-count" class="num"></span> shown. Last scanned {lastScan}.
-		{hub && <a href={withBase('/')}>All events</a>}
+	<SiteFooter locale={locale}>
+		<span id="result-count" class="num"></span> {s.shown}. {s.lastScanned(lastScan)}
+		{hub && <a href={localePath('/', locale)}>{s.allEvents}</a>}
 	</SiteFooter>
 
+	<script type="application/json" id="listing-strings" set:html={JSON.stringify(strings)} />
 	<script is:inline>
 		(function () {
 			var searchInput = document.getElementById('filter-search');
@@ -301,6 +324,7 @@ for (const e of events) {
 			var bands = Array.prototype.slice.call(document.querySelectorAll('.band'));
 			var resultCount = document.getElementById('result-count');
 			var emptyState = document.getElementById('empty-state');
+			var strings = JSON.parse(document.getElementById('listing-strings').textContent);
 
 			var params = new URLSearchParams(location.search);
 			var state = {
@@ -335,10 +359,16 @@ for (const e of events) {
 							return b.value;
 						});
 				}
+				function labelOf(value) {
+					var box = boxes.filter(function (b) {
+						return b.value === value;
+					})[0];
+					return box ? box.dataset.label || value : value;
+				}
 				function render() {
 					var v = selected();
 					var n = v.length;
-					label.textContent = n === 0 ? placeholder : n === 1 ? v[0] : v[0] + ' +' + (n - 1);
+					label.textContent = n === 0 ? placeholder : n === 1 ? labelOf(v[0]) : labelOf(v[0]) + ' +' + (n - 1);
 					toggle.classList.toggle('has-value', n > 0);
 					clear.hidden = n === 0;
 				}
@@ -380,12 +410,12 @@ for (const e of events) {
 				return selected();
 			}
 
-			state.cities = multiSelect('city', 'City', state.cities, function (v) {
+			state.cities = multiSelect('city', strings.city, state.cities, function (v) {
 				state.cities = v;
 				updateUrl();
 				applyFilters();
 			});
-			state.formats = multiSelect('format', 'Format', state.formats, function (v) {
+			state.formats = multiSelect('format', strings.format, state.formats, function (v) {
 				state.formats = v;
 				updateUrl();
 				applyFilters();
@@ -460,7 +490,7 @@ for (const e of events) {
 				for (var b = 0; b < bands.length; b++) {
 					bands[b].hidden = !perBand[bands[b].dataset.band];
 				}
-				resultCount.textContent = visible + ' event' + (visible === 1 ? '' : 's');
+				resultCount.textContent = visible === 1 ? strings.one : strings.many.replace('{n}', visible);
 				emptyState.hidden = visible !== 0;
 			}
 
