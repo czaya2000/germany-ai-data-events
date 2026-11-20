@@ -182,19 +182,10 @@ export function shortBlurb(text, max = 140) {
 	return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\s]+$/, '') + '…';
 }
 
-// City, venue, time without repeating the city: the venue is dropped when it is empty,
-// equals the city, or contains / is contained in the city text ("Berlin, Berlin",
-// "Hamburg, House of AI Hamburg, Hamburg"). A venue that already holds the city name
-// stays as the only place part (the bare city is dropped instead).
-export function placeMeta(city, venue, time) {
-	const norm = (x) => String(x ?? '').toLowerCase().replace(/\s*\(.*?\)\s*/g, ' ').replace(/\s+/g, ' ').trim();
-	const c = norm(city);
-	const v = norm(venue);
-	let parts;
-	if (!v || v === c || (c && c.includes(v))) parts = [city];
-	else if (c && v.includes(c)) parts = [venue];
-	else parts = [city, venue];
-	return [...parts, time].filter((x) => x && String(x).trim());
+// Card meta line: ONLY the city and the time ("Berlin, 09:00", or just "Berlin").
+// Never the venue, street or any other address part; the full address lives on the event page.
+export function placeMeta(city, time) {
+	return [city, time].map((x) => String(x ?? "").trim()).filter(Boolean);
 }
 
 const BUDGET_KB = 90; // Gmail clips emails over ~102 KB
@@ -216,7 +207,12 @@ export function renderDigest(sel, locale) {
 	const datePart = (iso, opts) =>
 		new Intl.DateTimeFormat(INTL_LOCALE[locale], { ...opts, timeZone: 'UTC' }).format(new Date(`${iso}T00:00:00Z`));
 
-	const a = (href, text, color = T.ink) => `<a href="${href}" style="color:${color};text-decoration:underline;">${text}</a>`;
+	// Every anchor carries its colour inline with !important, so Buttondown's and Gmail's
+	// default blue link style cannot win. Same values as the Swiss digest.
+	const a = (href, text, color = T.ink) =>
+		`<a href="${href}" style="color:${color} !important;text-decoration:underline !important;">${text}</a>`;
+	const plainA = (href, text, extra = '') =>
+		`<a href="${href}" style="${extra}color:${T.ink} !important;text-decoration:none !important;">${text}</a>`;
 	const p = (html, style = '') =>
 		`<p style="margin:0;font-family:${T.font};font-size:15px;line-height:1.5;color:${T.ink};${style}">${html}</p>`;
 
@@ -232,7 +228,7 @@ export function renderDigest(sel, locale) {
 				? `<b>${esc(costText)}</b>`
 				: `<span style="color:${T.muted};">${esc(costText)}</span>`;
 		const format = `<span style="border:1px solid ${T.border};padding:2px 8px;color:${T.ink2};">${esc(formatLabel(e.format, locale))}</span>`;
-		const meta = placeMeta(displayCity(e.city, locale), e.venue, e.time).map(esc).join(', ');
+		const meta = placeMeta(displayCity(e.city, locale), e.time).map(esc).join(', ');
 		const td = `border-bottom:1px solid ${T.border};font-family:${T.font};`;
 		const b = blurbFor(e, locale);
 		// A German email falls back to the English text when no German blurb exists yet.
@@ -247,7 +243,7 @@ export function renderDigest(sel, locale) {
 			`<div style="font-size:28px;font-weight:600;line-height:1;">${s.day}</div>` +
 			`<div style="font-size:12px;color:${T.muted};margin-top:5px;white-space:nowrap;">${s.weekday}, ${s.month}${through}</div>` +
 			`</td><td valign="top" style="padding:18px 0;${td}">` +
-			`<a href="${link(e)}" style="font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;color:${T.ink};text-decoration:none;">${esc(e.title)}</a>` +
+			plainA(link(e), esc(e.title), 'font-size:18px;font-weight:500;line-height:1.28;letter-spacing:-0.01em;') +
 			`<div style="font-size:14px;color:${T.ink2};margin-top:6px;">${meta}</div>` +
 			blurbHtml +
 			`<div style="font-size:13px;margin-top:10px;">${[format, cost].filter(Boolean).join('&nbsp;&nbsp;')}</div>` +
@@ -259,7 +255,7 @@ export function renderDigest(sel, locale) {
 <tr><td style="padding:24px 0 18px;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
 <td valign="middle" style="padding-right:11px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="18" style="border:2px solid ${T.ink};"><tr><td height="4" style="height:4px;line-height:4px;font-size:0;background:${T.accent};">&nbsp;</td></tr><tr><td height="10" style="height:10px;line-height:10px;font-size:0;">&nbsp;</td></tr></table></td>
-<td valign="middle" style="font-family:${T.font};font-size:19px;font-weight:700;letter-spacing:-0.015em;"><a href="${HOME}" style="color:${T.ink};text-decoration:none;">${esc(NEWSLETTER_NAME)}</a></td>
+<td valign="middle" style="font-family:${T.font};font-size:19px;font-weight:700;letter-spacing:-0.015em;">${plainA(HOME, esc(NEWSLETTER_NAME))}</td>
 </tr></table>
 </td></tr>
 <tr><td height="3" style="height:3px;line-height:3px;font-size:0;background:${T.accent};">&nbsp;</td></tr>
@@ -297,6 +293,7 @@ ${p(a('{{ manage_subscription_url }}', c.manage, T.muted), `margin-top:10px;font
 		// The marker keeps the draft in Buttondown's plain (markdown) editor, which
 		// passes raw HTML through. Its visual editor drops unsupported attributes.
 		return `<!-- buttondown-editor-mode: plaintext -->
+<style>a { color:${T.ink} !important; }</style>
 <div style="background:${T.bg};padding:0 20px 24px;">
 <div style="max-width:600px;margin:0 auto;font-family:${T.font};color:${T.ink};">
 ${masthead}

@@ -125,10 +125,42 @@ for (const locale of ['de', 'en']) {
 	});
 }
 
-test('placeMeta never repeats the city', () => {
-	assert.deepEqual(placeMeta('Berlin', 'Berlin', '09:00'), ['Berlin', '09:00']);
-	assert.deepEqual(placeMeta('Berlin', '', ''), ['Berlin']);
-	assert.deepEqual(placeMeta('Hamburg', 'House of AI Hamburg', '10:00–12:00'), ['House of AI Hamburg', '10:00–12:00']);
-	assert.deepEqual(placeMeta('Hamburg', 'Hamburg', undefined), ['Hamburg']);
-	assert.deepEqual(placeMeta('Munich', 'Alte Messe', '18:00'), ['Munich', 'Alte Messe', '18:00']);
+test('placeMeta is only city and optional time', () => {
+	assert.deepEqual(placeMeta('Berlin', '09:00'), ['Berlin', '09:00']);
+	assert.deepEqual(placeMeta('Berlin', ''), ['Berlin']);
+	assert.deepEqual(placeMeta('Hamburg', undefined), ['Hamburg']);
+	assert.deepEqual(placeMeta('Munich', '10:00–12:00'), ['Munich', '10:00–12:00']);
 });
+
+for (const locale of ['de', 'en']) {
+	test(`digest links (${locale}): every <a> is #000000 or #6b6b70 with !important; titles and header not underlined`, () => {
+		const { body } = renderDigest(sel, locale);
+		const anchors = [...body.matchAll(/<a\b[^>]*>/g)].map((m) => m[0]);
+		assert.ok(anchors.length > MANY.length);
+		for (const tag of anchors) {
+			const style = tag.match(/style="([^"]*)"/)?.[1] ?? '';
+			assert.match(style, /(?:^|;)color:(#000000|#6b6b70) !important(;|$)/, tag);
+			assert.match(style, /text-decoration:(none|underline) !important/, tag);
+			assert.doesNotMatch(style, /#0066ff|blue/i);
+		}
+		const titles = anchors.filter((t) => t.includes('/events/') || t.includes('utm_campaign=digest" style="color:#000000 !important;text-decoration:none'));
+		assert.ok(titles.length >= MANY.length + 1); // event titles + masthead
+		for (const t of titles) assert.match(t, /text-decoration:none !important/);
+		assert.match(body, /<style>a \{ color:#000000 !important; \}<\/style>/);
+	});
+
+	test(`digest meta lines (${locale}): only city and optional time, no venue or street`, () => {
+		const dirty = [
+			ev({ id: 'd1', title: 'D1', city: 'Berlin', venue: 'Ederstraße 10, Ederstraße 10', time: '09:00' }),
+			ev({ id: 'd2', title: 'D2', city: 'Munich', venue: 'Munich, Munich, Germany', time: '' }),
+			ev({ id: 'd3', title: 'D3', city: 'Hamburg', venue: 'House of AI Hamburg', time: '10:00–12:00' }),
+		];
+		const { body } = renderDigest(selectEvents(dirty, { today: '2026-11-23' }), locale);
+		assert.doesNotMatch(body, /Ederstraße|House of AI|Mitte|Alte Messe/);
+		const metas = [...body.matchAll(/font-size:14px;color:#3f3f45;margin-top:6px;">([^<]*)</g)].map((m) => m[1]);
+		assert.ok(metas.length >= 3);
+		const city = locale === 'de' ? '(Berlin|München|Hamburg)' : '(Berlin|Munich|Hamburg)';
+		for (const m of metas) assert.match(m, new RegExp(`^${city}(, \\d{2}:\\d{2}(–\\d{2}:\\d{2})?)?$`), m);
+		assert.ok(metas.some((m) => /^Berlin, 09:00$/.test(m)));
+	});
+}
