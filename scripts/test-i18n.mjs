@@ -203,8 +203,15 @@ for (const { file, html } of pages) {
 	}
 
 	// newsletter tag and calendar feed language
-	if (/class="subscribe-form"/.test(html) && !html.includes(`name="tag" value="lang-${locale}"`)) {
-		fail(`${rel}: newsletter form without the lang-${locale} tag`);
+	// Exactly one language tag per form: a radio pair, only the page language checked.
+	for (const form of html.split('<form').filter((f) => /class="subscribe-form"/.test(f.slice(0, 400)))) {
+		const radios = [...form.matchAll(/<input[^>]*type="radio"[^>]*>/g)].map((m) => m[0]).filter((i) => /name="tag"/.test(i));
+		const values = radios.map((i) => attr(i, 'value')).sort().join();
+		const checked = radios.filter((i) => /\schecked/.test(i)).map((i) => attr(i, 'value'));
+		if (values !== 'lang-de,lang-en' || checked.join() !== `lang-${locale}`) {
+			fail(`${rel}: newsletter form must offer lang-de and lang-en radios with only lang-${locale} checked`);
+		}
+		if (/type="hidden"[^>]*name="tag"/.test(form)) fail(`${rel}: newsletter form has a hidden tag input`);
 	}
 	const feeds = html.match(/<script type="application\/json" id="cal-feeds">(.*?)<\/script>/s)?.[1];
 	if (feeds) {

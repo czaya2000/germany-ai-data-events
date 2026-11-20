@@ -172,6 +172,8 @@ export const de: Messages = {
 		dialogTitle: 'Ihr wöchentlicher Newsletter',
 		close: 'Schließen',
 		intro: 'Städte und Formate auswählen – oder leer lassen, um alles zu erhalten.',
+		language: 'Sprache der E-Mail',
+		languageHelp: 'In dieser Sprache erhalten Sie den wöchentlichen Newsletter. Die Events sind dieselben.',
 		cities: 'Städte',
 		types: 'Formate',
 		submit: 'Abonnieren',

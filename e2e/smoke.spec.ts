@@ -195,7 +195,8 @@ test.describe('subscribe dialog', () => {
 			await expect(form.locator('.sub-email')).toHaveText('reader@example.org');
 			await expect(form.locator('input[value="city-berlin"]')).toBeChecked();
 			await expect(form.locator('input[value="city-munich"]')).not.toBeChecked();
-			await expect(form.locator('input[type="hidden"][name="tag"]')).toHaveValue(`lang-${loc}`);
+			await expect(form.locator(`input[type="radio"][value="lang-${loc}"]`)).toBeChecked();
+			await expect(form.locator('input[type="radio"]:checked')).toHaveCount(1);
 			await page.keyboard.press('Escape');
 			await expect(dialog).toBeHidden();
 			await expect(opener).toBeFocused();

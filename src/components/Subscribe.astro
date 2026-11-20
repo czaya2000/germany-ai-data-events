@@ -23,6 +23,10 @@ interface Props {
 
 const { locale, placement, compact = false, preset = [], note } = Astro.props;
 const s = t(locale);
+const LANGS = [
+	{ code: 'de', label: 'Deutsch' },
+	{ code: 'en', label: 'English' },
+];
 const id = (s: string) => `sub-${placement}-${s}`;
 // Homepage: form with this line at the bottom. Event pages (compact): line above.
 const NOTE = note ?? s.subscribe.defaultNote;
@@ -37,7 +41,6 @@ const NOTE = note ?? s.subscribe.defaultNote;
 	<form action={SUBSCRIBE_ACTION} method="post" class="subscribe-form">
 		<input type="hidden" name="embed" value="1" />
 		<input type="hidden" name="metadata__placement" value={placement} />
-		<input type="hidden" name="tag" value={`lang-${locale}`} />
 		<div class="subscribe-row">
 			<label for={id('email')}>
 				<span class="sr-only">{s.subscribe.emailLabel}</span>
@@ -71,6 +74,21 @@ const NOTE = note ?? s.subscribe.defaultNote;
 				</button>
 			</div>
 			<p class="sub-intro">{s.subscribe.intro}</p>
+			<!-- Exactly one language tag is submitted: a radio group, defaulting to the page
+			     language. The radios sit in the dialog, but a closed dialog still submits
+			     its controls, so the no-JS path sends the default too. -->
+			<fieldset class="sub-lang">
+				<legend>{s.subscribe.language}</legend>
+				<div class="choices">
+					{LANGS.map((l) => (
+						<label class="choice" for={id(`lang-${l.code}`)}>
+							<input type="radio" name="tag" value={`lang-${l.code}`} id={id(`lang-${l.code}`)} checked={l.code === locale} />
+							{l.label}
+						</label>
+					))}
+				</div>
+				<p class="sub-help">{s.subscribe.languageHelp}</p>
+			</fieldset>
 			<fieldset>
 				<legend>{s.subscribe.cities}</legend>
 				<div class="choices">
@@ -253,6 +271,11 @@ const NOTE = note ?? s.subscribe.defaultNote;
 		color: var(--muted);
 		margin-bottom: 6px;
 		padding: 0;
+	}
+	.sub-help {
+		margin: 6px 0 0;
+		font-size: 0.78rem;
+		color: var(--muted);
 	}
 	.sub-submit {
 		width: 100%;

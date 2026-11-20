@@ -169,6 +169,8 @@ export const en = {
 		dialogTitle: 'Your weekly digest',
 		close: 'Close',
 		intro: 'Pick cities and event types, or leave them blank to get everything.',
+		language: 'Email language',
+		languageHelp: 'The language of your weekly email. The events are the same.',
 		cities: 'Cities',
 		types: 'Event types',
 		submit: 'Subscribe',

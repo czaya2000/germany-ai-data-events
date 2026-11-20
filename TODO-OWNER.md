@@ -32,7 +32,6 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 7. `CONTACT_EMAIL`: contact email. Also used in the fetcher User-Agent (the repository URL is used until it is set).
 8. `FORM_ENDPOINT`: FormSubmit target address for the contact and submit forms (`https://formsubmit.co/<address>`).
-9. `BUTTONDOWN_USERNAME`: Buttondown newsletter name and username; API key as repository secret `BUTTONDOWN_API_KEY`. `buttondown/web.css` carries tag ids from the reference newsletter; replace them with the ids of the new newsletter's `city-<slug>` and `format-<slug>` tags. The signup form posts to `buttondown.com/api/emails/embed-subscribe/<username>` and will not work until the username is set.
 11. The working name "German AI & Data Events" (`SITE_NAME`) and the six hub cities can be changed in `config/country.mjs`.
 
 ## Legal pages
@@ -46,12 +45,20 @@ Things only the owner can decide or supply. Everything here is a `[[TODO: ...]]`
 
 ## Later (not part of phase 1)
 
-15. Monday Buttondown digest draft step: a commented stub is in `.github/workflows/daily-refresh.yml`. Enable it after creating the newsletter and adding secret `BUTTONDOWN_API_KEY`.
-16. Weekly discovery agent, Playwright scrape sources, newsletter tag setup.
+15. Weekly discovery agent, Playwright scrape sources.
 
 ## Languages
 
 12. **[[TODO: Produktname]]**: the product name "German AI & Data Events" (`SITE_NAME`) is shown in English in both languages for now. Decide whether the German site gets a German name; change it in `config/country.mjs`.
-13. **Buttondown**: the signup form now also sends a tag `lang-de` or `lang-en` (the language of the page the reader signed up on). Buttondown creates unknown tags itself. The digest (`scripts/build-digest.mjs`) does not use them yet: it is still English and links to the German event pages; a German digest is a separate step.
+13. **Buttondown** (newsletter `german-data-events`, wired in code): the signup form posts to `https://buttondown.com/api/emails/embed-subscribe/german-data-events` with exactly one language tag (`lang-de` or `lang-en`, a Deutsch/English radio defaulting to the page language) plus optional `city-<slug>` / `format-<slug>` tags. Every Monday `daily-refresh.yml` runs `scripts/build-digest.mjs`, which creates **two drafts** (German: subscribers without `lang-en`; English: subscribers with `lang-en`). It never sends anything. Still to do in Buttondown:
+    - Add the repository secret `BUTTONDOWN_API_KEY` (until then the Monday step skips itself).
+    - Sender name / from address, and the newsletter's public details.
+    - Turn on **double opt-in** (confirmation email) and review the confirmation and welcome emails (German and English text; the confirmation email is one text for everyone).
+    - Redirect URLs (the API key has no Settings scope, so set them by hand under Settings, or later with `node scripts/buttondown-redirects.mjs --apply` using a key that has it). Buttondown has one address per setting, so they point at the German pages:
+      - after the form is submitted: `https://germandataevents.com/subscribe/thanks/` (English page: `/en/subscribe/thanks/`)
+      - after the confirmation link: `https://germandataevents.com/subscribe/confirmed/` (English page: `/en/subscribe/confirmed/`)
+    - Optional: paste `buttondown/web.css` into Settings > Web > Custom CSS, and replace its tag ids with the ids of this newsletter's `city-<slug>` / `format-<slug>` tags (the ids in it are from the Swiss newsletter).
+    - Every Monday: open the two drafts in the dashboard, check the preview (also with a test subscriber that has `lang-en`), and send them yourself. The first drafts may be over Gmail's ~102 KB clip limit while most events are new (the script prints a warning).
+    - The `filters` payload (`tags` contains / not_contains the `lang-en` tag id, from `GET /v1/tags`) follows the 2026-04-01 API as specified, but was never run against the live API from here. Check the audience on the first draft.
 14. **Legal pages**: `/impressum/` and `/datenschutz/` are German skeletons (the old `/privacy/` redirects to `/datenschutz/`). The `[[TODO]]` values are unchanged and still yours to supply; English pages link to them with "(in German)".
 15. **German wording**: the German UI text (`src/i18n/de.ts`) uses the formal "Sie" only where a sentence addresses the reader. Have a native speaker read it once before go-live.

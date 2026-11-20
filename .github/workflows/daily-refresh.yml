@@ -1,7 +1,7 @@
 ### Daily refresh for the German AI & Data Events site
 #
 # Flow: prepare (Node: fetch, filter, dedupe, ledger) -> Claude step (only if there is
-# new work) -> apply (Node: verify, merge, archive, validate) -> commit data -> build -> deploy.
+# new work) -> apply (Node: verify, merge, archive, validate) -> commit data -> build -> Monday digest drafts -> deploy.
 #
 # Deploy design (one choice, documented): this workflow builds and deploys itself, in the
 # `deploy` job below (`needs: refresh`). deploy.yml is for code pushes and manual runs only.
@@ -136,15 +136,19 @@ jobs:
         with:
           path: dist
 
-      # Monday Buttondown digest draft: not enabled yet (needs BUTTONDOWN_API_KEY and the
-      # newsletter set up; see TODO-OWNER.md). Stub, to be enabled after deploy:
-      # - name: Create the weekly digest draft (Mondays)
-      #   if: ${{ !inputs.deploy_only && hashFiles('scripts/build-digest.mjs') != '' }}
-      #   env:
-      #     BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
-      #   run: |
-      #     if [ "$(date -u +%u)" != "1" ]; then echo "Not Monday."; exit 0; fi
-      #     node scripts/build-digest.mjs
+      # Monday digest: two Buttondown DRAFTS (German + English) from the refreshed data.
+      # Drafts only; nobody is emailed from here, the owner reviews and sends in the
+      # dashboard. Skipped when the secret is missing. A failure here must not block the
+      # deploy. The script sends the Authorization, X-API-Version and Content-Type headers.
+      - name: Create the weekly digest drafts (Mondays)
+        if: ${{ !inputs.deploy_only }}
+        continue-on-error: true
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          if [ "$(date -u +%u)" != "1" ]; then echo "Not Monday: no digest."; exit 0; fi
+          if [ -z "$BUTTONDOWN_API_KEY" ]; then echo "BUTTONDOWN_API_KEY is not set: no digest."; exit 0; fi
+          node scripts/build-digest.mjs
 
   deploy:
     # Separate job: only jobs in the github-pages environment can publish.
