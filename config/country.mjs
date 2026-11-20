@@ -40,7 +40,9 @@ export const BUTTONDOWN_USERNAME = '[[TODO: Buttondown username]]';
 export const GOOGLE_SITE_VERIFICATION = '';
 export const INDEXNOW_KEY = '';
 /** Optional analytics. An empty value renders no tracking script at all. */
-export const UMAMI_WEBSITE_ID = '';
+export const UMAMI_WEBSITE_ID = 'd4786ec0-dbc4-4041-8b01-bd87541dcaa5';
+/** Self-hosted Umami (Vercel). */
+export const UMAMI_SCRIPT_URL = 'https://umami-data-events.vercel.app/script.js';
 export const CLOUDFLARE_BEACON_TOKEN = '';
 export const LINKEDIN_URL = '';
 export const INSTAGRAM_URL = '';

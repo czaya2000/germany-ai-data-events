@@ -10,7 +10,7 @@ import {
 import { LOCALE_PREFIX, OG_LOCALE, HTML_LANG, alternates } from '../i18n/paths.mjs';
 import { t, type Locale } from '../i18n';
 import { TRACKER_PRELUDE } from '../lib/tracker-prelude.mjs';
-import { UMAMI_WEBSITE_ID, CLOUDFLARE_BEACON_TOKEN, SITE_HOST } from '../../config/country.mjs';
+import { UMAMI_WEBSITE_ID, UMAMI_SCRIPT_URL, CLOUDFLARE_BEACON_TOKEN, SITE_HOST } from '../../config/country.mjs';
 
 interface Props {
 	title: string;
@@ -129,7 +129,7 @@ const analytics = Boolean(UMAMI_WEBSITE_ID || CLOUDFLARE_BEACON_TOKEN);
 						<script
 							is:inline
 							defer
-							src="https://cloud.umami.is/script.js"
+							src={UMAMI_SCRIPT_URL}
 							data-website-id={UMAMI_WEBSITE_ID}
 							data-domains={SITE_HOST}
 						/>
