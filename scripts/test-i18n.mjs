@@ -93,8 +93,7 @@ function uiText(html, isEventPage) {
 		.replace(/<section class="alt-lang[\s\S]*?<\/section>/g, '') // English block on the German 404
 		.replace(/<!--[\s\S]*?-->/g, '')
 		.replace(/<ul class="events"[^>]*>[\s\S]*?<\/ul>/, '')
-		.replace(/<p class="blurb"[^>]*>[\s\S]*?<\/p>/g, '')
-		.replace(/\[\[TODO[\s\S]*?\]\]/g, '');
+		.replace(/<p class="blurb"[^>]*>[\s\S]*?<\/p>/g, '');
 	if (isEventPage) {
 		h = h
 			.replace(/<title>[\s\S]*?<\/title>/, '')
@@ -121,6 +120,10 @@ for (const { file, html } of pages) {
 	const url = urlFor(file);
 	const is404 = rel.endsWith('404.html') || rel.endsWith('404/index.html');
 	const isEventPage = /(^|\/)events\//.test(rel);
+
+	// Launch-ready: no owner placeholders or draft banners on any public page.
+	if (/\[\[TODO|TODO/.test(html)) fail(`${rel}: contains TODO`);
+	if (/class="todo"/.test(html)) fail(`${rel}: contains a draft banner`);
 
 	// html lang, og:locale
 	const lang = html.match(/<html lang="([^"]+)"/)?.[1];

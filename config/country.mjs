@@ -2,8 +2,7 @@
 // scripts (validator, digest, indexnow) and the pipeline can all import it.
 //
 // Domain: germandataevents.com. The base path is derived from SITE_URL (empty
-// on a bare domain). Flip INDEXABLE to true only at go-live. See TODO-OWNER.md.
-
+// on a bare domain). Flip INDEXABLE to true only at go-live.
 export const COUNTRY_CODE = 'DE';
 export const COUNTRY_NAME = 'Germany';
 export const TIMEZONE = 'Europe/Berlin';
@@ -33,9 +32,9 @@ export const REPO_URL = 'https://github.com/czaya2000/germany-ai-data-events';
 // Flip to true at go-live.
 export const INDEXABLE = false;
 
-// Owner-only values. Each is a placeholder until the owner supplies it (TODO-OWNER.md).
+// Owner-supplied values (open items are listed in the owner notes file).
 export const CONTACT_EMAIL = 'hallo@germandataevents.com';
-export const FORM_ENDPOINT = 'https://formsubmit.co/[[TODO: FormSubmit target address]]';
+export const FORM_ENDPOINT = 'https://formsubmit.co/hallo@germandataevents.com';
 export const BUTTONDOWN_USERNAME = 'german-data-events';
 export const GOOGLE_SITE_VERIFICATION = '';
 export const INDEXNOW_KEY = '';

@@ -71,16 +71,25 @@ test('legal pages: Impressum and Datenschutz have English twins', () => {
 	assert.deepEqual(p.alternates(`${BASE}/konferenzen/`), { de: '/konferenzen/', en: '/en/conferences/' });
 });
 
-test('legal pages: the source keeps [[TODO]] placeholders for owner facts and invents none', () => {
+test('legal pages: no placeholders or draft banners, no invented facts, processors named', () => {
 	for (const f of ['ImpressumPage', 'DatenschutzPage']) {
 		const src = readFileSync(new URL(`../../src/views/${f}.astro`, import.meta.url), 'utf8');
-		assert.ok((src.match(/\[\[TODO/g) ?? []).length >= (f === 'ImpressumPage' ? 4 : 10), `${f} lost its placeholders`);
+		assert.doesNotMatch(src, /TODO|Entwurf|Draft\b|class="todo"/, `${f} still has a placeholder or draft banner`);
 		assert.doesNotMatch(src, /\+49|\bDE\d{9}\b|stra(ß|ss)e \d/i, `${f} contains what looks like a real fact`);
 	}
 	const priv = readFileSync(new URL('../../src/views/DatenschutzPage.astro', import.meta.url), 'utf8');
-	for (const word of ['Umami', 'Vercel', 'Supabase', 'Buttondown', 'FormSubmit', 'Data Privacy Framework', 'Art. 77', 'GitHub Pages']) {
+	for (const word of ['Umami', 'Vercel', 'Supabase', 'Buttondown', 'FormSubmit', 'Data Privacy Framework', 'Art. 77', 'GitHub Pages', 'Devro LABS', 'reCAPTCHA']) {
 		assert.ok(priv.includes(word), `privacy text no longer mentions ${word}`);
 	}
+	assert.doesNotMatch(priv, /Frankfurt/, 'privacy text states an unverified database region');
+	const imp = readFileSync(new URL('../../src/views/ImpressumPage.astro', import.meta.url), 'utf8');
+	assert.ok(imp.includes('creativecommons.org/licenses/by/4.0/') && imp.includes('CC BY 4.0') && imp.includes('§ 36 VSBG'));
+});
+
+test('FORM_ENDPOINT posts to FormSubmit with the contact mailbox', async () => {
+	const { FORM_ENDPOINT, CONTACT_EMAIL } = await import('../../config/country.mjs');
+	assert.equal(FORM_ENDPOINT, `https://formsubmit.co/${CONTACT_EMAIL}`);
+	assert.equal(FORM_ENDPOINT, 'https://formsubmit.co/hallo@germandataevents.com');
 });
 
 test('switchLocalePath: 404 page', () => {
@@ -242,7 +251,7 @@ test('legal pages: real owner name, contact email, date and no leftover name/dat
 	for (const f of ['ImpressumPage', 'DatenschutzPage']) {
 		const src = readFileSync(new URL(`../../src/views/${f}.astro`, import.meta.url), 'utf8');
 		assert.ok(src.includes('Marcin Czajkowski'), `${f} lacks the owner name`);
-		assert.doesNotMatch(src, /\[\[TODO NAME\]\]|TODO: (Datum|date)\b|Datenschutzbeauftragter:|Data protection officer:/, `${f} still has a resolved placeholder`);
+		assert.doesNotMatch(src, /TODO|Datenschutzbeauftragter:|Data protection officer:/, `${f} still has a placeholder`);
 		assert.ok(src.includes('20. November 2026') && src.includes('20 November 2026'), `${f} lacks the last-updated date`);
 	}
 });

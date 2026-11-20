@@ -1,6 +1,6 @@
 ---
 import LegalShell from '../components/LegalShell.astro';
-import { SITE_NAME, CONTACT_EMAIL } from '../lib/events';
+import { SITE_NAME, SITE_URL, CONTACT_EMAIL } from '../lib/events';
 import { localePath, legalPath } from '../i18n/paths.mjs';
 import type { Locale } from '../i18n';
 
@@ -24,10 +24,6 @@ const description = de
 		de ? (
 			<>
 				<h1>Impressum</h1>
-				<p class="todo">
-					Entwurf. Der Betreiber muss vor dem Start jeden mit [[TODO]] markierten Wert ergänzen. Dies ist keine
-					Rechtsberatung; der endgültige Text sollte geprüft werden.
-				</p>
 
 				<dl>
 					<dt>Diensteanbieter (§ 5 DDG)</dt>
@@ -58,10 +54,30 @@ const description = de
 				</dl>
 
 				<h2 id="haftungsausschluss">Haftungsausschluss</h2>
-				<p class="todo">
-					Entwurf eines Haftungsausschlusses; [[TODO: Betreiber lässt den Wortlaut prüfen]]. Gesetzliche Haftung,
-					insbesondere bei Vorsatz, grober Fahrlässigkeit und bei Verletzung von Leben, Körper oder Gesundheit,
-					lässt sich nicht ausschließen und bleibt unberührt.
+				<p>
+					Die gesetzliche Haftung, insbesondere bei Vorsatz, grober Fahrlässigkeit und bei Verletzung von Leben,
+					Körper oder Gesundheit, lässt sich nicht ausschließen und bleibt unberührt.
+				</p>
+
+				<h2>Haftung für Inhalte</h2>
+				<p>
+					Als Diensteanbieter sind wir nach den allgemeinen Gesetzen, nach Art. 6 ff. der Verordnung (EU) 2022/2065
+					(Digital Services Act) und nach § 7 DDG für eigene Inhalte auf diesen Seiten verantwortlich. Wir sind jedoch
+					nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu
+					forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der
+					Nutzung von Informationen nach den allgemeinen Gesetzen bleiben unberührt. Eine Haftung ist erst ab
+					Kenntnis einer konkreten Rechtsverletzung möglich; bei Bekanntwerden entsprechender Rechtsverletzungen
+					entfernen wir die betreffenden Inhalte umgehend.
+				</p>
+
+				<h2>Haftung für Links</h2>
+				<p>
+					Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für
+					diese fremden Inhalte können wir keine Gewähr übernehmen; verantwortlich ist stets der jeweilige Anbieter
+					oder Betreiber der verlinkten Seite. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Eine
+					permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer
+					Rechtsverletzung nicht zumutbar; bei Bekanntwerden von Rechtsverletzungen entfernen wir die betreffenden
+					Links umgehend.
 				</p>
 
 				<h2>Richtigkeit der Event-Angaben</h2>
@@ -86,17 +102,20 @@ const description = de
 					Veranstalters, der Inhalte oder der Referenten.
 				</p>
 
-				<h2>Externe Links</h2>
+				<h2>Urheberrecht und Datenlizenz</h2>
 				<p>
-					Jeder Eintrag verweist auf Seiten Dritter. Auf deren Inhalte haben wir keinen Einfluss; für sie ist
-					ausschließlich der jeweilige Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine
-					Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir den Link umgehend.
+					Die Eventangaben als solche (Titel, Datum, Ort, Preis und ähnliche Sachangaben) sind nicht als solche
+					urheberrechtlich geschützt. Die von uns geschriebenen Texte, die Auswahl und Darstellung der Inhalte sowie
+					das Design dieser Website unterliegen dem Urheberrecht des Betreibers.
 				</p>
-
-				<h2>Urheberrecht</h2>
 				<p>
-					Die von uns erstellten Texte, die Auswahl und Darstellung der Inhalte sowie das Design dieser Website
-					unterliegen dem Urheberrecht [[TODO: Betreiber bestätigt, ggf. Lizenz für die Daten, z. B. /data/ und events.json]].
+					Die von uns zusammengestellte Sammlung der Eventdaten, veröffentlicht unter <code>/data/</code> und in{' '}
+					<code>events.json</code>, darf unter der Lizenz{' '}
+					<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener license">Creative Commons Namensnennung 4.0 International (CC BY 4.0)</a>{' '}
+					weiterverwendet werden, mit Namensnennung „German Data Events“ und Link auf{' '}
+					<a href={SITE_URL}>{SITE_URL}</a>.
+				</p>
+				<p>
 					Namen, Logos, Titel und Beschreibungen der Veranstaltungen gehören den jeweiligen Veranstaltern bzw.
 					Rechteinhabern und werden nur zur Information über die Veranstaltung genannt. Wenn Sie als Rechteinhaber
 					eine Nennung oder einen Inhalt entfernt oder geändert haben möchten, schreiben Sie uns über das
@@ -111,9 +130,8 @@ const description = de
 		) : (
 			<>
 				<h1>Legal notice (Impressum)</h1>
-				<p class="todo">
-					Draft. The operator must fill in every value marked [[TODO]] before launch. This is not legal advice; have
-					the final text reviewed. German law requires this notice; the German version (switch language, top right) is the binding one.
+				<p class="note">
+					German law requires this notice; the German version (switch language, top right) is the binding one.
 				</p>
 
 				<dl>
@@ -145,9 +163,28 @@ const description = de
 				</dl>
 
 				<h2 id="disclaimer">Disclaimer</h2>
-				<p class="todo">
-					Draft disclaimer; [[TODO: operator to have the wording reviewed]]. Statutory liability, in particular for
-					intent, gross negligence and injury to life, body or health, cannot be excluded and remains unaffected.
+				<p>
+					Statutory liability, in particular for intent, gross negligence and injury to life, body or health, cannot
+					be excluded and remains unaffected.
+				</p>
+
+				<h2>Liability for content</h2>
+				<p>
+					As a service provider we are responsible for our own content on these pages under the general laws, Art. 6
+					et seq. of Regulation (EU) 2022/2065 (Digital Services Act) and § 7 DDG. We are not, however, obliged to
+					monitor transmitted or stored third-party information or to investigate circumstances that indicate
+					unlawful activity. Obligations to remove or block the use of information under the general laws remain
+					unaffected. Liability is only possible from the point at which we learn of a specific infringement; once we
+					do, we remove the content concerned promptly.
+				</p>
+
+				<h2>Liability for links</h2>
+				<p>
+					Our offer contains links to external third-party websites over whose content we have no influence. We
+					cannot accept any liability for that third-party content; the respective provider or operator of the linked
+					page is always responsible for it. No legal violations were apparent when the links were set. Continuous
+					monitoring of linked pages is not reasonable without concrete indications of an infringement; if we learn of
+					one, we remove the links concerned promptly.
 				</p>
 
 				<h2>Accuracy of event data</h2>
@@ -170,17 +207,19 @@ const description = de
 					content or the speakers.
 				</p>
 
-				<h2>External links</h2>
+				<h2>Copyright and data licence</h2>
 				<p>
-					Every entry links to third-party pages. We have no influence on their content; only their operators are
-					responsible for it. No legal violations were apparent when the links were set. If we learn of one, we
-					remove the link promptly.
+					Event facts as such (title, date, place, price and similar factual details) are not protected by copyright.
+					The texts we write, the selection and presentation of content, and the design of this site remain the
+					copyright of the operator.
 				</p>
-
-				<h2>Copyright</h2>
 				<p>
-					The texts we write, the selection and presentation of content, and the design of this site are protected
-					by copyright [[TODO: operator to confirm, and to state any licence for the data feeds, e.g. /data/ and events.json]].
+					The compilation of event data we publish at <code>/data/</code> and in <code>events.json</code> may be
+					reused under the{' '}
+					<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener license">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>{' '}
+					licence, with attribution to "German Data Events" and a link to <a href={SITE_URL}>{SITE_URL}</a>.
+				</p>
+				<p>
 					Event names, logos, titles and descriptions belong to the respective organisers or rights holders and are
 					named only to inform about the event. If you are a rights holder and want a mention or content removed or
 					changed, write to us through the contact form or by email; we respond promptly.

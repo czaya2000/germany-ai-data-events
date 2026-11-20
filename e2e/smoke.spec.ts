@@ -104,15 +104,25 @@ test.describe('legal pages in both languages', () => {
 			expect(errors).toEqual([]);
 		});
 	}
-	test('every page links to the legal pages in its own language, processor placeholders stay [[TODO]], name and email are real', async ({ page }) => {
+	test('every page links to the legal pages in its own language, legal pages are final: no placeholders or draft banner, name, email, VSBG and CC BY note present', async ({ page }) => {
 		await page.goto('/');
 		await expect(page.locator('footer a[href="/impressum/"]')).toHaveCount(1);
 		await expect(page.locator('footer a[href="/datenschutz/"]')).toHaveCount(1);
 		await page.goto('/en/');
 		await expect(page.locator('footer a[href="/en/legal-notice/"]')).toHaveCount(1);
 		await expect(page.locator('footer a[href="/en/privacy/"]')).toHaveCount(1);
-		await page.goto('/en/privacy/');
-		await expect(page.locator('main')).toContainText('[[TODO');
+		for (const [p, texts] of [
+			['/impressum/', ['Marcin Czajkowski', 'hallo@germandataevents.com', '§ 36 VSBG', 'CC BY 4.0']],
+			['/en/legal-notice/', ['Marcin Czajkowski', 'hallo@germandataevents.com', '§ 36 VSBG', 'CC BY 4.0']],
+			['/datenschutz/', ['Marcin Czajkowski', 'hallo@germandataevents.com', 'Art. 77 DSGVO', 'Devro LABS']],
+			['/en/privacy/', ['Marcin Czajkowski', 'hallo@germandataevents.com', 'Art. 77 GDPR', 'Devro LABS']],
+		] as [string, string[]][]) {
+			await page.goto(p);
+			const main = page.locator('main');
+			for (const t of texts) await expect(main).toContainText(t);
+			await expect(main).not.toContainText('TODO');
+			await expect(main).not.toContainText(/Entwurf|Draft/);
+		}
 	});
 });
 

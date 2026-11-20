@@ -33,7 +33,7 @@ The decisive difference from the Swiss edition is **how the daily refresh works*
 4. **No Node script calls the Anthropic API, and nothing reads `CLAUDE_CODE_OAUTH_TOKEN` except `anthropics/claude-code-action` in the workflow.** (A subscription OAuth token may be used by Claude Code itself, not by our own code; see 3.2.)
 5. No invented facts: owner-only values are `[[TODO: ...]]` placeholders listed in `TODO-OWNER.md`.
 6. No secrets in the repo (`.env` git-ignored).
-7. Respect the sources: normal User-Agent with a contact string from `config/country.mjs` (`[[TODO: contact email]]` until set; use the repo URL meanwhile), at most 1 request per second per host, conditional GET where possible, honour `robots.txt` for scrape sources, never bypass logins, captchas or bot walls, never republish a source's descriptions. The blurb is our own sentence and the link goes to the organiser.
+7. Respect the sources: normal User-Agent with a contact string from `config/country.mjs` (`CONTACT_EMAIL`, now set to hallo@germandataevents.com), at most 1 request per second per host, conditional GET where possible, honour `robots.txt` for scrape sources, never bypass logins, captchas or bot walls, never republish a source's descriptions. The blurb is our own sentence and the link goes to the organiser.
 8. English UI for v1 (`lang="en"`, `og:locale` `en_DE`); event titles stay in their original language; blurbs in English. Keep UI strings central (`src/lib/strings.ts`); no i18n yet.
 
 ## 3. Decisions already made
@@ -142,7 +142,7 @@ City values: `Berlin`, `Munich`, `Hamburg`, `Frankfurt`, `Cologne`, `Stuttgart` 
 
 Search the copy for each of these (paths are now relative to the repo root). A final grep gate is in the acceptance criteria.
 
-- `src/lib/events.ts`: `SITE_URL`, `SITE_NAME`, `FORM_ENDPOINT` (FormSubmit address of the owner, `[[TODO]]`), `cityGroup`/`NEWSLETTER_CITIES` (Germany's cities), the `offerFacts` currency (CHF to EUR), `LAST_SCAN_FMT` and `Europe/Zurich` references.
+- `src/lib/events.ts`: `SITE_URL`, `SITE_NAME`, `FORM_ENDPOINT` (FormSubmit address of the owner, now set to the contact mailbox), `cityGroup`/`NEWSLETTER_CITIES` (Germany's cities), the `offerFacts` currency (CHF to EUR), `LAST_SCAN_FMT` and `Europe/Zurich` references.
 - `src/lib/newsletter.mjs`, `src/lib/hubs.mjs`: city and format tag lists, newsletter name, Buttondown username (`[[TODO]]`), hub pages and copy.
 - `src/lib/ics.ts` and `scripts/test-ics.mjs`: `TZID` to `Europe/Berlin` (the daylight-saving rule is the same as Zurich's, but rename and re-test around the March and October switches), `UID` domain (`<id>@<new-domain>`), calendar name and prodid, the `online-ch` feed to `online-de`.
 - `src/lib/public-data.ts`: `SITE_SCOPE`, `timezone: 'Europe/Berlin'`, `DATA_VERSION`, llms.txt text.
