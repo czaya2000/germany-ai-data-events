@@ -43,7 +43,6 @@ for (const loc of LOCALES) {
 				// Every internal link and image is on the same language root (no missing /en/ or base).
 				const hrefs = await page.$$eval('a[href^="/"]:not([data-lang-switch])', (as) => as.map((a) => a.getAttribute('href')!));
 				for (const h of hrefs) {
-					if (/^\/(impressum|datenschutz)\//.test(h.replace(/^\/en/, ''))) continue; // German-only pages
 					if (/^\/(llms|events\.json|rss|calendar|robots)/.test(h) || /\.(ics|md|json|xml|txt)$/.test(h)) continue;
 					if (loc === 'en') expect(h, `link ${h} on ${p}`).toMatch(/^\/en(\/|$|\?|#)/);
 					else expect(h, `link ${h} on ${p}`).not.toMatch(/^\/en(\/|$)/);
@@ -86,24 +85,34 @@ for (const loc of LOCALES) {
 	});
 }
 
-test.describe('German-only legal pages', () => {
-	for (const p of ['/impressum/', '/datenschutz/']) {
-		test(`${p} is German; the switch goes to the English home`, async ({ page }) => {
+test.describe('legal pages in both languages', () => {
+	const pairs: [string, string, string][] = [
+		['/impressum/', '/en/legal-notice/', 'Impressum'],
+		['/datenschutz/', '/en/privacy/', 'Datenschutzerklärung'],
+	];
+	for (const [de, en, h1] of pairs) {
+		test(`${de} <-> ${en}: language, switch, no overflow`, async ({ page }) => {
 			const errors = watchErrors(page);
-			expect((await page.goto(p))?.status()).toBe(200);
+			expect((await page.goto(de))?.status()).toBe(200);
 			await expect(page.locator('html')).toHaveAttribute('lang', 'de');
+			await expect(page.locator('h1')).toContainText(h1);
 			expect(await overflow(page)).toBeLessThanOrEqual(0);
-			await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0);
 			await page.getByRole('link', { name: 'EN', exact: true }).click();
-			await expect(page).toHaveURL(/\/en\/$/);
+			await expect(page).toHaveURL((u) => u.pathname === en);
+			await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+			expect(await overflow(page)).toBeLessThanOrEqual(0);
 			expect(errors).toEqual([]);
 		});
 	}
-	test('English pages link to them marked "(in German)"', async ({ page }) => {
+	test('every page links to the legal pages in its own language, owner fields stay [[TODO]]', async ({ page }) => {
+		await page.goto('/');
+		await expect(page.locator('footer a[href="/impressum/"]')).toHaveCount(1);
+		await expect(page.locator('footer a[href="/datenschutz/"]')).toHaveCount(1);
 		await page.goto('/en/');
-		await expect(page.locator('footer')).toContainText('(in German)');
-		await expect(page.locator('footer a[href="/impressum/"]')).toHaveAttribute('lang', 'de');
-		await expect(page.locator('footer a[href="/datenschutz/"]')).toHaveAttribute('lang', 'de');
+		await expect(page.locator('footer a[href="/en/legal-notice/"]')).toHaveCount(1);
+		await expect(page.locator('footer a[href="/en/privacy/"]')).toHaveCount(1);
+		await page.goto('/en/privacy/');
+		await expect(page.locator('main')).toContainText('[[TODO');
 	});
 });
 

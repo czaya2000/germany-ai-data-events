@@ -42,9 +42,7 @@ export const en = {
 		dataFeeds: 'Data & feeds',
 		dataFeedsSuffix: ' for apps and AI agents',
 		privacy: 'Privacy',
-		impressum: 'Impressum',
-		/** Appended to links that lead to the German-only legal pages. */
-		inGerman: '(in German)',
+		impressum: 'Legal notice',
 		germanOnly: (name: string) => `${name} — Germany only, AI and data focus for now.`,
 		submit: 'Submit an event',
 		weeklyDigest: 'Weekly digest',

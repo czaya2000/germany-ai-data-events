@@ -50,7 +50,6 @@ export const de: Messages = {
 		dataFeedsSuffix: ' für Apps und KI-Agenten',
 		privacy: 'Datenschutz',
 		impressum: 'Impressum',
-		inGerman: '',
 		germanOnly: (name: string) => `${name} – nur Deutschland, vorerst mit Fokus auf KI und Daten.`,
 		submit: 'Event einreichen',
 		weeklyDigest: 'Wöchentlicher Newsletter',

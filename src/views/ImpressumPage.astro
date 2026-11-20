@@ -1,0 +1,265 @@
+---
+import LegalShell from '../components/LegalShell.astro';
+import { SITE_NAME } from '../lib/events';
+import { localePath, legalPath } from '../i18n/paths.mjs';
+import type { Locale } from '../i18n';
+
+/* Impressum (§ 5 DDG, § 18 Abs. 2 MStV) and disclaimer, German and English.
+   Every owner-specific fact is a [[TODO]] placeholder; nothing is invented.
+   Not legal advice. */
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const de = locale === 'de';
+const path = legalPath('impressum', locale);
+const title = de ? `Impressum – ${SITE_NAME}` : `Legal notice (Impressum) – ${SITE_NAME}`;
+const description = de
+	? `Wer ${SITE_NAME} betreibt, wie man den Betreiber erreicht, und Haftungsausschluss.`
+	: `Who runs ${SITE_NAME}, how to reach the operator, and the disclaimer.`;
+---
+
+<LegalShell title={title} description={description} locale={locale} path={path}>
+	{
+		de ? (
+			<>
+				<h1>Impressum</h1>
+				<p class="todo">
+					Entwurf. Der Betreiber muss vor dem Start jeden mit [[TODO]] markierten Wert ergänzen. Dies ist keine
+					Rechtsberatung; der endgültige Text sollte geprüft werden.
+				</p>
+
+				<dl>
+					<dt>Diensteanbieter (§ 5 DDG)</dt>
+					<dd>
+						<strong>Variante A, Unternehmen:</strong><br />
+						[[TODO: Firmenname und Rechtsform]]<br />
+						[[TODO: ladungsfähige Geschäftsanschrift (Straße und Nummer, PLZ, Ort, Deutschland)]]<br /><br />
+						<strong>Variante B, natürliche Person:</strong><br />
+						[[TODO: Vor- und Nachname]]<br />
+						[[TODO: c/o ladungsfähige Anschrift, z. B. eines Impressumsservice (Straße und Nummer, PLZ, Ort, Deutschland)]]<br /><br />
+						<span class="note">
+							Nur eine der beiden Varianten verwenden, die andere löschen. Eine private Wohnanschrift ist
+							nicht erforderlich: Nach § 5 DDG genügt eine ladungsfähige Anschrift, also eine, unter der
+							Post und Zustellungen den Anbieter tatsächlich erreichen. Das kann der Firmensitz sein oder
+							die Anschrift eines Impressumsservice (c/o). Ein Postfach genügt in der Regel nicht.
+						</span>
+					</dd>
+
+					<dt>Kontakt</dt>
+					<dd>
+						E-Mail: [[TODO: E-Mail-Adresse]]<br />
+						Telefon: [[TODO: optional; nur angeben, wenn gewünscht]]<br />
+						<a href={localePath('/contact/', 'de')}>Kontaktformular</a>
+						<br />
+						<span class="note">
+							§ 5 DDG verlangt eine E-Mail-Adresse und ein zweites Mittel für schnelle, unmittelbare
+							Kommunikation. Ein Kontaktformular kann dieses zweite Mittel sein, wenn Anfragen zügig
+							beantwortet werden [[TODO: Betreiber bestätigt]].
+						</span>
+					</dd>
+
+					<dt>Vertretungsberechtigte (nur bei Unternehmen)</dt>
+					<dd>[[TODO: Geschäftsführer bzw. Vorstand; nur bei Variante A]]</dd>
+
+					<dt>Registereintrag und Umsatzsteuer-ID</dt>
+					<dd>
+						Registergericht und Registernummer: [[TODO: nur falls im Handelsregister eingetragen]]<br />
+						Umsatzsteuer-Identifikationsnummer (§ 27a UStG): [[TODO: falls vorhanden, sonst Zeile löschen]]
+					</dd>
+
+					<dt>Verantwortlich für journalistisch-redaktionelle Inhalte (§ 18 Abs. 2 MStV)</dt>
+					<dd>
+						[[TODO: Betreiber klärt, ob diese Pflicht gilt. Sie betrifft Telemedien mit journalistisch-redaktionell
+						gestalteten Inhalten; ein reines Veranstaltungsverzeichnis fällt eher nicht darunter, der Newsletter
+						und Freitexte sind Grenzfälle. Im Zweifel Namen und Anschrift angeben, wie oben.]]<br />
+						Name: [[TODO: Name der verantwortlichen Person]]<br />
+						Anschrift: [[TODO: ladungsfähige Anschrift, wie oben]]
+					</dd>
+
+					<dt>Verbraucherstreitbeilegung (§ 36 VSBG)</dt>
+					<dd>
+						[[TODO: Betreiber wählt. Üblich: „Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren
+						vor einer Verbraucherschlichtungsstelle teilzunehmen.“ Gilt nur, wenn Verbraucher Verträge mit dem
+						Betreiber schließen können; die Seite ist kostenlos und verkauft nichts.]]
+					</dd>
+
+					<dt>Worum es auf dieser Website geht</dt>
+					<dd>
+						Ein Verzeichnis von KI- und Daten-Events in Deutschland. Die Angaben stammen von den öffentlichen
+						Seiten der Veranstalter und werden täglich geprüft; sie können sich beim Veranstalter aber jederzeit
+						ändern. {SITE_NAME} verkauft keine Tickets und erhält keine Provision.
+					</dd>
+				</dl>
+
+				<h2 id="haftungsausschluss">Haftungsausschluss</h2>
+				<p class="todo">
+					Entwurf eines Haftungsausschlusses; [[TODO: Betreiber lässt den Wortlaut prüfen]]. Gesetzliche Haftung,
+					insbesondere bei Vorsatz, grober Fahrlässigkeit und bei Verletzung von Leben, Körper oder Gesundheit,
+					lässt sich nicht ausschließen und bleibt unberührt.
+				</p>
+
+				<h2>Richtigkeit der Event-Angaben</h2>
+				<p>
+					Die Event-Daten (Titel, Datum, Ort, Preis, Beschreibung, Anmeldelink) werden aus öffentlichen Quellen
+					Dritter übernommen und regelmäßig geprüft. Für Richtigkeit, Vollständigkeit und Aktualität übernehmen
+					wir keine Gewähr, soweit gesetzlich zulässig. Bitte bestätigen Sie alle Angaben vor Anreise oder Zahlung
+					auf der Seite des Veranstalters.
+				</p>
+
+				<h2>Veranstaltungen Dritter</h2>
+				<p>
+					Alle gelisteten Veranstaltungen werden von Dritten organisiert und durchgeführt. {SITE_NAME} ist weder
+					Veranstalter noch Vertragspartner, verkauft keine Tickets und vermittelt keine Verträge. Termine, Orte,
+					Programme und Preise können sich ändern, Veranstaltungen können verschoben oder abgesagt werden;
+					Änderungen und Absagen liegen allein beim Veranstalter.
+				</p>
+
+				<h2>Keine Empfehlung</h2>
+				<p>
+					Die Aufnahme einer Veranstaltung ist keine Empfehlung, kein Qualitätsurteil und keine Billigung des
+					Veranstalters, der Inhalte oder der Referenten.
+				</p>
+
+				<h2>Externe Links</h2>
+				<p>
+					Jeder Eintrag verweist auf Seiten Dritter. Auf deren Inhalte haben wir keinen Einfluss; für sie ist
+					ausschließlich der jeweilige Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine
+					Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir den Link umgehend.
+				</p>
+
+				<h2>Urheberrecht</h2>
+				<p>
+					Die von uns erstellten Texte, die Auswahl und Darstellung der Inhalte sowie das Design dieser Website
+					unterliegen dem Urheberrecht [[TODO: Betreiber bestätigt, ggf. Lizenz für die Daten, z. B. /data/ und events.json]].
+					Namen, Logos, Titel und Beschreibungen der Veranstaltungen gehören den jeweiligen Veranstaltern bzw.
+					Rechteinhabern und werden nur zur Information über die Veranstaltung genannt. Wenn Sie als Rechteinhaber
+					eine Nennung oder einen Inhalt entfernt oder geändert haben möchten, schreiben Sie uns über das
+					Kontaktformular oder per E-Mail; wir reagieren umgehend.
+				</p>
+
+				<p class="updated">
+					Datenschutz: siehe <a href={localePath(legalPath('datenschutz', 'de'), 'de')}>Datenschutzerklärung</a>.
+					Stand: [[TODO: Datum]].
+				</p>
+			</>
+		) : (
+			<>
+				<h1>Legal notice (Impressum)</h1>
+				<p class="todo">
+					Draft. The operator must fill in every value marked [[TODO]] before launch. This is not legal advice; have
+					the final text reviewed. German law requires this notice; the German version (switch language, top right) is the binding one.
+				</p>
+
+				<dl>
+					<dt>Service provider (§ 5 DDG)</dt>
+					<dd>
+						<strong>Option A, company:</strong><br />
+						[[TODO: company name and legal form]]<br />
+						[[TODO: registered business address (street and number, postcode, city, Germany)]]<br /><br />
+						<strong>Option B, natural person:</strong><br />
+						[[TODO: first and last name]]<br />
+						[[TODO: c/o an address at which legal documents can be served, e.g. an Impressum address service (street and number, postcode, city, Germany)]]<br /><br />
+						<span class="note">
+							Use only one of the two options and delete the other. A private home address is not required:
+							§ 5 DDG asks for an address at which the provider can be served (a "ladungsfähige Anschrift"). That can
+							be the registered office of a company or the address of an Impressum address service (c/o). A P.O. box
+							is generally not enough.
+						</span>
+					</dd>
+
+					<dt>Contact</dt>
+					<dd>
+						Email: [[TODO: email address]]<br />
+						Phone: [[TODO: optional; only if wanted]]<br />
+						<a href={localePath('/contact/', 'en')}>Contact form</a>
+						<br />
+						<span class="note">
+							§ 5 DDG requires an email address and a second means of fast, direct contact. A contact form can be
+							that second means if enquiries are answered promptly [[TODO: operator to confirm]].
+						</span>
+					</dd>
+
+					<dt>Authorised representatives (companies only)</dt>
+					<dd>[[TODO: managing director or board; Option A only]]</dd>
+
+					<dt>Commercial register and VAT ID</dt>
+					<dd>
+						Register court and number: [[TODO: only if entered in the commercial register]]<br />
+						VAT identification number (§ 27a UStG): [[TODO: if any, otherwise delete this line]]
+					</dd>
+
+					<dt>Responsible for journalistic-editorial content (§ 18 para. 2 MStV)</dt>
+					<dd>
+						[[TODO: operator to decide whether this duty applies. It concerns telemedia with journalistic-editorial
+						content; a plain event directory probably does not qualify, the newsletter and free-text blurbs are
+						borderline. If in doubt, give a name and address as above.]]<br />
+						Name: [[TODO: name of the responsible person]]<br />
+						Address: [[TODO: address at which documents can be served, as above]]
+					</dd>
+
+					<dt>Consumer dispute resolution (§ 36 VSBG)</dt>
+					<dd>
+						[[TODO: operator to choose. A typical statement: "We are neither willing nor obliged to take part in
+						dispute resolution proceedings before a consumer arbitration board." Only relevant if consumers can
+						enter contracts with the operator; this site is free and sells nothing.]]
+					</dd>
+
+					<dt>What this site is</dt>
+					<dd>
+						A directory of AI and data events in Germany. The details come from the organisers' public pages and
+						are checked daily, but can change at the organiser at any time. {SITE_NAME} sells no tickets and
+						receives no commission.
+					</dd>
+				</dl>
+
+				<h2 id="disclaimer">Disclaimer</h2>
+				<p class="todo">
+					Draft disclaimer; [[TODO: operator to have the wording reviewed]]. Statutory liability, in particular for
+					intent, gross negligence and injury to life, body or health, cannot be excluded and remains unaffected.
+				</p>
+
+				<h2>Accuracy of event data</h2>
+				<p>
+					Event data (title, date, place, price, description, sign-up link) is taken from third parties' public
+					sources and checked regularly. To the extent permitted by law we give no warranty for accuracy,
+					completeness or timeliness. Please confirm every detail on the organiser's page before you travel or pay.
+				</p>
+
+				<h2>Events run by third parties</h2>
+				<p>
+					All listed events are organised and run by third parties. {SITE_NAME} is neither organiser nor contracting
+					party, sells no tickets and brokers no contracts. Dates, venues, programmes and prices may change, and
+					events may be postponed or cancelled; changes and cancellations are solely the organiser's matter.
+				</p>
+
+				<h2>No endorsement</h2>
+				<p>
+					Listing an event is not a recommendation, a quality judgement or an endorsement of the organiser, the
+					content or the speakers.
+				</p>
+
+				<h2>External links</h2>
+				<p>
+					Every entry links to third-party pages. We have no influence on their content; only their operators are
+					responsible for it. No legal violations were apparent when the links were set. If we learn of one, we
+					remove the link promptly.
+				</p>
+
+				<h2>Copyright</h2>
+				<p>
+					The texts we write, the selection and presentation of content, and the design of this site are protected
+					by copyright [[TODO: operator to confirm, and to state any licence for the data feeds, e.g. /data/ and events.json]].
+					Event names, logos, titles and descriptions belong to the respective organisers or rights holders and are
+					named only to inform about the event. If you are a rights holder and want a mention or content removed or
+					changed, write to us through the contact form or by email; we respond promptly.
+				</p>
+
+				<p class="updated">
+					Privacy: see the <a href={localePath(legalPath('datenschutz', 'en'), 'en')}>privacy policy</a>. Last updated:
+					[[TODO: date]].
+				</p>
+			</>
+		)
+	}
+</LegalShell>

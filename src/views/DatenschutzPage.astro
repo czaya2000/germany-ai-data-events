@@ -1,0 +1,311 @@
+---
+import LegalShell from '../components/LegalShell.astro';
+import { SITE_NAME } from '../lib/events';
+import { localePath, legalPath } from '../i18n/paths.mjs';
+import type { Locale } from '../i18n';
+
+/* Datenschutzerklärung / privacy policy, German and English. Facts checked in the
+   code: self-hosted fonts (Base.astro), self-hosted Umami (config/country.mjs), plain POST forms to
+   FormSubmit (ContactPage, SubmitPage), Buttondown embed form (Subscribe.astro), no cookies set by the site.
+   Owner facts, legal-basis choices and retention periods are [[TODO]]. Not legal advice. */
+interface Props {
+	locale: Locale;
+}
+const { locale } = Astro.props;
+const de = locale === 'de';
+const path = legalPath('datenschutz', locale);
+const title = de ? `Datenschutzerklärung – ${SITE_NAME}` : `Privacy policy – ${SITE_NAME}`;
+const description = de ? `Was ${SITE_NAME} erhebt, was nicht, und warum.` : `What ${SITE_NAME} collects, what it does not, and why.`;
+const impressum = localePath(legalPath('impressum', locale), locale);
+---
+
+<LegalShell title={title} description={description} locale={locale} path={path}>
+	{
+		de ? (
+			<>
+				<h1>Datenschutzerklärung</h1>
+				<p class="todo">
+					Entwurf. Der Betreiber muss vor dem Start jeden mit [[TODO]] markierten Wert ergänzen und bestätigen. Dies
+					ist keine Rechtsberatung; der endgültige Text sollte geprüft werden.
+				</p>
+
+				<h2>1. Verantwortlicher (Art. 4 Nr. 7 DSGVO)</h2>
+				<p>
+					[[TODO: Name bzw. Firma]], [[TODO: ladungsfähige Anschrift, wie im Impressum]], E-Mail: [[TODO: E-Mail-Adresse]].
+					Weitere Angaben im <a href={impressum}>Impressum</a>.
+				</p>
+				<p>Datenschutzbeauftragter: [[TODO: nur angeben, falls einer benannt ist; sonst Zeile löschen]]</p>
+
+				<h2>2. Überblick</h2>
+				<p>
+					Diese Website setzt keine Cookies und lädt keine Schriften, Karten, Videos oder Werbung von Drittanbietern.
+					Personenbezogene Daten fallen an beim Aufruf der Seite (Hosting), bei der Reichweitenmessung, beim
+					Newsletter und bei den Formularen. Die Schrift (Archivo) wird von dieser Website selbst ausgeliefert; es
+					geht keine Anfrage an einen Schriftanbieter wie Google Fonts.
+				</p>
+
+				<h2>3. Hosting bei GitHub Pages und Server-Logfiles</h2>
+				<p>
+					Diese Website wird über GitHub Pages ausgeliefert (GitHub, Inc., USA, ein Unternehmen von Microsoft). Beim
+					Aufruf verarbeitet GitHub technisch notwendige Verbindungsdaten, insbesondere Ihre IP-Adresse, Datum und
+					Uhrzeit, aufgerufene Adresse, Browser und Betriebssystem, und kann diese in Server-Logfiles speichern. Wir
+					selbst haben keinen Zugriff auf diese Logfiles.
+				</p>
+				<p>
+					Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und
+					zuverlässigen Bereitstellung der Website) [[TODO: Betreiber bestätigt]]. Speicherdauer: nach den Vorgaben von
+					GitHub [[TODO: Betreiber prüft die aktuelle GitHub-Dokumentation und trägt die Dauer ein]].
+				</p>
+				<p>
+					Drittlandübermittlung: Die Daten können in die USA übermittelt werden. Als Übermittlungsmechanismus kommt
+					das EU-US Data Privacy Framework (Angemessenheitsbeschluss der EU-Kommission, soweit GitHub dort
+					zertifiziert ist) bzw. Standardvertragsklauseln in Betracht [[TODO: Betreiber bestätigt den Mechanismus,
+					die DPF-Zertifizierung und die Auftragsverarbeitung bzw. die Vereinbarung mit GitHub]].
+				</p>
+
+				<h2>4. Reichweitenmessung mit Umami (selbst gehostet)</h2>
+				<p>
+					Zur Reichweitenmessung nutzen wir Umami, das wir selbst betreiben (keine Umami Cloud). Umami arbeitet ohne
+					Cookies und ohne Wiedererkennung über mehrere Besuche. Die Instanz läuft auf Vercel (Vercel Inc., USA), die
+					Messdaten werden in einer Datenbank bei Supabase in der EU (Frankfurt) gespeichert.
+				</p>
+				<p>
+					Erfasst werden Seitenaufrufe und einzelne Aktionen (z. B. Klick auf eine Anmeldeseite oder auf „Kalender
+					abonnieren“) mit aufgerufener Adresse, Herkunftsseite, Browser, Betriebssystem, Gerätetyp,
+					Bildschirmgröße, Sprache und grobem Herkunftsland. Eine Profilbildung findet nicht statt. Die Anfrage geht
+					technisch über den Vercel-Server, dabei wird die IP-Adresse kurzzeitig verarbeitet [[TODO: Betreiber bestätigt,
+					dass die IP-Adresse nicht gespeichert wird, und die Vercel-Region der Instanz]].
+				</p>
+				<p>
+					Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer datensparsamen Erfolgsmessung)
+					[[TODO: Betreiber bestätigt; ein Zugriff auf Endgeräte-Informationen im Sinne von § 25 TDDDG findet bei
+					diesem cookielosen Aufbau nach Einschätzung des Betreibers nicht statt, bitte prüfen lassen]].
+					Speicherdauer der Messdaten: [[TODO: z. B. 12 oder 24 Monate]]. Sie können der Messung jederzeit
+					widersprechen (siehe Abschnitt 9). Drittlandübermittlung (Vercel, USA): [[TODO: Mechanismus bestätigen, z. B.
+					Data Privacy Framework oder Standardvertragsklauseln, sowie Auftragsverarbeitungsverträge mit Vercel und Supabase]].
+				</p>
+
+				<h2>5. Wöchentlicher Newsletter (Buttondown)</h2>
+				<p>
+					Für den Newsletter nutzen wir Buttondown (Buttondown, LLC, USA) als Dienstleister (Auftragsverarbeiter).
+					Wenn Sie das Formular absenden, werden Ihre E-Mail-Adresse, Ihre Auswahl (Sprache, Städte, Formate) und der
+					Ort des Formulars an Buttondown übermittelt. Sie erhalten eine Bestätigungs-E-Mail; erst nach Klick auf den
+					Link in dieser E-Mail sind Sie angemeldet (Double-Opt-in). Zum Nachweis der Einwilligung kann Buttondown
+					Zeitpunkt und IP-Adresse der Anmeldung speichern.
+				</p>
+				<p>
+					Rechtsgrundlage ist Ihre Einwilligung, Art. 6 Abs. 1 lit. a DSGVO. Sie können sie jederzeit mit Wirkung für
+					die Zukunft widerrufen: über den Abmeldelink in jeder E-Mail oder per E-Mail an uns. Wir speichern Ihre
+					Daten bis zum Widerruf [[TODO: Betreiber bestätigt; nach Abmeldung ggf. Sperrung für den Nachweis, z. B. bis zum Ablauf der Verjährungsfrist]].
+				</p>
+				<p>
+					Datenschutzerklärung von Buttondown:{' '}
+					<a href="https://buttondown.com/legal/privacy" rel="noopener" hreflang="en">buttondown.com/legal/privacy</a>.
+					Drittlandübermittlung (USA): [[TODO: Mechanismus bestätigen (Data Privacy Framework, soweit Buttondown
+					zertifiziert ist, oder Standardvertragsklauseln) und Auftragsverarbeitungsvertrag mit Buttondown]].
+					Öffnungs- und Klickmessung in den E-Mails: [[TODO: Betreiber prüft in Buttondown, ob sie aktiv ist; falls ja,
+					hier beschreiben und die Einwilligung darauf erstrecken, sonst abschalten]].
+				</p>
+
+				<h2>6. Kontakt- und Event-Formulare (FormSubmit)</h2>
+				<p>
+					Das Kontaktformular und das Formular „Event einreichen“ senden Ihre Eingaben über den Dienst FormSubmit
+					(formsubmit.co) per E-Mail an uns. Übermittelt werden die Angaben im Formular: bei der Kontaktanfrage Name,
+					E-Mail-Adresse und Nachricht, bei einer Event-Einreichung Eventdaten (Titel, Datum, Ort, Link, Beschreibung,
+					Veranstalter) sowie Name und E-Mail-Adresse der einreichenden Person. FormSubmit verarbeitet diese Daten
+					technisch, um sie weiterzuleiten; dabei fallen auch Verbindungsdaten wie die IP-Adresse an. Ein
+					verstecktes Feld dient dem Spamschutz.
+				</p>
+				<p>
+					Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage auf einen Vertrag oder vorvertragliche
+					Maßnahmen zielt, sonst Art. 6 Abs. 1 lit. f DSGVO (Bearbeitung Ihrer Anfrage) [[TODO: Betreiber bestätigt]].
+					Wir löschen Anfragen, sobald sie erledigt sind und keine Aufbewahrungspflichten bestehen [[TODO: Frist, z. B. 6 Monate nach Abschluss]].
+					Betreiber und Sitz von FormSubmit sowie Drittlandübermittlung: [[TODO: Betreiber prüft die Datenschutzangaben
+					von FormSubmit und trägt Anbieter, Sitz und Übermittlungsmechanismus ein; falls kein tragfähiger Mechanismus
+					besteht, Formular durch einen anderen Weg ersetzen]].
+				</p>
+
+				<h2>7. Links zu Veranstaltern</h2>
+				<p>
+					Die Anmelde-Schaltflächen verweisen auf die Seite des Veranstalters und tragen eine Markierung
+					(<code>utm_source</code>), damit Veranstalter sehen können, dass ein Besucher von hier kam. Beim Klick
+					verlassen Sie diese Website; was die Seite des Veranstalters mit Ihren Daten tut, richtet sich nach dessen
+					Datenschutzerklärung.
+				</p>
+
+				<h2>8. Keine Cookies, keine weiteren Drittanbieter</h2>
+				<p>
+					Diese Website setzt keine Cookies und bindet keine weiteren Drittanbieter-Inhalte ein (keine Schriften-CDNs,
+					keine Karten, keine Social-Media-Plugins). Die Sprachumschaltung ist ein einfacher Link und speichert
+					nichts. [[TODO: Betreiber ergänzt dies, sobald ein weiterer Dienst eingebunden wird.]]
+				</p>
+
+				<h2>9. Ihre Rechte</h2>
+				<p>Sie haben gegenüber dem Verantwortlichen folgende Rechte:</p>
+				<ul>
+					<li>Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17) und Einschränkung der Verarbeitung (Art. 18);</li>
+					<li>Datenübertragbarkeit (Art. 20);</li>
+					<li>
+						Widerspruch gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aus Gründen, die sich aus
+						Ihrer besonderen Situation ergeben (Art. 21);
+					</li>
+					<li>Widerruf einer Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3), etwa vom Newsletter.</li>
+				</ul>
+				<p>
+					Wenden Sie sich dazu an die E-Mail-Adresse in Abschnitt 1. Zudem haben Sie das Recht, sich bei einer
+					Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Zuständig ist in der Regel die
+					Landesdatenschutzbehörde des Bundeslandes, in dem der Verantwortliche seinen Sitz hat:
+					[[TODO: zuständige Aufsichtsbehörde mit Anschrift, nach dem Sitz des Verantwortlichen]].
+				</p>
+				<p>
+					Die Angabe Ihrer Daten ist weder gesetzlich noch vertraglich vorgeschrieben; ohne E-Mail-Adresse können wir
+					Ihnen aber keinen Newsletter senden und keine Anfrage beantworten. Eine automatisierte Entscheidungsfindung
+					einschließlich Profiling findet nicht statt.
+				</p>
+
+				<p class="updated">Stand: [[TODO: Datum]].</p>
+			</>
+		) : (
+			<>
+				<h1>Privacy policy</h1>
+				<p class="todo">
+					Draft. The operator must fill in and confirm every value marked [[TODO]] before launch. This is not legal
+					advice; have the final text reviewed. The German version (switch language, top right) is the binding one.
+				</p>
+
+				<h2>1. Controller (Art. 4(7) GDPR)</h2>
+				<p>
+					[[TODO: name or company]], [[TODO: address at which documents can be served, as in the legal notice]], email: [[TODO: email address]].
+					More details in the <a href={impressum}>legal notice</a>.
+				</p>
+				<p>Data protection officer: [[TODO: only if one is appointed; otherwise delete this line]]</p>
+
+				<h2>2. Overview</h2>
+				<p>
+					This website sets no cookies and loads no fonts, maps, videos or advertising from third parties. Personal
+					data arises when you open a page (hosting), through audience measurement, the newsletter and the forms. The
+					typeface (Archivo) is served by this site itself; no request goes to a font provider such as Google Fonts.
+				</p>
+
+				<h2>3. Hosting on GitHub Pages and server logs</h2>
+				<p>
+					This website is delivered through GitHub Pages (GitHub, Inc., USA, a Microsoft company). When you open it,
+					GitHub processes technically necessary connection data, in particular your IP address, date and time, the
+					address requested, browser and operating system, and may keep it in server logs. We have no access to
+					these logs ourselves.
+				</p>
+				<p>
+					Legal basis: Art. 6(1)(f) GDPR (legitimate interest in providing the website securely and reliably)
+					[[TODO: operator to confirm]]. Retention: as set by GitHub [[TODO: operator to check GitHub's current
+					documentation and enter the period]].
+				</p>
+				<p>
+					Transfer to a third country: the data may be transferred to the USA. The transfer mechanism is the EU-US Data
+					Privacy Framework (adequacy decision of the European Commission, where GitHub is certified under it) or
+					standard contractual clauses [[TODO: operator to confirm the mechanism, GitHub's DPF certification and the
+					agreement with GitHub]].
+				</p>
+
+				<h2>4. Audience measurement with Umami (self-hosted)</h2>
+				<p>
+					We measure reach with Umami, which we run ourselves (not Umami Cloud). Umami works without cookies and does
+					not recognise you across visits. The instance runs on Vercel (Vercel Inc., USA); the measurement data is
+					stored in a database at Supabase in the EU (Frankfurt).
+				</p>
+				<p>
+					What is recorded: page views and single actions (for example a click on a sign-up link or on "Subscribe to
+					calendar") with the page address, referrer, browser, operating system, device type, screen size, language
+					and a rough country of origin. No profiles are built. Technically the request passes through the Vercel
+					server, which briefly processes the IP address [[TODO: operator to confirm that the IP address is not stored,
+					and the Vercel region of the instance]].
+				</p>
+				<p>
+					Legal basis: Art. 6(1)(f) GDPR (legitimate interest in data-minimising success measurement) [[TODO: operator
+					to confirm; with this cookieless set-up the operator believes no access to information on your device within
+					the meaning of § 25 TDDDG takes place, please have this checked]]. Retention of the measurement data:
+					[[TODO: e.g. 12 or 24 months]]. You may object to the measurement at any time (see section 9). Transfer to a
+					third country (Vercel, USA): [[TODO: confirm the mechanism, e.g. Data Privacy Framework or standard
+					contractual clauses, and the data processing agreements with Vercel and Supabase]].
+				</p>
+
+				<h2>5. Weekly newsletter (Buttondown)</h2>
+				<p>
+					For the newsletter we use Buttondown (Buttondown, LLC, USA) as a service provider (processor). When you
+					submit the form, your email address, your choices (language, cities, formats) and the place of the form are
+					sent to Buttondown. You receive a confirmation email; you are subscribed only after you click the link in it
+					(double opt-in). To prove your consent, Buttondown may store the time and IP address of the sign-up.
+				</p>
+				<p>
+					Legal basis is your consent, Art. 6(1)(a) GDPR. You can withdraw it at any time with effect for the future: with
+					the unsubscribe link in every email or by writing to us. We keep your data until you withdraw
+					[[TODO: operator to confirm; after unsubscribing, data may be blocked for proof of consent, e.g. until the
+					limitation period expires]].
+				</p>
+				<p>
+					Buttondown's privacy policy:{' '}
+					<a href="https://buttondown.com/legal/privacy" rel="noopener">buttondown.com/legal/privacy</a>. Transfer to a
+					third country (USA): [[TODO: confirm the mechanism (Data Privacy Framework, if Buttondown is certified, or
+					standard contractual clauses) and the data processing agreement with Buttondown]]. Open and click tracking in
+					the emails: [[TODO: operator to check in Buttondown whether it is on; if so describe it here and extend the
+					consent to it, otherwise switch it off]].
+				</p>
+
+				<h2>6. Contact and event-submission forms (FormSubmit)</h2>
+				<p>
+					The contact form and the "Submit an event" form send your input to us by email through the service
+					FormSubmit (formsubmit.co). What is sent is what you type into the form: for a contact request name, email
+					address and message; for an event submission the event details (title, date, place, link, description,
+					organiser) and the submitter's name and email address. FormSubmit processes this data technically to forward
+					it; connection data such as the IP address arises as well. A hidden field serves as spam protection.
+				</p>
+				<p>
+					Legal basis: Art. 6(1)(b) GDPR where your request aims at a contract or pre-contractual steps, otherwise
+					Art. 6(1)(f) GDPR (handling your request) [[TODO: operator to confirm]]. We delete requests once they are dealt
+					with and no retention duty applies [[TODO: period, e.g. 6 months after closing]]. Operator and seat of
+					FormSubmit and transfer to a third country: [[TODO: operator to check FormSubmit's privacy information and
+					enter provider, seat and transfer mechanism; if no sound mechanism exists, replace the form with another
+					route]].
+				</p>
+
+				<h2>7. Links to organisers</h2>
+				<p>
+					The sign-up buttons lead to the organiser's own page and carry a marker (<code>utm_source</code>) so that
+					organisers can see that a visitor came from here. When you click, you leave this website; what the
+					organiser's page does with your data is governed by its own privacy policy.
+				</p>
+
+				<h2>8. No cookies, no further third parties</h2>
+				<p>
+					This website sets no cookies and embeds no further third-party content (no font CDNs, no maps, no social
+					media plugins). The language switch is a plain link and stores nothing. [[TODO: operator to update this
+					when another service is added.]]
+				</p>
+
+				<h2>9. Your rights</h2>
+				<p>You have the following rights against the controller:</p>
+				<ul>
+					<li>access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17) and restriction of processing (Art. 18);</li>
+					<li>data portability (Art. 20);</li>
+					<li>
+						objection to processing based on Art. 6(1)(f) GDPR on grounds relating to your particular situation
+						(Art. 21);
+					</li>
+					<li>withdrawal of consent with effect for the future (Art. 7(3)), for example from the newsletter.</li>
+				</ul>
+				<p>
+					Write to the email address in section 1. You also have the right to lodge a complaint with a data
+					protection supervisory authority (Art. 77 GDPR). The competent one is usually the state data protection
+					authority of the German state where the controller is established:
+					[[TODO: competent supervisory authority with address, according to the controller's seat]].
+				</p>
+				<p>
+					Providing your data is neither a legal nor a contractual requirement; without an email address, however, we
+					cannot send you the newsletter or answer a request. There is no automated decision-making, including
+					profiling.
+				</p>
+
+				<p class="updated">Last updated: [[TODO: date]].</p>
+			</>
+		)
+	}
+</LegalShell>

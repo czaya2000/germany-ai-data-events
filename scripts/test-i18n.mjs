@@ -90,6 +90,7 @@ function uiText(html, isEventPage) {
 	let h = html
 		.replace(/<script(?![^>]*id="(?:cal-strings|listing-strings|invalid-strings)")[^>]*>[\s\S]*?<\/script>/g, '')
 		.replace(/<style[\s\S]*?<\/style>/g, '')
+		.replace(/<section class="alt-lang[\s\S]*?<\/section>/g, '') // English block on the German 404
 		.replace(/<!--[\s\S]*?-->/g, '')
 		.replace(/<ul class="events"[^>]*>[\s\S]*?<\/ul>/, '')
 		.replace(/<p class="blurb"[^>]*>[\s\S]*?<\/p>/g, '')
@@ -154,9 +155,13 @@ for (const { file, html } of pages) {
 			);
 			if (back[locale] !== canonical) fail(`${rel}: hreflang pair with ${target} is not reciprocal`);
 		}
-	} else if (!is404 && !/\/(impressum|datenschutz)\//.test(url)) {
+	} else if (!is404) {
 		fail(`${rel}: no hreflang alternates, but the page has a counterpart`);
 	}
+
+	// Impressum and privacy are one click away, in the page's own language
+	const legal = locale === 'de' ? ['/impressum/', '/datenschutz/'] : ['/en/legal-notice/', '/en/privacy/'];
+	for (const l of legal) if (!html.includes(`href="${BASE}${l}"`)) fail(`${rel}: no footer link to ${l}`);
 
 	// language switch
 	const nav = html.match(/<nav class="[^"]*lang-switch[^"]*"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
@@ -188,11 +193,13 @@ for (const { file, html } of pages) {
 		if (BASE && h !== BASE && !h.startsWith(`${BASE}/`) && !h.startsWith(`${BASE}?`) && !h.startsWith(`${BASE}#`)) {
 			fail(`${rel}: internal link without the base path: ${h}`);
 		} else if (!fileFor(h)) fail(`${rel}: link ${h} leads to no built file`);
-		// A link stays in the page's language, except to the German-only legal pages and shared files.
+		// A link stays in the page's language, except to shared files.
 		const path = BASE && h.startsWith(BASE) ? h.slice(BASE.length) : h;
-		const neutral = /^\/(datenschutz|impressum|fonts|_astro|favicon|apple-touch|og-image|events\.json|llms|rss\.xml|[a-z-]+\.md)/.test(path);
+		const neutral = /^\/(fonts|_astro|favicon|apple-touch|og-image|events\.json|llms|rss\.xml|[a-z-]+\.md)/.test(path);
 		const toEnglish = path === '/en' || path.startsWith('/en/') || path.startsWith('/en?') || path.startsWith('/en#');
-		if (!neutral && !switchHrefs.has(h) && toEnglish !== (locale === 'en')) fail(rel + ': link ' + h + " leaves the page's language");
+		// The German 404 deliberately links to the English home (GitHub Pages serves it for /en/ too).
+		const notFoundToEn = is404 && locale === 'de' && path === '/en/';
+		if (!neutral && !notFoundToEn && !switchHrefs.has(h) && toEnglish !== (locale === 'en')) fail(rel + ': link ' + h + " leaves the page's language");
 	}
 
 	// phrases

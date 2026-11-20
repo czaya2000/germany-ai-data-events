@@ -1,20 +1,21 @@
 ---
 import { SITE_NAME } from '../lib/events';
-import { localePath } from '../i18n/paths.mjs';
+import { localePath, legalPath } from '../i18n/paths.mjs';
 import { t, type Locale } from '../i18n';
 
 /* One footer for every page. The page-specific line (last-scanned, scope
    note) comes through the slot; the link row is the same everywhere so
-   organisers and sponsors can always find their way in. The legal pages
-   exist in German only: English pages link to them with "(in German)". */
+   organisers and sponsors can always find their way in. Impressum and
+   Datenschutz are always one click away, in the page's own language
+   (/impressum/ and /datenschutz/, /en/legal-notice/ and /en/privacy/). */
 
 interface Props {
 	locale: Locale;
 }
 const { locale } = Astro.props;
 const s = t(locale);
-const legalLang = locale === 'de' ? {} : { lang: 'de', hreflang: 'de' };
-const legalNote = s.footer.inGerman ? ` ${s.footer.inGerman}` : '';
+const privacyHref = localePath(legalPath('datenschutz', locale), locale);
+const impressumHref = localePath(legalPath('impressum', locale), locale);
 
 // Link row suppressed for now — flip back on when ready.
 const SHOW_LINKS = false;
@@ -24,8 +25,8 @@ const SHOW_LINKS = false;
 	<p><slot>{SITE_NAME}. <a href={localePath('/', locale)}>{s.footer.backToAll}</a>.</slot></p>
 	<p class="footer-data">
 		<a href={localePath('/data/', locale)}>{s.footer.dataFeeds}</a>{s.footer.dataFeedsSuffix}
-		<span aria-hidden="true"> · </span><a href={localePath('/datenschutz/', 'de')} {...legalLang}>{s.footer.privacy}</a>{legalNote}
-		<span aria-hidden="true"> · </span><a href={localePath('/impressum/', 'de')} {...legalLang}>{s.footer.impressum}</a>{legalNote}
+		<span aria-hidden="true"> · </span><a href={privacyHref}>{s.footer.privacy}</a>
+		<span aria-hidden="true"> · </span><a href={impressumHref}>{s.footer.impressum}</a>
 	</p>
 	{
 		SHOW_LINKS && (
@@ -33,8 +34,8 @@ const SHOW_LINKS = false;
 				<a href={localePath('/submit/', locale)}>{s.footer.submit}</a>
 				<a href={localePath('/#subscribe', locale)}>{s.footer.weeklyDigest}</a>
 				<a href={localePath('/contact/?topic=sponsor', locale)}>{s.footer.sponsor}</a>
-				<a href={localePath('/impressum/', 'de')} {...legalLang}>{s.footer.impressum}</a>{legalNote}
-				<a href={localePath('/datenschutz/', 'de')} {...legalLang}>{s.footer.privacy}</a>{legalNote}
+				<a href={impressumHref}>{s.footer.impressum}</a>
+				<a href={privacyHref}>{s.footer.privacy}</a>
 			</nav>
 		)
 	}

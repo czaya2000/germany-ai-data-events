@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteNav from './SiteNav.astro';
+import SiteFooter from './SiteFooter.astro';
+import type { Locale } from '../i18n';
+
+/* Frame shared by the legal pages (Impressum / legal notice, Datenschutz /
+   privacy): header, footer and the plain reading style. The text itself lives in
+   src/views/ImpressumPage.astro and DatenschutzPage.astro. */
+interface Props {
+	title: string;
+	description: string;
+	locale: Locale;
+	/** Site path of the page in its own language, without base and /en/ prefix. */
+	path: string;
+}
+const { title, description, locale, path } = Astro.props;
+---
+
+<Base title={title} description={description} locale={locale} path={path}>
+	<SiteNav locale={locale} path={path} />
+	<main class="wrap legal">
+		<slot />
+	</main>
+	<SiteFooter locale={locale} />
+</Base>
+
+<style is:global>
+	.legal {
+		padding: 24px 32px 64px;
+		max-width: 680px;
+	}
+	.legal h1 {
+		font-size: clamp(1.6rem, 3vw, 2rem);
+		margin: 16px 0 16px;
+		letter-spacing: -0.01em;
+	}
+	.legal h2 {
+		font-size: 0.95rem;
+		font-weight: 600;
+		margin: 28px 0 6px;
+	}
+	.legal p,
+	.legal li {
+		line-height: 1.65;
+		color: var(--ink-2);
+	}
+	.legal p {
+		margin: 0 0 10px;
+	}
+	.legal ul {
+		margin: 0 0 10px;
+		padding-left: 20px;
+	}
+	.legal code {
+		font-size: 0.85em;
+		background: var(--chip-bg);
+		padding: 1px 5px;
+	}
+	.legal .todo {
+		margin: 0 0 16px;
+		padding: 10px 12px;
+		background: var(--chip-bg);
+		font-size: 0.85rem;
+	}
+	.legal .note {
+		font-size: 0.88rem;
+		color: var(--muted);
+	}
+	.legal .updated {
+		margin-top: 36px;
+		font-size: 0.82rem;
+		color: var(--muted);
+	}
+	.legal dl {
+		margin: 0;
+		border-top: 1px solid var(--border);
+	}
+	.legal dt {
+		font-size: 0.8rem;
+		font-weight: 600;
+		color: var(--muted);
+		padding: 18px 0 6px;
+	}
+	.legal dd {
+		margin: 0;
+		padding: 0 0 18px;
+		line-height: 1.6;
+		border-bottom: 1px solid var(--border);
+	}
+	@media (max-width: 640px) {
+		.legal {
+			padding: 16px 18px 48px;
+		}
+	}
+</style>

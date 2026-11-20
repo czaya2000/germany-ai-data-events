@@ -2,7 +2,12 @@
 /* The page GitHub Pages serves for any address that does not exist (it is
    built as /404.html; /en/404/ is the English twin, GitHub Pages only ever serves the German one). It keeps people on
    the site instead of showing GitHub's own error page. noindex, and the
-   sitemap leaves it out. */
+   sitemap leaves it out.
+
+   GitHub Pages serves only ONE 404 file for the whole site, the root 404.html, also for
+   unknown /en/ addresses (it cannot serve /en/404/ there). So the German page carries a
+   short English block, and a tiny script moves it above the German text when the missing address starts
+   with /en/. /en/404/ stays as the English twin for direct visits and other hosts. */
 import Base from '../layouts/Base.astro';
 import SiteNav from '../components/SiteNav.astro';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -16,6 +21,7 @@ interface Props {
 }
 const { locale } = Astro.props;
 const s = t(locale).notFound;
+const en = t('en').notFound;
 const title = s.title(SITE_NAME);
 const description = s.description;
 const upcoming = (await getUpcomingEvents()).map((e) => e.data);
@@ -38,7 +44,25 @@ const cityLinks = HUBS.filter((h) => h.kind === 'city' && isHubLive(h, upcoming)
 		}
 	</main>
 
+	{
+		locale === 'de' && (
+			<section class="alt-lang wrap" lang="en" id="alt-lang-en">
+				<h2>{en.h1}</h2>
+				<p>{en.text}</p>
+				<a class="btn" href={localePath('/', 'en')}>{en.seeAll}</a>
+			</section>
+		)
+	}
+
 	<SiteFooter locale={locale} />
+
+	{
+		locale === 'de' && (
+			<script is:inline define:vars={{ enHome: localePath('/', 'en') }}>
+				{`if (location.pathname.indexOf(enHome) === 0) { var a = document.getElementById('alt-lang-en'), m = document.querySelector('main'); if (a && m) { a.style.paddingTop = '72px'; m.style.paddingTop = '0'; m.parentNode.insertBefore(a, m); } }`}
+			</script>
+		)
+	}
 
 	<style>
 		.thanks {
@@ -58,6 +82,19 @@ const cityLinks = HUBS.filter((h) => h.kind === 'city' && isHubLive(h, upcoming)
 			line-height: 1.55;
 			color: var(--ink-2);
 			margin: 20px 0 28px;
+		}
+		.alt-lang {
+			max-width: 62ch;
+			padding-top: 0;
+			padding-bottom: 48px;
+		}
+		.alt-lang h2 {
+			font-size: 1.1rem;
+			margin: 0;
+		}
+		.alt-lang p {
+			font-size: 0.95rem;
+			margin: 8px 0 14px;
 		}
 		.cities {
 			font-size: 0.95rem;

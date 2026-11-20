@@ -9,8 +9,8 @@
 // Rules for the counterpart of a page in the other language:
 //   - home, city hubs, event pages, submit, contact, data, thanks pages: same path, other prefix;
 //   - format hubs: the translated slug (/konferenzen/ <-> /en/conferences/);
-//   - Impressum and Datenschutz exist in German only: no counterpart, the
-//     switch link on those pages (and the legacy /privacy/) goes to the other language's home.
+//   - legal pages: /impressum/ <-> /en/legal-notice/, /datenschutz/ <-> /en/privacy/
+//     (the old root /privacy/ is only a redirect to /datenschutz/).
 
 import { BASE } from '../../config/country.mjs';
 import { HUBS } from '../lib/hubs.mjs';
@@ -23,8 +23,15 @@ export const LOCALE_PREFIX = { de: '', en: '/en' };
 export const HTML_LANG = { de: 'de', en: 'en' };
 export const OG_LOCALE = { de: 'de_DE', en: 'en_DE' };
 
-/** Pages that exist in German only, at the root. "privacy" is the old name of "datenschutz". */
-export const GERMAN_ONLY = ['datenschutz', 'impressum', 'privacy'];
+/** Pages that exist in German only, at the root. None now: the legal pages have English twins. */
+export const GERMAN_ONLY = [];
+/** German slug -> English slug of the legal pages. */
+export const LEGAL_SLUGS = { impressum: 'legal-notice', datenschutz: 'privacy' };
+
+/** Site path of a legal page in the given locale: legalPath('impressum', 'en') -> "/legal-notice/". */
+export function legalPath(page, locale) {
+	return `/${locale === 'de' ? page : LEGAL_SLUGS[page]}/`;
+}
 
 export const isLocale = (v) => LOCALES.includes(v);
 
@@ -77,6 +84,8 @@ export function createLocalePaths(base = BASE, hubs = HUBS) {
 		// The 404 page is a file at the root (404.html) and a folder under /en/.
 		if (from === 'de' && to === 'en' && p === '/404.html') return '/404/';
 		if (from === 'en' && to === 'de' && p === '/404/') return '/404.html';
+		const legal = from === 'de' ? LEGAL_SLUGS[seg] : Object.keys(LEGAL_SLUGS).find((k) => LEGAL_SLUGS[k] === seg);
+		if (legal && p === `/${seg}/`) return `/${legal}/${suffix}`;
 		const hub = formatHubs.find((h) => (from === 'de' ? h.slugDe : h.slug) === seg);
 		if (hub && p === `/${seg}/`) return `${hubPath(hub, to)}${suffix}`;
 		return bare;
@@ -102,15 +111,9 @@ export function createLocalePaths(base = BASE, hubs = HUBS) {
 	 */
 	function switchLocalePath(currentPath, targetLocale) {
 		const { locale, path } = splitLocale(stripBase(currentPath));
-		// The old /privacy/ is now /datenschutz/, whatever the target.
-		if (targetLocale === 'de' && /^\/privacy\//.test(path)) return `${base}/datenschutz/`;
 		if (locale === targetLocale) return `${base}${LOCALE_PREFIX[locale]}${path}`;
 		const translated = translateBarePath(path, locale, targetLocale);
 		if (translated === null) {
-			// "privacy" was renamed: a German target gets the new page, an English one the home page.
-			const [p] = splitSuffix(path);
-			const seg = p.split('/')[1];
-			if (targetLocale === 'de') return `${base}/${seg === 'privacy' ? 'datenschutz' : seg}/`;
 			return `${base}${LOCALE_PREFIX[targetLocale]}/`;
 		}
 		return `${base}${LOCALE_PREFIX[targetLocale]}${translated}`;

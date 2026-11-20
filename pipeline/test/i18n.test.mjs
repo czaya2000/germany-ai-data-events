@@ -1,9 +1,10 @@
 // Tests for the i18n layer: locale paths (with and without a base path), the
 // language switch, key parity between de.ts and en.ts, and the localisation
 // of costs and dates. Offline; loads the .ts files through Node's type stripping.
+import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createLocalePaths, hubPath } from '../../src/i18n/paths.mjs';
+import { createLocalePaths, hubPath, legalPath } from '../../src/i18n/paths.mjs';
 import { HUBS } from '../../src/lib/hubs.mjs';
 import { de } from '../../src/i18n/de.ts';
 import { en } from '../../src/i18n/en.ts';
@@ -58,15 +59,28 @@ test('switchLocalePath: event pages keep the id, query and hash survive', () => 
 	assert.equal(p.switchLocalePath(`${BASE}/en/conferences/?q=ai`, 'de'), `${BASE}/konferenzen/?q=ai`);
 });
 
-test('switchLocalePath: privacy rename and German-only pages', () => {
-	// The old /privacy/ is now /datenschutz/; neither exists in English, so English goes to the home page.
-	assert.equal(p.switchLocalePath(`${BASE}/privacy/`, 'de'), `${BASE}/datenschutz/`);
-	assert.equal(p.switchLocalePath(`${BASE}/datenschutz/`, 'en'), `${BASE}/en/`);
-	assert.equal(p.switchLocalePath(`${BASE}/impressum/`, 'en'), `${BASE}/en/`);
-	assert.equal(p.switchLocalePath(`${BASE}/en/impressum/`, 'de'), `${BASE}/impressum/`);
-	assert.equal(p.alternates('/datenschutz/'), null);
-	assert.equal(p.alternates('/impressum/'), null);
+test('legal pages: Impressum and Datenschutz have English twins', () => {
+	assert.equal(p.switchLocalePath(`${BASE}/impressum/`, 'en'), `${BASE}/en/legal-notice/`);
+	assert.equal(p.switchLocalePath(`${BASE}/datenschutz/`, 'en'), `${BASE}/en/privacy/`);
+	assert.equal(p.switchLocalePath(`${BASE}/en/legal-notice/`, 'de'), `${BASE}/impressum/`);
+	assert.equal(p.switchLocalePath(`${BASE}/en/privacy/`, 'de'), `${BASE}/datenschutz/`);
+	assert.deepEqual(p.alternates('/datenschutz/'), { de: '/datenschutz/', en: '/en/privacy/' });
+	assert.deepEqual(p.alternates('/en/legal-notice/'), { en: '/en/legal-notice/', de: '/impressum/' });
+	assert.deepEqual(['de', 'en'].map((l) => legalPath('datenschutz', l)), ['/datenschutz/', '/privacy/']);
+	assert.deepEqual(['de', 'en'].map((l) => legalPath('impressum', l)), ['/impressum/', '/legal-notice/']);
 	assert.deepEqual(p.alternates(`${BASE}/konferenzen/`), { de: '/konferenzen/', en: '/en/conferences/' });
+});
+
+test('legal pages: the source keeps [[TODO]] placeholders for owner facts and invents none', () => {
+	for (const f of ['ImpressumPage', 'DatenschutzPage']) {
+		const src = readFileSync(new URL(`../../src/views/${f}.astro`, import.meta.url), 'utf8');
+		assert.ok((src.match(/\[\[TODO/g) ?? []).length >= 10, `${f} lost its placeholders`);
+		assert.doesNotMatch(src, /\+49|\bDE\d{9}\b|stra(ß|ss)e \d/i, `${f} contains what looks like a real fact`);
+	}
+	const priv = readFileSync(new URL('../../src/views/DatenschutzPage.astro', import.meta.url), 'utf8');
+	for (const word of ['Umami', 'Vercel', 'Supabase', 'Buttondown', 'FormSubmit', 'Data Privacy Framework', 'Art. 77', 'GitHub Pages']) {
+		assert.ok(priv.includes(word), `privacy text no longer mentions ${word}`);
+	}
 });
 
 test('switchLocalePath: 404 page', () => {
@@ -114,8 +128,8 @@ test('no translated string is empty, except the deliberate ones', () => {
 				? v === '' ? [`${path}${k}`] : []
 				: v && typeof v === 'object' && !Array.isArray(v) ? empty(v, `${path}${k}.`) : [],
 		);
-	// 'online' has no nearby places; German has no "(in German)" note.
-	const allowed = new Set(['hub.nearby.online', 'footer.inGerman']);
+	// 'online' has no nearby places.
+	const allowed = new Set(['hub.nearby.online']);
 	for (const table of [de, en]) assert.deepEqual(empty(table).filter((k) => !allowed.has(k)), []);
 });
 
