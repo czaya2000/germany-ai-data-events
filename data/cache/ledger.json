@@ -1804,7 +1804,8 @@
 			"end": "2026-11-26",
 			"sources": [
 				"hackevents-ai",
-				"hackevents-data"
+				"hackevents-data",
+				"hessian-ai"
 			],
 			"missingDays": 0
 		},
@@ -3189,9 +3190,11 @@
 			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
 			"firstSeen": "2026-11-20",
 			"lastSeen": "2026-11-20",
-			"end": "2026-12-11",
+			"end": "2026-12-01",
 			"sources": [
-				"hackevents-ai"
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
 			],
 			"missingDays": 0
 		},
@@ -6491,7 +6494,8 @@
 			"lastSeen": "2026-11-20",
 			"end": "2027-01-14",
 			"sources": [
-				"hackevents-ai"
+				"hackevents-ai",
+				"gfw-warendorf"
 			],
 			"missingDays": 0
 		},
@@ -6912,7 +6916,8 @@
 			"lastSeen": "2026-11-20",
 			"end": "2027-01-28",
 			"sources": [
-				"hackevents-ai"
+				"hackevents-ai",
+				"gfw-warendorf"
 			],
 			"missingDays": 0
 		},
@@ -11072,6 +11077,165 @@
 			"end": "2027-03-04",
 			"sources": [
 				"meetup:betreute-intelligenz"
+			],
+			"missingDays": 0
+		},
+		"t:ki werkstatt kreis warendorf gast bei unternehmensnachfolger dirk becklonne becklonne maschinenbau gmbh co kg|2027-01-14": {
+			"decision": "accepted",
+			"eventId": "ki-ist-changemanagement-akzeptanz-fur-ki-schaffen-und-mitarb-warendorf-2027",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2027-01-14",
+			"sources": [
+				"hackevents-ai",
+				"gfw-warendorf"
+			],
+			"missingDays": 0
+		},
+		"t:ki journey durch den kreis warendorf station 6 restaurant einklang ostbevern|2027-01-28": {
+			"decision": "accepted",
+			"eventId": "ki-und-cyber-sicherheit-warendorf-2027",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2027-01-28",
+			"sources": [
+				"hackevents-ai",
+				"gfw-warendorf"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/mistral-meetup-nrw-show-tell-6rn6r2w9": {
+			"decision": "accepted",
+			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-08",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
+			],
+			"missingDays": 0
+		},
+		"t:mistral nrw show tell|2026-12-08": {
+			"decision": "accepted",
+			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-08",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
+			],
+			"missingDays": 0
+		},
+		"u:aieventlist.ai/events/mistral-meetup-nrw-koeln-2026-12": {
+			"decision": "accepted",
+			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-08",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/fme-in-a-nutshell-datenintegration-leicht-gemacht-psa1w7wb": {
+			"decision": "accepted",
+			"eventId": "fme-in-a-nutshell-datenintegration-leicht-gemacht-berlin-2027",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2027-01-19",
+			"sources": [
+				"hackevents-data"
+			],
+			"missingDays": 0
+		},
+		"t:fme nutshell datenintegration leicht gemacht|2027-01-19": {
+			"decision": "accepted",
+			"eventId": "fme-in-a-nutshell-datenintegration-leicht-gemacht-berlin-2027",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2027-01-19",
+			"sources": [
+				"hackevents-data"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/ai-friday-k-ln-ki-community-networking-c1c20coh": {
+			"decision": "accepted",
+			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-04",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
+			],
+			"missingDays": 0
+		},
+		"t:ai friday ki community networking|2026-12-04": {
+			"decision": "accepted",
+			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-04",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/agents-anonymous-cologne-edition-flye97bb": {
+			"decision": "accepted",
+			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-01",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
+			],
+			"missingDays": 0
+		},
+		"t:agents anonymous edition|2026-12-01": {
+			"decision": "accepted",
+			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-01",
+			"sources": [
+				"hackevents-ai",
+				"aieventlist-cologne",
+				"aieventlist-europe"
+			],
+			"missingDays": 0
+		},
+		"u:agentconfs.com/events/cell-press-symposia-decoding-cellular-complexity-single-cell-biology-in-the-era-2026": {
+			"decision": "accepted",
+			"eventId": "cell-press-symposia-decoding-cellular-complexity-single-cell-munich-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-04",
+			"sources": [
+				"agentconfs"
+			],
+			"missingDays": 0
+		},
+		"t:cell press symposia decoding cellular complexity single cell biology era ai|2026-12-02": {
+			"decision": "accepted",
+			"eventId": "cell-press-symposia-decoding-cellular-complexity-single-cell-munich-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-20",
+			"end": "2026-12-04",
+			"sources": [
+				"agentconfs"
 			],
 			"missingDays": 0
 		}

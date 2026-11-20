@@ -2110,6 +2110,25 @@
 		"firstSeen": "2026-11-20"
 	},
 	{
+		"id": "cell-press-symposia-decoding-cellular-complexity-single-cell-munich-2026",
+		"title": "Cell Press Symposia: Decoding cellular complexity: Single cell biology in the era of AI",
+		"date": "2026-12-02",
+		"endDate": "2026-12-04",
+		"city": "Munich",
+		"venue": "Munich, Germany",
+		"format": "Conference",
+		"topics": [
+			"Single-cell biology",
+			"AI in life sciences"
+		],
+		"organiser": "agentconfs.com",
+		"cost": "Not listed",
+		"url": "https://agentconfs.com/events/cell-press-symposia-decoding-cellular-complexity-single-cell-biology-in-the-era-2026",
+		"source": "agentconfs.com",
+		"blurb": "Cell Press symposium in Munich on single-cell biology in the era of AI, taking place on 2 December 2026.",
+		"firstSeen": "2026-11-20"
+	},
+	{
 		"id": "cio-community-executive-summit-dach-region-frankfurt-2026",
 		"title": "CIO Community Executive Summit - Dach Region",
 		"date": "2026-12-02",
