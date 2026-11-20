@@ -74,6 +74,8 @@ export const de: Messages = {
 		allEvents: 'Alle Events',
 		newSr: '(neu)',
 		through: (day: number, month: string) => `bis ${day}. ${month}`,
+		today: 'Heute',
+		runsUntil: (day: number | string, month: string) => `läuft bis ${day}. ${month}`,
 		countOne: '1 Event',
 		countMany: '{n} Events',
 		shown: 'angezeigt',

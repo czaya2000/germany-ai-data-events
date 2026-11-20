@@ -28,6 +28,7 @@
 import { readFileSync } from 'node:fs';
 import { newsletterCity } from '../src/lib/newsletter.mjs';
 import { isoDateIn } from '../src/i18n/format.ts';
+import { wallClockIn } from '../src/lib/schedule.mjs';
 import { LOCALES, LANG_TAGS, selectEvents, renderDigest, audienceFilters, newTagPayload } from './lib/digest.mjs';
 
 const API = 'https://api.buttondown.com/v1';
@@ -46,6 +47,8 @@ const sel = selectEvents(JSON.parse(readFileSync('src/data/events.json', 'utf8')
 	today,
 	ahead: Number(args.ahead ?? 14),
 	from: args.from,
+	// A pretend --today starts that day at 00:00; otherwise the real Berlin time, so events already over are left out.
+	now: args.today ? `${today}T00:00:00` : wallClockIn(new Date()),
 });
 
 if (sel.soon.length === 0) {

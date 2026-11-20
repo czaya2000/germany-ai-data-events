@@ -13,6 +13,7 @@
    Usage: npm run test:agent */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { HUBS, isHubLive } from '../src/lib/hubs.mjs';
+import { hasEnded } from '../src/lib/schedule.mjs';
 
 const root = new URL('../', import.meta.url);
 const dist = new URL('dist/', root);
@@ -29,7 +30,8 @@ const fail = (msg) => {
 const read = (path) => readFileSync(new URL(path, dist), 'utf8');
 
 const source = JSON.parse(readFileSync(new URL('src/data/events.json', root), 'utf8'));
-const upcoming = source.filter((e) => (e.endDate ?? e.date) >= today);
+// Same rule as the build: ended by end time (Europe/Berlin), not just by date.
+const upcoming = source.filter((e) => !hasEnded(e));
 const json = JSON.parse(read('events.json'));
 
 // A site URL -> the file the build wrote for it.

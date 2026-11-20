@@ -73,6 +73,72 @@ for (const loc of LOCALES) {
 			expect(await titles(page)).not.toContain('Berlin Started Earlier');
 		});
 
+		test('events already over today are hidden by the clock in Berlin, not just by date', async ({ page }) => {
+			// Built at 00:00 on 18 Nov; the 17:00-18:00 talk is in the HTML and listed during the day...
+			await open(page, at(loc, '/berlin/'), NOW.wed);
+			expect(await titles(page)).toContain('Berlin Wednesday Talk');
+			await page.clock.setSystemTime(new Date('2026-11-18T17:59:00+01:00'));
+			await page.reload();
+			await expect(page.locator('#result-count')).not.toBeEmpty();
+			expect(await titles(page)).toContain('Berlin Wednesday Talk');
+			// ...and gone once it has ended, while all-day events of the same day stay.
+			await page.clock.setSystemTime(new Date(NOW.wedEvening));
+			await page.reload();
+			await expect(page.locator('#result-count')).not.toBeEmpty();
+			const list = await expectConsistent(page, loc);
+			expect(list).not.toContain('Berlin Wednesday Talk');
+			expect(list).toContain('Berlin Started Earlier');
+		});
+
+		test('running events sit under Today with the real end day, later ones stay in their week', async ({ page }) => {
+			await open(page, at(loc, '/berlin/'), NOW.wed);
+			await expectConsistent(page, loc);
+			const first = page.locator('.band:not([hidden])').first();
+			await expect(first).toHaveAttribute('data-band', 'today');
+			await expect(first).toContainText(loc === 'de' ? 'Heute' : 'Today');
+			const today = page.locator('.row[data-band="today"]:not([hidden]) .title');
+			expect(sorted(await today.allTextContents()).map((x) => x.replace(/\(new\)|\(neu\)/, '').trim())).toEqual(
+				sorted(['Berlin Running Series', 'Berlin Started Earlier', 'Berlin Wednesday Talk']),
+			);
+			// The date column shows today (18), never the start day (16 / 2), plus the "runs until" note.
+			const started = page.locator('.row', { hasText: 'Berlin Started Earlier' }).locator('.spine');
+			await expect(started.locator('.day')).toHaveText('18');
+			await expect(started.locator('.through')).toHaveText(loc === 'de' ? 'läuft bis 18. Nov' : 'until 18 Nov');
+			const running = page.locator('.row', { hasText: 'Berlin Running Series' }).locator('.spine');
+			await expect(running.locator('.day')).toHaveText('18');
+			await expect(running.locator('.through')).toHaveText(loc === 'de' ? 'läuft bis 18. Dez' : 'until 18 Dec');
+			// An event that starts today has a normal spine and no "runs until" note.
+			const talk = page.locator('.row', { hasText: 'Berlin Wednesday Talk' }).locator('.spine');
+			await expect(talk.locator('.day')).toHaveText('18');
+			await expect(talk.locator('.through')).toHaveCount(0);
+			// Later this week stays under the week heading.
+			const week = page.locator('.row[data-band="2026-11-16"]:not([hidden]) .title');
+			expect(sorted((await week.allTextContents()).map((x) => x.replace(/\(new\)|\(neu\)/, '').trim()))).toEqual(
+				sorted(['Berlin Saturday Workshop', 'Berlin Sunday Meetup', 'Berlin Weekend Spanning']),
+			);
+		});
+
+		test('a page built on 18 Nov, opened on 19 Nov: the running event moves up with its new date', async ({ page }) => {
+			await open(page, at(loc, '/berlin/'), '2026-11-19T09:00:00+01:00');
+			await expectConsistent(page, loc);
+			const row = page.locator('.row', { hasText: 'Berlin Running Series' });
+			await expect(row).toHaveAttribute('data-band', 'today');
+			await expect(row.locator('.day')).toHaveText('19');
+			// Berlin Started Earlier ended on the 18th.
+			expect(await titles(page)).not.toContain('Berlin Started Earlier');
+		});
+
+		test('card meta line is the city and the time only, no venue or address', async ({ page }) => {
+			await open(page, at(loc, '/berlin/'), NOW.wed);
+			const talk = page.locator('.row', { hasText: 'Berlin Wednesday Talk' }).locator('.meta');
+			await expect(talk).toHaveText('Berlin, 17:00–18:00');
+			const sat = page.locator('.row', { hasText: 'Berlin Saturday Workshop' }).locator('.meta');
+			await expect(sat).toHaveText('Berlin');
+			await open(page, at(loc, '/?when=month'), NOW.wed);
+			await expect(page.locator('.row:not([hidden]) .meta', { hasText: 'Fixture Hall' })).toHaveCount(0);
+			await expect(page.locator('.row', { hasText: 'Munich Thursday Meetup' }).locator('.meta')).toHaveText(loc === 'de' ? 'München' : 'Munich');
+		});
+
 		test('This month runs to the last day of the month in Berlin', async ({ page }) => {
 			await open(page, at(loc, '/?when=month'), NOW.novEnd);
 			const list = await expectConsistent(page, loc);
@@ -93,7 +159,9 @@ for (const loc of LOCALES) {
 			await expectConsistent(page, loc);
 			await expect(page.locator('.band.current:not([hidden])')).toHaveCount(1);
 			await expect(page.locator('.band.current:not([hidden])')).toContainText(loc === 'de' ? '23. – 29. November' : '23 – 29 November');
-			await expect(page.locator('.band:not([hidden])').first()).toHaveClass(/current/);
+			// The running events sit in the Today group on top; the heading under it is the current week.
+			await expect(page.locator('.band:not([hidden])').first()).toHaveAttribute('data-band', 'today');
+			await expect(page.locator('.band:not([hidden])').nth(1)).toHaveClass(/current/);
 			// ...and nothing is left under the week that is over.
 			await expect(page.locator('.band[data-band="2026-11-16"]:not([hidden])')).toHaveCount(0);
 		});

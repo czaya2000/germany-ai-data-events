@@ -2,6 +2,7 @@
    No Astro imports, so the node tests can load it. Stored data stays English
    ("Free", "EUR 49"); it is localised here at render time only. */
 import { TIMEZONE, NOT_LISTED } from '../../config/country.mjs';
+import { siteNow } from '../lib/schedule.mjs';
 
 export type Locale = 'de' | 'en';
 
@@ -19,10 +20,9 @@ export function isoDateIn(instant: Date, timeZone = TIMEZONE): string {
 	return `${p.year}-${p.month}-${p.day}`;
 }
 
-/** Today in Europe/Berlin. SITE_TODAY (YYYY-MM-DD) freezes it for the e2e build; production never sets it. */
+/** Today in Europe/Berlin. SITE_TODAY (YYYY-MM-DD) or SITE_NOW (ISO instant) freeze it for tests; production never sets them. */
 export function today(): string {
-	const frozen = typeof process !== 'undefined' ? process.env?.SITE_TODAY : undefined;
-	return frozen && /^\d{4}-\d{2}-\d{2}$/.test(frozen) ? frozen : isoDateIn(new Date());
+	return siteNow().slice(0, 10);
 }
 
 /** Weekday, day and month for the date column: "Thu", 12, "Nov" / "Do", 12, "Nov". */

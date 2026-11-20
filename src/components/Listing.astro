@@ -7,6 +7,7 @@
 import SiteNav from './SiteNav.astro';
 import SiteFooter from './SiteFooter.astro';
 import Subscribe from './Subscribe.astro';
+import { endWall, cardMeta } from '../lib/schedule.mjs';
 import {
 	getUpcomingEvents,
 	isNew,
@@ -87,23 +88,31 @@ const strings = {
 	one: s.countOne,
 	many: s.countMany,
 	tz: TIMEZONE,
-	built: today(), // the date this page was built; the week headings are right while it is still today
+	today: s.today,
+	runs: s.runsUntil('{d}', '{m}'),
 	intl: INTL_LOCALE[locale],
 	de: locale === 'de',
 };
 
-// Events arrive sorted by date, so grouping is a single pass. Each group is
-// the week the event STARTS in; a multi-day event sits in its start week,
-// except one that is already running (e.g. a two-month series), which sits
-// in the current week rather than under a week that is long gone.
+// Events arrive sorted by date, so grouping is a single pass. An event that has begun (it started
+// today or earlier) and has not ended sits in the "Today" group at the top; a multi-day event that
+// started earlier shows today's date with "runs until ..." instead of its start day. Events that
+// start later sit in the week they start in. Ended events are already filtered out by
+// getUpcomingEvents; the page script redoes this grouping and the filter with the visitor's
+// Berlin clock, so the list stays right between daily builds.
 const todayIso = today();
 type Row = (typeof events)[number];
-const groups: { band: ReturnType<typeof weekBand>; rows: Row[] }[] = [];
+type Group = { key: string; primary: string; current: boolean; rows: Row[] };
+const groups: Group[] = [];
 for (const e of events) {
-	const key = weekStart(e.date < todayIso ? todayIso : e.date);
+	const key = e.date <= todayIso ? 'today' : weekStart(e.date);
 	const last = groups[groups.length - 1];
-	if (last && last.band.key === key) last.rows.push(e);
-	else groups.push({ band: weekBand(key, locale), rows: [e] });
+	if (last && last.key === key) last.rows.push(e);
+	else if (key === 'today') groups.push({ key, primary: s.today, current: false, rows: [e] });
+	else {
+		const band = weekBand(key, locale);
+		groups.push({ key, primary: band.primary, current: band.current, rows: [e] });
+	}
 }
 
 ---
@@ -229,44 +238,48 @@ for (const e of events) {
 			{
 				groups.map((g) => (
 					<>
-						<li class={`band ${g.band.current ? 'current' : ''}`} data-band={g.band.key}>
+						<li class={`band ${g.current ? 'current' : ''}`} data-band={g.key}>
 							<div class="band-label">
-								<span class="band-primary num">{g.band.primary}</span>
+								<span class="band-primary num">{g.primary}</span>
 							</div>
 						</li>
 						{g.rows.map((e) => {
-							const spine = dateSpine(e.date, locale);
+							// Started on an earlier day and still on: shown on today's date, with the real end day.
+							const ongoing = e.date < todayIso;
+							const spine = dateSpine(ongoing ? todayIso : e.date, locale);
 							const isMultiDay = !!e.endDate && e.endDate !== e.date;
 							const endSpine = isMultiDay ? dateSpine(e.endDate, locale) : null;
 							const eNew = isNew(e.firstSeen);
 							const free = isFree(e.cost);
+							// Card meta line: only the city and the time. Venue and address live on the event page.
 							// Built as one string: separate JSX expressions would each be
-							// wrapped in whitespace, producing "Berlin , Example venue".
-							const metaLine = [displayCity(e.city, locale), e.venue, e.time].filter(Boolean).join(', ');
+							// wrapped in whitespace, producing "Berlin , 09:00".
+							const metaLine = cardMeta(displayCity(e.city, locale), e.time);
 							// The summary in this page's language; where only the other language exists it is
 							// shown as it is, marked with its own lang.
 							const blurb = blurbFor(e, locale);
 							return (
 								<li
 									class="row"
-									data-band={g.band.key}
+									data-band={g.key}
 									data-city={cityGroup(e.city)}
 									data-format={e.format}
 									data-date={e.date}
 									data-end-date={e.endDate ?? e.date}
+									data-end={endWall(e)}
 									data-search={[e.title, e.organiser, e.city, e.venue, ...e.topics]
 										.join(' ')
 										.toLowerCase()}
 								>
 									<a class="row-link" href={localePath(`/events/${e.id}/`, locale)}>
-										<time class="spine" datetime={e.date}>
+										<time class="spine" datetime={ongoing ? todayIso : e.date}>
 											<span class="day num">{spine.day}</span>
 											<span class="dm">
 												{spine.weekday}, {spine.month}
 											</span>
 											{isMultiDay && endSpine && (
 												<span class="through num">
-													{s.through(endSpine.day, endSpine.month)}
+													{ongoing ? s.runsUntil(endSpine.day, endSpine.month) : s.through(endSpine.day, endSpine.month)}
 												</span>
 											)}
 										</time>
@@ -449,19 +462,27 @@ for (const e of events) {
 			function fromISO(s) {
 				return new Date(s + 'T00:00:00Z');
 			}
-			// "Today" is the date in Europe/Berlin, whatever zone the visitor's device is in.
-			var dateInSiteZone = new Intl.DateTimeFormat('en-CA', {
+			// "Now" is the date and time in Europe/Berlin, whatever zone the visitor's device is in.
+			var wallInSiteZone = new Intl.DateTimeFormat('en-CA', {
 				timeZone: strings.tz,
 				year: 'numeric',
 				month: '2-digit',
 				day: '2-digit',
+				hour: '2-digit',
+				minute: '2-digit',
+				second: '2-digit',
+				hourCycle: 'h23',
 			});
-			function todayInSiteZone() {
+			function siteNow() {
 				var p = {};
-				dateInSiteZone.formatToParts(new Date()).forEach(function (x) {
+				wallInSiteZone.formatToParts(new Date()).forEach(function (x) {
 					p[x.type] = x.value;
 				});
-				return p.year + '-' + p.month + '-' + p.day;
+				var date = p.year + '-' + p.month + '-' + p.day;
+				return { date: date, wall: date + 'T' + p.hour + ':' + p.minute + ':' + p.second };
+			}
+			function todayInSiteZone() {
+				return siteNow().date;
 			}
 			function mondayOf(iso) {
 				var d = fromISO(iso);
@@ -469,9 +490,10 @@ for (const e of events) {
 				return toISO(d);
 			}
 
-			// The page is built once a day. If it is opened on a later day, events that were already
-			// running when it was built (listed under the week of the build) belong under the week of
-			// today, so they are moved there; the heading is created when no event starts that week.
+			// The page is built once a day, so the grouping is redone here with the visitor's Berlin clock:
+			// an event that has begun and not ended sits in the "Today" group (a multi-day one that started
+			// earlier shows today's date with "runs until ..."); later events sit in the week they start in.
+			// Ended events stay in the list but are hidden by applyFilters (end time, not just the date).
 			function weekLabel(monday) {
 				var start = fromISO(monday);
 				var end = fromISO(monday);
@@ -482,41 +504,70 @@ for (const e of events) {
 					start.getUTCMonth() === end.getUTCMonth() ? day.format(start) + (strings.de ? '.' : '') : dayMonth.format(start);
 				return left + ' – ' + dayMonth.format(end);
 			}
-			function rebandRunningEvents() {
-				var todayStr = todayInSiteZone();
-				if (todayStr === strings.built) return;
-				var current = mondayOf(todayStr);
-				var heading = bands.filter(function (b) {
-					return b.dataset.band === current;
-				})[0];
-				var moved = rows.filter(function (r) {
-					return r.dataset.date < todayStr && r.dataset.band !== current && r.dataset.endDate >= todayStr;
-				});
-				if (moved.length === 0) return;
-				if (!heading) {
-					heading = bands[0].cloneNode(true);
-					heading.dataset.band = current;
-					heading.querySelector('.band-primary').textContent = weekLabel(current);
-					// Before the first row that starts in a later week (rows are in date order).
-					var later = rows.filter(function (r) {
-						return r.dataset.band > current;
-					})[0];
-					if (later) {
-						var anchor = later;
-						while (anchor.previousElementSibling && !anchor.previousElementSibling.classList.contains('row')) {
-							anchor = anchor.previousElementSibling;
-						}
-						anchor.parentNode.insertBefore(heading, anchor);
-					} else {
-						rows[0].parentNode.appendChild(heading);
-					}
-					bands.push(heading);
+			function spineParts(iso) {
+				var d = fromISO(iso);
+				var f = function (opts) {
+					opts.timeZone = 'UTC';
+					return new Intl.DateTimeFormat(strings.intl, opts).format(d).replace(/\.$/, '');
+				};
+				return { weekday: f({ weekday: 'short' }), day: d.getUTCDate(), month: f({ month: 'short' }) };
+			}
+			function showAsToday(row, todayStr) {
+				var spine = row.querySelector('.spine');
+				var t = spineParts(todayStr);
+				var e = spineParts(row.dataset.endDate);
+				spine.setAttribute('datetime', todayStr);
+				spine.querySelector('.day').textContent = t.day;
+				spine.querySelector('.dm').textContent = t.weekday + ', ' + t.month;
+				var note = spine.querySelector('.through');
+				if (!note) {
+					note = document.createElement('span');
+					note.className = 'through num';
+					spine.appendChild(note);
 				}
-				var after = heading;
-				moved.forEach(function (r) {
-					r.dataset.band = current;
-					after.parentNode.insertBefore(r, after.nextSibling);
-					after = r;
+				note.textContent = strings.runs.replace('{d}', e.day).replace('{m}', e.month);
+			}
+			function makeBand(key, text) {
+				var li = document.createElement('li');
+				li.className = 'band';
+				li.dataset.band = key;
+				li.innerHTML = '<div class="band-label"><span class="band-primary num"></span></div>';
+				li.querySelector('.band-primary').textContent = text;
+				return li;
+			}
+			function layout() {
+				var todayStr = todayInSiteZone();
+				var list = rows[0] && rows[0].parentNode;
+				if (!list) return;
+
+				rows.forEach(function (r, i) {
+					r.dataset.i = i;
+					r.dataset.band = r.dataset.date <= todayStr ? 'today' : mondayOf(r.dataset.date);
+					if (r.dataset.date < todayStr) showAsToday(r, todayStr);
+				});
+				var sorted = rows.slice().sort(function (a, b) {
+					var ka = a.dataset.band === 'today' ? '' : a.dataset.band;
+					var kb = b.dataset.band === 'today' ? '' : b.dataset.band;
+					return (
+						(ka < kb ? -1 : ka > kb ? 1 : 0) ||
+						(a.dataset.date < b.dataset.date ? -1 : a.dataset.date > b.dataset.date ? 1 : 0) ||
+						Number(a.dataset.i) - Number(b.dataset.i)
+					);
+				});
+				bands.forEach(function (b) {
+					b.parentNode.removeChild(b);
+				});
+				bands = [];
+				var lastKey = null;
+				sorted.forEach(function (r) {
+					var key = r.dataset.band;
+					if (key !== lastKey) {
+						var band = makeBand(key, key === 'today' ? strings.today : weekLabel(key));
+						list.appendChild(band);
+						bands.push(band);
+						lastKey = key;
+					}
+					list.appendChild(r);
 				});
 			}
 
@@ -524,17 +575,18 @@ for (const e of events) {
 			// shown, even on a page built days ago) to the end of the week (Sunday) or the month.
 			// An event that started earlier and is still running overlaps the range, so it is included.
 			function whenBounds(when) {
-				var todayStr = todayInSiteZone();
+				var now = siteNow();
+				var todayStr = now.date;
 				if (when === 'week') {
 					var weekEnd = fromISO(mondayOf(todayStr));
 					weekEnd.setUTCDate(weekEnd.getUTCDate() + 6);
-					return { start: todayStr, end: toISO(weekEnd) };
+					return { start: todayStr, wall: now.wall, end: toISO(weekEnd) };
 				}
 				if (when === 'month') {
 					var t = fromISO(todayStr);
-					return { start: todayStr, end: toISO(new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0))) };
+					return { start: todayStr, wall: now.wall, end: toISO(new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0))) };
 				}
-				return { start: todayStr, end: null };
+				return { start: todayStr, wall: now.wall, end: null };
 			}
 
 			function updateUrl() {
@@ -563,6 +615,7 @@ for (const e of events) {
 						(!query || (d.search || '').indexOf(query) !== -1) &&
 						(state.cities.length === 0 || state.cities.indexOf(d.city) !== -1) &&
 						(state.formats.length === 0 || state.formats.indexOf(d.format) !== -1) &&
+						d.end >= bounds.wall && // not over yet: end time, else the end of its last day (Berlin)
 						d.endDate >= bounds.start &&
 						(!bounds.end || d.date <= bounds.end);
 					row.hidden = !matches;
@@ -611,7 +664,7 @@ for (const e of events) {
 				});
 			});
 
-			rebandRunningEvents();
+			layout();
 			setWhenTab(state.when);
 			applyFilters();
 		})();

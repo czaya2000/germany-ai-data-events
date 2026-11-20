@@ -22,6 +22,7 @@ export {
 } from '../../config/country.mjs';
 import { BASE, SITE_URL, SITE_HOST, CURRENCY } from '../../config/country.mjs';
 import { today } from '../i18n/format.ts';
+import { hasEnded, siteNow } from './schedule.mjs';
 import type { Locale } from '../i18n/format.ts';
 
 /** Prefix a site path ("/events/x/") with the base path, for href and src. */
@@ -86,15 +87,15 @@ export function isNew(firstSeen: string, ref = today()): boolean {
 
 export async function getUpcomingEvents(): Promise<EventEntry[]> {
 	const entries = await getCollection('events');
-	const t = today();
+	const now = siteNow();
 	return entries
-		.filter((e) => (e.data.endDate ?? e.data.date) >= t)
+		.filter((e) => !hasEnded(e.data, now))
 		.sort((a, b) => a.data.date.localeCompare(b.data.date));
 }
 
-/** True once the event's last day is before today. */
-export function isEnded(data: { date: string; endDate?: string }, ref = today()): boolean {
-	return (data.endDate ?? data.date) < ref;
+/** True once the event's end instant (end time, or the end of its last day) is before now in Europe/Berlin. */
+export function isEnded(data: { date: string; endDate?: string; time?: string }, now = siteNow()): boolean {
+	return hasEnded(data, now);
 }
 
 /** Live events plus archived ones, for building every event page. A live

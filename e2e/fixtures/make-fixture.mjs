@@ -24,7 +24,7 @@ const mk = (id, title, date, endDate, city, format, extra = {}) => ({
 
 const events = [
 	mk('b-started-earlier', 'Berlin Started Earlier', '2026-11-16', '2026-11-18', 'Berlin', 'Conference'), // multi-day, ends today
-	mk('b-wed', 'Berlin Wednesday Talk', '2026-11-18', null, 'Berlin', 'Meetup', { time: '18:00' }), // today
+	mk('b-wed', 'Berlin Wednesday Talk', '2026-11-18', null, 'Berlin', 'Meetup', { time: '17:00–18:00' }), // today, over at 18:00 (the page script hides it from then on)
 	mk('b-sat', 'Berlin Saturday Workshop', '2026-11-21', null, 'Berlin', 'Workshop'),
 	mk('b-sun', 'Berlin Sunday Meetup', '2026-11-22', null, 'Berlin', 'Meetup'), // last day of the week
 	mk('b-mon', 'Berlin Next Monday', '2026-11-23', null, 'Berlin', 'Meetup'), // first day of next week

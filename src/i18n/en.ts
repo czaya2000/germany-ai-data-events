@@ -67,6 +67,8 @@ export const en = {
 		allEvents: 'All events',
 		newSr: '(new)',
 		through: (day: number, month: string) => `to ${day} ${month}`,
+		today: 'Today',
+		runsUntil: (day: number | string, month: string) => `until ${day} ${month}`,
 		countOne: '1 event',
 		countMany: '{n} events',
 		shown: 'shown',

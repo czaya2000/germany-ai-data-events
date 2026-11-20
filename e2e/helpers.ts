@@ -4,7 +4,9 @@ import { expect, type Page } from '@playwright/test';
    clock with Playwright's page.clock; the browser's time zone is America/Los_Angeles (playwright.config.ts),
    so a test also proves the site uses Europe/Berlin, not the visitor's zone. */
 export const NOW = {
-	wed: '2026-11-18T12:00:00+01:00',
+	/** Wednesday 18 Nov, 18:30 in Berlin: the 17:00-18:00 talk is over. */
+	wedEvening: '2026-11-18T18:30:00+01:00',
+	wed: '2026-11-18T12:00:00+01:00', // the 17:00-18:00 talk is still ahead
 	/** Sunday 22 Nov, 23:30 in Berlin (still Sunday). */
 	sunLate: '2026-11-22T23:30:00+01:00',
 	/** Monday 23 Nov, 00:30 in Berlin; still Sunday afternoon in Los Angeles. */

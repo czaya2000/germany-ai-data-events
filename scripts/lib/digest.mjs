@@ -16,6 +16,7 @@ import {
 } from '../../src/lib/newsletter.mjs';
 import { blurbFor } from '../../src/lib/blurb.mjs';
 import { SITE_URL, SITE_NAME } from '../../config/country.mjs';
+import { hasEnded } from '../../src/lib/schedule.mjs';
 import { displayCity, formatLabel, localizeCost, dateSpine, INTL_LOCALE } from '../../src/i18n/index.ts';
 
 // Newsletter name in the masthead: the product name.
@@ -78,10 +79,12 @@ const COPY = {
 // (firstSeen) is NOT a reason to include an event; there is no "new this week" section.
 // A multi-day event that began before `from` is shown from `from` on: its date is
 // clamped, so the email never prints a day in the past (`startedEarlier` marks those).
-export function selectEvents(allEvents, { today, ahead = 14, from = today }) {
+// `now` (Europe/Berlin wall-clock "YYYY-MM-DDTHH:MM:SS", default: the start of `today`) also drops
+// events that already ended earlier the same day (end time, else the end of the last day).
+export function selectEvents(allEvents, { today, ahead = 14, from = today, now = `${today}T00:00:00` }) {
 	const horizon = addDays(today, ahead); // inclusive
 	const soon = allEvents
-		.filter((e) => (e.endDate ?? e.date) >= from && e.date <= horizon)
+		.filter((e) => (e.endDate ?? e.date) >= from && e.date <= horizon && !hasEnded(e, now))
 		.map((e) =>
 			e.date < from
 				? { ...e, date: from, startedEarlier: true, endDate: e.endDate === from ? undefined : e.endDate }
