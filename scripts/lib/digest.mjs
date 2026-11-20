@@ -15,8 +15,11 @@ import {
 	formatTag,
 } from '../../src/lib/newsletter.mjs';
 import { blurbFor } from '../../src/lib/blurb.mjs';
-import { SITE_URL, SITE_NAME } from '../../config/country.mjs';
+import { SITE_URL } from '../../config/country.mjs';
 import { displayCity, formatLabel, localizeCost, dateSpine, INTL_LOCALE } from '../../src/i18n/index.ts';
+
+// Newsletter name in the masthead (digest only; the website's SITE_NAME is unchanged).
+export const NEWSLETTER_NAME = 'German Data Events';
 
 export const LOCALES = ['de', 'en'];
 export const LANG_TAGS = { de: 'lang-de', en: 'lang-en' };
@@ -50,7 +53,7 @@ const COPY = {
 		seeAll: 'See all upcoming events',
 		manage: 'Change your cities and event types',
 		until: (day, month) => `to ${day} ${month}`,
-		looks: ['full rows with blurbs', 'full rows, no blurbs', 'one-line rows'],
+		looks: ['full cards with blurbs', 'full cards, no blurbs', (n) => `full cards for the first ${n} events, one-line rows after`, 'one-line rows'],
 	},
 	de: {
 		subject: (week, year) => `Daten- & KI-Events in Deutschland · KW ${week}, ${year}`,
@@ -64,29 +67,28 @@ const COPY = {
 		seeAll: 'Alle kommenden Events ansehen',
 		manage: 'Städte und Formate ändern',
 		until: (day, month) => `bis ${day}. ${month}`,
-		looks: ['volle Zeilen mit Kurztext', 'volle Zeilen ohne Kurztext', 'einzeilige Zeilen'],
+		looks: ['volle Karten mit Kurztext', 'volle Karten ohne Kurztext', (n) => `volle Karten für die ersten ${n} Events, danach einzeilig`, 'einzeilige Zeilen'],
 	},
 };
 
 // ---- Pick the events --------------------------------------------------------
 
-// One section: everything on (or still running) from `from` through today + `ahead`
-// days (inclusive), Europe/Berlin dates. Being new (firstSeen) is NOT a reason to
-// include an event, and there is no "new this week" section or marker.
+// One section: every event that overlaps the window [from, today + ahead] (Europe/Berlin
+// dates, both ends inclusive): (endDate ?? date) >= from AND date <= horizon. Being new
+// (firstSeen) is NOT a reason to include an event; there is no "new this week" section.
+// A multi-day event that began before `from` is shown from `from` on: its date is
+// clamped, so the email never prints a day in the past (`startedEarlier` marks those).
 export function selectEvents(allEvents, { today, ahead = 14, from = today }) {
 	const horizon = addDays(today, ahead); // inclusive
-	const upcoming = allEvents
-		.filter((e) => (e.endDate ?? e.date) >= from)
+	const soon = allEvents
+		.filter((e) => (e.endDate ?? e.date) >= from && e.date <= horizon)
+		.map((e) =>
+			e.date < from
+				? { ...e, date: from, startedEarlier: true, endDate: e.endDate === from ? undefined : e.endDate }
+				: e,
+		)
 		.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
-	// Already running counts only for short events (a conference's last day), not
-	// long series that started weeks ago.
-	const startsSoon = (e) => e.date >= from || addDays(e.date, 7) >= (e.endDate ?? e.date);
-	return {
-		today,
-		from,
-		horizon,
-		soon: upcoming.filter((e) => e.date <= horizon && startsSoon(e)),
-	};
+	return { today, from, horizon, soon };
 }
 
 // ---- Audience ---------------------------------------------------------------
@@ -180,7 +182,6 @@ export function shortBlurb(text, max = 140) {
 	return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\s]+$/, '') + '…';
 }
 
-const TOP_LOOKS = [{ blurb: true }, { blurb: false }, { compact: true }];
 const BUDGET_KB = 90; // Gmail clips emails over ~102 KB
 // Template tags vanish when Buttondown renders, so leave them out of the count.
 const sizeKb = (html) => Math.round(Buffer.byteLength(html.replace(/^\{%.*%\}$/gm, '')) / 1024);
@@ -248,7 +249,7 @@ ${blurbHtml}<div style="font-size:13px;margin-top:10px;">${[format, cost].filter
 <tr><td style="padding:24px 0 18px;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
 <td valign="middle" style="padding-right:11px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="18" style="border:2px solid ${T.ink};"><tr><td height="4" style="height:4px;line-height:4px;font-size:0;background:${T.accent};">&nbsp;</td></tr><tr><td height="10" style="height:10px;line-height:10px;font-size:0;">&nbsp;</td></tr></table></td>
-<td valign="middle" style="font-family:${T.font};font-size:19px;font-weight:700;letter-spacing:-0.015em;"><a href="${HOME}" style="color:${T.ink};text-decoration:none;">${esc(SITE_NAME)}</a></td>
+<td valign="middle" style="font-family:${T.font};font-size:19px;font-weight:700;letter-spacing:-0.015em;"><a href="${HOME}" style="color:${T.ink};text-decoration:none;">${esc(NEWSLETTER_NAME)}</a></td>
 </tr></table>
 </td></tr>
 <tr><td height="3" style="height:3px;line-height:3px;font-size:0;background:${T.accent};">&nbsp;</td></tr>
@@ -264,8 +265,8 @@ ${p(c.intro, `color:${T.ink2};`)}
 ${p(note, `font-size:14px;color:${T.muted};`)}
 </div>`;
 		const fallback = `<tr><td colspan="2" style="padding:18px 0;border-bottom:1px solid ${T.border};">${p(empty, `color:${T.ink2};`)}</td></tr>`;
-		const row = (e) => (opts.compact ? renderCompact(e) : renderEvent(e, { blurb: opts.blurb !== false }));
-		const list = events.map((e) => wrap(e, row(e))).join('\n');
+		const row = (e, i) => (opts.compact || i >= (opts.fullCount ?? Infinity) ? renderCompact(e) : renderEvent(e, { blurb: opts.blurb !== false }));
+		const list = events.map((e, i) => wrap(e, row(e, i))).join('\n');
 		const rows =
 			events.length === 0 ? fallback : `{% if ${anyMatchCondition(events)} %}\n${list}\n{% else %}\n${fallback}\n{% endif %}`;
 		return `${head}
@@ -280,7 +281,9 @@ ${p(a('{{ manage_subscription_url }}', c.manage, T.muted), `margin-top:10px;font
 </div>`;
 
 	function buildBody(top) {
-		const range = `${datePart(from, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}.`;
+		// German short months already end in a full stop ("Dez."): add one only if missing.
+		const rangeText = `${datePart(from, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}`;
+		const range = rangeText.endsWith('.') ? rangeText : `${rangeText}.`;
 		const sections = section(c.soonTitle, range, soon, c.soonEmpty, top);
 		// The marker keeps the draft in Buttondown's plain (markdown) editor, which
 		// passes raw HTML through. Its visual editor drops unsupported attributes.
@@ -296,9 +299,45 @@ ${outro}
 	}
 
 	// Worst case is a reader with no filters, who sees every row.
+	// Default: the Swiss full event cards with blurbs. If that is too big, drop the
+	// blurbs; then keep full cards for as many of the earliest events as fit and use
+	// one-line rows for the rest; all one-line rows only as the very last resort.
+	const fits = (html) => sizeKb(html) <= BUDGET_KB;
 	let level = 0;
-	let body = buildBody(TOP_LOOKS[0]);
-	while (sizeKb(body) > BUDGET_KB && level < TOP_LOOKS.length - 1) body = buildBody(TOP_LOOKS[++level]);
+	let fullCount = soon.length;
+	let body = buildBody({ blurb: true });
+	if (!fits(body)) {
+		level = 1;
+		body = buildBody({ blurb: false });
+	}
+	if (!fits(body)) {
+		level = 2;
+		let lo = 0; // largest number of full cards that still fits (binary search)
+		let hi = soon.length - 1;
+		while (lo < hi) {
+			const mid = Math.ceil((lo + hi) / 2);
+			if (fits(buildBody({ blurb: false, fullCount: mid }))) lo = mid;
+			else hi = mid - 1;
+		}
+		fullCount = lo;
+		body = buildBody({ blurb: false, fullCount });
+		if (fullCount === 0) {
+			level = 3;
+			body = buildBody({ compact: true });
+		}
+	}
+	const look = c.looks[level];
 	const kb = sizeKb(body);
-	return { subject: digestSubject(locale, today), body, level, lookName: c.looks[level], sizeKb: kb, overBudget: kb > BUDGET_KB };
+	// Unfiltered size of each pure look, for the dry-run report.
+	const looksKb = [{ blurb: true }, { blurb: false }, { compact: true }].map((l) => sizeKb(buildBody(l)));
+	return {
+		subject: digestSubject(locale, today),
+		body,
+		level,
+		fullCount,
+		lookName: typeof look === 'function' ? look(fullCount) : look,
+		sizeKb: kb,
+		looksKb,
+		overBudget: kb > BUDGET_KB,
+	};
 }

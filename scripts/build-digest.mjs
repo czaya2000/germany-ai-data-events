@@ -68,6 +68,9 @@ for (const m of emails) {
 		`  top section: ${m.lookName}; ~${m.sizeKb} KB for a reader with no filters (Gmail clips above ~102 KB)` +
 			`; audience: lang-en ${m.locale === 'en' ? 'contains' : 'not_contains'}`,
 	);
+	console.log(
+		`  unfiltered size per look: full cards with blurbs ${m.looksKb[0]} KB, full cards no blurbs ${m.looksKb[1]} KB, all one-line ${m.looksKb[2]} KB`,
+	);
 	if (m.overBudget) console.log('  WARNING: still over budget with one-line rows. Gmail may clip it for readers with no filters.');
 }
 

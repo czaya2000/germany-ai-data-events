@@ -128,3 +128,62 @@ test('rendered digests have no "new this week" section, legend or marker', () =>
 		assert.equal((body.match(/<h2\b/g) ?? []).length, 1);
 	}
 });
+
+test('overlap window: ended events out, running ones in, nothing shown before today', () => {
+	const today = '2026-11-20';
+	const mk = (id, date, endDate) => ev({ id, title: id, date, endDate, firstSeen: '2026-01-01' });
+	const all = [
+		mk('past', '2026-11-16'),
+		mk('ended', '2026-11-16', '2026-11-19'),
+		mk('running', '2026-11-18', '2026-11-22'),
+		mk('ends-today', '2026-11-19', '2026-11-20'),
+		mk('starts-edge', '2026-12-04'),
+		mk('beyond', '2026-12-05'),
+	];
+	const s = selectEvents(all, { today });
+	assert.deepEqual(s.soon.map((e) => e.id).sort(), ['ends-today', 'running', 'starts-edge']);
+	for (const e of s.soon) assert.ok(e.date >= today, `${e.id} shows ${e.date}`);
+	assert.equal(s.soon.find((e) => e.id === 'running').date, today);
+	assert.equal(s.soon.find((e) => e.id === 'ends-today').endDate, undefined);
+	for (const locale of ['de', 'en']) {
+		const { body } = renderDigest(s, locale);
+		assert.ok(!body.includes('events/past/') && !body.includes('events/ended/'));
+		assert.doesNotMatch(body, />16</); // no day-16 date spine
+	}
+});
+
+test('German range text has no double full stop', () => {
+	const s = selectEvents([ev({ date: '2026-11-25' })], { today: '2026-11-20' });
+	const { body } = renderDigest(s, 'de');
+	assert.doesNotMatch(body, /\.\./);
+	assert.match(body, /20\. Nov\. – 4\. Dez\./);
+	assert.doesNotMatch(renderDigest(s, 'en').body, /\.\./);
+});
+
+test('masthead says "German Data Events" (mark + accent rule), not the website name', () => {
+	for (const locale of ['de', 'en']) {
+		const { body } = renderDigest(sel, locale);
+		assert.match(body, />German Data Events</);
+		assert.ok(!body.includes('German AI & Data Events') && !body.includes('German AI &amp; Data Events'));
+		assert.match(body, /border:2px solid #000000/); // the mark frame
+		assert.match(body, /height="3"[^>]*background:#e30613/); // the 3px accent rule
+	}
+});
+
+test('default look is the full event card with date spine; one-line rows only as overflow', () => {
+	const few = selectEvents([ev({ date: '2026-11-25' })], { today: '2026-11-23' });
+	for (const locale of ['de', 'en']) {
+		const r = renderDigest(few, locale);
+		assert.equal(r.level, 0);
+		assert.match(r.body, /font-size:28px;font-weight:600/); // big day number (date spine)
+		assert.match(r.body, /width="64"/);
+		assert.doesNotMatch(r.body, /font-size:15px;"><span/); // no one-line row
+	}
+	const many = selectEvents(
+		Array.from({ length: 150 }, (_, i) => ev({ id: `e${i}`, title: `Event ${i}`, date: '2026-11-25' })),
+		{ today: '2026-11-23' },
+	);
+	const r = renderDigest(many, 'de');
+	assert.ok(r.fullCount > 0 && r.body.includes('width="64"'));
+	assert.ok(r.sizeKb <= 90);
+});
