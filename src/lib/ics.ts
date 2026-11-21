@@ -8,6 +8,7 @@
 import { TIMEZONE, UID_DOMAIN as CONFIG_UID_DOMAIN, SITE_NAME, SITE_HOST } from '../../config/country.mjs';
 import { t } from '../i18n/index.ts';
 import { INTL_LOCALE, type Locale } from '../i18n/format.ts';
+import { stripEmoji } from './strip-emoji.mjs';
 
 export interface IcsEvent {
 	id: string;
@@ -208,7 +209,7 @@ function eventLines(e: IcsEvent, dtstamp: string, locale: Locale): string[] {
 	if (e.organiser && e.organiser.toLowerCase() !== 'not listed') desc.push(s.organiser(e.organiser));
 	desc.push(s.details(e.pageUrl));
 
-	lines.push(`SUMMARY:${escapeText(e.title)}`);
+	lines.push(`SUMMARY:${escapeText(stripEmoji(e.title))}`);
 	if (location) lines.push(`LOCATION:${escapeText(location)}`);
 	lines.push(`DESCRIPTION:${escapeText(desc.join('\n\n'))}`);
 	lines.push(`URL:${e.pageUrl}`);

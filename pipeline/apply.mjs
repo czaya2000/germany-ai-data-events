@@ -14,6 +14,7 @@ import { makeCandidate } from './lib/normalize.mjs';
 import { Counter, parseEnrichment, verifyExtracted, verifyResults } from './lib/verify.mjs';
 import { safeId } from './lib/work.mjs';
 import { ONLINE, resolveCity } from './lib/city.mjs';
+import { stripEmoji } from '../src/lib/strip-emoji.mjs';
 import { organiserOrDomain } from './lib/normalize.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
@@ -122,7 +123,7 @@ export function applyEnrichment({ root = ROOT, today = berlinToday(), windowDays
 			continue;
 		}
 		const ev = {
-			title: c.title,
+			title: stripEmoji(c.title),
 			date: c.start,
 			...(c.end && c.end > c.start ? { endDate: c.end } : {}),
 			...(c.time ? { time: c.time } : {}),

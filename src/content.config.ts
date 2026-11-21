@@ -1,8 +1,9 @@
 import { defineCollection, z } from 'astro:content';
 import { file } from 'astro/loaders';
+import { stripEmoji } from './lib/strip-emoji.mjs';
 
 const eventSchema = z.object({
-	title: z.string(),
+	title: z.string().transform(stripEmoji),
 	date: z.string(),
 	endDate: z.string().optional(),
 	time: z.string().optional(),

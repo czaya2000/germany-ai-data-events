@@ -2,6 +2,7 @@ import { SITE_NAME, SITE_URL, blurbFor, eventUrl, formatDateRange, getUpcomingEv
 import { SITE_SCOPE } from './public-data';
 import { t, displayCity, formatLabel, localizeCost, organiserUnknown, type Locale } from '../i18n';
 import { LOCALE_PREFIX } from '../i18n/paths.mjs';
+import { stripEmoji } from './strip-emoji.mjs';
 
 /* RSS 2.0 of upcoming events, newest listings first (by firstSeen), so a
    feed reader or agent sees what was just added. One feed per language:
@@ -29,7 +30,7 @@ export async function buildRss(locale: Locale): Promise<string> {
 		const summary = `${dateLabel}${e.time ? `, ${e.time}` : ''} · ${where} · ${formatLabel(e.format, locale)} · ${localizeCost(e.cost, locale)}. ${blurb}${organiserUnknown(e.organiser) ? '' : ` ${s.ics.organiser(e.organiser)}.`}`;
 		return [
 			'    <item>',
-			`      <title>${esc(`${e.title} (${dateLabel}, ${city})`)}</title>`,
+			`      <title>${esc(`${stripEmoji(e.title)} (${dateLabel}, ${city})`)}</title>`,
 			`      <link>${url}</link>`,
 			`      <guid isPermaLink="true">${url}</guid>`,
 			`      <pubDate>${new Date(`${e.firstSeen}T06:00:00Z`).toUTCString()}</pubDate>`,

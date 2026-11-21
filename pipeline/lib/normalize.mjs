@@ -1,5 +1,6 @@
 // Candidate shape, URL canonicalisation, ledger keys, text cleanup, German/English date parsing.
 import { fold, resolveCity } from './city.mjs';
+import { stripEmoji } from '../../src/lib/strip-emoji.mjs';
 import { MONTHS } from './time.mjs';
 import { AGGREGATOR_DOMAINS, NOT_LISTED } from '../../config/country.mjs';
 
@@ -116,7 +117,7 @@ export function organiserOrDomain(organiser, url) {
 export function makeCandidate(f, src) {
 	if (!f.title || !f.start || !/^\d{4}-\d{2}-\d{2}$/.test(f.start)) return null;
 	const c = {
-		title: oneLine(f.title, 200),
+		title: oneLine(stripEmoji(f.title), 200),
 		start: f.start,
 		end: f.end && f.end >= f.start ? f.end : f.start,
 		time: f.time || undefined,

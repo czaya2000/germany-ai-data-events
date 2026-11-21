@@ -6,6 +6,7 @@ import { SITE_URL, cityGroup, eventUrl, isFree, formatDateRange, today, type Eve
 import { eventDateTimes } from './ics';
 import { feedHttpsUrl, feedSlug, slugify } from './calendar-feeds';
 import { TIMEZONE } from '../../config/country.mjs';
+import { stripEmoji } from './strip-emoji.mjs';
 
 export { SITE_SCOPE } from '../../config/country.mjs';
 
@@ -17,7 +18,7 @@ export function publicEvent(entry: EventEntry) {
 	const group = cityGroup(d.city);
 	return {
 		id: entry.id,
-		title: d.title,
+		title: stripEmoji(d.title),
 		start: when.start,
 		end: when.end,
 		allDay: !when.start.includes('T'),

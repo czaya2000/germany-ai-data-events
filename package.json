@@ -11,6 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "validate": "node scripts/validate-events.mjs",
+    "test:emoji": "node scripts/test-strip-emoji.mjs",
     "test:ics": "node scripts/test-ics.mjs",
     "test:agent": "node scripts/test-agent-files.mjs",
     "test:i18n": "node scripts/test-i18n.mjs",
