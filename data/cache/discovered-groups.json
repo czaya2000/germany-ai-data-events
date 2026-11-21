@@ -965,6 +965,132 @@
 			"trust": "noisy",
 			"icsOk": true,
 			"checked": "2026-11-20"
+		},
+		"berlinawsug": {
+			"firstSeen": "2026-11-21",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"owasp-augsburg-chapter": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"makercube": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"tech-n-talk-frankfurt": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"rust-berlin": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"rethinking-ai-at-work": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"software-technology-meetup-pforzheim": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"gdg-hannover": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"aibuildersclub": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"bonn-bitcoin-meetup": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"cologne-js": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"scrumtisch-bonn": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"leipzig-python-user-group": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"domain-driven-design-rhein-main": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"pycologne": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"freifunk-oberhausen": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"webwirtschaft": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
+		},
+		"claude-meetup-frankfurt": {
+			"firstSeen": "2026-11-21",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-21"
 		}
 	}
 }

@@ -82,12 +82,12 @@
 			]
 		},
 		{
-			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
-			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
-			"date": "2026-11-20",
+			"kept": "AI Builders Dubai - Nov 26",
+			"merged": "AI Builders Vienna - Bring Your Own Laptop Edition - Nov 26",
+			"date": "2026-11-26",
 			"sources": [
-				"meetup:ai-beavers",
-				"luma-hamburg"
+				"meetup:aibuildersclub",
+				"meetup:aibuildersclub"
 			]
 		},
 		{
@@ -118,33 +118,6 @@
 			]
 		},
 		{
-			"kept": "MLcon Berlin 2026",
-			"merged": "MLCon Berlin 2026",
-			"date": "2026-11-16",
-			"sources": [
-				"deutschlandki",
-				"agentconfs"
-			]
-		},
-		{
-			"kept": "AI Engineering Summit 2026",
-			"merged": "AI Engineering Summit",
-			"date": "2026-11-16",
-			"sources": [
-				"deutschlandki",
-				"confstech"
-			]
-		},
-		{
-			"kept": "Azure DUS#53: 80 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
-			"merged": "Azure DUS#53: 0 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
-			"date": "2026-11-25",
-			"sources": [
-				"meetup:azure-dusseldorf-meetup",
-				"hackevents-ai"
-			]
-		},
-		{
 			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
 			"merged": "IBM Bob Coding Watch Party in Berlin",
 			"date": "2026-12-01",
@@ -160,15 +133,6 @@
 			"sources": [
 				"meetup:bliss-speaker-series",
 				"hackevents-ai"
-			]
-		},
-		{
-			"kept": "Azure DUS#53: 80 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
-			"merged": "Azure DUS#53: 0 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
-			"date": "2026-11-25",
-			"sources": [
-				"meetup:azure-dusseldorf-meetup",
-				"hackevents-data"
 			]
 		},
 		{
@@ -190,24 +154,6 @@
 			]
 		},
 		{
-			"kept": "MLcon Berlin 2026",
-			"merged": "MLConf Berlin 2026",
-			"date": "2026-11-16",
-			"sources": [
-				"deutschlandki",
-				"hackevents-ai"
-			]
-		},
-		{
-			"kept": "MLcon Berlin 2026",
-			"merged": "MLConf Berlin 2026",
-			"date": "2026-11-16",
-			"sources": [
-				"deutschlandki",
-				"hackevents-data"
-			]
-		},
-		{
 			"kept": "AWS UG Frankfurt with Grafana UG: Keycloak SLIs & Traffic Data in Grafana",
 			"merged": "Grafana & Friends Frankfurt: Keycloak SLIs & Traffic Data in Grafana",
 			"date": "2026-11-26",
@@ -223,24 +169,6 @@
 			"sources": [
 				"meetup:berlinai",
 				"hackevents-ai"
-			]
-		},
-		{
-			"kept": "Azure DUS#53: 80 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
-			"merged": "Azure DUS#53: 0 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
-			"date": "2026-11-25",
-			"sources": [
-				"meetup:azure-dusseldorf-meetup",
-				"brainberg"
-			]
-		},
-		{
-			"kept": "AI Engineering Summit 2026",
-			"merged": "AI Engineering Summit Berlin 2026",
-			"date": "2026-11-16",
-			"sources": [
-				"deutschlandki",
-				"aieventlist-berlin"
 			]
 		},
 		{
@@ -271,21 +199,12 @@
 			]
 		},
 		{
-			"kept": "API Conference Berlin 2026",
-			"merged": "API Conference 2026",
-			"date": "2026-11-16",
+			"kept": "AI Tinkerers Düsseldorf — Second Meetup (AI Week)",
+			"merged": "AI Tinkerers Düsseldorf — Second Meetup | AI Week",
+			"date": "2026-11-25",
 			"sources": [
-				"agentconfs",
+				"aieventlist-europe",
 				"hackevents-ai"
-			]
-		},
-		{
-			"kept": "AI Engineering Summit 2026",
-			"merged": "AI Engineering Summit Berlin 2026",
-			"date": "2026-11-16",
-			"sources": [
-				"deutschlandki",
-				"aieventlist-europe"
 			]
 		},
 		{
@@ -304,15 +223,6 @@
 			"sources": [
 				"hackevents-ai",
 				"aieventlist-europe"
-			]
-		},
-		{
-			"kept": "AI Tinkerers Düsseldorf — Second Meetup (AI Week)",
-			"merged": "AI Tinkerers Düsseldorf — Second Meetup | AI Week",
-			"date": "2026-11-25",
-			"sources": [
-				"aieventlist-europe",
-				"hackevents-ai"
 			]
 		},
 		{
@@ -370,15 +280,6 @@
 			]
 		},
 		{
-			"kept": "AI Coding Hackathon November 2026 Köln",
-			"merged": "AI Coding Hackathon November 2026 — STARTPLATZ Köln",
-			"date": "2026-11-20",
-			"sources": [
-				"hackevents-ai",
-				"aieventlist-cologne"
-			]
-		},
-		{
 			"kept": "AI Coding Summit Berlin",
 			"merged": "AI Coding Summit — Berlin Edition 2026",
 			"date": "2026-12-04",
@@ -430,24 +331,6 @@
 			"sources": [
 				"meetup:berlinai",
 				"aieventlist-europe"
-			]
-		},
-		{
-			"kept": "AI Coding Hackathon November 2026 Köln",
-			"merged": "AI Coding Hackathon November 2026 — STARTPLATZ Köln",
-			"date": "2026-11-20",
-			"sources": [
-				"hackevents-ai",
-				"aieventlist-europe"
-			]
-		},
-		{
-			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
-			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
-			"date": "2026-11-20",
-			"sources": [
-				"meetup:ai-beavers",
-				"hackevents-ai"
 			]
 		},
 		{
@@ -528,15 +411,6 @@
 			"date": "2026-12-04",
 			"sources": [
 				"meetup:berlinai",
-				"brainberg"
-			]
-		},
-		{
-			"kept": "DevFest Münster 2026 | Agentic AI Hackathon",
-			"merged": "DevFest Münster 2026",
-			"date": "2026-11-21",
-			"sources": [
-				"meetup:google-developers-group-munster",
 				"brainberg"
 			]
 		}

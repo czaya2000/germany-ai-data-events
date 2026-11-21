@@ -1331,6 +1331,27 @@
 		"blurb_de": "Zweitägiger B2B-Gipfel in München zu Daten, Analytics und KI, mit Themen wie Data Governance, agentischer KI, Datenprodukten und Business Intelligence."
 	},
 	{
+		"id": "die-grune-couch-mediatech-meets-die-zukunft-der-content-crea-potsdam-2026",
+		"title": "Die Grüne Couch. MediaTech meets... Die Zukunft der Content-Creation mit AI",
+		"date": "2026-11-26",
+		"time": "18:15–19:30",
+		"city": "Potsdam",
+		"venue": "MediaTech Hub Potsdam, August-Bebel-Straße 26-53 #Haus 4, 14482 Potsdam",
+		"format": "Meetup",
+		"topics": [
+			"Generative AI",
+			"Content creation"
+		],
+		"organiser": "Not listed",
+		"cost": "Free",
+		"url": "https://www.eventbrite.de/e/die-grune-couch-mediatech-meets-die-zukunft-der-content-creation-mit-ai-tickets-2003967998228",
+		"source": "Brainberg",
+		"blurb": "A Potsdam talk on the future of AI-driven content creation, using Zalando as the example.",
+		"blurb_en": "A Potsdam talk on the future of AI-driven content creation, using Zalando as the example.",
+		"blurb_de": "Ein Vortrag in Potsdam über die Zukunft der Content-Erstellung mit KI, am Beispiel von Zalando.",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "ein-supernova-abend-mit-dorothee-toreki-und-margareta-jager-cologne-2026",
 		"title": "Ein SuperNova Abend mit Dorothee Töreki und Margareta Jäger",
 		"date": "2026-11-26",
@@ -1520,6 +1541,27 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "Accountability group in Berlin for people planning a move into AI safety work, with sessions on clarity, momentum and evidence.",
 		"blurb_de": "Accountability-Gruppe in Berlin für Menschen, die in die KI-Sicherheitsarbeit wechseln wollen, mit Sessions zu Klarheit, Schwung und Nachweisen."
+	},
+	{
+		"id": "vom-ki-zugang-zum-ai-enablement-dortmund-2026",
+		"title": "Vom KI-Zugang zum AI Enablement",
+		"date": "2026-11-26",
+		"time": "19:00–21:00",
+		"city": "Dortmund",
+		"venue": "codecentric AG, Silberstraße 21, 44137 Dortmund, Germany",
+		"format": "Meetup",
+		"topics": [
+			"AI enablement",
+			"AI adoption at work"
+		],
+		"organiser": "Rethinking AI @ Work",
+		"cost": "Free",
+		"url": "https://www.meetup.com/rethinking-ai-at-work/events/316974170/",
+		"source": "Meetup",
+		"blurb": "A Dortmund meetup on making AI tools genuinely usable at work, so that people can understand and check the results they get.",
+		"blurb_en": "A Dortmund meetup on making AI tools genuinely usable at work, so that people can understand and check the results they get.",
+		"blurb_de": "Ein Meetup in Dortmund darüber, wie KI-Werkzeuge im Arbeitsalltag wirklich nutzbar werden, damit Menschen die Ergebnisse verstehen und prüfen können.",
+		"firstSeen": "2026-11-21"
 	},
 	{
 		"id": "who-is-developing-ai-in-hesse-live-webinar-on-aigude-ai-online-de-2026",
@@ -2041,6 +2083,27 @@
 		"blurb_de": "Vortrag der BLISS-Speaker-Series von Jonathan Schwarz zu souveräner KI aus Sicht des Modellbaus und der KI-Governance, danach Networking."
 	},
 	{
+		"id": "blueprint-hack-langfuse-kuro-berlin-2026",
+		"title": "Blueprint Hack: Langfuse × Kuro",
+		"date": "2026-12-01",
+		"time": "18:00–22:00",
+		"city": "Berlin",
+		"format": "Workshop",
+		"topics": [
+			"Langfuse",
+			"ClickHouse",
+			"Hackathon"
+		],
+		"organiser": "ClickHouse Events",
+		"cost": "Not listed",
+		"url": "https://luma.com/clickh-lqzg",
+		"source": "Luma",
+		"blurb": "A hack session in Berlin by ClickHouse Events that combines Langfuse and Kuro.",
+		"blurb_en": "A hack session in Berlin by ClickHouse Events that combines Langfuse and Kuro.",
+		"blurb_de": "Ein Hack-Treffen in Berlin von ClickHouse Events, das Langfuse und Kuro zusammenbringt.",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "bob-dach-community-gathering-coding-watch-party-frankfurt-frankfurt-2026",
 		"title": "Bob DACH Community Gathering & Coding Watch Party Frankfurt",
 		"date": "2026-12-01",
@@ -2268,6 +2331,27 @@
 		"blurb_de": "ScaDS.AI-Leipzig-Meetup, bei dem das Startup Fediway Foundation-Modell-Ansätze jenseits klassischer LLMs vorstellt, die aus dem Kontext lernen, ohne neu trainiert zu werden."
 	},
 	{
+		"id": "the-next-experiment-hackathon-munich-2026",
+		"title": "The Next Experiment Hackathon",
+		"date": "2026-12-01",
+		"time": "09:00–18:00",
+		"city": "Munich",
+		"venue": "ecos work spaces München, Munich",
+		"format": "Workshop",
+		"topics": [
+			"AI for science",
+			"AI agents"
+		],
+		"organiser": "Anne-Sophie Krechting",
+		"cost": "Free",
+		"url": "https://luma.com/9vzwm9do",
+		"source": "hackevents.net",
+		"blurb": "A one-day hackathon in Munich on AI for science, exploring what changes when an AI agent runs parts of the experiment loop on its own.",
+		"blurb_en": "A one-day hackathon in Munich on AI for science, exploring what changes when an AI agent runs parts of the experiment loop on its own.",
+		"blurb_de": "Ein eintägiger Hackathon in München zu KI für die Wissenschaft: Was ändert sich, wenn ein Agent Teile des Experimentier-Zyklus selbst übernimmt?",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "wordpress-meetup-leipzig-70-ki-im-wordpress-alltag-leipzig-2026",
 		"title": "WordPress Meetup Leipzig - #70 KI im WordPress-Alltag",
 		"date": "2026-12-01",
@@ -2417,6 +2501,27 @@
 		"blurb_de": "Praxisabend in Köln zu KI-gestütztem Programmieren: Teilnehmende lernen, mit KI Prototypen, Landingpages und Automatisierungen zu bauen."
 	},
 	{
+		"id": "6-projektwerkstatt-robotik-und-ki-chemnitz-2026",
+		"title": "6. Projektwerkstatt Robotik und KI",
+		"date": "2026-12-03",
+		"time": "09:00–18:00",
+		"city": "Chemnitz",
+		"venue": "Chemnitz",
+		"format": "Workshop",
+		"topics": [
+			"Robotics",
+			"AI in manufacturing"
+		],
+		"organiser": "Robotics Saxony",
+		"cost": "Not listed",
+		"url": "https://www.futuresax.de/events/veranstaltung/6-projektwerkstatt-robotik-und-ki",
+		"source": "hackevents.net",
+		"blurb": "A hands-on project workshop in Chemnitz on applying robotics and AI in Saxon manufacturing, with regional providers involved.",
+		"blurb_en": "A hands-on project workshop in Chemnitz on applying robotics and AI in Saxon manufacturing, with regional providers involved.",
+		"blurb_de": "Eine praktische Projektwerkstatt in Chemnitz zu Robotik und KI in der sächsischen Produktion, mit einbezogenen Anbietern aus der Region.",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "ai-builders-and-databases-munich-munich-2026",
 		"title": "AI Builders and Databases Munich",
 		"date": "2026-12-03",
@@ -2541,6 +2646,27 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "A FZI Karlsruhe event on knowledge transfer in the era of generative AI, held as part of the TASTE transformation hub.",
 		"blurb_de": "Ein Meetup des FZI Karlsruhe zum Wissenstransfer im Zeitalter generativer KI, veranstaltet im Rahmen des Transformationshubs TASTE."
+	},
+	{
+		"id": "dreams-disruption-annette-zimmermann-in-conversation-berlin-2026",
+		"title": "Dreams & Disruption: Annette Zimmermann in conversation",
+		"date": "2026-12-03",
+		"time": "20:00–22:00",
+		"city": "Berlin",
+		"venue": "Chapters Bookshop, Wilsnacker Str. 60, 10559 Berlin",
+		"format": "Meetup",
+		"topics": [
+			"Democratizing AI",
+			"Book talk"
+		],
+		"organiser": "Not listed",
+		"cost": "Free",
+		"url": "https://www.eventbrite.de/e/dreams-disruption-annette-zimmermann-in-conversation-tickets-2005024942577",
+		"source": "Brainberg",
+		"blurb": "A bookshop conversation in Berlin with Annette Zimmermann, Stephanie Hankey and Jaya Mirani about the book Democratizing AI.",
+		"blurb_en": "A bookshop conversation in Berlin with Annette Zimmermann, Stephanie Hankey and Jaya Mirani about the book Democratizing AI.",
+		"blurb_de": "Ein Gespräch in einer Berliner Buchhandlung mit Annette Zimmermann, Stephanie Hankey und Jaya Mirani über das Buch Democratizing AI.",
+		"firstSeen": "2026-11-21"
 	},
 	{
 		"id": "dvc-data-ai-lunch-hamburg-x-mas-edition-hamburg-2026",
@@ -2982,6 +3108,28 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "A Hamburg evening for creators to see ElevenLabs music, voice and sound tools in showcases, then make something in small groups.",
 		"blurb_de": "Ein Abend in Hamburg für Kreative: Musik-, Stimm- und Klangwerkzeuge von ElevenLabs werden in Showcases vorgestellt, danach entstehen in kleinen Gruppen eigene Arbeiten."
+	},
+	{
+		"id": "aws-user-group-berlin-session-december-2026-berlin-2026",
+		"title": "AWS User Group Berlin Session - December 2026",
+		"date": "2026-12-08",
+		"time": "18:30–21:00",
+		"city": "Berlin",
+		"venue": "WeWork - Alexanderplatz - Private Büroflächen und Coworking, Berlin",
+		"format": "Meetup",
+		"topics": [
+			"Data privacy",
+			"Data security",
+			"AWS"
+		],
+		"organiser": "Berlin AWS User Group",
+		"cost": "Not listed",
+		"url": "https://www.meetup.com/berlinawsug/events/317512393/",
+		"source": "Meetup",
+		"blurb": "A Berlin AWS User Group evening with two talks on data, privacy and security, hosted by Exasol at the AWS Builder Loft.",
+		"blurb_en": "A Berlin AWS User Group evening with two talks on data, privacy and security, hosted by Exasol at the AWS Builder Loft.",
+		"blurb_de": "Ein Abend der AWS User Group Berlin mit zwei Vorträgen zu Daten, Datenschutz und Sicherheit, ausgerichtet von Exasol im AWS Builder Loft.",
+		"firstSeen": "2026-11-21"
 	},
 	{
 		"id": "claude-community-house-munchen-2026-munich-2026",
@@ -3544,6 +3692,27 @@
 		"blurb_de": "Ein kostenloser öffentlicher Abendvortrag von Martin Braun zu Quantencomputing und KI an der TH Nürnberg, danach Fragen und ein gemeinsames Get-together."
 	},
 	{
+		"id": "robotics-physical-ai-club-hamburg-2026",
+		"title": "robotics & physical ai CLUB",
+		"date": "2026-12-14",
+		"time": "18:00–22:00",
+		"city": "Hamburg",
+		"venue": "Digital Hub Logistics & Commerce, Hamburg",
+		"format": "Networking",
+		"topics": [
+			"Robotics",
+			"Physical AI"
+		],
+		"organiser": "Shrouk Ehab",
+		"cost": "Not listed",
+		"url": "https://luma.com/zeu0em8s",
+		"source": "hackevents.net",
+		"blurb": "A low-key Hamburg evening where people in robotics and physical AI meet and bring what they are building, with no fixed agenda.",
+		"blurb_en": "A low-key Hamburg evening where people in robotics and physical AI meet and bring what they are building, with no fixed agenda.",
+		"blurb_de": "Ein zwangloser Abend in Hamburg, an dem sich Menschen aus Robotik und Physical AI treffen und mitbringen, woran sie gerade arbeiten, ohne festes Programm.",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "who-s-listening-levels-of-automation-for-ai-that-hears-stude-munich-2026",
 		"title": "Who’s Listening? Levels of Automation for AI That Hears Students’ Math Talk",
 		"date": "2026-12-14",
@@ -3814,6 +3983,27 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "A practical programme for small and medium-sized companies that want to use AI as a fixed part of their departments' daily work, hosted at Innovationscampus Sigmaringen.",
 		"blurb_de": "Ein praxisnahes Programm für kleine und mittlere Unternehmen, die KI fest in die tägliche Arbeit ihrer Fachabteilungen einbinden wollen; Gastgeber ist der Innovationscampus Sigmaringen."
+	},
+	{
+		"id": "funf-wege-dein-team-zu-ruinieren-fuhrung-in-zeiten-von-agent-dortmund-2026",
+		"title": "Fünf Wege, dein Team zu ruinieren: Führung in Zeiten von Agentic Coding",
+		"date": "2026-12-17",
+		"time": "19:00–21:00",
+		"city": "Dortmund",
+		"venue": "codecentric AG, Silberstraße 21, 44137 Dortmund, Germany",
+		"format": "Meetup",
+		"topics": [
+			"Agentic coding",
+			"Leadership"
+		],
+		"organiser": "Rethinking AI @ Work",
+		"cost": "Free",
+		"url": "https://www.meetup.com/rethinking-ai-at-work/events/317452363/",
+		"source": "Meetup",
+		"blurb": "A Dortmund meetup on leadership when AI agents write code and take on software tasks, built around the talk Five Ways to Ruin Your Team.",
+		"blurb_en": "A Dortmund meetup on leadership when AI agents write code and take on software tasks, built around the talk Five Ways to Ruin Your Team.",
+		"blurb_de": "Ein Dortmunder Meetup zur Führung, wenn KI-Agenten Code schreiben und Aufgaben in der Softwareentwicklung übernehmen, mit dem Vortrag „Fünf Wege, dein Team zu ruinieren“.",
+		"firstSeen": "2026-11-21"
 	},
 	{
 		"id": "ki-party-100-events-betreute-intelligenz-nuremberg-2026",
@@ -4143,6 +4333,27 @@
 		"blurb_de": "Ein entspanntes Mittagessen in Hamburg für Menschen aus Daten und KI, um ihre Arbeit zu teilen; ohne Agenda und ohne Verkaufsgespräche."
 	},
 	{
+		"id": "jan-21-ai-ml-and-computer-vision-meetup-online-de-2027",
+		"title": "Jan 21 - AI, ML and Computer Vision Meetup",
+		"date": "2027-01-21",
+		"time": "18:00–20:00",
+		"city": "Online (DE)",
+		"format": "Webinar",
+		"topics": [
+			"AI",
+			"Machine learning",
+			"Computer vision"
+		],
+		"organiser": "München AI, Machine Learning and Computer Vision Meetup",
+		"cost": "Not listed",
+		"url": "https://www.meetup.com/munchen-ai-machine-learning-and-computer-vision-meetup/events/317517601/",
+		"source": "Meetup",
+		"blurb": "An online meetup from the Munich AI, machine learning and computer vision group, with expert talks on these topics.",
+		"blurb_en": "An online meetup from the Munich AI, machine learning and computer vision group, with expert talks on these topics.",
+		"blurb_de": "Ein Online-Treffen der Münchner Gruppe für KI, maschinelles Lernen und Computer Vision mit Expertenvorträgen zu diesen Themen.",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "open-house-connact-factory-chemnitz-2027",
 		"title": "Open House connACT FACTORY",
 		"date": "2027-01-21",
@@ -4227,6 +4438,26 @@
 		"blurb_de": "Hamburger Meetup für Führungskräfte und Wandelnde, die KI in echte Organisationen bringen, im House of AI Hamburg."
 	},
 	{
+		"id": "jan-27-physical-ai-ml-and-computer-vision-meetup-purpose-bui-online-de-2027",
+		"title": "Jan 27 - Physical AI, ML and Computer Vision Meetup: Purpose-Built Robots",
+		"date": "2027-01-27",
+		"time": "18:00–20:00",
+		"city": "Online (DE)",
+		"format": "Webinar",
+		"topics": [
+			"Physical AI",
+			"Robotics"
+		],
+		"organiser": "München AI, Machine Learning and Computer Vision Meetup",
+		"cost": "Not listed",
+		"url": "https://www.meetup.com/munchen-ai-machine-learning-and-computer-vision-meetup/events/317517749/",
+		"source": "Meetup",
+		"blurb": "An online meetup of the Munich AI and computer vision group on physical AI, focused on purpose-built robots.",
+		"blurb_en": "An online meetup of the Munich AI and computer vision group on physical AI, focused on purpose-built robots.",
+		"blurb_de": "Ein Online-Treffen der Münchner KI- und Computer-Vision-Gruppe zu Physical AI mit Schwerpunkt auf zweckgebauten Robotern.",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "ai-nights-inspire-07-relaunch-nuremberg-2027",
 		"title": "AI Nights | INSPIRE ✨ #07 - Relaunch!",
 		"date": "2027-01-28",
@@ -4268,6 +4499,27 @@
 		"blurb_de": "Station 6 der KI-Journey durch den Kreis Warendorf zu KI in der Cybersicherheit, im Restaurant Einklang in Ostbevern."
 	},
 	{
+		"id": "ki-sprechstunde-in-45-minuten-orientierung-fur-den-erfolgrei-online-de-2027",
+		"title": "KI-Sprechstunde: In 45 Minuten Orientierung für den erfolgreichen Einsatz von Künstlicher Intelligenz",
+		"date": "2027-01-28",
+		"time": "14:00–18:00",
+		"city": "Online (DE)",
+		"venue": "Berlin",
+		"format": "Webinar",
+		"topics": [
+			"AI adoption",
+			"Business AI"
+		],
+		"organiser": "bwcon",
+		"cost": "Not listed",
+		"url": "https://events.bwcon.de/events/ki-sprechstunde-in-45-minuten-orientierung-fuer-den-erfolgreichen-einsatz-von-kuenstlicher-intelligenz/",
+		"source": "bwcon",
+		"blurb": "A 45-minute confidential online consultation with AI experts on using artificial intelligence in a company, independent of any vendor.",
+		"blurb_en": "A 45-minute confidential online consultation with AI experts on using artificial intelligence in a company, independent of any vendor.",
+		"blurb_de": "Eine vertrauliche 45-minütige Online-Sprechstunde mit KI-Expertinnen und -Experten zum Einsatz von KI im Unternehmen, unabhängig von einzelnen Anbietern.",
+		"firstSeen": "2026-11-21"
+	},
+	{
 		"id": "kiss-empfangt-sustainable-industry-4-0-and-iot-stuttgart-2027",
 		"title": "KISS empfängt Sustainable Industry 4.0 and IoT",
 		"date": "2027-01-28",
@@ -4288,6 +4540,26 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "A hybrid, German-language double meetup of KI Summit Stuttgart and the Sustainable Industry 4.0 and IoT community, in person or online.",
 		"blurb_de": "Hybrides, deutschsprachiges Doppel-Meetup von KI Summit Stuttgart und der Community Sustainable Industry 4.0 and IoT, vor Ort oder online."
+	},
+	{
+		"id": "agentic-coding-studio-hamburg-2027-2027-01-30",
+		"title": "agentic coding studio",
+		"date": "2027-01-30",
+		"time": "09:30–13:00",
+		"city": "Hamburg",
+		"format": "Meetup",
+		"topics": [
+			"Agentic coding",
+			"AI engineering"
+		],
+		"organiser": "AI BEAVERS | HAMBURG",
+		"cost": "Not listed",
+		"url": "https://www.meetup.com/ai-beavers/events/jgnbbvykccbnc/",
+		"source": "Meetup",
+		"blurb": "A Hamburg meetup for advanced AI practitioners to share new AI tools, models and workflows, with feedback on engineering projects.",
+		"blurb_en": "A Hamburg meetup for advanced AI practitioners to share new AI tools, models and workflows, with feedback on engineering projects.",
+		"blurb_de": "Ein Hamburger Meetup für fortgeschrittene KI-Praktikerinnen und -Praktiker zu neuen KI-Werkzeugen, Modellen und Workflows, mit Feedback zu Engineering-Projekten.",
+		"firstSeen": "2026-11-21"
 	},
 	{
 		"id": "ai-series-anthropic-pavel-izmailov-berlin-2027",
@@ -4392,6 +4664,46 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "Executive dinner in Hamburg for around 20 executives to discuss what the AI year 2027 means for business.",
 		"blurb_de": "Business-Dinner in Hamburg für rund 20 Führungskräfte, um zu besprechen, was das KI-Jahr 2027 für Unternehmen bedeutet."
+	},
+	{
+		"id": "feb-10-physical-ai-meetup-robot-brains-and-models-online-de-2027",
+		"title": "Feb 10 - Physical AI Meetup: Robot Brains and Models",
+		"date": "2027-02-10",
+		"time": "18:00–20:00",
+		"city": "Online (DE)",
+		"format": "Webinar",
+		"topics": [
+			"Physical AI",
+			"Robotics"
+		],
+		"organiser": "München AI, Machine Learning and Computer Vision Meetup",
+		"cost": "Not listed",
+		"url": "https://www.meetup.com/munchen-ai-machine-learning-and-computer-vision-meetup/events/317518766/",
+		"source": "Meetup",
+		"blurb": "An online meetup of the Munich AI and computer vision group on physical AI, focused on robot control and models.",
+		"blurb_en": "An online meetup of the Munich AI and computer vision group on physical AI, focused on robot control and models.",
+		"blurb_de": "Ein Online-Treffen der Münchner KI- und Computer-Vision-Gruppe zu Physical AI mit Schwerpunkt auf Robotersteuerung und Modellen.",
+		"firstSeen": "2026-11-21"
+	},
+	{
+		"id": "agentic-coding-studio-hamburg-2027-2027-02-13",
+		"title": "agentic coding studio",
+		"date": "2027-02-13",
+		"time": "09:30–13:00",
+		"city": "Hamburg",
+		"format": "Meetup",
+		"topics": [
+			"Agentic coding",
+			"AI engineering"
+		],
+		"organiser": "AI BEAVERS | HAMBURG",
+		"cost": "Not listed",
+		"url": "https://www.meetup.com/ai-beavers/events/jgnbbvykcdbrb/",
+		"source": "Meetup",
+		"blurb": "A Hamburg meetup for advanced AI practitioners to share new AI tools, models and workflows, with feedback on engineering projects.",
+		"blurb_en": "A Hamburg meetup for advanced AI practitioners to share new AI tools, models and workflows, with feedback on engineering projects.",
+		"blurb_de": "Ein Hamburger Meetup für fortgeschrittene KI-Praktikerinnen und -Praktiker zu neuen KI-Werkzeugen, Modellen und Workflows, mit Feedback zu Engineering-Projekten.",
+		"firstSeen": "2026-11-21"
 	},
 	{
 		"id": "air-street-munich-ai-meetup-munich-2027",
@@ -4620,6 +4932,27 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "Conference in Munich on data science, machine learning and deep learning methods and their use in science and industry.",
 		"blurb_de": "Konferenz in München zu Data Science, maschinellem Lernen und Deep Learning sowie deren Einsatz in Wissenschaft und Industrie."
+	},
+	{
+		"id": "ki-sprechstunde-in-45-minuten-orientierung-fur-den-erfolgrei-online-de-2027-2027-02-25",
+		"title": "KI-Sprechstunde: In 45 Minuten Orientierung für den erfolgreichen Einsatz von Künstlicher Intelligenz",
+		"date": "2027-02-25",
+		"time": "14:00–18:00",
+		"city": "Online (DE)",
+		"venue": "Berlin",
+		"format": "Webinar",
+		"topics": [
+			"AI adoption",
+			"Business AI"
+		],
+		"organiser": "bwcon",
+		"cost": "Not listed",
+		"url": "https://events.bwcon.de/events/ki-sprechstunde-in-45-minuten-orientierung-fuer-den-erfolgreichen-einsatz-von-kuenstlicher-intelligenz-2/",
+		"source": "bwcon",
+		"blurb": "A 45-minute confidential online consultation with AI experts on using artificial intelligence in a company, independent of any vendor.",
+		"blurb_en": "A 45-minute confidential online consultation with AI experts on using artificial intelligence in a company, independent of any vendor.",
+		"blurb_de": "Eine vertrauliche 45-minütige Online-Sprechstunde mit KI-Expertinnen und -Experten zum Einsatz von KI im Unternehmen, unabhängig von einzelnen Anbietern.",
+		"firstSeen": "2026-11-21"
 	},
 	{
 		"id": "auto-ai-europe-2027-berlin-2027",
@@ -4870,5 +5203,26 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "Festival and conference in Munich on agentic AI and GenAI in production, AI governance and data strategy.",
 		"blurb_de": "Festival und Konferenz in München zu agentischer KI und GenAI im Produktiveinsatz, KI-Governance und Datenstrategie."
+	},
+	{
+		"id": "ki-sprechstunde-in-45-minuten-orientierung-fur-den-erfolgrei-online-de-2027-2027-03-18",
+		"title": "KI-Sprechstunde: In 45 Minuten Orientierung für den erfolgreichen Einsatz von Künstlicher Intelligenz",
+		"date": "2027-03-18",
+		"time": "14:00–18:00",
+		"city": "Online (DE)",
+		"venue": "Berlin",
+		"format": "Webinar",
+		"topics": [
+			"AI adoption",
+			"Business AI"
+		],
+		"organiser": "bwcon",
+		"cost": "Not listed",
+		"url": "https://events.bwcon.de/events/ki-sprechstunde-in-45-minuten-orientierung-fuer-den-erfolgreichen-einsatz-von-kuenstlicher-intelligenz-3/",
+		"source": "bwcon",
+		"blurb": "A 45-minute confidential online consultation with AI experts on using artificial intelligence in a company, independent of any vendor.",
+		"blurb_en": "A 45-minute confidential online consultation with AI experts on using artificial intelligence in a company, independent of any vendor.",
+		"blurb_de": "Eine vertrauliche 45-minütige Online-Sprechstunde mit KI-Expertinnen und -Experten zum Einsatz von KI im Unternehmen, unabhängig von einzelnen Anbietern.",
+		"firstSeen": "2026-11-21"
 	}
 ]
