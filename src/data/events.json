@@ -990,6 +990,27 @@
 		"blurb_de": "Zweites AI-Tinkerers-Meetup in Düsseldorf im Rahmen der AI Week. Entwickelnde zeigen laufende KI-Projekte live, danach Networking."
 	},
 	{
+		"id": "ai-var-meetup-november-2026-edition-berlin-2026",
+		"title": "AI+var meetup - November 2026 edition",
+		"date": "2026-11-25",
+		"time": "18:30–20:30",
+		"city": "Berlin",
+		"venue": "Sewanstraße 43, Bezirk Lichtenberg",
+		"format": "Meetup",
+		"topics": [
+			"AI",
+			"Community"
+		],
+		"organiser": "Personal",
+		"cost": "Not listed",
+		"url": "https://luma.com/3sk55phg",
+		"source": "Luma",
+		"blurb": "A Berlin AI meetup on 25 November 2026, hosted by Stefan Miteski.",
+		"blurb_en": "A Berlin AI meetup on 25 November 2026, hosted by Stefan Miteski.",
+		"blurb_de": "Ein AI-Meetup in Berlin am 25. November 2026, gehostet von Stefan Miteski.",
+		"firstSeen": "2026-11-22"
+	},
+	{
 		"id": "azure-dus-53-80-vertraulich-9-intern-1-offentlich-und-10-wei-dusseldorf-2026",
 		"title": "Azure DUS#53: 80 % vertraulich, 9 % intern, 1 % öffentlich und 10 % weiß keiner",
 		"date": "2026-11-25",
@@ -5224,5 +5245,28 @@
 		"blurb_en": "A 45-minute confidential online consultation with AI experts on using artificial intelligence in a company, independent of any vendor.",
 		"blurb_de": "Eine vertrauliche 45-minütige Online-Sprechstunde mit KI-Expertinnen und -Experten zum Einsatz von KI im Unternehmen, unabhängig von einzelnen Anbietern.",
 		"firstSeen": "2026-11-21"
+	},
+	{
+		"id": "date-2027-dresden-2027",
+		"title": "DATE 2027",
+		"date": "2027-03-22",
+		"endDate": "2027-03-24",
+		"time": "01:00",
+		"city": "Dresden",
+		"venue": "Dresden",
+		"format": "Conference",
+		"topics": [
+			"AI hardware",
+			"Embedded AI",
+			"Autonomous systems"
+		],
+		"organiser": "DATE Conference Secretariat",
+		"cost": "Free",
+		"url": "https://date27.date-conference.com/",
+		"source": "DeutschlandKI (CC BY 4.0)",
+		"blurb": "A research conference and trade fair in Dresden from 22 to 24 March 2027 on AI hardware, embedded intelligence, autonomous systems and chip test.",
+		"blurb_en": "A research conference and trade fair in Dresden from 22 to 24 March 2027 on AI hardware, embedded intelligence, autonomous systems and chip test.",
+		"blurb_de": "Forschungskonferenz und Fachausstellung in Dresden vom 22. bis 24. März 2027 zu KI-Hardware, eingebetteter Intelligenz, autonomen Systemen und Chip-Test.",
+		"firstSeen": "2026-11-22"
 	}
 ]

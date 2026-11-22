@@ -226,21 +226,21 @@
 			]
 		},
 		{
+			"kept": "KI ausbilden – Was sind Essentials?",
+			"merged": "KI ausbilden - Was sind Essentials?",
+			"date": "2026-12-10",
+			"sources": [
+				"aieventlist-stuttgart",
+				"hackevents-ai"
+			]
+		},
+		{
 			"kept": "DevFest Munich 2026 - Munich Innovates: AI, Cloud & Beyond",
 			"merged": "DevFest Munich 2026 — Munich Innovates: AI, Cloud & Beyond",
 			"date": "2026-12-05",
 			"sources": [
 				"meetup:gdg-munich",
 				"aieventlist-munich"
-			]
-		},
-		{
-			"kept": "DevFest Münster 2026 | Agentic AI Hackathon",
-			"merged": "DevFest Münster 2026: Agentic AI Hackathon",
-			"date": "2026-11-21",
-			"sources": [
-				"meetup:google-developers-group-munster",
-				"aieventlist-europe"
 			]
 		},
 		{
@@ -316,21 +316,21 @@
 			]
 		},
 		{
-			"kept": "DevFest Münster 2026 | Agentic AI Hackathon",
-			"merged": "DevFest Münster 2026",
-			"date": "2026-11-21",
-			"sources": [
-				"meetup:google-developers-group-munster",
-				"hackevents-ai"
-			]
-		},
-		{
 			"kept": "AI Coding Summit Berlin",
 			"merged": "AI Coding Summit — Berlin Edition 2026",
 			"date": "2026-12-04",
 			"sources": [
 				"meetup:berlinai",
 				"aieventlist-europe"
+			]
+		},
+		{
+			"kept": "DATE 2027",
+			"merged": "Date",
+			"date": "2027-03-22",
+			"sources": [
+				"deutschlandki",
+				"brainberg"
 			]
 		},
 		{
@@ -370,7 +370,7 @@
 			]
 		},
 		{
-			"kept": "AI Nights | INSPIRE ✨ #06 - Anniversary!",
+			"kept": "AI Nights | INSPIRE #06 - Anniversary!",
 			"merged": "AI Nights Nürnberg | INSPIRE #06 – Anniversary!",
 			"date": "2026-11-26",
 			"sources": [
@@ -379,7 +379,7 @@
 			]
 		},
 		{
-			"kept": "AI Nights | INSPIRE ✨ #08 - Spring!",
+			"kept": "AI Nights | INSPIRE #08 - Spring!",
 			"merged": "AI Nights Nürnberg | INSPIRE #08 – Spring!",
 			"date": "2027-03-11",
 			"sources": [
@@ -397,7 +397,7 @@
 			]
 		},
 		{
-			"kept": "AI Nights | INSPIRE ✨ #07 - Relaunch!",
+			"kept": "AI Nights | INSPIRE #07 - Relaunch!",
 			"merged": "AI Nights Nürnberg | INSPIRE #07 – Relaunch!",
 			"date": "2027-01-28",
 			"sources": [
