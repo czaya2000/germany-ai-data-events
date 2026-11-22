@@ -53,6 +53,7 @@ const COPY = {
 		freshNote: 'Added since last Monday, happening after the next two weeks.',
 		freshEmpty: 'Nothing new for your cities and event types this week.',
 		seeAll: 'See all upcoming events',
+		more: (n) => `See all ${n} more events on the site`,
 		manage: 'Change your cities and event types',
 		until: (day, month) => `to ${day} ${month}`,
 		looks: ['full cards with blurbs', 'full cards, no blurbs'],
@@ -67,6 +68,7 @@ const COPY = {
 		freshNote: 'Seit letztem Montag hinzugekommen, nach den nächsten zwei Wochen.',
 		freshEmpty: 'Diese Woche gibt es nichts Neues in Ihren Städten und Formaten.',
 		seeAll: 'Alle kommenden Events ansehen',
+		more: (n) => `Alle ${n} weiteren Events auf der Website ansehen`,
 		manage: 'Städte und Formate ändern',
 		until: (day, month) => `bis ${day}. ${month}`,
 		looks: ['volle Karten mit Kurztext', 'volle Karten ohne Kurztext'],
@@ -192,6 +194,9 @@ export function placeMeta(city, time) {
 	return [city, time].map((x) => String(x ?? "").trim()).filter(Boolean);
 }
 
+// Hard cap on events rendered per email (each language). All ~128 events come to ~133 KB,
+// and Gmail clips anything over ~102 KB; the rest sit behind a "see all on the site" button.
+export const MAX_EVENTS = 60;
 const BUDGET_KB = 90; // Gmail clips emails over ~102 KB
 // Template tags vanish when Buttondown renders, so leave them out of the count.
 const sizeKb = (html) => Math.round(Buffer.byteLength(html.replace(/^\{%.*%\}$/gm, '')) / 1024);
@@ -204,7 +209,10 @@ export const digestSubject = (locale, today) => {
 /** Builds one language's email: { subject, body, level, lookName, sizeKb, overBudget }. */
 export function renderDigest(sel, locale) {
 	const c = COPY[locale];
-	const { soon, from, horizon, today } = sel;
+	const { from, horizon, today } = sel;
+	// Already sorted soonest first; keep the first MAX_EVENTS, the rest go behind the site link.
+	const soon = sel.soon.slice(0, MAX_EVENTS);
+	const hidden = sel.soon.length - soon.length;
 	const localePrefix = locale === 'en' ? '/en' : '';
 	const HOME = `${SITE_URL}${localePrefix}/?${UTM}`;
 	const link = (e) => `${SITE_URL}${localePrefix}/events/${e.id}/?${UTM}`;
@@ -289,6 +297,12 @@ ${p(a(HOME, c.seeAll), 'font-weight:500;')}
 ${p(a('{{ manage_subscription_url }}', c.manage, T.muted), `margin-top:10px;font-size:13px;color:${T.muted};`)}
 </div>`;
 
+	// Outside every Liquid condition, so filtered readers get the link too. ONE line, like the rows.
+	const moreBlock =
+		hidden > 0
+			? `<div style="padding:20px 0 0;text-align:center;"><a href="${HOME}" style="display:inline-block;padding:12px 22px;background:${T.ink};color:#ffffff !important;font-family:${T.font};font-size:15px;font-weight:500;text-decoration:none !important;">${c.more(hidden)}</a></div>`
+			: '';
+
 	function buildBody(top) {
 		// German short months already end in a full stop ("Dez."): add one only if missing.
 		const rangeText = `${datePart(from, { day: 'numeric', month: 'short' })} – ${datePart(horizon, { day: 'numeric', month: 'short' })}`;
@@ -303,7 +317,7 @@ ${p(a('{{ manage_subscription_url }}', c.manage, T.muted), `margin-top:10px;font
 ${masthead}
 ${intro}
 ${sections}
-${outro}
+${moreBlock ? moreBlock + '\n' : ''}${outro}
 </div>
 </div>`;
 	}
@@ -328,6 +342,8 @@ ${outro}
 		lookName: look,
 		sizeKb: kb,
 		looksKb,
+		shown: soon.length,
+		hidden,
 		overBudget: kb > BUDGET_KB,
 	};
 }

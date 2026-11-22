@@ -29,7 +29,7 @@ import { readFileSync } from 'node:fs';
 import { newsletterCity } from '../src/lib/newsletter.mjs';
 import { isoDateIn } from '../src/i18n/format.ts';
 import { wallClockIn } from '../src/lib/schedule.mjs';
-import { LOCALES, LANG_TAGS, selectEvents, renderDigest, audienceFilters, newTagPayload } from './lib/digest.mjs';
+import { LOCALES, LANG_TAGS, MAX_EVENTS, selectEvents, renderDigest, audienceFilters, newTagPayload } from './lib/digest.mjs';
 
 const API = 'https://api.buttondown.com/v1';
 const API_VERSION = '2026-04-01';
@@ -71,6 +71,7 @@ for (const m of emails) {
 		`  top section: ${m.lookName}; ~${m.sizeKb} KB for a reader with no filters (Gmail clips above ~102 KB)` +
 			`; audience: lang-en ${m.locale === 'en' ? 'contains' : 'not_contains'}`,
 	);
+	console.log(`  events shown: ${m.shown} of ${m.shown + m.hidden} (cap MAX_EVENTS = ${MAX_EVENTS})${m.hidden ? `; ${m.hidden} behind the "see all" button` : ''}`);
 	console.log(
 		`  unfiltered size per look: full cards with blurbs ${m.looksKb[0]} KB, full cards no blurbs ${m.looksKb[1]} KB`,
 	);

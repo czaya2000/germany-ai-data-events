@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { selectEvents, renderDigest, audienceFilters, digestSubject, newTagPayload } from '../../scripts/lib/digest.mjs';
+import { MAX_EVENTS, selectEvents, renderDigest, audienceFilters, digestSubject, newTagPayload } from '../../scripts/lib/digest.mjs';
 import { SUBSCRIBE_ACTION } from '../../src/lib/newsletter.mjs';
 
 const ev = (o) => ({
@@ -183,6 +183,6 @@ test('default look is the full event card with date spine; never a mixed layout'
 		{ today: '2026-11-23' },
 	);
 	const r = renderDigest(many, 'de');
-	assert.equal((r.body.match(/width="64"/g) ?? []).length, 150); // every event is a full card
+	assert.equal((r.body.match(/width="64"/g) ?? []).length, MAX_EVENTS); // every shown event is a full card (the rest sit behind the cap)
 	assert.doesNotMatch(r.body, /font-size:15px;">\s*<span/); // no compact row
 });
