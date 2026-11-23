@@ -1091,6 +1091,55 @@
 			"trust": "noisy",
 			"icsOk": true,
 			"checked": "2026-11-21"
+		},
+		"global-ai-munich": {
+			"firstSeen": "2026-11-23",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-23"
+		},
+		"bass-hb": {
+			"firstSeen": "2026-11-23",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-23"
+		},
+		"dresdenjs-io-javascript-user-group": {
+			"firstSeen": "2026-11-23",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-23"
+		},
+		"gamecreatorscologne": {
+			"firstSeen": "2026-11-23",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-23"
+		},
+		"lalug-landshuter-linux-user-group-stammtisch": {
+			"firstSeen": "2026-11-23",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-23"
+		},
+		"health-ai-munich": {
+			"firstSeen": "2026-11-23",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-23"
+		},
+		"ki-klub-werder-havel": {
+			"firstSeen": "2026-11-23",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-23"
 		}
 	}
 }

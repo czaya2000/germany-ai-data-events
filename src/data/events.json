@@ -1033,6 +1033,27 @@
 		"blurb_de": "Azure-Düsseldorf-Meetup zum sicheren Umgang mit Unternehmensdaten bei KI-Nutzung, mit Microsoft Purview und Data Loss Prevention."
 	},
 	{
+		"id": "codebar-workshop-build-an-ai-agent-for-job-search-munich-2026",
+		"title": "Codebar Workshop: Build An AI Agent For Job Search",
+		"date": "2026-11-25",
+		"time": "19:30–22:00",
+		"city": "Munich",
+		"venue": "Schellingstraße 3, Schellingstraße 3, 80799 München",
+		"format": "Workshop",
+		"topics": [
+			"AI agents",
+			"Job search"
+		],
+		"organiser": "Not listed",
+		"cost": "Free",
+		"url": "https://www.eventbrite.com/e/codebar-workshop-build-an-ai-agent-for-job-search-tickets-2004882005047",
+		"source": "Brainberg",
+		"blurb": "Free beginner workshop by codebar Munich on building an AI agent for job search, on 25 November; all backgrounds welcome.",
+		"blurb_en": "Free beginner workshop by codebar Munich on building an AI agent for job search, on 25 November; all backgrounds welcome.",
+		"blurb_de": "Kostenloser Einsteiger-Workshop von codebar München zum Bau eines KI-Agenten für die Jobsuche, am 25. November, offen für alle Hintergründe.",
+		"firstSeen": "2026-11-23"
+	},
+	{
 		"id": "foresight-s-ai-salon-engineer-ai-safety-workshop-berlin-2026",
 		"title": "Foresight’s AI Salon | Engineer AI safety workshop",
 		"date": "2026-11-25",
@@ -2437,6 +2458,26 @@
 		"blurb_de": "Konferenz in Potsdam zur Mensch-KI-Ökonomie, zu agentischen Systemen, industrieller Wertschöpfung und der Wettbewerbsfähigkeit Europas."
 	},
 	{
+		"id": "bitkom-ai-breakfast-2026-beneath-the-surface-berlin-2026",
+		"title": "Bitkom AI Breakfast 2026 — Beneath the Surface",
+		"date": "2026-12-02",
+		"city": "Berlin",
+		"venue": "Bitkom Geschäftsstelle",
+		"format": "Networking",
+		"topics": [
+			"AI in business",
+			"Start-ups"
+		],
+		"organiser": "Not listed",
+		"cost": "Not listed",
+		"url": "https://aieventlist.ai/events/bitkom-ai-breakfast-berlin-2026/",
+		"source": "aieventlist.ai",
+		"blurb": "Bitkom networking breakfast in Berlin on 2 December 2026, with a keynote by Dr. Max von Schönfeld (n8n) and a panel on start-ups and established companies.",
+		"blurb_en": "Bitkom networking breakfast in Berlin on 2 December 2026, with a keynote by Dr. Max von Schönfeld (n8n) and a panel on start-ups and established companies.",
+		"blurb_de": "Netzwerk-Frühstück des Branchenverbands Bitkom in Berlin am 2. Dezember 2026 mit Keynote von Dr. Max von Schönfeld (n8n) und Diskussionsrunde zu Start-ups und etablierten Unternehmen.",
+		"firstSeen": "2026-11-23"
+	},
+	{
 		"id": "cell-press-symposia-decoding-cellular-complexity-single-cell-munich-2026",
 		"title": "Cell Press Symposia: Decoding cellular complexity: Single cell biology in the era of AI",
 		"date": "2026-12-02",
@@ -2603,6 +2644,27 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "A free community and networking meetup of AI HUB Nürnberg as a Christmas special to close the year.",
 		"blurb_de": "Kostenloses Community- und Networking-Treffen von AI HUB Nürnberg als Weihnachtsspecial zum Jahresabschluss."
+	},
+	{
+		"id": "ai-nudge-hands-on-ki-gestalten-dusseldorf-2026",
+		"title": "ai/nudge – hands-on KI gestalten",
+		"date": "2026-12-03",
+		"time": "19:00–21:00",
+		"city": "Düsseldorf",
+		"venue": "Factory Campus, Erkrather Straße 401, 40231 Düsseldorf",
+		"format": "Workshop",
+		"topics": [
+			"Applied AI",
+			"Teams and organisations"
+		],
+		"organiser": "Not listed",
+		"cost": "Free",
+		"url": "https://www.eventbrite.de/e/ainudge-hands-on-ki-gestalten-tickets-2003598476980",
+		"source": "Brainberg",
+		"blurb": "Hands-on workshop impulse for teams, communities and organisations that want to shape AI, at Factory Campus in Düsseldorf on 3 December.",
+		"blurb_en": "Hands-on workshop impulse for teams, communities and organisations that want to shape AI, at Factory Campus in Düsseldorf on 3 December.",
+		"blurb_de": "Praxisorientierter Workshop-Impuls für Teams, Communities und Organisationen, die KI gestalten wollen, am 3. Dezember in Düsseldorf.",
+		"firstSeen": "2026-11-23"
 	},
 	{
 		"id": "beads-2-realtime-analytics-berlin-2026",
@@ -2792,6 +2854,27 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "The sixth KI Meetup in Hanover, hosted at heise, with AI talks and exchange.",
 		"blurb_de": "Das sechste KI-Meetup in Hannover, zu Gast bei heise, mit Vorträgen zu KI und Austausch."
+	},
+	{
+		"id": "microsoft-fabric-from-data-to-impact-eventbrite-registration-munich-2026",
+		"title": "Microsoft Fabric: From Data to Impact [Eventbrite Registration required]",
+		"date": "2026-12-03",
+		"time": "17:30–20:30",
+		"city": "Munich",
+		"venue": "Microsoft Deutschland, Walter-Gropius-Straße 5, 80807 München-Schwabing-Freimann, Germany",
+		"format": "Meetup",
+		"topics": [
+			"Microsoft Fabric",
+			"Data platforms"
+		],
+		"organiser": "Global AI Munich",
+		"cost": "Free",
+		"url": "https://www.meetup.com/global-ai-munich/events/317529882/",
+		"source": "Meetup",
+		"blurb": "Evening meetup by Global AI Munich on Microsoft Fabric and the wider Microsoft data platform, at Microsoft Deutschland on 3 December; registration required.",
+		"blurb_en": "Evening meetup by Global AI Munich on Microsoft Fabric and the wider Microsoft data platform, at Microsoft Deutschland on 3 December; registration required.",
+		"blurb_de": "Abendliches Meetup von Global AI Munich zu Microsoft Fabric und der Microsoft-Datenplattform bei Microsoft Deutschland am 3. Dezember; Anmeldung erforderlich.",
+		"firstSeen": "2026-11-23"
 	},
 	{
 		"id": "ros-industrial-conference-2026-stuttgart-2026",
@@ -3087,6 +3170,25 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "A Berlin reading group discussing RoboStriker, a paper on hierarchical decision-making for autonomous humanoid boxing.",
 		"blurb_de": "Eine Lesegruppe in Berlin diskutiert RoboStriker, ein Paper zur hierarchischen Entscheidungsfindung für autonomes humanoides Boxen."
+	},
+	{
+		"id": "christmas-for-good-ai-community-event-munich-2026",
+		"title": "Christmas for Good: AI Community Event",
+		"date": "2026-12-07",
+		"time": "18:00–21:00",
+		"city": "Munich",
+		"format": "Meetup",
+		"topics": [
+			"AI community"
+		],
+		"organiser": "Cerebras",
+		"cost": "Not listed",
+		"url": "https://luma.com/x4sk06r2",
+		"source": "Luma",
+		"blurb": "Community event titled Christmas for Good, organised by Cerebras with Diyi Zhu as host, in Munich on 7 December.",
+		"blurb_en": "Community event titled Christmas for Good, organised by Cerebras with Diyi Zhu as host, in Munich on 7 December.",
+		"blurb_de": "Community-Veranstaltung „Christmas for Good“ von Cerebras mit Diyi Zhu als Host in München am 7. Dezember.",
+		"firstSeen": "2026-11-23"
 	},
 	{
 		"id": "designing-the-exit-ready-tech-stack-invite-only-tech-forum-berlin-2026",
@@ -4048,6 +4150,27 @@
 		"blurb_de": "Eine Party zum hundertsten Event der KI-Community Betreute Intelligenz mit Getränken und Snacks; Beginn um 17:00 Uhr, das Ende ist offen."
 	},
 	{
+		"id": "from-shadow-ai-to-governed-innovation-munich-2026",
+		"title": "From Shadow AI to Governed Innovation",
+		"date": "2026-12-18",
+		"time": "18:00–21:00",
+		"city": "Munich",
+		"venue": "Clinovate NET, Pettenkoferstr. 30",
+		"format": "Meetup",
+		"topics": [
+			"AI governance",
+			"EU AI Act"
+		],
+		"organiser": "Health AI Munich",
+		"cost": "Free",
+		"url": "https://www.meetup.com/health-ai-munich/events/317525356/",
+		"source": "Meetup",
+		"blurb": "Health AI Munich event with Jessica Cordes on using AI in healthcare and clinical research while managing risks, data protection and EU AI Act obligations, on 18 December.",
+		"blurb_en": "Health AI Munich event with Jessica Cordes on using AI in healthcare and clinical research while managing risks, data protection and EU AI Act obligations, on 18 December.",
+		"blurb_de": "Veranstaltung von Health AI Munich mit Jessica Cordes zu KI im Gesundheitswesen und in der klinischen Forschung, mit Blick auf Risiken, Datenschutz und den EU AI Act, am 18. Dezember.",
+		"firstSeen": "2026-11-23"
+	},
+	{
 		"id": "agentic-coding-studio-hamburg-2026-2026-12-19",
 		"title": "agentic coding studio",
 		"date": "2026-12-19",
@@ -4066,6 +4189,27 @@
 		"firstSeen": "2026-11-20",
 		"blurb_en": "A Hamburg meetup for advanced AI practitioners covering new AI tools, models and workflows, with feedback on real engineering projects.",
 		"blurb_de": "Ein Hamburger Meetup für fortgeschrittene KI-Praktikerinnen und -Praktiker zu neuen KI-Werkzeugen, Modellen und Workflows, mit Feedback zu echten Engineering-Projekten."
+	},
+	{
+		"id": "ki-2026-zwischen-hype-und-realitat-was-erwartet-uns-2027-halle-2026",
+		"title": "KI 2026: Zwischen Hype und Realität – was erwartet uns 2027?",
+		"date": "2026-12-21",
+		"time": "19:00–22:00",
+		"city": "Halle",
+		"venue": "Klimawerkstatt Werder, Halle 36, Luisenstraße 16, 14542 Werder (Havel), Germany",
+		"format": "Meetup",
+		"topics": [
+			"AI trends",
+			"AI agents"
+		],
+		"organiser": "KI Klub Werder e.V.",
+		"cost": "Free",
+		"url": "https://www.meetup.com/ki-klub-werder-havel/events/317467476/",
+		"source": "Meetup",
+		"blurb": "Event by KI Klub Werder e.V. reviewing 2026's AI developments in technology, business and society, with an outlook on 2027, on 21 December.",
+		"blurb_en": "Event by KI Klub Werder e.V. reviewing 2026's AI developments in technology, business and society, with an outlook on 2027, on 21 December.",
+		"blurb_de": "Veranstaltung des KI Klub Werder e.V. zu den KI-Entwicklungen 2026 in Technik, Wirtschaft und Gesellschaft mit Ausblick auf 2027, am 21. Dezember.",
+		"firstSeen": "2026-11-23"
 	},
 	{
 		"id": "agentic-coding-studio-hamburg-2027",

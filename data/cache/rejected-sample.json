@@ -91,6 +91,15 @@
 			]
 		},
 		{
+			"kept": "AI Builders Dubai - Nov 26",
+			"merged": "AI Builders Barcelona - Bring Your Own Laptop Edition - Nov 26",
+			"date": "2026-11-26",
+			"sources": [
+				"meetup:aibuildersclub",
+				"meetup:aibuildersclub"
+			]
+		},
+		{
 			"kept": "DATA festival 2027",
 			"merged": "DATA festival Munich 2027 | Data & AI Event",
 			"date": "2027-03-17",
@@ -172,6 +181,15 @@
 			]
 		},
 		{
+			"kept": "ITCS Frankfurt - AI Stage",
+			"merged": "ITCS Frankfurt 2026 — AI Stage (Artificial Intelligence Meetup Frankfurt)",
+			"date": "2026-11-27",
+			"sources": [
+				"meetup:artificial-intelligence-meetup-frankfurt",
+				"aieventlist-frankfurt"
+			]
+		},
+		{
 			"kept": "DATA festival 2027",
 			"merged": "Data Festival 2027",
 			"date": "2027-03-17",
@@ -199,12 +217,12 @@
 			]
 		},
 		{
-			"kept": "AI Tinkerers Düsseldorf — Second Meetup (AI Week)",
-			"merged": "AI Tinkerers Düsseldorf — Second Meetup | AI Week",
-			"date": "2026-11-25",
+			"kept": "ITCS Frankfurt - AI Stage",
+			"merged": "ITCS Frankfurt 2026 — AI Stage (Artificial Intelligence Meetup Frankfurt)",
+			"date": "2026-11-27",
 			"sources": [
-				"aieventlist-europe",
-				"hackevents-ai"
+				"meetup:artificial-intelligence-meetup-frankfurt",
+				"aieventlist-europe"
 			]
 		},
 		{
@@ -226,6 +244,15 @@
 			]
 		},
 		{
+			"kept": "AI Tinkerers Düsseldorf — Second Meetup (AI Week)",
+			"merged": "AI Tinkerers Düsseldorf — Second Meetup | AI Week",
+			"date": "2026-11-25",
+			"sources": [
+				"aieventlist-europe",
+				"hackevents-ai"
+			]
+		},
+		{
 			"kept": "KI ausbilden – Was sind Essentials?",
 			"merged": "KI ausbilden - Was sind Essentials?",
 			"date": "2026-12-10",
@@ -241,6 +268,15 @@
 			"sources": [
 				"meetup:gdg-munich",
 				"aieventlist-munich"
+			]
+		},
+		{
+			"kept": "AI Builders Monthly - Berlin",
+			"merged": "AI Builders Monthly — Berlin (Dezember 2026)",
+			"date": "2026-12-15",
+			"sources": [
+				"brainberg",
+				"aieventlist-berlin"
 			]
 		},
 		{
@@ -268,6 +304,15 @@
 			"sources": [
 				"deutschlandki",
 				"aieventlist-berlin"
+			]
+		},
+		{
+			"kept": "AI Builders Monthly - Berlin",
+			"merged": "AI Builders Monthly — Berlin (Dezember 2026)",
+			"date": "2026-12-15",
+			"sources": [
+				"brainberg",
+				"aieventlist-europe"
 			]
 		},
 		{
