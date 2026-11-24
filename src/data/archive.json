@@ -1,1 +1,358 @@
-[]
+[
+  {
+    "id": "ai-engineering-summit-2026-berlin-2026",
+    "title": "AI Engineering Summit 2026",
+    "date": "2026-11-16",
+    "endDate": "2026-11-20",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Conference",
+    "topics": [
+      "AI engineering",
+      "Coding agents",
+      "AI governance"
+    ],
+    "organiser": "ai-engineering-summit.de",
+    "cost": "Not listed",
+    "url": "https://ai-engineering-summit.de/",
+    "source": "DeutschlandKI (CC BY 4.0)",
+    "blurb": "Multi-day AI engineering conference and training event in Berlin covering coding agents, governance, security, testing and legacy modernisation.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Multi-day AI engineering conference and training event in Berlin covering coding agents, governance, security, testing and legacy modernisation.",
+    "blurb_de": "Mehrtägige Konferenz und Schulung zu AI Engineering in Berlin mit Themen wie Coding-Agenten, Governance, Sicherheit, Testing und der Modernisierung von Legacy-Systemen."
+  },
+  {
+    "id": "api-conference-berlin-2026-berlin-2026",
+    "title": "API Conference Berlin 2026",
+    "date": "2026-11-16",
+    "endDate": "2026-11-20",
+    "city": "Berlin",
+    "venue": "Berlin, Germany + online",
+    "format": "Conference",
+    "topics": [
+      "APIs"
+    ],
+    "organiser": "apiconference.net",
+    "cost": "Not listed",
+    "url": "https://apiconference.net/berlin/#sdj-69cbb229ed05545c3dc67f06",
+    "source": "agentconfs.com",
+    "blurb": "API conference in Berlin with an online option; the listing gives no programme details.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "API conference in Berlin with an online option; the listing gives no programme details.",
+    "blurb_de": "API-Konferenz in Berlin mit Online-Teilnahme. Das Angebot nennt keine Details zum Programm."
+  },
+  {
+    "id": "ml-conference-berlin-2026-berlin-2026",
+    "title": "ML Conference Berlin 2026",
+    "date": "2026-11-16",
+    "endDate": "2026-11-20",
+    "city": "Berlin",
+    "venue": "Maritim proArte Hotel Berlin, Friedrichstraße 151, 10117 Berlin",
+    "format": "Conference",
+    "topics": [
+      "Machine learning",
+      "MLOps",
+      "Generative AI"
+    ],
+    "organiser": "Not listed",
+    "cost": "Not listed",
+    "url": "https://aieventlist.ai/events/ml-conference-berlin-2026/",
+    "source": "aieventlist.ai",
+    "blurb": "Multi-day machine learning conference in Berlin covering MLOps and generative AI, with talks, hands-on sessions and an expo.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Multi-day machine learning conference in Berlin covering MLOps and generative AI, with talks, hands-on sessions and an expo.",
+    "blurb_de": "Mehrtägige Konferenz zu maschinellem Lernen in Berlin mit Vorträgen, praktischen Sessions und einer Ausstellung zu MLOps und generativer KI."
+  },
+  {
+    "id": "mlcon-berlin-2026-berlin-2026",
+    "title": "MLcon Berlin 2026",
+    "date": "2026-11-16",
+    "endDate": "2026-11-20",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Conference",
+    "topics": [
+      "AI agents",
+      "Advanced RAG",
+      "MLOps",
+      "Open-source LLMs"
+    ],
+    "organiser": "mlconference.ai",
+    "cost": "Not listed",
+    "url": "https://mlconference.ai/berlin/",
+    "source": "DeutschlandKI (CC BY 4.0)",
+    "blurb": "Berlin conference with bootcamps and workshops on AI agents, advanced RAG, multimodal AI, MLOps, open-source LLMs and AI governance.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Berlin conference with bootcamps and workshops on AI agents, advanced RAG, multimodal AI, MLOps, open-source LLMs and AI governance.",
+    "blurb_de": "Konferenz in Berlin mit Bootcamps und Workshops zu KI-Agenten, fortgeschrittenem RAG, multimodaler KI, MLOps, Open-Source-LLMs und KI-Governance."
+  },
+  {
+    "id": "vibe-kode-2026-munich-2026",
+    "title": "Vibe Kode 2026",
+    "date": "2026-11-16",
+    "endDate": "2026-11-20",
+    "time": "09:00",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Meetup",
+    "topics": [
+      "AI-powered coding",
+      "Developer tools"
+    ],
+    "organiser": "vibekode.it",
+    "cost": "Not listed",
+    "url": "https://vibekode.it/berlin/#sdj-6ad1c04273938ec84eb1da82",
+    "source": "hackevents.net",
+    "blurb": "Gathering for developers and creators on coding and AI-powered innovation, with hands-on experiences and talks.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Gathering for developers and creators on coding and AI-powered innovation, with hands-on experiences and talks.",
+    "blurb_de": "Treffen für Entwicklerinnen, Entwickler und Kreative zu Coding und KI-gestützter Innovation, mit praktischen Erfahrungen und Vorträgen."
+  },
+  {
+    "id": "vibekode-berlin-2026-berlin-2026",
+    "title": "VibeKode Berlin 2026",
+    "date": "2026-11-16",
+    "endDate": "2026-11-20",
+    "city": "Berlin",
+    "venue": "Berlin, Germany + online",
+    "format": "Conference",
+    "topics": [
+      "Vibe coding",
+      "AI-assisted coding"
+    ],
+    "organiser": "Not listed",
+    "cost": "Not listed",
+    "url": "https://agentconfs.com/events/vibekode-berlin-2026",
+    "source": "agentconfs.com",
+    "blurb": "VibeKode Berlin 2026 is a vibe coding event in Berlin with an online option; the listing gives no programme details.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "VibeKode Berlin 2026 is a vibe coding event in Berlin with an online option; the listing gives no programme details.",
+    "blurb_de": "VibeKode Berlin 2026 ist eine Veranstaltung zum Vibe Coding in Berlin, mit Online-Teilnahme. Das Angebot nennt keine Details zum Programm."
+  },
+  {
+    "id": "lab2market-ai-x-cyber-frankfurt-2026",
+    "title": "Lab2Market AI x Cyber",
+    "date": "2026-11-19",
+    "endDate": "2026-11-20",
+    "time": "10:00",
+    "city": "Frankfurt",
+    "venue": "FUTURY, Am Steinernen Stock 1, Frankfurt, Hesse, 60320, Germany",
+    "format": "Conference",
+    "topics": [
+      "AI research commercialisation",
+      "Cybersecurity",
+      "Startups"
+    ],
+    "organiser": "hessian.AI",
+    "cost": "Not listed",
+    "url": "https://www.hessian.ai/event/lab2market-ai-x-cyber/",
+    "source": "hessian.AI",
+    "blurb": "Two-day Lab2Market camp in Frankfurt on turning AI research into companies, with a cybersecurity focus.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Two-day Lab2Market camp in Frankfurt on turning AI research into companies, with a cybersecurity focus.",
+    "blurb_de": "Zweitägiges Lab2Market-Camp in Frankfurt, wie aus KI-Forschung Unternehmen werden, mit Schwerpunkt Cybersicherheit."
+  },
+  {
+    "id": "ai-builders-commit-hack-day-berlin-2026-berlin-2026",
+    "title": "AI Builders × commIT | Hack Day Berlin 2026",
+    "date": "2026-11-20",
+    "time": "10:00–22:00",
+    "city": "Berlin",
+    "format": "Workshop",
+    "topics": [
+      "AI prototyping",
+      "Hackathon"
+    ],
+    "organiser": "AI Builders",
+    "cost": "From EUR 5",
+    "url": "https://lu.ma/ber-nov20-hday",
+    "source": "Brainberg",
+    "blurb": "Full-day Berlin hack day where participants build AI prototypes with fellow builders and demo them live.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Full-day Berlin hack day where participants build AI prototypes with fellow builders and demo them live.",
+    "blurb_de": "Ganztägiger Hack Day in Berlin: Teilnehmende entwickeln gemeinsam mit anderen Buildern KI-Prototypen und präsentieren sie live."
+  },
+  {
+    "id": "ai-coding-hackathon-november-2026-koln-cologne-2026",
+    "title": "AI Coding Hackathon November 2026 Köln",
+    "date": "2026-11-20",
+    "time": "14:30–22:30",
+    "city": "Cologne",
+    "venue": "STARTPLATZ Cologne, Cologne",
+    "format": "Workshop",
+    "topics": [
+      "Vibe coding",
+      "Harness engineering",
+      "Mobile apps"
+    ],
+    "organiser": "STARTPLATZ",
+    "cost": "Not listed",
+    "url": "https://www.startplatz.de/event/ai-coding-hackathon-november-2026-11-20/",
+    "source": "hackevents.net",
+    "blurb": "Fifth edition of a Cologne AI coding hackathon at STARTPLATZ with 130 participants, 25 pitches and 15 mentors.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Fifth edition of a Cologne AI coding hackathon at STARTPLATZ with 130 participants, 25 pitches and 15 mentors.",
+    "blurb_de": "Fünfte Ausgabe eines KI-Coding-Hackathons in Köln bei STARTPLATZ mit 130 Teilnehmenden, 25 Pitches und 15 Mentorinnen und Mentoren."
+  },
+  {
+    "id": "ai-matcha-fruhstucksevent-hamburg-2026",
+    "title": "AI & Matcha: Frühstücksevent",
+    "date": "2026-11-20",
+    "time": "10:00–12:00",
+    "city": "Hamburg",
+    "venue": "House of AI Hamburg, Hamburg",
+    "format": "Meetup",
+    "topics": [
+      "AI and careers",
+      "Women in AI"
+    ],
+    "organiser": "House of AI Hamburg",
+    "cost": "Not listed",
+    "url": "https://luma.com/8l89hq5n",
+    "source": "Luma",
+    "blurb": "Breakfast meetup for FLINTA* people in Hamburg on whether AI is a career booster or a career killer.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Breakfast meetup for FLINTA* people in Hamburg on whether AI is a career booster or a career killer.",
+    "blurb_de": "Frühstücks-Meetup in Hamburg für FLINTA* zur Frage, ob KI den Karriereweg fördert oder beendet."
+  },
+  {
+    "id": "ai-transformation-camp-munchen-separates-ticket-erforderlich-munich-2026",
+    "title": "AI Transformation Camp München – separates Ticket erforderlich",
+    "date": "2026-11-20",
+    "time": "09:00–20:00",
+    "city": "Munich",
+    "venue": "Codecentric AG, Munich",
+    "format": "Meetup",
+    "topics": [
+      "AI transformation",
+      "AI in business"
+    ],
+    "organiser": "AI Transformation Camp",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/ai-transformation-camp/events/315989150/",
+    "source": "Meetup",
+    "blurb": "Munich AI transformation camp at Codecentric on how companies can adopt AI; registration is through the organiser's website.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Munich AI transformation camp at Codecentric on how companies can adopt AI; registration is through the organiser's website.",
+    "blurb_de": "KI-Transformation-Camp in München bei Codecentric darüber, wie Unternehmen KI einführen können. Die Anmeldung läuft über die Website des Veranstalters."
+  },
+  {
+    "id": "beyond-coding-building-with-ai-bochum-2026",
+    "title": "Beyond Coding: Building with AI",
+    "date": "2026-11-20",
+    "time": "17:00–19:00",
+    "city": "Bochum",
+    "venue": "Ruhr-Universität Bochum, Universitätsstraße 150, 44801 Bochum, Germany",
+    "format": "Meetup",
+    "topics": [
+      "Building with AI",
+      "AWS"
+    ],
+    "organiser": "AWS USER GROUP BOCHUM",
+    "cost": "Free",
+    "url": "https://www.meetup.com/bochum-meetup-and-explore-the-community-meetup-group/events/316707680/",
+    "source": "Meetup",
+    "blurb": "First official meetup of the AWS User Group Bochum on building with AI, with open discussion, audience Q&A and networking.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "First official meetup of the AWS User Group Bochum on building with AI, with open discussion, audience Q&A and networking.",
+    "blurb_de": "Erstes offizielles Meetup der AWS User Group Bochum zum Bauen mit KI, mit offener Diskussion, Fragerunde und Networking."
+  },
+  {
+    "id": "career-service-ki-case-workshop-mit-gema-munich-2026",
+    "title": "Career Service: KI Case Workshop mit GEMA",
+    "date": "2026-11-20",
+    "city": "Munich",
+    "format": "Workshop",
+    "topics": [
+      "AI case study",
+      "AI and careers"
+    ],
+    "organiser": "LMU Munich",
+    "cost": "Not listed",
+    "url": "https://www.lmu.de/de/newsroom/veranstaltungskalender/veranstaltung/career-service-ki-case-workshop-mit-gema-b8162b34.html",
+    "source": "LMU Munich",
+    "blurb": "AI case workshop with GEMA at the LMU Munich career service, part of the AI & I seminar series.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "AI case workshop with GEMA at the LMU Munich career service, part of the AI & I seminar series.",
+    "blurb_de": "KI-Case-Workshop mit der GEMA beim Career Service der LMU München, Teil der Seminarreihe „AI & I“."
+  },
+  {
+    "id": "certificate-course-on-responsible-ai-part-3-online-de-2026",
+    "title": "Certificate Course on Responsible AI - Part 3",
+    "date": "2026-11-20",
+    "city": "Online (DE)",
+    "format": "Workshop",
+    "topics": [
+      "Responsible AI",
+      "AI governance"
+    ],
+    "organiser": "Munich Center for Machine Learning",
+    "cost": "Not listed",
+    "url": "https://mcml.ai/events/2026-11-20-certificate-course-responsible-ai/",
+    "source": "mcml.ai",
+    "blurb": "Part 3 of a Responsible AI certificate course, a joint online programme by the German National AI Centers; details are still to follow.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Part 3 of a Responsible AI certificate course, a joint online programme by the German National AI Centers; details are still to follow.",
+    "blurb_de": "Teil 3 des Zertifikatskurses Verantwortungsvolle KI, ein gemeinsames Online-Programm der deutschen KI-Zentren. Details folgen noch."
+  },
+  {
+    "id": "die-ki-werkstatt-offenes-prompting-treffen-fur-einsteiger-un-mainz-2026",
+    "title": "Die KI-Werkstatt: Offenes Prompting-Treffen für Einsteiger und Profis",
+    "date": "2026-11-20",
+    "time": "14:00–17:00",
+    "city": "Mainz",
+    "venue": "Gutenberg Digital Hub, Altes Weinlager, Taunusstraße 59-61",
+    "format": "Workshop",
+    "topics": [
+      "Prompting",
+      "Generative AI tools"
+    ],
+    "organiser": "Prompting Lab",
+    "cost": "Free",
+    "url": "https://www.meetup.com/prompting-lab/events/316706442/",
+    "source": "Meetup",
+    "blurb": "Monthly open hands-on prompting session in Mainz for beginners and advanced users who want to try AI tools.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Monthly open hands-on prompting session in Mainz for beginners and advanced users who want to try AI tools.",
+    "blurb_de": "Monatliches offenes Prompting-Treffen in Mainz für Einsteigerinnen und Einsteiger sowie Fortgeschrittene, die KI-Werkzeuge praktisch ausprobieren möchten."
+  },
+  {
+    "id": "from-concepts-to-certificates-towards-controllable-generativ-munich-2026",
+    "title": "From Concepts to Certificates: Towards Controllable Generative Models",
+    "date": "2026-11-20",
+    "city": "Munich",
+    "format": "Meetup",
+    "topics": [
+      "Generative AI",
+      "Controllable models"
+    ],
+    "organiser": "Munich Center for Machine Learning",
+    "cost": "Not listed",
+    "url": "https://mcml.ai/events/2026-11-20-munich-ai-lecture-leofante/",
+    "source": "mcml.ai",
+    "blurb": "Talk by Francesco Leofante of Imperial College London on controlling generative models through concept unlearning, hosted by MCML.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Talk by Francesco Leofante of Imperial College London on controlling generative models through concept unlearning, hosted by MCML.",
+    "blurb_de": "Vortrag von Francesco Leofante (Imperial College London) über die Steuerung generativer Modelle durch Concept Unlearning, veranstaltet vom MCML."
+  },
+  {
+    "id": "vibe-hackathon-cologne-cologne-2026",
+    "title": "Vibe Hackathon Cologne",
+    "date": "2026-11-20",
+    "city": "Cologne",
+    "venue": "Cologne, Germany",
+    "format": "Workshop",
+    "topics": [
+      "Vibe coding",
+      "Hackathon"
+    ],
+    "organiser": "Not listed",
+    "cost": "Not listed",
+    "url": "https://agentconfs.com/events/vibe-hackathon-cologne-2026",
+    "source": "agentconfs.com",
+    "blurb": "Hackathon in Cologne focused on vibe coding, listed with its official event page.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Hackathon in Cologne focused on vibe coding, listed with its official event page.",
+    "blurb_de": "Hackathon in Köln mit Schwerpunkt Vibe Coding, eingetragen über die offizielle Veranstaltungsseite."
+  }
+]
