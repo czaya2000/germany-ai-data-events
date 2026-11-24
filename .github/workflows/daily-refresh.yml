@@ -1,7 +1,7 @@
 ### Daily refresh for the German Data Events site
 #
 # Flow: prepare (Node: fetch, filter, dedupe, ledger) -> Claude step (only if there is
-# new work) -> apply (Node: verify, merge, archive, validate) -> commit data -> build -> Monday digest drafts -> deploy.
+# new work) -> apply (Node: verify, merge, archive, validate) -> commit data -> build -> weekly digest drafts (Sunday evening; Monday fallback) -> deploy.
 #
 # Deploy design (one choice, documented): this workflow builds and deploys itself, in the
 # `deploy` job below (`needs: refresh`). deploy.yml is for code pushes and manual runs only.
@@ -18,6 +18,9 @@ on:
   schedule:
     # Off-peak minute, UTC (no DST handling in GitHub cron).
     - cron: "37 4 * * *"
+    # Sunday evening run (17:20 UTC = 18:20 CET / 19:20 CEST): the full refresh, then the
+    # weekly digest drafts, ready for the owner to send on Monday morning.
+    - cron: "20 17 * * 0"
   workflow_dispatch:
     inputs:
       skip_claude:
@@ -136,17 +139,21 @@ jobs:
         with:
           path: dist
 
-      # Monday digest: two Buttondown DRAFTS (German + English) from the refreshed data.
+      # Weekly digest: two Buttondown DRAFTS (German + English) from the refreshed data.
+      # Primary run: Sunday evening, so the drafts exist before the owner sends on Monday morning.
+      # Monday's daily run is a fallback: build-digest.mjs is idempotent (same subject, no second
+      # draft), and it creates the drafts if Sunday failed. Both days build the same Monday window.
       # Drafts only; nobody is emailed from here, the owner reviews and sends in the
       # dashboard. Skipped when the secret is missing. A failure here must not block the
       # deploy. The script sends the Authorization, X-API-Version and Content-Type headers.
-      - name: Create the weekly digest drafts (Mondays)
+      - name: Create the weekly digest drafts (Sunday evening, Monday fallback)
         if: ${{ !inputs.deploy_only }}
         continue-on-error: true
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
         run: |
-          if [ "$(date -u +%u)" != "1" ]; then echo "Not Monday: no digest."; exit 0; fi
+          dow="$(date -u +%u)"
+          if [ "$dow" != "7" ] && [ "$dow" != "1" ]; then echo "Not Sunday or Monday: no digest."; exit 0; fi
           if [ -z "$BUTTONDOWN_API_KEY" ]; then echo "BUTTONDOWN_API_KEY is not set: no digest."; exit 0; fi
           node scripts/build-digest.mjs
 

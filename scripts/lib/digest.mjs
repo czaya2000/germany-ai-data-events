@@ -32,6 +32,16 @@ export const addDays = (iso, n) => {
 	return d.toISOString().slice(0, 10);
 };
 
+/**
+ * The Monday this digest is for. The draft is built on Sunday evening for the owner to send
+ * Monday morning, so a Sunday date maps to the NEXT Monday; Monday stays Monday; Tue-Sat snap
+ * back to that week's Monday. Pure YYYY-MM-DD arithmetic (UTC dates), no local timezone.
+ */
+export function digestWeekStart(iso) {
+	const day = new Date(`${iso}T00:00:00Z`).getUTCDay(); // 0 = Sunday
+	return day === 0 ? addDays(iso, 1) : addDays(iso, 1 - day);
+}
+
 export function isoWeek(iso) {
 	const d = new Date(`${iso}T00:00:00Z`);
 	const day = d.getUTCDay() || 7;
