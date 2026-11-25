@@ -1140,6 +1140,62 @@
 			"trust": "noisy",
 			"icsOk": true,
 			"checked": "2026-11-23"
+		},
+		"obi-tech-talks": {
+			"firstSeen": "2026-11-25",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
+		},
+		"ai-knowledge-worker-meetup-leipzig": {
+			"firstSeen": "2026-11-25",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
+		},
+		"big-data-and-ai-saxony": {
+			"firstSeen": "2026-11-25",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
+		},
+		"purple-elbe": {
+			"firstSeen": "2026-11-25",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
+		},
+		"hamburg-powershell-user-group": {
+			"firstSeen": "2026-11-25",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
+		},
+		"azure-dev-munich": {
+			"firstSeen": "2026-11-25",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
+		},
+		"emerging-tech-rhein-main-community": {
+			"firstSeen": "2026-11-25",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
+		},
+		"aws-user-group-mannheim": {
+			"firstSeen": "2026-11-25",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-25"
 		}
 	}
 }

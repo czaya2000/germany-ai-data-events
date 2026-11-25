@@ -1,26 +1,5 @@
 [
   {
-    "id": "agentic-coding-studio-hamburg-2026",
-    "title": "agentic coding studio",
-    "date": "2026-11-21",
-    "time": "09:30–13:00",
-    "city": "Hamburg",
-    "venue": "House of AI Hamburg, Hamburg",
-    "format": "Meetup",
-    "topics": [
-      "Agentic coding",
-      "AI engineering"
-    ],
-    "organiser": "AI BEAVERS | HAMBURG",
-    "cost": "Not listed",
-    "url": "https://www.meetup.com/ai-beavers/events/317236095/",
-    "source": "Meetup",
-    "blurb": "Hamburg meetup for advanced AI engineers to get feedback on real projects and exchange knowledge on new AI tools and workflows.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "Hamburg meetup for advanced AI engineers to get feedback on real projects and exchange knowledge on new AI tools and workflows.",
-    "blurb_de": "Hamburger Meetup für erfahrene KI-Engineers: Feedback zu echten Projekten sowie Austausch über neue KI-Werkzeuge und Arbeitsabläufe."
-  },
-  {
     "id": "berlin-robotics-ai-hackathon-hacklab-x-brisa-berlin-2026",
     "title": "Berlin Robotics & AI Hackathon: HackLab x BRISA",
     "date": "2026-11-21",
@@ -40,28 +19,6 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "Two-day in-person hackathon at CIC Berlin on 21 and 22 November where teams work on challenges from robotics companies, with prizes.",
     "blurb_de": "Zweitägiger Präsenz-Hackathon am 21. und 22. November im CIC Berlin. Teams arbeiten an Aufgaben von Robotikunternehmen, es gibt Preise."
-  },
-  {
-    "id": "devfest-munster-2026-agentic-ai-hackathon-munster-2026",
-    "title": "DevFest Münster 2026 | Agentic AI Hackathon",
-    "date": "2026-11-21",
-    "time": "09:00–18:00",
-    "city": "Münster",
-    "venue": "vhs Münster, Aegidiistraße 70, 48143 Münster, Germany",
-    "format": "Workshop",
-    "topics": [
-      "Agentic AI",
-      "Google Cloud",
-      "Gemini"
-    ],
-    "organiser": "Google Developers Group Münster",
-    "cost": "Free",
-    "url": "https://www.meetup.com/google-developers-group-munster/events/316735468/",
-    "source": "Meetup",
-    "blurb": "Agentic AI hackathon at DevFest Münster covering Google tools such as Vertex AI Agent Builder, Gemini and Firebase Genkit; registration is required.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "Agentic AI hackathon at DevFest Münster covering Google tools such as Vertex AI Agent Builder, Gemini and Firebase Genkit; registration is required.",
-    "blurb_de": "Agentic-AI-Hackathon beim DevFest Münster zu Google-Werkzeugen wie Vertex AI Agent Builder, Gemini und Firebase Genkit. Eine Anmeldung ist erforderlich."
   },
   {
     "id": "build-boldly-fly-responsibly-ai-stories-from-women-in-tech-hamburg-2026",
@@ -698,6 +655,27 @@
     "firstSeen": "2026-11-23"
   },
   {
+    "id": "data-literacy-empirisch-informierte-ki-ethik-karlsruhe-2026",
+    "title": "Data Literacy: Empirisch informierte KI-Ethik",
+    "date": "2026-11-25",
+    "time": "15:45–17:15",
+    "city": "Karlsruhe",
+    "venue": "Geb. 50.28 InformatiKOM II, R 010 (SR 2)",
+    "format": "Meetup",
+    "topics": [
+      "AI ethics",
+      "Data literacy"
+    ],
+    "organiser": "KIT",
+    "cost": "Not listed",
+    "url": "https://www.kit.edu/kit/veranstaltungskalender.php/event/63011#calendar_top",
+    "source": "kit",
+    "blurb": "Lecture on empirically informed questions of AI ethics, covering machine ethics and human-machine interaction, in the KIT Data Literacy lecture series.",
+    "blurb_en": "Lecture on empirically informed questions of AI ethics, covering machine ethics and human-machine interaction, in the KIT Data Literacy lecture series.",
+    "blurb_de": "Vortrag zu empirisch fundierten Fragen der KI-Ethik, unter anderem zu Maschinenethik und Mensch-Maschine-Interaktion, in der Ringvorlesung Data Literacy am KIT.",
+    "firstSeen": "2026-11-25"
+  },
+  {
     "id": "foresight-s-ai-salon-engineer-ai-safety-workshop-berlin-2026",
     "title": "Foresight’s AI Salon | Engineer AI safety workshop",
     "date": "2026-11-25",
@@ -888,6 +866,71 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "Free evening meetup in the GenAI Wednesday Munich series, with a keynote on how AI changes agency work, followed by snacks and networking.",
     "blurb_de": "Kostenloses Meetup im Rahmen der GenAI Wednesday München: Keynote darüber, wie KI die Agenturarbeit verändert, danach Snacks und Networking."
+  },
+  {
+    "id": "16-ki-in-scheibchen-wie-aus-komplexen-aufgaben-klare-ablaufe-leipzig-2026",
+    "title": "#16 KI in Scheibchen: Wie aus komplexen Aufgaben klare Abläufe werden",
+    "date": "2026-11-26",
+    "time": "19:00–21:15",
+    "city": "Leipzig",
+    "venue": "]init[ AG | Leipzig, Barfußgäßchen 11, 04109 Leipzig, Germany",
+    "format": "Meetup",
+    "topics": [
+      "Generative AI",
+      "Knowledge work"
+    ],
+    "organiser": "AI Knowledge Worker Meetup Leipzig",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-knowledge-worker-meetup-leipzig/events/317438902/",
+    "source": "Meetup",
+    "blurb": "Regular in-person meetup on the practical use of AI tools such as ChatGPT, Perplexity and NotebookLM for research, content work and learning.",
+    "blurb_en": "Regular in-person meetup on the practical use of AI tools such as ChatGPT, Perplexity and NotebookLM for research, content work and learning.",
+    "blurb_de": "Regelmäßiges Präsenztreffen zur praktischen Nutzung von KI-Werkzeugen wie ChatGPT, Perplexity oder NotebookLM für Recherche, Inhalte und Lernen.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "2-mobilitatsdatensymposium-karlsruhe-2026",
+    "title": "2. Mobilitätsdatensymposium",
+    "date": "2026-11-26",
+    "time": "12:00–17:00",
+    "city": "Karlsruhe",
+    "venue": "TRIANGEL Transfer | Kultur | Raum",
+    "format": "Conference",
+    "topics": [
+      "Open mobility data",
+      "Data sharing",
+      "Data privacy"
+    ],
+    "organiser": "KIT",
+    "cost": "Not listed",
+    "url": "https://www.kit.edu/kit/veranstaltungskalender.php/event/63538#calendar_top",
+    "source": "kit",
+    "blurb": "Symposium on the practical use of open mobility data, with talks on data privacy, open interface standards and the EU Data Act, plus a panel and get-together.",
+    "blurb_en": "Symposium on the practical use of open mobility data, with talks on data privacy, open interface standards and the EU Data Act, plus a panel and get-together.",
+    "blurb_de": "Symposium zur praktischen Nutzung offener Mobilitätsdaten mit Vorträgen zu Datenschutz, offenen Schnittstellen und dem EU Data Act sowie einer Paneldiskussion.",
+    "firstSeen": "2026-11-25"
+  },
+  {
+    "id": "6-anymos-mobility-cafe-data-edition-karlsruhe-2026",
+    "title": "6. ANYMOS Mobility Café: Data Edition",
+    "date": "2026-11-26",
+    "time": "10:30–12:00",
+    "city": "Karlsruhe",
+    "venue": "TRIANGEL Transfer | Kultur | Raum",
+    "format": "Meetup",
+    "topics": [
+      "Anonymisation",
+      "Generative AI",
+      "Data privacy"
+    ],
+    "organiser": "KIT",
+    "cost": "Free",
+    "url": "https://www.kit.edu/kit/veranstaltungskalender.php/event/63534#calendar_top",
+    "source": "kit",
+    "blurb": "Morning café talk on AI-based image anonymisation and where useful privacy protection turns into harmful deepfakes; registration required, entry free.",
+    "blurb_en": "Morning café talk on AI-based image anonymisation and where useful privacy protection turns into harmful deepfakes; registration required, entry free.",
+    "blurb_de": "Vormittagstalk bei Kaffee zur KI-gestützten Anonymisierung von Bildern und zur Frage, wo Datenschutz in schädliche Deepfakes übergeht. Anmeldung erforderlich, Eintritt frei.",
+    "firstSeen": "2026-11-25"
   },
   {
     "id": "ai-lightning-talks-freiburg-2026",
@@ -2163,6 +2206,28 @@
     "blurb_de": "ScaDS.AI-Leipzig-Meetup, bei dem das Startup Fediway Foundation-Modell-Ansätze jenseits klassischer LLMs vorstellt, die aus dem Kontext lernen, ohne neu trainiert zu werden."
   },
   {
+    "id": "scads-ai-meetup-beyond-llms-neue-ansatze-fur-foundation-mode-leipzig-2026",
+    "title": "ScaDS.AI Meetup: Beyond LLMs: Neue Ansätze für Foundation Models mit Fediway",
+    "date": "2026-12-01",
+    "time": "17:00–20:00",
+    "city": "Leipzig",
+    "venue": "Humboldtstraße 25, Humboldtstraße 25, 04105 Leipzig, Germany",
+    "format": "Meetup",
+    "topics": [
+      "Foundation models",
+      "Machine learning",
+      "Data streams"
+    ],
+    "organiser": "Big Data and AI Saxony",
+    "cost": "Free",
+    "url": "https://www.meetup.com/big-data-and-ai-saxony/events/317548609/",
+    "source": "Meetup",
+    "blurb": "Leipzig meetup where the AI start-up Fediway presents research on foundation models, including prior-fitted networks and how models learn from new data.",
+    "blurb_en": "Leipzig meetup where the AI start-up Fediway presents research on foundation models, including prior-fitted networks and how models learn from new data.",
+    "blurb_de": "Meetup in Leipzig, bei dem das KI-Start-up Fediway Forschung zu Foundation Models vorstellt, unter anderem zu Prior-Fitted Networks und zum Lernen aus neuen Daten.",
+    "firstSeen": "2026-11-25"
+  },
+  {
     "id": "the-next-experiment-hackathon-munich-2026",
     "title": "The Next Experiment Hackathon",
     "date": "2026-12-01",
@@ -2852,6 +2917,27 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "A summit with 40+ talks and workshops on how engineering teams use AI tools to build, test and ship production software.",
     "blurb_de": "Ein Gipfel mit über 40 Vorträgen und Workshops dazu, wie Entwicklungsteams KI-Werkzeuge einsetzen, um produktionsreife Software zu bauen, zu testen und auszuliefern."
+  },
+  {
+    "id": "berlin-claude-workshop-make-a-product-better-together-berlin-2026",
+    "title": "Berlin | Claude Workshop: Make a Product Better, Together",
+    "date": "2026-12-04",
+    "time": "18:00–21:00",
+    "city": "Berlin",
+    "venue": "Donaustraße 44, Berlin",
+    "format": "Workshop",
+    "topics": [
+      "Claude",
+      "Generative AI"
+    ],
+    "organiser": "Claude Community Events",
+    "cost": "Not listed",
+    "url": "https://luma.com/claude-berlin-ws",
+    "source": "Luma",
+    "blurb": "Workshop in Berlin where participants work together on improving a product with Claude, organised by Claude Community Events.",
+    "blurb_en": "Workshop in Berlin where participants work together on improving a product with Claude, organised by Claude Community Events.",
+    "blurb_de": "Workshop in Berlin, in dem die Teilnehmenden gemeinsam mit Claude ein Produkt verbessern. Veranstaltet von Claude Community Events.",
+    "firstSeen": "2026-11-25"
   },
   {
     "id": "beyond-ai-readiness-architecting-the-intelligent-enterprise--berlin-2026",
@@ -5028,6 +5114,27 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "prompt:UX 2027 event in Berlin; the feed gives no programme details.",
     "blurb_de": "Veranstaltung prompt:UX 2027 in Berlin; der Feed enthält keine Programmdetails."
+  },
+  {
+    "id": "feb-25-mcp-agents-and-skills-meetup-online-de-2027",
+    "title": "Feb 25 - MCP, Agents and Skills Meetup",
+    "date": "2027-02-25",
+    "time": "18:00–20:00",
+    "city": "Online (DE)",
+    "format": "Meetup",
+    "topics": [
+      "MCP",
+      "AI agents",
+      "Agent skills"
+    ],
+    "organiser": "München AI, Machine Learning and Computer Vision Meetup",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/munchen-ai-machine-learning-and-computer-vision-meetup/events/317571143/",
+    "source": "Meetup",
+    "blurb": "Virtual meetup with talks on MCP, AI agents and skills, including crash recovery for agent tool workflows with LangGraph and Pydantic AI.",
+    "blurb_en": "Virtual meetup with talks on MCP, AI agents and skills, including crash recovery for agent tool workflows with LangGraph and Pydantic AI.",
+    "blurb_de": "Online-Meetup mit Vorträgen zu MCP, KI-Agenten und Skills, unter anderem zur Wiederherstellung von Agenten nach Abbrüchen mit LangGraph und Pydantic AI.",
+    "firstSeen": "2026-11-25"
   },
   {
     "id": "german-data-science-days-2027-munich-2027",

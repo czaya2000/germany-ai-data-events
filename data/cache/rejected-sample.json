@@ -118,15 +118,6 @@
 			]
 		},
 		{
-			"kept": "AI.SUMMIT 2026",
-			"merged": "AI.SUMMIT 2026 Hamburg",
-			"date": "2026-11-24",
-			"sources": [
-				"deutschlandki",
-				"agentconfs"
-			]
-		},
-		{
 			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
 			"merged": "IBM Bob Coding Watch Party in Berlin",
 			"date": "2026-12-01",
@@ -340,15 +331,6 @@
 			"sources": [
 				"hackevents-ai",
 				"hackevents-ai"
-			]
-		},
-		{
-			"kept": "AI.SUMMIT 2026",
-			"merged": "AI.SUMMIT 2026 — Corporate Edition",
-			"date": "2026-11-24",
-			"sources": [
-				"deutschlandki",
-				"aieventlist-hamburg"
 			]
 		},
 		{

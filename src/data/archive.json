@@ -354,5 +354,48 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "Hackathon in Cologne focused on vibe coding, listed with its official event page.",
     "blurb_de": "Hackathon in Köln mit Schwerpunkt Vibe Coding, eingetragen über die offizielle Veranstaltungsseite."
+  },
+  {
+    "id": "agentic-coding-studio-hamburg-2026",
+    "title": "agentic coding studio",
+    "date": "2026-11-21",
+    "time": "09:30–13:00",
+    "city": "Hamburg",
+    "venue": "House of AI Hamburg, Hamburg",
+    "format": "Meetup",
+    "topics": [
+      "Agentic coding",
+      "AI engineering"
+    ],
+    "organiser": "AI BEAVERS | HAMBURG",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/ai-beavers/events/317236095/",
+    "source": "Meetup",
+    "blurb": "Hamburg meetup for advanced AI engineers to get feedback on real projects and exchange knowledge on new AI tools and workflows.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Hamburg meetup for advanced AI engineers to get feedback on real projects and exchange knowledge on new AI tools and workflows.",
+    "blurb_de": "Hamburger Meetup für erfahrene KI-Engineers: Feedback zu echten Projekten sowie Austausch über neue KI-Werkzeuge und Arbeitsabläufe."
+  },
+  {
+    "id": "devfest-munster-2026-agentic-ai-hackathon-munster-2026",
+    "title": "DevFest Münster 2026 | Agentic AI Hackathon",
+    "date": "2026-11-21",
+    "time": "09:00–18:00",
+    "city": "Münster",
+    "venue": "vhs Münster, Aegidiistraße 70, 48143 Münster, Germany",
+    "format": "Workshop",
+    "topics": [
+      "Agentic AI",
+      "Google Cloud",
+      "Gemini"
+    ],
+    "organiser": "Google Developers Group Münster",
+    "cost": "Free",
+    "url": "https://www.meetup.com/google-developers-group-munster/events/316735468/",
+    "source": "Meetup",
+    "blurb": "Agentic AI hackathon at DevFest Münster covering Google tools such as Vertex AI Agent Builder, Gemini and Firebase Genkit; registration is required.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Agentic AI hackathon at DevFest Münster covering Google tools such as Vertex AI Agent Builder, Gemini and Firebase Genkit; registration is required.",
+    "blurb_de": "Agentic-AI-Hackathon beim DevFest Münster zu Google-Werkzeugen wie Vertex AI Agent Builder, Gemini und Firebase Genkit. Eine Anmeldung ist erforderlich."
   }
 ]
