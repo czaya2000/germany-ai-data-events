@@ -377,6 +377,27 @@
     "blurb_de": "Hamburger Meetup für erfahrene KI-Engineers: Feedback zu echten Projekten sowie Austausch über neue KI-Werkzeuge und Arbeitsabläufe."
   },
   {
+    "id": "berlin-robotics-ai-hackathon-hacklab-x-brisa-berlin-2026",
+    "title": "Berlin Robotics & AI Hackathon: HackLab x BRISA",
+    "date": "2026-11-21",
+    "endDate": "2026-11-22",
+    "city": "Berlin",
+    "venue": "CIC Berlin, Lohmühlenstraße 65, 12435 Berlin",
+    "format": "Workshop",
+    "topics": [
+      "Robotics",
+      "AI challenges"
+    ],
+    "organiser": "Not listed",
+    "cost": "Not listed",
+    "url": "https://aieventlist.ai/events/robotics-ai-hackathon-hacklab-berlin-2026/",
+    "source": "aieventlist.ai",
+    "blurb": "Two-day in-person hackathon at CIC Berlin on 21 and 22 November where teams work on challenges from robotics companies, with prizes.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Two-day in-person hackathon at CIC Berlin on 21 and 22 November where teams work on challenges from robotics companies, with prizes.",
+    "blurb_de": "Zweitägiger Präsenz-Hackathon am 21. und 22. November im CIC Berlin. Teams arbeiten an Aufgaben von Robotikunternehmen, es gibt Preise."
+  },
+  {
     "id": "devfest-munster-2026-agentic-ai-hackathon-munster-2026",
     "title": "DevFest Münster 2026 | Agentic AI Hackathon",
     "date": "2026-11-21",

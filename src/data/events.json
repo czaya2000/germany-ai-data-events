@@ -1,26 +1,5 @@
 [
   {
-    "id": "berlin-robotics-ai-hackathon-hacklab-x-brisa-berlin-2026",
-    "title": "Berlin Robotics & AI Hackathon: HackLab x BRISA",
-    "date": "2026-11-21",
-    "endDate": "2026-11-22",
-    "city": "Berlin",
-    "venue": "CIC Berlin, Lohmühlenstraße 65, 12435 Berlin",
-    "format": "Workshop",
-    "topics": [
-      "Robotics",
-      "AI challenges"
-    ],
-    "organiser": "Not listed",
-    "cost": "Not listed",
-    "url": "https://aieventlist.ai/events/robotics-ai-hackathon-hacklab-berlin-2026/",
-    "source": "aieventlist.ai",
-    "blurb": "Two-day in-person hackathon at CIC Berlin on 21 and 22 November where teams work on challenges from robotics companies, with prizes.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "Two-day in-person hackathon at CIC Berlin on 21 and 22 November where teams work on challenges from robotics companies, with prizes.",
-    "blurb_de": "Zweitägiger Präsenz-Hackathon am 21. und 22. November im CIC Berlin. Teams arbeiten an Aufgaben von Robotikunternehmen, es gibt Preise."
-  },
-  {
     "id": "build-boldly-fly-responsibly-ai-stories-from-women-in-tech-hamburg-2026",
     "title": "Build Boldly, Fly Responsibly: AI Stories from Women in Tech",
     "date": "2026-11-23",
@@ -1187,6 +1166,27 @@
     "blurb_de": "Data-Science- und Machine-Learning-Meetup in Hamburg mit zwei Vorträgen, einer davon zur Kombination von Media-Mix-Modellierung, Attribution und Lift-Tests."
   },
   {
+    "id": "ki-club-hannover-e-v-november-treffen-hanover-2026",
+    "title": "KI.club Hannover e.V. - November-Treffen",
+    "date": "2026-11-26",
+    "time": "19:00–22:00",
+    "city": "Hanover",
+    "venue": "Hannover",
+    "format": "Meetup",
+    "topics": [
+      "AI community",
+      "Networking"
+    ],
+    "organiser": "Hafven Hannover",
+    "cost": "Not listed",
+    "url": "https://www.hafven.de/event/november-treffen-bncvxdsyig/",
+    "source": "hackevents.net",
+    "blurb": "November meetup of KI.club Hannover e.V., an AI community evening in Hanover.",
+    "blurb_en": "November meetup of KI.club Hannover e.V., an AI community evening in Hanover.",
+    "blurb_de": "November-Treffen des KI.club Hannover e.V., ein Community-Abend zu KI in Hannover.",
+    "firstSeen": "2026-11-26"
+  },
+  {
     "id": "munich-datageeks-november-edition-munich-2026",
     "title": "Munich Datageeks November Edition",
     "date": "2026-11-26",
@@ -2146,6 +2146,48 @@
     "blurb_de": "Unabhängig organisiertes Meetup in Kassel für Menschen, die an GenAI, Data Science, maschinellem Lernen und Big Data arbeiten oder sich dafür interessieren."
   },
   {
+    "id": "ki-im-marketing-seo-geo-und-neue-protokolle-berlin-2026",
+    "title": "KI im Marketing: SEO/GEO und neue Protokolle",
+    "date": "2026-12-01",
+    "time": "18:30–20:30",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Meetup",
+    "topics": [
+      "AI in marketing",
+      "SEO and GEO"
+    ],
+    "organiser": "HUB31 und Marketing Community Südhessen",
+    "cost": "Not listed",
+    "url": "https://starthub-hessen.de/de/events/ki-im-marketing-seogeo-und-neue-protokolle/",
+    "source": "hackevents.net",
+    "blurb": "Talk on how websites and online shops stay visible in the AI era, covering SEO, GEO and new protocols.",
+    "blurb_en": "Talk on how websites and online shops stay visible in the AI era, covering SEO, GEO and new protocols.",
+    "blurb_de": "Vortrag darüber, wie Websites und Online-Shops im KI-Zeitalter sichtbar bleiben: SEO, GEO und neue Protokolle.",
+    "firstSeen": "2026-11-26"
+  },
+  {
+    "id": "ki-journey-das-programm-fur-skalierbare-ki-start-ups-modul-3-berlin-2026",
+    "title": "KI-Journey: Das Programm für skalierbare KI-Start-ups. Modul 3: KI-Implementierung beim Kunden",
+    "date": "2026-12-01",
+    "time": "11:00–12:30",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Workshop",
+    "topics": [
+      "AI implementation",
+      "B2B AI"
+    ],
+    "organiser": "LOVEDIS",
+    "cost": "Not listed",
+    "url": "https://starthub-hessen.de/de/events/ki-journey-das-programm-f%C3%BCr-skalierbare-ki-start-ups-modul-3-ki-implementierung-beim-kunden/",
+    "source": "hackevents.net",
+    "blurb": "Module 3 of LOVEDIS's KI-Journey programme for AI start-ups, on implementing AI at business customers: technical, safe and legal.",
+    "blurb_en": "Module 3 of LOVEDIS's KI-Journey programme for AI start-ups, on implementing AI at business customers: technical, safe and legal.",
+    "blurb_de": "Modul 3 des KI-Journey-Programms von LOVEDIS für KI-Start-ups zur Umsetzung von KI beim Kunden: technisch, sicher und rechtlich.",
+    "firstSeen": "2026-11-26"
+  },
+  {
     "id": "ki-arena-2026-dusseldorf-2026",
     "title": "KI:ARENA 2026",
     "date": "2026-12-01",
@@ -2268,6 +2310,27 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "A Leipzig WordPress meetup on everyday AI use in WordPress work, covering chat-based content and plugin creation and what does not yet work.",
     "blurb_de": "WordPress-Meetup Leipzig zum KI-Alltag in der WordPress-Arbeit: chatbasierte Inhalte und Plugin-Erstellung sowie das, was noch nicht funktioniert."
+  },
+  {
+    "id": "workshop-ki-als-co-founder-3-4-systeme-statt-chats-berlin-2026",
+    "title": "Workshop: KI als Co-Founder 3/4 - Systeme statt Chats",
+    "date": "2026-12-01",
+    "time": "16:00–17:30",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Workshop",
+    "topics": [
+      "AI automation",
+      "AI for founders"
+    ],
+    "organiser": "starthub-hessen.de",
+    "cost": "Not listed",
+    "url": "https://starthub-hessen.de/de/events/ki-als-co-founder-34-i-systeme-statt-chats/",
+    "source": "hackevents.net",
+    "blurb": "Part 3 of 4 in a workshop series on building AI, moving from using AI chats to automating work with AI systems.",
+    "blurb_en": "Part 3 of 4 in a workshop series on building AI, moving from using AI chats to automating work with AI systems.",
+    "blurb_de": "Teil 3 von 4 einer Workshop-Reihe zum Aufbau von KI: von der Nutzung von KI-Chats zur Automatisierung mit KI-Systemen.",
+    "firstSeen": "2026-11-26"
   },
   {
     "id": "7th-frankfurt-meetup-prompts-are-not-controls-governing-agen-frankfurt-2026",
@@ -3375,6 +3438,26 @@
     "blurb_de": "Eine Branchenkonferenz in Berlin zu generativer KI, zur Automatisierung von Geschäftsprozessen und zur KI-Strategie in der Wohnungswirtschaft."
   },
   {
+    "id": "bliss-x-volkswagen-ai-in-business-redesigning-work-human-ai--berlin-2026",
+    "title": "BLISS x Volkswagen: AI in Business – Redesigning Work & Human-AI Collaboration",
+    "date": "2026-12-09",
+    "time": "17:45–19:45",
+    "city": "Berlin",
+    "format": "Workshop",
+    "topics": [
+      "AI agents",
+      "Human-AI collaboration"
+    ],
+    "organiser": "BLISS AI Speaker Series 2026/2027",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/bliss-speaker-series/events/317593510/",
+    "source": "Meetup",
+    "blurb": "Interactive BLISS x Volkswagen workshop at TU Berlin on how AI agents change team work and decisions; German at B1/B2 level or above is required.",
+    "blurb_en": "Interactive BLISS x Volkswagen workshop at TU Berlin on how AI agents change team work and decisions; German at B1/B2 level or above is required.",
+    "blurb_de": "Interaktiver Workshop von BLISS und Volkswagen an der TU Berlin zu KI-Agenten in Teamarbeit und Entscheidungen; Deutsch mindestens auf Niveau B1/B2 ist erforderlich.",
+    "firstSeen": "2026-11-26"
+  },
+  {
     "id": "coffee-code-10-berlin-2026",
     "title": "Coffee & Code #10",
     "date": "2026-12-09",
@@ -3750,6 +3833,28 @@
     "blurb_de": "Ein Meetup in Köln von Agents Anonymous; die Ankündigung nennt keine Details zum Programm."
   },
   {
+    "id": "csee-x-openai-hackathon-munich-2026",
+    "title": "CSEE x OpenAI Hackathon",
+    "date": "2026-12-11",
+    "endDate": "2026-12-13",
+    "time": "13:30",
+    "city": "Munich",
+    "venue": "Center for Software Engineering Excellence (CSEE), Munich",
+    "format": "Workshop",
+    "topics": [
+      "OpenAI",
+      "Hackathon"
+    ],
+    "organiser": "EVA",
+    "cost": "Not listed",
+    "url": "https://luma.com/x73mq3l9",
+    "source": "hackevents.net",
+    "blurb": "Three-day CSEE x OpenAI hackathon in Munich at the Center for Software Engineering Excellence, built around real partner challenges.",
+    "blurb_en": "Three-day CSEE x OpenAI hackathon in Munich at the Center for Software Engineering Excellence, built around real partner challenges.",
+    "blurb_de": "Dreitägiger CSEE x OpenAI Hackathon in München mit echten Herausforderungen von Partnerunternehmen.",
+    "firstSeen": "2026-11-26"
+  },
+  {
     "id": "wids-munich-2026-women-in-data-science-munich-2026",
     "title": "WiDS Munich 2026 — Women in Data Science",
     "date": "2026-12-11",
@@ -4059,6 +4164,27 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "A talk by Max Hellrigel-Holderbaum on instrumental convergence and goals in AI systems, held at Möbelkollektiv in Nuremberg.",
     "blurb_de": "Ein Vortrag von Max Hellrigel-Holderbaum über instrumentelle Konvergenz und Ziele in KI-Systemen, im Möbelkollektiv in Nürnberg."
+  },
+  {
+    "id": "select-gift-from-under-the-tree-where-behaviour-good-berlin-2026",
+    "title": "Select gift from under_the_tree where behaviour = 'good'",
+    "date": "2026-12-16",
+    "time": "18:30–21:30",
+    "city": "Berlin",
+    "venue": "Bonial International GmbH, Berlin",
+    "format": "Meetup",
+    "topics": [
+      "Data community",
+      "Networking"
+    ],
+    "organiser": "Francesco Mucio",
+    "cost": "Not listed",
+    "url": "https://luma.com/y45df8rh",
+    "source": "hackevents.net",
+    "blurb": "Data Berlin Meetup at Bonial in Berlin, with talks, insights and networking for the local data community.",
+    "blurb_en": "Data Berlin Meetup at Bonial in Berlin, with talks, insights and networking for the local data community.",
+    "blurb_de": "Data Berlin Meetup bei Bonial in Berlin mit Vorträgen, Einblicken und Networking für die lokale Data-Community.",
+    "firstSeen": "2026-11-26"
   },
   {
     "id": "12-save-the-date-leipzig-2026",
