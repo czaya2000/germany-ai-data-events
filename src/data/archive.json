@@ -418,5 +418,110 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "Agentic AI hackathon at DevFest Münster covering Google tools such as Vertex AI Agent Builder, Gemini and Firebase Genkit; registration is required.",
     "blurb_de": "Agentic-AI-Hackathon beim DevFest Münster zu Google-Werkzeugen wie Vertex AI Agent Builder, Gemini und Firebase Genkit. Eine Anmeldung ist erforderlich."
+  },
+  {
+    "id": "build-boldly-fly-responsibly-ai-stories-from-women-in-tech-hamburg-2026",
+    "title": "Build Boldly, Fly Responsibly: AI Stories from Women in Tech",
+    "date": "2026-11-23",
+    "time": "18:00–21:00",
+    "city": "Hamburg",
+    "venue": "Am Sandtorkai 27, Hamburg",
+    "format": "Meetup",
+    "topics": [
+      "AI in business",
+      "Women in tech"
+    ],
+    "organiser": "Women Techmakers",
+    "cost": "Free",
+    "url": "https://www.meetup.com/womentechmakershamburg/events/317282660/",
+    "source": "Meetup",
+    "blurb": "Women Techmakers meetup in Hamburg with talks on how AI is transforming businesses, from SMEs to aerospace; open to everyone.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Women Techmakers meetup in Hamburg with talks on how AI is transforming businesses, from SMEs to aerospace; open to everyone.",
+    "blurb_de": "Women-Techmakers-Meetup in Hamburg mit Vorträgen darüber, wie KI Unternehmen verändert, von KMU bis zur Luft- und Raumfahrt. Offen für alle."
+  },
+  {
+    "id": "future-of-software-hamburg-2026",
+    "title": "Future of Software",
+    "date": "2026-11-23",
+    "time": "18:00–22:00",
+    "city": "Hamburg",
+    "venue": "Hongkongstraße 2, Hamburg",
+    "format": "Meetup",
+    "topics": [
+      "Coding agents",
+      "AI in software development"
+    ],
+    "organiser": "Agentic Coding Meetup Hamburg",
+    "cost": "Not listed",
+    "url": "https://luma.com/u93cveoa",
+    "source": "Luma",
+    "blurb": "Hamburg meetup for companies that build their own software, on how coding agents change teams, processes and security.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Hamburg meetup for companies that build their own software, on how coding agents change teams, processes and security.",
+    "blurb_de": "Hamburger Meetup für Unternehmen, die eigene Software entwickeln: wie Coding-Agenten Teams, Prozesse und Sicherheit verändern."
+  },
+  {
+    "id": "ki-journey-das-programm-fur-skalierbare-ki-start-ups-modul-2-berlin-2026",
+    "title": "KI-Journey: Das Programm für skalierbare KI-Start-ups. Modul 2: KI Resilience Day",
+    "date": "2026-11-23",
+    "time": "16:00–22:00",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Workshop",
+    "topics": [
+      "AI startups",
+      "B2B AI"
+    ],
+    "organiser": "LOVEDIS",
+    "cost": "Not listed",
+    "url": "https://starthub-hessen.de/de/events/ki-journey-das-programm-f%C3%BCr-skalierbare-ki-start-ups-modul-2-ki-resilience-day/",
+    "source": "hackevents.net",
+    "blurb": "Second module of the KI Journey programme for AI startups, a day on making AI products fit for B2B use, technically, legally and securely.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Second module of the KI Journey programme for AI startups, a day on making AI products fit for B2B use, technically, legally and securely.",
+    "blurb_de": "Zweites Modul des KI-Journey-Programms für KI-Start-ups: ein Tag darüber, wie KI-Produkte technisch, rechtlich und sicher für den B2B-Einsatz werden."
+  },
+  {
+    "id": "menschen-und-ki-im-feedback-loop-der-softwareentwicklung-hamburg-2026",
+    "title": "Menschen und KI im Feedback-Loop der Softwareentwicklung",
+    "date": "2026-11-23",
+    "time": "18:00–21:00",
+    "city": "Hamburg",
+    "venue": "Bramfelder Str. 140, Bramfelder Str. 140",
+    "format": "Meetup",
+    "topics": [
+      "AI in software development",
+      "Feedback loops"
+    ],
+    "organiser": "DevTalk@TK",
+    "cost": "Free",
+    "url": "https://www.meetup.com/devtalk-tk/events/316564208/",
+    "source": "Meetup",
+    "blurb": "DevTalk@TK meetup in Hamburg where Eberhard Wolff speaks on humans and AI in the feedback loop of software development.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "DevTalk@TK meetup in Hamburg where Eberhard Wolff speaks on humans and AI in the feedback loop of software development.",
+    "blurb_de": "DevTalk@TK-Meetup in Hamburg: Eberhard Wolff spricht über Mensch und KI im Feedback-Loop der Softwareentwicklung."
+  },
+  {
+    "id": "unconference-engineering-ai-together-12-berlin-2026",
+    "title": "UNCONFERENCE: Engineering AI Together #12",
+    "date": "2026-11-23",
+    "time": "18:00–21:00",
+    "city": "Berlin",
+    "venue": "Merantix AI Campus, Berlin",
+    "format": "Meetup",
+    "topics": [
+      "AI and ML engineering",
+      "Unconference"
+    ],
+    "organiser": "Merantix Aicampus",
+    "cost": "Not listed",
+    "url": "https://luma.com/unconference_12",
+    "source": "hackevents.net",
+    "blurb": "Berlin unconference at Merantix AI Campus for software engineers and AI/ML practitioners, with sessions proposed by participants.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Berlin unconference at Merantix AI Campus for software engineers and AI/ML practitioners, with sessions proposed by participants.",
+    "blurb_de": "Unconference im Merantix AI Campus Berlin für Softwareentwickelnde und Praktizierende aus KI und ML. Die Sessions schlagen die Teilnehmenden vor."
   }
 ]

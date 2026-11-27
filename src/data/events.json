@@ -1,110 +1,5 @@
 [
   {
-    "id": "build-boldly-fly-responsibly-ai-stories-from-women-in-tech-hamburg-2026",
-    "title": "Build Boldly, Fly Responsibly: AI Stories from Women in Tech",
-    "date": "2026-11-23",
-    "time": "18:00–21:00",
-    "city": "Hamburg",
-    "venue": "Am Sandtorkai 27, Hamburg",
-    "format": "Meetup",
-    "topics": [
-      "AI in business",
-      "Women in tech"
-    ],
-    "organiser": "Women Techmakers",
-    "cost": "Free",
-    "url": "https://www.meetup.com/womentechmakershamburg/events/317282660/",
-    "source": "Meetup",
-    "blurb": "Women Techmakers meetup in Hamburg with talks on how AI is transforming businesses, from SMEs to aerospace; open to everyone.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "Women Techmakers meetup in Hamburg with talks on how AI is transforming businesses, from SMEs to aerospace; open to everyone.",
-    "blurb_de": "Women-Techmakers-Meetup in Hamburg mit Vorträgen darüber, wie KI Unternehmen verändert, von KMU bis zur Luft- und Raumfahrt. Offen für alle."
-  },
-  {
-    "id": "future-of-software-hamburg-2026",
-    "title": "Future of Software",
-    "date": "2026-11-23",
-    "time": "18:00–22:00",
-    "city": "Hamburg",
-    "venue": "Hongkongstraße 2, Hamburg",
-    "format": "Meetup",
-    "topics": [
-      "Coding agents",
-      "AI in software development"
-    ],
-    "organiser": "Agentic Coding Meetup Hamburg",
-    "cost": "Not listed",
-    "url": "https://luma.com/u93cveoa",
-    "source": "Luma",
-    "blurb": "Hamburg meetup for companies that build their own software, on how coding agents change teams, processes and security.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "Hamburg meetup for companies that build their own software, on how coding agents change teams, processes and security.",
-    "blurb_de": "Hamburger Meetup für Unternehmen, die eigene Software entwickeln: wie Coding-Agenten Teams, Prozesse und Sicherheit verändern."
-  },
-  {
-    "id": "ki-journey-das-programm-fur-skalierbare-ki-start-ups-modul-2-berlin-2026",
-    "title": "KI-Journey: Das Programm für skalierbare KI-Start-ups. Modul 2: KI Resilience Day",
-    "date": "2026-11-23",
-    "time": "16:00–22:00",
-    "city": "Berlin",
-    "venue": "Berlin",
-    "format": "Workshop",
-    "topics": [
-      "AI startups",
-      "B2B AI"
-    ],
-    "organiser": "LOVEDIS",
-    "cost": "Not listed",
-    "url": "https://starthub-hessen.de/de/events/ki-journey-das-programm-f%C3%BCr-skalierbare-ki-start-ups-modul-2-ki-resilience-day/",
-    "source": "hackevents.net",
-    "blurb": "Second module of the KI Journey programme for AI startups, a day on making AI products fit for B2B use, technically, legally and securely.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "Second module of the KI Journey programme for AI startups, a day on making AI products fit for B2B use, technically, legally and securely.",
-    "blurb_de": "Zweites Modul des KI-Journey-Programms für KI-Start-ups: ein Tag darüber, wie KI-Produkte technisch, rechtlich und sicher für den B2B-Einsatz werden."
-  },
-  {
-    "id": "menschen-und-ki-im-feedback-loop-der-softwareentwicklung-hamburg-2026",
-    "title": "Menschen und KI im Feedback-Loop der Softwareentwicklung",
-    "date": "2026-11-23",
-    "time": "18:00–21:00",
-    "city": "Hamburg",
-    "venue": "Bramfelder Str. 140, Bramfelder Str. 140",
-    "format": "Meetup",
-    "topics": [
-      "AI in software development",
-      "Feedback loops"
-    ],
-    "organiser": "DevTalk@TK",
-    "cost": "Free",
-    "url": "https://www.meetup.com/devtalk-tk/events/316564208/",
-    "source": "Meetup",
-    "blurb": "DevTalk@TK meetup in Hamburg where Eberhard Wolff speaks on humans and AI in the feedback loop of software development.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "DevTalk@TK meetup in Hamburg where Eberhard Wolff speaks on humans and AI in the feedback loop of software development.",
-    "blurb_de": "DevTalk@TK-Meetup in Hamburg: Eberhard Wolff spricht über Mensch und KI im Feedback-Loop der Softwareentwicklung."
-  },
-  {
-    "id": "unconference-engineering-ai-together-12-berlin-2026",
-    "title": "UNCONFERENCE: Engineering AI Together #12",
-    "date": "2026-11-23",
-    "time": "18:00–21:00",
-    "city": "Berlin",
-    "venue": "Merantix AI Campus, Berlin",
-    "format": "Meetup",
-    "topics": [
-      "AI and ML engineering",
-      "Unconference"
-    ],
-    "organiser": "Merantix Aicampus",
-    "cost": "Not listed",
-    "url": "https://luma.com/unconference_12",
-    "source": "hackevents.net",
-    "blurb": "Berlin unconference at Merantix AI Campus for software engineers and AI/ML practitioners, with sessions proposed by participants.",
-    "firstSeen": "2026-11-20",
-    "blurb_en": "Berlin unconference at Merantix AI Campus for software engineers and AI/ML practitioners, with sessions proposed by participants.",
-    "blurb_de": "Unconference im Merantix AI Campus Berlin für Softwareentwickelnde und Praktizierende aus KI und ML. Die Sessions schlagen die Teilnehmenden vor."
-  },
-  {
     "id": "4th-hackathon-pmrexpo-2026-ai-tech-innovation-koln-cologne-2026",
     "title": "4th Hackathon@PMRExpo 2026 | AI, Tech & Innovation – Köln",
     "date": "2026-11-24",
@@ -1543,6 +1438,27 @@
     "blurb_de": "KI-Bühne bei der ITCS in Frankfurt, ausgerichtet vom Artificial Intelligence Meetup Frankfurt, mit praxisnahen KI-Einblicken für alle Niveaus."
   },
   {
+    "id": "year-end-frankfurt-ai-safety-meetup-frankfurt-2026",
+    "title": "Year-End Frankfurt AI Safety Meetup",
+    "date": "2026-11-27",
+    "time": "18:00–20:00",
+    "city": "Frankfurt",
+    "venue": "Lilium-Restaurant, Leipziger Str. 4, 60487 Frankfurt am Main, Germany",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "Community meetup"
+    ],
+    "organiser": "Frankfurt AI Safety",
+    "cost": "Free",
+    "url": "https://www.meetup.com/frankfurt-ai-safety/events/317473381/",
+    "source": "Meetup",
+    "blurb": "Year-end get-together of the Frankfurt AI Safety group to mark its first year, with drinks and food.",
+    "blurb_en": "Year-end get-together of the Frankfurt AI Safety group to mark its first year, with drinks and food.",
+    "blurb_de": "Jahresabschlusstreffen der Gruppe Frankfurt AI Safety zum ersten Jahr des Bestehens, mit Getränken und Essen.",
+    "firstSeen": "2026-11-27"
+  },
+  {
     "id": "agents-dragons-once-upon-agentic-ai-guided-hands-on-workshop-munich-2026",
     "title": "Agents & Dragons: Once Upon Agentic AI (guided hands-on workshop)",
     "date": "2026-11-28",
@@ -2605,6 +2521,27 @@
     "firstSeen": "2026-11-24"
   },
   {
+    "id": "ai-social-club-munich-munich-2026",
+    "title": "AI Social Club: Munich",
+    "date": "2026-12-03",
+    "time": "16:30–20:00",
+    "city": "Munich",
+    "venue": "25hours Hotel The Royal Bavarian, Bahnhofpl. 1, München-Ludwigsvorstadt-Isarvorstadt",
+    "format": "Networking",
+    "topics": [
+      "AI community",
+      "Networking"
+    ],
+    "organiser": "Vercel Events",
+    "cost": "Not listed",
+    "url": "https://luma.com/vercel-ai-social-club-munich",
+    "source": "Luma",
+    "blurb": "A networking evening for the AI community in Munich, hosted by Vercel Events.",
+    "blurb_en": "A networking evening for the AI community in Munich, hosted by Vercel Events.",
+    "blurb_de": "Ein Netzwerkabend für die KI-Community in München, veranstaltet von Vercel Events.",
+    "firstSeen": "2026-11-27"
+  },
+  {
     "id": "ai-nudge-hands-on-ki-gestalten-dusseldorf-2026",
     "title": "ai/nudge – hands-on KI gestalten",
     "date": "2026-12-03",
@@ -3271,6 +3208,28 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "A Hamburg evening for creators to see ElevenLabs music, voice and sound tools in showcases, then make something in small groups.",
     "blurb_de": "Ein Abend in Hamburg für Kreative: Musik-, Stimm- und Klangwerkzeuge von ElevenLabs werden in Showcases vorgestellt, danach entstehen in kleinen Gruppen eigene Arbeiten."
+  },
+  {
+    "id": "agents-dragons-once-upon-agentic-ai-workshop-stuttgart-2026",
+    "title": "Agents & Dragons: Once Upon Agentic AI Workshop",
+    "date": "2026-12-08",
+    "time": "18:00–21:00",
+    "city": "Stuttgart",
+    "venue": "Zoi, Stuttgart",
+    "format": "Workshop",
+    "topics": [
+      "Agentic AI",
+      "MCP",
+      "Strands Agents"
+    ],
+    "organiser": "AWS UserGroup Stuttgart",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/aws-usergroup-stuttgart/events/317580004/",
+    "source": "Meetup",
+    "blurb": "A hands-on workshop in which participants build an AI game master, a multi-agent system, using Strands Agents and MCP.",
+    "blurb_en": "A hands-on workshop in which participants build an AI game master, a multi-agent system, using Strands Agents and MCP.",
+    "blurb_de": "Praxisworkshop, in dem ein eigener KI-Spielleiter entsteht, ein Multi-Agenten-System mit Strands Agents und MCP.",
+    "firstSeen": "2026-11-27"
   },
   {
     "id": "aws-user-group-berlin-session-december-2026-berlin-2026",
@@ -4103,6 +4062,27 @@
     "blurb_de": "Fünfte Sitzung der Expertengruppe KI-Infrastruktur zur Sicherheit der Infrastruktur, mit kurzen Impulsen aus der Praxis; die Gruppe wechselt in Berlin zwischen Online- und Präsenztreffen."
   },
   {
+    "id": "ki-robotik-und-wir-10-jahre-cyber-valley-stuttgart-2026",
+    "title": "KI! Robotik! Und wir? — 10 Jahre Cyber Valley",
+    "date": "2026-12-15",
+    "city": "Stuttgart",
+    "venue": "Landesmuseum Württemberg, Altes Schloss, Schillerplatz 6, 70173 Stuttgart",
+    "format": "Conference",
+    "topics": [
+      "AI and society",
+      "Robotics",
+      "Public discussion"
+    ],
+    "organiser": "Not listed",
+    "cost": "Not listed",
+    "url": "https://aieventlist.ai/events/ki-robotik-und-wir-cyber-valley-stuttgart-2026/",
+    "source": "aieventlist.ai",
+    "blurb": "A public discussion evening marking ten years of Cyber Valley, on AI, robotics and their effect on everyday life, with speakers from science, politics and education.",
+    "blurb_en": "A public discussion evening marking ten years of Cyber Valley, on AI, robotics and their effect on everyday life, with speakers from science, politics and education.",
+    "blurb_de": "Öffentlicher Diskussionsabend zu zehn Jahren Cyber Valley über KI, Robotik und ihre Wirkung auf Alltag und Gesellschaft, mit Stimmen aus Wissenschaft, Politik und Bildung.",
+    "firstSeen": "2026-11-27"
+  },
+  {
     "id": "nrw-hub-battle-ki-spezial-munster-2026",
     "title": "NRW Hub-Battle KI-Spezial",
     "date": "2026-12-15",
@@ -4164,6 +4144,27 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "A talk by Max Hellrigel-Holderbaum on instrumental convergence and goals in AI systems, held at Möbelkollektiv in Nuremberg.",
     "blurb_de": "Ein Vortrag von Max Hellrigel-Holderbaum über instrumentelle Konvergenz und Ziele in KI-Systemen, im Möbelkollektiv in Nürnberg."
+  },
+  {
+    "id": "pydata-berlin-2026-december-meetup-berlin-2026",
+    "title": "PyData Berlin 2026 December Meetup",
+    "date": "2026-12-16",
+    "time": "18:00–21:00",
+    "city": "Berlin",
+    "format": "Meetup",
+    "topics": [
+      "Python",
+      "Data science",
+      "PyData"
+    ],
+    "organiser": "PyData Berlin",
+    "cost": "Not listed",
+    "url": "https://www.meetup.com/pydata-berlin/events/317605292/",
+    "source": "Meetup",
+    "blurb": "The December meetup of the PyData Berlin community on Python tools for data and data science.",
+    "blurb_en": "The December meetup of the PyData Berlin community on Python tools for data and data science.",
+    "blurb_de": "Das Dezember-Treffen der PyData-Berlin-Community zu Python-Werkzeugen für Daten und Data Science.",
+    "firstSeen": "2026-11-27"
   },
   {
     "id": "select-gift-from-under-the-tree-where-behaviour-good-berlin-2026",

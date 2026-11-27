@@ -1196,6 +1196,97 @@
 			"trust": "noisy",
 			"icsOk": true,
 			"checked": "2026-11-25"
+		},
+		"aws-usergroup-stuttgart": {
+			"firstSeen": "2026-11-27",
+			"via": "hackevents-ai",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"frankfurt-ai-safety": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"wordpress-meetup-dortmund": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"hamburg-c-net-meetup": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"c-user-gruppe-aachen": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"rustcologne": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"graphdb-dach": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"dusseldorf-wordpress-meetup": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"lorawan-leipzig-usergroup": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"tech-kalinen-muensterland": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"identibeer-karlsruhe": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"it-agile-community-events": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
+		},
+		"grafana-friends-nuremberg": {
+			"firstSeen": "2026-11-27",
+			"via": "brainberg",
+			"trust": "noisy",
+			"icsOk": true,
+			"checked": "2026-11-27"
 		}
 	}
 }

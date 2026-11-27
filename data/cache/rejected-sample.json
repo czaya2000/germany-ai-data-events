@@ -1,15 +1,6 @@
 {
 	"dedupeMerges": [
 		{
-			"kept": "AWS UG Frankfurt with Grafana UG: Keycloak SLIs & Traffic Data in Grafana",
-			"merged": "Grafana & Friends Frankfurt: Keycloak SLIs & Traffic Data in Grafana",
-			"date": "2026-11-26",
-			"sources": [
-				"meetup:fra_aws",
-				"meetup:grafana-friends-frankfurt"
-			]
-		},
-		{
 			"kept": "IBM Bob Coding Watch Party in Berlin & Online",
 			"merged": "IBM Bob Coding Watch Party in Berlin",
 			"date": "2026-12-01",
@@ -82,21 +73,48 @@
 			]
 		},
 		{
-			"kept": "AI Builders Dubai - Nov 26",
-			"merged": "AI Builders Vienna - Bring Your Own Laptop Edition - Nov 26",
-			"date": "2026-11-26",
+			"kept": "AI hackathon @ reply",
+			"merged": "AI Hackathon",
+			"date": "2026-12-07",
 			"sources": [
-				"meetup:aibuildersclub",
-				"meetup:aibuildersclub"
+				"meetup:maikers-ai-community",
+				"meetup:graphdb-dach"
 			]
 		},
 		{
-			"kept": "AI Builders Dubai - Nov 26",
-			"merged": "AI Builders Barcelona - Bring Your Own Laptop Edition - Nov 26",
-			"date": "2026-11-26",
+			"kept": "#0XX Bastelrunde - Event Driven Development",
+			"merged": "#032 Bastelrunde - Event Driven Development",
+			"date": "2026-12-08",
 			"sources": [
-				"meetup:aibuildersclub",
-				"meetup:aibuildersclub"
+				"meetup:lorawan-leipzig-usergroup",
+				"meetup:lorawan-leipzig-usergroup"
+			]
+		},
+		{
+			"kept": "#0XX Bastelrunde - Event Driven Development",
+			"merged": "#032 Bastelrunde - Event Driven Development",
+			"date": "2026-12-08",
+			"sources": [
+				"meetup:lorawan-leipzig-usergroup",
+				"meetup:lorawan-leipzig-usergroup"
+			]
+		},
+		{
+			"kept": "#032 Bastelrunde - Event Driven Development",
+			"merged": "#0XX Bastelrunde - Event Driven Development",
+			"date": "2027-01-12",
+			"sources": [
+				"meetup:lorawan-leipzig-usergroup",
+				"meetup:lorawan-leipzig-usergroup"
+			]
+		},
+		{
+			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
+			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
+			"date": "2026-11-27",
+			"sources": [
+				"meetup:ai-beavers",
+				"luma-hamburg"
 			]
 		},
 		{
@@ -154,15 +172,6 @@
 			]
 		},
 		{
-			"kept": "AWS UG Frankfurt with Grafana UG: Keycloak SLIs & Traffic Data in Grafana",
-			"merged": "Grafana & Friends Frankfurt: Keycloak SLIs & Traffic Data in Grafana",
-			"date": "2026-11-26",
-			"sources": [
-				"meetup:fra_aws",
-				"brainberg"
-			]
-		},
-		{
 			"kept": "AI Coding Summit Berlin",
 			"merged": "AI Coding Summit - Berlin Edition",
 			"date": "2026-12-04",
@@ -172,12 +181,30 @@
 			]
 		},
 		{
+			"kept": "AI hackathon @ reply",
+			"merged": "AI Hackathon",
+			"date": "2026-12-07",
+			"sources": [
+				"meetup:maikers-ai-community",
+				"brainberg"
+			]
+		},
+		{
 			"kept": "ITCS Frankfurt - AI Stage",
 			"merged": "ITCS Frankfurt 2026 — AI Stage (Artificial Intelligence Meetup Frankfurt)",
 			"date": "2026-11-27",
 			"sources": [
 				"meetup:artificial-intelligence-meetup-frankfurt",
 				"aieventlist-frankfurt"
+			]
+		},
+		{
+			"kept": "NAICE 27",
+			"merged": "NAICE 27 — Next Level AI Conference Europe",
+			"date": "2027-02-23",
+			"sources": [
+				"agentconfs",
+				"aieventlist-munich"
 			]
 		},
 		{
@@ -205,6 +232,15 @@
 			"sources": [
 				"hackevents-ai",
 				"aieventlist-cologne"
+			]
+		},
+		{
+			"kept": "#0XX Bastelrunde - Event Driven Development",
+			"merged": "#032 Bastelrunde - Event Driven Development",
+			"date": "2026-12-08",
+			"sources": [
+				"meetup:lorawan-leipzig-usergroup",
+				"brainberg"
 			]
 		},
 		{
@@ -385,15 +421,6 @@
 			"sources": [
 				"meetup:ai-beavers",
 				"hackevents-ai"
-			]
-		},
-		{
-			"kept": "AI Nights | INSPIRE #06 - Anniversary!",
-			"merged": "AI Nights Nürnberg | INSPIRE #06 – Anniversary!",
-			"date": "2026-11-26",
-			"sources": [
-				"meetup:ai-nights-nurnberg",
-				"aieventlist-europe"
 			]
 		},
 		{
