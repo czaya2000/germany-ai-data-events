@@ -1,440 +1,7 @@
 {
 	"version": 1,
-	"lastMissingCheck": "2026-11-27",
+	"lastMissingCheck": "2026-11-28",
 	"entries": {
-		"u:ai-engineering-summit.de": {
-			"decision": "accepted",
-			"eventId": "ai-engineering-summit-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"confstech",
-				"hackevents-ai",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"t:ai engineering summit|2026-11-16": {
-			"decision": "accepted",
-			"eventId": "ai-engineering-summit-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"confstech",
-				"hackevents-ai",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/ai-engineering-summit-2026-67gmc18q": {
-			"decision": "accepted",
-			"eventId": "ai-engineering-summit-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"confstech",
-				"hackevents-ai",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:aieventlist.ai/events/ai-engineering-summit-berlin-2026": {
-			"decision": "accepted",
-			"eventId": "ai-engineering-summit-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"confstech",
-				"hackevents-ai",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:agentconfs.com/events/api-conference-berlin-2026": {
-			"decision": "accepted",
-			"eventId": "api-conference-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:api conference|2026-11-16": {
-			"decision": "accepted",
-			"eventId": "api-conference-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:apiconference.net/berlin": {
-			"decision": "accepted",
-			"eventId": "api-conference-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/api-conference-2026-xdxft8dg": {
-			"decision": "accepted",
-			"eventId": "api-conference-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:aieventlist.ai/events/ml-conference-berlin-2026": {
-			"decision": "accepted",
-			"eventId": "ml-conference-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"t:ml conference|2026-11-16": {
-			"decision": "accepted",
-			"eventId": "ml-conference-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:mlconference.ai/berlin": {
-			"decision": "accepted",
-			"eventId": "mlcon-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"agentconfs",
-				"hackevents-ai",
-				"hackevents-data",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"t:mlcon|2026-11-16": {
-			"decision": "accepted",
-			"eventId": "mlcon-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"agentconfs",
-				"hackevents-ai",
-				"hackevents-data",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:agentconfs.com/events/mlcon-berlin-2026": {
-			"decision": "accepted",
-			"eventId": "mlcon-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"agentconfs",
-				"hackevents-ai",
-				"hackevents-data",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/mlconf-berlin-2026-aj9g7bj6": {
-			"decision": "accepted",
-			"eventId": "mlcon-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"agentconfs",
-				"hackevents-ai",
-				"hackevents-data",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"t:mlconf|2026-11-16": {
-			"decision": "accepted",
-			"eventId": "mlcon-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"agentconfs",
-				"hackevents-ai",
-				"hackevents-data",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:aieventlist.ai/events/mlcon-berlin-2026": {
-			"decision": "accepted",
-			"eventId": "mlcon-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"deutschlandki",
-				"agentconfs",
-				"hackevents-ai",
-				"hackevents-data",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:vibekode.it/berlin": {
-			"decision": "accepted",
-			"eventId": "vibe-kode-2026-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/vibe-kode-2026-jih8bjyw": {
-			"decision": "accepted",
-			"eventId": "vibe-kode-2026-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:vibe kode|2026-11-16": {
-			"decision": "accepted",
-			"eventId": "vibe-kode-2026-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:agentconfs.com/events/vibekode-berlin-2026": {
-			"decision": "accepted",
-			"eventId": "vibekode-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"t:vibekode|2026-11-16": {
-			"decision": "accepted",
-			"eventId": "vibekode-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:aieventlist.ai/events/vibekode-berlin-2026": {
-			"decision": "accepted",
-			"eventId": "vibekode-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs",
-				"aieventlist-berlin",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:hessian.ai/event/lab2market-ai-x-cyber": {
-			"decision": "accepted",
-			"eventId": "lab2market-ai-x-cyber-frankfurt-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hessian-ai",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:lab2market ai x cyber|2026-11-19": {
-			"decision": "accepted",
-			"eventId": "lab2market-ai-x-cyber-frankfurt-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hessian-ai",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/lab2market-ai-x-cyber-y3s6akbb": {
-			"decision": "accepted",
-			"eventId": "lab2market-ai-x-cyber-frankfurt-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hessian-ai",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:luma.com/8l89hq5n": {
-			"decision": "accepted",
-			"eventId": "ai-matcha-fruhstucksevent-hamburg-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:ai matcha fruhstucksevent|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "ai-matcha-fruhstucksevent-hamburg-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/ai-matcha-fr-hst-cksevent-c2f60nl5": {
-			"decision": "accepted",
-			"eventId": "ai-matcha-fruhstucksevent-hamburg-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:luma.com/ber-nov20-hday": {
-			"decision": "accepted",
-			"eventId": "ai-builders-commit-hack-day-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"brainberg"
-			],
-			"missingDays": 0
-		},
-		"t:ai builders commit hack day|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "ai-builders-commit-hack-day-berlin-2026-berlin-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"brainberg"
-			],
-			"missingDays": 0
-		},
-		"u:startplatz.de/event/ai-coding-hackathon-november-2026-11-20": {
-			"decision": "accepted",
-			"eventId": "ai-coding-hackathon-november-2026-koln-cologne-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai",
-				"aieventlist-cologne",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/ai-coding-hackathon-november-2026-k-ln-3ad2nup6": {
-			"decision": "accepted",
-			"eventId": "ai-coding-hackathon-november-2026-koln-cologne-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai",
-				"aieventlist-cologne",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"t:ai coding hackathon november|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "ai-coding-hackathon-november-2026-koln-cologne-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai",
-				"aieventlist-cologne",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
 		"u:aieventlist.ai/events/ai-coding-hackathon-koeln-2026-11": {
 			"decision": "accepted",
 			"eventId": "ai-coding-hackathon-november-2026-koln-cologne-2026",
@@ -445,191 +12,6 @@
 				"hackevents-ai",
 				"aieventlist-cologne",
 				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"t:ai coding hackathon november startplatz|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "ai-coding-hackathon-november-2026-koln-cologne-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai",
-				"aieventlist-cologne",
-				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:meetup.com/ai-transformation-camp/events/315989150": {
-			"decision": "accepted",
-			"eventId": "ai-transformation-camp-munchen-separates-ticket-erforderlich-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-transformation-camp",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:ai transformation camp separates ticket erforderlich|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "ai-transformation-camp-munchen-separates-ticket-erforderlich-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-transformation-camp",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/ai-transformation-camp-m-nchen-separates-ticket-erforderlich-b4i7gnv2": {
-			"decision": "accepted",
-			"eventId": "ai-transformation-camp-munchen-separates-ticket-erforderlich-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-transformation-camp",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:meetup.com/bochum-meetup-and-explore-the-community-meetup-group/events/316707680": {
-			"decision": "accepted",
-			"eventId": "beyond-coding-building-with-ai-bochum-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:bochum-meetup-and-explore-the-community-meetup-group",
-				"brainberg"
-			],
-			"missingDays": 0
-		},
-		"t:beyond coding building ai|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "beyond-coding-building-with-ai-bochum-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:bochum-meetup-and-explore-the-community-meetup-group",
-				"brainberg"
-			],
-			"missingDays": 0
-		},
-		"u:lmu.de/de/newsroom/veranstaltungskalender/veranstaltung/career-service-ki-case-workshop-mit-gema-b8162b34.html": {
-			"decision": "accepted",
-			"eventId": "career-service-ki-case-workshop-mit-gema-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"lmu"
-			],
-			"missingDays": 0
-		},
-		"t:career service ki case workshop gema|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "career-service-ki-case-workshop-mit-gema-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"lmu"
-			],
-			"missingDays": 0
-		},
-		"u:mcml.ai/events/2026-11-20-certificate-course-responsible-ai": {
-			"decision": "accepted",
-			"eventId": "certificate-course-on-responsible-ai-part-3-online-de-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"mcml"
-			],
-			"missingDays": 0
-		},
-		"t:certificate course on responsible ai part 3|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "certificate-course-on-responsible-ai-part-3-online-de-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"mcml"
-			],
-			"missingDays": 0
-		},
-		"u:meetup.com/prompting-lab/events/316706442": {
-			"decision": "accepted",
-			"eventId": "die-ki-werkstatt-offenes-prompting-treffen-fur-einsteiger-un-mainz-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:prompting-lab",
-				"brainberg"
-			],
-			"missingDays": 0
-		},
-		"t:ki werkstatt offenes prompting treffen einsteiger profis|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "die-ki-werkstatt-offenes-prompting-treffen-fur-einsteiger-un-mainz-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:prompting-lab",
-				"brainberg"
-			],
-			"missingDays": 0
-		},
-		"u:mcml.ai/events/2026-11-20-munich-ai-lecture-leofante": {
-			"decision": "accepted",
-			"eventId": "from-concepts-to-certificates-towards-controllable-generativ-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"mcml"
-			],
-			"missingDays": 0
-		},
-		"t:from concepts certificates towards controllable generative models|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "from-concepts-to-certificates-towards-controllable-generativ-munich-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"mcml"
-			],
-			"missingDays": 0
-		},
-		"u:agentconfs.com/events/vibe-hackathon-cologne-2026": {
-			"decision": "accepted",
-			"eventId": "vibe-hackathon-cologne-cologne-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs"
-			],
-			"missingDays": 0
-		},
-		"t:vibe hackathon|2026-11-20": {
-			"decision": "accepted",
-			"eventId": "vibe-hackathon-cologne-cologne-2026",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"agentconfs"
 			],
 			"missingDays": 0
 		},
@@ -2613,7 +1995,7 @@
 			"decision": "accepted",
 			"eventId": "ai-thon-2-0-cgi-ai-hackathon-dusseldorf-dusseldorf-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-28",
 			"sources": [
 				"aieventlist-europe"
@@ -2635,7 +2017,7 @@
 			"decision": "accepted",
 			"eventId": "caces-2026-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-29",
 			"sources": [
 				"hackevents-ai"
@@ -2770,7 +2152,7 @@
 			"decision": "accepted",
 			"eventId": "the-scene-002-art-x-ai-hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-28",
 			"sources": [
 				"hackevents-ai"
@@ -2803,7 +2185,7 @@
 			"decision": "accepted",
 			"eventId": "ai-agents-in-action-brunch-build-at-extrablatt-bockenheimer--frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-29",
 			"sources": [
 				"meetup:ai-agenten-frankfurt",
@@ -2842,7 +2224,7 @@
 			"decision": "accepted",
 			"eventId": "physical-ai-robotics-and-deep-tech-walk-talk-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-29",
 			"sources": [
 				"meetup:maikers-ai-community",
@@ -2881,7 +2263,7 @@
 			"decision": "accepted",
 			"eventId": "agi-strategy-self-study-week-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"hackevents-ai"
@@ -2914,7 +2296,7 @@
 			"decision": "accepted",
 			"eventId": "ai-monday-x-planetarium-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-30",
 			"sources": [
 				"brainberg"
@@ -2936,7 +2318,7 @@
 			"decision": "accepted",
 			"eventId": "aws-wug-berlin-event-beyond-the-prompt-building-deploying-go-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-30",
 			"sources": [
 				"meetup:berlin-amazon-web-services-meetup-group",
@@ -2960,7 +2342,7 @@
 			"decision": "accepted",
 			"eventId": "berlin-health-ai-night-sovereign-ai-for-health-data-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-30",
 			"sources": [
 				"luma-berlin"
@@ -2982,7 +2364,7 @@
 			"decision": "accepted",
 			"eventId": "datamonster-camp-2026-konigstein-im-taunus-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"brainberg"
@@ -3004,7 +2386,7 @@
 			"decision": "accepted",
 			"eventId": "devopscon-munich-2026-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"agentconfs"
@@ -3026,7 +2408,7 @@
 			"decision": "accepted",
 			"eventId": "hamburg-claude-code-build-day-hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-30",
 			"sources": [
 				"luma-hamburg",
@@ -3062,7 +2444,7 @@
 			"decision": "accepted",
 			"eventId": "ki-ringvorlesung-nurnberg-04-ethik-bias-und-recht-ki-regulie-nuremberg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-30",
 			"sources": [
 				"aieventlist-europe"
@@ -3084,7 +2466,7 @@
 			"decision": "accepted",
 			"eventId": "online-machine-learning-school-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-30",
 			"sources": [
 				"mcml"
@@ -3106,7 +2488,7 @@
 			"decision": "accepted",
 			"eventId": "palatina-cyberforum-startup-pitch-night-kunstliche-intellige-heidelberg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-30",
 			"sources": [
 				"hackevents-ai"
@@ -3139,7 +2521,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-ai-treffen-im-dezember-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:agentic-ai-frankfurt",
@@ -3192,8 +2574,8 @@
 			"decision": "accepted",
 			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
-			"end": "2026-11-27",
+			"lastSeen": "2026-11-28",
+			"end": "2027-03-05",
 			"sources": [
 				"hackevents-ai",
 				"aieventlist-cologne",
@@ -3227,7 +2609,7 @@
 			"decision": "accepted",
 			"eventId": "ai-series-imperial-college-london-jonathan-schwarz-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:bliss-speaker-series",
@@ -3266,7 +2648,7 @@
 			"decision": "accepted",
 			"eventId": "bliss-ai-speaker-series-sovereign-ai-from-a-perspective-of-m-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai"
@@ -3299,7 +2681,7 @@
 			"decision": "accepted",
 			"eventId": "bob-dach-community-gathering-coding-watch-party-frankfurt-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai"
@@ -3372,7 +2754,7 @@
 			"decision": "accepted",
 			"eventId": "bob-tv-episode-4-why-generic-ai-fails-at-mainframe-scale-and-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:ibmpoweraiberlin",
@@ -3452,7 +2834,7 @@
 			"decision": "accepted",
 			"eventId": "bob-tv-episode-4-why-generic-ai-fails-at-mainframe-scale-and-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:ibmpoweraiberlin",
@@ -3468,7 +2850,7 @@
 			"decision": "accepted",
 			"eventId": "bob-tv-episode-4-why-generic-ai-fails-at-mainframe-scale-and-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:ibmpoweraiberlin",
@@ -3484,7 +2866,7 @@
 			"decision": "accepted",
 			"eventId": "digital-ai-cafe-by-hessian-ai-service-center-every-1st-and-3-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hessian-ai"
@@ -3506,7 +2888,7 @@
 			"decision": "accepted",
 			"eventId": "enabling-sandboxed-agents-oh-my-agentic-coder-karlsruhe-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:ai-cloud-innovation-karlsruhe",
@@ -3530,7 +2912,7 @@
 			"decision": "accepted",
 			"eventId": "ibm-bob-coding-watch-party-in-berlin-online-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:ibmpoweraiberlin",
@@ -3722,7 +3104,7 @@
 			"decision": "accepted",
 			"eventId": "ibm-bob-coding-watch-party-in-ehningen-online-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai",
@@ -3735,7 +3117,7 @@
 			"decision": "accepted",
 			"eventId": "ibm-bob-coding-watch-party-in-koln-online-cologne-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai",
@@ -3810,7 +3192,7 @@
 			"decision": "accepted",
 			"eventId": "kassel-ai-und-data-science-meetup-kassel-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:kassel-data-science-meetup",
@@ -3836,7 +3218,7 @@
 			"decision": "accepted",
 			"eventId": "ki-arena-2026-dusseldorf-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"deutschlandki"
@@ -3858,7 +3240,7 @@
 			"decision": "accepted",
 			"eventId": "lz-ai-day-2026-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"deutschlandki",
@@ -3894,7 +3276,7 @@
 			"decision": "accepted",
 			"eventId": "scads-ai-meetup-leipzig-beyond-llms-new-approaches-to-founda-leipzig-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"aieventlist-europe"
@@ -3916,7 +3298,7 @@
 			"decision": "accepted",
 			"eventId": "wordpress-meetup-leipzig-70-ki-im-wordpress-alltag-leipzig-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:leipzig-wordpress-meetup",
@@ -3940,7 +3322,7 @@
 			"decision": "accepted",
 			"eventId": "7th-frankfurt-meetup-prompts-are-not-controls-governing-agen-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"meetup:the-test-tribe-frankfurt-meetup",
@@ -3964,7 +3346,7 @@
 			"decision": "accepted",
 			"eventId": "ai-hpi-conference-2026-potsdam-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"deutschlandki",
@@ -4000,7 +3382,7 @@
 			"decision": "accepted",
 			"eventId": "cio-community-executive-summit-dach-region-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"brainberg"
@@ -4022,7 +3404,7 @@
 			"decision": "accepted",
 			"eventId": "msug-year-closing-event-26-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"meetup:munich-snowflake-data-cloud-meetup-group",
@@ -4064,7 +3446,7 @@
 			"decision": "accepted",
 			"eventId": "vibe-coding-cologne-let-s-learn-ai-assisted-coding-cologne-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"meetup:pirateskills",
@@ -4103,7 +3485,7 @@
 			"decision": "accepted",
 			"eventId": "ai-builders-and-databases-munich-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:clickhouse-meetup-munich",
@@ -4167,7 +3549,7 @@
 			"decision": "accepted",
 			"eventId": "ai-hub-community-treffen-nurnberg-christmas-special-nuremberg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"aieventlist-europe"
@@ -4189,7 +3571,7 @@
 			"decision": "accepted",
 			"eventId": "beads-2-realtime-analytics-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:beads-berlin-ecosystem-for-analytics-and-data-systems",
@@ -4213,7 +3595,7 @@
 			"decision": "accepted",
 			"eventId": "dach-ai-data-in-finance-insurance-summit-2026-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"aieventlist-frankfurt"
@@ -4235,7 +3617,7 @@
 			"decision": "accepted",
 			"eventId": "die-zukunft-des-transfers-karlsruhe-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hackevents-ai"
@@ -4268,7 +3650,7 @@
 			"decision": "accepted",
 			"eventId": "dvc-data-ai-lunch-hamburg-x-mas-edition-hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hackevents-ai",
@@ -4304,7 +3686,7 @@
 			"decision": "accepted",
 			"eventId": "engineering-ai-agents-for-prod-where-lambda-microvms-change--hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:awsughh",
@@ -4343,7 +3725,7 @@
 			"decision": "accepted",
 			"eventId": "german-legal-tech-summit-2026-hanover-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"deutschlandki"
@@ -4365,7 +3747,7 @@
 			"decision": "accepted",
 			"eventId": "industrial-ai-night-vol-1-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"luma-munich"
@@ -4387,7 +3769,7 @@
 			"decision": "accepted",
 			"eventId": "ki-meetup-hannover-6-hanover-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"brainberg"
@@ -4409,7 +3791,7 @@
 			"decision": "accepted",
 			"eventId": "ros-industrial-conference-2026-stuttgart-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"agentconfs"
@@ -4431,7 +3813,7 @@
 			"decision": "accepted",
 			"eventId": "the-context-layer-for-ai-knowledge-graphs-semantic-layers-a--heidelberg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:heidelberg-knowledge-graph-ai-hub",
@@ -4455,7 +3837,7 @@
 			"decision": "accepted",
 			"eventId": "the-delta-pitch-ai-edition-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hackevents-ai"
@@ -4488,7 +3870,7 @@
 			"decision": "accepted",
 			"eventId": "webinar-uberblick-beim-dickicht-an-juristischen-vorgaben-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hackevents-ai"
@@ -4521,7 +3903,7 @@
 			"decision": "accepted",
 			"eventId": "your-startup-on-aigude-ai-greater-visibility-new-opportuniti-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hessian-ai"
@@ -4543,7 +3925,7 @@
 			"decision": "accepted",
 			"eventId": "ai-coding-summit-berlin-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"meetup:berlinai",
@@ -4655,7 +4037,7 @@
 			"decision": "accepted",
 			"eventId": "beyond-ai-readiness-architecting-the-intelligent-enterprise--berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"hackevents-ai",
@@ -4694,7 +4076,7 @@
 			"decision": "accepted",
 			"eventId": "langchain-x-hackers-wizards-hackathon-building-with-agent-ha-hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"luma-hamburg",
@@ -4746,7 +4128,7 @@
 			"decision": "accepted",
 			"eventId": "react-day-berlin-build-apps-not-walls-for-the-ai-era-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"meetup:react-berlin-meetup",
@@ -4811,7 +4193,7 @@
 			"decision": "accepted",
 			"eventId": "software-engineering-starter-lab-chatbots-mit-ki-funktionen-leipzig-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"brainberg"
@@ -4833,7 +4215,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-coding-studio-hamburg-2026-2026-12-05",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-05",
 			"sources": [
 				"meetup:ai-beavers",
@@ -4856,7 +4238,7 @@
 			"decision": "accepted",
 			"eventId": "devfest-munich-2026-munich-innovates-ai-cloud-beyond-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-05",
 			"sources": [
 				"meetup:gdg-munich",
@@ -4920,7 +4302,7 @@
 			"decision": "accepted",
 			"eventId": "ai-hackathon-reply-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-07",
 			"sources": [
 				"meetup:maikers-ai-community",
@@ -4961,7 +4343,7 @@
 			"decision": "accepted",
 			"eventId": "brisa-reading-group-09-robostriker-hierarchical-decision-mak-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-07",
 			"sources": [
 				"hackevents-ai"
@@ -4994,7 +4376,7 @@
 			"decision": "accepted",
 			"eventId": "designing-the-exit-ready-tech-stack-invite-only-tech-forum-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-07",
 			"sources": [
 				"hackevents-ai",
@@ -5030,7 +4412,7 @@
 			"decision": "accepted",
 			"eventId": "elevencreative-session-hamburg-hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-07",
 			"sources": [
 				"hackevents-ai"
@@ -5063,7 +4445,7 @@
 			"decision": "accepted",
 			"eventId": "claude-community-house-munchen-2026-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"aieventlist-munich",
@@ -5087,7 +4469,7 @@
 			"decision": "accepted",
 			"eventId": "five2nine-ai-in-banking-meetup-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"luma-frankfurt"
@@ -5109,7 +4491,7 @@
 			"decision": "accepted",
 			"eventId": "monster-meeting-rhein-main-dezember-2026-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"meetup:pass-usergroup-rhein-main",
@@ -5190,7 +4572,7 @@
 			"decision": "accepted",
 			"eventId": "unconference-special-edition-engineering-product-gtm-beyond-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"hackevents-ai",
@@ -5226,7 +4608,7 @@
 			"decision": "accepted",
 			"eventId": "bba-ki-konferenz-2026-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"deutschlandki"
@@ -5248,7 +4630,7 @@
 			"decision": "accepted",
 			"eventId": "coffee-code-10-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"hackevents-ai"
@@ -5281,7 +4663,7 @@
 			"decision": "accepted",
 			"eventId": "kunstliche-intelligenz-in-der-medizintechnik-wie-geht-das-re-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"bwcon",
@@ -5339,7 +4721,7 @@
 			"decision": "accepted",
 			"eventId": "port-of-entry-building-ai-in-hamburg-hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"hackevents-ai"
@@ -5372,7 +4754,7 @@
 			"decision": "accepted",
 			"eventId": "practical-ai-exchange-real-use-cases-failures-best-practices-freiburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"meetup:auditing-ai-beyond-the-prompt",
@@ -5396,7 +4778,7 @@
 			"decision": "accepted",
 			"eventId": "pydata-global-2026-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:pydata-berlin",
@@ -5452,7 +4834,7 @@
 			"decision": "accepted",
 			"eventId": "agents-dragons-workshop-once-upon-agentic-ai-munster-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:aws-usergroup-munsterland",
@@ -5476,7 +4858,7 @@
 			"decision": "accepted",
 			"eventId": "betreute-intelligenz-am-vormittag-freeflow-furth-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:betreute-intelligenz",
@@ -5515,7 +4897,7 @@
 			"decision": "accepted",
 			"eventId": "dec-10-ai-ml-and-computer-vision-meetup-online-de-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:munchen-ai-machine-learning-and-computer-vision-meetup"
@@ -5537,7 +4919,7 @@
 			"decision": "accepted",
 			"eventId": "issue-rein-pull-request-raus-ein-net-erp-gebaut-von-einem-ki-karlsruhe-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:net-user-group-karlsruhe",
@@ -5610,7 +4992,7 @@
 			"decision": "accepted",
 			"eventId": "ki-com-summit-2026-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"aieventlist-munich",
@@ -5634,7 +5016,7 @@
 			"decision": "accepted",
 			"eventId": "ki-com-summit-2026-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-24",
 			"sources": [
 				"aieventlist-munich",
@@ -5658,7 +5040,7 @@
 			"decision": "accepted",
 			"eventId": "prozessautomatisierung-mit-ki-in-3-stunden-zum-ersten-eigene-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:main-valley",
@@ -5694,7 +5076,7 @@
 			"decision": "accepted",
 			"eventId": "tbd-combination-of-several-sessions-konigswinter-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:pass-microsoft-data-platform-usergroup-rheinland",
@@ -5733,7 +5115,7 @@
 			"decision": "accepted",
 			"eventId": "titel-techgarden-2-ki-fur-bim-und-ifc-der-praxistest-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"hackevents-ai"
@@ -5755,7 +5137,7 @@
 			"decision": "accepted",
 			"eventId": "wids-munich-2026-women-in-data-science-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-11",
 			"sources": [
 				"aieventlist-munich",
@@ -5779,7 +5161,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-coding-studio-hamburg-2026-2026-12-13",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-13",
 			"sources": [
 				"hackevents-ai"
@@ -5812,7 +5194,7 @@
 			"decision": "accepted",
 			"eventId": "ai-agents-in-action-brunch-build-at-extrablatt-bockenheimer--frankfurt-2026-2026-12-13",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-13",
 			"sources": [
 				"meetup:ai-agenten-frankfurt",
@@ -5851,7 +5233,7 @@
 			"decision": "accepted",
 			"eventId": "ki-ringvorlesung-nurnberg-05-quantencomputing-und-ki-nuremberg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-14",
 			"sources": [
 				"aieventlist-europe"
@@ -5873,7 +5255,7 @@
 			"decision": "accepted",
 			"eventId": "who-s-listening-levels-of-automation-for-ai-that-hears-stude-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-14",
 			"sources": [
 				"mcml"
@@ -5895,7 +5277,7 @@
 			"decision": "accepted",
 			"eventId": "a-cncf-xmas-present-new-location-unlocked-with-mr-anderson-d-freiburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"meetup:docker-black-forest",
@@ -5919,7 +5301,7 @@
 			"decision": "accepted",
 			"eventId": "ai-builders-monthly-berlin-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"brainberg",
@@ -5943,7 +5325,7 @@
 			"decision": "accepted",
 			"eventId": "ai-series-microsoft-ida-momennejad-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"meetup:bliss-speaker-series",
@@ -6017,7 +5399,7 @@
 			"decision": "accepted",
 			"eventId": "digital-ai-cafe-by-hessian-ai-service-center-every-1st-and-3-online-de-2026-2026-12-15",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"hessian-ai"
@@ -6039,7 +5421,7 @@
 			"decision": "accepted",
 			"eventId": "infrastructure-to-keep-ai-running-5-infrastructure-security-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"hackevents-ai",
@@ -6075,7 +5457,7 @@
 			"decision": "accepted",
 			"eventId": "nrw-hub-battle-ki-spezial-munster-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"hackevents-ai"
@@ -6108,7 +5490,7 @@
 			"decision": "accepted",
 			"eventId": "stuttgart-claude-workshop-stuttgart-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"hackevents-ai",
@@ -6144,7 +5526,7 @@
 			"decision": "accepted",
 			"eventId": "talk-max-hellrigel-holderbaum-about-instrumental-convergence-nuremberg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"hackevents-ai"
@@ -6177,7 +5559,7 @@
 			"decision": "accepted",
 			"eventId": "12-save-the-date-leipzig-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-17",
 			"sources": [
 				"meetup:ai-school-leipzig",
@@ -6216,7 +5598,7 @@
 			"decision": "accepted",
 			"eventId": "40-ccdd-tdd-mit-ki-dortmund-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-17",
 			"sources": [
 				"meetup:ccdd-conciso-coding-dojo-dortmund",
@@ -6240,7 +5622,7 @@
 			"decision": "accepted",
 			"eventId": "bwcon-ki-pioniere-von-der-ki-nutzung-zur-echten-entlastung-i-berlin-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-17",
 			"sources": [
 				"bwcon",
@@ -6276,7 +5658,7 @@
 			"decision": "accepted",
 			"eventId": "ki-party-100-events-betreute-intelligenz-nuremberg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-17",
 			"sources": [
 				"meetup:betreute-intelligenz",
@@ -6312,7 +5694,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-coding-studio-hamburg-2026-2026-12-19",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-19",
 			"sources": [
 				"meetup:ai-beavers"
@@ -6334,7 +5716,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-coding-studio-hamburg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-02",
 			"sources": [
 				"meetup:ai-beavers"
@@ -6356,7 +5738,7 @@
 			"decision": "accepted",
 			"eventId": "vibe-coding-cologne-let-s-learn-ai-assisted-coding-cologne-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-06",
 			"sources": [
 				"meetup:pirateskills",
@@ -6392,7 +5774,7 @@
 			"decision": "accepted",
 			"eventId": "ki-ringvorlesung-nurnberg-06-ki-und-die-arbeitswelt-von-morg-nuremberg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-11",
 			"sources": [
 				"aieventlist-europe"
@@ -6414,7 +5796,7 @@
 			"decision": "accepted",
 			"eventId": "ai-series-ucl-robert-mccarthy-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-12",
 			"sources": [
 				"meetup:bliss-speaker-series",
@@ -6486,7 +5868,7 @@
 			"decision": "accepted",
 			"eventId": "ai-woman-nights-nurnberg-02-live-uber-den-dachern-nuremberg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-12",
 			"sources": [
 				"aieventlist-europe"
@@ -6508,7 +5890,7 @@
 			"decision": "accepted",
 			"eventId": "ki-ist-changemanagement-akzeptanz-fur-ki-schaffen-und-mitarb-warendorf-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-14",
 			"sources": [
 				"hackevents-ai",
@@ -6542,7 +5924,7 @@
 			"decision": "accepted",
 			"eventId": "dld-munich-2027-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-16",
 			"sources": [
 				"aieventlist-munich",
@@ -6566,7 +5948,7 @@
 			"decision": "accepted",
 			"eventId": "jan-14-mcp-agents-and-skills-meetup-online-de-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-14",
 			"sources": [
 				"meetup:munchen-ai-machine-learning-and-computer-vision-meetup"
@@ -6588,7 +5970,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-coding-studio-hamburg-2027-2027-01-16",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-16",
 			"sources": [
 				"meetup:ai-beavers"
@@ -6610,7 +5992,7 @@
 			"decision": "accepted",
 			"eventId": "cambridge-meets-mcml-4-day-al-hackathon-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-17",
 			"sources": [
 				"mcml"
@@ -6632,7 +6014,7 @@
 			"decision": "accepted",
 			"eventId": "fme-in-a-nutshell-datenintegration-leicht-gemacht-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-23",
 			"sources": [
 				"hackevents-data"
@@ -6665,7 +6047,7 @@
 			"decision": "accepted",
 			"eventId": "advanced-humanoid-forum-2027-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-21",
 			"sources": [
 				"aieventlist-munich"
@@ -6687,7 +6069,7 @@
 			"decision": "accepted",
 			"eventId": "ai-agents-hackathon-2027-hamburg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-21",
 			"sources": [
 				"aieventlist-hamburg",
@@ -6723,7 +6105,7 @@
 			"decision": "accepted",
 			"eventId": "9-ki-stammtisch-bonn-bonn-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-21",
 			"sources": [
 				"meetup:bonner-ki-meetup",
@@ -6759,7 +6141,7 @@
 			"decision": "accepted",
 			"eventId": "dvc-data-ai-lunch-meetup-hamburg-hamburg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-21",
 			"sources": [
 				"hackevents-ai",
@@ -6828,7 +6210,7 @@
 			"decision": "accepted",
 			"eventId": "ai-series-google-deepmind-nenad-tomasev-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-26",
 			"sources": [
 				"meetup:bliss-speaker-series",
@@ -6864,7 +6246,7 @@
 			"decision": "accepted",
 			"eventId": "bliss-ai-speaker-series-agentic-web-opportunities-and-challe-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-26",
 			"sources": [
 				"hackevents-ai"
@@ -6897,7 +6279,7 @@
 			"decision": "accepted",
 			"eventId": "ai-mavericks-2-wo-ki-transformation-ehrlich-verhandelt-wird--hamburg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-27",
 			"sources": [
 				"hackevents-ai"
@@ -6930,7 +6312,7 @@
 			"decision": "accepted",
 			"eventId": "ki-und-cyber-sicherheit-warendorf-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-28",
 			"sources": [
 				"hackevents-ai",
@@ -6964,7 +6346,7 @@
 			"decision": "accepted",
 			"eventId": "ai-nights-inspire-07-relaunch-nuremberg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-28",
 			"sources": [
 				"meetup:ai-nights-nurnberg",
@@ -7012,7 +6394,7 @@
 			"decision": "accepted",
 			"eventId": "kiss-empfangt-sustainable-industry-4-0-and-iot-stuttgart-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-28",
 			"sources": [
 				"meetup:stuttgart-industrie-4-0-und-iot-meetup",
@@ -7048,7 +6430,7 @@
 			"decision": "accepted",
 			"eventId": "ai-series-anthropic-pavel-izmailov-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-02",
 			"sources": [
 				"meetup:bliss-speaker-series",
@@ -7072,7 +6454,7 @@
 			"decision": "accepted",
 			"eventId": "learntec-2027-karlsruhe-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-04",
 			"sources": [
 				"deutschlandki"
@@ -7094,7 +6476,7 @@
 			"decision": "accepted",
 			"eventId": "vibe-coding-cologne-let-s-learn-ai-assisted-coding-cologne-2027-2027-02-02",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-02",
 			"sources": [
 				"meetup:pirateskills",
@@ -7130,7 +6512,7 @@
 			"decision": "accepted",
 			"eventId": "werkstatt-ai-act-ki-rechtskonform-einsetzen-leipzig-leipzig-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-03",
 			"sources": [
 				"aieventlist-europe"
@@ -7152,7 +6534,7 @@
 			"decision": "accepted",
 			"eventId": "future-of-ai-dinner-hamburg-nach-davos-hamburg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-03",
 			"sources": [
 				"hackevents-ai"
@@ -7185,7 +6567,7 @@
 			"decision": "accepted",
 			"eventId": "air-street-munich-ai-meetup-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-16",
 			"sources": [
 				"hackevents-ai"
@@ -7218,7 +6600,7 @@
 			"decision": "accepted",
 			"eventId": "ki-werkstatt-im-kreis-warendorf-zu-gast-bei-unternehmensnach-warendorf-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-18",
 			"sources": [
 				"gfw-warendorf"
@@ -7240,7 +6622,7 @@
 			"decision": "accepted",
 			"eventId": "autoresearch-berlin-conference-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-19",
 			"sources": [
 				"brainberg"
@@ -7262,7 +6644,7 @@
 			"decision": "accepted",
 			"eventId": "sql-server-konferenz-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-24",
 			"sources": [
 				"hackevents-data"
@@ -7295,7 +6677,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-ai-dach-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-24",
 			"sources": [
 				"aieventlist-berlin"
@@ -7340,7 +6722,7 @@
 			"decision": "accepted",
 			"eventId": "case-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-25",
 			"sources": [
 				"agentconfs"
@@ -7362,7 +6744,7 @@
 			"decision": "accepted",
 			"eventId": "case-2027-the-conference-on-agentic-software-engineering-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-25",
 			"sources": [
 				"aieventlist-berlin"
@@ -7384,7 +6766,7 @@
 			"decision": "accepted",
 			"eventId": "prompt-ux-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-25",
 			"sources": [
 				"agentconfs",
@@ -7432,7 +6814,7 @@
 			"decision": "accepted",
 			"eventId": "german-data-science-days-2027-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-26",
 			"sources": [
 				"deutschlandki"
@@ -7454,7 +6836,7 @@
 			"decision": "accepted",
 			"eventId": "auto-ai-europe-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-02",
 			"sources": [
 				"agentconfs"
@@ -7476,7 +6858,7 @@
 			"decision": "accepted",
 			"eventId": "ki-x-pr-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-03",
 			"sources": [
 				"deutschlandki",
@@ -7524,7 +6906,7 @@
 			"decision": "accepted",
 			"eventId": "esri-konferenz-2027-bonn-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-04",
 			"sources": [
 				"deutschlandki"
@@ -7546,7 +6928,7 @@
 			"decision": "accepted",
 			"eventId": "vibe-coding-cologne-let-s-learn-ai-assisted-coding-cologne-2027-2027-03-03",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-03",
 			"sources": [
 				"meetup:pirateskills",
@@ -7582,7 +6964,7 @@
 			"decision": "accepted",
 			"eventId": "ai-agents-summit-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-11",
 			"sources": [
 				"hackevents-ai"
@@ -7615,7 +6997,7 @@
 			"decision": "accepted",
 			"eventId": "ai-nights-inspire-08-spring-nuremberg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-11",
 			"sources": [
 				"meetup:ai-nights-nurnberg",
@@ -7663,7 +7045,7 @@
 			"decision": "accepted",
 			"eventId": "enterprise-ai-europe-2027-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-16",
 			"sources": [
 				"agentconfs"
@@ -7685,7 +7067,7 @@
 			"decision": "accepted",
 			"eventId": "embedded-world-2027-nuremberg-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-18",
 			"sources": [
 				"deutschlandki"
@@ -7707,7 +7089,7 @@
 			"decision": "accepted",
 			"eventId": "logimat-2027-stuttgart-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-18",
 			"sources": [
 				"deutschlandki"
@@ -7729,7 +7111,7 @@
 			"decision": "accepted",
 			"eventId": "wirtschaftswoche-ki-im-mittelstand-2027-dusseldorf-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-17",
 			"sources": [
 				"deutschlandki"
@@ -7751,7 +7133,7 @@
 			"decision": "accepted",
 			"eventId": "bitkom-transform-2027-berlin-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-18",
 			"sources": [
 				"deutschlandki"
@@ -7773,7 +7155,7 @@
 			"decision": "accepted",
 			"eventId": "data-festival-2027-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-18",
 			"sources": [
 				"deutschlandki",
@@ -7862,126 +7244,6 @@
 				"hackevents-data",
 				"aieventlist-munich",
 				"aieventlist-europe"
-			],
-			"missingDays": 0
-		},
-		"u:meetup.com/ksug-in/events/317392339": {
-			"decision": "rejected",
-			"reason": "abroad",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ksug-in"
-			],
-			"missingDays": 0
-		},
-		"t:building autonomous operations agents production safety speed|2026-11-19": {
-			"decision": "rejected",
-			"reason": "abroad",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ksug-in"
-			],
-			"missingDays": 0
-		},
-		"u:meetup.com/ai-beavers/events/317102031": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-beavers",
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:build fridays work on your startup alongside other founders bring laptop|2026-11-20": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-beavers",
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:luma.com/ordnrqbu": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-beavers",
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:build fridays work on your startup alongside others bring laptop|2026-11-20": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-beavers",
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/build-fridays-hamburg-work-on-your-startup-alongside-others-bring-laptop-5z185c7q": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:ai-beavers",
-				"luma-hamburg",
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:luma.com/l9tfh081": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:hackevents.net/de/events/cursor-grokbot-x-saasking-vc-x-build-days-frankfurt-ibm-nov-20-24ystr0h": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"t:cursor grokbot x saasking vc x build days ibm nov 20|2026-11-20": {
-			"decision": "rejected",
-			"reason": "offtopic",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"hackevents-ai"
 			],
 			"missingDays": 0
 		},
@@ -8710,7 +7972,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"meetup:java-user-group-hannover",
@@ -8782,7 +8044,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-28",
 			"sources": [
 				"hackevents-ai"
@@ -8815,7 +8077,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-29",
 			"sources": [
 				"hackevents-ai"
@@ -8848,7 +8110,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:cybercologne-meetup-group",
@@ -8887,7 +8149,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:decentralized-trust-ruhrgebiet"
@@ -8909,7 +8171,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"meetup:do-dotnet",
@@ -8933,7 +8195,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"hackevents-ai"
@@ -8966,7 +8228,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"meetup:main-kinzig-nerds",
@@ -8990,7 +8252,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"brainberg"
@@ -9012,7 +8274,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"meetup:robot-framework-usergroup-munsterland",
@@ -9036,7 +8298,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"hackevents-ai",
@@ -9096,7 +8358,7 @@
 			"decision": "rejected",
 			"reason": "sales",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hackevents-ai"
@@ -9129,7 +8391,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"meetup:ai-beavers",
@@ -9189,7 +8451,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-06",
 			"sources": [
 				"hackevents-ai"
@@ -9222,7 +8484,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"hackevents-ai",
@@ -9258,7 +8520,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"hackevents-ai"
@@ -9291,7 +8553,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"hackevents-ai",
@@ -9327,7 +8589,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"hackevents-ai"
@@ -9360,7 +8622,7 @@
 			"decision": "rejected",
 			"reason": "sales",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"hackevents-ai",
@@ -9396,7 +8658,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:decentralized-trust-ruhrgebiet"
@@ -9478,7 +8740,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-12",
 			"sources": [
 				"hackevents-ai"
@@ -9511,7 +8773,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-13",
 			"sources": [
 				"hackevents-ai"
@@ -9544,7 +8806,7 @@
 			"decision": "rejected",
 			"reason": "unclear",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-16",
 			"sources": [
 				"hackevents-ai"
@@ -9577,7 +8839,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-18",
 			"sources": [
 				"meetup:ai-beavers",
@@ -9637,7 +8899,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-19",
 			"sources": [
 				"meetup:ksug-in"
@@ -9659,7 +8921,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-20",
 			"sources": [
 				"hackevents-data"
@@ -9736,7 +8998,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-08",
 			"sources": [
 				"hackevents-ai"
@@ -9769,7 +9031,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-15",
 			"sources": [
 				"hackevents-ai"
@@ -9802,7 +9064,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-22",
 			"sources": [
 				"hackevents-ai"
@@ -9835,7 +9097,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-26",
 			"sources": [
 				"hackevents-data"
@@ -9868,7 +9130,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-29",
 			"sources": [
 				"hackevents-ai"
@@ -9901,7 +9163,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-05",
 			"sources": [
 				"meetup:java-user-group-hannover"
@@ -9923,7 +9185,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-29",
 			"sources": [
 				"meetup:hannover-python-meetup"
@@ -9945,7 +9207,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-05",
 			"sources": [
 				"hackevents-ai"
@@ -9978,7 +9240,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-09",
 			"sources": [
 				"brainberg"
@@ -10000,7 +9262,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-12",
 			"sources": [
 				"hackevents-ai"
@@ -10033,7 +9295,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-19",
 			"sources": [
 				"hackevents-ai"
@@ -10066,7 +9328,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-26",
 			"sources": [
 				"hackevents-ai"
@@ -10099,7 +9361,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-05",
 			"sources": [
 				"meetup:java-user-group-hannover"
@@ -10121,7 +9383,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-27",
 			"sources": [
 				"brainberg"
@@ -10143,7 +9405,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-05",
 			"sources": [
 				"hackevents-ai"
@@ -10176,7 +9438,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-05",
 			"sources": [
 				"hackevents-ai"
@@ -10209,7 +9471,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-12",
 			"sources": [
 				"hackevents-data"
@@ -10242,7 +9504,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-12",
 			"sources": [
 				"hackevents-data"
@@ -10275,7 +9537,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-12",
 			"sources": [
 				"hackevents-ai"
@@ -10308,7 +9570,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-17",
 			"sources": [
 				"hackevents-ai",
@@ -10342,7 +9604,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-19",
 			"sources": [
 				"hackevents-ai"
@@ -10368,28 +9630,6 @@
 			"end": "2027-03-19",
 			"sources": [
 				"hackevents-ai"
-			],
-			"missingDays": 0
-		},
-		"u:meetup.com/prompting-lab/events/316947185": {
-			"decision": "deferred",
-			"reason": "no-city",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:prompting-lab"
-			],
-			"missingDays": 0
-		},
-		"t:prompting lab programmieren ki ganz ohne programmierkenntnisse|2026-11-20": {
-			"decision": "deferred",
-			"reason": "no-city",
-			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-20",
-			"end": "2026-11-20",
-			"sources": [
-				"meetup:prompting-lab"
 			],
 			"missingDays": 0
 		},
@@ -10673,7 +9913,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai"
@@ -10706,7 +9946,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"hackevents-ai",
@@ -10742,7 +9982,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"hackevents-ai"
@@ -10775,7 +10015,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"meetup:decentralized-trust-ruhrgebiet"
@@ -10797,7 +10037,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:maikers-ai-community",
@@ -10836,7 +10076,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:tubingen-postgresql-meetup-group",
@@ -10860,7 +10100,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"hackevents-ai"
@@ -10893,7 +10133,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-05",
 			"sources": [
 				"devevents",
@@ -10938,7 +10178,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-11",
 			"sources": [
 				"hackevents-ai"
@@ -10971,7 +10211,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-07",
 			"sources": [
 				"meetup:betreute-intelligenz",
@@ -11007,7 +10247,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-19",
 			"sources": [
 				"meetup:digital-craftsmanship-nordoberpfalz"
@@ -11029,7 +10269,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-26",
 			"sources": [
 				"hackevents-ai"
@@ -11062,7 +10302,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-09",
 			"sources": [
 				"meetup:bliss-speaker-series"
@@ -11084,7 +10324,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-04",
 			"sources": [
 				"meetup:betreute-intelligenz",
@@ -11244,7 +10484,7 @@
 			"decision": "accepted",
 			"eventId": "cell-press-symposia-decoding-cellular-complexity-single-cell-munich-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"agentconfs"
@@ -11292,7 +10532,7 @@
 			"decision": "accepted",
 			"eventId": "ai-builders-hamburg-dec-3-hamburg-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hackevents-ai",
@@ -11334,7 +10574,7 @@
 			"decision": "accepted",
 			"eventId": "claude-meetup-dezember-frankfurt-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"hackevents-ai",
@@ -11369,7 +10609,7 @@
 			"decision": "accepted",
 			"eventId": "ai-friday-dusseldorf-ki-community-networking-cologne-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai",
@@ -11428,7 +10668,7 @@
 			"decision": "accepted",
 			"eventId": "blueprint-hack-langfuse-kuro-berlin-2026",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"luma-berlin"
@@ -11450,7 +10690,7 @@
 			"decision": "accepted",
 			"eventId": "the-next-experiment-hackathon-munich-2026",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai",
@@ -11489,7 +10729,7 @@
 			"decision": "accepted",
 			"eventId": "6-projektwerkstatt-robotik-und-ki-chemnitz-2026",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"hackevents-ai"
@@ -11522,7 +10762,7 @@
 			"decision": "accepted",
 			"eventId": "dreams-disruption-annette-zimmermann-in-conversation-berlin-2026",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"brainberg"
@@ -11544,7 +10784,7 @@
 			"decision": "accepted",
 			"eventId": "aws-user-group-berlin-session-december-2026-berlin-2026",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"meetup:berlinawsug",
@@ -11584,8 +10824,8 @@
 			"decision": "accepted",
 			"eventId": "robotics-physical-ai-club-hamburg-2026",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
-			"end": "2026-12-14",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-10",
 			"sources": [
 				"hackevents-ai"
 			],
@@ -11617,7 +10857,7 @@
 			"decision": "accepted",
 			"eventId": "funf-wege-dein-team-zu-ruinieren-fuhrung-in-zeiten-von-agent-dortmund-2026",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-17",
 			"sources": [
 				"meetup:rethinking-ai-at-work",
@@ -11641,7 +10881,7 @@
 			"decision": "accepted",
 			"eventId": "jan-21-ai-ml-and-computer-vision-meetup-online-de-2027",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-21",
 			"sources": [
 				"meetup:munchen-ai-machine-learning-and-computer-vision-meetup"
@@ -11663,7 +10903,7 @@
 			"decision": "accepted",
 			"eventId": "jan-27-physical-ai-ml-and-computer-vision-meetup-purpose-bui-online-de-2027",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-27",
 			"sources": [
 				"meetup:munchen-ai-machine-learning-and-computer-vision-meetup"
@@ -11685,7 +10925,7 @@
 			"decision": "accepted",
 			"eventId": "ki-sprechstunde-in-45-minuten-orientierung-fur-den-erfolgrei-online-de-2027",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-28",
 			"sources": [
 				"bwcon",
@@ -11721,7 +10961,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-coding-studio-hamburg-2027-2027-01-30",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-30",
 			"sources": [
 				"meetup:ai-beavers"
@@ -11743,7 +10983,7 @@
 			"decision": "accepted",
 			"eventId": "feb-10-physical-ai-meetup-robot-brains-and-models-online-de-2027",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-10",
 			"sources": [
 				"meetup:munchen-ai-machine-learning-and-computer-vision-meetup"
@@ -11765,7 +11005,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-coding-studio-hamburg-2027-2027-02-13",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-13",
 			"sources": [
 				"meetup:ai-beavers"
@@ -11787,7 +11027,7 @@
 			"decision": "accepted",
 			"eventId": "ki-sprechstunde-in-45-minuten-orientierung-fur-den-erfolgrei-online-de-2027-2027-02-25",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-25",
 			"sources": [
 				"bwcon",
@@ -11823,7 +11063,7 @@
 			"decision": "accepted",
 			"eventId": "ki-sprechstunde-in-45-minuten-orientierung-fur-den-erfolgrei-online-de-2027-2027-03-18",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-18",
 			"sources": [
 				"bwcon",
@@ -11903,7 +11143,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -11925,7 +11165,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"hackevents-ai"
@@ -11958,7 +11198,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:rust-berlin"
@@ -11980,7 +11220,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"meetup:leipzig-python-user-group",
@@ -12004,7 +11244,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"meetup:domain-driven-design-rhein-main",
@@ -12028,7 +11268,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"meetup:the-test-tribe-frankfurt-meetup"
@@ -12050,7 +11290,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"meetup:pycologne",
@@ -12074,7 +11314,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-11",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -12096,7 +11336,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-17",
 			"sources": [
 				"meetup:rust-berlin"
@@ -12118,7 +11358,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-31",
 			"sources": [
 				"meetup:rust-berlin"
@@ -12140,7 +11380,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-12",
 			"sources": [
 				"meetup:leipzig-python-user-group"
@@ -12162,7 +11402,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-13",
 			"sources": [
 				"meetup:pycologne"
@@ -12184,7 +11424,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-15",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -12206,7 +11446,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-14",
 			"sources": [
 				"meetup:rust-berlin"
@@ -12228,7 +11468,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-20",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -12250,7 +11490,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-22",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -12272,7 +11512,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-27",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -12294,7 +11534,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-28",
 			"sources": [
 				"meetup:rust-berlin"
@@ -12316,7 +11556,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-09",
 			"sources": [
 				"meetup:leipzig-python-user-group"
@@ -12338,7 +11578,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-10",
 			"sources": [
 				"meetup:pycologne"
@@ -12360,7 +11600,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-11",
 			"sources": [
 				"meetup:rust-berlin"
@@ -12382,7 +11622,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-18",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -12404,7 +11644,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-25",
 			"sources": [
 				"meetup:rust-berlin"
@@ -12426,7 +11666,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-09",
 			"sources": [
 				"meetup:leipzig-python-user-group"
@@ -12448,7 +11688,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-10",
 			"sources": [
 				"meetup:pycologne"
@@ -12470,7 +11710,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-21",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-11",
 			"sources": [
 				"meetup:rust-berlin"
@@ -12525,7 +11765,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-11",
 			"sources": [
 				"meetup:ai-beavers",
@@ -12537,7 +11777,7 @@
 			"decision": "accepted",
 			"eventId": "ki-ausbilden-was-sind-essentials-stuttgart-2026",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"hackevents-ai",
@@ -12595,7 +11835,7 @@
 			"decision": "accepted",
 			"eventId": "date-2027-dresden-2027",
 			"firstSeen": "2026-11-22",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-24",
 			"sources": [
 				"deutschlandki",
@@ -12631,7 +11871,7 @@
 			"decision": "deferred",
 			"reason": "low-confidence",
 			"firstSeen": "2026-11-22",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"luma-berlin"
@@ -12777,7 +12017,7 @@
 			"decision": "accepted",
 			"eventId": "bitkom-ai-breakfast-2026-beneath-the-surface-berlin-2026",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"aieventlist-berlin"
@@ -12799,7 +12039,7 @@
 			"decision": "accepted",
 			"eventId": "ai-nudge-hands-on-ki-gestalten-dusseldorf-2026",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"brainberg"
@@ -12821,7 +12061,7 @@
 			"decision": "accepted",
 			"eventId": "microsoft-fabric-from-data-to-impact-eventbrite-registration-munich-2026",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"meetup:global-ai-munich",
@@ -12846,7 +12086,7 @@
 			"decision": "accepted",
 			"eventId": "christmas-for-good-ai-community-event-munich-2026",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-07",
 			"sources": [
 				"luma-munich"
@@ -12868,7 +12108,7 @@
 			"decision": "accepted",
 			"eventId": "from-shadow-ai-to-governed-innovation-munich-2026",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-18",
 			"sources": [
 				"meetup:health-ai-munich",
@@ -12892,7 +12132,7 @@
 			"decision": "accepted",
 			"eventId": "ki-2026-zwischen-hype-und-realitat-was-erwartet-uns-2027-halle-2026",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-21",
 			"sources": [
 				"meetup:ki-klub-werder-havel",
@@ -12916,7 +12156,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -12938,7 +12178,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-23",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-20",
 			"sources": [
 				"hackevents-ai"
@@ -13004,7 +12244,7 @@
 			"decision": "accepted",
 			"eventId": "agentic-software-engineering-was-andere-bereiche-daraus-lern-online-de-2026",
 			"firstSeen": "2026-11-24",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-07",
 			"sources": [
 				"meetup:ai-transformation-camp"
@@ -13026,7 +12266,7 @@
 			"decision": "accepted",
 			"eventId": "ki-community-event-dresden-2026-ki-in-der-lehre-dresden-2026",
 			"firstSeen": "2026-11-24",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"aieventlist-europe"
@@ -13048,7 +12288,7 @@
 			"decision": "accepted",
 			"eventId": "march-10-physical-ai-meetup-robotic-data-quality-and-evaluat-online-de-2027",
 			"firstSeen": "2026-11-24",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-10",
 			"sources": [
 				"meetup:munchen-ai-machine-learning-and-computer-vision-meetup"
@@ -13378,7 +12618,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-24",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-10",
 			"sources": [
 				"hackevents-ai"
@@ -13448,7 +12688,7 @@
 			"decision": "accepted",
 			"eventId": "scads-ai-meetup-beyond-llms-neue-ansatze-fur-foundation-mode-leipzig-2026",
 			"firstSeen": "2026-11-25",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:big-data-and-ai-saxony",
@@ -13472,7 +12712,7 @@
 			"decision": "accepted",
 			"eventId": "berlin-claude-workshop-make-a-product-better-together-berlin-2026",
 			"firstSeen": "2026-11-25",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"luma-berlin"
@@ -13494,7 +12734,7 @@
 			"decision": "accepted",
 			"eventId": "feb-25-mcp-agents-and-skills-meetup-online-de-2027",
 			"firstSeen": "2026-11-25",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-25",
 			"sources": [
 				"meetup:munchen-ai-machine-learning-and-computer-vision-meetup"
@@ -13582,7 +12822,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-25",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-11-29",
 			"sources": [
 				"luma-berlin"
@@ -13604,7 +12844,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-25",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-17",
 			"sources": [
 				"brainberg"
@@ -13699,7 +12939,7 @@
 			"decision": "accepted",
 			"eventId": "ki-im-marketing-seo-geo-und-neue-protokolle-berlin-2026",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai"
@@ -13732,7 +12972,7 @@
 			"decision": "accepted",
 			"eventId": "ki-journey-das-programm-fur-skalierbare-ki-start-ups-modul-3-berlin-2026",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai"
@@ -13765,7 +13005,7 @@
 			"decision": "accepted",
 			"eventId": "workshop-ki-als-co-founder-3-4-systeme-statt-chats-berlin-2026",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"hackevents-ai"
@@ -13798,7 +13038,7 @@
 			"decision": "accepted",
 			"eventId": "bliss-x-volkswagen-ai-in-business-redesigning-work-human-ai--berlin-2026",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-09",
 			"sources": [
 				"meetup:bliss-speaker-series",
@@ -13822,7 +13062,7 @@
 			"decision": "accepted",
 			"eventId": "csee-x-openai-hackathon-munich-2026",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-13",
 			"sources": [
 				"hackevents-ai"
@@ -13855,7 +13095,7 @@
 			"decision": "accepted",
 			"eventId": "select-gift-from-under-the-tree-where-behaviour-good-berlin-2026",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-16",
 			"sources": [
 				"hackevents-ai",
@@ -13924,7 +13164,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"hackevents-ai",
@@ -13960,7 +13200,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-26",
 			"sources": [
 				"hackevents-ai"
@@ -14004,7 +13244,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-26",
+			"lastSeen": "2026-11-28",
 			"end": "2027-04-02",
 			"sources": [
 				"meetup:java-user-group-hannover"
@@ -14015,7 +13255,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-04",
 			"sources": [
 				"meetup:prompting-lab"
@@ -14037,7 +13277,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-11",
 			"sources": [
 				"meetup:prompting-lab"
@@ -14059,7 +13299,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-26",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-24",
 			"sources": [
 				"hackevents-ai"
@@ -14188,7 +13428,7 @@
 			"decision": "accepted",
 			"eventId": "naice-27-next-level-ai-conference-europe-munich-2027",
 			"firstSeen": "2026-11-20",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-02-23",
 			"sources": [
 				"aieventlist-munich",
@@ -14288,7 +13528,7 @@
 			"decision": "accepted",
 			"eventId": "ai-social-club-munich-munich-2026",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-03",
 			"sources": [
 				"luma-munich"
@@ -14310,7 +13550,7 @@
 			"decision": "accepted",
 			"eventId": "agents-dragons-once-upon-agentic-ai-workshop-stuttgart-2026",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"meetup:aws-usergroup-stuttgart",
@@ -14346,7 +13586,7 @@
 			"decision": "accepted",
 			"eventId": "ki-robotik-und-wir-10-jahre-cyber-valley-stuttgart-2026",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-15",
 			"sources": [
 				"aieventlist-stuttgart"
@@ -14368,10 +13608,11 @@
 			"decision": "accepted",
 			"eventId": "pydata-berlin-2026-december-meetup-berlin-2026",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-16",
 			"sources": [
-				"meetup:pydata-berlin"
+				"meetup:pydata-berlin",
+				"hackevents-ai"
 			],
 			"missingDays": 0
 		},
@@ -14390,7 +13631,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"meetup:ksug-in"
@@ -14412,7 +13653,7 @@
 			"decision": "rejected",
 			"reason": "sales",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-02",
 			"sources": [
 				"hackevents-ai"
@@ -14445,7 +13686,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"meetup:lorawan-leipzig-usergroup",
@@ -14505,7 +13746,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-08",
 			"sources": [
 				"meetup:lorawan-leipzig-usergroup",
@@ -14541,7 +13782,7 @@
 			"decision": "rejected",
 			"reason": "abroad",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-16",
 			"sources": [
 				"meetup:aibuildersclub"
@@ -14563,7 +13804,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-12",
 			"sources": [
 				"meetup:lorawan-leipzig-usergroup"
@@ -14618,7 +13859,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-01-12",
 			"sources": [
 				"meetup:lorawan-leipzig-usergroup"
@@ -14651,7 +13892,7 @@
 			"decision": "rejected",
 			"reason": "offtopic",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2027-03-25",
 			"sources": [
 				"meetup:rust-berlin"
@@ -14673,7 +13914,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:graphdb-dach"
@@ -14695,7 +13936,7 @@
 			"decision": "deferred",
 			"reason": "no-city",
 			"firstSeen": "2026-11-27",
-			"lastSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:it-agile-community-events"
@@ -14710,6 +13951,199 @@
 			"end": "2026-12-01",
 			"sources": [
 				"meetup:it-agile-community-events"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/pydata-berlin-2026-december-meetup-nxz0qlef": {
+			"decision": "accepted",
+			"eventId": "pydata-berlin-2026-december-meetup-berlin-2026",
+			"firstSeen": "2026-11-27",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-16",
+			"sources": [
+				"meetup:pydata-berlin",
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"t:kiss x sustainable industry 4 0 fokus ki agentische ki|2027-01-28": {
+			"decision": "accepted",
+			"eventId": "kiss-empfangt-sustainable-industry-4-0-and-iot-stuttgart-2027",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-28",
+			"end": "2027-01-28",
+			"sources": [
+				"meetup:stuttgart-industrie-4-0-und-iot-meetup",
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/kiss-sustainable-industry-4-0-fokus-ki-agentische-ki-i9xsf6iy": {
+			"decision": "accepted",
+			"eventId": "kiss-empfangt-sustainable-industry-4-0-and-iot-stuttgart-2027",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-28",
+			"end": "2027-01-28",
+			"sources": [
+				"meetup:stuttgart-industrie-4-0-und-iot-meetup",
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"t:kiss sustainable industry 4 0 fokus ki agentische ki|2027-01-28": {
+			"decision": "accepted",
+			"eventId": "kiss-empfangt-sustainable-industry-4-0-and-iot-stuttgart-2027",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-28",
+			"end": "2027-01-28",
+			"sources": [
+				"meetup:stuttgart-industrie-4-0-und-iot-meetup",
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/12-quo-vadis-ai-school-leipzig-n7h6joqs": {
+			"decision": "accepted",
+			"eventId": "12-save-the-date-leipzig-2026",
+			"firstSeen": "2026-11-20",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-17",
+			"sources": [
+				"meetup:ai-school-leipzig",
+				"hackevents-ai",
+				"brainberg"
+			],
+			"missingDays": 0
+		},
+		"u:meetup.com/java-user-group-hannover/events/317615397": {
+			"decision": "rejected",
+			"reason": "offtopic",
+			"firstSeen": "2026-11-26",
+			"lastSeen": "2026-11-28",
+			"end": "2027-04-02",
+			"sources": [
+				"meetup:java-user-group-hannover"
+			],
+			"missingDays": 0
+		},
+		"t:robotics physical ai club|2026-12-10": {
+			"decision": "accepted",
+			"eventId": "robotics-physical-ai-club-hamburg-2026",
+			"firstSeen": "2026-11-21",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-10",
+			"sources": [
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"u:luma.com/6le6om39": {
+			"decision": "accepted",
+			"eventId": "ai-safety-lunch-coworking-cic-berlin-2026-2026-12-10",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-10",
+			"sources": [
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/ai-safety-lunch-coworking-cic-ibfbzlhi": {
+			"decision": "accepted",
+			"eventId": "ai-safety-lunch-coworking-cic-berlin-2026-2026-12-10",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-10",
+			"sources": [
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"t:ai safety lunch coworking cic|2026-12-10": {
+			"decision": "accepted",
+			"eventId": "ai-safety-lunch-coworking-cic-berlin-2026-2026-12-10",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-10",
+			"sources": [
+				"hackevents-ai"
+			],
+			"missingDays": 0
+		},
+		"u:meetup.com/ai-beavers/events/jgnbbvykcdbkc": {
+			"decision": "accepted",
+			"eventId": "agentic-coding-studio-hamburg-2027-2027-02-27",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2027-02-27",
+			"sources": [
+				"meetup:ai-beavers"
+			],
+			"missingDays": 0
+		},
+		"t:agentic coding studio|2027-02-27": {
+			"decision": "accepted",
+			"eventId": "agentic-coding-studio-hamburg-2027-2027-02-27",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2027-02-27",
+			"sources": [
+				"meetup:ai-beavers"
+			],
+			"missingDays": 0
+		},
+		"u:startupbw.de/events-wettbewerbe/landesweiter-veranstaltungskalender/veranstaltung/hybrid-veranstaltung-basiswissen-im-datenschutz-fuer-start-ups": {
+			"decision": "rejected",
+			"reason": "offtopic",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-14",
+			"sources": [
+				"hackevents-data"
+			],
+			"missingDays": 0
+		},
+		"u:hackevents.net/de/events/hybrid-veranstaltung-basiswissen-im-datenschutz-f-r-start-ups-df2h4nsn": {
+			"decision": "rejected",
+			"reason": "offtopic",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-14",
+			"sources": [
+				"hackevents-data"
+			],
+			"missingDays": 0
+		},
+		"t:hybrid veranstaltung basiswissen datenschutz start ups|2026-12-14": {
+			"decision": "rejected",
+			"reason": "offtopic",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-14",
+			"sources": [
+				"hackevents-data"
+			],
+			"missingDays": 0
+		},
+		"u:meetup.com/dortmund-aws-user-group/events/316934697": {
+			"decision": "deferred",
+			"reason": "low-confidence",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-10",
+			"sources": [
+				"meetup:dortmund-aws-user-group"
+			],
+			"missingDays": 0
+		},
+		"t:10 years aws user group dortmund agents dragons|2026-12-10": {
+			"decision": "deferred",
+			"reason": "low-confidence",
+			"firstSeen": "2026-11-28",
+			"lastSeen": "2026-11-28",
+			"end": "2026-12-10",
+			"sources": [
+				"meetup:dortmund-aws-user-group"
 			],
 			"missingDays": 0
 		}

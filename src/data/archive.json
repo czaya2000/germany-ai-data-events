@@ -523,5 +523,299 @@
     "firstSeen": "2026-11-20",
     "blurb_en": "Berlin unconference at Merantix AI Campus for software engineers and AI/ML practitioners, with sessions proposed by participants.",
     "blurb_de": "Unconference im Merantix AI Campus Berlin für Softwareentwickelnde und Praktizierende aus KI und ML. Die Sessions schlagen die Teilnehmenden vor."
+  },
+  {
+    "id": "ai-cost-optimization-stuttgart-2026",
+    "title": "AI Cost Optimization",
+    "date": "2026-11-24",
+    "time": "17:45–19:45",
+    "city": "Stuttgart",
+    "venue": "codecentric AG, Stuttgart",
+    "format": "Meetup",
+    "topics": [
+      "AI costs",
+      "AI infrastructure"
+    ],
+    "organiser": "tech&talk Stuttgart",
+    "cost": "Free",
+    "url": "https://www.meetup.com/tech-talk-stuttgart/events/316960163/",
+    "source": "Meetup",
+    "blurb": "German-language talk at codecentric Stuttgart on where AI costs arise and where the biggest savings lie, with figures from real measurements.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "German-language talk at codecentric Stuttgart on where AI costs arise and where the biggest savings lie, with figures from real measurements.",
+    "blurb_de": "Vortrag auf Deutsch bei codecentric Stuttgart: Wo KI-Kosten entstehen und wo die größten Einsparungen liegen, mit Zahlen aus echten Messungen."
+  },
+  {
+    "id": "ai-summit-2026-hamburg-2026",
+    "title": "AI.SUMMIT 2026",
+    "date": "2026-11-24",
+    "city": "Hamburg",
+    "venue": "Hamburg",
+    "format": "Conference",
+    "topics": [
+      "AI implementation",
+      "EU AI Act",
+      "Digital sovereignty"
+    ],
+    "organiser": "DeutschlandKI (CC BY 4.0)",
+    "cost": "Not listed",
+    "url": "https://ai.hamburg/en/event/ai-summit-2026-corporate-edition",
+    "source": "DeutschlandKI (CC BY 4.0)",
+    "blurb": "Business conference and expo in Hamburg on AI implementation, European sovereignty, the EU AI Act, human-AI collaboration and start-ups.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Business conference and expo in Hamburg on AI implementation, European sovereignty, the EU AI Act, human-AI collaboration and start-ups.",
+    "blurb_de": "Business-Konferenz und Ausstellung in Hamburg zu KI-Einführung, europäischer Souveränität, EU-KI-Verordnung, Mensch-KI-Zusammenarbeit und Start-ups."
+  },
+  {
+    "id": "ai-workshop-night-01-social-media-video-cutting-image-editin-nuremberg-2026",
+    "title": "AI Workshop Night #01: Social Media Video Cutting & Image Editing with AI",
+    "date": "2026-11-24",
+    "time": "17:00–20:30",
+    "city": "Nuremberg",
+    "venue": "club199 - a social hub, Luitpoldstraße 12, 90402 Nürnberg, Germany",
+    "format": "Workshop",
+    "topics": [
+      "Applied AI",
+      "Video editing",
+      "Image editing"
+    ],
+    "organiser": "AI Nights | Nürnberg",
+    "cost": "Free",
+    "url": "https://www.meetup.com/ai-nights-nurnberg/events/317300961/",
+    "source": "Meetup",
+    "blurb": "Hands-on workshop night in Nuremberg where attendees build their own AI workflow for cutting social media videos and editing images.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Hands-on workshop night in Nuremberg where attendees build their own AI workflow for cutting social media videos and editing images.",
+    "blurb_de": "Praxis-Workshop-Abend in Nürnberg: Teilnehmende bauen einen eigenen KI-Workflow zum Schneiden von Social-Media-Videos und zum Bearbeiten von Bildern."
+  },
+  {
+    "id": "can-we-read-an-ai-s-mind-dilly-dallying-moonwalking-and-more-berlin-2026",
+    "title": "Can we read an AI’s mind?? \"Dilly-dallying...\", \"Moonwalking...\" and more",
+    "date": "2026-11-24",
+    "time": "18:30–20:30",
+    "city": "Berlin",
+    "venue": "Hasso Plattner Institute (HPI), Berlin",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "Interpretability"
+    ],
+    "organiser": "HPI AI Safety Initiative",
+    "cost": "Not listed",
+    "url": "https://luma.com/v6am71hy",
+    "source": "hackevents.net",
+    "blurb": "Open event at HPI in Berlin on whether we can read an AI model's internal reasoning, hosted by the HPI AI Safety Initiative.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Open event at HPI in Berlin on whether we can read an AI model's internal reasoning, hosted by the HPI AI Safety Initiative.",
+    "blurb_de": "Offene Veranstaltung am HPI Berlin: Können wir das interne Denken eines KI-Modells lesen? Veranstaltet von der HPI AI Safety Initiative."
+  },
+  {
+    "id": "developer-skills-in-the-age-of-ai-what-stays-hard-when-code--regensburg-2026",
+    "title": "Developer Skills in the Age of AI: What Stays Hard When Code Gets Cheap",
+    "date": "2026-11-24",
+    "time": "18:00–20:00",
+    "city": "Regensburg",
+    "venue": "Comsysto Reply, Drehergasse 22a, 93059 Regensburg",
+    "format": "Meetup",
+    "topics": [
+      "AI and software development",
+      "Developer skills"
+    ],
+    "organiser": "Code Talks Regensburg",
+    "cost": "Free",
+    "url": "https://www.meetup.com/meetup-group-tfyvuydp/events/317011195/",
+    "source": "Meetup",
+    "blurb": "CodeTalk meetup in Regensburg on which developer skills stay difficult as AI tools make generating code cheaper.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "CodeTalk meetup in Regensburg on which developer skills stay difficult as AI tools make generating code cheaper.",
+    "blurb_de": "CodeTalk-Meetup in Regensburg: Welche Fähigkeiten von Entwicklerinnen und Entwicklern bleiben schwierig, wenn KI-Werkzeuge Code billiger machen."
+  },
+  {
+    "id": "ki-business-talk-duisburg-2026",
+    "title": "KI Business Talk",
+    "date": "2026-11-24",
+    "time": "17:30–20:30",
+    "city": "Duisburg",
+    "venue": "prodot GmbH, Schifferstraße 196",
+    "format": "Meetup",
+    "topics": [
+      "AI in UX",
+      "AI prototyping"
+    ],
+    "organiser": "prodot Insights - Tech Meetup",
+    "cost": "Free",
+    "url": "https://www.meetup.com/prodot-insights/events/317045104/",
+    "source": "Meetup",
+    "blurb": "Duisburg tech meetup on AI business topics, opening with a session on how AI prototyping tools change UX and requirements work.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Duisburg tech meetup on AI business topics, opening with a session on how AI prototyping tools change UX and requirements work.",
+    "blurb_de": "Tech-Meetup in Duisburg zu KI im Geschäftsalltag. Zum Auftakt geht es darum, wie KI-Prototyping-Werkzeuge UX- und Anforderungsarbeit verändern."
+  },
+  {
+    "id": "ki-erklarbar-machen-explainable-ai-ulm-2026",
+    "title": "KI erklärbar machen - Explainable AI",
+    "date": "2026-11-24",
+    "time": "18:00–21:00",
+    "city": "Ulm",
+    "venue": "Lise-Meitner-Straße 10/1, Lise-Meitner-Straße 10/1, 89081 Ulm, Germany",
+    "format": "Meetup",
+    "topics": [
+      "Explainable AI",
+      "Machine learning"
+    ],
+    "organiser": "Sovereign AI Meetup Ulm",
+    "cost": "Free",
+    "url": "https://www.meetup.com/sovereign-ai-meetup-ulm/events/316910735/",
+    "source": "Meetup",
+    "blurb": "Ulm meetup on explainable AI: what it is, how companies apply it, and how to look inside black-box machine learning models.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Ulm meetup on explainable AI: what it is, how companies apply it, and how to look inside black-box machine learning models.",
+    "blurb_de": "Meetup in Ulm zu erklärbarer KI: was sie ist, wie Unternehmen sie einsetzen und wie man in Black-Box-Modelle des maschinellen Lernens hineinschaut."
+  },
+  {
+    "id": "ki-stammtisch-fur-frauen-bremen-2026",
+    "title": "KI-Stammtisch für Frauen",
+    "date": "2026-11-24",
+    "time": "19:00–22:00",
+    "city": "Bremen",
+    "venue": "Bremen",
+    "format": "Meetup",
+    "topics": [
+      "AI",
+      "Women in tech"
+    ],
+    "organiser": "Hackerspace Bremen",
+    "cost": "Not listed",
+    "url": "https://calendar.google.com/calendar/ical/laej7omuttmt8ip063lmie548k%40group.calendar.google.com/public/basic.ics#4me4s3s0faelhl8cfja5380qaa@google.com",
+    "source": "hackevents.net",
+    "blurb": "Community evening about AI for women, hosted by Hackerspace Bremen.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Community evening about AI for women, hosted by Hackerspace Bremen.",
+    "blurb_de": "Community-Abend zu KI für Frauen, ausgerichtet vom Hackerspace Bremen."
+  },
+  {
+    "id": "ki-stammtisch-ingolstadt-6-ingolstadt-2026",
+    "title": "KI-Stammtisch Ingolstadt | #6",
+    "date": "2026-11-24",
+    "city": "Ingolstadt",
+    "format": "Meetup",
+    "topics": [
+      "AI"
+    ],
+    "organiser": "Not listed",
+    "cost": "Not listed",
+    "url": "https://aieventlist.ai/events/ki-stammtisch-ingolstadt-6-ingolstadt-2026/",
+    "source": "aieventlist.ai",
+    "blurb": "Sixth KI-Stammtisch meetup in Ingolstadt on AI, held at the brigk digital start-up centre.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Sixth KI-Stammtisch meetup in Ingolstadt on AI, held at the brigk digital start-up centre.",
+    "blurb_de": "Sechster KI-Stammtisch in Ingolstadt zu KI, im brigk, dem digitalen Gründerzentrum."
+  },
+  {
+    "id": "reading-group-international-ai-safety-report-nuremberg-2026",
+    "title": "Reading Group: International AI Safety report",
+    "date": "2026-11-24",
+    "time": "18:30–19:30",
+    "city": "Nuremberg",
+    "venue": "Nachbarschaftshaus Gostenhof, Nuremberg",
+    "format": "Meetup",
+    "topics": [
+      "AI safety",
+      "AI policy"
+    ],
+    "organiser": "Julia Hagen",
+    "cost": "Not listed",
+    "url": "https://luma.com/vg6jn21r",
+    "source": "hackevents.net",
+    "blurb": "First session of the AI Safety Nuremberg reading group, covering the International AI Safety Report 2026.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "First session of the AI Safety Nuremberg reading group, covering the International AI Safety Report 2026.",
+    "blurb_de": "Erste Sitzung der Lesegruppe KI-Sicherheit Nürnberg zum International AI Safety Report 2026."
+  },
+  {
+    "id": "rule-files-harness-engineering-in-der-praxis-weiden-in-der-oberpfalz-2026",
+    "title": "Rule-Files & Harness-Engineering in der Praxis",
+    "date": "2026-11-24",
+    "time": "18:00–19:30",
+    "city": "Weiden in der Oberpfalz",
+    "venue": "Brenner-Schäffer-Straße 26, Brenner-Schäffer-Straße 26",
+    "format": "Meetup",
+    "topics": [
+      "LLM agents",
+      "Rule files",
+      "Harness engineering"
+    ],
+    "organiser": "Digital Craftsmanship Nordoberpfalz",
+    "cost": "Free",
+    "url": "https://www.meetup.com/digital-craftsmanship-nordoberpfalz/events/283261195/",
+    "source": "Meetup",
+    "blurb": "Talk on writing rule files that make LLM coding agents follow team rules, from TDD cycles to architecture guardrails.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Talk on writing rule files that make LLM coding agents follow team rules, from TDD cycles to architecture guardrails.",
+    "blurb_de": "Vortrag darüber, wie Regeldateien LLM-Coding-Agenten dazu bringen, Teamregeln einzuhalten, von TDD-Zyklen bis zu Architekturleitplanken."
+  },
+  {
+    "id": "who-s-watching-the-agents-security-and-oversight-for-autonom-mainz-2026",
+    "title": "Who’s Watching the Agents? Security and Oversight for Autonomous AI",
+    "date": "2026-11-24",
+    "time": "18:30–21:30",
+    "city": "Mainz",
+    "venue": "QAware Mainz, Rheinstraße 4 C, Eingang an der Templerstraße",
+    "format": "Meetup",
+    "topics": [
+      "AI agent security",
+      "AI oversight"
+    ],
+    "organiser": "Cloud Native Night",
+    "cost": "Free",
+    "url": "https://www.meetup.com/cloud-native-night/events/317283946/",
+    "source": "Meetup",
+    "blurb": "Cloud Native Night at QAware Mainz on securing autonomous AI agents and keeping up with reviewing what they produce.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Cloud Native Night at QAware Mainz on securing autonomous AI agents and keeping up with reviewing what they produce.",
+    "blurb_de": "Cloud Native Night bei QAware in Mainz: wie man autonome KI-Agenten absichert und mit der Prüfung ihrer Ergebnisse Schritt hält."
+  },
+  {
+    "id": "workshop-ki-als-co-founder-2-4-ki-in-den-grundungsphasen-berlin-2026",
+    "title": "Workshop: KI als Co-Founder 2/4 - KI in den Gründungsphasen",
+    "date": "2026-11-24",
+    "time": "17:00–18:30",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Workshop",
+    "topics": [
+      "AI for startups",
+      "Founding"
+    ],
+    "organiser": "starthub-hessen.de",
+    "cost": "Not listed",
+    "url": "https://starthub-hessen.de/de/events/ki-als-co-founder-24-i-ki-in-den-gr%C3%BCndungsphasen/",
+    "source": "hackevents.net",
+    "blurb": "Second of four workshops on using AI in the founding phases of a startup, from idea to business.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Second of four workshops on using AI in the founding phases of a startup, from idea to business.",
+    "blurb_de": "Zweiter von vier Workshops, wie KI in den Gründungsphasen eines Start-ups eingesetzt werden kann, von der Idee bis zum Geschäftsmodell."
+  },
+  {
+    "id": "workshop-wiederholbare-workflows-mit-chatgpt-claude-fur-arbe-berlin-2026",
+    "title": "Workshop: Wiederholbare Workflows mit ChatGPT & Claude für Arbeit und Marketing",
+    "date": "2026-11-24",
+    "time": "10:30–13:30",
+    "city": "Berlin",
+    "venue": "Berlin",
+    "format": "Workshop",
+    "topics": [
+      "ChatGPT",
+      "Claude",
+      "Workflow automation"
+    ],
+    "organiser": "starthub-hessen.de",
+    "cost": "Not listed",
+    "url": "https://starthub-hessen.de/de/events/dein-ki-system-im-business-einmal-aufbauen-dauerhaft-zeit-sparen-hybrider-workshop-f%C3%BCr-fortgeschrittene-ki-anwenderinnen/",
+    "source": "hackevents.net",
+    "blurb": "Hybrid workshop for advanced AI users on building repeatable ChatGPT and Claude workflows for work and marketing.",
+    "firstSeen": "2026-11-20",
+    "blurb_en": "Hybrid workshop for advanced AI users on building repeatable ChatGPT and Claude workflows for work and marketing.",
+    "blurb_de": "Hybrider Workshop für fortgeschrittene KI-Nutzende: wiederholbare ChatGPT- und Claude-Workflows für Arbeit und Marketing aufbauen."
   }
 ]

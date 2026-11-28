@@ -109,15 +109,6 @@
 			]
 		},
 		{
-			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
-			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
-			"date": "2026-11-27",
-			"sources": [
-				"meetup:ai-beavers",
-				"luma-hamburg"
-			]
-		},
-		{
 			"kept": "DATA festival 2027",
 			"merged": "DATA festival Munich 2027 | Data & AI Event",
 			"date": "2027-03-17",
@@ -150,6 +141,15 @@
 			"date": "2027-01-12",
 			"sources": [
 				"meetup:bliss-speaker-series",
+				"hackevents-ai"
+			]
+		},
+		{
+			"kept": "KISS X Sustainable Industry 4.0 - Fokus: KI + agentische KI",
+			"merged": "KISS — Sustainable Industry 4.0 - Fokus: KI + agentische KI",
+			"date": "2027-01-28",
+			"sources": [
+				"meetup:stuttgart-industrie-4-0-und-iot-meetup",
 				"hackevents-ai"
 			]
 		},
@@ -187,15 +187,6 @@
 			"sources": [
 				"meetup:maikers-ai-community",
 				"brainberg"
-			]
-		},
-		{
-			"kept": "ITCS Frankfurt - AI Stage",
-			"merged": "ITCS Frankfurt 2026 — AI Stage (Artificial Intelligence Meetup Frankfurt)",
-			"date": "2026-11-27",
-			"sources": [
-				"meetup:artificial-intelligence-meetup-frankfurt",
-				"aieventlist-frankfurt"
 			]
 		},
 		{
@@ -241,15 +232,6 @@
 			"sources": [
 				"meetup:lorawan-leipzig-usergroup",
 				"brainberg"
-			]
-		},
-		{
-			"kept": "ITCS Frankfurt - AI Stage",
-			"merged": "ITCS Frankfurt 2026 — AI Stage (Artificial Intelligence Meetup Frankfurt)",
-			"date": "2026-11-27",
-			"sources": [
-				"meetup:artificial-intelligence-meetup-frankfurt",
-				"aieventlist-europe"
 			]
 		},
 		{
@@ -385,15 +367,6 @@
 			"sources": [
 				"deutschlandki",
 				"brainberg"
-			]
-		},
-		{
-			"kept": "build fridays - work on your startup alongside other founders (bring laptop)",
-			"merged": "build fridays hamburg - work on your startup alongside others (bring laptop)",
-			"date": "2026-11-27",
-			"sources": [
-				"meetup:ai-beavers",
-				"hackevents-ai"
 			]
 		},
 		{
